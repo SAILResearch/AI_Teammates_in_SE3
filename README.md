@@ -6,9 +6,18 @@ Submit the [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfXTmX9Az3t1WU
 
 ## Overview
 
-![](./figs/pr_cumulative.png)
+The overview of the AIDev dataset is as follows:
 
-This study analyzes the impact of AI coding agents on software engineering practices by examining pull requests (PRs) from various AI teammates including GitHub Copilot, Cursor, Devin, Claude Code, and OpenAI Codex.
+|           | #PR         | #Developer | #Repo      |
+| --------- | ----------- | ---------- | ---------- |
+| `OpenAI Codex`   | 411,621     | 41,619     | 53,702     |
+| `Devin`   | 24,893      | 2,897      | 3,857      |
+| `GitHub Copilot` | 16,531      | 1,916      | 3,097      |
+| `Cursor`  | 1,981       | 753        | 828        |
+| `Claude Code`  | 1,509       | 585        | 645        |
+| **Total** | **456,535** | **47,303** | **61,453** |
+
+![](./figs/pr_cumulative.png)
 
 ## Repository Structure
 
@@ -30,6 +39,20 @@ pip install -r requirements.txt
 
 ## Key Findings
 
+The key findings from the analysis of are based on AIDev-pop, a subset of the AIDev dataset.
+
+### AIDev-pop: Filtered (>500 stars)
+
+|           | #PR       | #Developer | #Repo   |
+| --------- | --------- | ---------- | ------- |
+| `OpenAI Codex`   | 2,686     | 522        | 467     |
+| `Devin`   | 2,729     | 300        | 130     |
+| `GitHub Copilot` | 1,462     | 309        | 215     |
+| `Cursor`  | 144       | 66         | 52      |
+| `Claude Code`  | 101       | 68         | 61      |
+| **Total** | **7,122** | **1,240**  | **856** |
+
+
 ### Productivity in Coding Agents Era
 
 ![pr_merge_compare_radar.png](figs%2Fpr_merge_compare_radar.png)
@@ -47,6 +70,10 @@ pip install -r requirements.txt
 ### Language Usage
 
 ![](figs%2Ftotal_language_percentages_top.png)
+
+## Dataset Schema
+
+![](figs%2Fdataset_schema.png)
 
 ## Citation
 
