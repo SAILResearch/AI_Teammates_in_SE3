@@ -4,3 +4,5 @@ figs/*.pdf
 .ipynb_checkpoints
 AIDev
 AIDev.zip
+*.json
+clean_data
