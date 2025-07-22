@@ -1,0 +1,523 @@
+login,id,name,company,location,email,followers,following,public_repos,created_at
+sebastianwessel,6763983,Sebastian Wessel,Freelancer,"Germany, Frankfurt am Main",,23,2,13,2014-02-23T16:36:45Z
+peter-lawrey,1070321,Peter Lawrey,Chronicle Software,London,,1447,8,75,2011-09-22T07:52:31Z
+HamadaSalhab,31417987,Hamada Salhab,@julep-ai ,,hamada.a.salhab@gmail.com,11,14,31,2017-08-28T18:36:04Z
+patmmccann,1683175,Patrick McCann,,New York,,24,0,20,2012-04-26T20:36:13Z
+okhat,963532,Omar Khattab,,"Stanford, CA",,1289,2,8,2011-08-06T19:59:53Z
+ezyang,13564,Edward Z. Yang,,"New York, NY",ezyang@mit.edu,3368,0,234,2008-06-13T04:11:18Z
+pxor,68468634,,,,,7,16,12,2020-07-18T12:48:42Z
+rgerhards,1482123,Rainer Gerhards,Adiscon GmbH,Germany,rgerhards@adiscon.com,94,5,49,2012-02-28T14:20:23Z
+Michaelvll,6753189,Zhanghao Wu,"Sky Computing Lab, UC Berkeley","Berkeley, CA",zhanghao.wu@outlook.com,899,183,49,2014-02-22T01:23:29Z
+Shamples,11433813,,,,,0,0,4,2015-03-12T02:27:30Z
+Yonom,1394504,Simon Farshid,,,simon@simonfarshid.com,319,23,56,2012-01-31T13:04:13Z
+EduardoPires,5068797,Eduardo Pires,@desenvolvedor-io ,São Paulo - Brazil,contato@eduardopires.net.br,4022,1,79,2013-07-22T23:33:03Z
+0x4D31,11577776,Adel Ka,,Virgo Cluster,,1117,110,30,2015-03-20T19:49:53Z
+creatorrr,931887,Diwank Singh Tomer,@julep-ai,Outer Space,,232,135,215,2011-07-22T06:45:34Z
+joshuafuller,6954640,Joshua Fuller,,,,136,58,180,2014-03-14T19:35:45Z
+Blaizzy,23445657,Prince Canuma,kulissiwa.com,Poland,prince.gdt@gmail.com,487,26,93,2016-11-14T05:52:35Z
+adeebshihadeh,8762862,Adeeb Shihadeh,@commaai,San Diego,adeebshihadeh@gmail.com,739,4,67,2014-09-13T20:05:20Z
+DanielSinclair,4412473,Daniel Sinclair,Rainbow,NYC,,121,51,55,2013-05-13T00:09:36Z
+AVGVSTVS96,122117267,Bassim Shahidy,assistant-ui,New York | San Francisco,,14,11,52,2023-01-06T18:02:12Z
+dkundel-openai,200841172,Dominik Kundel,,,,23,0,4,2025-02-25T19:43:20Z
+wtfsayo,82053242,Sayo,@elizaOS ,,,123,309,127,2021-04-06T17:38:35Z
+sandrohanea,40202887,Sandro Hanea,@Microsoft,Barcelona 🇪🇸,,64,45,39,2018-06-12T11:32:27Z
+obi1kenobi,2348618,Predrag Gruevski,,,,702,4,103,2012-09-14T18:33:03Z
+janbjorge,16663421,JeyBee,pio.com,,,25,1,13,2016-01-12T08:47:55Z
+danielweinmann,204765,Daniel Weinmann,@seasonedcc,"Lajeado, Brazil",daniel@seasoned.cc,224,14,86,2010-02-16T18:01:21Z
+JamesHenry,900523,James Henry,@nrwl ,☁️,james@henry.sc,939,2,58,2011-07-07T12:59:29Z
+mldangelo,7235481,Michael,,"New York, NY ",michael.l.dangelo@gmail.com,515,54,18,2014-04-09T07:27:59Z
+codyjlandstrom,1612782,Cody J Landstrom,,"New York, NY",,26,19,22,2012-04-04T18:05:24Z
+kohya-ss,52813779,Kohya S.,,,,0,0,10,2019-07-12T06:12:39Z
+Torantulino,22963551,Toran Bruce Richards,,UK,,3524,13,19,2016-10-20T16:25:18Z
+ilyes319,48651863,Ilyes Batatia,University of Cambridge,,,110,7,20,2019-03-17T15:16:13Z
+Kitenite,31864905,Kiet,Onlook,San Francisco,,246,23,62,2017-09-11T19:44:42Z
+pavpanchekha,30707,Pavel Panchekha,University of Utah School of Computing,"Salt Lake City, UT",me@pavpanchekha.com,234,2,62,2008-10-23T21:12:54Z
+SimonHalvdansson,49042625,Simon Halvdansson,,,,32,0,7,2019-03-28T19:55:57Z
+JeanMeijer,9619050,Jean P.D. Meijer,Analog,"Groningen, The Netherlands",,58,40,28,2014-11-08T00:54:24Z
+hansent,137617,Thomas Hansen,,"Iowa City, IA",thomas.hansen@gmail.com,69,67,92,2009-10-09T19:59:16Z
+acco,927029,Anthony Accomazzo,Sequin,"San Francisco, CA",,175,7,64,2011-07-20T05:42:57Z
+areibman,14807319,Alex Reibman,Agency AI,San Francisco,,201,8,67,2015-09-23T15:33:11Z
+Jarred-Sumner,709451,Jarred Sumner,,"San Francisco, CA",jarred@jarredsumner.com,7062,27,262,2011-04-04T21:48:06Z
+leonardsellem,2162208,Leonard Sellem,,Paris,,12,5,5,2012-08-16T09:40:39Z
+simba-git,64661186,Simba Khadder,Featureform,"San Francisco, CA",,10,0,2,2020-05-01T19:23:34Z
+pu2clr,2827444,Ricardo Lima Caratti,,Brazil / Brasilia,pu2clr@gmail.com,297,5,34,2012-11-18T14:37:01Z
+sshane,25857203,Shane Smiskol,@commaai,"San Diego, CA",shane@smiskol.com,374,24,51,2017-02-18T03:07:47Z
+achantavy,46503781,Alex Chantavy,SubImage,San Francisco,,38,0,9,2019-01-08T21:31:41Z
+wei,5880908,Wei He,,Florida,,900,227,119,2013-11-07T16:02:43Z
+xpyctumo,30053565,xpyctumo,,"Saint Petersburg, Russia",,13,2,5,2017-07-10T17:06:12Z
+StephenDev0,158498287,Stephen B,Student,🇺🇸,,60,7,22,2024-02-01T16:37:59Z
+tomharmon,26351993,Thomas Harmon,,"SF, California",,0,0,31,2017-03-11T21:58:15Z
+kolaente,13721712,,@go-vikunja,Germany,hello@kolaente.de,118,13,99,2015-08-09T20:47:44Z
+durswd,5775729,swd,,"Tokyo, Japan",,49,6,56,2013-10-25T15:38:46Z
+katspaugh,381895,,,,,656,89,40,2010-08-31T11:21:01Z
+Habdel-Edenfield,75091859,Habdel,,,,2,8,11,2020-11-26T18:08:47Z
+strickvl,3348134,Alex Strick van Linschoten,ZenML,"Delft, The Netherlands",,336,377,178,2013-01-23T05:43:59Z
+jlowin,153965,Jeremiah Lowin,@PrefectHQ ,"Washington, DC",,908,35,41,2009-11-16T16:56:57Z
+ReneWerner87,7063188,RW,,Germany,,229,20,42,2014-03-25T20:54:30Z
+polterguy,8466933,AINIRO.IO,AINIRO.IO,Cyprus,,222,5,73,2014-08-16T18:45:41Z
+gcarleo,28149892,Giuseppe Carleo,EPFL - Computational Quantum Science Lab,"Lausanne, Switzerland ",,115,6,6,2017-04-28T14:12:25Z
+tynes,6626818,Mark Tyneway,op labs @ optimism,,mark.tyneway@gmail.com,867,250,147,2014-02-08T20:06:00Z
+thomaspaulmann,12066405,Thomas Paul Mann,@raycast,"London, UK",hello@thomaspaulmann.com,560,8,37,2015-04-22T10:41:59Z
+richiemcilroy,33632126,Richie McIlroy,,"Liverpool, United Kingdom",,145,7,14,2017-11-13T16:02:37Z
+arronjukas,178873253,,,,,0,0,7,2024-08-20T06:32:19Z
+geohot,72895,George Hotz,@commaai @tinygrad ,"San Diego, CA",,44927,0,94,2009-04-12T03:30:56Z
+corneliusroemer,25161793,Cornelius Roemer,@neherlab @nextstrain ,Switzerland,cornelius.roemer@gmail.com,234,225,265,2017-01-16T22:32:15Z
+ericnakagawa,23874,Eric Nakagawa,Celo Foundation,"San Francisco, Honolulu, Tokyo",ericnakagawa@gmail.com,220,109,38,2008-09-09T21:12:47Z
+EricLBuehler,65165915,Eric Buehler,,,,1620,0,92,2020-05-11T10:55:49Z
+mysticaltech,518555,K. N.,,Spain,,157,640,1005,2010-12-11T00:56:33Z
+mtrojnar,13538198,Michał Trojnara,Mobi-Com Polska Sp. z o.o.,"Warsaw, Poland",Michal.Trojnara@stunnel.org,82,14,13,2015-07-28T11:58:57Z
+turtleDev,12575843,Saravjeet 'Aman' Singh,,"Delhi, India",,55,59,36,2015-05-23T17:32:57Z
+lukaszsamson,1078186,Łukasz Samson,,"Warsaw, Poland",,110,2,98,2011-09-25T13:14:42Z
+scosman,848343,Steve Cosman,"getkiln.ai, ex-Apple, ex-Shoebox, ex-MSFT","Toronto, ON",,80,36,54,2011-06-14T01:32:29Z
+roryaronson,5524043,Rory Aronson,FarmBot,"San Luis Obispo, CA",rory@roryaronson.com,294,0,5,2013-09-24T03:19:33Z
+johnlindquist,36073,John Lindquist,http://egghead.io,,,1976,6,620,2008-11-22T20:45:44Z
+lalalune,18633264,Shaw,Eliza Labs,San Francisco,,1700,603,190,2016-04-23T17:28:29Z
+kburtram,599935,Karl Burtram,Microsoft,"Sammamish, WA",,83,0,19,2011-02-04T05:53:18Z
+242816,173255911,,,,,0,0,0,2024-06-19T10:13:25Z
+karakanb,16530606,Burak Karakan,@bruin-data,Berlin,burak.karakan@gmail.com,134,27,63,2016-01-03T23:36:57Z
+mtthidoteu,66959271,Matthieu B,,UK / France,,6,2,19,2020-06-15T14:37:39Z
+will-holley,8657791,Will,,,,33,48,35,2014-09-04T16:10:50Z
+MarvinJWendt,31022056,Marvin Wendt,@SchwarzIT | @pterm | @installer | @atomicgo,Germany Heilbronn,git@marvinjwendt.com,179,16,51,2017-08-15T00:20:36Z
+softmarshmallow,16307013,Universe,@gridaco,,universe@grida.co,206,109,91,2015-12-15T14:35:03Z
+Frooodle,77850077,Anthony Stirling,Stirling PDF,UK,,378,4,11,2021-01-22T16:29:06Z
+joaquim-verges,3353417,Joaquim Verges,,San Francisco,,202,8,21,2013-01-23T12:42:22Z
+benfdking,9087625,Ben,,,,15,4,21,2014-10-08T16:43:24Z
+changkun,5498964,Changkun Ou,Researcher @mimuc and Engineer @Sixt,"Munich, Germany",hi@changkun.de,4757,265,122,2013-09-20T03:19:17Z
+marcklingen,2834609,Marc Klingen,@langfuse,,git@marcklingen.com,256,56,44,2012-11-19T12:57:44Z
+hughcrt,24587702,Hugues Chocart,Lunary,Lisbon,,40,14,20,2016-12-15T12:15:08Z
+gaby,835733,Juan Calderon-Perez,,United States,,124,21,140,2011-06-07T18:16:56Z
+aymeric-roucher,69208727,Aymeric Roucher,Hugging Face,Paris,,270,16,34,2020-08-04T15:34:47Z
+colebemis,4608155,Cole Bemis,GitHub,"San Francisco, CA",,1388,1,111,2013-06-04T06:30:19Z
+fujiapple852,36075719,FujiApple,,Mt. Fuji,fujiapple852@gmail.com,75,30,42,2018-02-02T13:13:51Z
+jafioti,13525371,Joe Fioti,,,,88,1,29,2015-07-27T17:19:40Z
+sanjushahgupta,71315276,Sanju Shah,,,,12,2,19,2020-09-15T07:50:48Z
+samayo,5304093,Samson Daniel,,"Lausanne, Switzerland",,63,1,12,2013-08-25T02:47:21Z
+ishaan-jaff,29436595,Ishaan Jaff,@BerriAI ,,,341,167,282,2017-06-14T15:37:16Z
+six7,4548309,Jan Six,,"Salzburg, Austria",six.jan@gmail.com,416,24,32,2013-05-28T11:01:54Z
+joamag,25441,João Magalhães,Hive Solutions,"Porto, Portugal",joao@joao.me,129,6,49,2008-09-19T23:14:28Z
+fontanierh,14199823,Henry Fontanier,,"Paris, France",,25,18,10,2015-09-09T13:43:05Z
+jedisct1,124872,Frank Denis,,"Antibes, France",,3972,180,448,2009-09-09T10:20:57Z
+michelpereira,25416,Michel Pereira,,Brasil,michel@michel.eti.br,97,9,59,2008-09-19T19:46:01Z
+alejandroaldas,52395149,,,,,0,2,4,2019-07-01T04:50:19Z
+wintonzheng,5225702,Shuchang Zheng,Skyvern,San Francisco,,47,40,9,2013-08-14T00:06:41Z
+davidmigloz,6546265,David Miguel Lozano,brxs.com,Amsterdam,,230,163,94,2014-01-30T16:53:45Z
+camathieu,6413246,Charles-Antoine Mathieu,CRITEO,France,,16,22,33,2014-01-15T20:13:01Z
+leonteale,3170212,Leon Teale,IT Governance,"Lytham, Saint Anne's",leonteale89@gmail.com,121,4,34,2013-01-02T15:38:04Z
+ocavue,24715727,,,Melbourne,,206,175,294,2016-12-22T11:26:50Z
+opcode81,1295099,Dominik Jain,,"Munich, Germany",,47,24,46,2011-12-30T14:26:41Z
+amorey,75881,Andres Morey,Kubetail,"Istanbul, Turkey",andres@kubetail.com,97,1,38,2009-04-20T21:26:14Z
+KAVYANSHTYAGI,142140238,Kavyansh Tyagi,,,,8,29,32,2023-08-13T07:03:20Z
+rezaakb,23244168,Reza Akbarian Bafghi,University of Colorado Boulder,,reza.akbarianbafghi@colorado.edu,84,6,17,2016-11-03T17:56:40Z
+DTTerastar,1491145,Darrell,,"Glenmoore, PA 19343 USA",,22,15,72,2012-03-02T04:03:40Z
+rubinette,809943,rubinette,,,deadbeef13@gmail.com,19,35,10,2011-05-25T13:52:45Z
+osterman,52489,Erik Osterman (CEO @ Cloud Posse),"Cloud Posse, LLC","Los Angeles, CA",erik@cloudposse.com,328,69,1,2009-02-07T01:27:50Z
+JacobLinCool,28478594,JacobLinCool,@NTNU-CSIE,"Taipei, Taiwan",jacob@csie.cool,354,96,365,2017-05-06T08:30:42Z
+sfmskywalker,938393,Sipke Schoorstra,ELSA-X,Gelderland,sipkeschoorstra@outlook.com,431,6,24,2011-07-25T22:49:08Z
+shrisukhani,25730420,Shridhar Sukhani,@Metlo-Labs,"San Francisco, CA",,0,0,28,2017-02-12T23:39:18Z
+vikash,324203,Vikash Kumar,@gofr-dev @zopdev @zopsmart,"Bangalore, India",vikash@zopsmart.com,44,5,27,2010-07-06T12:37:19Z
+itsababseh,36419647,,,,,2,3,4,2018-02-12T18:33:55Z
+KMKoushik,24666922,KM Koushik,@unsend-dev,World,hey@koushik.dev,89,42,58,2016-12-20T06:51:04Z
+satmihir,13845072,Mihir Sathe,,"Seattle, WA",,11,0,3,2015-08-18T04:37:53Z
+catatsuy,1249910,Tatsuya Kaneko,,,catatsuy@catatsuy.org,153,32,180,2011-12-08T14:03:33Z
+pmkhue,3765816,MINH KHUE PHAM,,,pmkhue.hcmus@gmail.com,1,10,28,2013-03-04T15:02:55Z
+n3d1117,11541888,Edoardo,iOS Engineer,"Copenhagen, Denmark",,261,0,38,2015-03-18T16:19:20Z
+syedazharmbnr1,128639611,Azhar,,,,18,6,22,2023-03-22T19:43:25Z
+leoafarias,435833,Leo Farias,@conceptadev ,"Orlando, FL",,751,12,102,2010-10-11T20:11:47Z
+lavrton,1443320,Anton Lavrenov,,"Cancun, Mexico",lavrton@gmail.com,671,3,31,2012-02-16T13:49:27Z
+wilx,1098563,Václav Haisman,,Prague,vhaisman@gmail.com,34,1,115,2011-10-03T11:23:48Z
+messplay,5551700,,,,,1,0,81,2013-09-26T17:30:14Z
+caffeinum,1909384,Aleksey Bykhun,@artgenexyz ,"Toronto, Canada",,177,127,163,2012-06-30T18:11:21Z
+lyqht,35736525,Estee Tey,@Padlet,Singapore,,221,67,69,2018-01-23T15:39:25Z
+Bekacru,86073083,Bereket Engida,@better-auth,,,1181,15,67,2021-06-17T17:13:08Z
+fouad-openai,169186268,Fouad Matin,@openai ,SF,,138,0,0,2024-05-07T17:04:33Z
+dylan-conway,35280289,Dylan Conway,@oven-sh,"San Francisco, California",,165,66,58,2018-01-10T01:07:14Z
+sabrikaragonen,1678394,Sabri Karagönen,Bruin,Berlin,sabri@karagonen.com,20,9,10,2012-04-25T13:14:04Z
+moemeyer,16569754,Moe Meyer,JOM,,,2,20,32,2016-01-06T03:42:56Z
+ensideanderson12,205254246,anderson renato enside,,Brasil,AndersonEnside@ENSIDEANDERSONCOM.onmicrosoft.com,0,1,2,2025-03-28T01:14:25Z
+natolambert,10695622,Nathan Lambert,Ai2 // Interconnects.ai,,,571,29,30,2015-01-25T13:46:48Z
+tananaev,1161863,Anton Tananaev,@openai & @traccar ,San Francisco Bay Area,anton.tananaev@gmail.com,1594,0,30,2011-10-31T06:55:30Z
+desimone,1544881,bobby,,,,67,0,57,2012-03-16T17:44:09Z
+panarch,2025065,Taehoon Moon,GlueSQL,"Seoul, Korea",taehoon.moon@outlook.com,146,54,45,2012-07-23T05:52:37Z
+bobzhang,747051,Hongbo Zhang,,,bobzhang1988@gmail.com,1717,1,89,2011-04-23T05:38:43Z
+agup006,3642874,Anurag Gupta,,,agup006@gmail.com,60,7,45,2013-02-20T02:03:01Z
+ArnavAgrawal03,88790414,Arnav Agrawal,,,,6,5,15,2021-08-11T15:53:06Z
+ntindle,8845353,Nicholas Tindle,,Texas,,220,119,68,2014-09-20T19:29:38Z
+arikchakma,54026804,Arik Chakma,@roadmapsh ,Bangladesh,arikchangma@gmail.com,362,35,40,2019-08-12T11:32:15Z
+Pistus,1829960,Frode Jensen,Scrimba,"Oslo, Norway",jensen.frode@gmail.com,140,83,17,2012-06-08T08:56:00Z
+KKcorps,5559703,Kartik Khare,,"Bangalore, India",kharekartik@gmail.com,47,39,64,2013-09-27T17:39:24Z
+rcaloras,149818,Ryan Caloras,@Doordash,"Brooklyn, NY",rcaloras@alumni.cmu.edu,76,21,20,2009-11-06T17:15:27Z
+shoheiyokoyama,8734755,Shohei Yokoyama,@smartnews,Japan,shohei.yok0602@gmail.com,420,67,87,2014-09-11T09:25:30Z
+sonkatalon,144113449,Son Dao,Katalon,Ho Chi Minh City,son.dao@katalon.com,1,0,7,2023-09-05T09:25:18Z
+wargoblin,4902175,,,,,0,3,1,2013-07-01T08:05:39Z
+julien-c,326577,Julien Chaumond,@huggingface ,"Brooklyn, NY",julien@huggingface.co,1864,56,236,2010-07-08T16:14:10Z
+davegaeddert,649496,Dave Gaeddert,@dropseed,Kansas,,62,21,2,2011-03-03T18:16:39Z
+depau,1151321,Davide Depau,DevOps at Iliad,"Milan, Italy",davide@depau.eu,236,85,132,2011-10-25T17:40:50Z
+badtuxx,4606725,Jeferson Fernando,,,,5511,13,73,2013-06-04T02:21:18Z
+alehander92,830715,Alexander Ivanov,,"Sofia, Bulgaria",alehander42@gmail.com,180,282,213,2011-06-05T12:07:49Z
+stephanos,159852,Stephan Behnke,,"Victoria, BC, Canada",,56,0,95,2009-11-30T12:09:10Z
+mikelow,1659535,Mike,,,,13,7,4,2012-04-19T14:21:59Z
+Blair2004,5265663,Blair Jersyer,"NexoPOS Solutions, @Tendoo ",Cameroon. Yaoundé,,157,7,138,2013-08-19T23:59:59Z
+Franz-Fischbach,22659413,Franz,Metacraft Labs,"Bulgaria, Sofia",franz.fischbach@metacraft-labs.com,7,0,9,2016-10-06T12:02:02Z
+andrewpareles,43356051,Andrew Pareles,Void,,,159,11,15,2018-09-17T21:08:44Z
+jnsdls,8204858,Jonas Daniels,thirdweb,Southern California,,186,39,59,2014-07-18T21:43:28Z
+SandPod,137198655,Alexander Sandor,Serverpod,Stockholm,,17,0,6,2023-06-20T15:44:22Z
+huangdijia,8337659,Deeka Wong,@addcnos @hyperf @friendsofhyperf,HongKong,huangdijia@gmail.com,139,180,83,2014-08-02T13:44:27Z
+ggorman,5394691,Gerard Gorman,@ImperialCollegeLondon ,UK,g.gorman@imperial.ac.uk,110,5,23,2013-09-05T20:46:42Z
+ftnext,21273221,nikkie,,,,61,154,240,2016-08-27T04:46:53Z
+claudfuen,26839654,claudio,@leap-ai ,San Francisco Bay Area,imclaudfuen@gmail.com,42,6,25,2017-04-01T14:38:33Z
+jchris,253,Chris Anderson,Fireproof,"Portland, OR",jchris@gmail.com,713,40,237,2008-02-13T21:08:18Z
+abduld,1404191,abdul dakkak,,,,188,86,224,2012-02-03T03:58:45Z
+baocang,16043697,Baocang Nie,,,baocang.nie@icloud.com,3,1,173,2015-11-27T08:18:58Z
+ronnyboy2020,1328172,,,,,1,1,3,2012-01-13T16:37:58Z
+vanpelt,17,Chris Van Pelt (CVP),wandb.com,San Francisco,vanpelt@wandb.com,476,20,62,2008-01-13T05:57:18Z
+dkrivoruchko,10741551,Dmytro Kryvoruchko,,Kyiv,,140,0,4,2015-01-28T12:54:55Z
+AgentEnder,6933928,Craigory Coppola,Nx / Nrwl,"Stanford, KY",craigorycoppola@gmail.com,103,24,146,2014-03-12T20:06:44Z
+djacobs,42236,David Jacobs,,New York City,djacobs@gmail.com,157,238,58,2008-12-23T05:28:57Z
+clairernovotny,1427284,Claire Novotny,,,,867,4,145,2012-02-10T19:08:30Z
+jslee02,4038467,Jeongseok (JS) Lee,Meta Reality Labs,"Seattle, WA",,430,26,145,2013-04-02T15:37:15Z
+theturtle32,53184,Brian McKelvey,Dollar Shave Club,"Los Angeles, Ca",,145,28,22,2009-02-10T01:14:26Z
+meiliang86,3085410,Liang Mei,Temporal.io,Seattle,meiliang86@gmail.com,4,0,15,2012-12-20T01:00:52Z
+balboah,294690,Johnny Bergström,,Sweden,github@joonix.se,35,21,61,2010-06-02T18:35:42Z
+ObservedObserver,22167673,Elwynn Chen,@Kanaries,,ooer@kanaries.net,626,423,142,2016-09-13T08:08:55Z
+munday-tech,58807644,Luke,Just Eat Takeaway,Australia,,0,0,6,2019-12-12T08:49:01Z
+remicolin,98749896,turnoffthiscomputer,,,,32,25,29,2022-01-31T12:45:55Z
+voku,264695,Lars Moelleken,REMONDIS IT Services GmbH,"Voerde, Germany",lars@moelleken.org,466,259,356,2010-05-04T16:24:26Z
+carlsverre,82591,Carl Sverre,,"Vancouver, BC, Canada",,233,42,149,2009-05-08T23:12:51Z
+igorm84,16727448,Igor M. Penaque,,"San Francisco, CA",igormodesto.jf@gmail.com,81,6,8,2016-01-15T23:44:37Z
+pushpalroy,19844292,Pushpal Roy,@mutualmobile,India,pushpalroy2007@gmail.com,267,315,165,2016-06-09T19:00:44Z
+mgoin,3195154,Michael Goin,@redhatofficial @neuralmagic,Boston,mgoin@redhat.com,207,59,67,2013-01-05T22:07:32Z
+juanjosanchez,845864,,,,,1,0,0,2011-06-12T23:19:52Z
+olix0r,240738,Oliver Gould,@BuoyantIO @Linkerd,"California, USA",ver@buoyant.io,388,79,70,2010-04-09T22:56:46Z
+napetrov,18015221,Nikolay Petrov,@intel ,"Hillsboro, Oregon",nikolay.a.petrov@intel.com,11,5,31,2016-03-22T19:54:41Z
+MH4GF,31152321,Hirotaka Miyagi,,Japan,,116,46,141,2017-08-19T06:09:40Z
+Felix3322,115849429,Jiaying Liu,,Canada🇨🇦,,13,2,33,2022-10-15T00:29:21Z
+majd-alhafi,90603477,mjd alhafi,,,,3,2,21,2021-09-13T07:45:16Z
+andrewgazelka,7644264,Andrew Gazelka,,Palo Alto,andrew.gazelka@gmail.com,130,37,159,2014-05-20T11:56:00Z
+estsauver,766985,Earl St Sauver,Apollo Agriculture,San Francisco,estsauver@gmail.com,25,17,156,2011-05-04T03:14:46Z
+yeldarby,870796,Brad Dwyer,Roboflow,Iowa,,96,8,55,2011-06-23T14:17:36Z
+rm-openai,192034341,Rohan Mehta,@openai ,"New York, NY",,140,1,0,2024-12-17T19:32:28Z
+gmercey,1422374,Guillaume Mercey,Distict,"Vancouver, Canada",guillaume.mercey@gmail.com,12,11,17,2012-02-09T08:53:37Z
+kenkendk,1510755,Kenneth Skovhede,,,,124,0,37,2012-03-07T09:14:08Z
+alonp99,8467965,Alon Peretz,Ballerine,,,19,21,46,2014-08-16T23:02:29Z
+pardeike,853584,Andreas Pardeike,Swedish Police Authority,"Stockholm, Sweden",andreas@pardeike.net,350,9,79,2011-06-16T08:31:54Z
+zhw2590582,5907357,Harvey Zhao,Looking For A Job,"Shenzhen, China",,1313,39,18,2013-11-11T08:12:57Z
+tnylea,601261,Tony Lea,DevDojo,"Temecula, CA",tnylea@gmail.com,634,8,118,2011-02-04T23:00:22Z
+tesla2678LLM,213139957,,,,,0,0,5,2025-05-24T01:27:48Z
+atupem,868976,Carl Atupem,,,,19,6,2,2011-06-23T00:22:40Z
+csvoss,3229696,Chelsea Sierra Voss,@openai,"San Francisco, CA",,459,9,41,2013-01-09T22:06:47Z
+kunaals,19509280,Kunaal Sikka,,,,15,10,17,2016-05-21T20:05:23Z
+dlwh,9633,David Hall,@stanford-crfm ,"Berkeley, CA",david.lw.hall@gmail.com,367,40,62,2008-05-07T23:33:27Z
+mangiucugna,4247706,Stefano Baccianella,Catawiki,Amsterdam,,31,0,9,2013-04-24T17:08:34Z
+pmenglund,32618,Martin Englund,@rockset ,Bay Area,martin@englund.nu,123,9,151,2008-11-04T14:42:02Z
+ArthurSonzogni,4759106,Arthur Sonzogni,,Paris,,798,81,141,2013-06-21T11:24:19Z
+volkov,459989,Sergey Volkov,,,,5,3,34,2010-10-29T19:45:33Z
+developersdigest,124798203,Developers Digest,,,,554,6,68,2023-02-08T14:09:13Z
+mxschmitt,17984549,Max Schmitt,@Microsoft,"Germany, Berlin",max@schmitt.mx,1807,31,227,2016-03-21T13:44:27Z
+vgcman16,155417613,,,,,0,2,35,2024-01-02T05:51:27Z
+simonw,9599,Simon Willison,Datasette,"Half Moon Bay, California",,9454,141,874,2008-05-07T17:22:14Z
+johnrachwan123,43934839,John Rachwan,,Munich,johnrachwan@gmail.com,20,10,24,2018-10-07T17:04:55Z
+thehunmonkgroup,43772,,,"Portland, OR, USA",,75,0,62,2009-01-02T15:09:19Z
+SerCeMan,1780970,Sergey Tselovalnikov,Canva,Sydney,sergey@serce.me,180,7,82,2012-05-26T14:51:36Z
+suin,855338,,"Craftsman Software, Inc.",Japan Tokyo,,254,6,213,2011-06-17T00:26:27Z
+alirezamika,17881612,Mika,,,alirezamika@gmail.com,253,2,7,2016-03-16T14:24:16Z
+geekan,2707039,Alexander Wu,,Palo Alto,geekan@foxmail.com,3477,43,75,2012-11-02T13:41:33Z
+felixge,15000,Felix Geisendörfer,Datadog,"Berlin, Germany",,4140,14,289,2008-06-25T14:24:37Z
+juanfranblanco,562371,Juan Blanco,,United Kingdom,,628,77,239,2011-01-13T09:44:10Z
+CymatiStatic,130235489,,,,,0,0,4,2023-04-08T15:05:15Z
+ramedina86,64783088,Ramiro Medina,,Poland,,31,10,2,2020-05-04T11:37:37Z
+Madman10K,40400590,Stanislav Vasilev,@MadLadSquad @metacraft-labs @Heapforge,"Sofia, Bulgaria",contact@madman10k.online,60,130,17,2018-06-19T16:24:18Z
+tssweeney,2142768,Tim Sweeney,,,,17,4,14,2012-08-13T06:45:46Z
+saikrishnarallabandi,22923313,Sai Krishna,Fidelity Investments,,srallaba.research@gmail.com,74,66,73,2016-10-18T22:50:45Z
+CaptainJeff,2991673,,,,,5,7,38,2012-12-07T20:05:29Z
+BrianHung,15721634,Brian Hung,,Bay Area,brianlhung@gmail.com,63,57,93,2015-11-09T01:13:40Z
+sklein12,1080611,,@Discord,"Denver, CO",sklein12@gmail.com,6,0,14,2011-09-26T13:10:40Z
+Him188,12100985,Him188,Hanabi AI Inc.,"London, UK",Him188@mamoe.net,707,16,44,2015-04-24T14:50:50Z
+nfcampos,56902,Nuno Campos,@langchain-ai,San Francisco,,894,77,75,2009-02-22T21:14:03Z
+wieslawsoltes,2297442,Wiesław Šoltés,,,,580,0,265,2012-09-07T07:27:58Z
+sedghi,7490180,Alireza ,,"Toronto, CA",ar.sedghi@gmail.com,173,199,49,2014-05-05T15:26:55Z
+lollipopkit,10864310,lollipopkit🏳️‍⚧️,,,,336,15,81,2015-02-05T10:40:42Z
+mattiasw,564615,Mattias Wallander,,Sweden,,23,2,15,2011-01-14T12:54:55Z
+pakrym-oai,204937752,,,,,6,0,0,2025-03-25T21:11:23Z
+volkermauel,2894956,Volker Mauel,Life Radiopharma,Bonn,,2,2,20,2012-11-26T19:31:02Z
+PhilinTv,376033,Denis Turkov,Spryker Systems GmbH,Berlin,,6,0,20,2010-08-25T19:03:08Z
+cmuench,211294,Christian Münch,@netz98 ,Worms / Germany,christian@muench.dev,211,99,133,2010-02-26T09:47:32Z
+conico974,2964339,,,,nicodorseuil@yahoo.fr,20,1,23,2012-12-04T18:41:24Z
+erikdson,7568478,Erik Davidsson,,"Stockholm, Sweden",erikdson@me.com,0,0,4,2014-05-13T11:30:21Z
+TodePond,15892272,Lu Wilson,tldraw,"London, UK",,2054,137,120,2015-11-17T15:13:36Z
+ColinPeppler,23249258,Colin Peppler,,,,10,9,18,2016-11-04T00:10:45Z
+ikamensh,23004004,Ilya Kamen,Bosch Center for AI,Germany,,21,1,61,2016-10-22T20:26:51Z
+alexanderjeurissen,1220084,Alexander Jeurissen,HackerOne,"Groningen, Netherlands",frailty.tithing.0n@icloud.com,77,25,38,2011-11-25T12:27:39Z
+marxus99,215316789,,,,,0,0,2,2025-06-07T20:44:52Z
+OrAsaf,13136059,Or Asaf,,Israel,orasaf@outlook.com,9,11,4,2015-07-01T13:42:40Z
+ra3orblade,1450818,Razor,"AnyLab, GmbH.","Berlin, Germany",,38,15,1,2012-02-19T08:14:22Z
+zzstoatzz,31014960,nate nowack,@PrefectHQ ,"Chicago, IL",,150,24,122,2017-08-14T18:02:41Z
+joshyattridge,32915015,Joshua Attridge,Energy Solutions,,,96,7,5,2017-10-18T22:21:32Z
+2326m,67239620,Adam,,,,0,0,6,2020-06-21T18:45:57Z
+simon-mo,21118851,Simon Mo,,"Berkeley, CA",simon.mo@hey.com,760,2,108,2016-08-19T06:18:24Z
+johan-gorter,3057773,Johan Gorter,AFAS Software,Leusden,,17,8,64,2012-12-16T20:04:22Z
+anuveyatsu,17809581,Anuar Ustayev (aka Anu),@datopian ,"Almaty, Kazakhstan",anuar.ustayev@datopian.com,80,72,95,2016-03-13T10:13:09Z
+mvisonneau,1761583,Maxime VISONNEAU,"@datadog, ex-@twitter",Switzerland,maxime.visonneau@gmail.com,93,36,190,2012-05-21T22:57:12Z
+noodlehaus,683976,noodlehaus,,internet,,64,3,9,2011-03-22T14:23:27Z
+carlospolop,17181413,SirBroccoli,,,,4159,1,119,2016-02-11T16:36:22Z
+cghsystems,284336,Christopher Hedley,Syntasso ,London,,16,2,25,2010-05-22T19:49:12Z
+makseq,501780,Max Tkachenko,,,makseq@gmail.com,152,5,22,2010-11-29T12:37:40Z
+TiRizvanov,172280653,Timur Rizvanov,,,1812timurr@gmail.com,1,1,5,2024-06-10T13:27:46Z
+tommyxchow,54859075,Tommy Chow,@teslamotors,,,61,11,14,2019-09-03T17:03:38Z
+giongto35,7755543,giongto35,Meta,United States,,384,20,35,2014-05-31T17:08:09Z
+Mihonarium,24436954,Mikhail Samin,,,ms@contact.ms,57,11,42,2016-12-07T15:28:34Z
+SirVer,140115,Holger Rapp,Qwello,Germany,SirVer@gmx.de,309,0,75,2009-10-15T10:56:47Z
+cpautist,186107382,,,,,0,1,4,2024-10-23T22:19:39Z
+terkelg,2302254,Terkel,,"Brooklyn, NY",terkel@terkel.com,1898,1098,48,2012-09-07T20:12:02Z
+mathiasrw,1063454,Mathias Wulff,,Copenhagen,m@rawu.dk,96,13,194,2011-09-19T22:14:24Z
+jessfraz,1445228,Jess Frazelle,@KittyCAD ,PID 1,,13387,60,147,2012-02-17T02:15:05Z
+zsqdx,67146430,,,,,1,0,3,2020-06-19T09:37:56Z
+MervinPraison,454862,Mervin Praison,,,,526,5,182,2010-10-26T15:48:31Z
+niklub,6087484,,,,,26,2,11,2013-12-02T16:15:37Z
+irsyadadl,44585532,Irsyad A. Panjaitan,@intentuilabs,Internet,,396,11,16,2018-10-29T18:38:05Z
+Gusarich,42098239,Daniil Sedov,,,gusarich@icloud.com,251,20,75,2018-08-04T18:11:16Z
+PotatoOfDoom,8769019,,,,,76,17,36,2014-09-14T15:41:14Z
+mihneadb,643127,Mihnea Dobrescu-Balaur,Bolt,"Bucharest, Romania",mihnea@linux.com,81,3,114,2011-02-28T18:17:03Z
+jonedmiston,548178,Jon Edmiston,Spark Development Network,"Peoria, AZ",,34,4,6,2011-01-05T06:00:28Z
+gustavoguichard,566971,Guga Guichard,@seasonedcc,,gustavoguichard@gmail.com,120,21,70,2011-01-16T01:40:40Z
+cmer,412,Carl Mercier,,"Dallas-Fort Worth, TX",,148,34,201,2008-02-19T16:51:01Z
+demchenkoalex,14123304,Alex,,"Warsaw, Poland",alexdemchenko@yahoo.com,82,3,7,2015-09-04T08:43:18Z
+nunocoracao,3803196,Nuno C.,@docker ,,,133,79,34,2013-03-07T22:40:04Z
+liuliu,127987,Liu Liu,,San Francisco,,938,4,87,2009-09-17T05:24:18Z
+edsiper,369718,Eduardo Silva Pereira,Chronosphere,Costa Rica,eduardo@chronosphere.io,268,2,66,2010-08-19T14:24:00Z
+J2-D2-3PO,188380414,,Weights & Biases,,,0,0,5,2024-11-13T19:20:03Z
+javiereguiluz,73419,Javier Eguiluz,@symfonycorp,Vitoria-Gasteiz (Spain),javier.eguiluz@gmail.com,1637,1658,152,2009-04-13T20:26:53Z
+owenchak-oai,209693434,,,,,0,0,1,2025-04-29T19:23:44Z
+Nikhil-Nandagopal,3897254,Nikhil Nandagopal,@appsmithorg ,Bangalore,nikhil.nandagopal@gmail.com,178,20,25,2013-03-18T09:27:52Z
+Swiftyos,10382233,Swifty,,,,87,9,25,2015-01-03T16:25:44Z
+majdyz,76959103,Zamil Majdy,@databricks ,Amsterdam,zamil.majdy@gmail.com,28,4,17,2021-01-04T15:19:50Z
+GoodBoyDigital,3112434,Mat Groves,Goodboy Digital,London UK,mat.groves@play.co,648,1,51,2012-12-24T00:17:53Z
+atkrad,351364,Mohammad Abdolirad,@Companyinfo,Netherlands,m.abdolirad@gmail.com,163,115,42,2010-08-02T07:44:10Z
+Hanxven,52438792,,GUET / UKM,Shandong,hanxven@gmail.com,60,1,3,2019-07-02T04:35:57Z
+timlenardo,1915325,Tim L,,"San Francisco, CA",,18,1,27,2012-07-02T18:40:51Z
+matrosov,359722,Alex Matrosov,BINARLY,Los Angeles CA,,460,16,16,2010-08-10T12:16:50Z
+aipolabs-credentials,199983080,,,,,0,0,0,2025-02-19T19:25:11Z
+PedramNavid,1045990,Pedram Navid,Dagster Labs,California,,99,49,83,2011-09-13T00:05:55Z
+Codehagen,24507211,Christer,Sailsdock,Norway,Christer.hagen@gmail.com,306,18,43,2016-12-11T13:34:02Z
+smola,23248,Santiago M. Mola,@datadog,"Madrid, Spain",santi@mola.io,145,58,120,2008-09-05T04:28:03Z
+peterxcli,54034701,Peter Lee,@Dcard @Apache,Taiwan,peterxcli@gmail.com,56,51,85,2019-08-12T15:32:10Z
+Kvadratni,12793580,Max Novich,Square,,mnovich@squareup.com,16,1,12,2015-06-08T07:41:18Z
+Keno,1291671,Keno Fischer,@JuliaComputing ,"Cambridge, MA",,843,4,294,2011-12-29T03:08:55Z
+djudjuu,9882716,,,Berlin,,8,0,19,2014-11-21T12:00:36Z
+steveruizok,23072548,Steve Ruiz,@tldraw ,"London, UK",steve@tldraw.com,3151,6,165,2016-10-26T08:12:27Z
+devinat1,15788108,Devin Ersoy,,,,4,7,17,2015-11-10T18:17:02Z
+johnwalley,981531,John Walley,@MulberryHouseSoftware ,"Cambridge, UK",john@walley.org.uk,72,22,77,2011-08-15T17:37:44Z
+mikasoukhov,6942548,Mikhail,StockSharp,,,50,0,0,2014-03-13T15:24:44Z
+vrushankportkey,134934501,Vrushank Vyas,Portkey,Bangalore,,47,253,26,2023-05-29T11:24:30Z
+patrick91,667029,Patrick Arminio,@fastapi,London,patrick.arminio@gmail.com,839,757,338,2011-03-13T14:45:54Z
+marcio,6532,Marcio Gasparotto,Ezy Collect,"Sydney, Australia",,45,10,26,2008-04-11T08:30:09Z
+FelixMalfait,6399865,Félix Malfait,,Paris,felix.malfait@gmail.com,139,40,19,2014-01-14T14:04:56Z
+bonk1t,39348559,Nick Bobrowski,@vrsen-ai-solutions ,"Lisbon, Portugal",,36,9,5,2018-05-16T19:39:58Z
+rmcdaniel,1130888,Richard McDaniel,,"Huntsville, AL",,54,0,23,2011-10-16T03:34:47Z
+eyalb181,5508354,Eyal Bukchin,@metalbear-co ,Tel Aviv,eyal@metalbear.co,21,16,13,2013-09-21T15:36:34Z
+huan,1361891,Huan Li,@Chatie @PreAngel ,Silicon Valley,huan@chatie.io,2296,84,171,2012-01-21T05:06:58Z
+tomqin93,4149598,Tom Qin,@Edgenesis ,,xqin@edgenesis.com,20,6,12,2013-04-14T02:23:38Z
+ArthurZucker,48595927,Arthur,@huggingface,,,611,86,38,2019-03-15T14:45:13Z
+vitarb,1311694,Vitalik,,,,15,5,28,2012-01-07T16:36:17Z
+salman1993,7154255,Salman Mohammed,Square,Canada,,51,7,38,2014-04-03T19:51:30Z
+fernando-duarte,66431383,Fernando Duarte,,,duarte@alum.mit.edu,22,2,18,2020-06-04T15:36:04Z
+thomasahle,946355,Thomas Dybdahl Ahle,,San Francisco Bay Area,thomas@ahle.dk,347,81,84,2011-07-29T08:56:12Z
+fasterthanlime,7998310,Amos Wenger,@bearcove,"Lyon, France",,4470,33,487,2014-06-26T17:10:33Z
+sserrata,9343811,Steven Serrata,Palo Alto Networks,United States,,53,24,31,2014-10-21T23:37:38Z
+candle-admin,105071743,Candle,@candlefinance ,NYC,,1,2,0,2022-05-06T16:58:52Z
+1zhangdey,52868553,,,"Ontario, Canada",,24,17,17,2019-07-13T21:33:20Z
+corbt,176426,Kyle Corbitt,OpenPipe,San Francisco,,287,1,108,2010-01-04T23:49:25Z
+imfing,5097752,Xin,,London,,336,25,44,2013-07-26T15:28:49Z
+vasudevgupta31,42150001,Vasudev Gupta,Decision Tree Analytics & Services,"Delhi, India",,10,6,21,2018-08-06T16:23:40Z
+w0rp,3518142,Andrew Wray,,,,246,8,70,2013-02-09T10:32:11Z
+maekawatoshiki,9913176,uint256_t,,Japan,,790,74,246,2014-11-23T10:54:33Z
+jonhadfield,843944,Jon Hadfield,,,jon@lessknown.co.uk,52,6,144,2011-06-11T14:33:07Z
+hadesloc,115144247,,,,,8,1,16,2022-10-06T08:21:12Z
+fiskus,533229,Maksim Chervonnyi,,Barcelona,,24,19,34,2010-12-22T12:12:46Z
+esthor,11945900,Erik Thorelli,,San Francisco,,45,29,97,2015-04-14T15:17:19Z
+bigint,69431456,Yoginth,@heyxyz ,"Bangalore, India",hey@yoginth.com,1221,223,30,2020-08-09T17:17:58Z
+arnaudroques,467517,PlantUML,,,plantuml@gmail.com,68,11,3,2010-11-04T15:53:35Z
+mrwadams,2872334,Matt Adams,,,,213,0,38,2012-11-23T15:10:06Z
+sh-rp,1155738,David Scharf,,Berlin Germany,,17,1,15,2011-10-27T13:59:46Z
+ImmortalMan01,29338016,ImmortalMan,,,,2,1,9,2017-06-10T16:28:48Z
+ds300,1242537,David Sheldrick,,"London, England",d.j.sheldrick@gmail.com,625,116,114,2011-12-05T18:47:23Z
+unxsist,210652,Jeroen Nijhuis,justeattakeaway.com,"Borne, The Netherlands",,31,4,34,2010-02-25T13:15:06Z
+ItayTheDar,118370953,Itay Dar,,,,13,12,8,2022-11-16T14:41:47Z
+juristr,542458,Juri Strumpflohner,nx.dev,"Bolzano, Italy",juri.strumpflohner@gmail.com,1009,71,321,2010-12-31T07:39:57Z
+Maciek-roboblog,18363314,Maciej,,,maciek@roboblog.eu,51,17,2,2016-04-09T09:54:04Z
+goniszewski,43510122,Robert Goniszewski,,Gdańsk,,35,1,20,2018-09-23T05:11:34Z
+AdrianWashburn,215331495,,,,,0,0,1,2025-06-08T01:14:09Z
+UsSubDidIt,180962954,,,,,11,0,30,2024-09-09T12:49:57Z
+TylerBarnes,14190743,Tyler Barnes,mastra.ai,"Victoria, BC, Canada",tyler@mastra.ai,256,69,112,2015-09-09T01:43:15Z
+keitaoouchi,1606842,Keita Oouchi,kakaku.com,,,90,88,21,2012-04-03T03:06:27Z
+gregfromstl,17715009,greg,,"San Francisco, CA",,84,43,44,2016-03-08T02:14:34Z
+wonderwhy-er,1150639,Eduard Ruzga,,Riga,,254,6,44,2011-10-25T12:21:41Z
+FrancescoBorzi,75517,Francesco Borzì,@AzerothCore,The Netherlands,borzifrancesco@gmail.com,291,236,107,2009-04-19T21:22:12Z
+msoedov,1958116,Alexander Myasoedov,,Ukraine,,334,271,49,2012-07-11T17:52:22Z
+lucasandrioli,4381229,,,,,1,0,14,2013-05-08T21:38:06Z
+AndrexB,162334594,,,,,0,0,2,2024-03-05T14:14:00Z
+SyliusBot,3983620,SyliusBot,@Sylius,Worldwide,,2,0,3,2013-03-27T09:34:28Z
+max-sixty,5635139,Maximilian Roos,,Los Angeles,,461,154,75,2013-10-08T05:44:10Z
+rzasharp79,8329210,,,,,0,0,3,2014-08-01T10:46:04Z
+asgeirtj,27446620,Ásgeir Thor,,,,342,2,39,2017-04-13T19:48:33Z
+possibilities,502777,Mike Bannister,AI Life,Portland East,,236,4,210,2010-11-30T02:38:44Z
+pwizla,4233866,Pierre Wizla,Lead Technical Writer at Strapi,"Lille, France",,24,8,28,2013-04-23T10:23:09Z
+willccbb,9730447,will brown,,nyc,,575,4,15,2014-11-13T22:39:00Z
+leonardmq,29255582,Leonard Q. Marcq,,,,22,6,15,2017-06-07T14:05:11Z
+YossiSaadi,30905362,Yossi Saadi,,"Tel Aviv, Israel",yossisaadi@gmail.com,10,5,15,2017-08-10T16:08:11Z
+unclecode,12494079,UncleCode,"AlephNul, and KidoCode",Singapore,unclecode@kidocode.com,1106,2,112,2015-05-18T09:41:03Z
+NickHerrig,33797354,Nick Herrig,,,,51,101,54,2017-11-19T04:37:12Z
+louis030195,25003283,Louis Beaumont,,San Francisco,louis.beaumont@gmail.com,353,25,124,2017-01-09T08:47:48Z
+AhmedElywa,4535142,Ahmed Elywa,@paljs ,Egypt,ahmed.elywa@icloud.com,126,19,19,2013-05-26T22:02:22Z
+sanderpick,361000,Sander Pick,Textile,"Reno, NV",sanderpick@gmail.com,105,39,28,2010-08-11T14:20:43Z
+louwers,649392,Bart Louwers,,"Germany, Europe",,71,84,234,2011-03-03T17:07:48Z
+BayramGurel,94354400,,,,,1,0,9,2021-11-15T08:28:52Z
+pmatheus,5354863,,,,,1,0,29,2013-08-31T19:32:50Z
+aaguiarz,1636576,Andrés Aguiar,Okta,,,47,29,18,2012-04-12T12:11:43Z
+kurdin,6027060,Sergey,,,,55,23,402,2013-11-25T02:30:42Z
+ottenhoff,810505,Sam Ottenhoff,"Longsight, Inc.","Newburgh, NY",ottenhoff@longsight.com,29,13,76,2011-05-25T18:52:31Z
+aaazzam,33043305,Adam Azzam,@PrefectHQ,New York City,,9,1,7,2017-10-23T23:01:01Z
+happi,158428,Erik Stenman,HappiHacking AB,"Stockholm, Sweden",,240,4,8,2009-11-26T09:04:14Z
+brynary,19,Bryan Helmkamp,@qltysh ,New York City,,720,32,189,2008-01-13T10:19:47Z
+egelhaus,156946629,Enno Gelhaus,,,egelhaus@ennogelhaus.de,15,4,9,2024-01-17T18:08:02Z
+tilucasoli,62367544,Lucas Oliveira,Concepta,Brazil,,56,54,23,2020-03-19T03:26:03Z
+levigross,80920,Levi Gross,,New York,,88,35,95,2009-05-04T20:03:08Z
+konitaro524,87004518,,,,,0,0,12,2021-07-06T07:08:40Z
+cesarbrizio,25124302,,,,,0,0,1,2017-01-14T20:19:30Z
+vulcandth,6394873,,,United States,,15,9,31,2014-01-14T00:42:51Z
+chezsmithy,5754300,Shawn Smith,@cambiahealth ,Portland Oregon,chezsmithy@me.com,11,1,12,2013-10-23T08:16:28Z
+iambriccardo,15819674,Riccardo Busetti,Sentry,"Vienna, Austria",,53,45,35,2015-11-12T16:00:51Z
+abi,23818,Abi Raja,,San Francisco,abimanyuraja@gmail.com,1878,74,88,2008-09-09T14:07:28Z
+dvj1988,18716465,Diljit,,Bangalore,diljitvj@gmail.com,13,28,155,2016-04-28T08:45:37Z
+dhirenmathur,19893222,Dhiren Mathur,Potpie AI,"Bengaluru, India",dhiru17398@gmail.com,38,3,74,2016-06-12T18:16:16Z
+Komzpa,810638,Darafei Praliaskouski,Kontur.io,"Batumi, Georgia",me@komzpa.net,157,12,106,2011-05-25T20:03:35Z
+jolovicdev,184168873,Dušan Jolović,,Serbia,,11,2,12,2024-10-07T22:07:16Z
+Angelchev,38880939,Anexon,,,,3,6,8,2018-05-01T10:19:03Z
+DIYgod,8266075,DIYgod,Natural Selection Labs,Singapore,i@diygod.me,15177,446,89,2014-07-25T09:27:56Z
+charliermarsh,1309177,Charlie Marsh,@astral-sh,"Brooklyn, NY",charlie.r.marsh@gmail.com,5732,18,43,2012-01-06T11:14:16Z
+clemlesne,10001945,Clémence Lesné,@microsoft,"Paris, France",clemence@lesne.pro,149,17,48,2014-11-29T17:55:46Z
+dwwoelfel,476818,Daniel Woelfel,InstantDB,"San Francisco, CA",dwwoelfel@gmail.com,328,28,276,2010-11-11T04:45:02Z
+azusa-dom,151507264,可我真的什么都不会啊,,london,,0,0,5,2023-11-20T07:42:51Z
+bradhilton,4875137,Brad Hilton,Ender Research Corp,,brad.hilton.nw@gmail.com,49,8,49,2013-06-28T23:40:32Z
+amori1729,152523296,Amori,,,,0,0,2,2023-11-30T16:55:08Z
+afadil,8382496,FADIL,,"Ottawa, ON",,75,0,26,2014-08-07T07:48:32Z
+greinacker,759955,Greg Reinacker,,,,7,0,31,2011-04-30T00:18:25Z
+robbie-c,2056078,Robbie,@posthog,London,,33,15,39,2012-07-28T09:22:48Z
+jlaneve,5252587,Julian LaNeve,,"New York, NY",,48,15,35,2013-08-17T22:18:56Z
+suchintan,3853670,Suchintan,,,,38,2,41,2013-03-13T12:49:00Z
+tszhong0411,75498339,Nelson Lai,,Hong Kong,me@nelsonlai.me,297,220,58,2020-12-04T18:16:21Z
+gordon123,330576,iiMate,homeless,Anywhere I can breath!,thegto_2001@yahoo.com,8,7,13,2010-07-13T08:58:18Z
+valayDave,11920247,Valay Dave,,"San Francisco, CA",vddave@asu.edu,43,34,124,2015-04-13T07:09:10Z
+GigaZelensky,85454363,GigaZelensky,,,,2,0,29,2021-06-06T17:46:36Z
+gregpriday,1126859,Greg Priday,SiteOrigin,South Africa,greg@siteorigin.com,47,8,52,2011-10-13T20:51:09Z
+darccio,163009,Dario Castañé,@datadog,Barcelona,d@rio.hn,229,109,59,2009-12-05T17:24:42Z
+joeljody77,42470095,,,,,1,0,1,2018-08-17T12:45:06Z
+lordmauve,617224,Daniel Pope,@twosigma,London,,198,37,110,2011-02-14T12:49:02Z
+Aitch-ko,124288676,,,,,0,0,0,2023-02-02T16:40:31Z
+ShawSumma,28312141,Shaw,,,,173,55,148,2017-05-02T18:16:15Z
+zeroliu,226076,Zero Liu,Lumos,San Francisco,zerolxy@gmail.com,19,8,37,2010-03-19T12:21:49Z
+ograce1421,191569339,,,,,0,0,0,2024-12-13T08:00:22Z
+Ro6afF,12999731,Dimo Chanev,,"Sofia, Bulgaria",,27,27,14,2015-06-22T12:15:30Z
+mmikita95,157150795,Mikita Makiej,,,,1,2,4,2024-01-19T17:38:24Z
+jaaydenh,1858163,Jaayden Halko,MindIsle Games,New York,jaayden.halko@gmail.com,4,1,40,2012-06-17T03:13:45Z
+IOrlandoni,1564825,Nacho Orlandoni,,"Montreal, Canada",ignacio@softwareis.cool,28,10,13,2012-03-22T14:50:34Z
+jensneuse,11737109,Jens Neuse,WunderGraph Inc,Germany,,143,2,41,2015-03-31T12:33:12Z
+YusukeHirao,953956,Yusuke Hirao,"D-ZERO Co., Ltd.","Fukuoka, JAPAN",,52,1,45,2011-08-02T11:57:07Z
+malfet,2453524,Nikita Shulga,,California,,320,23,63,2012-09-29T17:47:22Z
+Cammisuli,4332460,Jonathan Cammisuli,@nrwl,"Ontario, Canada",,50,2,96,2013-05-03T15:23:16Z
+Shoby-Altimetrik,197781493,,,,,0,0,2,2025-02-04T15:06:36Z
+ldirer,4263535,Laurent Direr,,Paris,,5,26,38,2013-04-26T09:06:35Z
+AlexanderRoderickMODINI,209660749,,,,,0,0,0,2025-04-29T15:13:11Z
+yamaguchi1024,12247908,Yuka Ikarashi,,"Cambridge, MA",yukatkh@gmail.com,178,52,62,2015-05-05T07:08:54Z
+igormq,623536,Igor Macedo Quintanilha,Teya,London,,150,77,60,2011-02-17T16:17:33Z
+akramguediri,71324128,Akram Guediri,,Heilbronn,,28,42,42,2020-09-15T10:58:31Z
+BeegYosh,166535221,,,,,0,0,1,2024-04-09T15:54:53Z
+hmdne,54514036,,,,,14,0,44,2019-08-25T21:54:17Z
+KB01111,198438204,,,,,2,22,65,2025-02-09T09:21:53Z
+noahho,12981296,,,,,38,1,14,2015-06-20T19:26:23Z
+pfgithub,6010774,pfg,,,pfg@pfg.pw,66,7,221,2013-11-22T14:11:08Z
+qwsdcvghyu89,61093706,,,,,2,0,10,2020-02-15T19:09:46Z
+gvozdvmozgu,131762131,Andrey Nikolaev,,,gvozdvmozgu@gmail.com,6,1,50,2023-04-25T09:42:55Z
+chance-wnb,202173503,,,,,0,0,2,2025-03-06T19:00:18Z
+jhills20,70035505,James Hills,,,,178,0,0,2020-08-21T19:39:27Z
+thisisfixer,14433035,Fixer,,,,13,2,8,2015-09-20T21:08:01Z
+PerfectSlayer,1766222,Bruce Bujon,@DataDog,France,,164,5,45,2012-05-22T17:29:43Z
+klalafaryan,1593802,Konstantin Lalafaryan,,"Berlin, Germany",,3,8,11,2012-03-31T18:23:04Z
+clusterzx,32274973,Your friendly nerd,,Germany,,74,9,183,2017-09-25T17:33:38Z
+tentone,9158354,José Ferrão,@EQSDigital,Portugal,tentone@outlook.com,354,294,45,2014-10-11T23:52:42Z
+muukii,1888355,Hiroshi Kimura,@eure ,"Tokyo, Japan",muukii.app@gmail.com,1053,253,312,2012-06-25T05:39:43Z
+ChmaraX,32128755,Adam Chmara,,"Slovakia, Bratislava",adam.chmara1@gmail.com,26,17,17,2017-09-20T10:41:25Z
+bcherny,1761758,Boris Cherny,@Anthropic,San Francisco,,1383,1667,267,2012-05-22T00:12:18Z
+liamsi,7441766,Ismail Khoffi,@celestiaorg,UK / Germany / Switzerland,Ismail.Khoffi@gmail.com,372,443,96,2014-04-29T16:35:08Z
+LawyZheng,26927551,,,,,17,2,26,2017-04-05T13:25:21Z
+igarzonpres,214648166,,,,,0,0,4,2025-06-03T11:21:01Z
+benceruleanlu,162923238,Benjamin Lu,@Comfy-Org,"Ontario, Canada",ben@comfy.org,7,4,3,2024-03-10T21:04:04Z
+paulpv,1393897,Paul Peavyhouse,,"Seattle, WA, USA",pv@swooby.com,42,9,103,2012-01-31T08:32:13Z
+wassemgtk,149161,Waseem AlShikh,Writer.com,San Francisco,,42,37,86,2009-11-05T07:43:53Z
+ryanjball,52682161,Ryan Ball,,"New York, New York",,5,1,16,2019-07-08T23:50:47Z
+rachavz,12390016,Raul Chavez,,,,0,1,45,2015-05-11T06:39:22Z
+saiiimiiir,24598291,,,,,1,0,4,2016-12-16T01:47:29Z
+aryairani,538571,Arya Irani,,,,82,4,73,2010-12-28T03:41:55Z
+coreyward,81224,Corey Ward,Project Read,"Austin, TX",,172,40,87,2009-05-05T14:34:00Z
+gshiva,2817954,,,,,1,5,28,2012-11-17T00:17:41Z
+yiminc,84411014,Yimin Chen,,,,22,0,23,2021-05-18T19:09:15Z
+smorimoto,38746192,Sora Morimoto,@ocaml @tc39,"San Francisco, CA",sora@morimoto.io,946,256,362,2018-04-26T05:22:42Z
+avezey-ci,86317133,,,,,2,1,2,2021-06-22T17:05:42Z
+zurawiki,1464035,Roger Zurawicki,,"New York City, NY, USA",,113,225,41,2012-02-23T03:08:56Z
+MrFlounder,13774166,Guangshuo Zang,,,,2,5,31,2015-08-13T01:17:33Z
+oai-ragona,144164704,,,,,4,1,0,2023-09-05T18:15:40Z
+edeNFed,5587419,Eden Federman,,,edenf2k@gmail.com,61,1,28,2013-10-01T16:27:36Z
+DragonJAR,28887492,Jaime Andrés Restrepo,DragonJAR SAS,"Manizales, Caldas, Colombia",dragonjar@gmail.com,157,3,13,2017-05-23T06:28:32Z
+kongzue,10115359,Kongzue,Beijing Quanzhi Technology Co. Ltd,Beijing,myzcxhh@live.cn,498,11,74,2014-12-08T11:09:19Z
+hamed-ta,9883945,Hamed Ta,,Australia,hamed.t@live.com,4,33,9,2014-11-21T13:54:06Z
+nemtsov,39958,Yuriy Nemtsov,@Adobe | @Behance,New York,,124,154,106,2008-12-12T00:01:38Z
+hanson-openai,181890318,,,,,0,0,1,2024-09-17T18:45:04Z
+trevorcreech,84566,Trevor Creech,,San Francisco,trevor@trevorcreech.com,67,15,23,2009-05-14T15:08:17Z
+samuelgm-openai,173856549,,,,,13,0,0,2024-06-25T23:26:50Z
+YarivHashaiComet,206414279,,,,,0,0,0,2025-04-06T09:45:56Z
+golergka,929735,Max Yankov,,,,57,148,131,2011-07-21T08:33:11Z
+ErikBjare,1405370,Erik Bjäreholt,@SuperuserLabs,"Lund, Sweden 🇸🇪",erik@bjareho.lt,1950,264,183,2012-02-03T12:54:26Z
+Bentlybro,27962737,Bently,,Some Where In Space I Think?,Github@bentlybro.com,86,20,40,2017-04-24T14:32:04Z
+osyrisrblx,9200592,Osyris,@Roblox,,,201,63,52,2014-10-13T17:07:30Z
+da-beda,77482826,,,,,0,0,8,2021-01-15T08:06:13Z
+yuandrew,25187103,Andrew Yuan,Temporal Technologies,Seattle,theandrewyuan@gmail.com,2,1,38,2017-01-17T22:30:17Z
+jordanl17,20559627,Jordan Lawrence,sanity.io,"Edinburgh, UK",,7,3,14,2016-07-20T14:01:17Z
+pcmoritz,113316,Philipp Moritz,Anyscale,Berkeley,,213,1,95,2009-08-08T22:03:09Z
+jonastemplestein,242550,Jonas Templestein,Monzo,,,83,10,18,2010-04-12T21:26:13Z
+Kuingsmile,96409857,Kuingsmile,,,,215,5,89,2021-12-20T06:57:49Z
+jamesgpearce,90942,James Pearce,,"On a boat, hopefully in the tropics",github@tripleodeon.com,1496,17,25,2009-06-02T07:41:17Z
+tanya574033,56290920,,,,,3,0,4,2019-10-08T06:14:09Z
+whoiskatrin,8017908,whoiskatrin,Cloudflare,"London, UK",,602,6,20,2014-06-29T10:52:34Z
+bpmct,22407953,Ben Potter,Coder.com,United States,ben@coder.com,110,38,131,2016-09-24T03:51:20Z
+jhaoming-oai,209693290,,,,,0,0,1,2025-04-29T19:22:43Z
+rodja,131391,Rodja Trappe,Rodion,Havixbeck,mail@rodja.net,63,6,17,2009-09-25T20:13:21Z
+rueian,2727535,Rueian,,Taiwan,rueiancsie@gmail.com,321,41,132,2012-11-05T15:04:41Z
+e5l,4290035,Leonid Stashevsky,JetBrains,Munich,,171,61,58,2013-04-29T10:53:52Z
+deeptshukla,91190463,Deept Shukla,Zilingo,Bangalore,,0,0,15,2021-09-22T09:59:07Z
+sberan,100066,Sam Beran,,"Iowa City, IA",,45,49,64,2009-06-29T19:14:46Z
+sanghanpark,119040931,,,,,0,0,3,2022-11-25T08:59:48Z
+wealthcx01,171562981,,,,,0,0,2,2024-06-03T10:05:07Z
+kirederik,201163,Derik Evangelista,@syntasso,"London, United Kingdom",,26,17,60,2010-02-10T16:19:26Z
+marius-baseten,155577904,Marius Killinger,baseten.co,San Francisco,,0,0,0,2024-01-03T19:01:11Z
+TTPlanetPig,152850462,,,,,163,3,12,2023-12-04T08:03:14Z
+Somebodyhere101,191598041,,,,,0,0,0,2024-12-13T13:34:18Z
+ZihanWang314,112086423,Zihan Wang,,,,288,18,29,2022-08-25T11:53:21Z
+gishanchamith,193911355,Gishan Chamith ,,,,2,2,9,2025-01-06T13:20:12Z
+lsorber,4543654,Laurent Sorber,,Belgium,,48,5,26,2013-05-27T22:28:57Z
+onyx243,63511758,,,,,0,3,31,2020-04-11T16:46:37Z
+gavmckee80,17826993,,,,,1,3,9,2016-03-14T11:34:00Z
+Zyie,24736175,,,,,63,9,15,2016-12-23T16:18:43Z
+cat-stack-boop,18101169,cat,,,,9,5,123,2016-03-27T14:24:45Z
+vilkinsons,6226576,Dei Vilkinsons,@hashintel,,,46,22,1,2013-12-19T23:06:35Z
+balthazur,15075815,Balthasar Huber,,,,2,8,6,2015-10-11T14:14:10Z
+ntBre,36778786,Brent Westbrook,@astral-sh,,,85,17,137,2018-02-23T23:46:01Z
+alexei-led,1898375,Alexei Ledenev,DoIT International,Israel,alexei.led@gmail.com,254,7,38,2012-06-27T12:25:39Z
+Goro2030,10875290,Mariano Silva,,"Santiago, Chile",,6,5,26,2015-02-06T01:54:24Z
+amaury1093,1293565,Amaury,@cosmos @regen-network. Previously @polkadot-js,,,428,54,17,2011-12-29T22:01:18Z
+KhoomeiK,32777448,Rohan Pandey,OpenAI,San Francisco,,254,7,44,2017-10-13T17:20:33Z
+Ahmad-mtos,91780764,Ahmad Haidar,,,,18,22,12,2021-10-02T09:24:09Z
+graniet,15084233,Tristan Granier,wirelabs.ai,00 00 80 00,,430,5,38,2015-10-12T06:40:38Z
+hannesrudolph,49103247,Hannes Rudolph,,"Edmonton, Alberta, Canada ",,35,23,16,2019-03-30T18:13:19Z
+SteveDiamond,520736,Steven Diamond,Gridmatic,San Jose,diamond.po.central@gmail.com,276,3,12,2010-12-13T06:40:15Z
+alorbach,1675286,Andre Lorbach,Adiscon GmbH,Germany ,alorbach@adiscon.com,10,2,25,2012-04-24T16:25:01Z
+d2a-pnagel,35032477,,,,,0,0,1,2018-01-02T13:01:51Z
+cameroncooke,630601,Cameron Cooke,,"Brighton, UK",cameroncooke@notonthehighstreet.com,116,25,47,2011-02-21T19:54:48Z

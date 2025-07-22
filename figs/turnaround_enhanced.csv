@@ -1,0 +1,7 @@
+Agent,accept_rate,accept_med,accept_sig,accept_cliff,reject_rate,reject_med,reject_sig,reject_cliff
+Cursor,51.39,2.41,,negligible,21.53,1.07,*,small
+Claude_Code,52.48,6.87,,negligible,32.67,1.83,*,small
+Human,76.78,3.89,,,16.14,27.55,,
+OpenAI_Codex,65.3,0.29,*,medium,21.26,2.39,*,small
+Copilot,38.24,17.2,*,small,32.08,4.58,*,small
+Devin,48.92,2.22,*,negligible,48.44,93.87,*,negligible

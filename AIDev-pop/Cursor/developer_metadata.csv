@@ -1,0 +1,67 @@
+login,id,name,company,location,email,followers,following,public_repos,created_at
+rahulchhabria,1755708,Rahul Chhabria,,San Francisco,,8,28,16,2012-05-19T22:40:10Z
+louis030195,25003283,Louis Beaumont,,San Francisco,louis.beaumont@gmail.com,353,25,124,2017-01-09T08:47:48Z
+aaronvg,5353992,,,,,30,19,13,2013-08-31T16:06:24Z
+iamrajjoshi,33237075,Raj Joshi,@getsentry,,,53,43,46,2017-10-30T21:58:09Z
+szokeasaurusrex,7881302,Daniel Szoke,Sentry.io,"Vienna, Austria",,22,38,32,2014-06-13T14:39:00Z
+roaga,47861399,Rohan Agarwal,Sentry.io,San Francisco,,13,4,25,2019-02-21T15:32:58Z
+AbhiPrasad,18689448,Abhijeet Prasad,@getsentry,"Toronto, Canada",devabhiprasad@gmail.com,237,86,115,2016-04-26T23:03:58Z
+elijames-codecov,88844267,,,,,0,0,3,2021-08-12T15:15:18Z
+abuaboud,1812998,Mo AbuAboud,@activepieces ,"Amman, Jordan",,420,13,17,2012-06-03T19:58:51Z
+marcklingen,2834609,Marc Klingen,@langfuse,,git@marcklingen.com,256,56,44,2012-11-19T12:57:44Z
+elie222,3090527,Elie Steinbock,@inbox-zero ,"Tel Aviv, Israel",,924,16,143,2012-12-20T14:33:08Z
+yumc-afk,20719615,agent_zero,,,,2,0,10,2016-07-29T07:13:59Z
+xxchan,37948597,xxchan,@risingwavelabs,Singapore,xxchan22f@gmail.com,724,132,61,2018-03-31T05:04:28Z
+ishaan-jaff,29436595,Ishaan Jaff,@BerriAI ,,,341,167,282,2017-06-14T15:37:16Z
+Brooooooklyn,3468483,LongYinan,,Singapore,github@lyn.one,4761,555,276,2013-02-04T05:37:28Z
+Jarred-Sumner,709451,Jarred Sumner,,"San Francisco, CA",jarred@jarredsumner.com,7062,27,262,2011-04-04T21:48:06Z
+talboren,68807791,Tal,KeepHQ,Tel-Aviv,,52,53,36,2020-07-26T09:27:35Z
+MaxKless,34165455,,Nx,,,42,25,47,2017-12-01T15:19:56Z
+cleptric,6617432,Michi Hoffmann,@getsentry,"Vienna, Austria",,137,7,18,2014-02-07T16:28:37Z
+FelixMalfait,6399865,Félix Malfait,,Paris,felix.malfait@gmail.com,139,40,19,2014-01-14T14:04:56Z
+ChmaraX,32128755,Adam Chmara,,"Slovakia, Bratislava",adam.chmara1@gmail.com,26,17,17,2017-09-20T10:41:25Z
+shahargl,12069200,Shahar Glazner,KeepHQ,"Tel Aviv, Israel",,57,48,14,2015-04-22T14:06:27Z
+sl0thentr0py,6536764,Neel Shah,Sentry,Vienna,,27,4,29,2014-01-29T16:49:17Z
+scopsy,8872447,Dima Grossman,@novuhq,Tel Aviv,dima@grossman.io,2723,204,105,2014-09-23T07:41:01Z
+billyvg,79684,Billy Vong,@getsentry ,"San Francisco, CA",,172,10,163,2009-04-30T19:34:28Z
+siggisim,1704556,Siggi Simonarson,BuildBuddy,Palo Alto,siggi@buildbuddy.io,33,37,69,2012-05-04T03:06:15Z
+macjavs,202744196,,,,,0,0,0,2025-03-11T05:24:34Z
+colebemis,4608155,Cole Bemis,GitHub,"San Francisco, CA",,1388,1,111,2013-06-04T06:30:19Z
+cursor[bot],206951365,,,,,0,0,0,2025-04-09T22:42:17Z
+monilpat,15067321,Monil Patel,,,,60,2,26,2015-10-10T18:17:49Z
+symphonia-ai,138552571,,,,,0,0,1,2023-07-04T04:39:03Z
+bruno-garcia,1633368,Bruno Garcia,@getsentry,"Toronto, Canada",,391,85,71,2012-04-11T14:30:10Z
+RockChinQ,45992437,Junyan Qin (Chin),@langgenius,"Tianjin, China",,498,103,107,2018-12-19T09:00:18Z
+wesbos,176013,Wes Bos,me,"Hamilton, Ontario",wes@wesbos.com,34498,31,405,2010-01-04T10:11:44Z
+armenzg,44410,Armen Zambrano G.,@getsentry Sentry,"Toronto, Canada",,75,3,132,2009-01-05T22:02:16Z
+dcramer,23610,David Cramer,@getsentry,"San Francisco, CA",,3020,11,228,2008-09-08T06:55:34Z
+SengokuCola,25811392,SengokuCola,Beijing Normal University ,,1026294844@qq.com,94,5,31,2017-02-16T05:19:41Z
+jannikmaierhoefer,48529566,Jannik Maierhöfer,Langfuse,,,18,46,63,2019-03-13T18:06:51Z
+regenrek,5182020,Kevin Kern,,Austria,,130,7,130,2013-08-07T12:36:14Z
+jxnl,4852235,Jason Liu,567 Studio,"New York, NY",,1669,44,81,2013-06-27T15:06:00Z
+daryllimyt,5508348,Daryl Lim,Tracecat,"San Francisco, USA",,66,30,29,2013-09-21T15:35:27Z
+edeNFed,5587419,Eden Federman,,,edenf2k@gmail.com,61,1,28,2013-10-01T16:27:36Z
+mrubens,2600,Matt Rubens,@RooCodeInc ,,,116,11,5,2008-03-08T21:32:24Z
+juliusmarminge,51714798,Julius Marminge,,Sweden,,1880,29,234,2019-06-11T16:07:55Z
+karakanb,16530606,Burak Karakan,@bruin-data,Berlin,burak.karakan@gmail.com,134,27,63,2016-01-03T23:36:57Z
+JonasBa,9317857,Jonas,"Eng at Sentry.io, prev Specto (acq by Sentry) and Algolia ",NYC,jonas@badalic.com,79,42,40,2014-10-20T10:13:52Z
+sam-goodwin,38672686,sam,,Seattle,sam@alchemy.run,290,58,81,2018-04-23T22:08:57Z
+ggarber,512252,Gustavo Garcia,,Spain,gustavogb@gmail.com,69,11,149,2010-12-06T22:07:18Z
+JhumanJ,11312432,Julien Nahum,,Paris,julien@nahum.net,94,8,39,2015-03-04T11:17:16Z
+geclos,1948929,Gerard,Latitude,Barcelona,gerard@latitude.so,41,14,81,2012-07-10T10:10:53Z
+krystofwoldrich,31292499,Krystof Woldrich,@getsentry,"Vienna, Austria",,62,43,89,2017-08-23T20:54:57Z
+dashed,139499,Alberto Leal,@getsentry (Sentry.io),"Toronto, Canada",mailforalberto@gmail.com,231,586,184,2009-10-14T02:43:38Z
+zackees,6856673,Zachary Vorhies,,San Francisco,,143,18,168,2014-03-05T01:19:54Z
+strickvl,3348134,Alex Strick van Linschoten,ZenML,"Delft, The Netherlands",,336,377,178,2013-01-23T05:43:59Z
+madsnedergaard,3296643,Mads Nedergaard,Electricity Maps,Denmark,nedergaardmads@gmail.com,54,16,53,2013-01-17T14:01:27Z
+johnlindquist,36073,John Lindquist,http://egghead.io,,,1976,6,620,2008-11-22T20:45:44Z
+diegolmello,804994,Diego Mello,@RocketChat ,,diegolmello@gmail.com,153,8,38,2011-05-23T11:34:31Z
+evanpurkhiser,1421724,Evan Purkhiser,@getsentry ,San Francisco,,332,49,92,2012-02-09T03:18:25Z
+seawatts,2148546,Chris Watts,@co-founder-ai,"Seattle, WA",,0,0,112,2012-08-14T04:39:05Z
+haydenbleasel,4142719,Hayden Bleasel,@vercel,"San Francisco, CA",,755,69,21,2013-04-13T03:42:14Z
+six7,4548309,Jan Six,,"Salzburg, Austria",six.jan@gmail.com,416,24,32,2013-05-28T11:01:54Z
+oioki,1127549,Alexander Tarasov,@getsentry ,Vienna,,46,24,46,2011-10-14T05:24:01Z
+dtbuchholz,13358940,Dan Buchholz,@recallnet,New York,dbuchholz30@gmail.com,27,9,81,2015-07-16T02:43:18Z
+steveruizok,23072548,Steve Ruiz,@tldraw ,"London, UK",steve@tldraw.com,3151,6,165,2016-10-26T08:12:27Z
+bw4sz,1208492,Benjamin Weinstein,@weecology ,Portland Oregon,,195,0,142,2011-11-20T15:49:53Z
+Kitenite,31864905,Kiet,Onlook,San Francisco,,246,23,62,2017-09-11T19:44:42Z

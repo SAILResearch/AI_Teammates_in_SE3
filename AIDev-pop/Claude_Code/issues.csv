@@ -1,0 +1,2144 @@
+id,number,title,user,user_id,state,created_at,closed_at,repo_url,html_url,body
+3164229012,94,Workflows Coming Soon - tools reimagined,guidedways,202437,closed,2025-06-20T19:42:16Z,2025-06-20T20:08:12Z,https://github.com/BeehiveInnovations/zen-mcp-server,https://github.com/BeehiveInnovations/zen-mcp-server/issues/94,"### Project Version
+
+5.5.0
+
+### Bug Description
+
+Coming shortly, will post to the `feature/workflows` branch if anyone's interested in trying this out till I merge.
+
+I've re-written the entire server from ground up, re-imagining the tools to in fact be workflows where these hand-hold Claude and guide it through a number of sequential steps where it performs the said task itself properly, and only when it's confidence isn't somewhat certain in the end does it invoke a second model (and invoking a second model is now optional just in case you're doing a tiny precommit etc). Any way, that alone will result in huge cost savings and get more value out of Claude (even Sonnet 4). Now, when it falls back to a second model, the related code it 'found along the way' is far more accurate in terms of context.
+
+### Relevant Log Output
+
+```shell
+
+```
+
+### Operating System
+
+macOS
+
+### Sanity Checks
+
+- [x] I have searched the existing issues and this is not a duplicate.
+- [x] I am using `GEMINI_API_KEY`
+- [x] I am using `OPENAI_API_KEY`
+- [x] I am using `OPENROUTER_API_KEY`
+- [x] I am using `CUSTOM_API_URL`"
+3128221404,47,feat: Add Unity 6 enhanced console log service with improved reliability,Saqoosha,27694,closed,2025-06-08T10:55:17Z,2025-06-09T21:57:28Z,https://github.com/CoderGamester/mcp-unity,https://github.com/CoderGamester/mcp-unity/pull/47,"## Summary
+- Implements Unity 6 enhanced console log service using internal APIs for more reliable log retrieval
+- Adds proper log type classification for shader errors and compile errors
+- Makes the implementation configurable via Unity Editor settings (default: safe event-based)
+- Correctly detects console clear events to keep internal logs synchronized with Unity's console window
+
+## Background
+The existing event-based console log implementation occasionally misses logs, particularly during rapid log generation or Unity's internal processes. This PR introduces an optional Unity 6 enhanced implementation that directly accesses Unity's internal LogEntries API for more reliable log retrieval.
+
+## Changes
+
+### 1. Unity 6 Enhanced Console Log Service
+- **File**: `Editor/Services/ConsoleLogsServiceUnity6.cs`
+- Uses Unity's internal `ConsoleWindowUtility` and `LogEntries` APIs via reflection
+- Properly separates message and stack trace using Unity's `callstackTextStartUTF16` field
+- Supports accurate log type classification including shader and compile errors
+- **Correctly detects console clear events**: Uses `ConsoleWindowUtility.consoleWindowChanged` event to detect when logs are cleared, ensuring our internal log storage stays synchronized with what's actually displayed in Unity's console window
+
+### 2. Log Type Classification Fix
+- **File**: `Editor/Services/LogEntryModeFlags.cs`
+- Discovered and documented Unity's internal mode flag patterns:
+  - Compiler warnings: `0x41000` (266240)
+  - Compiler errors: `0x42800` (272384)
+  - Shader errors: `0x40044` (262212)
+  - Runtime warnings: `0x804200` (8405504)
+  - Runtime errors: `0x804100` (8405248)
+- Fixes issue where shader/compile errors were incorrectly classified as ""Log""
+
+### 3. Configuration System
+- **File**: `Editor/UnityBridge/McpUnitySettings.cs`
+- Added `ConsoleLogServiceType` enum with two options:
+  - `EventBased` (default, safe) - Original implementation
+  - `Unity6Enhanced` (experimental) - New implementation using internal APIs
+- Configurable via Unity Editor settings window
+- Server restart required when changing the setting
+
+### 4. Documentation
+- **File**: `Editor/Services/Unity6InternalAPIReference.md`
+- Comprehensive documentation of Unity's internal APIs discovered through investigation
+- Includes mode flag patterns and UTF-16 string handling details
+
+## Testing
+Tested with various log types:
+- ✅ Regular logs with and without stack traces
+- ✅ Warnings and errors
+- ✅ Shader compilation errors
+- ✅ C# compilation errors
+- ✅ Runtime exceptions
+- ✅ Logs with Unicode characters and emojis
+- ✅ Console clear detection (logs are properly cleared when Unity console is cleared)
+
+## Important Notes
+- The Unity 6 enhanced implementation uses unofficial/internal Unity APIs accessed via reflection
+- Default remains the safe event-based implementation
+- Unity 6+ required for the enhanced implementation (automatically falls back on older versions)
+- Server restart required when switching implementations
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+*Created with [Palmier](https://www.palmier.io)*
+
+<!-- This is an auto-generated comment: release notes by coderabbit.ai -->
+
+## Summary by CodeRabbit
+
+- **New Features**
+  - Added a selectable option in the server settings to choose between standard and enhanced console log services, with user guidance dialogs based on Unity version.
+  - Introduced an enhanced console log service for Unity 6+, providing more reliable log retrieval by leveraging internal Unity APIs.
+  - Added new configuration options for selecting the preferred console log service implementation.
+
+- **Documentation**
+  - Added internal API reference documentation detailing Unity 6 log entry structures and mode flags.
+
+- **Chores**
+  - Updated the ignore list to exclude local Claude settings files from version control.
+
+<!-- end of auto-generated comment: release notes by coderabbit.ai -->"
+3151381760,50,feat: Add search_console_logs tool for Unity log searching,Saqoosha,27694,closed,2025-06-16T21:29:46Z,2025-06-16T21:31:44Z,https://github.com/CoderGamester/mcp-unity,https://github.com/CoderGamester/mcp-unity/pull/50,"## Summary
+Add comprehensive Unity console log search functionality as an MCP tool, providing powerful search capabilities for Unity developers using Claude Code and other MCP clients.
+
+## 🔍 Features Added
+
+### Core Search Capabilities
+- **Keyword Search**: Partial text matching with configurable case sensitivity
+- **Regular Expression Search**: Full regex pattern support for advanced queries
+- **Log Type Filtering**: Filter by error, warning, or info log types
+- **Stack Trace Control**: Optional inclusion/exclusion for token optimization
+- **Pagination**: Offset and limit support for handling large result sets
+
+### Implementation Details
+- **SearchConsoleLogsTool.cs**: Unity-side tool implementation
+- **searchConsoleLogsTool.ts**: Node.js MCP server integration with Zod validation  
+- **Integrated Architecture**: Works with existing ConsoleLogsService infrastructure
+- **Dual Compatibility**: Supports both Unity 2022.3 and Unity 6 implementations
+- **Tool-based Approach**: Optimized for Claude Code compatibility over resource-based approach
+
+### Enhanced Console Log Service
+- **Configurable Service Types**: Added `ConsoleLogServiceType` enum with `EventBased` (default) and `Unity6Enhanced` options
+- **Unity 6 Enhanced Implementation**: Uses internal Unity APIs for better reliability in Unity 6+
+- **LogEntryModeFlags**: Comprehensive support for Unity's internal log mode flags
+- **Improved Classification**: Better handling of shader errors, compile errors, and runtime exceptions
+- **UI Configuration**: Added settings in McpUnityEditorWindow with appropriate warnings for internal API usage
+
+## 🧪 Testing Results
+
+All search functionality has been thoroughly tested:
+
+- ✅ **Keyword search**: `shader`, `texture`, `Player` 
+- ✅ **Regex search**: `GameObject.*not found`, `^\[MCP\].*`
+- ✅ **Log type filtering**: error, warning, info
+- ✅ **Case sensitivity**: both sensitive and insensitive modes
+- ✅ **Stack trace**: inclusion/exclusion options
+- ✅ **Pagination**: offset and limit parameters
+- ✅ **Error handling**: invalid regex patterns handled gracefully
+- ✅ **Log service types**: Both `EventBased` and `Unity6Enhanced` implementations
+
+## 📋 Usage Examples
+
+```typescript
+// Search for shader-related errors
+{
+  ""tool"": ""search_console_logs"",
+  ""parameters"": {
+    ""keyword"": ""shader"",
+    ""logType"": ""error"",
+    ""limit"": 10,
+    ""includeStackTrace"": false
+  }
+}
+
+// Advanced regex search
+{
+  ""tool"": ""search_console_logs"", 
+  ""parameters"": {
+    ""regex"": ""GameObject.*not found"",
+    ""caseSensitive"": false,
+    ""limit"": 20
+  }
+}
+```
+
+## 🎯 Benefits
+
+- **Developer Productivity**: Quickly find specific log entries without manual scrolling
+- **Debug Efficiency**: Use regex patterns for complex log analysis
+- **Token Optimization**: Control stack trace inclusion to manage LLM token usage
+- **Scalability**: Pagination handles projects with thousands of log entries
+- **Flexibility**: Multiple search modes for different debugging scenarios
+- **Enhanced Reliability**: Unity 6 implementation captures logs that might be missed by event-based approach
+- **Improved Classification**: Better categorization of different error types for more accurate filtering
+
+This tool significantly enhances the Unity development experience when using Claude Code for debugging and log analysis.
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+*Created with [Palmier](https://www.palmier.io)*
+
+<!-- This is an auto-generated comment: release notes by coderabbit.ai -->
+
+## Summary by CodeRabbit
+
+- **New Features**
+  - Added an option in the server tab to select between two console log service modes: ""EventBased"" (safe, may miss logs) and ""Unity6Enhanced"" (experimental, more reliable, requires Unity 6+ and a server restart).
+  - Enhanced console log retrieval for Unity 6+ using internal APIs, improving reliability and supporting advanced filtering and pagination.
+- **Documentation**
+  - Added internal API reference documentation for Unity 6 log entry structures and mode flags.
+- **Chores**
+  - Updated configuration and metadata files to support new console log service options and implementations.
+
+<!-- end of auto-generated comment: release notes by coderabbit.ai -->"
+3151384561,51,feat: Add search_console_logs tool for Unity log searching,Saqoosha,27694,closed,2025-06-16T21:30:50Z,2025-06-16T21:31:17Z,https://github.com/CoderGamester/mcp-unity,https://github.com/CoderGamester/mcp-unity/pull/51,"## Summary
+Add comprehensive Unity console log search functionality as an MCP tool, providing powerful search capabilities for Unity developers using Claude Code and other MCP clients.
+
+## 🔍 Features Added
+
+### Core Search Capabilities
+- **Keyword Search**: Partial text matching with configurable case sensitivity
+- **Regular Expression Search**: Full regex pattern support for advanced queries
+- **Log Type Filtering**: Filter by error, warning, or info log types
+- **Stack Trace Control**: Optional inclusion/exclusion for token optimization
+- **Pagination**: Offset and limit support for handling large result sets
+
+### Implementation Details
+- **SearchConsoleLogsTool.cs**: Unity-side tool implementation
+- **searchConsoleLogsTool.ts**: Node.js MCP server integration with Zod validation  
+- **Integrated Architecture**: Works with existing ConsoleLogsService infrastructure
+- **Dual Compatibility**: Supports both Unity 2022.3 and Unity 6 implementations
+- **Tool-based Approach**: Optimized for Claude Code compatibility over resource-based approach
+
+### Enhanced Console Log Service
+- **Configurable Service Types**: Added `ConsoleLogServiceType` enum with `EventBased` (default, safe) and `Unity6Enhanced` (experimental) options
+- **Unity 6 Support**: Implemented specialized service using internal Unity APIs for better reliability in Unity 6
+- **UI Configuration**: Added settings in McpUnityEditorWindow with appropriate warnings about internal API usage
+- **Automatic Fallback**: Falls back to safe implementation on pre-Unity 6 versions
+
+### LogEntry Mode Flags Support
+- **Comprehensive Flag Mapping**: Added `LogEntryModeFlags.cs` with Unity's internal mode flag constants
+- **Improved Classification**: Better handling of compiler errors, shader errors, and runtime exceptions
+- **Documentation**: Added detailed `Unity6InternalAPIReference.md` with complete API documentation
+
+## 🧪 Testing Results
+
+All search functionality has been thoroughly tested:
+
+- ✅ **Keyword search**: `shader`, `texture`, `Player` 
+- ✅ **Regex search**: `GameObject.*not found`, `^\[MCP\].*`
+- ✅ **Log type filtering**: error, warning, info
+- ✅ **Case sensitivity**: both sensitive and insensitive modes
+- ✅ **Stack trace**: inclusion/exclusion options
+- ✅ **Pagination**: offset and limit parameters
+- ✅ **Error handling**: invalid regex patterns handled gracefully
+- ✅ **Service types**: Both EventBased and Unity6Enhanced implementations
+
+## 📋 Usage Examples
+
+```typescript
+// Search for shader-related errors
+{
+  ""tool"": ""search_console_logs"",
+  ""parameters"": {
+    ""keyword"": ""shader"",
+    ""logType"": ""error"",
+    ""limit"": 10,
+    ""includeStackTrace"": false
+  }
+}
+
+// Advanced regex search
+{
+  ""tool"": ""search_console_logs"", 
+  ""parameters"": {
+    ""regex"": ""GameObject.*not found"",
+    ""caseSensitive"": false,
+    ""limit"": 20
+  }
+}
+```
+
+## 🎯 Benefits
+
+- **Developer Productivity**: Quickly find specific log entries without manual scrolling
+- **Debug Efficiency**: Use regex patterns for complex log analysis
+- **Token Optimization**: Control stack trace inclusion to manage LLM token usage
+- **Scalability**: Pagination handles projects with thousands of log entries
+- **Flexibility**: Multiple search modes for different debugging scenarios
+- **Enhanced Reliability**: Unity 6 implementation captures logs that might be missed by event-based approach
+
+This tool significantly enhances the Unity development experience when using Claude Code for debugging and log analysis.
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+*Created with [Palmier](https://www.palmier.io)*
+
+<!-- This is an auto-generated comment: release notes by coderabbit.ai -->
+
+## Summary by CodeRabbit
+
+- **New Features**
+  - Added advanced search functionality for Unity console logs, allowing keyword or regex searches, log type filtering, case sensitivity, stack trace inclusion, and pagination.
+  - Introduced a new tool for searching console logs with configurable options and structured results.
+  - Added support for an enhanced console log service in Unity 6+, providing more reliable log retrieval via internal Unity APIs.
+  - Users can now select the console log service implementation from the server tab in the MCP Unity Editor window.
+
+- **Improvements**
+  - Settings now include an option to choose between standard and enhanced console log services (requires server restart).
+  - Enhanced visibility of available resources and improved debug logging for server resource handling.
+
+- **Documentation**
+  - Added internal API reference documentation for Unity 6 log entry structure and mode flags.
+
+- **Chores**
+  - Updated ignore rules to exclude Claude settings from version control.
+
+<!-- end of auto-generated comment: release notes by coderabbit.ai -->"
+2978543675,197,Create postgre with customized arguments,npuichigo,11533479,closed,2025-04-08T04:15:23Z,2025-04-21T01:26:27Z,https://github.com/JoshuaC215/agent-service-toolkit,https://github.com/JoshuaC215/agent-service-toolkit/issues/197,"For example, some values in settings is not used, like `POSTGRES_POOL_SIZE`"
+2996358406,205,Fixing mypy,maver1ck,4006010,closed,2025-04-15T13:02:05Z,2025-04-21T16:56:19Z,https://github.com/JoshuaC215/agent-service-toolkit,https://github.com/JoshuaC215/agent-service-toolkit/pull/205,"Fixes #199 
+
+Done:
+- all mypy errors with exception for changes from https://github.com/JoshuaC215/agent-service-toolkit/pull/202
+- ignore of streamlit_app.py
+- adding mypy to Github action
+
+Result:
+```
+❯ mypy src  
+src/memory/postgres.py:37: error: Item ""None"" of ""SecretStr | None"" has no attribute ""get_secret_value""  [union-attr]
+src/memory/postgres.py:71: error: Argument ""conn"" to ""AsyncPostgresSaver"" has incompatible type ""AsyncConnectionPool[AsyncConnection[tuple[Any, ...]]]""; expected ""AsyncConnection[dict[str, Any]] | AsyncConnectionPool[AsyncConnection[dict[str, Any]]]""  [arg-type]
+src/memory/postgres.py:72: error: Incompatible return value type (got ""AsyncPostgresSaver"", expected ""AbstractAsyncContextManager[AsyncPostgresSaver, bool | None]"")  [return-value]
+Found 3 errors in 1 file (checked 30 source files)
+```"
+2922672896,946,Implement OmniMCP for Claude computer control,abrichr,774615,closed,2025-03-16T00:43:19Z,2025-03-16T00:52:57Z,https://github.com/OpenAdaptAI/OpenAdapt,https://github.com/OpenAdaptAI/OpenAdapt/pull/946,"# OmniMCP Implementation
+
+This PR adds OmniMCP, a system that enables Claude to control the computer through the Model Control Protocol (MCP). OmniMCP combines OmniParser's visual understanding with Claude's natural language capabilities to automate UI interactions.
+
+## Key Components
+
+1. **OmniParser Adapter** (`openadapt/adapters/omniparser.py`)
+   - Client for communicating with OmniParser server
+   - Processes screenshots to detect UI elements
+   - Handles API communication with the remote service
+
+2. **OmniMCP Core** (`openadapt/omnimcp.py`)
+   - Manages the visual state of the screen
+   - Provides UI interaction methods (click, type, etc.)
+   - Implements natural language processing with Claude
+   - Supports normalized or absolute coordinates
+
+3. **MCP Server** (`openadapt/mcp/server.py`)
+   - Implements the Model Control Protocol
+   - Exposes UI automation tools to Claude
+   - Enables structured tool usage
+
+4. **CLI Runner** (`openadapt/run_omnimcp.py`)
+   - Provides multiple modes (CLI, server, debug)
+   - Command-line interface using `fire`
+   - Extensive documentation and usage examples
+
+## Usage
+
+```bash
+# Run CLI mode (direct command input)
+python -m openadapt.run_omnimcp cli
+
+# Run MCP server (for Claude Desktop)
+python -m openadapt.run_omnimcp server
+
+# Run in debug mode to visualize screen elements
+python -m openadapt.run_omnimcp debug
+```
+
+## Implementation Details
+
+- Uses `pynput` for keyboard and mouse control
+- Integrates with existing OpenAdapt utilities
+- Supports debugging with visual element highlighting
+- Comprehensive documentation and type hints
+- Configurable through command line or `config.py`
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+2922676503,947,OmniMCP: Direct Host Control Bridge Between OmniParser and Claude MCP,abrichr,774615,open,2025-03-16T00:52:22Z,,https://github.com/OpenAdaptAI/OpenAdapt,https://github.com/OpenAdaptAI/OpenAdapt/pull/947,"# OmniMCP: Direct Host Control Bridge Between OmniParser and Claude MCP
+
+## What Makes OmniMCP Unique
+
+OmniMCP bridges Microsoft's OmniParser (for UI detection) with Anthropic's Model Control Protocol (MCP) to enable direct host computer control:
+
+- **Automatic OmniParser Deployment**: Deploys OmniParser to AWS automatically behind the scenes
+- **Direct Host Control**: Works on the host machine itself, not in a virtual machine
+- **Cross-Platform Support**: Uses pynput primitives for OS-agnostic computer control
+- **MCP Integration**: Embeds rich UI element descriptions directly into the MCP protocol
+- **Claude's Intelligence Loop**: Leverages Claude's reasoning rather than a custom decision loop
+
+Unlike Computer Use (which runs in a VM with custom tools), OmniMCP provides a lightweight bridge that runs directly on the host and captures the entire screen, making it more flexible for general automation tasks outside a sandbox.
+
+## Key Improvements
+
+### Fixed OmniParser Auto-Deployment
+- Corrected import paths for deploy module
+- Added subnet creation for VPCs without existing subnets
+- Fixed key path handling to avoid permission issues
+- Enhanced EC2 instance discovery
+- Improved error handling and AWS resource management
+
+### Modular Package Structure
+- Self-contained directory with minimal dependencies
+- Clean separation from main OpenAdapt codebase
+- Simple configuration system focused on deployment
+
+### Three Operational Modes
+
+**CLI Mode**:
+- Interactive command-line interface for entering commands
+- Maintains a session where you can issue multiple commands sequentially
+- Purpose: Direct human interaction for testing or simple automation
+
+**Server Mode**:
+- Runs as a persistent server exposing UI automation via MCP protocol
+- Listens for external connections rather than accepting direct input
+- Purpose: Integration point for applications that need UI automation capabilities
+
+**Debug Mode**:
+- One-time operation that visualizes and analyzes the current screen
+- Creates images showing detected UI elements with bounding boxes
+- Purpose: Troubleshooting what UI elements OmniParser detects
+
+## Installation and Usage
+
+```bash
+# Install from within OpenAdapt repo
+cd OpenAdapt/omnimcp
+./install.sh  # (Unix/Mac) or install.bat (Windows)
+
+# Run in CLI mode with OmniParser auto-deployment 
+omnimcp cli --auto-deploy-parser --skip-confirmation
+
+# Run as MCP server
+omnimcp server --auto-deploy-parser --skip-confirmation
+
+# Debug mode for visualizing UI elements
+omnimcp debug --auto-deploy-parser --skip-confirmation
+```
+
+## AWS Requirements
+
+For OmniParser deployment to work properly:
+1. AWS credentials in .env file
+2. Default VPC (subnet will be created if needed)
+3. EC2 permissions (instances, security groups, key pairs)
+4. GPU instance quota (g4dn.xlarge - T4 GPU)
+
+## Key Implementation Files
+
+- `omnimcp/omnimcp.py`: Core implementation
+- `omnimcp/adapters/omniparser.py`: OmniParser client and deployment logic
+- `omnimcp/mcp/server.py`: MCP server implementation
+- `deploy/models/omniparser/deploy.py`: AWS deployment script with fixes
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+3077614087,63,Add Dot Notation Access for Output Hash in Workflow Configurations,obie,3908,closed,2025-05-20T16:32:29Z,2025-05-24T17:34:32Z,https://github.com/Shopify/roast,https://github.com/Shopify/roast/issues/63,"## Description
+
+Currently, accessing nested values in the workflow output hash requires using bracket notation with string keys:
+
+```yaml
+until: ""output['update_fix_count']['fixes_applied'] >= 5 || output['select_next_issue']['no_issues_left'] == true""
+```
+
+This syntax becomes verbose and error-prone as nesting levels increase. We should introduce a more elegant dot notation access pattern that simplifies these expressions:
+
+```yaml
+until: ""output.update_fix_count.fixes_applied >= 5 || output.select_next_issue.no_issues_left == true""
+```
+
+## Implementation Details
+
+1. **Create a wrapper class** around the output hash that:
+   - Maintains compatibility with the existing hash access pattern
+   - Provides method_missing implementation to support dot notation
+   - Automatically converts nested hashes to the same wrapper class
+   - Handles nil values gracefully to prevent NoMethodError exceptions
+
+2. **Replace direct hash access** in workflow execution with the wrapper:
+   ```ruby
+   # Before
+   workflow.output = {}
+   
+   # After
+   workflow.output = DotAccessHash.new({})
+   ```
+
+3. **Ensure serialization compatibility** so that the wrapper:
+   - Can be properly serialized when saving session state
+   - Maintains dot notation access when deserializing
+
+## Benefits
+
+- **Improved readability**: Expressions in workflow YAML become more concise and intuitive
+- **Reduced errors**: Less chance of typos in string keys or missing quotes
+- **Better IDE support**: Most editors provide better autocomplete for dot notation than bracket notation
+- **Consistency**: Aligns with modern Ruby SDK patterns found in libraries like Stripe
+
+## Considerations
+
+- Ensure backward compatibility with existing workflows using bracket notation
+- Address edge cases where key names contain special characters or match existing method names
+- Add thorough documentation and examples of the new syntax
+- Consider adding proper type conversion for common value types (e.g., booleans, numbers)
+
+## Example Usage
+
+```yaml
+# Current syntax
+if: ""output['analysis']['complexity_score'] > 10""
+until: ""output['processed_count'] >= output['total_files']""
+
+# New dot notation
+if: ""output.analysis.complexity_score > 10""
+until: ""output.processed_count >= output.total_files""
+```
+"
+3101394422,102,User input step,obie,3908,closed,2025-05-29T20:19:48Z,2025-06-12T15:12:07Z,https://github.com/Shopify/roast,https://github.com/Shopify/roast/issues/102,"## Summary
+Implement a basic CLI input step type that allows workflows to pause and collect information from users during execution.
+
+## Background
+As discussed with @styrmis and @CarineIsAwesome at Summit 2025, there's a need for workflows to interact with users during execution. This issue focuses on the foundational CLI implementation.
+
+## Scope (CLI Only)
+This issue covers only the basic CLI input functionality. Remote channels (Slack, email, web) are tracked separately.
+
+## Core Requirements
+
+### Step Type Definition
+```yaml
+steps:
+  - input:
+      prompt: ""Enter your username:""  # Required
+      name: username                  # Optional - stores value in state
+      type: text                      # Default type
+      required: true                  # Default: false
+      default: ""admin""               # Optional default value
+      timeout: 300                   # Optional timeout in seconds
+```
+
+### Basic Input Types
+
+1. **Text Input** (default)
+   ```yaml
+   - input:
+       prompt: ""Enter project name:""
+       name: project_name
+   ```
+
+2. **Boolean/Confirmation**
+   ```yaml
+   - input:
+       prompt: ""Continue with deployment?""
+       type: boolean
+       default: false
+   ```
+
+3. **Choice/Select**
+   ```yaml
+   - input:
+       prompt: ""Select environment:""
+       type: choice
+       options:
+         - development
+         - staging
+         - production
+   ```
+
+4. **Password/Secret**
+   ```yaml
+   - input:
+       prompt: ""Enter password:""
+       type: password
+       name: user_password
+   ```
+
+### Implementation Details
+
+1. **CLI Integration**
+   - Use existing `cli-ui` gem for prompts
+   - Support for TTY and non-TTY environments
+   - Graceful handling when no TTY available
+
+2. **State Management**
+   - Store named inputs in workflow state
+   - Inputs accessible via `#{state.input_name}`
+   - Anonymous inputs (no name) are collected but not stored
+
+3. **Validation**
+   - Required field validation
+   - Type-specific validation (boolean, choice)
+   - Clear error messages for invalid input
+
+4. **Timeout Handling**
+   - Optional timeout with graceful failure
+   - Default to no timeout for CLI inputs
+   - Clear message when timeout occurs
+
+## Success Criteria
+- [ ] Basic text input working via CLI
+- [ ] Boolean (yes/no) prompts working
+- [ ] Choice selection with arrow keys
+- [ ] Password input with masking
+- [ ] Timeout handling implemented
+- [ ] State storage for named inputs
+- [ ] Non-TTY fallback behavior
+- [ ] Unit and integration tests
+- [ ] Documentation with examples
+
+## Example Use Case
+```yaml
+name: deploy_with_confirmation
+steps:
+  - input:
+      prompt: ""Which environment?""
+      name: env
+      type: choice
+      options: [dev, staging, prod]
+  
+  - input:
+      prompt: ""Enter deployment tag:""
+      name: tag
+      required: true
+  
+  - input:
+      prompt: ""Deploy #{state.tag} to #{state.env}?""
+      type: boolean
+      
+  - bash:
+      command: ""echo 'Deploying #{state.tag} to #{state.env}'""
+      when: ""#{state.previous == true}""
+```
+
+## Related Issues
+- #240: Advanced input types (file, numeric, date, multi-select)
+- #237: Slack integration for input steps
+- #238: Email integration for input steps
+- #239: Web UI for input steps
+- #241: Remote input channel orchestration
+- #242: Advanced input features and patterns
+
+## Notes
+- Keep this implementation simple and focused on CLI
+- Use existing Roast patterns (similar to prompt steps)
+- This forms the foundation for all future input features
+
+## Milestone
+v0.5 (Core Platform Features)"
+3137324629,224,Exponential backoff for failures,obie,3908,open,2025-06-11T15:47:18Z,,https://github.com/Shopify/roast,https://github.com/Shopify/roast/issues/224,"## Description
+Implement exponential backoff retry strategies for handling transient failures.
+
+## Acceptance Criteria
+- [ ] Configurable backoff strategies
+- [ ] Maximum retry limits
+- [ ] Jitter implementation
+- [ ] Per-step retry configuration
+
+Epic: epic/reliability
+
+## Context
+Exponential backoff would improve reliability when dealing with rate-limited or temporarily unavailable services."
+3137325983,227,Configurable retry policies,obie,3908,open,2025-06-11T15:47:47Z,,https://github.com/Shopify/roast,https://github.com/Shopify/roast/issues/227,"## Description
+Enable flexible retry policy configuration for different failure scenarios.
+
+## Acceptance Criteria
+- [ ] Multiple retry strategy types
+- [ ] Condition-based retry logic
+- [ ] Custom retry handlers
+- [ ] Retry metrics and logging
+
+Epic: epic/reliability
+
+## Context
+Configurable retry policies would allow fine-tuned error handling based on specific failure types."
+3158776739,284,feat: Implement exponential backoff retry mechanism for transient failures,parruda,2799560,closed,2025-06-19T03:25:22Z,2025-06-24T14:22:30Z,https://github.com/Shopify/roast,https://github.com/Shopify/roast/pull/284,"## Summary
+
+Implements retry strategies for handling transient failures as specified in issue #224. This enhancement improves reliability when dealing with rate-limited or temporarily unavailable services by providing configurable retry mechanisms with exponential, linear, and constant delay strategies.
+
+## Key Features
+
+### Multiple Retry Strategies
+- **Exponential Backoff**: Delay doubles after each retry (with optional jitter)
+- **Linear Backoff**: Delay increases linearly by a fixed increment
+- **Constant Delay**: Fixed delay between retries
+- **Null Strategy**: No retry (for testing/disabling)
+
+### Per-Step Configuration
+Steps are retryable by default and can be configured individually:
+
+```yaml
+# Simple configuration - uses exponential backoff with defaults
+step_name:
+  retry: 3
+
+# Detailed configuration
+step_name:
+  retry:
+    strategy: exponential  # or 'linear', 'constant'
+    max_attempts: 5
+    base_delay: 1.0       # Initial delay in seconds
+    max_delay: 60.0       # Maximum delay cap
+    multiplier: 2.0       # For exponential strategy
+    increment: 1.5        # For linear strategy
+    jitter: true          # For exponential strategy only (adds up to 25% randomization)
+
+# Disable retry for a specific step
+step_name:
+  retry: false
+  # or
+  idempotent: false
+```
+
+### Automatic Retry for Common Errors
+The system automatically retries these transient errors:
+- Network timeouts: `Net::ReadTimeout`, `Net::OpenTimeout`, `Timeout::Error`
+- Rate limiting errors (containing ""rate limit"")
+- Temporary unavailability errors
+- General server errors
+
+## Implementation Details
+
+- **RetryStrategy**: Base class for all retry strategies
+- **RetryCoordinator**: Orchestrates retry logic
+- **RetryDecider**: Determines if an error is retryable
+- **RetryExecutor**: Executes steps with retry logic
+- **StrategyFactory**: Creates appropriate retry strategy from configuration
+- **ErrorHandler**: Integration point with the workflow system
+
+## Testing Instructions
+
+### Unit Tests
+```bash
+# Run all retry-specific tests
+bundle exec ruby -Itest test/roast/retry/constant_delay_strategy_test.rb
+bundle exec ruby -Itest test/roast/retry/exponential_backoff_strategy_test.rb
+bundle exec ruby -Itest test/roast/retry/linear_backoff_strategy_test.rb
+bundle exec ruby -Itest test/roast/retry/retry_coordinator_test.rb
+bundle exec ruby -Itest test/roast/retry/retry_decider_test.rb
+bundle exec ruby -Itest test/roast/retry/retry_executor_test.rb
+bundle exec ruby -Itest test/roast/retry/strategy_factory_test.rb
+```
+
+### Integration Tests
+```bash
+# Run workflow tests with retry scenarios
+bundle exec ruby -Itest test/roast/retry/integration_test.rb
+bundle exec ruby -Itest test/roast/workflow/error_handler_retry_test.rb
+```
+
+### Manual Testing
+1. Run the example retry demo:
+```bash
+bin/roast run examples/retry_demo/workflow.yml
+```
+
+2. Create a test workflow with intentional failures:
+```yaml
+steps:
+  - failing_step: ""Simulate a transient failure""
+
+failing_step:
+  model: ""claude-3-haiku-20240307""
+  retry:
+    strategy: exponential
+    max_attempts: 3
+    base_delay: 0.5
+    jitter: true
+```
+
+3. Observe retry behavior with different strategies and configurations
+
+## Example Workflows
+
+See `examples/retry_demo/workflow.yml` for a complete example demonstrating various retry configurations.
+
+## Closes
+
+Closes #224
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+3014273187,2392,Provide example on correct configuration for inline templates,Tallyb,7386255,closed,2025-04-23T14:40:11Z,2025-05-25T14:16:25Z,https://github.com/angular-eslint/angular-eslint,https://github.com/angular-eslint/angular-eslint/issues/2392,"Browsing thru the docs, asking all LLMs, and I still cannot figure out the right way to enable rules for inline templates. "
+2895798271,328,Improve firewall to avoid affecting existing iptables rules,aledbf,161571,open,2025-03-05T00:46:45Z,,https://github.com/anthropics/claude-code,https://github.com/anthropics/claude-code/pull/328,"This patch enhances the firewall configuration by adopting a more targeted approach with custom chains (CLAUDE_INPUT, CLAUDE_OUTPUT, CLAUDE_FORWARD) rather than flushing all existing IPtables rules. This strategy prevents disruption to other services, such as Docker, that depend on iptables. The patch additionally introduces support for VS Code and Cursor by incorporating necessary domains and Azure IP ranges for the VS Code Marketplace.
+Further improvements include enhanced error handling, more thorough logging, detection of network interfaces, and support for AWS S3 IP ranges. The script now gracefully manages failures instead of exiting completely, making it more resilient in diverse environments."
+3140588598,162,Use GitHub display name in Co-authored-by trailers instead of username,toro-ponz,20720712,closed,2025-06-12T14:43:22Z,2025-06-12T22:16:38Z,https://github.com/anthropics/claude-code-action,https://github.com/anthropics/claude-code-action/issues/162,"First of all, thank you for publish this amazing project!
+
+## Enhancement
+
+Currently, when Claude creates commits with co-author attribution, it uses the GitHub username in the `Co-authored-by` trailer:
+```
+Co-authored-by: {username}
+```
+
+However, commits created through the GitHub web interface use the user's display name (public profile name):
+```
+Co-authored-by: {displayName}
+```
+
+This inconsistency causes the same user to appear as different contributors in commit history when different name formats are used, making it appear as if they are separate individuals.
+
+## Better Behavior
+
+Claude should use the GitHub user's display name (from their public profile) in `Co-authored-by` trailers, matching the behavior of GitHub's web interface.
+
+"
+3147712590,173,feat: option to add Claude as co-author to commits made by the action,tomoish,103555868,closed,2025-06-15T15:41:03Z,2025-06-24T14:53:03Z,https://github.com/anthropics/claude-code-action,https://github.com/anthropics/claude-code-action/issues/173,"### Enhancement
+When the Claude Code Action pushes changes it authors the commit as GitHub Actions.
+This makes it impossible to see—at a glance—that the change was produced by Claude, and it prevents GitHub’s UI from showing Claude as a co-author.
+
+### proposal
+* Add a new optional input in `action.yml`
+* When the flag is true, append
+  ```
+  Co-Authored-By: Claude <noreply@anthropic.com>
+  ```
+  to each commit message. GitHub recognises this trailer and displays Claude in the ""Co-authors"" list."
+2955888602,24138,[Bug] pulsar-admin log showed http 412 error when split bundle,erictarrence,96747362,open,2025-03-28T11:26:36Z,,https://github.com/apache/pulsar,https://github.com/apache/pulsar/issues/24138,"### Search before asking
+
+- [x] I searched in the [issues](https://github.com/apache/pulsar/issues) and found nothing similar.
+
+
+### Read release policy
+
+- [x] I understand that unsupported versions don't get bug fixes. I will attempt to reproduce the issue on a supported version of Pulsar client and Pulsar broker.
+
+
+### Version
+
+Pulsar Version:4.0.2
+OS version:AlmaLinux release 9.2 (Turquoise Kodkod)
+Kubernetes  Version: v1.30.0
+
+
+
+### Minimal reproduce step
+
+when  I split bundle with pulsar-admin, the puladmin log show: ""Failed to perform http put request: javax.ws.rs.ClientErrorException: HTTP 412 {""reason"":""Cannot find bundle in the bundles list""} ""
+
+
+```
+pulsar-toolset-0:/pulsar$ bin/pulsar-admin namespaces bundles public/default
+{
+  ""boundaries"" : [ ""0x00000000"", ""0x10000000"", ""0x20000000"", ""0x30000000"", ""0x40000000"", ""0x50000000"", ""0x60000000"", ""0x70000000"", ""0x80000000"", ""0x90000000"", ""0xa0000000"", ""0xb0000000"", ""0xc0000000"", ""0xd0000000"", ""0xe0000000"", ""0xf0000000"", ""0xffffffff"" ],
+  ""numBundles"" : 16
+}
+pulsar-toolset-0:/pulsar$ bin/pulsar-admin namespaces split-bundle --bundle 0x70000000 public/default
+2025-03-28T11:08:31,201+0000 [AsyncHttpClient-7-1] WARN  org.apache.pulsar.client.admin.internal.BaseResource - [http://pulsar-proxy:80/admin/v2/namespaces/public/default/0x70000000/split?unload=false] Failed to perform http put request: javax.ws.rs.ClientErrorException: HTTP 412 {""reason"":""Invalid bundle range: 0x70000000""}
+Invalid bundle range: 0x70000000
+
+pulsar-toolset-0:/pulsar$ bin/pulsar-admin namespaces split-bundle --bundle 0x7000000_0xa0000000 public/default
+2025-03-28T11:12:36,238+0000 [AsyncHttpClient-7-1] WARN  org.apache.pulsar.client.admin.internal.BaseResource - [http://pulsar-proxy:80/admin/v2/namespaces/public/default/0x7000000_0xa0000000/split?unload=false] Failed to perform http put request: javax.ws.rs.ClientErrorException: HTTP 412 {""reason"":""Cannot find bundle in the bundles list""}
+Cannot find bundle in the bundles list
+
+Reason: Cannot find bundle in the bundles list
+```
+
+
+### What did you expect to see?
+
+I expect I can refer to the following article to  split the bundle
+ 
+ https://pulsar.apache.org/docs/4.0.x/concepts-broker-load-balancing-quick-start/#configure-broker-load-balancer-to-run-manually
+
+### What did you see instead?
+
+bin/pulsar-admin namespaces split-bundle --bundle 0x70000000 public/default
+2025-03-28T11:08:31,201+0000 [AsyncHttpClient-7-1] WARN  org.apache.pulsar.client.admin.internal.BaseResource - [http://pulsar-proxy:80/admin/v2/namespaces/public/default/0x70000000/split?unload=false] Failed to perform http put request: javax.ws.rs.ClientErrorException: HTTP 412 {""reason"":""Invalid bundle range: 0x70000000""}
+Invalid bundle range: 0x70000000
+
+Reason: Invalid bundle range: 0x70000000
+
+
+### Anything else?
+
+_No response_
+
+### Are you willing to submit a PR?
+
+- [ ] I'm willing to submit a PR!"
+2914813508,15292,Deploy,artsyit,541332,closed,2025-03-12T18:22:44Z,2025-03-14T13:12:54Z,https://github.com/artsy/force,https://github.com/artsy/force/pull/15292,This is an automatically generated release PR!
+2930332785,15314,refactor(ArtworkFilter): migrate more tests from Enzyme to RTL,anandaroop,140521,closed,2025-03-19T03:14:49Z,2025-03-21T20:48:08Z,https://github.com/artsy/force,https://github.com/artsy/force/pull/15314,"The type of this PR is: **Refactor**
+
+### Description
+
+Continuing from https://github.com/artsy/force/pull/15294 this migrates 8 more specs from Enzyme to RTL, with the help of Claude Code and $6.33.
+
+This time, since I wasn't cherry-picking the easiest specs, I found that I had to do a little more baby-sitting and modifying of Claude Code's outputs. But still felt very smooth and worthwhile.
+
+With this, all of the filter facets for the artwork grid have been migrated.
+
+(There are a few more helper components to be converted: `ShowMore`, `ArtworkSortFilter`, `FilterExpandable`. Will keep that for a separate PR since it may look different than the boilerplate changes in this PR)
+
+"
+3012276398,199,detect-secrets: How to resolve,scottschreckengaust,345885,closed,2025-04-22T22:38:01Z,2025-05-01T22:21:30Z,https://github.com/awslabs/mcp,https://github.com/awslabs/mcp/issues/199,"### Describe the issue
+
+When a secret is detected, there should be instructions on how to resolve.
+
+```shell
+% pip install detect-secrets
+% detect-secrets scan --baseline .secrets.baseline # which adds detected secrets to the baseline.
+% detect-secrets audit .secrets.baseline # to deal with updates in the baseline.
+```
+
+
+### Links
+
+https://github.com/Yelp/detect-secrets"
+3043459746,274,RFC: Publish Container Images,scottschreckengaust,345885,closed,2025-05-06T16:56:40Z,2025-05-09T01:14:47Z,https://github.com/awslabs/mcp,https://github.com/awslabs/mcp/issues/274,"### Is this related to an existing feature request or issue?
+
+_No response_
+
+### Summary
+
+Users must currently build images to use them. This is to publish images to well known registries.
+
+### Use case
+
+Allow a pull without a build.
+
+### Proposal
+
+Publish images to:
+
+* AWS Public ECR Gallery
+* GitHub Container Registry
+* DockerHub
+
+### Out of scope
+
+The priority of tool compatibility will be:
+
+1. `docker`
+2. `podman`
+3. `finch`
+
+### Potential challenges
+
+Ensuring attestations, sbom, and labels for specific versions within the monorepo.
+
+### Dependencies and Integrations
+
+_No response_
+
+### Alternative solutions
+
+```markdown
+
+```"
+3043556090,275,(cost analysis mcp server): analyze terraform module resources,alexa-perlov,56009415,closed,2025-05-06T17:39:28Z,2025-05-09T18:56:02Z,https://github.com/awslabs/mcp,https://github.com/awslabs/mcp/issues/275,"### Describe the feature
+
+Currently, the cost analysis mcp server is able to recognize terraform aws and awscc resources, however it is not able to recognize resources from terraform module blocks. Will add a feature to be able to understand aws resources based on the module block source. 
+
+### Use Case
+
+Module blocks are very common in terraform code and to get a more wholistic understanding of a terraform project's cost analysis, it will be important to analyze the module block as well. 
+
+### Proposed Solution
+
+Will update the current terraform analyzer tool following the existing pattern and update the `_analyze_file` function to look out for the module block regex. 
+
+### Other Information
+
+_No response_
+
+### Acknowledgements
+
+- [x] I may be able to implement this feature request
+- [ ] This feature might incur a breaking change"
+3046529834,283,feat: default dev container,scottschreckengaust,345885,open,2025-05-07T16:23:15Z,,https://github.com/awslabs/mcp,https://github.com/awslabs/mcp/issues/283,"### Describe the feature
+
+Create a default dev container configuration
+
+### Use Case
+
+https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers
+
+### Proposed Solution
+
+Add the `.devcontainer/devcontainer.json` file for the tools needed to develop within the repository.
+
+### Other Information
+
+_No response_
+
+### Acknowledgements
+
+- [x] I may be able to implement this feature request
+- [ ] This feature might incur a breaking change"
+2540497089,167,Feature: Recognition of PEP 727 `Doc` objects in type annotations.,emcd,221418,closed,2024-09-21T20:23:23Z,2025-03-28T09:14:54Z,https://github.com/brentyi/tyro,https://github.com/brentyi/tyro/issues/167,"Background/Disclaimer: [PEP 727](https://peps.python.org/pep-0727/) is still in draft after more than a year; from the [discussion](https://discuss.python.org/t/pep-727-documentation-metadata-in-typing/32566) around the proposal, it is not clear that it is going to be accepted as a Python standard. That said, a `typing_extensions` maintainer has indicated that `Doc` [will remain available from within that package indefinitely](https://discuss.python.org/t/pep-727-documentation-metadata-in-typing/32566/183).
+
+Given that Tyro has `typing_extensions` as a dependency and `Doc` is supported via that package and given that Tyro is very `Annotated`-friendly, would you consider supporting the collection of attribute/parameter docstrings from `Doc`  objects inside of PEP 593 extended annotations as an alternative to the existing methods? This opens the way for sharing documentation between a generated CLI and generated documentation without duplication of effort."
+2876216908,3650,Clarify error message for missing plugin versions versus unknown plugins,iainmcgin,309153,closed,2025-02-24T21:40:15Z,2025-02-28T19:48:12Z,https://github.com/bufbuild/buf,https://github.com/bufbuild/buf/issues/3650,"### Feature
+
+If I reference an unknown plugin version in a `buf.gen.yaml`, e.g. `buf.build/community/neoeinstein-prost:v0.4.1` instead of `v0.4.0`, the error message generated by buf CLI is not very specific:
+
+```
+$ buf generate
+Failure: not_found: plugin ""buf.build/community/neoeinstein-prost"" was not found
+```
+
+This same error message is shown for when there are no known versions for a plugin, e.g. a typo like `buf.build/community/neoeinstein-proust:v0.4.0`. It would be helpful to disambiguate these cases, e.g. display something like the following for unknown versions:
+
+```
+$ buf generate
+Failure: plugin ""buf.build/community/neoeinstein-prost"" does not have version ""v0.4.1"". See https://buf.build/community/neoeinstein-prost for the list of known versions.
+```"
+2103228094,74,Support opentofu,chenrui333,1580956,closed,2024-01-27T04:58:28Z,2025-06-06T11:02:01Z,https://github.com/busser/tfautomv,https://github.com/busser/tfautomv/issues/74,"Would be good to support opentofu, as it is also GA recently with 1.6.0"
+2312219766,95,feat: Run tfautomv against a plan file,atthematyo,29811542,closed,2024-05-23T07:54:44Z,2025-06-06T13:23:51Z,https://github.com/busser/tfautomv,https://github.com/busser/tfautomv/pull/95,"Implementing this [feature request](https://github.com/busser/tfautomv/issues/78)
+
+I have been using this to refactor TFE workspaces that cannot be planned locally but where I can download the json plan file after TFE has remotely planned it.
+"
+2802137191,101,Tfautomv doesn't recognize missing attributes from moved resources,Timen-GitHub-User,98825084,closed,2025-01-21T15:18:43Z,2025-06-06T09:24:39Z,https://github.com/busser/tfautomv,https://github.com/busser/tfautomv/issues/101,"### Situation
+In scenario 1 have a created aws instance resource:
+```
+resource ""aws_instance"" ""web_instance_01"" {
+  ami           = data.aws_ami.amazon_linux.id
+  instance_type = var.instance_type
+  vpc_security_group_ids = [
+    aws_security_group.default_egress_sg.id,
+    aws_security_group.icmp_sg.id,
+    aws_security_group.ssh_sg.id,
+    aws_security_group.http_sg.id
+  ]
+  key_name = var.key_name
+  user_data = <<-EOF
+              #!/bin/bash
+              yum update -y
+              yum install nginx -y
+              echo ""<h1>Welcome to web_instance_01<h1>"" > index.html
+              mv index.html /usr/share/nginx/html/index.html
+              systemctl enable --no-block nginx
+              systemctl start --no-block nginx
+              EOF
+
+  tags = {
+    Name = ""web_instance_01""
+  }
+}
+```
+
+and after running terraform apply moved the resource and removed attributes:
+```
+resource ""aws_instance"" ""web_instance_01_moved"" {
+  ami           = data.aws_ami.amazon_linux.id
+  instance_type = var.instance_type
+}
+```
+The Tfautomv output wil create a moved block for this resource eventho they are not similar in the case of the missing attributes in the moved resources:
+```
+% tfautomv -vvv --ignore=""everything:aws_instance:credit_specification.#""
+getting Terraform plan for current directory...
+
+┌─ Summary
+│ tfautomv made 1 comparison and found 1 move
+│
+│ the following symbols are used below:
+│   ~ differences in this attribute are ignored because of a rule
+│
+│ 1 move within current directory
+│ ├─
+│ │ from aws_instance.web_instance_01
+│ │ to   aws_instance.web_instance_01_moved
+│ │
+│ │ ~ credit_specification.#
+│ └─
+└─
+```
+Note that I ignore the 'credit_specification'. 
+
+In scenario 2, I vise versa the process by moving the resources and adding the missing attributes after running apply, Tfautomv does detects these changes:
+```
+% tfautomv -vvv --ignore=""everything:aws_instance:credit_specification.#""
+getting Terraform plan for current directory...
+
+┌─ Summary
+│ tfautomv made 1 comparison and found 0 moves
+│
+│ the following symbols are used below:
+│   + the resource Terraform plans to create has this attribute
+│   - the resource Terraform plans to delete has this attribute
+│   ~ differences in this attribute are ignored because of a rule
+│
+│ 0 matches for aws_instance.web_instance_01_moved (create) in current directory
+│ ├─
+│ │ aws_instance.web_instance_01 (delete) in current directory
+│ │
+│ │ ~ credit_specification.#
+│ │ + key_name = ""ssh""
+│ │ - key_name = """"
+│ │ + tags.Name = ""web_instance_01""
+│ │ - tags.Name = <nil>
+│ │ + tags_all.Name = ""web_instance_01""
+│ │ - tags_all.Name = <nil>
+│ │ + user_data = ""9bda0090cb83a29847047aad292f0d8876dcf751""
+│ │ - user_data = <nil>
+│ │ + vpc_security_group_ids.# = 4
+│ │ - vpc_security_group_ids.# = 1
+│ │ + vpc_security_group_ids.0 = ""sg-01d958b6d9d1cf3de""
+│ │ - vpc_security_group_ids.0 = ""sg-06b6d5a61053e0da0""
+│ │ + vpc_security_group_ids.1 = ""sg-0a9485ec3f0b7d2c2""
+│ │ - vpc_security_group_ids.1 = <nil>
+│ │ + vpc_security_group_ids.2 = ""sg-0c8ec53102ad02b3a""
+│ │ - vpc_security_group_ids.2 = <nil>
+│ │ + vpc_security_group_ids.3 = ""sg-0c91a883d0e306260""
+│ │ - vpc_security_group_ids.3 = <nil>
+│ └─
+```
+### Findings
+I went to have a look into the JSON output of Terraform plan in both scenarios. This is what I found:
+- Configuration attributes not set in the resource to be created are just not taken into consideration by Tfautomv. Those to be created resources will be matched with resources to be destroyed that have more configuration attributes set. These configration attributes are either not presentend or presentend with '**null**' in ‘*resourse_changes > ""to be created resource nr"" > change > after*'.
+- Tfautomv seems to ignore attributes value that are set to '**true**' in '*resourse_changes > ""to be created resource nr"" > change > after_unknown*' (coresponding to ""(known after apply)"" attributes in the regular plan output). *The 'credit_specification' attribute in 'after_unknown' is set to an empty list instead to 'true' in the resource to be created, which is why it’s not being ignored during the comparisons of the resources. the 'credit_spefification' list in the resource to be destroyed is filled, thus creating a mismatch if not ignored with an ignore flag.*
+
+commands used to get the json output of plan:
+`terraform plan -out tfplan`
+`terraform show -json tfplan`
+
+### Consequences
+Every Terraform admin still needs to check the output of 'Terraform plan' after using Tfautomv, and all changes should be shown in the Terraform plan thus the missing configuration should show?
+```
+# aws_instance.web_instance_01_moved will be updated in-place
+  # (moved from aws_instance.web_instance_01)
+  ~ resource ""aws_instance"" ""web_instance_01_moved"" {
+        id                                   = ""i-086e266d701337619""
+      ~ tags                                 = {
+          - ""Name"" = ""web_instance_01"" -> null
+        }
+      ~ tags_all                             = {
+          - ""Name"" = ""web_instance_01"" -> null
+        }
+      ~ user_data                            = ""9bda0090cb83a29847047aad292f0d8876dcf751"" -> ""ec172d4b46f2b3871aa0410b3ceec3c649dbae93""
+        # (38 unchanged attributes hidden)
+
+        # (8 unchanged blocks hidden)
+    }
+```
+- Configuration that’s missing in moved resource is presented in Terraform plan. So, changes are shown in the moved resource.
+- Terraform plan doesn’t present resource configuration changes set to '(known after apply)'. In this case the missing 'vpc_security_group_ids' and 'key_name' configuration. This is because the values configuration attributes dont actually change, thus Terraform plan doesn’t has any change to show anything. This is not directly a problem as the actual resource doesn’t change configurations. This becomes a problem when the resource needs to be rebuilt, as then the missing values will be automatically given (probably) the wrong value after the apply.
+
+Tfautomv it would be nice if it’s an option to not take the missing configuration in the to be created resource into the comparison process, so it becomes a feature. In its current form its more of a process expectation issue than a breaking bug. 
+For the '(known after apply)' configuration attributes a solution must be found, as this is not presented in the Terraform plan after generating moves. This can cause problems in the future after the use of Tfautomv, which can be infrastructure breaking if not carefull. 
+
+
+### Specs
+Tfautomv v0.6.2
+Terraform v1.10.0
+'aws' provider v5.72.1
+"
+2945522582,17084,chore: fix gosec G115 linting issues for Go 1.24.1 update,sreya,4856196,closed,2025-03-25T07:04:29Z,2025-03-25T07:05:26Z,https://github.com/coder/coder,https://github.com/coder/coder/pull/17084,"Adds detailed #nosec G115 annotations to resolve gosec linting issues for the Go 1.24.1 upgrade in PR #17035.
+
+This PR adds proper annotations with detailed comments to explain why each integer conversion is safe, which helps the linter understand that these conversions are intentional and the potential overflow risks are handled appropriately.
+
+Part of the work for #17035."
+1529357761,123,Support for templating (Tera),spolu,15067,closed,2023-01-11T16:42:13Z,2023-01-11T16:43:22Z,https://github.com/dust-tt/dust,https://github.com/dust-tt/dust/pull/123,
+3148017590,785,feat: Add Claude Code CLI Provider Support with SDK Architecture,ben-vargas,20713656,closed,2025-06-15T19:49:26Z,2025-06-16T18:11:39Z,https://github.com/eyaltoledano/claude-task-master,https://github.com/eyaltoledano/claude-task-master/pull/785,"# Add Claude Code CLI Provider Support with SDK Architecture
+
+## Overview
+
+This PR implements Claude Code CLI provider support for Task Master, enabling users with Claude Code subscriptions to use Task Master without API keys. This implementation builds upon the excellent groundwork laid by previous contributors while introducing an architectural pattern for non-Vercel-AI-SDK providers.
+
+## Acknowledgments & Prior Work
+
+This implementation stands on the shoulders of several contributors whose work informed and inspired this approach:
+
+- **@ghul0** ([#649](https://github.com/eyaltoledano/claude-task-master/pull/649)) - Pioneered the first Claude CLI provider implementation using command-line interface approach
+- **@ben-vargas** ([#705](https://github.com/eyaltoledano/claude-task-master/issues/705)) - Created the initial feature request and PRD outlining the vision for Claude Code CLI integration, @ghul0 had already been working on it!
+- **@neno-is-ooo** ([#777](https://github.com/eyaltoledano/claude-task-master/pull/777)) - Introduced the SDK-based approach using `@anthropic-ai/claude-code`, eliminating manual process spawning
+- **@apple-techie** ([#783](https://github.com/eyaltoledano/claude-task-master/pull/783)) - Refined the SDK implementation with telemetry support and comprehensive testing
+- **@ajit555db** ([#739](https://github.com/eyaltoledano/claude-task-master/issues/739)) - Reinforced community demand for Claude Code support
+
+## What Makes This Implementation Different
+
+### 1. **Custom SDK Architecture Pattern**
+
+While previous PRs implemented Claude Code directly in the provider file, this PR introduces a new architectural pattern:
+
+```
+src/ai-providers/
+├── claude-code.js              # Provider implementation
+└── custom-sdk/
+    └── claude-code-sdk.js      # SDK wrapper
+```
+
+**Why this matters:**
+- Maintains consistency with existing providers that use Vercel AI SDK
+- Separates SDK-specific logic from provider implementation
+- Creates a reusable pattern for future non-Vercel-AI-SDK providers
+- Improves maintainability and testability
+
+### 2. **Complete Token Usage Tracking**
+
+Building on @apple-techie's telemetry work in #783, this implementation:
+- Properly handles cache tokens (`cache_creation_input_tokens`, `cache_read_input_tokens`)
+- Maps SDK response fields to expected telemetry format (`inputTokens`/`outputTokens`)
+- Supports accurate token counting in both streaming and non-streaming modes
+
+### 3. **Comprehensive Error Handling**
+
+Extends beyond basic error handling to include:
+- CLI-specific error detection (not installed, not authenticated)
+- Graceful fallback for missing usage data
+- Consistent error messages across all provider methods
+
+### 4. **Full Feature Parity**
+
+Implements all three core methods:
+- `generateText` - For standard text generation
+- `streamText` - For streaming responses with proper usage tracking
+- `generateObject` - For structured JSON output
+
+## Technical Implementation
+
+### Key Design Decisions
+
+1. **SDK Wrapper Pattern**: The `claude-code-sdk.js` wrapper provides a consistent interface that mirrors Vercel AI SDK patterns, making the provider implementation cleaner and more maintainable.
+
+2. **Authentication Model**: Uses CLI authentication (`claude login`) instead of API keys, properly integrated with the `PROVIDERS_WITH_OPTIONAL_API_KEY` system.
+
+3. **Message Format Handling**: Correctly converts between Task Master's message format and Claude Code's expected format (user→human, assistant→assistant, system→system).
+
+4. **Usage Data Extraction**: Handles the complex usage data structure from Claude Code SDK, including proper aggregation of cache tokens.
+
+### Files Changed
+
+- **New files:**
+  - `src/ai-providers/claude-code.js` - Provider implementation following BaseAIProvider pattern
+  - `src/ai-providers/custom-sdk/claude-code-sdk.js` - SDK wrapper for consistency
+
+- **Modified files:**
+  - `package.json` - Added `@anthropic-ai/claude-code` dependency
+  - `scripts/modules/supported-models.json` - Added opus (32K) and sonnet (64K) models
+  - `scripts/modules/ai-services-unified.js` - Integrated provider with optional API key support
+  - `scripts/modules/config-manager.js` - Added `getClaudeCodeConfig` function
+  - `src/ai-providers/index.js` - Exported ClaudeCodeProvider
+  - `tests/unit/ai-services-unified.test.js` - Updated test mocks
+
+## Benefits Over Previous Approaches
+
+1. **Architectural Consistency**: Unlike direct implementations, this follows the established pattern of all other providers
+2. **Maintainability**: SDK updates only require changes to the wrapper, not the provider
+3. **Extensibility**: The custom-sdk pattern can be reused for other non-Vercel providers
+4. **Complete Integration**: Full telemetry support ensures proper usage tracking and cost estimation
+
+## Testing
+
+- All existing tests pass
+- Token counting verified with real Claude Code responses
+- Error handling tested for common scenarios (CLI not found, not authenticated)
+- Both opus and sonnet models tested successfully
+
+## Next Steps
+
+This implementation provides a solid foundation for Claude Code support while establishing patterns for future provider integrations. The custom SDK architecture ensures Task Master can easily adapt to new AI providers regardless of their SDK patterns.
+
+---
+
+Closes #705, #739
+References #649, #777, #783"
+3154580331,805,feat: Add Claude Code Provider Support with SDK Integration,ben-vargas,20713656,closed,2025-06-17T19:43:23Z,2025-06-20T13:24:42Z,https://github.com/eyaltoledano/claude-task-master,https://github.com/eyaltoledano/claude-task-master/pull/805,"# Add Claude Code Provider Support with SDK Integration
+
+## Overview
+
+This PR introduces native support for Claude models through the Claude Code CLI using an SDK-based approach. This implementation allows users to leverage Claude's powerful models (Opus and Sonnet) without requiring an API key, making it accessible to users who have Claude Code installed on their system.
+
+The approach is based on the [ai-sdk-provider-claude-code](https://github.com/ben-vargas/ai-sdk-provider-claude-code) project but has been implemented internally as a custom SDK to avoid external dependencies and maintain full control over the integration.
+
+## Key Features
+
+- **No API Key Required**: Uses Claude Code CLI through the `@anthropic-ai/claude-code` SDK
+- **Full Provider Support**: Implements all standard provider methods (generateText, streamText, generateObject)
+- **Optional Dependency**: The `@anthropic-ai/claude-code` package is optional - users without it can still use other providers
+- **Lazy Loading**: Claude Code provider is only loaded when actually requested, preventing installation issues
+- **Comprehensive Documentation**: Includes usage examples and configuration guides
+- **Full Test Coverage**: Unit and integration tests ensure reliability
+- **Telemetry Support**: Tracks usage metrics like other providers
+
+## Technical Implementation
+
+### Architecture
+- Custom SDK implementation in `src/ai-providers/custom-sdk/claude-code/`
+- Provider class in `src/ai-providers/claude-code.js`
+- Lazy loading mechanism in `ai-services-unified.js` to handle optional dependency
+- Full compatibility with existing Task Master AI provider framework
+
+### Key Components
+1. **Language Model** (`language-model.js`): Handles text generation and streaming with lazy loading of the SDK
+2. **Message Converter** (`message-converter.js`): Converts between Task Master and Claude Code message formats
+3. **Error Handling** (`errors.js`): Provides clear error messages for missing dependencies
+4. **JSON Extractor** (`json-extractor.js`): Handles structured output extraction
+
+## Changes by Commit
+
+### 1. feat: add Claude Code provider support (426aaf2)
+- Initial implementation of Claude Code provider
+- Custom SDK with language model, message converter, and error handling
+- Integration with config manager and model selection
+- Support for both Opus and Sonnet models
+
+### 2. fix(docs): correct invalid commands in claude-code usage examples (3416cfa)
+- Fixed documentation examples to use correct command syntax
+- Improved clarity of configuration instructions
+
+### 3. feat: make @anthropic-ai/claude-code an optional dependency (0e84bd1)
+- Moved `@anthropic-ai/claude-code` to optionalDependencies
+- Implemented lazy loading to prevent installation failures
+- Added clear error messages when package is missing
+- Ensures existing users aren't forced to install Claude Code
+
+### 4. test: add comprehensive tests for ClaudeCodeProvider (e6e39e2)
+- Added unit tests for provider class and language model
+- Integration tests for optional dependency behavior
+- Tests cover lazy loading, error handling, and API compatibility
+
+### 5. revert: remove maxTokens update functionality from init (cca76c1)
+- Removed out-of-scope functionality that automatically updated maxTokens in config
+- This feature was unrelated to Claude Code support and will be in a separate PR
+- Claude Code ignores maxTokens and temperature parameters anyway
+
+### 6. docs: add Claude Code support information to README (e04a861)
+- Added Claude Code to the list of supported providers
+- Included configuration examples and quick start instructions
+- Created dedicated Claude Code Support section
+- Clarified that Claude Code CLI is required (not desktop app)
+
+### 7. style: apply biome formatting to test files (ee6f458)
+- Applied consistent code formatting to all test files
+- Ensures code style consistency across the project
+
+### 8. fix(models): add missing --claude-code flag to models command (b1aa058)
+- Added `--claude-code` option to models command alongside existing provider flags
+- Updated provider flags validation to include claudeCode option
+- Added claude-code to providerHint logic for all three model roles (main, research, fallback)  
+- Updated error message to include --claude-code in list of mutually exclusive flags
+- Added example usage in help text
+- Fixes ""Model ID not found"" errors when trying to set claude-code models via CLI
+
+## Configuration
+
+Add to `.taskmaster/config.json`:
+
+```json
+{
+  ""models"": {
+    ""main"": {
+      ""provider"": ""claude-code"",
+      ""modelId"": ""sonnet"",
+      ""maxTokens"": 64000,
+      ""temperature"": 0.2
+    }
+  }
+}
+```
+
+## Usage Examples
+
+```bash
+# Set Claude Code as main provider
+task-master models --set-main sonnet --claude-code
+
+# Generate tasks from PRD
+task-master parse-prd --input=requirements.txt
+
+# Analyze complexity with Claude Opus
+task-master analyze-complexity --research
+```
+
+## Testing
+
+All tests pass:
+- Unit tests for ClaudeCodeProvider class
+- Unit tests for language model with lazy loading
+- Integration tests for optional dependency behavior
+
+Run tests:
+```bash
+npm test -- tests/unit/ai-providers/claude-code.test.js
+npm test -- tests/unit/ai-providers/custom-sdk/claude-code/language-model.test.js
+npm test -- tests/integration/claude-code-optional.test.js
+```
+
+## Breaking Changes
+
+None. This is a purely additive change that doesn't affect existing functionality.
+
+## Files Changed
+
+### New Files
+- `src/ai-providers/claude-code.js` - Main provider class
+- `src/ai-providers/custom-sdk/claude-code/` - SDK implementation (6 files):
+  - `index.js` - Entry point for Claude Code SDK
+  - `language-model.js` - Core model implementation with lazy loading
+  - `message-converter.js` - Message format conversion
+  - `errors.js` - Error handling and custom error types
+  - `json-extractor.js` - JSON extraction from responses
+  - `types.js` - TypeScript-style type definitions
+- `docs/examples/claude-code-usage.md` - Comprehensive usage documentation
+- `tests/unit/ai-providers/claude-code.test.js` - Provider unit tests
+- `tests/unit/ai-providers/custom-sdk/claude-code/language-model.test.js` - Language model tests
+- `tests/integration/claude-code-optional.test.js` - Optional dependency tests
+
+### Modified Files
+- `package.json` - Added @anthropic-ai/claude-code as optional dependency
+- `scripts/modules/ai-services-unified.js` - Implemented lazy loading for Claude Code
+- `scripts/modules/config-manager.js` - Added claude-code to valid providers list
+- `scripts/modules/supported-models.json` - Added claude-code models configuration
+- `scripts/modules/task-manager/models.js` - Added claude-code to provider list
+- `scripts/modules/commands.js` - Added --claude-code flag to models command
+- `src/ai-providers/index.js` - Added ClaudeCodeProvider export
+- `tests/unit/ai-services-unified.test.js` - Updated tests for new provider
+- `README.md` - Added Claude Code documentation and examples
+
+## Acknowledgments
+
+This implementation builds upon the excellent work of the community in bringing Claude Code support to Task Master:
+
+- [@neno-is-ooo](https://github.com/neno-is-ooo) ([#601](https://github.com/eyaltoledano/claude-task-master/pull/601)) - Perhaps the initial start?
+- [@ghul0](https://github.com/ghul0) ([#649](https://github.com/eyaltoledano/claude-task-master/pull/649)) - Pioneered the first Claude CLI provider implementation using command-line interface approach
+- [@ben-vargas](https://github.com/ben-vargas) ([#705](https://github.com/eyaltoledano/claude-task-master/pull/705)) - Created the initial feature request and PRD outlining the vision for Claude Code CLI integration, @ghul0 had already been working on it!
+- [@neno-is-ooo](https://github.com/neno-is-ooo) ([#777](https://github.com/eyaltoledano/claude-task-master/pull/777)) - Introduced the SDK-based approach using @anthropic-ai/claude-code, eliminating manual process spawning
+- [@apple-techie](https://github.com/apple-techie) ([#783](https://github.com/eyaltoledano/claude-task-master/pull/783)) - Refined the SDK implementation with telemetry support and comprehensive testing
+
+This PR represents the culmination of these efforts, providing a robust implementation that makes Claude models accessible to all Task Master users."
+3163340594,829,feat: Add Claude Code Provider Support with SDK Integration ,Crunchyman-ralph,35776126,closed,2025-06-20T13:23:07Z,2025-06-20T13:25:22Z,https://github.com/eyaltoledano/claude-task-master,https://github.com/eyaltoledano/claude-task-master/pull/829,"# Add Claude Code Provider Support with SDK Integration
+
+## Overview
+
+This PR introduces native support for Claude models through the Claude Code CLI using an SDK-based approach. This implementation allows users to leverage Claude's powerful models (Opus and Sonnet) without requiring an API key, making it accessible to users who have Claude Code installed on their system.
+
+The approach is based on the [ai-sdk-provider-claude-code](https://github.com/ben-vargas/ai-sdk-provider-claude-code) project but has been implemented internally as a custom SDK to avoid external dependencies and maintain full control over the integration.
+
+## Key Features
+
+- **No API Key Required**: Uses Claude Code CLI through the `@anthropic-ai/claude-code` SDK
+- **Full Provider Support**: Implements all standard provider methods (generateText, streamText, generateObject)
+- **Optional Dependency**: The `@anthropic-ai/claude-code` package is optional - users without it can still use other providers
+- **Lazy Loading**: Claude Code provider is only loaded when actually requested, preventing installation issues
+- **Comprehensive Documentation**: Includes usage examples and configuration guides
+- **Full Test Coverage**: Unit and integration tests ensure reliability
+- **Telemetry Support**: Tracks usage metrics like other providers
+
+## Technical Implementation
+
+### Architecture
+- Custom SDK implementation in `src/ai-providers/custom-sdk/claude-code/`
+- Provider class in `src/ai-providers/claude-code.js`
+- Lazy loading mechanism in `ai-services-unified.js` to handle optional dependency
+- Full compatibility with existing Task Master AI provider framework
+
+### Key Components
+1. **Language Model** (`language-model.js`): Handles text generation and streaming with lazy loading of the SDK
+2. **Message Converter** (`message-converter.js`): Converts between Task Master and Claude Code message formats
+3. **Error Handling** (`errors.js`): Provides clear error messages for missing dependencies
+4. **JSON Extractor** (`json-extractor.js`): Handles structured output extraction
+
+## Changes by Commit
+
+### 1. feat: add Claude Code provider support (426aaf2)
+- Initial implementation of Claude Code provider
+- Custom SDK with language model, message converter, and error handling
+- Integration with config manager and model selection
+- Support for both Opus and Sonnet models
+
+### 2. fix(docs): correct invalid commands in claude-code usage examples (3416cfa)
+- Fixed documentation examples to use correct command syntax
+- Improved clarity of configuration instructions
+
+### 3. feat: make @anthropic-ai/claude-code an optional dependency (0e84bd1)
+- Moved `@anthropic-ai/claude-code` to optionalDependencies
+- Implemented lazy loading to prevent installation failures
+- Added clear error messages when package is missing
+- Ensures existing users aren't forced to install Claude Code
+
+### 4. test: add comprehensive tests for ClaudeCodeProvider (e6e39e2)
+- Added unit tests for provider class and language model
+- Integration tests for optional dependency behavior
+- Tests cover lazy loading, error handling, and API compatibility
+
+### 5. revert: remove maxTokens update functionality from init (cca76c1)
+- Removed out-of-scope functionality that automatically updated maxTokens in config
+- This feature was unrelated to Claude Code support and will be in a separate PR
+- Claude Code ignores maxTokens and temperature parameters anyway
+
+### 6. docs: add Claude Code support information to README (e04a861)
+- Added Claude Code to the list of supported providers
+- Included configuration examples and quick start instructions
+- Created dedicated Claude Code Support section
+- Clarified that Claude Code CLI is required (not desktop app)
+
+### 7. style: apply biome formatting to test files (ee6f458)
+- Applied consistent code formatting to all test files
+- Ensures code style consistency across the project
+
+### 8. fix(models): add missing --claude-code flag to models command (b1aa058)
+- Added `--claude-code` option to models command alongside existing provider flags
+- Updated provider flags validation to include claudeCode option
+- Added claude-code to providerHint logic for all three model roles (main, research, fallback)  
+- Updated error message to include --claude-code in list of mutually exclusive flags
+- Added example usage in help text
+- Fixes ""Model ID not found"" errors when trying to set claude-code models via CLI
+
+## Configuration
+
+Add to `.taskmaster/config.json`:
+
+```json
+{
+  ""models"": {
+    ""main"": {
+      ""provider"": ""claude-code"",
+      ""modelId"": ""sonnet"",
+      ""maxTokens"": 64000,
+      ""temperature"": 0.2
+    }
+  }
+}
+```
+
+## Usage Examples
+
+```bash
+# Set Claude Code as main provider
+task-master models --set-main sonnet --claude-code
+
+# Generate tasks from PRD
+task-master parse-prd --input=requirements.txt
+
+# Analyze complexity with Claude Opus
+task-master analyze-complexity --research
+```
+
+## Testing
+
+All tests pass:
+- Unit tests for ClaudeCodeProvider class
+- Unit tests for language model with lazy loading
+- Integration tests for optional dependency behavior
+
+Run tests:
+```bash
+npm test -- tests/unit/ai-providers/claude-code.test.js
+npm test -- tests/unit/ai-providers/custom-sdk/claude-code/language-model.test.js
+npm test -- tests/integration/claude-code-optional.test.js
+```
+
+## Breaking Changes
+
+None. This is a purely additive change that doesn't affect existing functionality.
+
+## Files Changed
+
+### New Files
+- `src/ai-providers/claude-code.js` - Main provider class
+- `src/ai-providers/custom-sdk/claude-code/` - SDK implementation (6 files):
+  - `index.js` - Entry point for Claude Code SDK
+  - `language-model.js` - Core model implementation with lazy loading
+  - `message-converter.js` - Message format conversion
+  - `errors.js` - Error handling and custom error types
+  - `json-extractor.js` - JSON extraction from responses
+  - `types.js` - TypeScript-style type definitions
+- `docs/examples/claude-code-usage.md` - Comprehensive usage documentation
+- `tests/unit/ai-providers/claude-code.test.js` - Provider unit tests
+- `tests/unit/ai-providers/custom-sdk/claude-code/language-model.test.js` - Language model tests
+- `tests/integration/claude-code-optional.test.js` - Optional dependency tests
+
+### Modified Files
+- `package.json` - Added @anthropic-ai/claude-code as optional dependency
+- `scripts/modules/ai-services-unified.js` - Implemented lazy loading for Claude Code
+- `scripts/modules/config-manager.js` - Added claude-code to valid providers list
+- `scripts/modules/supported-models.json` - Added claude-code models configuration
+- `scripts/modules/task-manager/models.js` - Added claude-code to provider list
+- `scripts/modules/commands.js` - Added --claude-code flag to models command
+- `src/ai-providers/index.js` - Added ClaudeCodeProvider export
+- `tests/unit/ai-services-unified.test.js` - Updated tests for new provider
+- `README.md` - Added Claude Code documentation and examples
+
+## Acknowledgments
+
+This implementation builds upon the excellent work of the community in bringing Claude Code support to Task Master:
+
+- [@neno-is-ooo](https://github.com/neno-is-ooo) ([#601](https://github.com/eyaltoledano/claude-task-master/pull/601)) - Perhaps the initial start?
+- [@ghul0](https://github.com/ghul0) ([#649](https://github.com/eyaltoledano/claude-task-master/pull/649)) - Pioneered the first Claude CLI provider implementation using command-line interface approach
+- [@ben-vargas](https://github.com/ben-vargas) ([#705](https://github.com/eyaltoledano/claude-task-master/pull/705)) - Created the initial feature request and PRD outlining the vision for Claude Code CLI integration, @ghul0 had already been working on it!
+- [@neno-is-ooo](https://github.com/neno-is-ooo) ([#777](https://github.com/eyaltoledano/claude-task-master/pull/777)) - Introduced the SDK-based approach using @anthropic-ai/claude-code, eliminating manual process spawning
+- [@apple-techie](https://github.com/apple-techie) ([#783](https://github.com/eyaltoledano/claude-task-master/pull/783)) - Refined the SDK implementation with telemetry support and comprehensive testing
+
+This PR represents the culmination of these efforts, providing a robust implementation that makes Claude models accessible to all Task Master users."
+3056850591,418,Feature Req to support Prehook and Posthook via decorators .,jkfnc,56741357,closed,2025-05-12T12:45:00Z,2025-06-19T22:26:28Z,https://github.com/jlowin/fastmcp,https://github.com/jlowin/fastmcp/issues/418,"### Enhancement Description
+
+When an MCP session is created initially, we can run logic to get API_Keys of 3rd party services for a given user from some vault and store it somewhere in Context and use it within tools or resources without having to pull it from each tool/resource. Also to create mcp.resource dynamically with add_resource or Instantiate an object for each new session.
+
+Posthook can do the cleanup of tiering down object .
+
+Alternative considered:
+Lifespan context - but its global not good for  per session logic.
+MCP-Auth can use middleware to handle auth, but might not work for non-oauth.
+mcp-engine supports user id, name, email, token in context after initial auth, but does not support fastmcp v2 yet.
+One server instance for each user - uses too much resources and not efficient.
+
+### Use Case
+
+To support multiple users , this would be good without duplicating too much code within each mcp.tool function. 
+Can have global preauth and postauth for all mcps declared in a python script and included to get applied for each individual mcps.
+
+If you are an admin using mcp, you will get list of  resources or tools not available to normal users , creating at run time via prehook.
+
+
+### Proposed Implementation
+
+```Python
+
+```"
+3083309439,549,Add MCP middleware,jlowin,153965,closed,2025-05-22T13:02:10Z,2025-06-19T22:15:37Z,https://github.com/jlowin/fastmcp,https://github.com/jlowin/fastmcp/issues/549,"### Enhancement Description
+
+Introduce MCP-specific Middleware for adjusting behavior. 
+
+### Use Case
+
+_No response_
+
+### Proposed Implementation
+
+```Python
+
+```"
+3146966467,837,Add MCP middleware,jlowin,153965,closed,2025-06-15T01:36:22Z,2025-06-19T01:42:13Z,https://github.com/jlowin/fastmcp,https://github.com/jlowin/fastmcp/pull/837,
+3157906426,868,Exposing the list tools request within the context of an HTTP request,bruno-oliveira,4722412,closed,2025-06-18T19:10:07Z,2025-06-19T21:37:10Z,https://github.com/jlowin/fastmcp,https://github.com/jlowin/fastmcp/issues/868,"### Enhancement Description
+
+I believe that when a client connects to an MCP server, there is a sort of ""handshake"" where a series of requests are made between client and server for capability discovery and listing, such as, listing tools, resources, prompts and also validating tokens, etc.
+
+I wonder if it's possible currently to ""inject"" oneself in that initial process to ""intervene"" in the list tools step?
+
+Use case: let's say that based on an auth token scope, or on any client-side passed data, I would like to iterate over the available tools (think the return result of the list tools request) and filter them based on a given condition that relies on the auth token scopes for example.
+Then I'd selectively call `mcp.disableTool(mytool)` or simply remove a tool from being returned if a check wouldn't be valid.
+
+### Use Case
+
+_No response_
+
+### Proposed Implementation
+
+```Python
+
+```"
+3029241900,14955,500 Internal Server Error on landing page URL with tracking query string (?xxxxx) — device_tracking_service not found,AlexanderZlobinM1,186687229,open,2025-04-29T18:57:24Z,,https://github.com/mautic/mautic,https://github.com/mautic/mautic/issues/14955,"### Mautic Series
+
+6.0.x series
+
+### Mautic installed version
+
+6.0.0.
+
+### Way of installing
+
+I downloaded a release from https://www.mautic.org/mautic-releases
+
+### PHP version
+
+8.3.20
+
+### What browsers are you seeing the problem on?
+
+Not relevant
+
+### What happened?
+
+
+Description:
+
+On a clean installation of the latest version of Mautic (tested on two different servers), accessing a landing page via an email campaign link that includes a tracking query string results in a 500 Internal Server Error. This appears to be caused by a missing service (mautic.lead.service.device_tracking_service) in the PublicController’s limited service container.
+
+⸻
+
+Steps to reproduce:
+	1.	Create a landing page in Mautic.
+	2.	Create an email that includes a link to the landing page.
+	3.	Send the email as part of a campaign.
+	4.	Click the link in the received email — Mautic appends a random query string like ?fasfasgfagnhdshb to the landing page URL.
+	5.	The page fails to load and returns a 500 error.
+	6.	Direct access to the same page without the query string works normally.
+
+⸻
+
+Expected result:
+
+The landing page should load regardless of whether a query string is present.
+
+⸻
+
+Actual result:
+
+A 500 error is thrown due to a missing service:
+
+Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException: 
+Service ""mautic.lead.service.device_tracking_service"" not found: even though it exists in the app's container, 
+the container inside ""Mautic\PageBundle\Controller\PublicController"" is a smaller service locator 
+that only knows about a limited set of services. 
+Try using dependency injection instead.
+
+This error happens consistently on different clean installations of Mautic on separate servers.
+
+⸻
+
+Related log entry:
+
+Uncaught PHP Exception Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException: 
+""Service 'mautic.lead.service.device_tracking_service' not found [...]"" 
+at /var/www/mautic/vendor/symfony/dependency-injection/ServiceLocator.php line 133
+
+
+
+⸻
+
+Environment:
+	•	Mautic version: 6.0.0
+	•	PHP version: 8.3.20
+	•	MariaDB 11.4.5
+	•	Server OS: Ubuntu 24.04
+
+
+
+
+### How can we reproduce this issue?
+
+	1.	Create a landing page in Mautic.
+	2.	Create an email that includes a link to the landing page.
+	3.	Send the email as part of a campaign.
+	4.	Click the link in the received email — Mautic appends a random query string like ?fasfasgfagnhdshb to the landing page URL.
+	5.	The page fails to load and returns a 500 error.
+	6.	Direct access to the same page without the query string works normally.
+
+### Relevant log output
+
+```shell
+[2025-04-29T15:55:02.379231+00:00] mautic.CRITICAL: Uncaught PHP Exception Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException: ""Service ""mautic.lead.service.device_tracking_service"" not found: even though it exists in the app's container, the container inside ""Mautic\PageBundle\Controller\PublicController"" is a smaller service locator that only knows about the ""form.factory"", ""http_kernel"", ""parameter_bag"", ""request_stack"", ""router"", ""security.authorization_checker"", ""security.csrf.token_manager"", ""security.token_storage"", ""serializer"" and ""twig"" services. Try using dependency injection instead."" at /var/www/mautic/vendor/symfony/dependency-injection/ServiceLocator.php line 133 {""exception"":""[object] (Symfony\\Component\\DependencyInjection\\Exception\\ServiceNotFoundException(code: 0): Service \""mautic.lead.service.device_tracking_service\"" not found: even though it exists in the app's container, the container inside \""Mautic\\PageBundle\\Controller\\PublicController\"" is a smaller service locator that only knows about the \""form.factory\"", \""http_kernel\"", \""parameter_bag\"", \""request_stack\"", \""router\"", \""security.authorization_checker\"", \""security.csrf.token_manager\"", \""security.token_storage\"", \""serializer\"" and \""twig\"" services. Try using dependency injection instead. at /var/www/mautic/vendor/symfony/dependency-injection/ServiceLocator.php:133)""} {""hostname"":""4588881-xd22841"",""pid"":236232}
+```
+
+### Code of Conduct
+
+- [x] I confirm that I have read and agree to follow this project's Code of Conduct"
+440484169,32,Improve indentation of inline snapshots,mitsuhiko,7396,closed,2019-05-05T20:06:31Z,2019-05-05T22:21:41Z,https://github.com/mitsuhiko/insta,https://github.com/mitsuhiko/insta/pull/32,"This fixes #28
+
+Not happy with the choice of character yet (`│`) which seems to have some bad drawing artifacts in vscode."
+2168281886,455,Allow `debug` expressions in redaction macros,max-sixty,5635139,closed,2024-03-05T04:37:09Z,2025-04-05T18:10:33Z,https://github.com/mitsuhiko/insta,https://github.com/mitsuhiko/insta/pull/455,"It can be a bit confusing when some macros have features which others don't. So this adds debug expressions to the redaction macros.
+
+(Though the calls do get quite long; possibly we want to recommend something like `description` in place of `debug` throughout?)"
+3144284465,506,Add script to bump all the versions,olaservo,16480113,closed,2025-06-13T17:41:45Z,2025-06-21T12:31:17Z,https://github.com/modelcontextprotocol/inspector,https://github.com/modelcontextprotocol/inspector/issues/506,"**Is your feature request related to a problem? Please describe.**
+When creating an Inspector release, we have to remember to change the version in many different locations.
+
+**Describe the solution you'd like**
+An npm script to bump all the version numbers.
+
+**Describe alternatives you've considered**
+Doing it manually, which sometimes leads to missing an update and running into npm publish errors or inconsistencies in the internally referenced versions.
+
+**Additional context**
+The npm publish errors scenario (where we forgot to update a few places, so the version still showed as the last published version)  happened most recently while attempting to deploy an urgent fix.
+"
+3106658258,619,docs: Add AIQL MCP client to clients list,aiqlcom,173930076,closed,2025-06-01T05:41:40Z,2025-06-01T07:26:12Z,https://github.com/modelcontextprotocol/modelcontextprotocol,https://github.com/modelcontextprotocol/modelcontextprotocol/pull/619,"<!-- Provide a brief summary of your changes -->
+Add AIQL TUUI to the list of clients.
+
+## Motivation and Context
+<!-- Why is this change needed? What problem does it solve? -->
+AIQL TUUI is now a client that supports MCP servers.
+
+## How Has This Been Tested?
+<!-- Have you tested this in a real application? Which scenarios were tested? -->
+Check the Markdown preview in GitHub and validate the schema.
+
+
+## Breaking Changes
+<!-- Will users need to update their code or configurations? -->
+None
+
+## Types of changes
+<!-- What types of changes does your code introduce? Put an `x` in all the boxes that apply: -->
+- [ ] Bug fix (non-breaking change which fixes an issue)
+- [ ] New feature (non-breaking change which adds functionality)
+- [ ] Breaking change (fix or feature that would cause existing functionality to change)
+- [x] Documentation update
+
+## Checklist
+<!-- Go over all the following points, and put an `x` in all the boxes that apply. -->
+- [x] I have read the [MCP Documentation](https://modelcontextprotocol.io)
+- [x] My code follows the repository's style guidelines
+- [x] New and existing tests pass locally
+- [x] I have added appropriate error handling
+- [x] I have added or updated documentation as needed
+
+## Additional context
+<!-- Add any other context, implementation notes, or design decisions -->
+None"
+3131459725,683,[sdk implement] Rename ResourceReference to ResourceTemplateReference,ihrpr,21148364,open,2025-06-09T20:50:09Z,,https://github.com/modelcontextprotocol/modelcontextprotocol,https://github.com/modelcontextprotocol/modelcontextprotocol/issues/683,https://github.com/modelcontextprotocol/modelcontextprotocol/pull/639
+2877446072,1914,Cannot convert text/plain uuid in requestBody to string,codeout,921696,open,2025-02-25T07:53:22Z,,https://github.com/oapi-codegen/oapi-codegen,https://github.com/oapi-codegen/oapi-codegen/issues/1914,"Hello, oapi-codegen generates an invalid code when I define `requestBody` as text/plain uuid.
+
+![Image](https://github.com/user-attachments/assets/a702598a-fc2e-4b5c-8126-6fee491d61c5)
+
+I would appreciate it if you could advise me on how to fix this.
+
+
+## How to reproduce
+
+```shell
+$ cat > openapi.yaml <<EOS
+openapi: 3.0.3
+paths:
+  /pet:
+    post:
+      requestBody:
+        content:
+          text/plain:
+            schema:
+              type: string
+              format: uuid
+EOS
+
+$ go run github.com/oapi-codegen/oapi-codegen/v2/cmd/oapi-codegen@latest openapi.yaml > gen.go
+$ go mod init openapi
+$ go mod tidy
+
+$ go run github.com/golangci/golangci-lint/cmd/golangci-lint@latest run
+```
+
+output:
+
+```
+gen.go:1: : # gen
+./gen.go:135:40: cannot convert body (variable of array type PostPetTextRequestBody) to type string (typecheck)
+// Package openapi provides primitives to interact with the openapi HTTP API.
+exit status 1
+```
+
+Lastly, thank you for maintaining such a great tool. Really appreciate it!
+"
+2914996231,1922,fix: use `.String()` method for making a string from uuid,MilkeeyCat,40633857,open,2025-03-12T19:43:52Z,,https://github.com/oapi-codegen/oapi-codegen,https://github.com/oapi-codegen/oapi-codegen/pull/1922,fixes #1914
+2510820749,689,Add MS SQL Server dialect,gregorywaynepower,31050507,closed,2024-09-06T16:39:30Z,2025-06-23T17:22:48Z,https://github.com/quarylabs/sqruff,https://github.com/quarylabs/sqruff/issues/689,"Hey folks, this is just a request to add support for MS SQL Server."
+2843064279,48,Better Audio Quality in UI,SpirusNox,78000963,closed,2025-02-10T17:00:06Z,2025-03-10T15:34:04Z,https://github.com/rishikanthc/Scriberr,https://github.com/rishikanthc/Scriberr/issues/48,"I have been loving this project. But one thing that i have noticed gets me a bit is the audio quality. 
+
+I think there may be a way to get better quality of audio to, at a minimum, for replaying. But also if, instead of converting to a wav file, the mp3 (for example) is given directly and stored directly for better audio quality. "
+3127356549,23,5 hours sessions tracker,ryoppippi,1560508,closed,2025-06-07T18:30:14Z,2025-06-17T13:16:56Z,https://github.com/ryoppippi/ccusage,https://github.com/ryoppippi/ccusage/issues/23,"
+### Discussed in https://github.com/ryoppippi/ccusage/discussions/20
+
+<div type='discussions-op-text'>
+
+<sup>Originally posted by **IntegralMedia01** June  7, 2025</sup>
+please add ability to keep track of those 5 hours sessions. how many sessions already used for the month.</div>"
+3151228686,84,feat: add 5-hour session window tracking (closes #23),Kaniikura,32826608,closed,2025-06-16T20:28:21Z,2025-06-16T21:56:26Z,https://github.com/ryoppippi/ccusage,https://github.com/ryoppippi/ccusage/pull/84,"## Summary
+- Implements 5-hour session window tracking to help users monitor their Claude Max plan usage
+- Adds `--windows` flag to show detailed session window statistics
+- Adds `--session-limit` flag (default: 50) to calculate remaining sessions
+
+## Key Changes
+
+### New Features
+- **Window Calculation**: Added utilities to calculate 5-hour UTC-based session windows (00:00, 05:00, 10:00, 15:00, 20:00)
+- **Enhanced Session Command**: 
+  - `--windows` flag displays 5-hour session window statistics
+  - `--session-limit` flag sets plan limit for utilization tracking (default: 50)
+- **Calendar Month Tracking**: Sessions are counted per calendar month (UTC) with clear documentation about billing cycle differences
+
+### Implementation Details
+- Added window calculation utilities in `utils.internal.ts`
+- Added window aggregation functions in `data-loader.ts`
+- Enhanced session command with new display mode for window statistics
+- Added comprehensive tests for window calculations and aggregation
+- Updated documentation in README.md and CLAUDE.md
+
+### User Experience
+- Shows session utilization percentage with color coding (green/yellow/red)
+- Displays warnings when approaching session limits
+- Provides clear indication when session limit is reached
+- Shows top 10 most recent windows with usage details
+
+## Test Plan
+- [x] All existing tests pass
+- [x] Added unit tests for window calculation utilities
+- [x] Added integration tests for window aggregation
+- [x] Manual testing with various date ranges and session limits
+- [x] Verified calendar month counting behavior
+- [x] Tested JSON output format
+
+## Example Usage
+```bash
+# Show 5-hour session windows with default limit (50)
+ccusage session --windows
+
+# Show windows with custom session limit
+ccusage session --windows --session-limit 30
+
+# JSON output for programmatic use
+ccusage session --windows --json
+```
+
+## Notes
+- Sessions are counted per calendar month in UTC timezone
+- Actual billing cycles may differ from calendar months
+- The 50 session default is based on Claude Max plan documentation
+
+Fixes #23
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+<!-- This is an auto-generated comment: release notes by coderabbit.ai -->
+
+## Summary by CodeRabbit
+
+- **New Features**
+	- Introduced 5-hour session window tracking for usage statistics, allowing users to view and analyze usage grouped by UTC-based 5-hour intervals.
+	- Added options to specify session limits and receive warnings when approaching or exceeding plan limits.
+- **Documentation**
+	- Updated user guides and feature descriptions to explain the new 5-hour window tracking, session limit warnings, and related command-line options.
+	- Expanded usage examples and detailed option explanations for enhanced clarity.
+- **Tests**
+	- Added comprehensive tests for window-based aggregation, monthly summaries, and new utility functions.
+- **Style**
+	- Improved formatting for duration outputs and window statistics displays.
+
+<!-- end of auto-generated comment: release notes by coderabbit.ai -->"
+3163193886,127,Bug: --offline flag not working for blocks command,zhiyue,4208883,closed,2025-06-20T12:39:00Z,2025-06-20T13:24:12Z,https://github.com/ryoppippi/ccusage,https://github.com/ryoppippi/ccusage/issues/127,"## Bug Description
+
+The `--offline` flag works correctly for the `monthly` command but does not work for the `blocks` command.
+
+## Root Cause
+
+The issue occurs in two places:
+
+1. In `src/commands/blocks.ts`, the `offline` parameter is not being passed to `loadSessionBlockData()`:
+```typescript
+let blocks = await loadSessionBlockData({
+    since: ctx.values.since,
+    until: ctx.values.until,
+    claudePath: getDefaultClaudePath(),
+    mode: ctx.values.mode,
+    order: ctx.values.order,
+    // Missing: offline: ctx.values.offline,
+    sessionDurationHours: ctx.values.sessionLength,
+});
+```
+
+2. In `src/data-loader.ts`, the `loadSessionBlockData()` function is not passing the `offline` parameter to the `PricingFetcher` constructor:
+```typescript
+// Current code:
+using fetcher = mode === 'display' ? null : new PricingFetcher();
+
+// Should be:
+using fetcher = mode === 'display' ? null : new PricingFetcher(options?.offline);
+```
+
+## Steps to Reproduce
+
+1. Run `ccusage blocks --offline`
+2. Observe that the command still attempts to fetch pricing data from the API instead of using cached data
+
+## Expected Behavior
+
+The `--offline` flag should work consistently across all commands, using cached pricing data instead of fetching from the API.
+
+## Proposed Fix
+
+1. Add `offline: ctx.values.offline,` to the options object in `src/commands/blocks.ts` (line 151)
+2. Change `new PricingFetcher()` to `new PricingFetcher(options?.offline)` in `src/data-loader.ts` (line 1059)
+
+This matches the implementation in other commands like `monthly` which correctly handle the offline flag."
+3139436394,10481,App: CustomField on property_group_option not editable via admin interface,JonahMans,121805380,open,2025-06-12T09:00:49Z,,https://github.com/shopware/shopware,https://github.com/shopware/shopware/issues/10481,"### Shopware Version
+
+Shopware Cloud
+
+### Affected area / extension
+
+Platform(Default)
+
+### Actual behaviour
+
+Since the 6.7 update, we are able to add custom fields to property_group_option using the manifest.xml. The field is correctly created and can be edited via the database. However, in the admin interface, the modal does not show any input field to edit the custom field.
+We also tried injecting a text field using the MeteorSDK, but this didn’t seem to work either—the field is not displayed within the modal.
+
+### Expected behaviour
+
+When a custom field is defined for the property_group_option entity via the manifest.xml, the corresponding input field should automatically appear in the property option modal within the admin interface. 
+Additionally, it should be possible to manually extend the modal using the MeteorSDK to include such fields if needed.
+
+### How to reproduce
+
+1. Create a custom field for the property_group_option by defining it in your app’s manifest.xml
+2. Navigate to the property options in the admin panel
+3. Click to edit an existing property option or create a new one, which opens the modal
+4. Observe that the custom field is not displayed in the modal, even though it exists in the database and is correctly configured
+
+### Definition of Done
+
+- [ ] An automated test covers the fix.
+- [ ] Integration/E2E testing in staging is done.
+- [ ] Changelog markdown file created or updated in /changelog/_unreleased directory.
+- [ ] Developer documentation written/updated.
+- [ ] End user and/or developer documentation written or updated with clarification.
+- [ ] Regression test created to ensure bug does not reappear, and automated regression tests pass.
+- [ ] Code changes resolve the reported bug without introducing new issues."
+3139486066,4349,require admin permissions not persisting between machines,thebotsmith,33283769,open,2025-06-12T09:17:34Z,,https://github.com/wailsapp/wails,https://github.com/wailsapp/wails/issues/4349,"### Description
+
+I am building wails with my own manifest file in /build/windows for require admin
+
+this works on the machine i compile on but as soon as i send that exe to someone else or copy and paste it, it is losing its admin requirement
+
+i have switched to using a rsrc file but this results in `too many .rsrc sections
+  ERROR   exit status 1`
+
+using wails cli 2.10.1 and the newest rsrc build on windows server 2022
+
+### To Reproduce
+
+compile app
+check it needs admin permissions 
+copy and paste to another server
+check it needs admin permissions 
+
+
+### Expected behaviour
+
+wails build -windowsconsole -platform windows/amd64 -o wails-windows.exe with a manifest file in build/windows 
+
+### Screenshots
+
+_No response_
+
+### Attempted Fixes
+
+_No response_
+
+### System Details
+
+```shell
+# Wails
+Version | v2.10.1
+
+
+# System
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+| OS           | Windows Server 2022 Datacenter                                         |
+| Version      | 2009 (Build: 20348)                                                    |
+| ID           | 21H2                                                                   |
+| Go Version   | go1.24.3                                                               |
+| Platform     | windows                                                                |
+| Architecture | amd64                                                                  |
+| CPU          | AMD EPYC 7B12                                                          |
+| GPU          | Microsoft Remote Display Adapter (Microsoft) - Driver: 10.0.20348.3451 |
+| Memory       | 32GB                                                                   |
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+# Dependencies
+┌───────────────────────────────────────────────────────┐
+| Dependency | Package Name | Status    | Version       |
+| WebView2   | N/A          | Installed | 137.0.3296.68 |
+| Nodejs     | N/A          | Installed | 22.16.0       |
+| npm        | N/A          | Installed | 10.9.2        |
+| *upx       | N/A          | Available |               |
+| *nsis      | N/A          | Available |               |
+|                                                       |
+└─────────────── * - Optional Dependency ───────────────┘
+```
+
+### Additional context
+
+_No response_"
+2873447407,3371,Performance Degradation When Materializing LangChain's Document Objects,SasCezar,7129209,open,2025-02-23T20:28:00Z,,https://github.com/zenml-io/zenml,https://github.com/zenml-io/zenml/issues/3371,"## Description
+I'm experiencing a significant performance degradation when materializing a list of ``Document`` objects compared to using their JSON (dictionary) representation. Specifically, processing 200 documents takes roughly 20x longer when using ``List[Document]`` objects versus a list of dictionaries ``List[Dict]`` as return.
+
+## Code
+```python
+from typing import Annotated, List, Dict
+from langchain_core.documents import Document
+from zenml import step, get_step_context
+
+@step()
+def chunk_docs(docs: List[Document]) -> Annotated[List[Document], ""chunked_docs""]:
+    print(f""Received {len(docs)} documents. Returning documents without changes."")
+    get_step_context().add_output_metadata(
+        output_name=""chunked_docs"",
+        metadata={""num_chunks"": len(docs)}
+    )
+    return docs
+
+@step()
+def chunk_docs_dict(docs: List[Document]) -> Annotated[List[Dict], ""chunked_docs""]:
+    print(f""Received {len(docs)} documents. Returning documents without changes."")
+    get_step_context().add_output_metadata(
+        output_name=""chunked_docs"",
+        metadata={""num_chunks"": len(docs)}
+    )
+    docs = [{""page_content"": doc.page_content, ""metadata"": doc.metadata} for doc in docs]
+    return docs
+
+if __name__ == ""__main__"":
+    num_docs = 200
+    docs = [
+        Document(
+            page_content=f""This is the content of document {i}."" * 50,
+            metadata={""doc_id"": i}
+        )
+        for i in range(num_docs)
+    ]
+
+    # Time to chunk with and without langchain
+    import time
+
+    start = time.time()
+    chunked_docs = chunk_docs(docs)
+    print(f""Time taken to chunk {num_docs} docs without langchain: {time.time() - start}"")
+
+    start = time.time()
+    chunked_docs = chunk_docs_dict(docs)
+    print(f""Time taken to chunk {num_docs} docs with langchain: {time.time() - start}"")
+```
+## Output
+
+```terminal
+Running single step pipeline to execute step chunk_docs
+...
+Received 200 documents. Returning documents without changes.
+Step chunk_docs has finished in 33.667s.
+Pipeline run has finished in 33.725s.
+Time taken to chunk 200 docs without langchain: 36.364107847213745
+
+Running single step pipeline to execute step chunk_docs_dict
+...
+Received 200 documents. Returning documents without changes.
+Step chunk_docs_dict has finished in 0.440s.
+Pipeline run has finished in 0.487s.
+Time taken to chunk 200 docs with langchain: 1.629422664642334
+```
+## Expected Behavior
+I expected both steps to have similar performance since both functions essentially process the same data. The conversion of a ``Document`` to a dictionary (as shown in ``chunk_docs_dict``) appears to be much faster.
+
+## Actual Behavior
+Using Document objects: ~36.36 seconds for 200 documents.
+Using dictionary conversion: ~1.63 seconds for 200 documents.
+
+## Environment:
+langchain 0.3.19
+zenml 0.74.0
+python 3.11.11
+
+## Discussion
+
+Since both steps return a `list` type, the `BuiltInContainerMaterializer` is used by default, bypassing the materializer defined in the LangChain integration. For `List[Dict],` the materializer uses the `_is_serializable` method. However, for `List[Document],` each item triggers a lookup in the materializer registry, which for `Document` selects the `PydanticMaterializer`.
+
+For reference, see the following code sections:
+- [BuiltInContainerMaterializer implementation](https://github.com/zenml-io/zenml/blob/e4ed83fbdf0dd3d9623901df1d3b31437ba5b19a/src/zenml/materializers/built_in_materializer.py#L398-L416)
+- [LangChain Document Materializer](https://github.com/zenml-io/zenml/blob/e4ed83fbdf0dd3d9623901df1d3b31437ba5b19a/src/zenml/integrations/langchain/materializers/document_materializer.py#L50)
+- [PydanticMaterializer implementation](https://github.com/zenml-io/zenml/blob/e4ed83fbdf0dd3d9623901df1d3b31437ba5b19a/src/zenml/materializers/pydantic_materializer.py#L50-L57)
+
+However, besides the creation of a single file for each item in the list, I don't understand why there is a massive difference in performance. 
+"

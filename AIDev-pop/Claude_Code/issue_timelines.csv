@@ -1,0 +1,1446 @@
+issue_id,event,created_at,actor,commit_id,assignee,label,message
+anthropics__claude-code-action__173,labeled,2025-06-15T15:41:42Z,github-actions[bot],,,enhancement,
+anthropics__claude-code-action__173,cross-referenced,2025-06-15T15:47:55Z,tomoish,,,,
+anthropics__claude-code-action__173,closed,2025-06-24T14:53:03Z,tomoish,,,,
+awslabs__mcp__274,assigned,2025-05-06T16:56:41Z,scottschreckengaust,,scottschreckengaust,,
+awslabs__mcp__274,issue_type_added,2025-05-06T16:56:43Z,scottschreckengaust,,,,
+awslabs__mcp__274,labeled,2025-05-06T16:56:43Z,scottschreckengaust,,,feature-request,
+awslabs__mcp__274,labeled,2025-05-06T16:56:43Z,scottschreckengaust,,,RFC-proposal,
+awslabs__mcp__274,cross-referenced,2025-05-07T21:46:10Z,scottschreckengaust,,,,
+awslabs__mcp__274,closed,2025-05-09T01:14:47Z,scottschreckengaust,,,,
+apache__pulsar__24138,labeled,2025-03-28T11:26:36Z,erictarrence,,,type/bug,
+apache__pulsar__24138,referenced,2025-03-30T18:25:03Z,alexander-nailed-it,d97d29427e599ab93c976144bc3c82c31b35b004,,,
+jlowin__fastmcp__837,committed,,,831a4c4ce204dc109bbcfb3dd489ae9091308946,,,Add server middleware
+jlowin__fastmcp__837,committed,,,2dac146260b9222d87c4cdae8e0b650b868138ee,,,Merge branch 'main' into middleware
+jlowin__fastmcp__837,committed,,,6a03a15e855aa114d69ebdc6ffacb2b21d33d418,,,Update base middleware strategy
+jlowin__fastmcp__837,committed,,,b7be21666839c0b1eb98b7cd2ef6ae57330252ca,,,WIP
+jlowin__fastmcp__837,committed,,,7f036b4073cc0a6bdc3007291264484772deb3d2,,,Merge branch 'main' into middleware
+jlowin__fastmcp__837,committed,,,fdc3f58aeb4eece0cf6787359df4945cee65d286,,,Add MCP middleware
+jlowin__fastmcp__837,committed,,,ba8996fdbf79f789b9a6cca7f46810ebe5e5c733,,,Merge branch 'middleware' of https://github.com/jlowin/fastmcp into middleware
+jlowin__fastmcp__837,labeled,2025-06-15T01:36:28Z,jlowin,,,feature,
+jlowin__fastmcp__837,labeled,2025-06-15T01:36:32Z,github-actions[bot],,,tests,
+jlowin__fastmcp__837,committed,,,51686d96df5258bda84aa8afeb3d7ee745818d63,,,Delete examples.py
+jlowin__fastmcp__837,committed,,,b7a546fc9029228ef260da901aba1d89bb6098a4,,,Clean up context
+jlowin__fastmcp__837,committed,,,c5b264a930e68d546836f55ff70ade6b7d01e76d,,,Update generics
+jlowin__fastmcp__837,commented,2025-06-17T21:15:25Z,rsp2k,,,,
+jlowin__fastmcp__837,commented,2025-06-18T22:43:16Z,qqaatw,,,,
+jlowin__fastmcp__837,commented,2025-06-19T01:42:13Z,jlowin,,,,
+jlowin__fastmcp__837,closed,2025-06-19T01:42:13Z,jlowin,,,,
+jlowin__fastmcp__837,head_ref_deleted,2025-06-19T21:24:58Z,jlowin,,,,
+CoderGamester__mcp-unity__47,committed,,,65084f3ee82bb88a8d1d4bef17c41ffc30714a7a,,,"feat: Add configurable console log service with Unity 6 enhanced implementation
+
+- Add ConsoleLogServiceType enum with EventBased and Unity6Enhanced options
+- Implement ConsoleLogsServiceUnity6 using internal LogEntries API for better reliability
+- Add command line argument support (-mcpConsoleLogService) for runtime switching
+- Update McpUnityServer to dynamically select service based on settings and Unity version
+- Add UI controls in McpUnityEditorWindow with warning dialogs for internal API usage
+- Default to safe EventBased implementation, Unity6Enhanced only when explicitly selected
+- Add clear startup logging to identify which implementation is active
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+CoderGamester__mcp-unity__47,committed,,,30d64e9fa9e7896eaee94ac7f845c35a851d85ee,,,"feat: Add comprehensive Unity LogEntry mode flags support with discovered values
+
+- Create LogEntryModeFlags.cs with Unity's internal mode flag constants
+- Add support for observed mode values from debugging:
+  * Compiler warnings: 266240 (0x41000)
+  * Compiler errors: 272384 (0x42800)
+  * Shader errors: 262212 (0x40044)
+  * Runtime warnings: 8405504 (0x804200)
+  * Runtime errors: 8405248 (0x804100)
+- Update Unity6InternalAPIReference.md with complete documentation
+- Add conditional debug logging for future mode value discovery
+- Improve error/warning classification accuracy in Unity 6 implementation
+
+This enables proper filtering of shader errors, compile errors, and runtime
+exceptions that were previously misclassified as ""Log"" type.
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+CoderGamester__mcp-unity__47,committed,,,90ca612b22b3b2d6af03a55136b298b865eb4fab,,,"Remove command-line argument support for console log service selection
+
+- Removed GetEffectiveConsoleLogService() method
+- Console log service now only configurable via Unity Editor settings UI
+- Simplified configuration as command-line args are not practical for Unity Hub users
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+CoderGamester__mcp-unity__47,committed,,,9c2d0c14b2fdea0d8c69a1cf38975fcaa99a97d6,,,"Add .claude/settings.local.json to .gitignore
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+CoderGamester__mcp-unity__47,committed,,,92b838763228343bd7b7e870bc6fe855cc11cd95,,,"Remove .claude/settings.local.json from git tracking
+
+Keep file locally but stop tracking it in git
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+CoderGamester__mcp-unity__47,commented,2025-06-08T10:55:23Z,coderabbitai[bot],,,,
+CoderGamester__mcp-unity__47,reviewed,,,92b838763228343bd7b7e870bc6fe855cc11cd95,,,
+CoderGamester__mcp-unity__47,commented,2025-06-08T11:15:02Z,Saqoosha,,,,
+CoderGamester__mcp-unity__47,mentioned,2025-06-08T11:15:04Z,coderabbitai,,,,
+CoderGamester__mcp-unity__47,commented,2025-06-08T11:15:32Z,coderabbitai[bot],,,,
+CoderGamester__mcp-unity__47,mentioned,2025-06-08T11:15:33Z,Saqoosha,,,,
+CoderGamester__mcp-unity__47,subscribed,2025-06-08T11:15:33Z,Saqoosha,,,,
+CoderGamester__mcp-unity__47,reviewed,,,92b838763228343bd7b7e870bc6fe855cc11cd95,,,
+CoderGamester__mcp-unity__47,commented,2025-06-09T14:06:25Z,Saqoosha,,,,
+CoderGamester__mcp-unity__47,mentioned,2025-06-09T14:06:26Z,CoderGamester,,,,
+CoderGamester__mcp-unity__47,subscribed,2025-06-09T14:06:26Z,CoderGamester,,,,
+CoderGamester__mcp-unity__47,commented,2025-06-09T21:57:24Z,CoderGamester,,,,
+CoderGamester__mcp-unity__47,mentioned,2025-06-09T21:57:25Z,CoderGamester,,,,
+CoderGamester__mcp-unity__47,subscribed,2025-06-09T21:57:25Z,CoderGamester,,,,
+CoderGamester__mcp-unity__47,closed,2025-06-09T21:57:28Z,CoderGamester,,,,
+CoderGamester__mcp-unity__47,head_ref_deleted,2025-06-09T23:27:16Z,Saqoosha,,,,
+dust-tt__dust__123,committed,,,2d222e9c20c33e7b1507ac6264dd9007dfc08787,,,Tera templating with proper error reporting
+dust-tt__dust__123,committed,,,c5c66b127dfef87fe32bf9fb65b0b91084e2ad4d,,,doc update + deprecate few-shot
+dust-tt__dust__123,committed,,,40f5415c59dee646cd9693905e1bc89ce8092288,,,nit
+dust-tt__dust__123,cross-referenced,2023-01-11T16:42:30Z,spolu,,,,
+dust-tt__dust__123,cross-referenced,2023-01-11T16:42:42Z,spolu,,,,
+dust-tt__dust__123,merged,2023-01-11T16:43:22Z,spolu,f6d0856710910eb4f0fa8ec93bfb873a06ddb6b0,,,
+dust-tt__dust__123,closed,2023-01-11T16:43:22Z,spolu,,,,
+dust-tt__dust__123,head_ref_deleted,2023-01-11T16:43:23Z,spolu,,,,
+brentyi__tyro__167,commented,2024-09-21T23:45:04Z,brentyi,,,,
+brentyi__tyro__167,mentioned,2024-09-21T23:45:05Z,emcd,,,,
+brentyi__tyro__167,subscribed,2024-09-21T23:45:05Z,emcd,,,,
+brentyi__tyro__167,commented,2024-09-22T15:59:59Z,emcd,,,,
+brentyi__tyro__167,mentioned,2024-09-22T16:00:00Z,brentyi,,,,
+brentyi__tyro__167,subscribed,2024-09-22T16:00:01Z,brentyi,,,,
+brentyi__tyro__167,cross-referenced,2025-03-23T02:48:37Z,emcd,,,,
+brentyi__tyro__167,closed,2025-03-28T09:14:54Z,brentyi,,,,
+coder__coder__17084,committed,,,e14aafb5090cb9287d1e983978b3555ad9d53b50,,,"fix: add gosec G115 annotations
+
+Added more detailed #nosec G115 annotations to fix gosec warnings
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+Co-Authored-By: Claude <noreply@anthropic.com>"
+coder__coder__17084,committed,,,90a85a497a4b83e1252a664ae0e9242329c0a404,,,"fix: resolve linting issues for Go 1.24.1 update
+
+- Fix go:build directive spacing in pty_linux.go
+- Add bounds checks and #nosec annotations for integer conversions
+- Fix comment alignment and formatting
+- Address gosec G115 warnings in multiple files
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+coder__coder__17084,commented,2025-03-25T07:04:42Z,github-actions[bot],,,,
+coder__coder__17084,mentioned,2025-03-25T07:04:44Z,user,,,,
+coder__coder__17084,subscribed,2025-03-25T07:04:44Z,user,,,,
+coder__coder__17084,assigned,2025-03-25T07:04:44Z,github-actions[bot],,sreya,,
+coder__coder__17084,mentioned,2025-03-25T07:04:44Z,claude,,,,
+coder__coder__17084,subscribed,2025-03-25T07:04:44Z,claude,,,,
+coder__coder__17084,closed,2025-03-25T07:05:26Z,sreya,,,,
+coder__coder__17084,locked,2025-03-25T07:05:41Z,github-actions[bot],,,,
+coder__coder__17084,head_ref_deleted,2025-03-25T07:22:34Z,sreya,,,,
+CoderGamester__mcp-unity__50,committed,,,65084f3ee82bb88a8d1d4bef17c41ffc30714a7a,,,"feat: Add configurable console log service with Unity 6 enhanced implementation
+
+- Add ConsoleLogServiceType enum with EventBased and Unity6Enhanced options
+- Implement ConsoleLogsServiceUnity6 using internal LogEntries API for better reliability
+- Add command line argument support (-mcpConsoleLogService) for runtime switching
+- Update McpUnityServer to dynamically select service based on settings and Unity version
+- Add UI controls in McpUnityEditorWindow with warning dialogs for internal API usage
+- Default to safe EventBased implementation, Unity6Enhanced only when explicitly selected
+- Add clear startup logging to identify which implementation is active
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+CoderGamester__mcp-unity__50,committed,,,30d64e9fa9e7896eaee94ac7f845c35a851d85ee,,,"feat: Add comprehensive Unity LogEntry mode flags support with discovered values
+
+- Create LogEntryModeFlags.cs with Unity's internal mode flag constants
+- Add support for observed mode values from debugging:
+  * Compiler warnings: 266240 (0x41000)
+  * Compiler errors: 272384 (0x42800)
+  * Shader errors: 262212 (0x40044)
+  * Runtime warnings: 8405504 (0x804200)
+  * Runtime errors: 8405248 (0x804100)
+- Update Unity6InternalAPIReference.md with complete documentation
+- Add conditional debug logging for future mode value discovery
+- Improve error/warning classification accuracy in Unity 6 implementation
+
+This enables proper filtering of shader errors, compile errors, and runtime
+exceptions that were previously misclassified as ""Log"" type.
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+CoderGamester__mcp-unity__50,committed,,,90ca612b22b3b2d6af03a55136b298b865eb4fab,,,"Remove command-line argument support for console log service selection
+
+- Removed GetEffectiveConsoleLogService() method
+- Console log service now only configurable via Unity Editor settings UI
+- Simplified configuration as command-line args are not practical for Unity Hub users
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+CoderGamester__mcp-unity__50,committed,,,9c2d0c14b2fdea0d8c69a1cf38975fcaa99a97d6,,,"Add .claude/settings.local.json to .gitignore
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+CoderGamester__mcp-unity__50,committed,,,92b838763228343bd7b7e870bc6fe855cc11cd95,,,"Remove .claude/settings.local.json from git tracking
+
+Keep file locally but stop tracking it in git
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+CoderGamester__mcp-unity__50,committed,,,2d59af909379900c7d12a14c127c0b09b502585b,,,Merge remote-tracking branch 'upstream/main'
+CoderGamester__mcp-unity__50,commented,2025-06-16T21:29:52Z,coderabbitai[bot],,,,
+CoderGamester__mcp-unity__50,closed,2025-06-16T21:31:44Z,Saqoosha,,,,
+CoderGamester__mcp-unity__50,head_ref_deleted,2025-06-16T21:33:42Z,Saqoosha,,,,
+CoderGamester__mcp-unity__50,reviewed,,,2d59af909379900c7d12a14c127c0b09b502585b,,,
+shopware__shopware__10481,issue_type_added,2025-06-12T09:00:51Z,JonahMans,,,,
+shopware__shopware__10481,labeled,2025-06-12T09:00:59Z,github-actions[bot],,,Platform(Default),
+shopware__shopware__10481,labeled,2025-06-12T09:05:59Z,github-actions[bot],,,needs-triage,
+shopware__shopware__10481,labeled,2025-06-12T09:07:39Z,jenskueper,,,6.7-RC-Issues,
+shopware__shopware__10481,labeled,2025-06-16T09:17:59Z,yusufttur,,,priority/high,
+shopware__shopware__10481,labeled,2025-06-16T09:17:59Z,yusufttur,,,domain/framework,
+shopware__shopware__10481,unlabeled,2025-06-16T09:18:03Z,yusufttur,,,needs-triage,
+shopware__shopware__10481,labeled,2025-06-17T06:10:06Z,jleifeld,,,component/administration,
+shopware__shopware__10481,commented,2025-06-17T07:22:32Z,jleifeld,,,,
+shopware__shopware__10481,mentioned,2025-06-17T07:22:33Z,shyim,,,,
+shopware__shopware__10481,subscribed,2025-06-17T07:22:33Z,shyim,,,,
+shopware__shopware__10481,assigned,2025-06-17T07:22:49Z,jleifeld,,jleifeld,,
+shopware__shopware__10481,commented,2025-06-17T07:27:22Z,shyim,,,,
+artsy__force__15292,committed,,,356778ad28e611cbfba51bee08e612d163865e6b,,,fix: add loading state for payment route of order app so that the screen does not flicker on load (#15290)
+artsy__force__15292,assigned,2025-03-12T18:22:45Z,artsyit,,oxaudo,,
+artsy__force__15292,committed,,,9150fc1f04c7d3db2eba9da5b9271e1e8d5171d4,,,refactor: accepts a more generic layout prop for grid type
+artsy__force__15292,committed,,,5d82a7c499599e2555814c73a15282878f5c9f61,,,feat(EMI-2297): Render express checkout with shippingRates + new order schema (#15276)
+artsy__force__15292,labeled,2025-03-13T14:11:55Z,artsy-peril[bot],,,Jira Synced,
+artsy__force__15292,committed,,,cc61e921074802e055ce17e21888d833b157df33,,,"feat(shows): switches to ""flat"" grid layout for show artworks"
+artsy__force__15292,committed,,,f1fd16b0fadd99c30f7ffb4e52f3421f9071e547,,,refactor: uses a single type; consistent casing
+artsy__force__15292,committed,,,7b4ca6cc8a004323022549c39ec25cd87829c5a9,,,Merge pull request #15295 from artsy/DIA-1117-update-grid-on-gallery-curated-sort-for-gallery-shows
+artsy__force__15292,committed,,,cb46f7b8e1629a10451dc18760185ee4c3343952,,,chore: update metaphysics graphql schema (#15296)
+artsy__force__15292,committed,,,c186ee65da89ccbc28a4fa6b4259b3b9befc1516,,,"refactor: migrate ArtistNationalityFilter spec from Enzyme to RTL  (#15294)
+
+* test: convert ArtistNationalityFilter test from Enzyme to RTL
+
+Migrates the ArtistNationalityFilter.jest.enzyme.tsx test to use React Testing Library instead of Enzyme, following the pattern used by other modern tests in the ArtworkFilters directory.
+
+This is part of the ongoing effort to modernize the test suite by moving away from Enzyme.
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+Co-Authored-By: Claude <noreply@anthropic.com>
+
+* test: add assertion about component title
+
+* chore: remove obsolete Enzyme test for ArtistNationalityFilter
+
+Removes the Enzyme version of the ArtistNationalityFilter test since it's been
+replaced with the React Testing Library version in the previous commit.
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+Co-Authored-By: Claude <noreply@anthropic.com>"
+artsy__force__15292,committed,,,c51ae1dd5e7173c92d54f1f78ae2740d5b433ea4,,,feat: exposes a placeholder for flat grid layout
+artsy__force__15292,committed,,,78979f50767b2f6490155ce1f567ba1c48b88e99,,,feat: uses new flat grid placeholder
+artsy__force__15292,committed,,,c5047def8c5151b9c713f4f1eef8dff8727b7cf4,,,"Merge pull request #15298 from artsy/DIA-1212-build-a-flat-grid-placeholder-skeleton-and-use-it-when-layout-is-grid
+
+feat(dia-1212): uses flat grid placeholder skeleton when layout is grid"
+artsy__force__15292,merged,2025-03-14T13:12:54Z,artsyit,5d85d501e44bae5c5acc35315861ffb624cf8dd1,,,
+artsy__force__15292,closed,2025-03-14T13:12:54Z,artsyit,,,,
+eyaltoledano__claude-task-master__829,committed,,,df9ce457ff2e39d7b9d036c7cd0cdb9260d907e7,,,"feat: add Claude Code provider support
+
+Implements Claude Code as a new AI provider that uses the Claude Code CLI
+without requiring API keys. This enables users to leverage Claude models
+through their local Claude Code installation.
+
+Key changes:
+- Add complete AI SDK v1 implementation for Claude Code provider
+  - Custom SDK with streaming/non-streaming support
+  - Session management for conversation continuity
+  - JSON extraction for object generation mode
+  - Support for advanced settings (maxTurns, allowedTools, etc.)
+
+- Integrate Claude Code into Task Master's provider system
+  - Update ai-services-unified.js to handle keyless authentication
+  - Add provider to supported-models.json with opus/sonnet models
+  - Ensure correct maxTokens values are applied (opus: 32000, sonnet: 64000)
+
+- Fix maxTokens configuration issue
+  - Add max_tokens property to getAvailableModels() output
+  - Update setModel() to properly handle claude-code models
+  - Create update-config-tokens.js utility for init process
+
+- Add comprehensive documentation
+  - User guide with configuration examples
+  - Advanced settings explanation and future integration options
+
+The implementation maintains full backward compatibility with existing
+providers while adding seamless Claude Code support to all Task Master
+commands."
+eyaltoledano__claude-task-master__829,committed,,,93271e0a2deda2df58144dbba7537f873140955e,,,"fix(docs): correct invalid commands in claude-code usage examples
+
+- Remove non-existent 'do', 'estimate', and 'analyze' commands
+- Replace with actual Task Master commands: next, show, set-status
+- Use correct syntax for parse-prd and analyze-complexity"
+eyaltoledano__claude-task-master__829,committed,,,72a324075ca24ceca5ee1be1a9066233e36554ea,,,"feat: make @anthropic-ai/claude-code an optional dependency
+
+This change makes the Claude Code SDK package optional, preventing installation failures for users who don't need Claude Code functionality.
+
+Changes:
+- Added @anthropic-ai/claude-code to optionalDependencies in package.json
+- Implemented lazy loading in language-model.js to only import the SDK when actually used
+- Updated documentation to explain the optional installation requirement
+- Applied formatting fixes to ensure code consistency
+
+Benefits:
+- Users without Claude Code subscriptions don't need to install the dependency
+- Reduces package size for users who don't use Claude Code
+- Prevents installation failures if the package is unavailable
+- Provides clear error messages when the package is needed but not installed
+
+The implementation uses dynamic imports to load the SDK only when doGenerate() or doStream() is called, ensuring the provider can be instantiated without the package present."
+eyaltoledano__claude-task-master__829,committed,,,4125025abdbc841f57122fa75a845c321b950756,,,"test: add comprehensive tests for ClaudeCodeProvider
+
+Addresses code review feedback about missing automated tests for the ClaudeCodeProvider.
+
+## Changes
+
+- Added unit tests for ClaudeCodeProvider class covering constructor, validateAuth, and getClient methods
+- Added unit tests for ClaudeCodeLanguageModel testing lazy loading behavior and error handling
+- Added integration tests verifying optional dependency behavior when @anthropic-ai/claude-code is not installed
+
+## Test Coverage
+
+1. **Unit Tests**:
+   - ClaudeCodeProvider: Basic functionality, no API key requirement, client creation
+   - ClaudeCodeLanguageModel: Model initialization, lazy loading, error messages, warning generation
+
+2. **Integration Tests**:
+   - Optional dependency behavior when package is not installed
+   - Clear error messages for users about missing package
+   - Provider instantiation works but usage fails gracefully
+
+All tests pass and provide comprehensive coverage for the claude-code provider implementation."
+eyaltoledano__claude-task-master__829,committed,,,de77826bcc9fb9b19b66a8ff8e0cb2d0ff681520,,,"revert: remove maxTokens update functionality from init
+
+This functionality was out of scope for the Claude Code provider PR.
+The automatic updating of maxTokens values in config.json during
+initialization is a general improvement that should be in a separate PR.
+
+Additionally, Claude Code ignores maxTokens and temperature parameters
+anyway, making this change irrelevant for the Claude Code integration.
+
+Removed:
+- scripts/modules/update-config-tokens.js
+- Import and usage in scripts/init.js"
+eyaltoledano__claude-task-master__829,committed,,,5d82b69610a4a18ee2f04eb49c1c2e6f69ff3996,,,"docs: add Claude Code support information to README
+
+- Added Claude Code to the list of supported providers in Requirements section
+- Noted that Claude Code requires no API key but needs Claude Code CLI
+- Added example of configuring claude-code/sonnet model
+- Created dedicated Claude Code Support section with key information
+- Added link to detailed Claude Code setup documentation
+
+This ensures users are aware of the Claude Code option as a no-API-key
+alternative for using Claude models."
+eyaltoledano__claude-task-master__829,committed,,,18a5f63d06de85a65b49336108f46ff7597e290d,,,style: apply biome formatting to test files
+eyaltoledano__claude-task-master__829,committed,,,d0a7deb46c47e21aa148c195806eaaed4d5179f5,,,"fix(models): add missing --claude-code flag to models command
+
+The models command was missing the --claude-code provider flag, preventing users from setting Claude Code models via CLI. While the backend already supported claude-code as a provider hint, there was no command-line flag to trigger it.
+
+Changes:
+- Added --claude-code option to models command alongside existing provider flags
+- Updated provider flags validation to include claudeCode option
+- Added claude-code to providerHint logic for all three model roles (main, research, fallback)
+- Updated error message to include --claude-code in list of mutually exclusive flags
+- Added example usage in help text
+
+This allows users to properly set Claude Code models using commands like:
+  task-master models --set-main sonnet --claude-code
+  task-master models --set-main opus --claude-code
+
+Without this flag, users would get ""Model ID not found"" errors when trying to set claude-code models, as the system couldn't determine the correct provider for generic model names like ""sonnet"" or ""opus""."
+eyaltoledano__claude-task-master__829,committed,,,8df2d50bac0510443dfa42933fbf7466f1014850,,,chore: add changeset for Claude Code provider feature
+eyaltoledano__claude-task-master__829,commented,2025-06-20T13:23:10Z,changeset-bot[bot],,,,
+eyaltoledano__claude-task-master__829,renamed,2025-06-20T13:23:31Z,Crunchyman-ralph,,,,
+eyaltoledano__claude-task-master__829,cross-referenced,2025-06-20T13:24:43Z,Crunchyman-ralph,,,,
+eyaltoledano__claude-task-master__829,mentioned,2025-06-20T13:25:17Z,ghul0,,,,
+eyaltoledano__claude-task-master__829,subscribed,2025-06-20T13:25:18Z,ghul0,,,,
+eyaltoledano__claude-task-master__829,merged,2025-06-20T13:25:22Z,Crunchyman-ralph,4b0c9d9af62d00359fca3f43283cf33223d410bc,,,
+eyaltoledano__claude-task-master__829,closed,2025-06-20T13:25:22Z,Crunchyman-ralph,,,,
+eyaltoledano__claude-task-master__829,commented,2025-06-20T14:59:47Z,fahimanwer,,,,
+eyaltoledano__claude-task-master__829,commented,2025-06-20T15:01:10Z,ben-vargas,,,,
+eyaltoledano__claude-task-master__829,mentioned,2025-06-20T15:01:11Z,Crunchyman-ralph,,,,
+eyaltoledano__claude-task-master__829,subscribed,2025-06-20T15:01:11Z,Crunchyman-ralph,,,,
+eyaltoledano__claude-task-master__829,commented,2025-06-20T15:08:16Z,ben-vargas,,,,
+eyaltoledano__claude-task-master__829,mentioned,2025-06-20T15:08:18Z,AI-SDK,,,,
+eyaltoledano__claude-task-master__829,commented,2025-06-20T15:11:28Z,Crunchyman-ralph,,,,
+eyaltoledano__claude-task-master__829,mentioned,2025-06-20T15:11:29Z,ben-vargas,,,,
+eyaltoledano__claude-task-master__829,subscribed,2025-06-20T15:11:29Z,ben-vargas,,,,
+eyaltoledano__claude-task-master__829,commented,2025-06-20T15:12:08Z,Crunchyman-ralph,,,,
+eyaltoledano__claude-task-master__829,mentioned,2025-06-20T15:12:10Z,ben-vargas,,,,
+eyaltoledano__claude-task-master__829,subscribed,2025-06-20T15:12:10Z,ben-vargas,,,,
+eyaltoledano__claude-task-master__829,commented,2025-06-20T15:16:06Z,ben-vargas,,,,
+eyaltoledano__claude-task-master__829,mentioned,2025-06-20T15:16:08Z,Crunchyman-ralph,,,,
+quarylabs__sqruff__689,labeled,2024-09-07T10:05:38Z,benfdking,,,rust,
+quarylabs__sqruff__689,labeled,2024-09-07T10:05:38Z,benfdking,,,dialect,
+quarylabs__sqruff__689,commented,2024-09-07T10:06:15Z,benfdking,,,,
+quarylabs__sqruff__689,subscribed,2025-04-26T09:53:02Z,keen85,,,,
+quarylabs__sqruff__689,subscribed,2025-06-03T01:55:23Z,puruzio,,,,
+quarylabs__sqruff__689,cross-referenced,2025-06-19T03:29:50Z,Fank,,,,
+quarylabs__sqruff__689,cross-referenced,2025-06-21T16:23:32Z,Fank,,,,
+quarylabs__sqruff__689,closed,2025-06-23T17:22:48Z,benfdking,,,,
+ryoppippi__ccusage__127,referenced,2025-06-20T12:53:36Z,zhiyue,b08f1cebd13f415821b42b76203c791d4bc9d035,,,
+ryoppippi__ccusage__127,cross-referenced,2025-06-20T12:55:29Z,zhiyue,,,,
+ryoppippi__ccusage__127,closed,2025-06-20T13:24:12Z,ryoppippi,,,,
+ryoppippi__ccusage__127,referenced,2025-06-22T00:25:41Z,Durafen,932c59ebd7d20ebf9365a98d6ce60150a8247856,,,
+ryoppippi__ccusage__127,referenced,2025-06-22T00:39:15Z,ryoppippi,2d98487b49c0f0db73ee28966fc1b5d5b9b169b5,,,
+ryoppippi__ccusage__23,labeled,2025-06-07T18:30:34Z,ryoppippi,,,good first issue,
+ryoppippi__ccusage__23,subscribed,2025-06-10T22:55:47Z,c01o,,,,
+ryoppippi__ccusage__23,cross-referenced,2025-06-11T11:04:53Z,ryoppippi,,,,
+ryoppippi__ccusage__23,subscribed,2025-06-13T11:45:31Z,Uninen,,,,
+ryoppippi__ccusage__23,commented,2025-06-16T16:34:22Z,a-c-m,,,,
+ryoppippi__ccusage__23,referenced,2025-06-16T18:57:09Z,a-c-m,b7d4cfc4ffd4d6f4cd60521a73fc210a4134e5f1,,,
+ryoppippi__ccusage__23,cross-referenced,2025-06-16T18:58:09Z,a-c-m,,,,
+ryoppippi__ccusage__23,referenced,2025-06-16T19:11:55Z,a-c-m,f2b808e0a0727ce3749a8e7cdc943233ea3296ea,,,
+ryoppippi__ccusage__23,referenced,2025-06-16T20:26:52Z,Kaniikura,ca81a8d569b9b8795052444608b32d126b633023,,,
+ryoppippi__ccusage__23,cross-referenced,2025-06-16T20:28:22Z,Kaniikura,,,,
+ryoppippi__ccusage__23,mentioned,2025-06-16T20:35:54Z,a-c-m,,,,
+ryoppippi__ccusage__23,subscribed,2025-06-16T20:35:54Z,a-c-m,,,,
+ryoppippi__ccusage__23,mentioned,2025-06-16T20:35:54Z,ryoppippi,,,,
+ryoppippi__ccusage__23,subscribed,2025-06-16T20:35:54Z,ryoppippi,,,,
+ryoppippi__ccusage__23,commented,2025-06-16T20:38:13Z,ryoppippi,,,,
+ryoppippi__ccusage__23,commented,2025-06-16T21:55:14Z,Kaniikura,,,,
+ryoppippi__ccusage__23,mentioned,2025-06-16T21:55:15Z,a-c-m,,,,
+ryoppippi__ccusage__23,subscribed,2025-06-16T21:55:15Z,a-c-m,,,,
+ryoppippi__ccusage__23,mentioned,2025-06-16T21:55:15Z,ryoppippi,,,,
+ryoppippi__ccusage__23,subscribed,2025-06-16T21:55:15Z,ryoppippi,,,,
+ryoppippi__ccusage__23,commented,2025-06-16T21:56:47Z,ryoppippi,,,,
+ryoppippi__ccusage__23,commented,2025-06-16T22:04:07Z,Kaniikura,,,,
+ryoppippi__ccusage__23,commented,2025-06-17T06:57:51Z,rockmandash,,,,
+ryoppippi__ccusage__23,closed,2025-06-17T13:16:56Z,ryoppippi,,,,
+ryoppippi__ccusage__23,referenced,2025-06-22T00:39:10Z,ryoppippi,caabd40e9a7436c2580d6f340468ede2f4ceb06d,,,
+ryoppippi__ccusage__23,referenced,2025-06-22T00:39:10Z,ryoppippi,797ac702e093d2ba1444f25220fc9fa5e07938bb,,,
+mitsuhiko__insta__455,head_ref_force_pushed,2024-03-05T04:39:19Z,max-sixty,51e1be45566dcd388f469d04d3f0a76ff3ba115b,,,
+mitsuhiko__insta__455,committed,,,2959d790fb97882ec65cce639267c4bdfb31dbf2,,,"Allow `debug` expressions in redaction macros
+
+It's can be a bit confusing when some macros have features which others don't have. So this adds debug expressions to the redaction macros.
+
+(Though they do get quite long; possibly we want to recommend something like `description` in place of `debug` throughout?)"
+mitsuhiko__insta__455,head_ref_force_pushed,2024-03-05T04:39:28Z,max-sixty,2959d790fb97882ec65cce639267c4bdfb31dbf2,,,
+mitsuhiko__insta__455,referenced,2024-03-05T06:37:33Z,max-sixty,dc23db632065e9d8c10885a9ee3cf7ef54bdc81d,,,
+mitsuhiko__insta__455,cross-referenced,2024-03-05T18:55:38Z,max-sixty,,,,
+mitsuhiko__insta__455,committed,,,51c0576d90befae62a9fbbe442a96c7efd84a8ed,,,Merge branch 'master' into redaction-debug
+mitsuhiko__insta__455,committed,,,632f5541a29249ce22284f8ba2c07d65692180ed,,,changelog
+mitsuhiko__insta__455,committed,,,0445a2a2b2ea5cc9019a3787aa3ff4a91fdc221f,,,Merge branch 'master' into redaction-debug
+mitsuhiko__insta__455,commented,2024-04-16T18:58:52Z,max-sixty,,,,
+mitsuhiko__insta__455,referenced,2024-04-18T11:35:43Z,mitsuhiko,aa978653638c9fc05e879f8d1da0bc9202ffad83,,,
+mitsuhiko__insta__455,committed,,,cc4bf7b536aea8ce391dd0af9496f6b16b7c2ae0,,,Merge branch 'master' into redaction-debug
+mitsuhiko__insta__455,committed,,,50b205043a581edf0e4698ac874018a14755524d,,,Merge branch 'master' into redaction-debug
+mitsuhiko__insta__455,commented,2025-04-05T18:10:33Z,max-sixty,,,,
+mitsuhiko__insta__455,closed,2025-04-05T18:10:33Z,max-sixty,,,,
+modelcontextprotocol__modelcontextprotocol__619,committed,,,a8f766b90a04c3a4ef4cbe7669ec5f51d7323fd9,,,docs: Add AIQL MCP client to clients list
+modelcontextprotocol__modelcontextprotocol__619,closed,2025-06-01T07:26:12Z,aiqlcom,,,,
+modelcontextprotocol__modelcontextprotocol__619,head_ref_deleted,2025-06-01T07:26:36Z,aiqlcom,,,,
+busser__tfautomv__95,committed,,,8c9476c324c1377512270bd68acc6ce8c8b15de1,,,Progress on planpaths
+busser__tfautomv__95,committed,,,ec905058dd3093f72f126d350c232d5be81fd52b,,,Update main.go
+busser__tfautomv__95,committed,,,6b1887f3886c2cfb8714b2857ae961179ae8fd53,,,Update plan.go
+busser__tfautomv__95,committed,,,91c83ff831125cc97b0e74c7c21c6aec230b5ac8,,,Update main.go
+busser__tfautomv__95,committed,,,0ef79b312b2c62acf41686180576772662ee35e7,,,Update README.md
+busser__tfautomv__95,committed,,,e6bb53b689ca9338c6a36436f86502de5be9d7c8,,,Update README.md
+busser__tfautomv__95,review_requested,2024-05-23T07:54:45Z,atthematyo,,,,
+busser__tfautomv__95,committed,,,bd680bcbd6f020c559b4fea36b73717a104435c3,,,Merge branch 'main' into plan-path
+busser__tfautomv__95,commented,2024-06-01T09:41:33Z,atthematyo,,,,
+busser__tfautomv__95,mentioned,2024-06-01T09:41:34Z,busser,,,,
+busser__tfautomv__95,subscribed,2024-06-01T09:41:34Z,busser,,,,
+busser__tfautomv__95,commented,2024-10-07T14:21:56Z,sklakegg,,,,
+busser__tfautomv__95,commented,2025-06-06T09:42:20Z,busser,,,,
+busser__tfautomv__95,mentioned,2025-06-06T09:42:21Z,atthematyo,,,,
+busser__tfautomv__95,subscribed,2025-06-06T09:42:21Z,atthematyo,,,,
+busser__tfautomv__95,referenced,2025-06-06T10:02:10Z,busser,f1ff7346657811175658d26a09a5df88db1017bd,,,
+busser__tfautomv__95,cross-referenced,2025-06-06T10:02:16Z,busser,,,,
+busser__tfautomv__95,referenced,2025-06-06T10:22:00Z,busser,b1deb57ce29f16408e45d769b281c137c2ca8394,,,
+busser__tfautomv__95,commented,2025-06-06T13:23:51Z,busser,,,,
+busser__tfautomv__95,closed,2025-06-06T13:23:51Z,busser,,,,
+OpenAdaptAI__OpenAdapt__947,committed,,,9e94a05a84160cd1264c7b564a4d8a427efc460d,,,"Implement OmniMCP for Claude computer control
+
+This commit adds OmniMCP, a system that enables Claude to control the computer using the Model Control Protocol.
+
+Key components:
+- OmniParser adapter for UI element detection
+- MCP server implementation
+- CLI interface for commands and debugging
+- Comprehensive documentation
+
+OmniMCP combines OmniParser's visual understanding with Claude's natural language capabilities to automate UI interactions."
+OpenAdaptAI__OpenAdapt__947,cross-referenced,2025-03-16T00:52:58Z,abrichr,,,,
+OpenAdaptAI__OpenAdapt__947,committed,,,8e070e3a042cac9b10f60f7758bc1dfb4f7d9bd8,,,"Add standalone OmniMCP package with minimal dependencies
+
+- Create dedicated omnimcp folder with pyproject.toml and setup.py
+- Add installation scripts for Windows (install.bat) and Unix (install.sh)
+- Set up minimal package structure that uses OpenAdapt imports
+- Configure entry points for CLI commands
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+OpenAdaptAI__OpenAdapt__947,committed,,,266c44cc6bc975802f7890362a54608050d04290,,,"Standardize CLI mode terminology in documentation
+
+Updated comment in omnimcp.py to use ""CLI mode"" instead of ""interactively""
+for consistency with other documentation and code.
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+OpenAdaptAI__OpenAdapt__947,committed,,,e2ddf842d2d9a5f8a37f4c3462ea5871deeaf2ee,,,"Use monitor dimensions for default visualization size
+
+Replace hardcoded 800x600 visualization size with actual monitor dimensions
+from utils.get_monitor_dims() to ensure consistent scaling across different
+display configurations.
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+OpenAdaptAI__OpenAdapt__947,committed,,,0a4c6580fc65e03e0418102d5c58a141767b2e0d,,,"Set executable permission on install.sh and update README
+
+- Mark install.sh as executable for Unix/Mac users
+- Add a note to the README about permissions in case Git doesn't preserve them
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+OpenAdaptAI__OpenAdapt__947,committed,,,a058f63cb5458f88700ad77cf406a62d458693ae,,,"Add robust path handling for OmniMCP standalone package
+
+- Create a dedicated pathing.py module for OpenAdapt path management
+- Add descriptive error messages for troubleshooting import issues
+- Centralize path setup logic with proper error handling
+- Update importing modules to use the new path handling
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+OpenAdaptAI__OpenAdapt__947,committed,,,ca33de9a0eeaf006126cd64c7e1d066858694c9f,,,"Implement lazy imports for BeautifulSoup and update OmniMCP dependencies
+
+- Add lazy imports for BeautifulSoup in utils.py functions
+- Add jinja2 to OmniMCP dependencies
+- Simplify setup.py to use dependencies from pyproject.toml
+- Preserve OpenAdapt path handling in setup.py
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+OpenAdaptAI__OpenAdapt__947,committed,,,524787ccc7cd90c08900cbcad6a5f05e4e242a35,,,"Add posthog to OmniMCP dependencies and keep BeautifulSoup lazy loading
+
+- Add posthog to OmniMCP dependencies
+- Keep BeautifulSoup lazy loaded in utils.py functions
+- Revert DistinctIDPosthog class to its original implementation
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+OpenAdaptAI__OpenAdapt__947,committed,,,a346a199f489fab7beef87b372e2c725332be799,,,"Add multiprocessing-utils dependency and update README
+
+- Add multiprocessing-utils to OmniMCP dependencies
+- Restore original implementation of process_local storage
+- Add development command to README.md for resetting environment
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+OpenAdaptAI__OpenAdapt__947,committed,,,99eed0750ea7c7d276c3c941ab6d99029a58d094,,,"Add numpy to OmniMCP dependencies
+
+- Add numpy as a dependency for array operations
+- Required by utils.py
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+OpenAdaptAI__OpenAdapt__947,committed,,,b30c6a7101d6f0b32f2b58f7f73231fce7280c44,,,"Add orjson to OmniMCP dependencies
+
+- Add orjson as a dependency for fast JSON handling
+- Required by utils.py
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+OpenAdaptAI__OpenAdapt__947,head_ref_force_pushed,2025-03-16T03:15:09Z,abrichr,b30c6a7101d6f0b32f2b58f7f73231fce7280c44,,,
+OpenAdaptAI__OpenAdapt__947,committed,,,7fa44831e73da676e672632e1c907e02b4555b13,,,"Add dictalchemy to OmniMCP dependencies
+
+- Add dictalchemy for SQLAlchemy dict utilities
+- Required for openadapt.db module
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+OpenAdaptAI__OpenAdapt__947,committed,,,f7876f5bc3e86ad95e8b9ee3a1641fe2dd4a8209,,,"Make BeautifulSoup import lazy in models.py
+
+- Update models.py to use string literals for BeautifulSoup types
+- Allow OmniMCP to run without BeautifulSoup dependency
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+OpenAdaptAI__OpenAdapt__947,committed,,,a13e3990b54cf819a28025b426b3d4027fc973b5,,,"Add joblib to OmniMCP dependencies
+
+- Add joblib for caching functionality
+- Required by openadapt.cache module
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+OpenAdaptAI__OpenAdapt__947,committed,,,b854f425a3ac4af5947840eb3e69be14ebb4d29a,,,"Add AWS dependencies for OmniParser deployment
+
+- Add boto3 and botocore for AWS SDK
+- Required for deploying OmniParser service
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+OpenAdaptAI__OpenAdapt__947,committed,,,e31a8dd86cedadf6ad83ddeabb1d696bec46b84a,,,"Improve OmniParser integration with strict validation
+
+- Add allow_no_parser flag to make it explicit when running without OmniParser
+- Fail by default if OmniParser server is not available
+- Update README with clear instructions for OmniParser configuration
+- Add TODO for future Anthropic ComputerUse integration
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+OpenAdaptAI__OpenAdapt__947,committed,,,22ac39281ad299a2af75fde47178d4aeee556e65,,,"Add Anthropic ComputerUse integration information
+
+- Add detailed comparison of OmniMCP and Anthropic ComputerUse approaches
+- Describe key architectural differences and integration opportunities
+- Add TODO comment for future ComputerUse integration possibilities
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+OpenAdaptAI__OpenAdapt__947,committed,,,47da97a8a16cc3f741a05dd5de2ba0809f542c52,,,"Improve OmniParser deployment and configuration options
+
+- Add auto-deploy functionality with user confirmation
+- Add skip-confirmation flag to deploy without prompting
+- Add TODO for simplified AWS configuration in the future
+- Update documentation with new options and deployment scenarios
+- Expand README with detailed OmniParser configuration instructions
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+OpenAdaptAI__OpenAdapt__947,committed,,,9cec405ec84c72941af38e73b57004347c714e29,,,"Fix OmniMCP deployment and add utility files
+
+- Added an environment variable override for PROJECT_NAME
+- Added .env.example to show required AWS credentials
+- Updated README with clearer installation instructions
+- Added CLAUDE.md with important command notes
+- Added paramiko dependency for OmniParser deployment
+- Modified omnimcp.py to ensure PROJECT_NAME consistency
+- Simplified openadapt/adapters/__init__.py imports"
+OpenAdaptAI__OpenAdapt__947,committed,,,c435c4a86a4a80b6071bc818baf299e2f1c72a0e,,,"WIP: Move core functionality to omnimcp package
+
+This is a work-in-progress commit that:
+1. Moves OmniMCP, OmniParser adapter, and MCP server to omnimcp package
+2. Updates imports and dependencies to match new structure
+3. Adds Computer Use integration (loop.py) as a demo
+4. Updates setup.py to include the new entry points
+
+Still TODO:
+- Ensure all imports from OpenAdapt are minimal (just utils.py)
+- Finish testing the OmniParser + MCP integration
+- Clean up any remaining references to OpenAdapt"
+OpenAdaptAI__OpenAdapt__947,committed,,,885531034eebe7e8c8699feba98920498e28da67,,,"Update OmniMCP for independent operation
+
+This commit makes OmniMCP more independent from OpenAdapt:
+1. Create a local config.py to replace openadapt.config dependency
+2. Use the Anthropic SDK directly instead of openadapt.drivers.anthropic
+3. Update the Claude model to use latest versions (3.5/3.7)
+4. Replace run_omnimcp.py with a local implementation
+5. Update imports throughout the codebase to use local modules"
+OpenAdaptAI__OpenAdapt__947,committed,,,8391c67b998810b88720e1acb1d80d979088bfb6,,,"Fix OmniParser auto-deployment with AWS integration
+
+- Fixed import path in omniparser.py to use correct deploy.deploy.models.omniparser.deploy
+- Added subnet creation for VPCs without subnets
+- Fixed key path handling to avoid permission issues
+- Improved EC2 instance discovery to connect to remote server
+- Enhanced documentation in CLAUDE.md with detailed troubleshooting steps
+- Added PROJECT_NAME to .env.example for consistency
+- Fixed string formatting in deploy.py Docker commands
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+OpenAdaptAI__OpenAdapt__947,renamed,2025-03-16T17:53:02Z,abrichr,,,,
+OpenAdaptAI__OpenAdapt__947,committed,,,729a6432e65074bf95a5fe8f925d8cad3f108b4f,,,simplfiy loop.py
+OpenAdaptAI__OpenAdapt__947,committed,,,4900fbce38ae3e553def6c049f79874877042efa,,,gitignore
+angular-eslint__angular-eslint__2392,commented,2025-04-25T08:49:59Z,JamesHenry,,,,
+angular-eslint__angular-eslint__2392,commented,2025-04-25T16:16:24Z,Tallyb,,,,
+angular-eslint__angular-eslint__2392,commented,2025-05-25T13:59:35Z,JamesHenry,,,,
+angular-eslint__angular-eslint__2392,mentioned,2025-05-25T13:59:36Z,claude,,,,
+angular-eslint__angular-eslint__2392,subscribed,2025-05-25T13:59:36Z,claude,,,,
+angular-eslint__angular-eslint__2392,commented,2025-05-25T14:00:06Z,claude[bot],,,,
+angular-eslint__angular-eslint__2392,referenced,2025-05-25T14:03:07Z,claude[bot],db3f6351e1402b42045deb0eb448832a0e662d26,,,
+angular-eslint__angular-eslint__2392,mentioned,2025-05-25T14:03:35Z,JamesHenry,,,,
+angular-eslint__angular-eslint__2392,subscribed,2025-05-25T14:03:35Z,JamesHenry,,,,
+angular-eslint__angular-eslint__2392,cross-referenced,2025-05-25T14:04:52Z,JamesHenry,,,,
+angular-eslint__angular-eslint__2392,closed,2025-05-25T14:16:25Z,JamesHenry,,,,
+bufbuild__buf__3650,labeled,2025-02-24T21:40:15Z,iainmcgin,,,Feature,
+bufbuild__buf__3650,referenced,2025-02-25T00:48:56Z,iainmcgin,30cc4dc0c9d568a4ce15141b323e98114def8459,,,
+bufbuild__buf__3650,cross-referenced,2025-02-25T00:48:57Z,iainmcgin,,,,
+bufbuild__buf__3650,assigned,2025-02-27T00:43:04Z,doriable,,doriable,,
+bufbuild__buf__3650,commented,2025-02-27T18:02:16Z,doriable,,,,
+bufbuild__buf__3650,commented,2025-02-28T19:48:12Z,doriable,,,,
+bufbuild__buf__3650,closed,2025-02-28T19:48:12Z,doriable,,,,
+Shopify__roast__224,labeled,2025-06-11T15:47:19Z,obie,,,brainstorm,
+Shopify__roast__224,labeled,2025-06-11T15:47:20Z,obie,,,epic/reliability,
+Shopify__roast__224,milestoned,2025-06-11T18:08:44Z,obie,,,,
+Shopify__roast__224,referenced,2025-06-19T03:24:53Z,parruda,f557cd6d9a5f9ecb96d9f9fd9936b38ae3ecee2c,,,
+Shopify__roast__224,cross-referenced,2025-06-19T03:25:24Z,parruda,,,,
+Shopify__roast__224,referenced,2025-06-19T19:13:40Z,parruda,d892378bfd65e6d0cd0c015b45c087a9eed8c206,,,
+Shopify__roast__224,referenced,2025-06-19T19:40:39Z,parruda,ad455853cee263c189f0d8209440c841b286693c,,,
+Shopify__roast__224,referenced,2025-06-20T01:22:02Z,parruda,ffc842701d6f20039b4add37a6602fc4258472dd,,,
+Shopify__roast__224,referenced,2025-06-20T01:31:39Z,parruda,a08ff9cc8f50d517e4ae2f3bd1bcd9daa8ffe94a,,,
+Shopify__roast__102,mentioned,2025-05-29T20:22:06Z,styrmis,,,,
+Shopify__roast__102,subscribed,2025-05-29T20:22:06Z,styrmis,,,,
+Shopify__roast__102,mentioned,2025-05-29T20:22:06Z,CarineIsAwesome,,,,
+Shopify__roast__102,subscribed,2025-05-29T20:22:06Z,CarineIsAwesome,,,,
+Shopify__roast__102,labeled,2025-06-11T19:17:45Z,obie,,,enhancement,
+Shopify__roast__102,milestoned,2025-06-11T19:17:45Z,obie,,,,
+Shopify__roast__102,labeled,2025-06-11T19:17:45Z,obie,,,epic/developer-experience,
+Shopify__roast__102,cross-referenced,2025-06-11T19:27:53Z,obie,,,,
+Shopify__roast__102,cross-referenced,2025-06-11T19:28:17Z,obie,,,,
+Shopify__roast__102,cross-referenced,2025-06-11T19:28:34Z,obie,,,,
+Shopify__roast__102,cross-referenced,2025-06-11T19:29:03Z,obie,,,,
+Shopify__roast__102,cross-referenced,2025-06-11T19:29:22Z,obie,,,,
+Shopify__roast__102,cross-referenced,2025-06-11T19:29:53Z,obie,,,,
+Shopify__roast__102,referenced,2025-06-11T21:06:20Z,obie,41e328aad6b200ea2d47aa3d03bb22bf12fb65f6,,,
+Shopify__roast__102,cross-referenced,2025-06-11T21:06:51Z,obie,,,,
+Shopify__roast__102,closed,2025-06-12T15:12:07Z,obie,,,,
+eyaltoledano__claude-task-master__805,committed,,,426aaf2f05622a48bf54067a2b04a4469c26634e,,,"feat: add Claude Code provider support
+
+Implements Claude Code as a new AI provider that uses the Claude Code CLI
+without requiring API keys. This enables users to leverage Claude models
+through their local Claude Code installation.
+
+Key changes:
+- Add complete AI SDK v1 implementation for Claude Code provider
+  - Custom SDK with streaming/non-streaming support
+  - Session management for conversation continuity
+  - JSON extraction for object generation mode
+  - Support for advanced settings (maxTurns, allowedTools, etc.)
+
+- Integrate Claude Code into Task Master's provider system
+  - Update ai-services-unified.js to handle keyless authentication
+  - Add provider to supported-models.json with opus/sonnet models
+  - Ensure correct maxTokens values are applied (opus: 32000, sonnet: 64000)
+
+- Fix maxTokens configuration issue
+  - Add max_tokens property to getAvailableModels() output
+  - Update setModel() to properly handle claude-code models
+  - Create update-config-tokens.js utility for init process
+
+- Add comprehensive documentation
+  - User guide with configuration examples
+  - Advanced settings explanation and future integration options
+
+The implementation maintains full backward compatibility with existing
+providers while adding seamless Claude Code support to all Task Master
+commands."
+eyaltoledano__claude-task-master__805,committed,,,3416cfa9f397b5c6a9d3cc1512fdc9e94d30cae4,,,"fix(docs): correct invalid commands in claude-code usage examples
+
+- Remove non-existent 'do', 'estimate', and 'analyze' commands
+- Replace with actual Task Master commands: next, show, set-status
+- Use correct syntax for parse-prd and analyze-complexity"
+eyaltoledano__claude-task-master__805,committed,,,0e84bd18658d86497a04e90aa1d4eeb2119e3af0,,,"feat: make @anthropic-ai/claude-code an optional dependency
+
+This change makes the Claude Code SDK package optional, preventing installation failures for users who don't need Claude Code functionality.
+
+Changes:
+- Added @anthropic-ai/claude-code to optionalDependencies in package.json
+- Implemented lazy loading in language-model.js to only import the SDK when actually used
+- Updated documentation to explain the optional installation requirement
+- Applied formatting fixes to ensure code consistency
+
+Benefits:
+- Users without Claude Code subscriptions don't need to install the dependency
+- Reduces package size for users who don't use Claude Code
+- Prevents installation failures if the package is unavailable
+- Provides clear error messages when the package is needed but not installed
+
+The implementation uses dynamic imports to load the SDK only when doGenerate() or doStream() is called, ensuring the provider can be instantiated without the package present."
+eyaltoledano__claude-task-master__805,committed,,,e6e39e20bb37795bfa27bd84f5eae0fb9c8d8671,,,"test: add comprehensive tests for ClaudeCodeProvider
+
+Addresses code review feedback about missing automated tests for the ClaudeCodeProvider.
+
+## Changes
+
+- Added unit tests for ClaudeCodeProvider class covering constructor, validateAuth, and getClient methods
+- Added unit tests for ClaudeCodeLanguageModel testing lazy loading behavior and error handling
+- Added integration tests verifying optional dependency behavior when @anthropic-ai/claude-code is not installed
+
+## Test Coverage
+
+1. **Unit Tests**:
+   - ClaudeCodeProvider: Basic functionality, no API key requirement, client creation
+   - ClaudeCodeLanguageModel: Model initialization, lazy loading, error messages, warning generation
+
+2. **Integration Tests**:
+   - Optional dependency behavior when package is not installed
+   - Clear error messages for users about missing package
+   - Provider instantiation works but usage fails gracefully
+
+All tests pass and provide comprehensive coverage for the claude-code provider implementation."
+eyaltoledano__claude-task-master__805,committed,,,cca76c1542c94085557f169bfa8d90e25cccbcc1,,,"revert: remove maxTokens update functionality from init
+
+This functionality was out of scope for the Claude Code provider PR.
+The automatic updating of maxTokens values in config.json during
+initialization is a general improvement that should be in a separate PR.
+
+Additionally, Claude Code ignores maxTokens and temperature parameters
+anyway, making this change irrelevant for the Claude Code integration.
+
+Removed:
+- scripts/modules/update-config-tokens.js
+- Import and usage in scripts/init.js"
+eyaltoledano__claude-task-master__805,committed,,,e04a86113eca4029af20c765fe4450125a732496,,,"docs: add Claude Code support information to README
+
+- Added Claude Code to the list of supported providers in Requirements section
+- Noted that Claude Code requires no API key but needs Claude Code CLI
+- Added example of configuring claude-code/sonnet model
+- Created dedicated Claude Code Support section with key information
+- Added link to detailed Claude Code setup documentation
+
+This ensures users are aware of the Claude Code option as a no-API-key
+alternative for using Claude models."
+eyaltoledano__claude-task-master__805,committed,,,ee6f4584c2d15c179f9aa1db69d3c97c71373f1f,,,style: apply biome formatting to test files
+eyaltoledano__claude-task-master__805,cross-referenced,2025-06-17T19:48:40Z,ben-vargas,,,,
+eyaltoledano__claude-task-master__805,cross-referenced,2025-06-17T19:50:35Z,ben-vargas,,,,
+eyaltoledano__claude-task-master__805,commented,2025-06-17T19:56:53Z,changeset-bot[bot],,,,
+eyaltoledano__claude-task-master__805,mentioned,2025-06-17T19:56:54Z,ghul0,,,,
+eyaltoledano__claude-task-master__805,subscribed,2025-06-17T19:56:54Z,ghul0,,,,
+eyaltoledano__claude-task-master__805,committed,,,b1aa058fb7ad6ac7199b0bdabe69e2900044a892,,,"fix(models): add missing --claude-code flag to models command
+
+The models command was missing the --claude-code provider flag, preventing users from setting Claude Code models via CLI. While the backend already supported claude-code as a provider hint, there was no command-line flag to trigger it.
+
+Changes:
+- Added --claude-code option to models command alongside existing provider flags
+- Updated provider flags validation to include claudeCode option
+- Added claude-code to providerHint logic for all three model roles (main, research, fallback)
+- Updated error message to include --claude-code in list of mutually exclusive flags
+- Added example usage in help text
+
+This allows users to properly set Claude Code models using commands like:
+  task-master models --set-main sonnet --claude-code
+  task-master models --set-main opus --claude-code
+
+Without this flag, users would get ""Model ID not found"" errors when trying to set claude-code models, as the system couldn't determine the correct provider for generic model names like ""sonnet"" or ""opus""."
+eyaltoledano__claude-task-master__805,subscribed,2025-06-17T21:07:07Z,robzolkos,,,,
+eyaltoledano__claude-task-master__805,committed,,,1ae56c316119fc8643749dc938224a337bd3f78d,,,chore: add changeset for Claude Code provider feature
+eyaltoledano__claude-task-master__805,renamed,2025-06-17T23:21:47Z,ben-vargas,,,,
+eyaltoledano__claude-task-master__805,subscribed,2025-06-18T15:29:54Z,deftdawg,,,,
+eyaltoledano__claude-task-master__805,commented,2025-06-19T08:07:51Z,corticalstack,,,,
+eyaltoledano__claude-task-master__805,head_ref_force_pushed,2025-06-20T00:51:10Z,ben-vargas,1ae56c316119fc8643749dc938224a337bd3f78d,,,
+eyaltoledano__claude-task-master__805,commented,2025-06-20T08:06:17Z,fahimanwer,,,,
+eyaltoledano__claude-task-master__805,mentioned,2025-06-20T08:06:18Z,ben-vargas,,,,
+eyaltoledano__claude-task-master__805,subscribed,2025-06-20T08:06:18Z,ben-vargas,,,,
+eyaltoledano__claude-task-master__805,commented,2025-06-20T09:53:06Z,ben-vargas,,,,
+eyaltoledano__claude-task-master__805,mentioned,2025-06-20T09:53:07Z,fahimanwer,,,,
+eyaltoledano__claude-task-master__805,subscribed,2025-06-20T09:53:07Z,fahimanwer,,,,
+eyaltoledano__claude-task-master__805,reviewed,,,1ae56c316119fc8643749dc938224a337bd3f78d,,,
+eyaltoledano__claude-task-master__805,commented,2025-06-20T13:19:01Z,Crunchyman-ralph,,,,
+eyaltoledano__claude-task-master__805,commented,2025-06-20T13:24:42Z,Crunchyman-ralph,,,,
+eyaltoledano__claude-task-master__805,closed,2025-06-20T13:24:42Z,Crunchyman-ralph,,,,
+eyaltoledano__claude-task-master__805,mentioned,2025-06-20T13:24:43Z,ben-vargas,,,,
+jlowin__fastmcp__418,labeled,2025-05-12T12:45:01Z,jkfnc,,,enhancement,
+jlowin__fastmcp__418,cross-referenced,2025-06-18T22:52:04Z,qqaatw,,,,
+jlowin__fastmcp__418,commented,2025-06-19T21:30:57Z,jlowin,,,,
+jlowin__fastmcp__418,commented,2025-06-19T22:26:28Z,jlowin,,,,
+jlowin__fastmcp__418,closed,2025-06-19T22:26:28Z,jlowin,,,,
+artsy__force__15314,committed,,,6fa49a573253ebc4ff7b952d6e2d30b7d9a777be,,,"test(ArtworkFilter): migrate AttributionClassFilter test from Enzyme to RTL
+
+Migrates the AttributionClassFilter test from Enzyme to React Testing Library, following the pattern established in other RTL-based tests.
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+Co-Authored-By: Claude <noreply@anthropic.com>"
+artsy__force__15314,committed,,,79e1d0ce96a44cc5fdf69d75f7b8b2dd19bfe167,,,"test(ArtworkFilter): migrate MaterialsFilter test from Enzyme to RTL
+
+Migrates the MaterialsTermFilter test from Enzyme to React Testing Library, following the pattern established in other RTL-based tests. The new test provides equivalent test coverage with a cleaner, more user-interaction-focused approach.
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+Co-Authored-By: Claude <noreply@anthropic.com>"
+artsy__force__15314,committed,,,9a5d0c1cf17fd6800f3c87636f4bc21d1f505413,,,"test(ArtworkFilter): migrate WaysToBuyFilter test from Enzyme to RTL
+
+Migrates the WaysToBuyFilter test from Enzyme to React Testing Library,
+following the pattern established in other RTL-based tests. The new test provides
+equivalent test coverage with a more user-interaction focused approach.
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+Co-Authored-By: Claude <noreply@anthropic.com>"
+artsy__force__15314,committed,,,382b1c7ff1594c75453d087d86c06aacdb4f7340,,,"test(ArtworkFilter): migrate TimePeriodFilter test from Enzyme to RTL
+
+Migrates the TimePeriodFilter test from Enzyme to React Testing Library,
+following the pattern established in other RTL-based tests. The new test provides
+equivalent test coverage with a more user-interaction focused approach.
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+Co-Authored-By: Claude <noreply@anthropic.com>"
+artsy__force__15314,committed,,,be05b8f8576463587cc16b35a8be4b284989c29b,,,"test(ArtworkFilter): migrate MediumFilter test from Enzyme to RTL
+
+Migrates the MediumFilter test from Enzyme to React Testing Library,
+following the pattern established in other RTL-based tests. The new test provides
+equivalent test coverage with a more user-interaction focused approach.
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+Co-Authored-By: Claude <noreply@anthropic.com>"
+artsy__force__15314,committed,,,a69fb514357ffdd84df28a90886dfe4eba21289c,,,"test(ArtworkFilter): migrate PartnersFilter test from Enzyme to RTL
+
+Migrates the PartnersFilter test from Enzyme to React Testing Library,
+following the pattern established in other RTL-based tests. The new test provides
+equivalent test coverage with a more user-interaction focused approach.
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+Co-Authored-By: Claude <noreply@anthropic.com>"
+artsy__force__15314,committed,,,09a1eaa2772b12c9f26e67bdab53b1ae992230c5,,,"test(ArtworkFilter): migrate ColorFilter test from Enzyme to RTL
+
+Migrates the ColorFilter test from Enzyme to React Testing Library,
+following the pattern established in other RTL-based tests. The new test provides
+equivalent test coverage with a more user-interaction focused approach.
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+Co-Authored-By: Claude <noreply@anthropic.com>"
+artsy__force__15314,committed,,,a45d33f9cbbe7ab9590c40cc6ccb0370033f3f4b,,,"test(ArtworkFilter): migrate ArtistsFilter test from Enzyme to RTL
+
+Migrates the ArtistsFilter test from Enzyme to React Testing Library,
+following the pattern established in other RTL-based tests. The new test provides
+equivalent test coverage with a more user-interaction focused approach.
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+Co-Authored-By: Claude <noreply@anthropic.com>"
+artsy__force__15314,assigned,2025-03-19T03:14:49Z,anandaroop,,anandaroop,,
+artsy__force__15314,renamed,2025-03-19T03:22:14Z,anandaroop,,,,
+artsy__force__15314,commented,2025-03-21T20:37:02Z,damassi,,,,
+artsy__force__15314,mentioned,2025-03-21T20:37:03Z,anandaroop,,,,
+artsy__force__15314,subscribed,2025-03-21T20:37:03Z,anandaroop,,,,
+artsy__force__15314,commented,2025-03-21T20:39:49Z,anandaroop,,,,
+artsy__force__15314,commented,2025-03-21T20:43:12Z,damassi,,,,
+artsy__force__15314,reviewed,,,a45d33f9cbbe7ab9590c40cc6ccb0370033f3f4b,,,
+artsy__force__15314,merged,2025-03-21T20:48:08Z,damassi,b00392fff639be67c3fa6fbb0622271bb06e6a58,,,
+artsy__force__15314,closed,2025-03-21T20:48:08Z,damassi,,,,
+artsy__force__15314,head_ref_deleted,2025-03-21T20:48:09Z,damassi,,,,
+artsy__force__15314,commented,2025-03-21T20:48:11Z,anandaroop,,,,
+artsy__force__15314,cross-referenced,2025-03-21T20:53:16Z,artsy-peril[bot],,,,
+JoshuaC215__agent-service-toolkit__205,commented,2025-04-15T16:24:42Z,codecov[bot],,,,
+JoshuaC215__agent-service-toolkit__205,renamed,2025-04-15T17:47:32Z,maver1ck,,,,
+JoshuaC215__agent-service-toolkit__205,cross-referenced,2025-04-15T17:47:51Z,maver1ck,,,,
+JoshuaC215__agent-service-toolkit__205,reviewed,,,087e1783ae54317e1337e04328036bd3c20fa3cd,,,
+JoshuaC215__agent-service-toolkit__205,commented,2025-04-21T02:10:39Z,JoshuaC215,,,,
+JoshuaC215__agent-service-toolkit__205,mentioned,2025-04-21T02:10:40Z,maver1ck,,,,
+JoshuaC215__agent-service-toolkit__205,subscribed,2025-04-21T02:10:40Z,maver1ck,,,,
+JoshuaC215__agent-service-toolkit__205,committed,,,990448427b6b74fc4e76d62fde60190efe592788,,,Fix mypy linting issues in llm.py
+JoshuaC215__agent-service-toolkit__205,committed,,,a58280c1027c9bb35041122dc9636a4104eff655,,,Add mypy conf for numexpr
+JoshuaC215__agent-service-toolkit__205,committed,,,d95f7f203d68df2431827032d94e00bc130a0247,,,Fix interrupt agent
+JoshuaC215__agent-service-toolkit__205,committed,,,3e1c8ad22bd6779a14a098e9f74154545246fa6d,,,Fix chatbot
+JoshuaC215__agent-service-toolkit__205,committed,,,369e2dbccbfa2e77ce66be1231af0e5d52272e54,,,Fix rest of agents
+JoshuaC215__agent-service-toolkit__205,committed,,,4720bf83589f06c341b8079b1b8aaea9810ded13,,,Fix ruff
+JoshuaC215__agent-service-toolkit__205,committed,,,a4d772052cfe77aa3faa1aff5394456e29ad7899,,,Remove some mypy ignores
+JoshuaC215__agent-service-toolkit__205,committed,,,669074dd8b21830fba5b694a0c932b6e77c510f8,,,Ignore streamlit app
+JoshuaC215__agent-service-toolkit__205,committed,,,310c7abe4bf14f6fb08698f17662b36ba4561bdd,,,Fix service
+JoshuaC215__agent-service-toolkit__205,committed,,,07ad925ff947a3644424416e5f0b46ae827771e4,,,Proper ignore
+JoshuaC215__agent-service-toolkit__205,committed,,,861074abb9b66195aaf83fbfad6a92750fa2f6f4,,,Fix format
+JoshuaC215__agent-service-toolkit__205,committed,,,4890fdc207c0f0010e9cc752cd3d498c4cd3d032,,,Add mypy to github actions
+JoshuaC215__agent-service-toolkit__205,committed,,,a06f97b26613a1bddbbe1a6386b4576df5d26a67,,,Add mypy to dev deps
+JoshuaC215__agent-service-toolkit__205,head_ref_force_pushed,2025-04-21T15:47:53Z,maver1ck,a06f97b26613a1bddbbe1a6386b4576df5d26a67,,,
+JoshuaC215__agent-service-toolkit__205,commented,2025-04-21T15:49:56Z,maver1ck,,,,
+JoshuaC215__agent-service-toolkit__205,mentioned,2025-04-21T15:49:57Z,JoshuaC215,,,,
+JoshuaC215__agent-service-toolkit__205,subscribed,2025-04-21T15:49:57Z,JoshuaC215,,,,
+JoshuaC215__agent-service-toolkit__205,commented,2025-04-21T16:55:59Z,JoshuaC215,,,,
+JoshuaC215__agent-service-toolkit__205,reviewed,,,a06f97b26613a1bddbbe1a6386b4576df5d26a67,,,
+JoshuaC215__agent-service-toolkit__205,merged,2025-04-21T16:56:19Z,JoshuaC215,1305d7af4e6f356d7701d14eb816c6e215bdb606,,,
+JoshuaC215__agent-service-toolkit__205,closed,2025-04-21T16:56:19Z,JoshuaC215,,,,
+JoshuaC215__agent-service-toolkit__205,head_ref_deleted,2025-04-22T07:13:48Z,maver1ck,,,,
+JoshuaC215__agent-service-toolkit__205,referenced,2025-05-08T00:24:03Z,Shanko-26,3c09e5437fbc58afd9aec7af2b6dce991257b47d,,,
+mautic__mautic__14955,labeled,2025-04-29T18:57:24Z,AlexanderZlobinM1,,,bug,
+mautic__mautic__14955,labeled,2025-04-29T18:57:24Z,AlexanderZlobinM1,,,needs-triage,
+mautic__mautic__14955,commented,2025-04-30T04:56:36Z,torton99,,,,
+mautic__mautic__14955,milestoned,2025-04-30T08:16:37Z,RCheesley,,,,
+mautic__mautic__14955,unlabeled,2025-04-30T08:16:38Z,RCheesley,,,needs-triage,
+mautic__mautic__14955,labeled,2025-04-30T08:16:38Z,RCheesley,,,T1,
+mautic__mautic__14955,labeled,2025-04-30T08:16:38Z,RCheesley,,,landing-pages,
+mautic__mautic__14955,labeled,2025-04-30T08:16:38Z,RCheesley,,,tracking,
+mautic__mautic__14955,labeled,2025-04-30T08:16:38Z,RCheesley,,,mautic-6,
+mautic__mautic__14955,commented,2025-04-30T09:25:25Z,AlexanderZlobinM1,,,,
+mautic__mautic__14955,commented,2025-04-30T12:43:05Z,AlexanderZlobinM1,,,,
+mautic__mautic__14955,commented,2025-05-08T18:16:20Z,datasolutionsbz,,,,
+mautic__mautic__14955,commented,2025-05-08T18:19:51Z,AlexanderZlobinM1,,,,
+mautic__mautic__14955,commented,2025-05-08T19:56:16Z,datasolutionsbz,,,,
+mautic__mautic__14955,commented,2025-05-08T20:29:42Z,AlexanderZlobinM1,,,,
+mautic__mautic__14955,commented,2025-05-08T21:16:07Z,datasolutionsbz,,,,
+mautic__mautic__14955,commented,2025-05-08T21:21:16Z,AlexanderZlobinM1,,,,
+mautic__mautic__14955,commented,2025-05-09T03:42:19Z,datasolutionsbz,,,,
+mautic__mautic__14955,subscribed,2025-05-19T11:40:28Z,christopheg,,,,
+mautic__mautic__14955,commented,2025-05-22T01:11:46Z,lippoliv,,,,
+mautic__mautic__14955,subscribed,2025-05-22T10:43:48Z,felly,,,,
+mautic__mautic__14955,demilestoned,2025-05-26T14:32:43Z,kuzmany,,,,
+mautic__mautic__14955,milestoned,2025-05-26T14:32:44Z,kuzmany,,,,
+mautic__mautic__14955,subscribed,2025-05-29T16:21:52Z,daanoontje,,,,
+mautic__mautic__14955,commented,2025-06-05T13:42:18Z,npracht,,,,
+mautic__mautic__14955,mentioned,2025-06-05T13:42:19Z,kuzmany,,,,
+mautic__mautic__14955,subscribed,2025-06-05T13:42:20Z,kuzmany,,,,
+mautic__mautic__14955,commented,2025-06-05T13:45:29Z,kuzmany,,,,
+mautic__mautic__14955,mentioned,2025-06-05T13:45:31Z,npracht,,,,
+mautic__mautic__14955,subscribed,2025-06-05T13:45:31Z,npracht,,,,
+anthropics__claude-code__328,head_ref_force_pushed,2025-03-05T16:50:39Z,aledbf,024a339e85b2d97479efb523906e2b45846ca8d1,,,
+anthropics__claude-code__328,ready_for_review,2025-03-07T01:21:35Z,aledbf,,,,
+anthropics__claude-code__328,base_ref_force_pushed,2025-03-10T21:02:24Z,8enmann,,,,
+anthropics__claude-code__328,reviewed,,,024a339e85b2d97479efb523906e2b45846ca8d1,,,
+anthropics__claude-code__328,committed,,,b827318214da7899a169ec841b063d2433e3a87e,,,Improve firewall to avoid affecting existing iptables rules
+anthropics__claude-code__328,head_ref_force_pushed,2025-03-12T04:10:12Z,aledbf,b827318214da7899a169ec841b063d2433e3a87e,,,
+anthropics__claude-code__328,commented,2025-03-12T04:20:24Z,aledbf,,,,
+anthropics__claude-code__328,commented,2025-03-12T04:41:27Z,8enmann,,,,
+anthropics__claude-code__328,reviewed,,,b827318214da7899a169ec841b063d2433e3a87e,,,
+anthropics__claude-code__328,reviewed,,,b827318214da7899a169ec841b063d2433e3a87e,,,
+anthropics__claude-code__328,reviewed,,,b827318214da7899a169ec841b063d2433e3a87e,,,
+anthropics__claude-code__328,committed,,,67f796bd5ed9bb458395c77bb88e0b5ce1fc4301,,,Address feedback
+anthropics__claude-code__328,review_requested,2025-03-17T06:36:06Z,8enmann,,,,
+anthropics__claude-code__328,review_requested,2025-03-17T06:36:07Z,8enmann,,,,
+anthropics__claude-code__328,reviewed,,,67f796bd5ed9bb458395c77bb88e0b5ce1fc4301,,,
+anthropics__claude-code__328,commented,2025-03-18T22:08:48Z,igorkofman,,,,
+anthropics__claude-code__328,unsubscribed,2025-03-19T09:17:54Z,aileot,,,,
+anthropics__claude-code__328,committed,,,4cb64db55ddc8a0eb9623cd6acdd06e11b655356,,,Document Azure IP ranges
+anthropics__claude-code__328,head_ref_force_pushed,2025-03-23T18:23:28Z,aledbf,4cb64db55ddc8a0eb9623cd6acdd06e11b655356,,,
+anthropics__claude-code__328,committed,,,59b431799aa0575641d73f577859b3757804870c,,,Restore exit behavior
+anthropics__claude-code__328,commented,2025-03-23T18:48:50Z,aledbf,,,,
+anthropics__claude-code__328,committed,,,c472dd7efb322cea1d8488854b0a0a81c0f01854,,,Lint script
+anthropics__claude-code__328,committed,,,fda76349411374c716dbe2f52c8ad165c50c4643,,,Improve resilience
+anthropics__claude-code__328,committed,,,67cca0e61b286ab988a5ade221f3498e8a2cc25e,,,Fix debug command
+anthropics__claude-code__328,reviewed,,,67cca0e61b286ab988a5ade221f3498e8a2cc25e,,,
+anthropics__claude-code__328,review_requested,2025-03-25T01:38:27Z,aledbf,,,,
+anthropics__claude-code__328,reviewed,,,67cca0e61b286ab988a5ade221f3498e8a2cc25e,,,
+anthropics__claude-code__328,reviewed,,,67cca0e61b286ab988a5ade221f3498e8a2cc25e,,,
+anthropics__claude-code__328,reviewed,,,67cca0e61b286ab988a5ade221f3498e8a2cc25e,,,
+anthropics__claude-code__328,reviewed,,,67cca0e61b286ab988a5ade221f3498e8a2cc25e,,,
+JoshuaC215__agent-service-toolkit__197,commented,2025-04-11T05:03:03Z,JoshuaC215,,,,
+JoshuaC215__agent-service-toolkit__197,closed,2025-04-11T05:03:03Z,JoshuaC215,,,,
+JoshuaC215__agent-service-toolkit__197,commented,2025-04-21T01:26:21Z,JoshuaC215,,,,
+JoshuaC215__agent-service-toolkit__197,reopened,2025-04-21T01:26:22Z,JoshuaC215,,,,
+JoshuaC215__agent-service-toolkit__197,closed,2025-04-21T01:26:27Z,JoshuaC215,,,,
+awslabs__mcp__275,labeled,2025-05-06T17:39:29Z,alexa-perlov,,,feature-request,
+awslabs__mcp__275,labeled,2025-05-06T17:39:29Z,alexa-perlov,,,needs-triage,
+awslabs__mcp__275,assigned,2025-05-06T17:39:31Z,alexa-perlov,,alexa-perlov,,
+awslabs__mcp__275,unlabeled,2025-05-06T17:39:45Z,alexa-perlov,,,needs-triage,
+awslabs__mcp__275,labeled,2025-05-06T17:39:45Z,alexa-perlov,,,backlog,
+awslabs__mcp__275,cross-referenced,2025-05-06T19:02:21Z,alexa-perlov,,,,
+awslabs__mcp__275,closed,2025-05-09T18:56:03Z,alexa-perlov,,,,
+modelcontextprotocol__modelcontextprotocol__683,labeled,2025-06-09T20:50:10Z,ihrpr,,,enhancement,
+modelcontextprotocol__modelcontextprotocol__683,issue_type_added,2025-06-09T20:50:11Z,ihrpr,,,,
+modelcontextprotocol__modelcontextprotocol__683,sub_issue_added,2025-06-10T10:26:38Z,ihrpr,,,,
+modelcontextprotocol__modelcontextprotocol__683,sub_issue_added,2025-06-10T10:26:59Z,ihrpr,,,,
+modelcontextprotocol__modelcontextprotocol__683,sub_issue_added,2025-06-10T16:31:01Z,ihrpr,,,,
+oapi-codegen__oapi-codegen__1922,review_requested,2025-03-12T19:43:52Z,MilkeeyCat,,,,
+oapi-codegen__oapi-codegen__1922,cross-referenced,2025-03-20T08:54:27Z,codeout,,,,
+oapi-codegen__oapi-codegen__1922,commented,2025-04-18T14:59:09Z,0rid,,,,
+oapi-codegen__oapi-codegen__1922,mentioned,2025-04-18T14:59:11Z,MilkeeyCat,,,,
+oapi-codegen__oapi-codegen__1922,subscribed,2025-04-18T14:59:11Z,MilkeeyCat,,,,
+oapi-codegen__oapi-codegen__1922,commented,2025-04-26T18:12:37Z,ysuzuki19,,,,
+oapi-codegen__oapi-codegen__1922,committed,,,1ad5124cbbb834fdb4713d4600e6f8c8d2cb3753,,,"rew! fix(client): use `.String()` method for making a string from uuid
+
+As noted in #1914, there are cases where a `text/plain` **??**, such as
+a UUID , **??**
+
+Closes #1914."
+oapi-codegen__oapi-codegen__1922,head_ref_force_pushed,2025-05-10T09:36:12Z,jamietanna,1ad5124cbbb834fdb4713d4600e6f8c8d2cb3753,,,
+oapi-codegen__oapi-codegen__1922,commented,2025-05-10T09:37:12Z,jamietanna,,,,
+oapi-codegen__oapi-codegen__1922,commented,2025-05-10T14:38:45Z,MilkeeyCat,,,,
+oapi-codegen__oapi-codegen__1922,commented,2025-05-10T15:16:13Z,jamietanna,,,,
+oapi-codegen__oapi-codegen__1922,milestoned,2025-05-10T15:16:16Z,jamietanna,,,,
+oapi-codegen__oapi-codegen__1922,commented,2025-05-10T15:34:27Z,jamietanna,,,,
+oapi-codegen__oapi-codegen__1922,commented,2025-05-10T17:44:33Z,MilkeeyCat,,,,
+oapi-codegen__oapi-codegen__1922,commented,2025-05-10T17:46:52Z,jamietanna,,,,
+oapi-codegen__oapi-codegen__1922,commented,2025-05-10T18:05:46Z,MilkeeyCat,,,,
+oapi-codegen__oapi-codegen__1922,commented,2025-05-11T10:14:58Z,jamietanna,,,,
+wailsapp__wails__4349,labeled,2025-06-12T09:17:35Z,thebotsmith,,,Bug,
+wailsapp__wails__4349,commented,2025-06-12T09:17:45Z,github-actions[bot],,,,
+wailsapp__wails__4349,labeled,2025-06-12T09:17:45Z,github-actions[bot],,,awaiting feedback,
+wailsapp__wails__4349,labeled,2025-06-12T09:20:36Z,dosubot[bot],,,Windows,
+wailsapp__wails__4349,referenced,2025-06-12T12:03:15Z,leaanthony,e3dbe294f28fb48e3850d049f8da404ae7bfc3f4,,,
+wailsapp__wails__4349,cross-referenced,2025-06-12T12:03:51Z,leaanthony,,,,
+wailsapp__wails__4349,commented,2025-06-12T12:06:19Z,leaanthony,,,,
+wailsapp__wails__4349,commented,2025-06-12T15:37:20Z,thebotsmith,,,,
+wailsapp__wails__4349,commented,2025-06-12T20:35:36Z,leaanthony,,,,
+wailsapp__wails__4349,unsubscribed,2025-06-12T20:36:00Z,leaanthony,,,,
+mitsuhiko__insta__32,committed,,,d983ebbe20f488eaffaf3266dd7717813dae08c4,,,Improve indentation of inline snapshots
+mitsuhiko__insta__32,commented,2019-05-05T20:07:19Z,mitsuhiko,,,,
+mitsuhiko__insta__32,mentioned,2019-05-05T20:07:19Z,dtolnay,,,,
+mitsuhiko__insta__32,subscribed,2019-05-05T20:07:19Z,dtolnay,,,,
+mitsuhiko__insta__32,commented,2019-05-05T21:55:59Z,dtolnay,,,,
+mitsuhiko__insta__32,commented,2019-05-05T21:56:45Z,mitsuhiko,,,,
+mitsuhiko__insta__32,committed,,,5d986f67c830f8c5ec98083cb2dd36864a69e7bc,,,Use `⋮` character for inline snapshots
+mitsuhiko__insta__32,commented,2019-05-05T22:20:47Z,mitsuhiko,,,,
+mitsuhiko__insta__32,merged,2019-05-05T22:21:41Z,mitsuhiko,097b67205b2cb9c09f234843650895fc7408f23f,,,
+mitsuhiko__insta__32,closed,2019-05-05T22:21:41Z,mitsuhiko,,,,
+mitsuhiko__insta__32,head_ref_deleted,2019-05-05T22:21:43Z,mitsuhiko,,,,
+busser__tfautomv__74,commented,2024-01-29T16:15:46Z,busser,,,,
+busser__tfautomv__74,commented,2025-05-26T11:13:25Z,pataquets,,,,
+busser__tfautomv__74,mentioned,2025-05-26T11:13:26Z,chenrui333,,,,
+busser__tfautomv__74,subscribed,2025-05-26T11:13:26Z,chenrui333,,,,
+busser__tfautomv__74,mentioned,2025-05-26T11:13:26Z,busser,,,,
+busser__tfautomv__74,subscribed,2025-05-26T11:13:26Z,busser,,,,
+busser__tfautomv__74,commented,2025-06-03T08:56:07Z,busser,,,,
+busser__tfautomv__74,mentioned,2025-06-03T08:56:08Z,pataquets,,,,
+busser__tfautomv__74,subscribed,2025-06-03T08:56:08Z,pataquets,,,,
+busser__tfautomv__74,labeled,2025-06-03T08:56:22Z,busser,,,enhancement,
+busser__tfautomv__74,labeled,2025-06-03T08:56:22Z,busser,,,good first issue,
+busser__tfautomv__74,referenced,2025-06-06T10:33:17Z,busser,96f394a559082fba2616aec56d74aaefba269073,,,
+busser__tfautomv__74,cross-referenced,2025-06-06T10:33:22Z,busser,,,,
+busser__tfautomv__74,closed,2025-06-06T11:02:02Z,busser,,,,
+busser__tfautomv__74,commented,2025-06-06T14:14:16Z,busser,,,,
+Shopify__roast__227,labeled,2025-06-11T15:47:49Z,obie,,,brainstorm,
+Shopify__roast__227,labeled,2025-06-11T15:47:49Z,obie,,,epic/reliability,
+Shopify__roast__227,milestoned,2025-06-11T18:59:53Z,obie,,,,
+Shopify__roast__227,referenced,2025-06-19T03:38:53Z,parruda,240f220224e8bfc8fb5b3ea1edce711bc69202aa,,,
+Shopify__roast__227,cross-referenced,2025-06-19T03:39:43Z,parruda,,,,
+Shopify__roast__227,referenced,2025-06-23T19:38:28Z,obie,b667da49d961e95728dab7b7bde04e811cd19c8b,,,
+eyaltoledano__claude-task-master__785,committed,,,d584dfc0ea7c3a5d50c68855130d7f996423df8b,,,"feat: Add Claude Code CLI provider support
+
+Implements support for Claude Code (opus/sonnet) models via the Claude CLI, enabling
+local AI assistance without API keys.
+
+## Architecture & Design Decisions
+
+### Provider Architecture
+- Created `ClaudeCodeProvider` extending `BaseAIProvider` to maintain consistency
+- Implemented custom SDK wrapper pattern in `src/ai-providers/custom-sdk/claude-code-sdk.js`
+  following project conventions for non-Vercel-AI-SDK providers
+- Wrapper provides interface compatibility layer between native Claude Code SDK and
+  Task Master's provider system
+
+### Key Implementation Details
+
+**Authentication Model:**
+- Uses CLI authentication (`claude login`) instead of API keys
+- Added to `PROVIDERS_WITH_OPTIONAL_API_KEY` array in ai-services-unified.js
+- Validates CLI availability and authentication status
+
+**Token Usage Tracking:**
+- Properly extracts usage data from SDK responses including cache tokens
+- Maps SDK fields to expected telemetry format (inputTokens/outputTokens)
+- Supports both streaming and non-streaming token counting
+
+**Message Format Handling:**
+- Converts standard role names (user/assistant) to Claude Code format (human/assistant)
+- Handles both simple strings and complex content arrays
+- Preserves system messages for context
+
+### Files Changed
+
+**New Files:**
+- `src/ai-providers/claude-code.js` - Main provider implementation
+- `src/ai-providers/custom-sdk/claude-code-sdk.js` - SDK wrapper for consistency
+
+**Modified Files:**
+- `package.json` - Added @anthropic-ai/claude-code dependency
+- `scripts/modules/supported-models.json` - Added opus/sonnet models with metadata
+- `scripts/modules/ai-services-unified.js` - Integrated provider into service layer
+- `scripts/modules/config-manager.js` - Added getClaudeCodeConfig function
+- `src/ai-providers/index.js` - Exported ClaudeCodeProvider
+- `tests/unit/ai-services-unified.test.js` - Updated test mocks
+
+### Features Supported
+- Text generation (generateText)
+- Streaming responses (streamText)
+- JSON object generation (generateObject)
+- Full telemetry support with accurate token counting
+- Error handling for CLI-specific scenarios
+
+### Model Configuration
+- opus: 32K max tokens, SWE score 0.725
+- sonnet: 64K max tokens, SWE score 0.727
+- Both models support all roles (main, research, fallback)
+- Zero cost (free to use via CLI)
+
+This implementation maintains architectural consistency while adding powerful
+local AI capabilities to Task Master."
+eyaltoledano__claude-task-master__785,mentioned,2025-06-15T19:49:27Z,ghul0,,,,
+eyaltoledano__claude-task-master__785,subscribed,2025-06-15T19:49:27Z,ghul0,,,,
+eyaltoledano__claude-task-master__785,mentioned,2025-06-15T19:49:27Z,ben-vargas,,,,
+eyaltoledano__claude-task-master__785,subscribed,2025-06-15T19:49:28Z,ben-vargas,,,,
+eyaltoledano__claude-task-master__785,mentioned,2025-06-15T19:49:28Z,neno-is-ooo,,,,
+eyaltoledano__claude-task-master__785,subscribed,2025-06-15T19:49:28Z,neno-is-ooo,,,,
+eyaltoledano__claude-task-master__785,mentioned,2025-06-15T19:49:28Z,apple-techie,,,,
+eyaltoledano__claude-task-master__785,subscribed,2025-06-15T19:49:28Z,apple-techie,,,,
+eyaltoledano__claude-task-master__785,mentioned,2025-06-15T19:49:28Z,ajit555db,,,,
+eyaltoledano__claude-task-master__785,subscribed,2025-06-15T19:49:28Z,ajit555db,,,,
+eyaltoledano__claude-task-master__785,commented,2025-06-15T19:49:29Z,changeset-bot[bot],,,,
+eyaltoledano__claude-task-master__785,commented,2025-06-15T19:56:40Z,ben-vargas,,,,
+eyaltoledano__claude-task-master__785,mentioned,2025-06-15T19:56:41Z,Crunchyman-ralph,,,,
+eyaltoledano__claude-task-master__785,subscribed,2025-06-15T19:56:41Z,Crunchyman-ralph,,,,
+eyaltoledano__claude-task-master__785,base_ref_changed,2025-06-15T19:57:56Z,ben-vargas,,,,
+eyaltoledano__claude-task-master__785,commented,2025-06-15T21:10:21Z,apple-techie,,,,
+eyaltoledano__claude-task-master__785,commented,2025-06-15T21:10:21Z,apple-techie,,,,
+eyaltoledano__claude-task-master__785,mentioned,2025-06-15T21:10:22Z,ben-vargas,,,,
+eyaltoledano__claude-task-master__785,subscribed,2025-06-15T21:10:22Z,ben-vargas,,,,
+eyaltoledano__claude-task-master__785,mentioned,2025-06-15T21:10:22Z,ben-vargas,,,,
+eyaltoledano__claude-task-master__785,subscribed,2025-06-15T21:10:23Z,ben-vargas,,,,
+eyaltoledano__claude-task-master__785,commented,2025-06-15T22:46:56Z,neno-is-ooo,,,,
+eyaltoledano__claude-task-master__785,commented,2025-06-16T02:59:34Z,ben-vargas,,,,
+eyaltoledano__claude-task-master__785,commented,2025-06-16T18:11:39Z,ben-vargas,,,,
+eyaltoledano__claude-task-master__785,closed,2025-06-16T18:11:39Z,ben-vargas,,,,
+eyaltoledano__claude-task-master__785,commented,2025-06-16T18:12:12Z,Crunchyman-ralph,,,,
+eyaltoledano__claude-task-master__785,commented,2025-06-16T18:24:06Z,ben-vargas,,,,
+eyaltoledano__claude-task-master__785,mentioned,2025-06-16T18:24:08Z,Crunchyman-ralph,,,,
+eyaltoledano__claude-task-master__785,subscribed,2025-06-16T18:24:08Z,Crunchyman-ralph,,,,
+awslabs__mcp__199,labeled,2025-04-22T22:38:01Z,scottschreckengaust,,,documentation,
+awslabs__mcp__199,labeled,2025-04-22T22:38:01Z,scottschreckengaust,,,needs-triage,
+awslabs__mcp__199,assigned,2025-04-22T22:38:01Z,scottschreckengaust,,scottschreckengaust,,
+awslabs__mcp__199,unlabeled,2025-04-22T22:38:21Z,scottschreckengaust,,,needs-triage,
+awslabs__mcp__199,labeled,2025-04-22T22:38:21Z,scottschreckengaust,,,help wanted,
+awslabs__mcp__199,referenced,2025-05-01T20:34:17Z,scottschreckengaust,1ae29331a288e54bbe2ed41aa71687de70c85473,,,
+awslabs__mcp__199,cross-referenced,2025-05-01T20:36:13Z,scottschreckengaust,,,,
+awslabs__mcp__199,referenced,2025-05-01T22:21:29Z,github-merge-queue[bot],6b5b1f241c4f8ae135c0f08940acab3cb2ce420b,,,
+awslabs__mcp__199,closed,2025-05-01T22:21:30Z,scottschreckengaust,,,,
+awslabs__mcp__199,referenced,2025-05-27T14:42:05Z,matthewgoodman13,ab07987039cc4e61af939aea0fdf1c789d95287b,,,
+CoderGamester__mcp-unity__51,committed,,,65084f3ee82bb88a8d1d4bef17c41ffc30714a7a,,,"feat: Add configurable console log service with Unity 6 enhanced implementation
+
+- Add ConsoleLogServiceType enum with EventBased and Unity6Enhanced options
+- Implement ConsoleLogsServiceUnity6 using internal LogEntries API for better reliability
+- Add command line argument support (-mcpConsoleLogService) for runtime switching
+- Update McpUnityServer to dynamically select service based on settings and Unity version
+- Add UI controls in McpUnityEditorWindow with warning dialogs for internal API usage
+- Default to safe EventBased implementation, Unity6Enhanced only when explicitly selected
+- Add clear startup logging to identify which implementation is active
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+CoderGamester__mcp-unity__51,committed,,,30d64e9fa9e7896eaee94ac7f845c35a851d85ee,,,"feat: Add comprehensive Unity LogEntry mode flags support with discovered values
+
+- Create LogEntryModeFlags.cs with Unity's internal mode flag constants
+- Add support for observed mode values from debugging:
+  * Compiler warnings: 266240 (0x41000)
+  * Compiler errors: 272384 (0x42800)
+  * Shader errors: 262212 (0x40044)
+  * Runtime warnings: 8405504 (0x804200)
+  * Runtime errors: 8405248 (0x804100)
+- Update Unity6InternalAPIReference.md with complete documentation
+- Add conditional debug logging for future mode value discovery
+- Improve error/warning classification accuracy in Unity 6 implementation
+
+This enables proper filtering of shader errors, compile errors, and runtime
+exceptions that were previously misclassified as ""Log"" type.
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+CoderGamester__mcp-unity__51,committed,,,90ca612b22b3b2d6af03a55136b298b865eb4fab,,,"Remove command-line argument support for console log service selection
+
+- Removed GetEffectiveConsoleLogService() method
+- Console log service now only configurable via Unity Editor settings UI
+- Simplified configuration as command-line args are not practical for Unity Hub users
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+CoderGamester__mcp-unity__51,committed,,,9c2d0c14b2fdea0d8c69a1cf38975fcaa99a97d6,,,"Add .claude/settings.local.json to .gitignore
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+CoderGamester__mcp-unity__51,committed,,,92b838763228343bd7b7e870bc6fe855cc11cd95,,,"Remove .claude/settings.local.json from git tracking
+
+Keep file locally but stop tracking it in git
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+CoderGamester__mcp-unity__51,committed,,,5b2ebf4ef25f938d4195dd9cbaf2c575e915c2d4,,,"feat: Add search_console_logs tool for Unity log searching
+
+- Add SearchConsoleLogsTool.cs with keyword/regex search support
+- Support case-sensitive/insensitive search with logType filtering
+- Include pagination (offset/limit) and optional stack trace inclusion
+- Implement both C# (Unity) and TypeScript (Node.js) components
+- Register tool in McpUnityServer and Node.js MCP server
+- Remove previous resource-based implementation in favor of tool-based approach
+- Add comprehensive search capabilities:
+  - Keyword search with partial matching
+  - Regular expression pattern matching
+  - Log type filtering (error/warning/info)
+  - Configurable case sensitivity
+  - Stack trace inclusion/exclusion for token optimization
+  - Pagination support for large result sets
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+CoderGamester__mcp-unity__51,commented,2025-06-16T21:30:56Z,coderabbitai[bot],,,,
+CoderGamester__mcp-unity__51,closed,2025-06-16T21:31:18Z,Saqoosha,,,,
+CoderGamester__mcp-unity__51,head_ref_deleted,2025-06-16T21:33:37Z,Saqoosha,,,,
+zenml-io__zenml__3371,commented,2025-02-23T21:13:59Z,strickvl,,,,
+zenml-io__zenml__3371,referenced,2025-02-24T19:50:34Z,strickvl,1ba4cb90307ea7b88ac038312477ecfea1394459,,,
+zenml-io__zenml__3371,cross-referenced,2025-02-24T19:52:58Z,strickvl,,,,
+awslabs__mcp__283,assigned,2025-05-07T16:23:16Z,scottschreckengaust,,scottschreckengaust,,
+awslabs__mcp__283,issue_type_added,2025-05-07T16:23:16Z,scottschreckengaust,,,,
+awslabs__mcp__283,labeled,2025-05-07T16:23:16Z,scottschreckengaust,,,feature-request,
+awslabs__mcp__283,cross-referenced,2025-05-07T16:47:53Z,scottschreckengaust,,,,
+awslabs__mcp__283,closed,2025-05-07T18:28:06Z,scottschreckengaust,,,,
+awslabs__mcp__283,commented,2025-05-07T19:01:26Z,scottschreckengaust,,,,
+awslabs__mcp__283,reopened,2025-05-07T19:01:26Z,scottschreckengaust,,,,
+awslabs__mcp__283,labeled,2025-05-07T19:01:38Z,scottschreckengaust,,,bug,
+BeehiveInnovations__zen-mcp-server__94,labeled,2025-06-20T19:42:17Z,guidedways,,,feature,
+BeehiveInnovations__zen-mcp-server__94,cross-referenced,2025-06-20T19:55:09Z,guidedways,,,,
+BeehiveInnovations__zen-mcp-server__94,commented,2025-06-20T20:07:32Z,FallDownTheSystem,,,,
+BeehiveInnovations__zen-mcp-server__94,closed,2025-06-20T20:08:12Z,guidedways,,,,
+anthropics__claude-code-action__162,labeled,2025-06-12T14:44:24Z,github-actions[bot],,,enhancement,
+anthropics__claude-code-action__162,assigned,2025-06-12T14:45:23Z,ashwin-ant,,ashwin-ant,,
+anthropics__claude-code-action__162,commented,2025-06-12T14:47:20Z,ashwin-ant,,,,
+anthropics__claude-code-action__162,mentioned,2025-06-12T14:47:22Z,claude,,,,
+anthropics__claude-code-action__162,subscribed,2025-06-12T14:47:22Z,claude,,,,
+anthropics__claude-code-action__162,commented,2025-06-12T14:47:35Z,claude[bot],,,,
+anthropics__claude-code-action__162,mentioned,2025-06-12T14:58:04Z,ashwin-ant,,,,
+anthropics__claude-code-action__162,subscribed,2025-06-12T14:58:04Z,ashwin-ant,,,,
+anthropics__claude-code-action__162,cross-referenced,2025-06-12T14:59:44Z,ashwin-ant,,,,
+anthropics__claude-code-action__162,closed,2025-06-12T22:16:38Z,ashwin-ant,,,,
+jlowin__fastmcp__549,labeled,2025-05-22T13:02:12Z,jlowin,,,enhancement,
+jlowin__fastmcp__549,commented,2025-05-23T17:52:23Z,orhanrauf,,,,
+jlowin__fastmcp__549,cross-referenced,2025-05-23T21:23:11Z,davenpi,,,,
+jlowin__fastmcp__549,commented,2025-05-23T21:56:59Z,jlowin,,,,
+jlowin__fastmcp__549,subscribed,2025-05-28T16:38:12Z,JonZeolla,,,,
+jlowin__fastmcp__549,commented,2025-06-18T22:52:04Z,qqaatw,,,,
+jlowin__fastmcp__549,mentioned,2025-06-18T22:52:04Z,jlowin,,,,
+jlowin__fastmcp__549,subscribed,2025-06-18T22:52:05Z,jlowin,,,,
+jlowin__fastmcp__549,cross-referenced,2025-06-19T21:30:58Z,jlowin,,,,
+jlowin__fastmcp__549,cross-referenced,2025-06-19T21:36:33Z,jlowin,,,,
+jlowin__fastmcp__549,closed,2025-06-19T22:15:37Z,jlowin,,,,
+oapi-codegen__oapi-codegen__1914,commented,2025-03-12T15:59:48Z,MilkeeyCat,,,,
+oapi-codegen__oapi-codegen__1914,referenced,2025-03-12T19:42:21Z,MilkeeyCat,962f98b6bd6683a0fb5f00a21058dc59ff6e8e22,,,
+oapi-codegen__oapi-codegen__1914,cross-referenced,2025-03-12T19:43:53Z,MilkeeyCat,,,,
+oapi-codegen__oapi-codegen__1914,commented,2025-03-20T08:54:27Z,codeout,,,,
+oapi-codegen__oapi-codegen__1914,referenced,2025-05-10T09:36:12Z,jamietanna,1ad5124cbbb834fdb4713d4600e6f8c8d2cb3753,,,
+oapi-codegen__oapi-codegen__1914,referenced,2025-05-10T15:09:10Z,jamietanna,492b9f05eea2b5502c08d38315b05d3b43dd125e,,,
+oapi-codegen__oapi-codegen__1914,cross-referenced,2025-05-10T15:09:12Z,jamietanna,,,,
+oapi-codegen__oapi-codegen__1914,referenced,2025-05-10T15:12:59Z,jamietanna,8a375bad9337c9c3bfa303fec4952de40c9604f4,,,
+oapi-codegen__oapi-codegen__1914,referenced,2025-05-10T15:14:31Z,jamietanna,7f2c6387012a7c1d8807dbdcf0a19a8f2e5bc86a,,,
+ryoppippi__ccusage__84,committed,,,ca81a8d569b9b8795052444608b32d126b633023,,,"feat: implement 5-hour session window tracking (#23)
+
+Add 5-hour session window tracking to monitor Claude Code usage against plan limits.
+
+- Add --windows flag to show 5-hour session statistics
+- Add --session-limit flag with default value of 50 (Claude Max plan)
+- Track sessions per calendar month (UTC) with visual warnings
+- Show usage percentage and remaining sessions
+- Support JSON output for window statistics
+
+Sessions are grouped into UTC-based 5-hour windows (00:00, 05:00, 10:00, 15:00, 20:00).
+This helps users track their usage against Claude's session-based billing limits.
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+ryoppippi__ccusage__84,commented,2025-06-16T20:28:27Z,coderabbitai[bot],,,,
+ryoppippi__ccusage__84,reviewed,,,ca81a8d569b9b8795052444608b32d126b633023,,,
+ryoppippi__ccusage__84,reviewed,,,ca81a8d569b9b8795052444608b32d126b633023,,,
+ryoppippi__ccusage__84,reviewed,,,ca81a8d569b9b8795052444608b32d126b633023,,,
+ryoppippi__ccusage__84,cross-referenced,2025-06-16T20:35:53Z,Kaniikura,,,,
+ryoppippi__ccusage__84,commented,2025-06-16T21:56:25Z,Kaniikura,,,,
+ryoppippi__ccusage__84,closed,2025-06-16T21:56:26Z,Kaniikura,,,,
+Shopify__roast__284,head_ref_force_pushed,2025-06-19T19:13:41Z,parruda,d892378bfd65e6d0cd0c015b45c087a9eed8c206,,,
+Shopify__roast__284,head_ref_force_pushed,2025-06-19T19:40:39Z,parruda,ad455853cee263c189f0d8209440c841b286693c,,,
+Shopify__roast__284,head_ref_force_pushed,2025-06-20T01:22:03Z,parruda,ffc842701d6f20039b4add37a6602fc4258472dd,,,
+Shopify__roast__284,committed,,,a08ff9cc8f50d517e4ae2f3bd1bcd9daa8ffe94a,,,"feat: Add exponential backoff retry mechanism for transient failures
+
+Implements configurable retry strategies to handle rate limits and temporary failures:
+
+- Exponential backoff with jitter (default)
+- Linear backoff strategy
+- Constant delay strategy
+- Per-step retry configuration
+- Support for idempotent flag to prevent retries on non-safe operations
+
+The retry mechanism integrates seamlessly with the existing error handling
+system and applies to all step types including inline prompts.
+
+Closes #224
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+Shopify__roast__284,head_ref_force_pushed,2025-06-20T01:31:39Z,parruda,a08ff9cc8f50d517e4ae2f3bd1bcd9daa8ffe94a,,,
+Shopify__roast__284,ready_for_review,2025-06-23T19:39:05Z,obie,,,,
+Shopify__roast__284,review_requested,2025-06-23T21:02:09Z,obie,,,,
+Shopify__roast__284,review_requested,2025-06-23T21:02:10Z,obie,,,,
+Shopify__roast__284,review_requested,2025-06-23T21:02:10Z,obie,,,,
+Shopify__roast__284,review_requested,2025-06-23T21:02:33Z,obie,,,,
+Shopify__roast__284,reviewed,,,a08ff9cc8f50d517e4ae2f3bd1bcd9daa8ffe94a,,,
+Shopify__roast__284,commented,2025-06-24T14:22:30Z,obie,,,,
+Shopify__roast__284,closed,2025-06-24T14:22:30Z,obie,,,,
+OpenAdaptAI__OpenAdapt__946,committed,,,22ebc39e9f9560f85e11fc638d3faefa86d1a560,,,"add working omniparser deploy.py, Dockerfile, pyproject.toml, README.md, .env.example, .dockerignore"
+OpenAdaptAI__OpenAdapt__946,committed,,,3e5251a80638c33e89df0e53dce7fe1c88170eff,,,add Deploy.stop
+OpenAdaptAI__OpenAdapt__946,committed,,,96b0f5ae7565cd3585f35f7110d6411dfa65c571,,,add client.py
+OpenAdaptAI__OpenAdapt__946,committed,,,959c78b3cfab4b51a3d3090ec7badb443e80f719,,,ruff
+OpenAdaptAI__OpenAdapt__946,committed,,,6290d17799e0d195d6faf31f87907ae364992164,,,download OCR files during build; CLEANUP_ON_FAILURE = False
+OpenAdaptAI__OpenAdapt__946,committed,,,944549f4227a2138a7273bf22625d90b4d1f986e,,,ruff
+OpenAdaptAI__OpenAdapt__946,committed,,,b6ec99dabb966dc62e2f68a13398a46d6a25fdab,,,lint
+OpenAdaptAI__OpenAdapt__946,committed,,,bfc49d21d7f7749794ee21566313614f5da3f405,,,ruff
+OpenAdaptAI__OpenAdapt__946,committed,,,bf9d548151cf5f115babea722bbc599e3865af7d,,,remove unused function
+OpenAdaptAI__OpenAdapt__946,committed,,,f52a33e73e125c723f7d31ea730b8424233d6337,,,replace argparse with fire
+OpenAdaptAI__OpenAdapt__946,committed,,,9a49bc2b3d0a769c4f6bdd59abbb959f999d37e9,,,config.CONTAINER_NAME
+OpenAdaptAI__OpenAdapt__946,committed,,,fac368bb5f4cfa9d669ba44cf94aee2aeb5dcab8,,,lint
+OpenAdaptAI__OpenAdapt__946,committed,,,27d4d1dc50f40e339eaf770ce02acbe3e5ae723f,,,"Add ProcessGraphStrategy for task-based automation
+
+This new strategy:
+1. Uses OmniParser for parsing visual state and Gemini 2.0 for evaluation
+2. Takes natural language task descriptions instead of recording IDs
+3. Processes coalesced actions from events.py
+4. Builds and maintains a process graph where states are nodes and actions are edges
+
+The graph is constructed before replay based on recording + task description,
+and is updated during replay based on observed states. Uses Pydantic for
+structured data handling and robust JSON parsing.
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+OpenAdaptAI__OpenAdapt__946,committed,,,004c55a337ec0c8baa6e278e5a141c086aa737fa,,,"Implement OmniMCP for Claude computer control
+
+This commit adds OmniMCP, a system that enables Claude to control the computer using the Model Control Protocol.
+
+Key components:
+- OmniParser adapter for UI element detection
+- MCP server implementation
+- CLI interface for commands and debugging
+- Comprehensive documentation
+
+OmniMCP combines OmniParser's visual understanding with Claude's natural language capabilities to automate UI interactions."
+OpenAdaptAI__OpenAdapt__946,cross-referenced,2025-03-16T00:52:23Z,abrichr,,,,
+OpenAdaptAI__OpenAdapt__946,commented,2025-03-16T00:52:57Z,abrichr,,,,
+OpenAdaptAI__OpenAdapt__946,closed,2025-03-16T00:52:58Z,abrichr,,,,
+modelcontextprotocol__inspector__506,labeled,2025-06-13T17:41:46Z,olaservo,,,enhancement,
+modelcontextprotocol__inspector__506,commented,2025-06-14T18:53:38Z,jerome3o-anthropic,,,,
+modelcontextprotocol__inspector__506,closed,2025-06-21T12:31:17Z,olaservo,,,,
+rishikanthc__Scriberr__48,commented,2025-02-18T06:16:02Z,rishikanthc,,,,
+rishikanthc__Scriberr__48,commented,2025-02-24T16:52:15Z,SpirusNox,,,,
+rishikanthc__Scriberr__48,commented,2025-02-25T03:42:45Z,rishikanthc,,,,
+rishikanthc__Scriberr__48,mentioned,2025-02-25T04:05:58Z,SpirusNox,,,,
+rishikanthc__Scriberr__48,subscribed,2025-02-25T04:05:58Z,SpirusNox,,,,
+rishikanthc__Scriberr__48,commented,2025-02-25T04:53:03Z,SpirusNox,,,,
+rishikanthc__Scriberr__48,commented,2025-02-25T06:57:32Z,rishikanthc,,,,
+rishikanthc__Scriberr__48,labeled,2025-02-25T14:20:04Z,SpirusNox,,,enhancement,
+rishikanthc__Scriberr__48,connected,2025-03-03T01:40:10Z,SpirusNox,,,,
+rishikanthc__Scriberr__48,commented,2025-03-10T15:34:04Z,SpirusNox,,,,
+rishikanthc__Scriberr__48,closed,2025-03-10T15:34:04Z,SpirusNox,,,,
+jlowin__fastmcp__868,labeled,2025-06-18T19:10:08Z,bruno-oliveira,,,enhancement,
+jlowin__fastmcp__868,subscribed,2025-06-19T04:29:07Z,yuyuma,,,,
+jlowin__fastmcp__868,commented,2025-06-19T21:37:10Z,jlowin,,,,
+jlowin__fastmcp__868,closed,2025-06-19T21:37:10Z,jlowin,,,,
+busser__tfautomv__101,renamed,2025-01-21T18:29:44Z,Timen-GitHub-User,,,,
+busser__tfautomv__101,renamed,2025-01-29T19:16:01Z,Timen-GitHub-User,,,,
+busser__tfautomv__101,referenced,2025-06-06T09:21:23Z,busser,e6977d250dabd0f89ca0052febcdb5c5c1cc7825,,,
+busser__tfautomv__101,cross-referenced,2025-06-06T09:21:28Z,busser,,,,
+busser__tfautomv__101,commented,2025-06-06T09:23:21Z,busser,,,,
+busser__tfautomv__101,mentioned,2025-06-06T09:23:22Z,Timen-GitHub-User,,,,
+busser__tfautomv__101,subscribed,2025-06-06T09:23:22Z,Timen-GitHub-User,,,,
+busser__tfautomv__101,closed,2025-06-06T09:24:39Z,busser,,,,
+busser__tfautomv__101,labeled,2025-06-06T09:24:47Z,busser,,,invalid,
+busser__tfautomv__101,labeled,2025-06-06T09:24:47Z,busser,,,documentation,
+busser__tfautomv__101,referenced,2025-06-06T09:41:19Z,busser,43e774a165596cab58eacded811ec74642976441,,,
+Shopify__roast__63,assigned,2025-05-20T16:32:46Z,obie,,obie,,
+Shopify__roast__63,issue_type_added,2025-05-20T16:33:06Z,obie,,,,
+Shopify__roast__63,labeled,2025-05-20T16:33:11Z,obie,,,enhancement,
+Shopify__roast__63,issue_type_removed,2025-05-20T16:33:32Z,obie,,,,
+Shopify__roast__63,issue_type_added,2025-05-20T16:33:35Z,obie,,,,
+Shopify__roast__63,commented,2025-05-21T18:35:08Z,palkan,,,,
+Shopify__roast__63,referenced,2025-05-24T17:11:26Z,obie,8704fdd4e0000fc27e067a77b7936776ca735d97,,,
+Shopify__roast__63,cross-referenced,2025-05-24T17:11:53Z,obie,,,,
+Shopify__roast__63,closed,2025-05-24T17:34:32Z,obie,,,,

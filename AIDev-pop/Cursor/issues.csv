@@ -1,0 +1,813 @@
+id,number,title,user,user_id,state,created_at,closed_at,repo_url,html_url,body
+3095942846,1055,createPattern memory leaks,chenhongtu,11976506,closed,2025-05-28T04:14:16Z,2025-06-08T14:41:54Z,https://github.com/Brooooooklyn/canvas,https://github.com/Brooooooklyn/canvas/issues/1055,"```
+async function test2() {
+  const imgPath = 'D:\\test\\aaa.png'
+  const width = 5000;
+  const height = 5000;
+  const imgData = fs.readFileSync(imgPath);
+  const img = await loadImage(imgData);
+  const patternCanvas = createCanvas(img.naturalWidth,img.naturalHeight);
+  const pctx = patternCanvas.getContext('2d');
+  pctx.drawImage(img,0,0,img.naturalWidth,img.naturalHeight);
+  const canvas = createCanvas(width, height);
+  const ctx = canvas.getContext('2d');
+  const pattern = ctx.createPattern(patternCanvas, 'repeat');
+  ctx.fillStyle = pattern;
+  ctx.fillRect(0, 0, width, height);  
+}
+
+async function test() {
+  console.log(process.memoryUsage().rss / 1024 / 1024 + 'MB');
+  while(true){
+    await test2();
+    console.log(process.memoryUsage().rss / 1024 / 1024 + 'MB');
+ }
+}
+
+test().catch(err=>{
+  console.error(err);
+})
+```
+Output
+```
+86.92578125MB
+575.72265625MB
+1065.41796875MB
+1196.50390625MB
+1327.58203125MB
+1458.64453125MB
+1589.7109375MB
+1714.14453125MB
+1845.29296875MB
+1976.34765625MB
+2106.4453125MB
+2237.56640625MB
+2368.64453125MB
+2499.71875MB
+2630.79296875MB
+2761.859375MB
+2892.95703125MB
+3024.03125MB
+3155.12890625MB
+3286.19921875MB
+3417.265625MB
+3548.3515625MB
+3679.4140625MB
+3810.4765625MB
+3941.55078125MB
+4072.62109375MB
+4203.68359375MB
+```
+loadImage reads from local files and there is also a memory leak
+```
+async function test3() {
+  const imgPath = 'D:\\tmp\\bce\\test\\05_upscayl_4x_remacri.png'
+  //const imgData = fs.readFileSync(imgPath);
+  const img = await loadImage(imgPath);
+}
+
+
+
+async function test() {
+  console.log(process.memoryUsage().rss / 1024 / 1024 + 'MB');
+  while(true){
+    await test3();
+    console.log(process.memoryUsage().rss / 1024 / 1024 + 'MB');
+ }
+}
+
+test().catch(err=>{
+  console.error(err);
+})
+```
+Output
+```
+86.90625MB
+286.5390625MB
+484.46875MB
+684.1171875MB
+559.8671875MB
+597.5078125MB
+635.1484375MB
+672.7890625MB
+710.4296875MB
+748.08984375MB
+785.73046875MB
+823.375MB
+854.2734375MB
+891.953125MB
+929.578125MB
+966.2890625MB
+1003.95703125MB
+1041.6015625MB
+1079.25390625MB
+1116.8984375MB
+1154.5390625MB
+1192.1796875MB
+1229.8203125MB
+1429.44140625MB
+1305.109375MB
+```
+Change it to this
+```
+async function test3() {
+  const imgPath = 'D:\\tmp\\bce\\test\\05_upscayl_4x_remacri.png'
+  const imgData = fs.readFileSync(imgPath);
+  const img = await loadImage(imgData);
+}
+```
+output
+```
+86.87890625MB
+286.609375MB
+484.88671875MB
+522.51953125MB
+522.5390625MB
+522.54296875MB
+522.54296875MB
+522.54296875MB
+522.54296875MB
+522.59375MB
+522.6015625MB
+522.609375MB
+```"
+3165228687,4984,[Ellipsis] fix: exclude `cursor` and `roomote` logins in contributors section,ellipsis-dev[bot],65095814,closed,2025-06-21T16:58:11Z,2025-06-21T16:59:06Z,https://github.com/RooCodeInc/Roo-Code,https://github.com/RooCodeInc/Roo-Code/pull/4984,"_This change addresses [review comments](https://github.com/RooCodeInc/Roo-Code/pull/4983#pullrequestreview-2947819761) left by [@mrubens](None) on PR #4983: **Filter out additional bot and automated accounts from contributors list**_
+
+> :warning: We couldn't build/test your project to verify our changes. [Add a Dockerfile](https://docs.ellipsis.dev/build) to significantly improve code quality.
+
+### Summary:
+Update `formatContributorsSection` to exclude `cursor` and `roomote` logins in `update-contributors.js`.
+
+**Key points**:
+- **Behavior**:
+  - Update `formatContributorsSection` in `update-contributors.js` to exclude contributors with logins `cursor` and `roomote`.
+  - Refactor filtering logic to use `EXCLUDED_LOGIN_SUBSTRINGS` and `EXCLUDED_LOGIN_EXACTS` arrays for better readability and maintainability.
+
+
+----
+
+You can configure Ellipsis to address comments with a direct commit or a side PR, see [docs](https://docs.ellipsis.dev/config).
+
+----
+
+**Something look wrong?** If this Pull Request doesn't address the comments left on the above pull request, create a new PR review with more details. For more information, check the [documentation](https://docs.ellipsis.dev).
+
+Generated with :heart: by [ellipsis.dev](https://www.ellipsis.dev)
+        "
+3164635219,1208,API launch failure - SAML_ACCEPTED_TIME_DIFF,wzsanders,6565467,closed,2025-06-21T01:25:03Z,2025-06-21T01:46:58Z,https://github.com/TracecatHQ/tracecat,https://github.com/TracecatHQ/tracecat/issues/1208,"**Describe the bug**
+.example.env + env.sh does not generate a value for SAML_ACCEPTED_TIME_DIFF
+
+The python code `int(os.environ.get(""SAML_ACCEPTED_TIME_DIFF"", ""3""))`, indicates that the default should be 3 if left unspecified, but is getting an error at launch.
+
+Explicitly setting the environment variable SAML_ACCEPTED_TIME_DIFF to 3 results in a resolution for the error found in the logs below and expected behavior occurs.
+
+**Provide logs**
+If applicable, please provide logs from the relevant Tracecat container (`api`, `worker`, `executor`, `ui`) or browser console (e.g. `Chrome DevTools`).
+```
+api                   | Traceback (most recent call last):
+api                   |   File ""<frozen runpy>"", line 198, in _run_module_as_main
+api                   |   File ""<frozen runpy>"", line 88, in _run_code
+api                   |   File ""/usr/local/lib/python3.12/site-packages/alembic/__main__.py"", line 4, in <module>
+api                   |     main(prog=""alembic"")
+api                   |   File ""/usr/local/lib/python3.12/site-packages/alembic/config.py"", line 636, in main
+api                   |     CommandLine(prog=prog).main(argv=argv)
+api                   |   File ""/usr/local/lib/python3.12/site-packages/alembic/config.py"", line 626, in main
+api                   |     self.run_cmd(cfg, options)
+api                   |   File ""/usr/local/lib/python3.12/site-packages/alembic/config.py"", line 603, in run_cmd
+api                   |     fn(
+api                   |   File ""/usr/local/lib/python3.12/site-packages/alembic/command.py"", line 406, in upgrade
+api                   |     script.run_env()
+api                   |   File ""/usr/local/lib/python3.12/site-packages/alembic/script/base.py"", line 582, in run_env
+api                   |     util.load_python_file(self.dir, ""env.py"")
+api                   |   File ""/usr/local/lib/python3.12/site-packages/alembic/util/pyfiles.py"", line 95, in load_python_file
+api                   |     module = load_module_py(module_id, path)
+api                   |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api                   |   File ""/usr/local/lib/python3.12/site-packages/alembic/util/pyfiles.py"", line 113, in load_module_py
+api                   |     spec.loader.exec_module(module)  # type: ignore
+api                   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api                   |   File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+api                   |   File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+api                   |   File ""/app/alembic/env.py"", line 12, in <module>
+api                   |     from tracecat.db import schemas  # noqa: F401
+api                   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api                   |   File ""/app/tracecat/db/schemas.py"", line 14, in <module>
+api                   |     from tracecat import config
+api                   |   File ""/app/tracecat/config.py"", line 141, in <module>
+api                   |     SAML_ACCEPTED_TIME_DIFF = int(os.environ.get(""SAML_ACCEPTED_TIME_DIFF"", ""3""))
+api                   |                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api                   | ValueError: invalid literal for int() with base 10: ''
+api                   | Migration failed!
+api                   | Exiting due to migration failure
+```
+
+**To reproduce**
+1. Follow the tracecat guide to set up a new docker compose instance of tracecat, found here: https://docs.tracecat.com/self-hosting/deployment-options/docker-compose
+2. Upon running `docker compose up`, observe the documented error above.
+
+**Expected behavior**
+Tracecat starts without errors.
+
+**Screenshots**
+N/A
+
+**Environment (please complete the following information):**
+
+- Tracecat version 0.37.0
+- OS (e.g. Ubuntu 20.03 on WSL2) - nixOS 25.05
+- Where did you deploy Tracecat? (VM, AWS EC2, etc.) - Docker on nixOS
+- CPU architecture - 64-bit
+- Browser type (e.g. Chrome, Safari, Edge, etc.) and version: N/A
+- Docker / Podman version - 27.5.1
+- Docker Compose / Podman Compose version
+
+**Additional context**
+Add any other context about the problem here.
+#1194 
+"
+1735709,232,Add closing brace to django 1.3 config settings docs.,dwatson,94659,closed,2011-09-25T23:47:06Z,2011-10-11T20:43:57Z,https://github.com/getsentry/sentry,https://github.com/getsentry/sentry/pull/232,
+3167870195,94025,fix(dynamic-sampling): CustomDynamicSamplingRule.assign_rule_id,constantinius,1109799,closed,2025-06-23T11:40:00Z,2025-06-23T14:13:03Z,https://github.com/getsentry/sentry,https://github.com/getsentry/sentry/pull/94025,"Supersedes https://github.com/getsentry/sentry/pull/93854
+
+Closes https://linear.app/getsentry/issue/TET-676/sql-injection-in-getsentrysentry
+
+This PR uses the Django queryset API to get the lowest possible rule_id without the necessity of a round-trip to Python. The query is roughly equivalent to:
+
+```sql
+UPDATE custom_dynamic_sampling_rule
+SET rule_id = (
+    SELECT rule_id + 1
+    FROM custom_dynamic_sampling_rule AS b
+    WHERE
+        b.organization_id = a.organization_id
+        AND b.is_active = TRUE
+        AND b.end_date > NOW()
+        AND (b.rule_id + 1) NOT IN (
+            SELECT rule_id
+            FROM custom_dynamic_sampling_rule
+            WHERE organization_id = a.organization_id
+              AND is_active = TRUE
+              AND end_date > NOW()
+        )
+    ORDER BY b.rule_id + 1
+    LIMIT 1
+)
+FROM custom_dynamic_sampling_rule AS a
+WHERE a.id = <target_id>
+  AND custom_dynamic_sampling_rule.id = a.id;
+```"
+3113177459,2537,Warn when overwriting global org auth token,szokeasaurusrex,7881302,closed,2025-06-03T09:27:01Z,2025-06-11T15:06:29Z,https://github.com/getsentry/sentry-cli,https://github.com/getsentry/sentry-cli/issues/2537,"The `sentry-cli login` command should interactively warn the user if they are logging in with a different org than the current org auth token, since doing so will overwrite the existing auth token"
+3136499755,2553,feat(login): Warn when overwriting global org auth token,szokeasaurusrex,7881302,closed,2025-06-11T11:34:03Z,2025-06-24T12:46:53Z,https://github.com/getsentry/sentry-cli,https://github.com/getsentry/sentry-cli/pull/2553,Closes #2573
+2608347037,14060,fix(nuxt): Only wrap `.mjs` entry files in rollup,s1gr1d,32902192,closed,2024-10-23T12:01:23Z,2024-10-23T12:31:19Z,https://github.com/getsentry/sentry-javascript,https://github.com/getsentry/sentry-javascript/pull/14060,"fixes https://github.com/getsentry/sentry-javascript/issues/14057
+
+`@nuxt/content` adds entry files to rollup. This fix adds a check for `.mjs` to ignore other files in the rollup plugin.
+"
+3130806470,16521,E2E tests are broken,AbhiPrasad,18689448,closed,2025-06-09T16:31:23Z,2025-06-10T17:05:36Z,https://github.com/getsentry/sentry-javascript,https://github.com/getsentry/sentry-javascript/issues/16521,"### Description
+
+https://github.com/getsentry/sentry-javascript/actions/runs/15539055853/job/43745808956?pr=16512
+
+```
+file:///home/runner/work/sentry-javascript/sentry-javascript/dev-packages/e2e-tests/test-applications/sveltekit-2-svelte-5/.svelte-kit/output/server/chunks/index.server.js:31
+import require$$0$i from ""@prisma/instrumentation"";
+       ^^^^^^^^^^^^
+SyntaxError: The requested module '@prisma/instrumentation' does not provide an export named 'default'
+    at ModuleJob._instantiate (node:internal/modules/esm/module_job:146:21)
+    at async ModuleJob.run (node:internal/modules/esm/module_job:229:5)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async get_page_options (file:///home/runner/work/sentry-javascript/sentry-javascript/dev-packages/e2e-tests/test-applications/sveltekit-2-svelte-5/node_modules/.pnpm/@sveltejs+kit@2.21.3_@sveltejs+vite-plugin-svelte@3.1.2_svelte@5.33.18_vite@5.4.19_@types+nod_wphcqjktn76r2mng6urzrsr6uq/node_modules/@sveltejs/kit/src/exports/vite/static_analysis/index.js:224:19)
+    at async build_server_nodes (file:///home/runner/work/sentry-javascript/sentry-javascript/dev-packages/e2e-tests/test-applications/sveltekit-2-svelte-5/node_modules/.pnpm/@sveltejs+kit@2.21.3_@sveltejs+vite-plugin-svelte@3.1.2_svelte@5.33.18_vite@5.4.19_@types+nod_wphcqjktn76r2mng6urzrsr6uq/node_modules/@sveltejs/kit/src/exports/vite/build/build_server.js:100:25)
+    at async analyse (file:///home/runner/work/sentry-javascript/sentry-javascript/dev-packages/e2e-tests/test-applications/sveltekit-2-svelte-5/node_modules/.pnpm/@sveltejs+kit@2.21.3_@sveltejs+vite-plugin-svelte@3.1.2_svelte@5.33.18_vite@5.4.19_@types+nod_wphcqjktn76r2mng6urzrsr6uq/node_modules/@sveltejs/kit/src/core/postbuild/analyse.js:70:2)
+    at async MessagePort.<anonymous> (file:///home/runner/work/sentry-javascript/sentry-javascript/dev-packages/e2e-tests/test-applications/sveltekit-2-svelte-5/node_modules/.pnpm/@sveltejs+kit@2.21.3_@sveltejs+vite-plugin-svelte@3.1.2_svelte@5.33.18_vite@5.4.19_@types+nod_wphcqjktn76r2mng6urzrsr6uq/node_modules/@sveltejs/kit/src/utils/fork.js:23:16)
+Emitted 'error' event on Worker instance at:
+    at [kOnErrorMessage] (node:internal/worker:326:10)
+    at [kOnMessage] (node:internal/worker:337:37)
+    at MessagePort.<anonymous> (node:internal/worker:232:57)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:820:20)
+    at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+```"
+3137630548,16555,Update express integration to be able to ignore layers like `router` or `middleware` spans,AbhiPrasad,18689448,open,2025-06-11T17:38:55Z,,https://github.com/getsentry/sentry-javascript,https://github.com/getsentry/sentry-javascript/issues/16555,"### Description
+
+https://github.com/getsentry/sentry-javascript/blob/develop/packages/node/src/integrations/tracing/express.ts
+
+Similar to the work we did in https://github.com/getsentry/sentry-javascript/pull/16553 for Koa, we should expose `ignoreLayers` and `ignoreLayersType` from the underlying OTEL instrumentation.
+
+https://www.npmjs.com/package/@opentelemetry/instrumentation-express
+
+Exposed options:
+
+Options | Type | Example | Description
+-- | -- | -- | --
+ignoreLayers | IgnoreMatcher[] | [/^\/_internal\//] | Ignore layers that by match.
+ignoreLayersType | ExpressLayerType[] | ['request_handler'] | Ignore layers of specified type.
+
+`ignoreLayers` accepts an array of elements of types:
+  - `string` for full match of the path
+  - `RegExp` for partial match of the path
+  - `function` in the form of (path) => boolean for custom logic
+
+`ignoreLayersType` accepts an array of following strings:
+  - `router` is the name of express.Router(),
+  - `middleware`
+  - `request_handler` is the name for anything that's not a router or a middleware
+"
+3159527265,16653,`wrapCloudEventFunction` incompatible with `CloudEvent` type from Google Cloud functions framework,flaeppe,3703560,closed,2025-06-19T08:56:41Z,2025-06-20T12:05:57Z,https://github.com/getsentry/sentry-javascript,https://github.com/getsentry/sentry-javascript/issues/16653,"### Is there an existing issue for this?
+
+- [x] I have checked for existing issues https://github.com/getsentry/sentry-javascript/issues
+- [x] I have reviewed the documentation https://docs.sentry.io/
+- [x] I am using the latest SDK release https://github.com/getsentry/sentry-javascript/releases
+
+### How do you use Sentry?
+
+Sentry Saas (sentry.io)
+
+### Which SDK are you using?
+
+@sentry/google-cloud-serverless
+
+### SDK Version
+
+9.30.0
+
+### Framework Version
+
+@sentry/google-cloud-serverless@9.30.0
+
+### Link to Sentry event
+
+_No response_
+
+### Reproduction Example/SDK Setup
+
+```javascript
+import * as Sentry from ""@sentry/google-cloud-serverless"";
+import { type CloudEvent } from ""@google-cloud/functions-framework"";
+Sentry.wrapCloudEventFunction(async (cloudevent: CloudEvent<any>) => {});
+```
+
+### Steps to Reproduce
+
+1. Install `@google-cloud/functions-framework@4.0.0`, `typescript@5.8.3` and `@sentry/google-cloud-serverless@9.30.0`
+2. Paste repro script
+3. Run `tsc --noEmit`, strict mode enabled
+
+Worth noting here is that `functions-framework@4.0.0` installs `""cloudevents"": ""^8.0.2""`
+
+### Expected Result
+
+No typechecking errors
+
+### Actual Result
+
+```
+> tsc --noEmit
+
+index.ts:30:31 - error TS2345: Argument of type '(cloudevent: CloudEvent<any>) => Promise<void>' is not assignable to parameter of type 'CloudEventFunction | CloudEventFunctionWithCallback'.
+  Type '(cloudevent: CloudEvent<any>) => Promise<void>' is not assignable to type 'CloudEventFunction'.
+    Types of parameters 'cloudevent' and 'cloudevent' are incompatible.
+      Type 'CloudEventsContext' is not assignable to type 'CloudEventV1<any>'.
+        Types of property 'id' are incompatible.
+          Type 'string | undefined' is not assignable to type 'string'.
+            Type 'undefined' is not assignable to type 'string'.
+
+30 Sentry.wrapCloudEventFunction(async (cloudevent: CloudEvent<any>) => {});
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
+
+To rephrase the error message; problem is that attributes of the `CloudEventsContext` interface from Sentry are not matching with the `CloudEvent` interface from Google's functions framework package, where `CloudEvent` is reexported from [cloudevents](https://github.com/cloudevents/sdk-javascript).
+
+`CloudEventsContext` from Sentry: https://github.com/getsentry/sentry-javascript/blob/b94f65279c8341a7176fe68186feef58af57e2cb/packages/google-cloud-serverless/src/gcpfunction/general.ts#L30-L39
+
+vs. `CloudEvent` from functions framework (via `cloudevents`) (ref: https://github.com/cloudevents/sdk-javascript/blob/c07afa9b774deefa137a960d2d11adee0bf3674a/src/event/interfaces.ts#L10-L31):
+
+```javascript
+export interface CloudEventV1<T> extends CloudEventV1Attributes<T> {
+  // REQUIRED Attributes
+  /**
+   * [REQUIRED] Identifies the event. Producers MUST ensure that `source` + `id`
+   * is unique for each distinct event. If a duplicate event is re-sent (e.g. due
+   * to a network error) it MAY have the same `id`. Consumers MAY assume that
+   * Events with identical `source` and `id` are duplicates.
+   * @required Non-empty string. Unique within producer.
+   * @example An event counter maintained by the producer
+   * @example A UUID
+   */
+  id: string;
+
+  /**
+   * [REQUIRED] The version of the CloudEvents specification which the event
+   * uses. This enables the interpretation of the context. Compliant event
+   * producers MUST use a value of `1.0` when referring to this version of the
+   * specification.
+   * @required MUST be a non-empty string.
+   */
+  specversion: string;
+}
+```"
+3169349592,16705,fix(google-cloud-serverless): Make `CloudEventsContext` compatible with `CloudEvent`,flaeppe,3703560,closed,2025-06-23T20:19:05Z,2025-06-23T20:28:52Z,https://github.com/getsentry/sentry-javascript,https://github.com/getsentry/sentry-javascript/pull/16705,"Update CloudEventsContext interface types
+
+Make `type` and `source` required properties
+
+- Closes: #16653
+- Refs: https://github.com/getsentry/sentry-javascript/issues/16653#issuecomment-2997811924
+- Refs: #16661
+"
+612816699,1012,Allow to pass either a PSR-17 or a Httplug stream factory to the constructor of the GzipEncoderPlugin class,ste93cry,1770485,closed,2020-05-05T18:46:40Z,2020-05-06T14:11:12Z,https://github.com/getsentry/sentry-php,https://github.com/getsentry/sentry-php/pull/1012,"| Q             | A
+| ------------- | ---
+| Branch?       | 2.4
+| Bug fix?      | no
+| New feature?  | no
+| BC breaks?    | no
+| Deprecations? | yes (kind of)
+| License       | MIT
+
+Fixes #1006 by allowing to pass to the constructor of the `GzipEncoderPlugin` class either a PSR-17 stream factory or Httplug's stream factory. In `3.0` we hopefully can drop support for Httplug `1.x` and rely exclusively on the PSR standards"
+3140261030,1861,"Since updating to version 4.13.0, I’m encountering the following error during CI tests:",cleptric,6617432,closed,2025-06-12T13:18:18Z,2025-06-13T15:24:18Z,https://github.com/getsentry/sentry-php,https://github.com/getsentry/sentry-php/issues/1861,"Since updating to version 4.13.0, I’m encountering the following error during CI tests:
+
+```
+  Undefined array key 0
+  at vendor/sentry/sentry/src/FrameBuilder.php:226
+    222▕             if ($reflectionParameter->isVariadic()) {
+    223▕                 // For variadic parameters, collect all remaining arguments into an array
+    224▕                 $variadicArgs = [];
+    225▕                 for ($i = $parameterPosition; $i < \count($backtraceFrameArgs); ++$i) {
+  ➜ 226▕                     $variadicArgs[] = $backtraceFrameArgs[$i];
+    227▕                 }
+    228▕                 $argumentValues[$reflectionParameter->getName()] = $variadicArgs;
+    229▕                 // Variadic parameter is always the last one, so we can break
+    230▕                 break;
+      +15 vendor frames 
+```
+
+Interestingly, I’m unable to reproduce this issue locally.
+
+_Originally posted by @poldixd in https://github.com/getsentry/sentry-php/issues/1849#issuecomment-2966008000_
+            "
+3063548636,4391,Ensure tag values are strings,szokeasaurusrex,7881302,open,2025-05-14T15:38:18Z,,https://github.com/getsentry/sentry-python,https://github.com/getsentry/sentry-python/issues/4391,"[Tag values must be strings](https://develop.sentry.dev/sdk/data-model/event-payloads/span/); however, the Python SDK's methods for setting tags (`set_tag` on the `Scope`, on `Span`, and perhaps elsewhere) are defined as taking type `Any` for the value, and we do not convert the value to a string before setting the tag. 
+
+While this appears to not be a problem for most users (likely our transport handles non-string-valued tags), it becomes a problem for users who wish to serialize the envelopes to send them with another service, like Sentry CLI. Since our spec requires tags to have string values, other services, in particular Sentry CLI, will refuse to accept envelopes created by the Python SDK when they contain a tag with a non-string value. See for example the issue [CLI-80](https://linear.app/getsentry/issue/CLI-80/using-send-envelope-error-with-types-invalid-type-boolean-false) (GitHub getsentry/sentry-cli#2505), which is caused by the Python SDK setting a non-string-valued tag.
+
+My proposed solution is to modify all of our `set_tag` functions to convert all values to strings before setting them on the tag. If the conversion fails, we don't set the tag. "
+3149238848,4473,Add `session`-related methods to top-level API,szokeasaurusrex,7881302,closed,2025-06-16T09:28:40Z,2025-06-24T15:30:32Z,https://github.com/getsentry/sentry-python,https://github.com/getsentry/sentry-python/issues/4473,"While investigating [this internal ticket](https://sentry.zendesk.com/agent/tickets/154950), I realized that none of our session-related methods `start_session` and `end_session` are available in the top-level API. Instead, they are only available on the scope, leading users to call the methods on the wrong scopes<br>We should instead expose these methods in the top-level API and have them get called on the isolation scope"
+2819153136,61,Gantt Performance,bzbetty,533131,open,2025-01-29T20:03:19Z,,https://github.com/haydenbleasel/kibo,https://github.com/haydenbleasel/kibo/issues/61,"Large Gantt charts are noticably slow, doing a very quick/basic profile it seems that GanttColumns are rerendered whenever the mouse moves.  This seems to be mostly to get the Y position of the mouse to render the GantAddFeatureHelper.  As soon as I remove the useMouse line (and anything it breaks) the whole chart is noticably snappier.
+
+**Thoughts:**
+
+* While the value is throttled the rerender still happens.  Is there a better way to throttle?
+* The houseEnter/Leave events don't seem to cause the same issue, could use rows or cells with onenter/leave evnets instead of tracking the mouse directly (the pixel perfect Y tracking does seem a bit weird anyway)
+* Does the add feature have to be in every column? if you hoisted it up to be a single component at the top level then only that component would need to track the mouse (you'd then have to calculate X and Y position, so I appreciate why you did it the way you did).
+* Coudl the mouse tracking only be enabled/disabled when the mouse is in that container? (useMouse doesn't seem to have that feature)
+
+"
+2939178813,94,Gantt gets slow when rendering 100+ tasks,CarlosVP120,66846209,open,2025-03-21T18:21:40Z,,https://github.com/haydenbleasel/kibo,https://github.com/haydenbleasel/kibo/issues/94,"I love this component! it is the only Gantt component out there that I could find using ShadCN, and the styling is just great! It feels really good using it and it is really intuitive. Congrats! 🎉
+
+**Describe the bug**
+When rendering more than 100 tasks, the gantt starts to feel really slow and laggy.
+
+I tried adding virtualization, but that did not fix the issue.
+
+**next-forge version**
+NextJS 15.2.2
+
+**Expected behavior**
+Smooth user experience with no lag.
+
+**Screenshots**
+
+<img width=""1475"" alt=""Image"" src=""https://github.com/user-attachments/assets/f4abbf50-65ae-420f-a73b-859e80856653"" />
+
+
+"
+3063386281,4788,[➕ Feature]: Saved Views should preserve column configuration across sessions,idanlodzki,37178156,closed,2025-05-14T14:46:30Z,2025-06-23T07:52:18Z,https://github.com/keephq/keep,https://github.com/keephq/keep/issues/4788,"**Is your feature request related to a problem? Please describe.**
+Saved Views currently preserve CEL queries, but they do not retain column configuration (e.g., which columns are shown, column order, etc.). It would be useful to store and restore full view configuration, so users can load a saved view that looks and behaves exactly as intended - even across devices.
+
+**Describe the solution you'd like**
+Saved Views should include column configuration and layout so that the full experience is preserved and sharable across browsers or sessions.
+"
+3118628071,4982,[🐛 Bug]: CEL queries update URL with query params but they do not survive page load/reload,ns-rboyd,126018967,closed,2025-06-04T17:53:50Z,2025-06-11T14:50:21Z,https://github.com/keephq/keep,https://github.com/keephq/keep/issues/4982,"Example, I search for `message.contains(""CPU"")`
+
+My URL in address bar becomes `http://localhost:3000/alerts/feed?cel=message.contains%28%22CPU%22%29`
+
+When I page reload (or copy+paste to share this results page with a friend) then what happens is that the alerts feed page loads and then my address bar gets re-written as `http://localhost:3000/alerts/feed` and my query is lost/never ran"
+3165697642,5072,[➕ Feature]: Add OpenShift provider connection,smsnotes,17877452,closed,2025-06-22T06:15:35Z,2025-06-26T08:06:53Z,https://github.com/keephq/keep,https://github.com/keephq/keep/issues/5072,"When creating new OpenShift provider instance we get an error : 
+* Connection Problem
+openshift scopes are invalid: { ""connect_to_openshift"": ""[Errno 2] No such file or directory: 'oc'"" }
+
+
+oc is the cli to OpenShift
+
+"
+1040503529,75,Speed up bootstrap speed,scopsy,8872447,closed,2021-10-31T15:29:12Z,2021-11-03T13:34:04Z,https://github.com/novuhq/novu,https://github.com/novuhq/novu/pull/75,
+2876792984,17653,Support HTML loader in `bun build --compile`,diqye,34941345,open,2025-02-25T03:30:03Z,,https://github.com/oven-sh/bun,https://github.com/oven-sh/bun/issues/17653,"step 1. Create react project with `Bun init` 
+step 2.  Compile with:
+```fish
+bun build src/index.tsx --outfile myserver --compile --target browser
+```
+> It also doesn't work fine to try remote target flag or to change brower to bun
+
+step 3. run myserver with:
+```fish
+./myserver
+```
+get an error: 
+```
+4 | var {serve } = globalThis.Bun;
+5 | 
+6 | // src/index.html
+7 | var src_default = ""/$bunfs/root/index-3bj1dzv6.html"";
+8 | 
+9 | var server = serve({
+                      ^
+TypeError: 'routes' expects a Record<string, Response | HTMLBundle | {[method: string]: (req: BunRequest) => Response|Promise<Response>}>
+
+To bundle frontend apps on-demand with Bun.serve(), import HTML files.
+```
+Example:
+
+```js
+import { serve } from ""bun"";
+import app from ""./app.html"";
+
+serve({
+  routes: {
+    ""/index.json"": Response.json({ message: ""Hello World"" }),
+    ""/app"": app,
+    ""/path/:param"": (req) => {
+      const param = req.params.param;
+      return Response.json({ message: `Hello ${param}` });
+    },
+    ""/path"": {
+      GET(req) {
+        return Response.json({ message: ""Hello World"" });
+      },
+      POST(req) {
+        return Response.json({ message: ""Hello World"" });
+      },
+    },
+  },
+
+  fetch(request) {
+    return new Response(""fallback response"");
+  },
+});
+```
+
+See https://bun.sh/docs/api/http for more information.
+ code: ""ERR_INVALID_ARG_TYPE""
+
+      at /$bunfs/root/myserver:9:19
+
+Bun v1.2.3 (macOS arm64)
+```"
+3123907871,20224,Add `bun audit` preference to Cursor rule.md?,Frulfump,11917272,open,2025-06-06T07:28:30Z,,https://github.com/oven-sh/bun,https://github.com/oven-sh/bun/issues/20224,"### What is the type of issue?
+
+_No response_
+
+### What is the issue?
+
+This recommendation is currently missing from the `bun init` autogenerated rule.md file.
+I updated my local file to include 
+```text
+- Use `bun audit` instead of `npm audit`, `yarn audit`, `yarn npm audit`, or `pnpm audit`
+```
+Maybe there's even more things to add?
+
+### Where did you find it?
+
+https://github.com/oven-sh/bun/blob/main/src/init/rule.md"
+3124714907,20229,bun audit does not respect proxy env vars,Bloodiko,21989414,closed,2025-06-06T12:58:06Z,2025-06-13T17:43:56Z,https://github.com/oven-sh/bun,https://github.com/oven-sh/bun/issues/20229,"### What version of Bun is running?
+
+1.2.15+df017990a
+
+### What platform is your computer?
+
+X64 
+
+### What steps can reproduce the bug?
+
+1. Set env vars for proxy
+
+```
+HTTP_PROXY=""http://proxy:port""
+HTTPS_PROXY=""http://proxy:port""
+```
+
+2. Run `bun audit`
+
+(Optionally)
+
+3. Run `bun i`
+
+### What is the expected behavior?
+
+Bun audit uses proxy properly. 
+
+### What do you see instead?
+
+Bun audit does not use proxy
+
+
+
+### Additional information
+
+Bun install uses proxy as intended when setting the proxy env variables. 
+"
+3125718933,20238,Implement `bun audit fix` with targeted dependency fixes.,lgarron,248078,open,2025-06-06T19:46:50Z,,https://github.com/oven-sh/bun,https://github.com/oven-sh/bun/issues/20238,"### What is the problem this feature would solve?
+
+I'm really glad to see `bun audit` (https://github.com/oven-sh/bun/issues/5359) land. However, as documented in https://github.com/oven-sh/bun/issues/5359#issuecomment-2950370811 it's quite easy to end up in a situation where `bun audit` is able to *identify* a vulnerable dependency but there is no straightforward way to *fix* it using `bun`:
+
+```shell
+git clone https://github.com/cubing/cubing.js && cd cubing.js
+git checkout 073e41b5ac46aab2f65c4a3875625741aeb3a92e
+bun audit
+
+# Neither of the following commands (suggested by `bun audit`) remove the vuln:
+bun update
+bun update --latest
+```
+
+In this particular case, I was unable to fix the vuln without resorting to `npm` to re-create and migrate the lockfile from scratch:
+
+```
+npm install
+npm audit fix
+rm bun.lock
+bun pm migrate --save-text-lockfile
+```
+
+But even this can mess with pinned dependencies and cause issues compared to a more targeted fix.
+I'm sure it's possible to translate the lockfile to `yarn`/`npm` and back to reduce issues with this, but that feels fragile and silly.
+
+A proper `bun audit fix` command would provide at least two huge benefits over having just `bun audit`:
+
+- There is an obvious and clear command that fixes the vulnerable dependencies using `bun`. If something funky happens, you know it's not because you ran the wrong commands to upgrade deps.
+- It can upgrade just the vulnerable dependency without collateral effects to unrelated dependencies. This makes it more practical to fix vulnerabilities in real-world projects that value stability.
+
+This might also make it easier for tools like Dependabot to implement vuln alert fixes.
+
+### What is the feature you are proposing to solve the problem?
+
+Implement `bun audit fix` similar to `npm audit fix`.
+
+### What alternatives have you considered?
+
+Gnarly workarounds using `npm`. See above."
+3129050481,20273,TOML parser fails on inline tables,abentpole,81669663,closed,2025-06-09T03:45:08Z,2025-06-10T02:07:59Z,https://github.com/oven-sh/bun,https://github.com/oven-sh/bun/issues/20273,"### What version of Bun is running?
+
+1.2.15
+
+### What platform is your computer?
+
+Linux 6.8.0-60-generic x86_64 x86_64
+
+### What steps can reproduce the bug?
+
+Ran into this while trying to use a TOML file as a configuration for a script.
+Bun's TOML implementation seems to choke on a file with an inline table and array of tables.
+
+To reproduce, make a TOML file (`sampleToml.toml`):
+```toml
+[global]
+inline_table = { q1 = 1 }
+
+[[items]]
+q1 = 1
+q2 = 2
+
+[[items]]
+q1 = 3
+q2 = 4
+```
+And a test TS file (`index.ts`):
+```ts
+import sampleToml from './sampleToml.toml'
+
+console.log(JSON.stringify(sampleToml, null, 2));
+```
+
+### What is the expected behavior?
+
+```json
+{
+  ""global"": {
+    ""inline_table"": {
+      ""q1"": 1
+    }
+  },
+  ""items"": [
+    {
+      ""q1"": 1,
+      ""q2"": 2
+    },
+    {
+      ""q1"": 3,
+      ""q2"": 4
+    }
+  ]
+}
+```
+
+### What do you see instead?
+
+A parsing error:
+```
+4 | [[items]]
+     ^
+error: Expected key but found [
+    at /.../sampleToml.toml:4:2
+```
+
+### Additional information
+
+I'm not sure how TOML-compliant Bun is intending its built-in TOML parser, so I was not sure if this was a bug or not."
+3008632662,21485,ALTER SOURCE ... REFRESH SCHEMA will fail for source with generated columns,xxchan,37948597,closed,2025-04-21T15:08:12Z,2025-06-04T06:51:05Z,https://github.com/risingwavelabs/risingwave,https://github.com/risingwavelabs/risingwave/issues/21485,"### Describe the bug
+
+_No response_
+
+### Error message/log
+
+```text
+
+```
+
+### To Reproduce
+
+```sql
+statement ok
+CREATE SOURCE s (*, t int as id+1)
+INCLUDE timestamp
+WITH (
+    ...
+)
+FORMAT PLAIN ENCODE PROTOBUF(
+    schema.registry = ...
+);
+
+
+statement error
+ALTER SOURCE s REFRESH SCHEMA;
+----
+db error: ERROR: Failed to run the query
+
+Caused by:
+  Feature is not yet implemented: this altering statement will drop columns, which is not supported yet: (t: integer)
+No tracking issue yet. Feel free to submit a feature request at https://github.com/risingwavelabs/risingwave/issues/new?labels=type%2Ffeature&template=feature_request.yml
+
+```
+
+### Expected behavior
+
+_No response_
+
+### How did you deploy RisingWave?
+
+_No response_
+
+### The version of RisingWave
+
+_No response_
+
+### Additional context
+
+_No response_"
+3072943537,21913,dashboard: show upstream/downstream job in a job's fragment graph,xxchan,37948597,open,2025-05-19T08:11:31Z,,https://github.com/risingwavelabs/risingwave,https://github.com/risingwavelabs/risingwave/issues/21913,
+3114489764,3402,Github Sync Optimization,akshay-gupta7,9948167,open,2025-06-03T15:36:53Z,,https://github.com/tokens-studio/figma-plugin,https://github.com/tokens-studio/figma-plugin/pull/3402,"<!--
+  Notes for authors:
+  - Provide context with minimal words, keep it concise
+  - Mark as a draft for work in progress PRs
+  - Once ready for review, notify others in #code-reviews
+  - Remember, the review process is a learning opportunity for both reviewers and authors, it's a way for us to share knowledge and avoid silos.
+-->
+
+### Why does this PR exist?
+
+Resolves #3392 
+
+<!--
+  Describe the problem you're addressing and the rationale behind this PR.
+-->
+
+### What does this pull request do?
+
+Currently, when syncing to GitHub(in multi file sync), we push all JSON files regardless of whether they've changed or not. This results in unnecessary writes, longer sync times, and potentially bloated commit histories.
+
+This PR addresses it by creating a filtered Changeset when pushing to github, scanning for files only with a change, or potentially being deleted, and pushes only those changes in the commit API request. 
+<!--
+  Detailed summary of the changes, including any visual or interactive updates.
+  For UI changes, add before/after screenshots. For interactive elements, consider including a video or an animated gif.
+  Explain some of the choices you've made in the PR, if they're not obvious.
+-->
+
+### Testing this change
+
+There is no direct way for a user to test this, but what can be done is that they can push a file with a lot of token sets, then make a small change and see how much time is it taking for them to push even a small change.
+
+<!--
+  Describe how this change can be tested. Are there steps required to get there? Explain what's required so a reviewer can test these changes locally.
+
+  If you have a review link available, add it here.
+-->
+
+### Additional Notes (if any)
+
+<!--
+  Add any other context or screenshots about the pull request
+-->
+"

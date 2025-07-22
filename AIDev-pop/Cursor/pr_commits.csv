@@ -1,0 +1,844 @@
+pr_id,sha,author,committer,message
+3143270588,2366e7b5458e39d99bd8e97c3e629de0ebec636c,cursoragent,cursoragent,feat: Export featureFlagsIntegration and FeatureFlagsIntegration type from @sentry/core
+3162618850,4309e0bbb2b61266539a1a8d0269607902e3fa9b,cursoragent,cursoragent,Add asset service 404/500 error analysis documentation
+3166296623,c093e96882f8de1975cecb4f6e03e52d4a1bcea9,cursoragent,cursoragent,Add file regex editing UI for custom modes in Modes tab
+3133979452,fa97d71a3560e068365473ccd84e9bf8f484ed52,cursoragent,cursoragent,Enhance cold email detection with AI and status tracking
+3159821039,92ab621f68384f8fd07d9e74fd9cdad4e4b64464,cursoragent,cursoragent,Add drag and drop tray example with emoji shapes
+3159821039,e1445e33543edf76ea809a5e81720d30e7b8ed23,steveruizok,steveruizok,drag and drop
+3159821039,a8ecdaa711a5e76b840fb438b16cbb95b005c356,steveruizok,steveruizok,ok
+3159821039,d4094cb047c1379d63e3ee3133cf94f9e603f156,steveruizok,steveruizok,drag and drop
+3159821039,1d4fefce42b2cfcae960031de12f1ebf58f7b6a6,steveruizok,steveruizok,Update DragAndDropTrayExample.tsx
+3159821039,9a83e195e79c28047a25da7b870aab15d18b6556,steveruizok,steveruizok,fix
+3153308695,7931723590b199e320aa8ecb0b4258d1862ca156,cursoragent,cursoragent,Add companyId to person data seeds
+3153308695,81086ef7c061d15ccfeac883366f2f7484568109,cursoragent,cursoragent,Enhance database setup and environment configuration for Cursor agents
+3153308695,66408cc33e2f5ca4fa7894960085a72ff9b97aba,cursoragent,cursoragent,Add note seeds and data generation for comprehensive dev seeding
+3153308695,ad1eca34beb921e4644227e39b5283e9d998f8e7,cursoragent,cursoragent,Update person data seed LinkedIn URLs and avatar image numbers
+3153308695,f87f59281fa15a838ebd580feb000c1b70304f4a,FelixMalfait,FelixMalfait,Improve seeds
+3153308695,493c16514737751cc22f180ad892d60586a6ce67,FelixMalfait,FelixMalfait,Improve seeds
+3153308695,238e53607d4551b5b03961dc34e418e649591d21,FelixMalfait,FelixMalfait,Fix?
+3153308695,6d0b846dca5bc0efb138435f11ad350faf2b4aec,FelixMalfait,FelixMalfait,Missed one?
+3137099861,24a1df4a959145c81bc176487f4d3e2c40af6168,cursoragent,cursoragent,Improve GitHub integration setup check to handle multiple integrations
+3152472726,4f0f07b70f0ad806472961fbcc7675c8c9dfaadc,cursoragent,cursoragent,Add top margin to DialogHeader in eval-related modals
+3152472726,6dc67c81850bf1cf923d85b94ab2e1a9b28c5711,cursoragent,cursoragent,Add DialogHeader to improve dialog title styling in evaluator forms
+3152472726,ab8aa2b3ec2f9020f3d8c01cefa87c02dfd27087,jannikmaierhoefer,web-flow,Merge branch 'main' into cursor/add-margins-to-evaluator-headline-4b05
+3139974947,c6aac95affe1a24a64936c7eea6d7cdd40ad0263,cursoragent,cursoragent,Convert tag values to strings in Sentry SDK
+3139974947,5c38d51a1a40909939858f779bca22d87bda6efe,cursoragent,cursoragent,Ensure tag values are always converted to strings using safe_str
+3139974947,a88dcf6453cf379ff8ca5cf66f3f07b6111c3418,szokeasaurusrex,szokeasaurusrex,clean up Cursor's solution
+3139974947,99293c3eff171a5181350b1e76c74a3645114ecf,cursoragent,cursoragent,Convert tag values from int to str in scope and compatibility tests
+3139974947,3820946581090b5f7c0328ca4dbba86b12260072,cursoragent,cursoragent,Checkpoint before follow-up message
+3139974947,8c31effd6541a6f960e0eb4472e119c405d37af3,cursoragent,cursoragent,Fix request_data tag assertions in integration tests
+3139974947,e71ef516820286d0581b06af1c20e15247b67682,cursoragent,cursoragent,Convert boolean tags to strings in Redis and AWS Lambda integrations
+3139974947,d35d1b4261144ed0cce12e70e59f50c9698eb1de,szokeasaurusrex,web-flow,Merge branch 'master' into cursor/prepare-pr-for-tag-value-bug-fix-81d2
+3139974947,3db95ed9252fef2f54b270ccaa4d720b3fb0a5da,szokeasaurusrex,szokeasaurusrex,reformat tests
+3139974947,356cec7408e83906e6133b8d9ca678f84df33d19,szokeasaurusrex,szokeasaurusrex,fix `test_memory_usage`
+3139974947,7884a432db43e706b7f149b1277e909acfaebb42,szokeasaurusrex,szokeasaurusrex,fix apidocs
+3139974947,dbcd6dd362b20512fc4636cae59de6f953a0e654,szokeasaurusrex,szokeasaurusrex,Only convert to string when serializing
+3139974947,16045df6aa7e2afd2fed6eb8373f90c5e26fa343,szokeasaurusrex,szokeasaurusrex,fix tests
+3131238821,815e85f78f79abe031b0c15fe21e738f3b6b96e0,cursoragent,cursoragent,Configure Vite to externalize Prisma and OpenTelemetry instrumentation for SSR
+3154088521,56e2d4de428b2cb982b8ed0ff42814608779e7b1,cursoragent,cursoragent,Remove release-bubbles-ui feature flag and standardize release interactions
+3154088521,b06037762442aa6b08c6e0f1982c5094dc369296,cursoragent,cursoragent,Remove release-bubbles-ui feature flag and enable new UI for all users
+3154088521,4aa1dfe1e966d3d3728109c3b4a37f39c746826d,billyvg,billyvg,inline objs
+3154088521,789a8733bcd4f08aa89a5b244549fecf63f2c7fc,billyvg,billyvg,fix test
+3154088521,ca6cd6a2f28d8b078e9370fb43958982c6fa9112,billyvg,billyvg,fix tests
+3131760803,4c451cbd45ccfcd912c66854b582d5a65a3719cc,cursoragent,cursoragent,Fix TOML parser to handle inline tables and table arrays correctly
+3123127952,9a1e0754ef8e4e930ddc9b6d5e765010402c96de,cursoragent,cursoragent,Fix file stream error handling and EPIPE propagation across multiple components
+3140758164,9faf926e90e8eb88f792d148c25d63b63231622a,cursoragent,cursoragent,Upgrade ESLint to v9 and migrate to flat config system
+3140758164,f5ea7d9814e24748ce9ffe38414b68871e6bcfa3,cursoragent,cursoragent,Migrate ESLint configs to ESM and update dependencies
+3140758164,408d5aa1a27710140041d22b277eb242b54d8e59,geclos,cursoragent,run prettier
+3161327793,b236f1c804e085b44ce10878cb71ce336166f52f,cursoragent,cursoragent,Update Kaniko documentation to reflect project archival in 2025
+3161327793,1a786b48955ee80be59ecde181c48ab41f2fdffc,strickvl,strickvl,"Merge develop branch into cursor/update-kaniko-project-status-in-docs-d17e
+
+Resolved merge conflict in self-hosted.md by combining both changes:
+- Updated Kaniko link to GitHub repository (from develop)
+- Kept archival note about Kaniko project (from current branch)
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+3161327793,8c491332a6ae1944381ddb46e98bb56b7e43d835,strickvl,strickvl,"Revert premature Kaniko archival note
+
+The previous commit added a note about Kaniko being archived as of June 2025,
+but this is premature since the project is still active. Reverted to the
+original documentation state until the archival actually occurs.
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+3161287864,d26a2edeac9b5b154289c1267fe0b045039e1d11,cursoragent,cursoragent,Improve 16-bit easing functions with better range handling and symmetry
+3161287864,1fc6d8a4e41564ae15c4cea4daa78b9881efd007,zackees,web-flow,Merge branch 'master' into cursor/enable-symmetry-and-fix-functions-bd23
+3139420152,6dd4c20b1bef405b317f958305dee914f90216c8,cursoragent,cursoragent,Add batch export support for dataset items
+3165205251,a8720931814924ed1ef53cf1f6ddbe6b946bbda6,cursoragent,cursoragent,"Remove changeset requirement from PR template
+
+- Remove the changeset checklist item from PR template as requested
+- Contributors no longer need to create changesets for PRs
+- Automated changeset workflows remain in place for version management"
+3137841799,fc631a425d8a1188dea76dd1af3914974f762f3a,cursoragent,cursoragent,Add debugging instructions to Node integration tests README
+3137841799,0d52d87abc532878b363de20d3fc84574358b613,AbhiPrasad,AbhiPrasad,cursor cleanup
+3130903286,6880738c418b0e2b1e66d7844a59af5fd1fb4bc0,cursoragent,cursoragent,Update schedule text to reflect twice weekly service frequency
+3156267045,b0e4e75486a93c6a64bac0b5e203263ac7209851,cursoragent,cursoragent,Fix NODE_OPTIONS environment variable syntax in Dockerfile
+3156267045,912e9bf2fdf278f73dd4954398ff6a22677a3602,cursoragent,cursoragent,Remove NODE_OPTIONS flag from Dockerfile
+3158063573,aded4ed0c3ec58221891459e07809daa24d8d2ed,cursoragent,cursoragent,Upgrade Sentry dependencies to version 9.30.0
+3140750375,1c06f94849fc3d1dadb825375398d517401dd920,cursoragent,cursoragent,Update API key description based on cloud or self-hosted deployment
+3130792767,1aae8045b3c85b367db79ec1b700b08f50e9ac71,cursoragent,cursoragent,Add group expansion feature with collapsible grouped rows
+3130792767,2e3c00b6f60f3f43ff82bdfb8807726df74f063a,cursoragent,cursoragent,Add toggle all groups functionality with dynamic button state
+3130792767,fb464d46b371a27229644f4389500eaa39e09c44,cursoragent,cursoragent,Improve alert table UI with group toggle button and layout adjustments
+3130792767,3ce989809557c45ddcbb21eef8b85fc06bd16137,cursoragent,cursoragent,Refactor alert table UI to centralize group expansion controls in AlertPresetManager
+3130792767,d24d09bbc0b90a3c0f58bab6cc3128ee13b370a3,shahargl,shahargl,feat: minor fix
+3130792767,f926b59a5fc80badbf2ae02819c149353ab3d41c,cursoragent,cursoragent,Add unit tests for AlertPresetManager and GroupedRow components
+3130792767,62e4e6357999fbb069f5ab9c3e7f54eaecc73cd3,cursoragent,cursoragent,Refactor alert table and grouped row tests with improved mocking
+3130792767,29f76b1497aa89253c835869cbd21a788a709bda,cursoragent,cursoragent,Improve test setup and mocking for various components and libraries
+3132238407,43f12de2702e8e744fd9fcfc313532b5d34dc9a4,cursoragent,cursoragent,Fix Windows long path handling in path conversion functions
+3132238407,7063669a95b09c8aa98f7bbd4aa8c591a649e650,cursoragent,cursoragent,Fix Windows path length buffer overflow in UTF-8 to UTF-16 conversion
+3132238407,4beb4b60f9f04824b734132ac970b5f4f77ffebc,Jarred-Sumner,github-actions[bot],`bun run prettier`
+3117811205,411cb49710d42f6e404cd2b132c3bcbd8c384741,cursoragent,cursoragent,Upgrade dependencies and fix package versions across multiple projects
+3117811205,c37049122d9c2114fc3353b3c1452f0dde9e115b,cursoragent,cursoragent,fix(root): update dset package to resolve prototype pollution vulnerability
+3117811205,ce3843425b6d6f8574d29f21e5ae053ddeea9741,scopsy,web-flow,Delete SECURITY_FIX_SUMMARY.md
+3133978465,4e83a4012f34d0a73b8d3fa7102aab1b2f95ed3a,cursoragent,cursoragent,Add rule history pages for viewing rule changes and versions
+3133978465,b0653fe5ffc4ad1b44094ea31d23d330ded5b52a,cursoragent,cursoragent,Refactor rule history page to use EmailAccountProvider and improve loading
+3133978465,56520a77d8461f073aec1d56997d658a090d280c,elie222,elie222,debug redirect
+3133978465,6d6aa4fe766767a001e0f141e7b602a540d557d7,elie222,elie222,rule history debug page
+3165199669,5b61965337d623f807c8d12020e159db56110de2,cursoragent,cursoragent,Add security context to cluster collector deployment pod spec
+3165199669,d3ed10981b00a8e5e914cecdb53ea666b844a851,edeNFed,web-flow,Merge branch 'main' into cursor/change-odigos-gateway-pods-to-non-root-23c7
+3138534395,d2ff6456ba02b37d74491a6d6fec842cecd57b67,cursoragent,cursoragent,Add Go language parser for source code management integration
+3138534395,ea713d77fe14968859d38ac15cfd0adc99ade4ed,cursoragent,cursoragent,Add Go language support for function extraction and PR comment workflows
+3138534395,63cbd81a718c989d4b2b5019eb7acec676a88424,iamrajjoshi,iamrajjoshi,:wrench: chore: fix ff
+3138534395,c26b80bfa15a21baca05074d95a498e6ee22db11,iamrajjoshi,iamrajjoshi,:bug: fix: update interface pattern
+3138534395,2c6b4638644b63d921f3d76b7071be8bcb6fe7c4,iamrajjoshi,iamrajjoshi,:bug: fix: updates from pr feedback
+3138534395,e2b5366e186a780e37326731c93fb2ecd5104316,iamrajjoshi,iamrajjoshi,:wrench: chore: remove anon regex
+3148367585,25630640ff22e44fbd0029f52feb60b1b99a87b2,cursoragent,cursoragent,Add `bun info` command as alias for `bun pm view`
+3148367585,4c6efcfbfc2acf1c1b21c1fd25e4c8abeac6b0d3,Jarred-Sumner,Jarred-Sumner,Small cleanup
+3148367585,4926a025cfcda23a31e04f1e4b70ab66d52bee7c,Jarred-Sumner,Jarred-Sumner,Fixups
+3148367585,44f43d8b9a6be0a128c3e51e9693fb1d52491a0a,Jarred-Sumner,Jarred-Sumner,finish
+3148367585,b8b90a8fcffb66036dd1a2fdc79773a899219b0a,Jarred-Sumner,github-actions[bot],`bun scripts/glob-sources.mjs`
+3148367585,4f2cc7bc155ec34872daa7f11bbfd2f4e9d8e60c,Jarred-Sumner,github-actions[bot],`bun run zig-format`
+3148367585,009f89d664dbb878f1d8532b3c61e1446602efac,Jarred-Sumner,Jarred-Sumner,Update ban-words.test.ts
+3148367585,d0dffa012145bc39da853ec08712c64d1988b072,Jarred-Sumner,Jarred-Sumner,Merge branch 'main' into cursor/rename-command-and-set-alias-4e8a
+3148367585,048bb308284e0a746a1ab7eef2af5fd2a4211551,Jarred-Sumner,Jarred-Sumner,Update Arguments.zig
+3132195957,a55dc1220d63f86120a020454267c59b98643265,cursoragent,cursoragent,Fix GC heap size reporting and add Blob stream conversion tests
+3132195957,b59639436516aa0376956c2a3238434d4ddb892c,cursoragent,cursoragent,Fix Blob memory reporting in ReadableStream conversion
+3132195957,4b055d0ce710b7fc31b2f64691aefc90a7aac444,Jarred-Sumner,github-actions[bot],`bun run prettier`
+3154285356,ee84276db183948e73728c4317c7b5b183c2ef54,cursoragent,cursoragent,Remove release bubbles UI feature flag and related checks
+3154285356,15eccca6c8ee90d98965a1640851066171f102ba,cursoragent,cursoragent,Add release bubbles UI feature flag checks across components
+3154285356,b2a6c9164e0c97b093faad608e8de02e71131f15,cursoragent,cursoragent,Changes from background composer bc-0d94d88f-ef50-4abe-aaf4-5e9955c39ea4
+3144417356,e874f02e4b4b431e6123591d18af4d490f96521f,cursoragent,cursoragent,Remove acceptance test environment flags and related code
+3144417356,38d950d85d8f43c7b41394e84024afe8b8262cd5,cursoragent,cursoragent,Add build-acceptance script for production build configuration
+3144417356,100a8db942e10701156b65e7cb1b9cf91898c668,ryan953,web-flow,Merge branch 'master' into cursor/remove-is-acceptance-test-and-related-components-f1ec
+3144417356,37b7674a3285d65a06ee754efe87fb8907aecfa6,ryan953,web-flow,Update getDynamicText.tsx
+3153752896,7b52f9462b9f1bfe36e7448a9c9bb43079c14cf1,cursoragent,cursoragent,Add nullable option to subscriber response DTO properties
+3153752896,2f232e195e8b4a5798f3667347ca06aeb5c1675a,scopsy,scopsy,fix: fuilds
+3153752896,78e752465dd9e90a0159b7cffd2165091e58c99d,scopsy,scopsy,fix: types
+3153752896,823a2b68abf294e201f3b5266d8158af83cd9a40,scopsy,scopsy,fix: tr
+3153752896,913137881104d8d281ad10a6de0128c58ab9a33f,scopsy,scopsy,fix: add test
+3153752896,87471d1f496ba17fca66555fcde5b8f64ee1e962,scopsy,scopsy,fix: a
+3165441797,1ee9bae7f562884156cd0dc36da7d841d8feb573,cursoragent,cursoragent,Restrict direct effect imports in ESLint config
+3165441797,d02a3d83dbf747ad183b4a94a44b9f6f021dac19,cursoragent,cursoragent,Update ESLint config to enforce alias imports for Effect and Platform
+3165441797,1f50e4c7154f1e3192fb8377624d7b8dace7d411,juliusmarminge,juliusmarminge,Merge branch 'main' into cursor/fix-custom-lint-rule-for-effect-imports-4b7d
+3165441797,cd3714d7c6a11d12c08102ba0bf0af8da6edd7e8,juliusmarminge,juliusmarminge,last one
+3137677174,21b3dc2177d8cc63e6f211a7d118928b2826fa78,cursoragent,cursoragent,Add `ignoreLayers` and `ignoreLayersType` to Express integration
+3137677174,679ff95ad8d9996d5c4f26367d069eb1a2f08dbd,AbhiPrasad,AbhiPrasad,cursor cleanup
+3137677174,52b9dc55f623588020a10b94822a8b7444e61238,AbhiPrasad,web-flow,Merge branch 'develop' into cursor/update-express-integration-with-new-options-8195
+3137677174,79bb6b48be0bfa3b2be8ac510a2bc7ad15794a86,AbhiPrasad,web-flow,Merge branch 'develop' into cursor/update-express-integration-with-new-options-8195
+3137677174,8c04741a181646702c327e7a79a1c8fa2b101758,AbhiPrasad,AbhiPrasad,Merge branch 'develop' into cursor/update-express-integration-with-new-options-8195
+3137677174,2b178b5e75e9a75417bf863d62ccdf9bbfca0a22,AbhiPrasad,AbhiPrasad,Merge branch 'develop' into cursor/update-express-integration-with-new-options-8195
+3137677174,d7bd90eab3c12865539a466fc19eea838be5b2df,AbhiPrasad,AbhiPrasad,adjust how options are set
+3165243502,50be80b6b233636b13d1bf4fc5b81c7e1b3e1c16,cursoragent,cursoragent,Remove type of change section from PR template
+3152882125,0cae7f5f92c54fe178c4e9731c86cf4765c38da1,cursoragent,cursoragent,Add telemetry event synchronization check script
+3152882125,f9fbb7954893f8503f783e59d033d56e5378585c,cursoragent,cursoragent,Checkpoint before follow-up message
+3152882125,1582315ce7f9ed1229b5451f37f218fc37b08cca,cursoragent,cursoragent,Add telemetry events for AI and Cloud interactions in IntelliJ plugin
+3152882125,0048a41ba485d329d293a8571152964464b5a350,MaxKless,cursoragent,"tweak ci
+
+Signed-off-by: Cursor Agent <cursoragent@cursor.com>"
+3152882125,00be82fc05f8f492f1aa1d21b568d19afe22b2b0,MaxKless,cursoragent,"add comments
+
+Signed-off-by: Cursor Agent <cursoragent@cursor.com>"
+3152882125,095300bc910618b9ab1ffb75532868ae06db77a7,MaxKless,cursoragent,"move target to package.json
+
+Signed-off-by: Cursor Agent <cursoragent@cursor.com>"
+3148054400,a141ba44efb46865e9d6cd0ca03ec4d08a19588f,cursoragent,cursoragent,fix(plugin-quickswap): Fix composePromptFromState function call in llmHelpers - Updated the composePromptFromState function call to use the correct object parameter format - Fixed state object structure to properly pass message content for template placeholders - This resolves compiler errors related to incorrect function signature usage
+3148054400,ef2f0973ae60f8e103e292a20d23b75b3aef8a79,cursoragent,cursoragent,fix(plugin-quickswap): Fix UUID type issues in all test files - Replace improper  casts with proper UUID type format - Update entityId and roomId to use correct UUID template literal type - This resolves all TypeScript compilation errors in test suite
+3128477850,5e2980695646988228ad293e5a0ed69d6bcb0e0a,cursoragent,cursoragent,Fix CEL state handling with improved pathname and query param logic
+3128477850,5abef8a8e6a602724f5a952c89207684f014023f,cursoragent,cursoragent,Update alert status and add deleted/dismissed fields for noisy preset tests
+3129474936,80a25eab41a2bce5e98a7d422521fecd10951d27,cursoragent,cursoragent,Add URL-based tab navigation for plugin configuration page
+3148285881,e75a31322e5bf0f3b29d4b3de314e102f00b8f83,cursoragent,cursoragent,"Update template recommendations for React 19, Next.js 15, and tech stack"
+3148285881,bf1c0d5c95a082ba390ef16f0116ab911901ddbe,maxeyvsla,maxeyvsla,"Remove outdated project rules and configuration files, including cursor rules, analytics, auth, backend, frontend, general, payments, storage, and package-lock.json. Introduce a new product requirements document (prd.md) outlining the architecture and features for the Symphonia music education platform."
+3132740864,971c2464fb0e63e22f1b566ec57be742c09db91c,cursoragent,cursoragent,Add backend column configuration with cross-device sync
+3132740864,bf9c97eea90d1c212d6e0ae6acc2e3e161539fc7,cursoragent,cursoragent,Export Tag interface for external use
+3132740864,a1cb117ceb230e47093bf2da735fff1da02301c7,cursoragent,cursoragent,Refactor column config to support local and backend storage dynamically
+3132740864,9b5385e850389d5d2a331b5b2ded39ec7f11a320,cursoragent,cursoragent,Remove column configuration migration and test documentation
+3132740864,cccbab0012aa0945415f983b39aa1d704b7337ea,talboren,talboren,fix: fix
+3132740864,e7321f04b4d2080623c1271d4630b532ab397870,cursoragent,cursoragent,Implement batched column config updates with backend persistence
+3132740864,b11c0b9c28ee5504c4a7212b214c9e1c54f6b077,cursoragent,cursoragent,Checkpoint before follow-up message
+3132740864,de362b2461bf15a82f99828fcf46ae2e658fb33e,cursoragent,cursoragent,Implement backend column configuration persistence with batched updates
+3132740864,eb4cf5041e5741e5d8a4a3322aca2f3a73e9d5ae,cursoragent,cursoragent,Refactor column state management with unified hook and prop passing
+3132740864,4a2ef2a74dd17a70e1f75250b09ea596160dad3a,cursoragent,cursoragent,Checkpoint before follow-up message
+3132740864,42e01a3b0b3e0b809a68eddec98c4f3864a76316,talboren,cursoragent,fix: remove
+3132740864,c40ded398afc9d53abf015543a2c3966892f6753,talboren,web-flow,Merge branch 'main' into cursor/improve-selected-columns-storage-mechanism-0734
+3132740864,c7153dd98db7c8e3f303a9a717ff3a4b5a2c3d1d,cursoragent,cursoragent,Fix checkbox interaction in ColumnSelection - revert to defaultChecked with dynamic key for re-rendering
+3132740864,217138b6c1284ed81997588aad9b618f9bd99ae1,cursoragent,cursoragent,Fix column movement bug: preserve both columnOrder and columnVisibility in backend updates - prevents custom columns from disappearing when reordering
+3132740864,32db2893b1c3b85cb84e71baa07fcec3f4001c5e,cursoragent,cursoragent,Fix e2e test timeout: use controlled checkboxes with stable keys for reliable state management in ColumnSelection
+3132740864,5077d30f4fc21416e87f89969c3e2be968a3051c,cursoragent,cursoragent,Fix e2e test timeout: add loading indicator while column config is fetched from backend - prevents test from checking checkbox state before data is loaded
+3132740864,7697046f3885f908e5870e83d1452ffe601063f1,cursoragent,cursoragent,"Fix critical column configuration bugs: proper backend state management, search functionality, and e2e test reliability"
+3132740864,ecaa3837e067fc8b5507950b4f207aaf6f65333a,cursoragent,cursoragent,feat: Add static preset IDs and column configuration monitoring
+3132740864,66d195fb6ab47af1728c02ad462ca3b5ab396964,cursoragent,cursoragent,fix: resolve E2E test timing issues and wait conditions
+3132740864,f98e6963cb97c4e8541854215d76aede08ba60b8,talboren,cursoragent,fix: remove redundant files
+3132740864,846036578a35bdb0e87b0d83a7003ae0f496bb3f,talboren,cursoragent,fix: remove tests
+3132740864,cde2178fc55aa4f16bfa5d2235936d247adf2f6e,cursoragent,cursoragent,fix: add static prop to settings panel to fix e2e test timing issues
+3132740864,0a09552bb37188d2602fe5271edaa074332bc877,cursoragent,cursoragent,Improve preset column config handling with error resilience and fallbacks
+3132740864,2a2f7b53089e65386af9c97d1679397fd0c18637,talboren,cursoragent,Merge branch 'main' of https://github.com/palad-in/keep into cursor/improve-selected-columns-storage-mechanism-0734
+3132740864,3947407db0f14c89655a4581601569756ef8ee87,cursoragent,cursoragent,Fix useLocalStorage SSR issues with browser environment checks
+3132740864,3d1b7d220918bf2ca414be67a3b2c6a4aff4e8f3,cursoragent,cursoragent,Fix SSR issues by adding browser environment checks in multiple components
+3132740864,f806b5875ce975292bfbbeac4000a344bc9de57d,talboren,web-flow,Merge branch 'main' into cursor/improve-selected-columns-storage-mechanism-0734
+3132740864,197cd9360af7759c9399d4c3012d19758be6bb49,talboren,web-flow,Merge branch 'main' into cursor/improve-selected-columns-storage-mechanism-0734
+3132740864,bc4d5af105f23d93e4682acf084cdcd7ef323d82,talboren,talboren,fix: fix
+3132740864,ca3ba01ef83ef113e78b805c48ae953e014d05da,talboren,talboren,fix: fix
+3136628527,a12fa53c57586ae39c82338c7ae7cdfbba897d3e,cursoragent,szokeasaurusrex,"feat(login): Warn when overwriting existing auth token
+
+Closes #2537
+
+Co-authored-by: ""Daniel Szoke"" <daniel.szoke@sentry.io>
+Co-authored-by: ""loewenheim"" <loewenheim@users.noreply.github.com>"
+3131698049,69867eff1653cedf28a756e6805b4ecbaaf790d1,cursoragent,cursoragent,Add tests for Perplexity reasoning models and effort parameter
+3131698049,15819886097d51c8cd20d6b200d74bf4c7ba8d4f,ishaan-jaff,ishaan-jaff,tests perplexity reasoning effort
+3135420284,6bd02ad1ebcb6c82e36b48114d6820170487f639,cursoragent,cursoragent,Add CLI test documentation for BAML testing workflow and reference
+3135420284,279c1b62daead11fbf0bfa7234bc9b357322d739,cursoragent,cursoragent,Changes from background composer bc-f0b2fdab-e457-407f-ad2f-59fd3e00880d
+3135420284,a2dc1f99748f8ed0187b27452bd4e22ce8ab83ef,aaronvg,aaronvg,fix broken link
+3124507979,e96970830808cff0532910bca830a789638a5c81,cursoragent,cursoragent,Checkpoint before follow-up message
+3124507979,b403ddb366d94ac2f6b8161893660eb4925bb19e,cursoragent,cursoragent,Fix filesystem watcher thread safety and event loop management
+3166296433,cecacba17481987d421fdbf75041516e11d0bce5,cursoragent,cursoragent,Add MCP server restrictions to mode configuration and validation
+3140903716,adf75fd9a64ab52ff4b16ac262bebfa88e595a51,cursoragent,cleptric,Fix handling of backtrace frames
+3140903716,052cf2215dee8486cb7e72b1f6be929fab358b69,cleptric,cleptric,CS
+3158034133,4c990ab2f1965032a29d8e16ee285f0ea66a17cf,cursoragent,cursoragent,Refactor dynamic sampling rule ID assignment using ORM query
+3158034133,35b243c00cc18d9ae4bd21b35962b10ea0fb59fe,getsantry[bot],web-flow,:hammer_and_wrench: apply pre-commit fixes
+3137765636,6b75dd9186e747a8ef933a6b7f8bd596f17c7461,cursoragent,cursoragent,Add welcome page with Discord community invitation
+3155923412,f8b8086050f39e29b4d1ca6e9511f48650914145,carloslu0,carloslu0,fix: update env configuration and migrate to Supabase database setup
+3155923412,fc89fd595acc224ada19d110721507abbdce75ad,chriswinsatlife,chriswinsatlife,Checkpoint before attempting further API/tool fixes
+3155923412,8f2a32453426d0fea3fa941d3186ea2fad837600,chriswinsatlife,chriswinsatlife,fix: Resolve auth issues and update UI components
+3155923412,f01d945366ee1ee9d7233d0b9228a105bc63d57b,chriswinsatlife,chriswinsatlife,fix: Apply correct auth pattern to remaining API routes
+3155923412,e438a32251268e8e70ccfbc347d54a54c7f730ca,chriswinsatlife,chriswinsatlife,feat: Add Files tab to sidebar with document linking
+3155923412,3c797ca1892ec60773156f7b1958cc1da0044cb3,chriswinsatlife,chriswinsatlife,feat: Add 'All' tab combining chats and documents
+3155923412,e5b5bf662fdfd84143a1ca6ee16725558d39fa5d,chriswinsatlife,chriswinsatlife,feat: Auto-maximize artifact on sidebar navigation
+3155923412,c63f6bbf33056987c7d10a6c756260cb36075e01,chriswinsatlife,chriswinsatlife,feat: rename app in sidebar
+3155923412,d9f86c1245442bba5d5a33c8f123a0d70773d7bd,chriswinsatlife,chriswinsatlife,Fix: Correct import paths in suggestions API route
+3155923412,7a339da98c0bb46042553e3fadbb85bd03988dfb,chriswinsatlife,chriswinsatlife,fix signout and sidebar reference errors breaking vercel build
+3155923412,04a4b0f6a7b6480d9b0e06d143c8111d075efee9,chriswinsatlife,chriswinsatlife,Fix: Add chatId to saveDocument call in document API
+3155923412,bc855a5c1fef85c41f809226711caf098f04d954,chriswinsatlife,chriswinsatlife,Fix: Handle missing properties in streaming document preview type
+3155923412,40ee38219fbdc4173b06202ab003249c3a33fec4,chriswinsatlife,chriswinsatlife,Fix: Suppress hydration warning on body
+3155923412,e114993759eb442c8747dedd07e25ec1c90c50b4,chriswinsatlife,chriswinsatlife,"Fix: Remove invalid Drizzle imports (array, pgArray)"
+3155923412,595e5d9599a8528e636103c0400fbc89e2adf7a4,chriswinsatlife,chriswinsatlife,Add n8n assistant integration
+3155923412,379703b651b8140e7d33f440d64ef409ce4bd460,chriswinsatlife,chriswinsatlife,Fix n8n response streaming format
+3155923412,873c821c9d4d7a04dda0d9f37a1768e96ed5489b,chriswinsatlife,chriswinsatlife,feat: Add N8nLanguageModel adapter for n8n integration
+3155923412,7a16c77cbdc615ff0bed3246bc7652f41c9997b0,chriswinsatlife,chriswinsatlife,fix: Correct N8nLanguageModel implementation and usage
+3155923412,a74e4712409fbc3788a1c06923f4713fd2628091,chriswinsatlife,chriswinsatlife,chore: Set default chat model to n8n assistant
+3155923412,c04e0b4e5f6e8d3ecb4a2525e16b30bb543fd0ce,chriswinsatlife,chriswinsatlife,fix: Ensure consistent sidebar group naming
+3155923412,ce919f05044ec4d47028363bace8fe929d04ef0c,chriswinsatlife,chriswinsatlife,add: docs for bugs and roadmap
+3155923412,ec0eaa336571a4c2c5bdb265794cca3e68ea9480,chriswinsatlife,web-flow,Update providers.ts
+3155923412,a9dd079d28d99ec74de769496622631c21736af4,chriswinsatlife,web-flow,Update providers.ts
+3155923412,4f44345ab78dfeac94c96b26cef2b25cb06df20a,chriswinsatlife,chriswinsatlife,feat: Handle token saving and webhook in callback route
+3155923412,66986453936f014e13027721b6d5f0e07663c1f6,chriswinsatlife,chriswinsatlife,fix: Add detailed logging to auth callback for token presence
+3155923412,40880bd808c2b66e3d2b37cd7850551c40e4e2f3,chriswinsatlife,chriswinsatlife,feat: Add database logging to auth callback
+3155923412,5e029655485e3050c340e4224e276a49570ecf0b,chriswinsatlife,chriswinsatlife,fix
+3155923412,2b1d78cd182ebbf778fe4c9da9b14efdebdc31bc,chriswinsatlife,chriswinsatlife,chore: Move initial debug log before code exchange
+3155923412,be2cf4b7d29d65ecefac84d94437e7fd026d20e9,chriswinsatlife,chriswinsatlife,fix: Delete incorrect auth callback and add logic to correct one
+3155923412,6671f7e047696127551a72dae2990b31c11ad3e2,chriswinsatlife,chriswinsatlife,Fix chat and reasoning modes
+3139478652,11251714a101cad660cf394071bd45f0cde4e081,cursoragent,cursoragent,Fix unsigned char casting in ACME and HTTP server validation checks
+3139478652,79dc1b444fc19e62bf38e2faba174b9a9c1ed4f8,cursoragent,cursoragent,Fix ACME request validation by using unsigned char for array indexing
+3151748196,6fce7f8dcd43cb1b348fa8bd8d6b1ea6f5e83471,cursoragent,cursoragent,Implement chat type-aware processing for private and group chats
+3151748196,570a9418ab13303f9f22dac5cfd2cdebbf103355,cursoragent,cursoragent,Add timeout handling and error recovery in focus chat processing
+3151748196,45172e9dca2126f627b7dc2a8edf466bd8ba8fee,cursoragent,cursoragent,Enhance private chat handling with improved memory and state management
+3156345426,c3fad6b9a296d1cdd15b1d4ea0539b5f857109da,cursoragent,cursoragent,Add API key regeneration feature with confirmation dialog
+3156345426,1d727f7b86794b0922a212917b955312b0d9eb3d,cursoragent,cursoragent,fix(dashboard): Fix regenerate API keys dialog form error and button size - Replace FormInput with Input in RegenerateApiKeysDialog to fix form context error - Increase CompactButton size and add custom height to better match input field - Button now has proper 38px height to align with copy button
+3156345426,5be90ba2af6a93b84ec4ed0a29704a73fb1bba6f,cursoragent,cursoragent,fix(dashboard): Pass environment parameter to regenerateApiKeys API call - Update regenerateApiKeys function to accept environment parameter like other API functions - Update useRegenerateApiKeys hook to pass current environment to API call - Ensures proper environment context for the regenerate request
+3156345426,e19bec4360d22c38a86d761be30b5c5c36487286,scopsy,scopsy,fix: design
+3165684483,a30b2cf341abab8b11a4ba2ae63fde9cce8ab5a2,cursoragent,cursoragent,Checkpoint before follow-up message
+3165684483,313c4a0af946c1dc9cdd102250bf28b263d70074,cursoragent,cursoragent,Checkpoint before follow-up message
+3165684483,426a22d0a27e511613907b570432e736f065c5c3,cursoragent,cursoragent,Fix Teams provider template rendering for missing alert labels
+3165684483,85f3574dc0ac47dcf1100172f9d4e699975ea298,cursoragent,cursoragent,Fix Teams Adaptive Card template rendering for missing alert fields
+3165684483,6a7c55927ea66589578bc48cc9fbae5fe5687351,cursoragent,cursoragent,Restrict Python version range to 3.11 to 3.12
+3165684483,76766a6ac38e309f6e5ba2f5d72a8a1b807a46c3,cursoragent,cursoragent,Update Poetry lock file dependencies and Python version constraints
+3165684483,407fa84453796307a1d6dc879b3a00ee22925043,shahargl,shahargl,fix: poetry
+2836332099,2683848c5c9a4453c9bf2bb51717f3e3a9872d45,dashed,dashed,chore(cursor): Add .cursor/rules for frontend
+2836332099,574cd9770a8d758b73be99b7f5d4cb06431407a2,dashed,dashed,typo
+3121322997,1951b8134f816a2bf5fb666b7bf1528d13f9efe2,cursoragent,cursoragent,Configure Storybook and update project dependencies for React Native
+3121322997,6bfe16e003756ce394a592dd9a65b11ebedb5b97,cursoragent,cursoragent,Upgrade Storybook to v9 with snapshot testing and configuration updates
+3143968533,60830696587aacb608383e347c95247d194f3905,cursoragent,cursoragent,Improve PlayStation SDK access request feedback with detailed user context
+3143968533,d42380f297f86ac5316f3bf20adb50e06ad9f044,getsantry[bot],web-flow,:hammer_and_wrench: apply pre-commit fixes
+3127601737,41321d6d0ce58eea6328d047eea26833b62aba9b,cursoragent,cursoragent,Update Anthropic unified docs with multi-provider examples and proxy usage
+3165803170,f14749034460690bf9e0b3b64f333260517cf767,cursoragent,cursoragent,Add cURL and Postman export options to workflow test drawer
+3165803170,1ca15225aa56b531ab86854ca18aace09c6a7b67,cursoragent,cursoragent,Refactor test workflow drawer to use API key instead of environment ID
+3165803170,2e74ea2675f39ba896e0d018623999d3b840045f,cursoragent,cursoragent,Refactor test workflow drawer with button group and dropdown menu
+3165803170,5c4e0a6080129321f7a989dc856ba51bb9a5f2f4,scopsy,scopsy,Merge branch 'next' into cursor/add-copy-curl-button-to-workflow-drawer-d518
+3165803170,5b211f389e5894d3669f3fba3e2a77a943fad83e,scopsy,scopsy,fix:
+3130352220,a5085c167cf97298788e6d34513a5e970873b517,cursoragent,cursoragent,Add Zig allocation counters for memory usage tracking
+3130352220,d9757e06c5f73c884b49a552c89091845e5c5faf,cursoragent,cursoragent,Refactor allocation tracking to use dynamic symbol table lookup
+3130352220,6d2c9ef3b20744cbd791f099c0c01812f931117c,cursoragent,cursoragent,Refactor heap breakdown allocator and zone destruction logic
+3130352220,6291485f7c32dff3ee29e95e84bcc03013e25181,cursoragent,cursoragent,Refactor Zone allocator to support type-specific allocation tracking
+3130352220,628fcb13a3001d316104b13d11511a31a3947650,Jarred-Sumner,github-actions[bot],`bun run clang-format`
+3130352220,d89da289ac0e23c5129deca79745cba838876718,claude[bot],web-flow,"Add ELF support for Linux heap allocation counters
+
+- Enable allocation counters on Linux builds with ASSERTIONS_ENABLED
+- Use platform-specific section names: .bunheapcnt for ELF, __DATA,BUNHEAPCNT for Mach-O
+- Implement ELF parsing using dl_iterate_phdr() to walk sections and symbols
+- Fix include structure per review comment by moving mach-o headers inside proper conditional
+- Mirror macOS functionality for parsing Bun__allocationCounter__Bun__<Type> symbols
+
+Co-authored-by: Jarred-Sumner <Jarred-Sumner@users.noreply.github.com>"
+3159511012,3a84d9e83d09a3a0207399729123c22935a53732,cursoragent,cursoragent,Create progress tracking document for public API dual auth implementation
+3159511012,12f858032d2def3d07dc3bbbac12eb2cf8e07e26,cursoragent,cursoragent,Add sanctum routes whitelist configuration file
+3159511012,f4f9703261d5cc2ee7bae4fe9703e1f829f76c1d,cursoragent,cursoragent,Add granular read/write abilities to AccessTokenAbility enum
+3159511012,11ff06fee3d7af9ea36dc1c7cec1d7c19e041e6c,cursoragent,cursoragent,Implement AuthenticateWithJwtOrSanctum middleware for dual auth
+3159511012,86c5d593e1baea245bb02cbe3f890941e860fb49,cursoragent,cursoragent,Add auth.multi middleware and update routes for dual authentication
+3159511012,1cd252c842ced08d32ce2d6b9e1773da5287541a,cursoragent,cursoragent,Add Sanctum ability checks to FormPolicy for granular token permissions
+3159511012,a7bb09e1c2fc556f6708ece22722ad02ccde7ca2,cursoragent,cursoragent,Add SubmissionPolicy with Sanctum read/write authorization checks
+3159511012,4bb7567080d8c94c813b4d21b64eda5632384774,cursoragent,cursoragent,Add Sanctum ability checks to WorkspacePolicy for token-based permissions
+3159511012,ff246803990c8b17c08dca7f0dbd0daa78aceaf2,cursoragent,cursoragent,Enforce Sanctum write ability for workspace admin actions
+3159511012,d1b16ed0fad8b785ccd146bd317b7960a240025d,cursoragent,cursoragent,Checkpoint before follow-up message
+3159511012,ac3e305292807518c25bec45c8c6ebdb89fbadc8,cursoragent,cursoragent,Add public API endpoints for forms with OpenAPI and docs
+3159511012,a0ea38c112d8acf5ff3d2a243f8fcdf15ad43e2e,cursoragent,cursoragent,"Add public API endpoints for submissions, workspaces, and users"
+3159511012,ad7c122289cdd28d5196820f8108ed2133435aa5,JhumanJ,JhumanJ,"Refactor access token abilities and update policies for granular permissions
+
+- Updated AccessTokenAbility enum to use hyphenated naming for granular scopes (e.g., 'forms-read' instead of 'forms:read').
+- Modified FormPolicy, SubmissionPolicy, and WorkspacePolicy to align with new ability names.
+- Enhanced WorkspaceController to authorize workspace creation.
+- Adjusted ImpersonationMiddleware to use Auth facade for consistency.
+- Updated API documentation to reflect changes in ability names and routes.
+
+These changes improve consistency in naming conventions and enhance the authorization checks across the application."
+3159511012,df15a504493eea98dfa9f0fa0207ff11cf46a835,JhumanJ,JhumanJ,"Refactor API documentation structure and remove deprecated OpenAPI JSON file
+
+- Updated the API Reference section in `docs/docs.json` to use a new structure for the OpenAPI source, switching from a JSON file to a YAML file located in the `api-reference` directory.
+- Deleted the obsolete `openapi.json` file as part of the transition to the new documentation format.
+
+These changes streamline the API documentation and improve maintainability by adopting a more flexible YAML format."
+3159511012,c00ac5bb960f38648b5266cdc1e236c64edafb1f,JhumanJ,JhumanJ,"Implement submission deletion and refactor routes for submissions
+
+- Added a `destroy` method in `FormSubmissionController` to handle the deletion of submissions, allowing for better management of form data.
+- Refactored routes in `api/routes/api.php` to group submission-related endpoints under a prefix, improving organization and readability.
+- Removed the obsolete `RecordController` and its associated routes, consolidating functionality within the `FormSubmissionController`.
+- Updated the `AuthenticateWithJwtOrSanctum` middleware to correct the configuration key for allowed routes, ensuring proper route validation.
+
+These changes enhance the API's functionality by streamlining submission management and improving code organization."
+3159511012,e81e670651679668830d9cb7a1a8780aacacf71a,JhumanJ,JhumanJ,"Remove obsolete migration commands and tests
+
+- Deleted the `EmailNotificationMigration` and `FormTitleMigration` command files as they are no longer needed, streamlining the command structure.
+- Removed associated test files for the deleted migrations to maintain code cleanliness and avoid confusion.
+- Updated the `Kernel.php` to reflect the removal of the middleware and ensure proper middleware management.
+- Adjusted the `api/routes/api.php` to maintain route organization after the migration command deletions.
+
+These changes enhance the maintainability of the codebase by removing unused components and ensuring that only relevant code remains."
+3159511012,28ec436c24a80459cbfe03b30eeac3dfe76eacb4,JhumanJ,JhumanJ,"Refactor access token abilities and update authorization policies
+
+- Removed obsolete `SubmissionPolicy` as its functionality has been integrated into the `FormPolicy`, streamlining the authorization process.
+- Updated the `AccessTokenAbility` enum to remove submission-related abilities, focusing on form-related permissions.
+- Modified the `FormController` and `ListFormsController` to use the new `ownsWorkspace` authorization method, enhancing clarity and consistency in permission checks.
+- Adjusted the `FormPolicy` to include logic for checking write abilities based on the current access token, ensuring proper authorization for form creation.
+- Updated API documentation to reflect changes in ability names and routes, improving clarity for developers.
+
+These changes enhance the maintainability and clarity of the authorization system by consolidating policies and refining access control mechanisms."
+3159511012,5e252788513b74de35694dd534e16d2da3ef34f6,JhumanJ,JhumanJ,"Add successful response description to OpenAPI documentation
+
+- Added a ""200"" response description for the Zapier GET endpoint in the OpenAPI YAML file, clarifying the expected successful response for developers.
+
+This change improves the API documentation by providing clear expectations for the response structure, enhancing developer understanding and integration."
+3159511012,6d33ef47f3b52032f91dfdc2d255b8e2baded7e7,cursoragent,cursoragent,Add API documentation checklist for forms and workspaces endpoints
+3159511012,2af92477802ab16b4ddf62e6e7be561913cb7375,cursoragent,cursoragent,Document list forms endpoint and mark open.forms.index-all as complete
+3159511012,76c4f9eaa288c0015466ea31f97a685ab924e74e,cursoragent,cursoragent,Add documentation for form creation endpoint and update checklist
+3159511012,62286c5b4b89661e9c6bcd043f98c525308e31ef,cursoragent,cursoragent,Document get form endpoint with details and update checklist
+3159511012,8263b7045204c00ed596f2c945269d2fb7682173,cursoragent,cursoragent,Document update form endpoint with details and authentication requirements
+3159511012,24598ffc5d302491914bddf6f4ea69e550a427b7,cursoragent,cursoragent,Document open.forms.destroy endpoint and update documentation checklist
+3159511012,3c5e10005cd04b99e7e103dcc60407156a36040b,cursoragent,cursoragent,Document list submissions endpoint with pagination details
+3159511012,e6a29d2b2c45ce4e2d00c8302d51aee66c8ab933,cursoragent,cursoragent,Document update submission endpoint with full details and checklist
+3159511012,f6c3cfbe74c619984afa8b76d837d3e0b315e49c,cursoragent,cursoragent,Update submissions export endpoint documentation and OpenAPI spec
+3159511012,86793ea1f4c4422ebb85e110cf416b069e1430ce,cursoragent,cursoragent,Add documentation for delete submission endpoint
+3159511012,b06f6e5e2e01cfa8d41d7248df38f800f3caa808,cursoragent,cursoragent,Update workspaces documentation and OpenAPI spec with new fields
+3159511012,04a5c282acb376b3f7b25d09d4ab9c4a890980cd,cursoragent,cursoragent,Update workspace creation API documentation and OpenAPI spec
+3138021777,4ba50650fe933d33669a44bc3a89047fadaf889c,cursoragent,cursoragent,Checkpoint before follow-up message
+3138021777,9c7d36ea8c4c776e7c6b2e64ab74d3b82423e6bf,cursoragent,cursoragent,Checkpoint before follow-up message
+3138021777,0c832f2a454618fbcaacf94bb46efa5c6cfcaba6,cursoragent,cursoragent,Add render method to MiniJinja custom objects for better display
+3138021777,c1886fbb0960689e7faf38aa649450463aecdc21,aaronvg,aaronvg,Fix issue where enums were rendered twice / incorrectly
+3131328255,8b20f19b913320fc4fed083415f6a6e4e3ce6108,cursoragent,cursoragent,Add feature flag for replay AI summaries
+3143406408,766bd4e1b4873167e1b8adb235d9fb612355782f,cursoragent,cursoragent,Fix nested foreach context handling for actions and steps
+3143406408,ad8d7a0dafa0f1b988565259db441d696db46e0e,cursoragent,cursoragent,Remove test file for nested foreach fix after implementation
+3143406408,3a0a7313977ce674e00652650cf681b86a46021e,cursoragent,cursoragent,"Fix foreach logic in steps and actions, add comprehensive tests"
+3143406408,6ff2a4ea710874906a355b5ce94e2ff6cd5c0dd1,cursoragent,cursoragent,Fix Python provider syntax for foreach workflows
+3143406408,d9765f81adff7f3f97665ab138ac63902e4c751f,cursoragent,cursoragent,Remove foreach investigation summary markdown file
+3143406408,f95c788b4583695cdf9c269f35836c6192557e80,talboren,web-flow,Merge branch 'main' into cursor/implement-ticket-5016-and-create-tests-ff15
+3153748109,c85decd8170b5f1c109ff2386d6c35d348674bdf,cursoragent,cursoragent,Add RSS feed endpoint for preset alerts with XML generation
+3153748109,8daf143a1718e202837de1dbf3bfaf1afad6bdb3,cursoragent,cursoragent,Fix CEL filtering for expired alert dismissals
+3153748109,b3198d6cf9bc12458fc00883be0af6c74204baae,cursoragent,cursoragent,Fix expired dismissal CEL filtering with enhanced time-travel testing
+3153748109,a66c30ca6643d280ebce6f18b8274481e32c66c5,cursoragent,cursoragent,Fix CEL filtering for expired alert dismissals with comprehensive testing
+3153748109,2bdc12640d91356065c4184b1403b24e1e5aed96,cursoragent,cursoragent,Remove expired dismissals cleanup from search engine query method
+3153748109,88b219399019ed368939b893001786044b528b10,cursoragent,cursoragent,Remove unused import from preset route
+3153748109,53e1dcde177dbcfaac82b64cace1e267f33da065,cursoragent,cursoragent,Remove standalone test script for expired dismissal CEL filtering fix
+3153748109,964627a94f7abe998f02ad0944c749285adbfaa7,cursoragent,cursoragent,Remove f-strings from log messages and unused import
+3153748109,8c20db630c86f7fdd2df6b0ac922f6bb4b85b463,cursoragent,cursoragent,Remove f-strings from log messages in cleanup_expired_dismissals
+3153748109,7434f42726214b93495f301b4b2475ed49741c88,cursoragent,cursoragent,Checkpoint before follow-up message
+3153748109,0f6075f789e17492c1da8b3b23a83343e7963a1b,cursoragent,cursoragent,Checkpoint before follow-up message
+3153748109,e5fee7332380a4532466986f50d623be31f84d9b,cursoragent,cursoragent,Refactor tests to use fingerprints directly instead of alert objects
+3153748109,44e20a98396460be8309e108aa96a88e20fdb10a,cursoragent,cursoragent,Clean up expired dismissals before fetching alerts in RulesEngine test
+3153748109,b7b7d124d3cbe445c8c07eefce2dd3eae563ba65,cursoragent,cursoragent,Fix expired dismissal tests and improve test coverage for RulesEngine
+3153748109,38a5e7187058e9828be43e2416a4aa76fde421d0,cursoragent,cursoragent,Fix caplog level to capture INFO logs in time travel tests
+3153748109,76942a8441d0eef5632b42c7c5373f71be2bde69,cursoragent,cursoragent,Fix caplog level to DEBUG for log message verification in tests
+3153748109,768384ff32c4962ebcfc6495e00443a94c690310,cursoragent,cursoragent,"Fix cleanup test to handle ""forever"" dismissals correctly"
+3153748109,15baedf6868ae8e4f816ba4fad9794bdbf50c10e,shahargl,web-flow,Merge branch 'main' into cursor/resolve-ticket-and-implement-unit-tests-b9e9
+3133836979,15115a26539c1658613bf83858efe840f6078127,cursoragent,billyvg,Add AI Summary tab for replay details with feature flag support
+3133836979,de75beb8064553b75983c7e7e50a5bcf20039dd5,cursoragent,billyvg,Refactor AI Summary to use useApiQuery with caching and conditional fetching
+3133836979,fe180725e5de7f2c7c83274e628926a0fa121ea3,getsantry[bot],billyvg,:hammer_and_wrench: apply pre-commit fixes
+3133836979,c3bed9adb5eb9e428e240eb036bb3eb58d46a337,billyvg,billyvg,rename AI Summary -> AI
+3133836979,a0b160aeb4780c50289132f0342639414cb6a16a,billyvg,billyvg,fix name
+3133836979,f6a0805a9923d7beb3ffff3457ddf6feccab154c,billyvg,billyvg,need project slug for endpoint
+3133836979,aa27277275d2a004ccf4fa48076ab0b71c138982,billyvg,billyvg,"Apply suggestions from code review
+
+Co-authored-by: Michelle Zhang <56095982+michellewzhang@users.noreply.github.com>"
+3133836979,7c856884ea5f68732648020bd9f3f8b509f17b79,getsantry[bot],billyvg,:hammer_and_wrench: apply pre-commit fixes
+3133836979,c3d8f2e03a44a98c89fd101f4a1147db44b4a4d1,billyvg,billyvg,retry: false
+3133836979,5dd96f42194cb3aaf3cfe14ca5fd08b6e831312c,billyvg,billyvg,wip summary
+3133836979,cbbebb87b30f46f7e67cecde0c3c8a1d2b69bac8,billyvg,billyvg,more tolerable UI
+3133836979,4fc16dcb452223dde09ee614e95590a5960ae9a3,billyvg,billyvg,refactor and add regenerate button
+3133836979,9380066bdac7a586907af5962b1f0153cfa8d1dd,billyvg,billyvg,remove ai-summary-implementation
+3133836979,8d8f4ffcfb1cd456d3145effd06bde76ff396b3f,billyvg,billyvg,add feature flag check + cleanup
+3161958337,d647cb88c57c26edd63365e63026177929ca2433,cursoragent,cursoragent,Adjust zone header layout and back button styling for improved usability
+3161958337,86b8945d34c81e84ee8705818aac853335587ba0,madsnedergaard,madsnedergaard,Adds pointer-event-none to make clicks go through to arrow in zone-header below
+3138180288,d5a96b9545fb269d9a3792609c864f816cc222d5,marcklingen,marcklingen,chore: update `pnpm dx-f` to require no confirmation
+3138180288,a2f52622e5fcb5e0069b4edd0d356164e09401e5,marcklingen,marcklingen,chore: setup cursor background agent
+3138180288,b3fba71318882cdd70e56f020545a37541662cbc,cursoragent,cursoragent,Implement two-step login flow with SSO domain detection
+3138180288,24c8966478f60a09c9748106c9c544c0712473a7,cursoragent,cursoragent,Simplify SSO fallback logic in sign-in page
+3138180288,1fa1c86164324f232c6f8c1a2c2e1962ace74c4b,cursoragent,cursoragent,Conditionally render credentials form based on auth provider config
+3138180288,16412f0b3960d17832edc093612de1e9393c701d,cursoragent,cursoragent,Reorder SSO buttons and error display in sign-in page layout
+3138180288,456c3080c2876f4ec013e6650108206b05ea1f18,cursoragent,cursoragent,Checkpoint before follow-up message
+3138180288,b1a1d0c3590c11fafd752f09aa1256686a1c4478,marcklingen,marcklingen,add focus password
+3138180288,67bbfadf1347c93c50e18b426ef67aac6f8c575d,marcklingen,marcklingen,skip two step if no sso configured
+3138180288,6230b732f6a2aeff32b7535544b157099de711e3,marcklingen,web-flow,Merge branch 'main' into cursor/improve-sign-in-page-for-enterprise-sso-0da1
+3132733770,ac8a884374ce634120d3c66b0754dc57bdd911f4,cursoragent,cursoragent,Refactor: Replace ViewAlertModal with AlertSidebar in Incident Alerts
+3132733770,d18796a0061ffdd5cdbe2445b93bfb1c14530ac0,cursoragent,cursoragent,Enhance incident alerts with ViewAlertModal and improved sidebar integration
+3132733770,37877cf0328a49600613ce78fcb82bf34a3ed9e9,cursoragent,cursoragent,Fix alert sidebar closing and null handling in AlertSidebar component
+3132733770,6ad1b32893f032df1e52dfe079f1c76933e59e5e,cursoragent,cursoragent,Fix incident alerts tests and add documentation for CI/CD changes
+3133810693,1cd8c15e989e0914dee8f391d20d70bd9ef1cdcf,cursoragent,cursoragent,Hide releases in fullscreen for specific chart widgets
+3133810693,46384eb2509c5ff8cdb1fad3e4420bafefeeb829,cursoragent,cursoragent,"Remove hideReleasesInFullscreen prop, conditionally hide releases for specific widget"
+3133810693,11632c0ed64f7462ac0f0a834532695ddeabfbaf,cursoragent,cursoragent,Hide release lines in release new issues chart widget
+3133810693,6f8ec022ab2f92e5eb930b14dbc1c7eb2de2fd55,getsantry[bot],web-flow,:hammer_and_wrench: apply pre-commit fixes
+3133810693,6226bf78f9cdb657bdc63146cf9302d9ecb8154c,DominikB2014,billyvg,"feat(insights): open http response rate summary chart in comparison view (#93132)
+
+1. Exact same as https://github.com/getsentry/sentry/pull/93050
+except for http response rate summary chart (instead of landing page)
+2. All updated the landing summary chart the pass in the
+`stringifiedSearch` into the queries, missed this in the previous PR"
+3133810693,a3b7257b57e85bffdbaa550db7286344df23137b,billyvg,billyvg,skip fetching releases
+3133810693,550217e6d476159217b1fac56afa2e75218c9cf2,billyvg,billyvg,Merge branch 'master' into cursor/remove-release-lines-from-full-screen-chart-1b7d
+3133810693,1e90cd38ea653c0d083cedab5d19d95bb9ca2286,billyvg,billyvg,use showReleaseAs
+3139065611,837ec931ea98dce70f0068907171b11ecd64280c,cursoragent,cursoragent,"feat: update logging to lowercase and add timestamps - Change all logging prefixes from uppercase to lowercase (CREATE->create, CREATED->created, etc.) - Add timestamps in HH:MM:SS format like Vite does - Timestamps are shown in gray color before the prefix - Maintains existing padding and alignment for readability"
+3139065611,924212feb7f5842f661099df2a9758b8980328f0,claude[bot],web-flow,"Remove timestamp prefix and SETUP phase from logging
+
+- Remove getTimestamp() function and timestamp usage from cli.ts
+- Remove ""[SETUP]"" phase logging from apply.ts as there is no such phase
+
+Co-authored-by: sam-goodwin <sam-goodwin@users.noreply.github.com>"
+3139065611,00651122c2627911e543077abe4645cff1b322a9,sam-goodwin,sam-goodwin,fix lint
+3165232120,4afb9d221a6a6327108a7841ff573146983a2ca1,cursoragent,cursoragent,Simplify PR template checklist for code quality and testing
+3150026775,d71743ffe21ca0e70563c5236e52c86bf1635ef9,cursoragent,szokeasaurusrex,fix(langchain): Make `span_map` an instance variable
+3164641128,694298bb6e461b30f100c0be57244e95592a6579,cursoragent,cursoragent,Add SAML time difference configuration parameter
+3140211798,338f08eb82b1d7b71ffac2541ef2658251ab9115,cursoragent,cursoragent,"Enhance mention handling, color support, and clipboard parsing in Quill"
+3162242238,b99916c3c04965b58fc4786429dfe93a7dc040a5,cursoragent,cursoragent,Changes from background composer bc-aefe9889-4af9-4f53-ab9a-5806bd974451
+3164861006,b42bb48611c8e33b4570fc3189216c7a520139e8,cursoragent,cursoragent,Add Yoga bindings for Bun's JavaScript runtime
+3164861006,d50c41d0639eac89b4f1a74c87373b96a4545bf7,cursoragent,cursoragent,Implement Yoga.Config methods and add comprehensive test suite
+3164861006,7d2b0716310d97db4ea9e6f44b009ddabd2b85f9,cursoragent,cursoragent,Implement comprehensive Yoga Node bindings with full API support
+3164861006,4896b9ba9309346b9e9d30a9fa898225a8e3efd8,cursoragent,cursoragent,"Implement Yoga layout constants, module, and global exposure"
+3164861006,5b0dd953c03ad410faa42e0c2f905c7ff4e8d065,cursoragent,cursoragent,Changes from background composer bc-10f5dd76-2ef4-41da-a295-47c3ceb3b16e
+3164861006,2082fdf3a61a0df031c1334e88403faf05e35a61,Jarred-Sumner,github-actions[bot],`bun scripts/glob-sources.mjs`
+3164861006,0f4115f82321d1880b9d09f304a9dbf58c99fd64,Jarred-Sumner,github-actions[bot],`bun run prettier`
+3164861006,87410eba91a206e180a342234548d25556828275,Jarred-Sumner,github-actions[bot],`bun run clang-format`
+3135538721,3cf87664be53280b520d8613bc266ae9baf804d2,cursoragent,cursoragent,Add CSharp language parser for source code management
+3135538721,1d2993b040e5e28aeb7ed73615cdac2fb604407b,cursoragent,cursoragent,Add C# support for Open PR Comments with feature flag
+3135538721,e07e90b14d9b4b1049cf772acf5920bd5650bba0,iamrajjoshi,iamrajjoshi,:bug: fix: cleanup after cursor
+3135538721,57252df950a05606929935a242c75b256015ba40,iamrajjoshi,iamrajjoshi,:test_tube: test: add more tests
+3135538721,a8206a341e5ea6a31eb7f4f724afef921e432112,iamrajjoshi,iamrajjoshi,:wrench: chore: fix typing
+3135538721,318ce556cec821d7642ff800375302134242e27b,iamrajjoshi,iamrajjoshi,:bug: fix: typing
+3128356528,643611f4b7af18fe3ce0d273df332d0ef2a3890d,cursoragent,cursoragent,Fix pattern memory leak by using Arc for bitmap ownership
+3128356528,373519132280f3d326bbd8aa8b933ef7efb9387c,Brooooooklyn,Brooooooklyn,patch by Claude code
+3153069820,95ddd2d3ca9506c955a018999abf228aa5628da2,cursoragent,cursoragent,Mask session keys in cache events to protect sensitive information
+3153069820,d30f9d7500f9530f64d51e24e1351c5e71e7b914,cursoragent,cursoragent,Fix cache integration span data merging and improve session handling in tests
+3153069820,8b547e8a97fcdb6a18caa0186cc8c6df526bfb95,cursoragent,cursoragent,Fix session key matching and improve session handling in cache integration
+3153069820,c081654fbd441a9a043ee8f990ea93eb90497526,stayallive,stayallive,CR
+3153069820,d48ae6ba1164f763c86f2f5af13ce293cefa6c25,stayallive,stayallive,Fix not replacing session key before session is started
+3153069820,73ecb9a6afaa593f293e9bf5e45bed7f9ac0bb47,stayallive,stayallive,Merge branch 'master' into cursor/fix-github-issue-for-sentry-laravel-ebfe
+3153069820,5b148aaf1437685e1f04a533a958e9ea3a0a900b,stayallive,stayallive,"Revert `setData` changes, already merges data"
+3100097668,c3ab4352cff7d2fc2ec1d5995eb38f7b7d0291e7,cursoragent,cursoragent,Fix duplicate shortcut warning in token form and push dialog
+3100097668,a12eabf3ff181ea76523c879f0227f36d990372a,cursoragent,cursoragent,Fix duplicate shortcut warnings in EditTokenForm and PushDialog
+3100097668,cdc6777b328da7a1921123f4d2577fd3836fa13e,cursoragent,cursoragent,Remove unused handleSaveShortcut callback in EditTokenForm
+3100097668,edb5d58045aa382c8ae291cc5404995b38e04160,six7,six7,fix lint
+3100097668,fbcdaea94fcdaf3e03eca515bd069645e4645890,six7,web-flow,Merge branch 'main' into cursor/resolve-duplicate-enter-key-shortcut-warning-d281
+3100097668,be18d227ac6071dc090a0ba883e999b5f8066b31,akshay-gupta7,web-flow,Merge branch 'main' into cursor/resolve-duplicate-enter-key-shortcut-warning-d281
+3161086701,81a36303e5d3262326770e9ef0b088d7f010f232,cursoragent,cursoragent,Add quickstart guide to documentation for easy onboarding
+3132266803,8520aaa647536286f564376aaebbc67821c8f972,cursoragent,cursoragent,Add implementation plan for `bun audit fix` command
+3132266803,fa427e5ba6f192c8e2d327929d7a7450612586c8,cursoragent,cursoragent,Implement `bun audit --fix` to automatically resolve security vulnerabilities
+3132266803,a0433bf150a3319f18d838c8d986e3cb9277c71c,Jarred-Sumner,github-actions[bot],`bun run prettier`
+3075375258,7aebcd342006ca0abb1b060cf5f51a4354b0dfe3,,,新增项目架构与文档分析报告，详细描述了yumc-afk/verl项目的整体架构、核心模块职责及现有文档情况，并提出了针对AI协作的文档完善建议，以提升代码可理解性和开发效率。
+3075375258,73ab91e69e58124de8e6df96e3b431a9d5c51616,,,Add sglang_for_verl (v0.4.4) as submodule
+3075375258,17526723169dbab4c179cb66bca7da71d73666be,,,Add sglang_latest (main branch) as submodule
+3075375258,810c1add63136b015e2d0880a60327bff63bf721,,,Add Megatron-LM_for_verl (core_v0.12.0rc3) as submodule
+3075375258,b3e71e183e4f92f5ff13f6a3cf7ba697ce5c6c6f,,,Add pai-megatron-patch (main branch) as submodule
+3075375258,ec50703b85ea5fcdefe2c8331e366b0e4e666c66,,,新增 AGENT.md 文件，详细分析了 yumc-afk/verl 项目的整体架构、核心模块职责及现有文档情况，并提出了针对 AI 协作的文档完善建议，以提升代码可理解性和开发效率。
+3075375258,455ccd4de44157e01488fb36841e53f47d1ae5f5,,,Update pai-megatron-patch submodule to new commit with streamlined internal submodules
+3075375258,28d9c925e2e8c7d1451ccc60593ccc09b048b185,,,Update requirements to point to local submodules
+3075375258,b93e6563ac30c5da616ca6855bc89ed5c3ff4397,,,sth
+3075375258,12c276607721cbe2aa791a7b757b288f499611df,,,Update pai-megatron-patch submodule URL to user's fork and point to new commit
+3075375258,0e41fba159189deb7bfcb0b52e85017672057b91,,,rename
+3075375258,b0e368f119b148257875ada75fa01762f0860420,yumc-afk,,docs: expand single controller documentation
+3075375258,768a69990a39851ba287cc4777221daaa59b9a40,yumc-afk,,docs: add trainer docstrings and typing
+3075375258,76f000fc433e394d936808fef81d5e0d9d1e4c39,yumc-afk,,docs: expand tool module documentation
+3075375258,d5f7c6a31d7b2a8abb10785f6d3f4c77024bf17d,yumc-afk,,Add type hints and docstrings across utility modules
+3075375258,dbbc851dbca12629b94f846a9cf72d4e5db35fc1,yumc-afk,,Add docstrings and registry comments
+3075375258,1bccf96bb97d57982f57eda11835847a6ccfaa53,yumc-afk,,Add typing and docs to protocol utilities
+3075375258,bce21af86703444a3a89c536af72cbed49421058,yumc-afk,,Improve worker documentation
+3075375258,b01f681dcec840eb87991dd10bb5389710c9d4e0,yumc-afk,,Add type hints and docs in trainer modules
+3075375258,11da9abdb99bd223f222d46c64a847abad7f48e9,yumc-afk,yumc-afk,docs: update AGENTS instruction
+3075375258,95340fd76daf40dc3a89290071fedaeaf61299fe,yumc-afk,web-flow,"Merge pull request #16 from yumc-afk/codex/agents-md
+
+Update AGENTS instruction"
+3075375258,b88c279786291cbe68fc33c8cdf0e456be19b845,yumc-afk,yumc-afk,docs: add DeepSeek V3 Chinese plan and risk analyses
+3075375258,8253cc7fa76bdbf6e55a90458bda1df375c9f551,yumc-afk,web-flow,"Merge pull request #17 from yumc-afk/codex/deepseek-v3
+
+Add DeepSeek V3 Chinese plan and risk documents"
+3075375258,d5981872336fdf550b6f36de02d55bb992ae856d,,,feat: add environment configuration file for cursor
+3075375258,d00252bc4f04dc26ee536690ea278193401cef7b,,,Initial commit
+3075375258,bf29c0339da6a10ee5f77770f5e535f4214258de,cursoragent,cursoragent,Update submodule commits for Megatron-LM and sglang
+3075375258,fc7e875af44392e3a7f49fb4763be1eba2e8448f,,cursoragent,新增知识库文档，涵盖 AI Agent 的原则、能力、局限性、协作模式及项目上下文，旨在为人机协作提供结构化指导和最佳实践。
+3075375258,9539818af91435d817ea8a668616d6536215fe3c,cursoragent,cursoragent,Add documentation for DeepSeek-V3 integration in VERL framework
+3075375258,1bf549b6e9860efa2c848a4d4fb77a2c03477d4d,cursoragent,cursoragent,Update DeepSeek-V3 integration docs with detailed MoE and MLA insights
+3075375258,1799a0a9042238eb107961839dee6a11eb907f8c,cursoragent,cursoragent,Update DeepSeek-V3 distributed training challenges and HPC scaling notes
+3076171257,e72dbfa699b09c89562e7d9ad31d13e834545002,cursoragent,cursoragent,Add upstream and downstream job details to streaming job view
+3099462584,38464ea8cb3c1160cc67f16ace858a106a02f5cd,cursoragent,cursoragent,Upgrade Turbo to v2.5.3 and migrate configuration
+3099462584,70f3c1a1c620e89e5ddcae0fe80546f96ff0b910,six7,web-flow,Delete TURBO_UPGRADE_SUMMARY.md
+3099462584,76dd64a6a27a820d3fbc2c10f5bb687b4f1aa171,six7,web-flow,Merge branch 'main' into cursor/upgrade-turborepo-to-latest-version-f465
+3161984792,4f90a1a2d43301ec6f6d69b968e458efa42500ac,cursoragent,cursoragent,Add development update article with comprehensive Script Kit progress report
+3105305807,832fc9729a69aa12b630c86a35c491ddb562f1b7,cursoragent,MaxKless,Add e2e tests for cloud tools availability in MCP inspector
+3105305807,58b44abba2250ccd67c945c9c2c5e4e14cfdd022,cursoragent,MaxKless,Remove cloud tools test with both nxCloudAccessToken and nxCloudId
+3105305807,f21f87644107c276f0eb5ca6f352dc0a2a2237a0,cursoragent,MaxKless,Changes from background composer bc-35c36561-68ca-4cd9-9162-2db22a11afd4
+3105305807,9b513b341356398f3a3bd58a1071474252793876,claude[bot],web-flow,"fix(nx-mcp-e2e): fix cloud-tools test API usage
+
+- Fix createInvokeMCPInspectorCLI call to include workspaceName parameter
+- Remove incorrect testWorkspacePath parameter from function invocations  
+- Update type definition to match pattern in other test files
+
+Co-authored-by: MaxKless <MaxKless@users.noreply.github.com>"
+3105305807,c654b64d23101a4d6b816b93767a1b52f146def1,MaxKless,MaxKless,fix tests
+3141668471,6dae6104755992bf31595dc3bd08fda0fccc1941,cursoragent,cursoragent,Add Claude auto review GitHub workflow for PR code analysis
+3150351692,4adfd64adb123a288c889da0db16b0b10b1f3803,cursoragent,cursoragent,Add blocking detection suppression for long-running tasks
+3150351692,a6969d367b5506db2acfa514c6977326ff4054ad,getsentry-bot,getsentry-bot,Format code
+3132235746,5648e8ee673304b16c41ba1a3f6d021d9e13e077,cursoragent,cursoragent,Implement X25519 deriveBits using OpenSSL for WebCrypto API
+3132235746,077654b29c62888560a08dbe383d4565ac8e7a32,Jarred-Sumner,github-actions[bot],`bun run prettier`
+3132235746,d6423f3cd3c6a1e75fc2e0c979a404263463c303,Jarred-Sumner,github-actions[bot],`bun run clang-format`
+3132235746,324c610c5781d477dae31e732abd5ef7258a0903,claude[bot],web-flow,"Fix X25519 deriveBits to return 32 bytes when length is null
+
+When deriveBits is called with null length, it should return the full
+X25519 shared secret (32 bytes), not an empty result. The early return
+for !length was preventing the unifiedCallback from properly handling
+this case.
+
+Co-authored-by: Jarred-Sumner <Jarred-Sumner@users.noreply.github.com>"
+3132235746,b2ed4a164a6b130247f4d83a36fde773b38bd21d,claude[bot],github-actions[bot],`bun run clang-format`
+3132235746,1e9aff5f06270e6f3985e9c25d05cd5b33b30e98,Jarred-Sumner,web-flow,Merge branch 'main' into cursor/implement-x25519-derivebits-in-webcrypto-5a3c
+3163875884,d073c3ef7f273090e4cda742ef426ec4840654bb,cursoragent,cursoragent,Simplify project retrieval in AI replay detail view
+3163875884,a98db61db6057df4693a30574b16bf9b94d87667,cursoragent,cursoragent,Handle missing project in AI replay detail view
+3163875884,54d50baa1ba6711f54ee43d5b9f3edb958cfa3df,getsantry[bot],web-flow,:hammer_and_wrench: apply pre-commit fixes
+3141717000,8480bd2a2af2e25fe5e3379691cb17f3abb6b143,cursoragent,cursoragent,Checkpoint before follow-up message
+3141717000,180d407a6e81264674e043de831b0b054a81b6d3,cursoragent,cursoragent,Refactor development environment setup with Bun and setup script
+3141717000,0408eda27224abba19dd38a307626291278433f6,cursoragent,cursoragent,Update Cursor environment config and add .cursor/ to gitignore
+3141717000,4185b1ee349feadf381aa4c25ab6610ac89aaaea,cursoragent,cursoragent,Add Docker dev environment with Bun and Dockerfile configuration
+3141717000,73d6240c8c29a06d64e9c61fa49f84b037f28fea,cursoragent,cursoragent,Remove Docker dev files and update environment configuration
+3141717000,37c8fedd29ea28b0bea72cabf17c153b249bcd95,sam-goodwin,sam-goodwin,add Dockerfile
+3153749441,e91280f1b41dfaeac32e9b2b68a07150cf9ab04c,cursoragent,sl0thentr0py,Add type annotation migration guide and migration script
+3153749441,878999da700a06ac11f4f400681c0243056d36b3,cursoragent,sl0thentr0py,Remove unused imports and simplify feature flag implementation
+3153749441,9c0bf321463167f14bb36a836809a3885358a6dc,cursoragent,sl0thentr0py,Migrate multiple SDK files to type annotations and update migration status
+3153749441,871c052429286368287222dfeb41c5c405864536,cursoragent,sl0thentr0py,"Migrate client.py to type annotations, resolve complex type flows"
+3153749441,f90dc2bfbfcc2c74817e044422d6536fab5558f4,cursoragent,sl0thentr0py,Migrate tracing and integration files to type annotations
+3153749441,b34d265d5f2e7bfd95b7d06a45e4751d1d34b115,cursoragent,sl0thentr0py,"Migrate type annotations for ASGI, AWS Lambda, and other integrations"
+3153749441,931cdd540a60243bc9b8cba8c0440dd003e40570,cursoragent,sl0thentr0py,Changes from background composer bc-4ef8bab4-ef8a-43f8-807e-a78d651cf0a1
+3153749441,747a0da997d2d35a4aa8995881b9a4ab051f6f83,cursoragent,cursoragent,Migrate type annotations in multiple integrations to modern Python syntax
+3153749441,a9a4ee3f66e8e9920ec50f23ea383f23cc6b08cd,cursoragent,cursoragent,Add comprehensive migration tracking for type annotations in Sentry SDK
+3153749441,d991a8834cd5e078f7566fe41ee4d836cf79ca4b,cursoragent,cursoragent,Migrate type annotations in multiple Sentry SDK integration files
+3153749441,18d2955878366dfd40a3ab413787456a1024ff90,cursoragent,cursoragent,Migrate type annotations in multiple Sentry SDK integrations
+3153749441,c4dc5d410c38ca989b0777d699d3d6e68471c697,cursoragent,cursoragent,Add type hints to Sentry SDK integration modules
+3153749441,283d87501a7aace7d44129dee9cec87b54c9cc4c,cursoragent,cursoragent,Add type hints to profiler and monitoring modules
+3153749441,18b763dd62a1f644deca0becd3611340eef7ba27,cursoragent,cursoragent,Migrate type annotations in multiple SDK files to modern Python syntax
+3153749441,2e3d78b56d2861ad550cef711f3a97b9e2d46c72,sl0thentr0py,sl0thentr0py,format
+3153749441,35898b84e00cbf0d21531cb005704addda408eb2,sl0thentr0py,sl0thentr0py,"Revert scripts since they are not checked, we can do that later"
+3138133342,0ba737173bb0275fd8db95f59eb908ceb29782ed,cursoragent,cursoragent,Improve project ID extraction and error handling in authentication
+3138133342,10a94bfd7fa4376ed999d2ea711cb160ba10eca0,cursoragent,cursoragent,Checkpoint before follow-up message
+3138133342,de5381b50063f00ed980ed369de14841c80d653f,cursoragent,cursoragent,Improve error handling for resource not found with more detailed context
+3138133342,6a90dd7b5d6236f5fdc663fee24d79c5a7c80e2e,cursoragent,cursoragent,Changes from background composer bc-b858b23e-0889-4766-8302-5282ecfae38a
+3138133342,38ce5f9db49d8199308f7575189c67fd6350ddfa,abuaboud,abuaboud,fix: security test
+3140117936,d18c0d1003257a85cd158b033ed4b37d43402971,cursoragent,cursoragent,Add HTML email support to SMTP provider with multiple recipients
+3140117936,71d200b062d6fb076ec3934c604f5afddd73b5b2,shahargl,web-flow,Merge branch 'main' into cursor/implement-ticket-5014-with-unit-tests-9202
+3140117936,ac90b244fd0fff41c87b8ffd83472503c6b360b0,shahargl,shahargl,feat: .
+3134586800,106d2c3dd068283ad15c377521cc033d857b6326,cursoragent,cursoragent,Add Cursor automation test workflow for Terminator project
+3134586800,8cb80595cc627140ba40caf1f21100b71ca521a7,cursoragent,cursoragent,Refactor Cursor automation test to use pure Terminator capabilities
+3134670650,fcac1811586a7e2093a6fbe7f9e84ce25d8b0613,cursoragent,cursoragent,Add http_ssl_native_ca option type validation to OptionsResolver
+3143424792,ef3967acd56c7f7e5975cfe3e9e6bb20c4ea2393,cursoragent,geclos,"fix: linter warnings
+
+Cleaned up all linter warnings."
+3137830799,b2a253951aa53af2c7b219fd0ac62cd2a1f065ef,cursoragent,AbhiPrasad,Add support for capturing performance measure details as span attributes
+3137830799,b437a1334b10384ca47edb6044c59ac5fb26e4f8,AbhiPrasad,AbhiPrasad,cursor cleanup
+3137830799,bda13796ff18283b08d727cb71e1a88183da342a,AbhiPrasad,AbhiPrasad,revert previous changes
+3137830799,228935396d39ab84fa3d0c53959e2df511528ff7,AbhiPrasad,AbhiPrasad,Merge branch 'develop' into cursor/re-implement-measure-detail-feature-with-tests-3841
+3137830799,5aa7e87953f8b9ddc50807ee4cce45e0d6666afd,AbhiPrasad,AbhiPrasad,fix tests
+3137830799,f7f0763d642c2ffb61b918145ee02a064ad35aaa,AbhiPrasad,AbhiPrasad,add another test case
+3137830799,ea1831b121887eacd7e0a540e7babd17bf06d79a,AbhiPrasad,AbhiPrasad,revert this test change
+3137830799,dabedbb937ba8e3977e9ec3cbf25f1b05dfda6a0,AbhiPrasad,AbhiPrasad,don't attach null detail
+3137830799,65efc548e23aa7ba44b80ae27dc46beedcc9662b,AbhiPrasad,AbhiPrasad,special case webkit
+3147883994,d30291f91bc25ca1bf7916e46ca18de52394b216,cursoragent,haydenbleasel,docs: add comprehensive optimization recommendations for remaining performance issues
+3147883994,8aa44fa0b4829bb71de50e40f57b8a280f0e6ebd,cursoragent,haydenbleasel,docs: add comprehensive summary of all performance improvements completed
+3147883994,6520defd6e2530d1d0d196ad5d341768d55c59f4,haydenbleasel,haydenbleasel,Apply optimization recommendations
+3147883994,c17227f332dafb61e36ec7e1eee54e5e22fa5975,haydenbleasel,haydenbleasel,Complete remaining optimizations
+3147883994,16b08b69f941bef06bb8224d7878ba970edd6f94,haydenbleasel,haydenbleasel,Remove md files
+3147883994,7e038fdf12e90010af5c6986d66dcfa10cf9fd0c,haydenbleasel,haydenbleasel,Update index.tsx
+3147883994,4e6675e5ea9ce3c0feef5a924f13a4e7d6c7740c,haydenbleasel,haydenbleasel,Update index.tsx
+3135203702,bdf8528cf062697a6626d683d6960b3d5bec8308,cursoragent,cursoragent,Add logs beta feature to getting started docs for multiple SDKs
+3161425418,a4873719372ce14379dc062aae548c46325598a8,cursoragent,cursoragent,Update CloudEvents context interface and test cases
+3161425418,d94602c93822bb9a781f3e2d9196bf4c620b5b23,cursoragent,cursoragent,Export feature flags integration from Sentry Node package
+3158347305,1f9ba0f2357715526354be68e6160f77e913281b,cursoragent,cursoragent,Add Heap analytics and Google Analytics to comps app - Added Heap analytics with ID 4237430080 using Next.js Script component - Added Google Analytics using GoogleTagManager from @next/third-parties - Google Analytics only loads in non-development environments when NEXT_PUBLIC_GA_ID is set - Updated turbo.json to include required environment variables
+3158347305,7f3907a1eddc39230d27b14de705ba1e6689293e,cursoragent,cursoragent,Add Next.js third-parties and update global environment variables
+3154800493,5cd54410084b59af51b04d5f366f4a5baae58750,cursoragent,cursoragent,Improve TestingHealthChecker with proper shutdown mechanism
+3154800493,67eb0d6546f64c15819f4e500e470adf8d73d595,cursoragent,cursoragent,Add testhealthcheck dependency to testenv BUILD file
+3154800493,e29e83523750dde973a41372870defbdde8d60cf,cursoragent,cursoragent,Remove unused healthcheck import from testenv package
+3144503030,d14e670d52c7a4838668f9b7dbaca59b061a7c0e,cursoragent,cursoragent,Refactor import paths to use @baml/playground-common package
+3144503030,ee697ca1531514c73cd9f83c2a4e9e133363deb4,cursoragent,cursoragent,Expand TypeScript path mappings for shared modules and imports
+3153713806,a6084b3e82b99f391195c6421ecd0045008669db,cursoragent,cursoragent,Update environment config to initialize git submodules before installation
+3164279377,5ac6f3990605c3728fc8dcebe6c867bba37a7d6e,cursoragent,cursoragent,"fix(deps): resolve tenacity version conflict with google-genai
+
+Changes tenacity requirement from >=9.0.0,<10.0.0 to >=8.2.3,<10.0.0 to be compatible with google-genai package which requires tenacity >=8.2.3,<9.0.0. This resolves the dependency conflict reported in issue #1623 where users could not install instructor[google-genai] and google-genai together.
+
+Fixes: #1623"
+3131003811,0669f3e3e8ae4348109068e6f856a668cd6a74b2,cursoragent,cursoragent,feat(issue-details): Improve screenshot file detection to support flexible naming - Replace hardcoded screenshot names with flexible pattern matching that detects any file containing 'screenshot' and ending with .jpg/.png - Maintains backwards compatibility and adds test coverage - Fixes GitHub issue #92154
+3131003811,fc1c5ee14fbfb94bce142f6f94abf6b148b2877e,cursoragent,cursoragent,test: Fix missing API mocks in screenshot detection test
+3131003811,79f0a26589759c3dde6920483ce504da6c10fb33,getsantry[bot],web-flow,:hammer_and_wrench: apply pre-commit fixes
+3164245658,0cd548207ddd892605097e914ba6638681525813,cursoragent,cursoragent,Update Rust installation link in README
+3164245658,9a63cb63f29f7530e06116e4fa634c06015171a5,regenrek,web-flow,Merge branch 'amantus-ai:main' into cursor/update-rustup-sh-url-in-readme-md-7e3e
+3139071787,94b0f68035da011baa8730e91af1eb910aa57095,cursoragent,cursoragent,Add multiprocessing support and pickling for BamlRuntime in Python
+3139071787,61dac9a6c1f3ee935b3bfe8c0d252921df32bed1,cursoragent,cursoragent,Add pickle support for BAML runtime and multiprocessing test
+3139071787,e2725ead2b47178c81bb188e9a96a83de245b39f,cursoragent,cursoragent,Checkpoint before follow-up message
+3139071787,8885f70d059a086deb575b25f339d93825848859,cursoragent,cursoragent,Checkpoint before follow-up message
+3139071787,75fc16526f94d5ef7e040c8fb466f686b9302cdb,cursoragent,cursoragent,Checkpoint before follow-up message
+3139071787,11cabb2f1f0e9f8a10d1ef9e764e88283af5120f,cursoragent,cursoragent,Implement pickle support for BamlRuntime in multiprocessing scenarios
+3124493699,f3fd9a680ca6339c407a6c9adea0dd821cbef923,cursoragent,cursoragent,"Add referral system with code generation, tracking, and rewards"
+3124493699,4cdc31464aeb203991fa2a49ecab7310eaeae1c0,cursoragent,cursoragent,"Refactor referral system with SWR, server actions, and improved types"
+3124493699,8220e5624b10f1efa5b54cb89ff35985a8881991,elie222,elie222,Merge branch 'main' into cursor/build-refer-a-friend-system-3b81
+3124493699,0c1d828cd42187aafeae8ade35dd89374bb9bb57,elie222,elie222,simplify referral model
+3124493699,0415808e7c14421925d0ed51abb1b6d263b1a883,elie222,elie222,Merge branch 'main' into cursor/build-refer-a-friend-system-3b81
+3124493699,49a67d8b5ee3ca8f310255be337368d2a87e75ce,elie222,elie222,fix up schema
+3124493699,503685588631410ead4b31a22995d0123c06314a,elie222,elie222,clean up referral dashboard
+3124493699,ea9e7add80edc6b01a61233e7288db5790dcd056,elie222,elie222,refer a friend dialog
+3124493699,6571e0df14656f83c04d47e3bee6038005e02d80,elie222,elie222,clean up code
+3124493699,76723b04782801ae345ba867d2a92e53aa22a9c0,elie222,elie222,delete func
+3124493699,f434185cd10a27158e55349fa97bb219f3053848,elie222,elie222,generate referral code if user doesnt have one yet
+3124493699,c28ab3fa8bf63f6d19937f285bb560b169e2fdf5,elie222,elie222,tests
+3124493699,e0837d88e547ca345dac4f34d056f034cf9fd6dd,elie222,elie222,referral tracking
+3124493699,ce412085e38661b7124fa00ba53a375292ce788c,elie222,elie222,code cleanup
+3124493699,2f23a246cec144fad1a082091c8c185ad3446bb2,elie222,elie222,change referral schmea
+3124493699,994b00f17c8db01edf44191ab59c45503821b424,elie222,elie222,clean up referral code
+3124493699,de2170296958680c91805ec74e6aeb7f9e065f92,elie222,elie222,complete referral process upon trial end
+3124493699,47f7649c6cebe59866df04177a198c9b83e84b04,elie222,elie222,refactor prisma helpers
+3136925045,0a3368a3aff9d94bdca3c824d48c630dbb520b72,cursoragent,cursoragent,Add view deduplication and star existing view in Seer notices
+3136925045,0dbbd2fe2346b9e1b7dd5ef88f2dc8955ba9f1c2,cursoragent,cursoragent,Remove unused imports and simplify view creation logic in SeerNotices
+3136925045,c1edaf04c5b8690ab6724f96dc493e134ee0d07a,getsantry[bot],web-flow,:hammer_and_wrench: apply pre-commit fixes
+3136925045,68f3090a8efaec983fcf8cce5d2e2490e99d5745,roaga,roaga,New logic
+3136925045,040e5c5830f57d6aafe159179e772db7e4ae1a42,roaga,roaga,Star existing views
+3165818046,1fc3a71e937e467d740616ae23cfe43e1c92bd3f,cursoragent,cursoragent,Improve navigation when closing test workflow drawer with environment context
+3165818046,94340df28ad5ab4013ac9d1bf76e04e8c883fb83,cursoragent,cursoragent,Fix navigation logic in workflow canvas and test workflow drawer
+3165818046,0400fb8e875fe3288f3f21cc61e98e4f891475c2,scopsy,scopsy,fix: url
+3165818046,640cf0f9da09b01690a76ebeeb707b0d4c2ae259,scopsy,scopsy,fix:
+3131810994,27f77d7944a5f98b1cbda120c748a23173ba2ac6,cursoragent,cursoragent,Fix duplicate exports in code splitting with cross-chunk dependencies
+3131810994,2033d2f0317b87c3d055b46178b62c02fe343d24,claude[bot],web-flow,"Fix duplicate exports by deduplicating in entry point tail generation
+
+Move deduplication logic from computeCrossChunkDependencies to generateEntryPointTailJS where entry points actually generate their export statements. The previous fix only affected non-entry-point chunks but entry points use a different code path through generateEntryPointTailJS.
+
+- Revert changes to computeCrossChunkDependencies.zig that skipped cross-chunk exports for entry points
+- Add deduplication logic in generateEntryPointTailJS to remove duplicate export aliases before creating export clause
+- Preserves original order and only processes when multiple export items exist
+
+Fixes test failure where duplicate exports were still present in entry point chunks.
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-authored-by: Jarred-Sumner <Jarred-Sumner@users.noreply.github.com>"
+3131810994,ef634a60c6aeeb12cbeaf0607f5d2eaa4464dd49,claude[bot],github-actions[bot],`bun run zig-format`
+3131810994,a42d3257b690ba9407e880ec4c495c628a86c4f8,claude[bot],web-flow,"Fix duplicate exports in cross-chunk generation for mixed imports
+
+Add deduplication logic to cross-chunk export generation to prevent
+duplicate exports when both static and dynamic imports of CommonJS 
+modules are used with code splitting.
+
+The issue was that exports could be generated in two separate paths:
+1. Cross-chunk export generation (no deduplication) 
+2. Entry point tail generation (had deduplication)
+
+This caused duplicate exports like `export { $bar, $bar }` in scenarios
+with mixed static/dynamic imports, leading to syntax errors.
+
+Co-authored-by: Jarred-Sumner <Jarred-Sumner@users.noreply.github.com>"
+3131810994,ca0eff7048fada908e31631290119fa3289c487a,claude[bot],github-actions[bot],`bun run zig-format`
+3131810994,9d31a4e7ce36a1858cf0a8079ca2a98e2fb83ba9,Jarred-Sumner,Jarred-Sumner,"A
+    Fix duplicate exports in code splitting by coordinating cross-chunk and entry point export generation
+
+    This commit resolves issue #5344 where duplicate export statements were generated
+    when using code splitting with entry points that are imported by other entry points.
+
+    The root cause was that two separate systems were both generating export statements
+    for the same symbols:
+
+    1. Cross-chunk export generation (computeCrossChunkDependencies.zig)
+    2. Entry point tail generation (postProcessJSChunk.zig)
+
+    When a file serves as both an entry point AND is imported by another entry point,
+    both systems would create exports, resulting in syntax errors like:
+    `export { a }; export { a };`
+
+    The fix adds coordination between these systems by:
+    - Adding deduplication logic in cross-chunk export generation to prevent internal duplicates
+    - Filtering out exports in entry point tail generation that are already handled by cross-chunk exports
+    - Only generating export statements when there are actual items to export
+
+    This ensures that each symbol is exported exactly once, preventing duplicate export
+    syntax errors while maintaining correct code splitting functionality.
+
+    Test cases updated to verify the fix works correctly and doesn't regress.
+
+    🤖 Generated with [Claude Code](https://claude.ai/code)
+
+    Co-authored-by: Claude <noreply@anthropic.com>
+A
+A
+A"
+3131810994,4b292cca06fe095ffd3c6761e8b6a1e983907f97,Jarred-Sumner,github-actions[bot],`bun run zig-format`
+3131810994,58b4645ef22aa9ea82af60178b84069bb133b6a7,Jarred-Sumner,github-actions[bot],`bun run prettier`
+3131810994,4e1529b851d18da3e329fae36b5bcef5dafc2e3c,Jarred-Sumner,Jarred-Sumner,try
+3131810994,7f08f4638f2accc560659d55717db84955523e98,dylan-conway,web-flow,Merge branch 'main' into cursor/fix-duplicate-exports-in-bun-s-bundler-9dc5
+3131810994,d4e6cd6ae20e9755a2067cd2e1fc1baeb320582b,claude[bot],web-flow,"Fix ban-words test failures: replace std.StringHashMap with bun.StringHashMap and catch unreachable with catch bun.outOfMemory()
+
+Co-authored-by: Jarred Sumner <Jarred-Sumner@users.noreply.github.com>"
+3131810994,5b25c2922b819ef950ed268497f5b208c17638c9,dylan-conway,web-flow,Merge branch 'main' into cursor/fix-duplicate-exports-in-bun-s-bundler-9dc5
+3131810994,942535f9e3f4d35d64ca9e064ddffcc5e9c2ace3,dylan-conway,dylan-conway,fix build
+3132147174,da66bed2960021fd9f845c011931fbb35b5b2149,cursoragent,cursoragent,Add HTTP proxy support for audit requests
+3132147174,ec9e13749ef8601cee73527a77aed60031f282fc,Jarred-Sumner,github-actions[bot],`bun run prettier`
+3113874849,f540abfacb43eb1d836949b0b2ad91df6da3783b,cursoragent,cursoragent,Fix: Preserve generated columns during ALTER SOURCE REFRESH SCHEMA
+3113874849,8a7b8482f3701384fe326375156363ee115133e2,xxchan,cursoragent,".
+
+Signed-off-by: Cursor Agent <cursoragent@cursor.com>"
+3113874849,aac28ec2d3c73e9bab088a5d32f1806c1ff2b032,cursoragent,cursoragent,Fix ALTER SOURCE REFRESH SCHEMA for sources with generated columns
+3113874849,71f6e20097fe12a7406a921655ad4a3e65c01244,cursoragent,cursoragent,Optimize Kafka Protobuf source test by reusing topic and simplifying setup
+3113874849,44082f221637158580d937d136c69f6206c642bc,cursoragent,cursoragent,Test ALTER SOURCE REFRESH SCHEMA with generated columns in Kafka source
+3113874849,683ed22caa668f2e5b699ea7dee91c124bacc8f4,xxchan,web-flow,Delete bug_fix_summary.md
+3147227366,b8d6eb529ff6daaa2f2148cfe4cca4d8432809a1,cursoragent,cursoragent,Update step configuration button label for clarity
+3147227366,5f7bcef824c9d94bf0c21d49ced5817545ce731c,cursoragent,cursoragent,Replace RiPencilRuler2Fill icon with RiEdit2Line in step configuration form
+3147227366,c302dd93ee14060ccf4de7c5b70081e3471678c4,cursoragent,cursoragent,Checkpoint before follow-up message
+3100155456,abd0809c084b5aeffdd6d9eb185d8354d7d1a1bb,cursoragent,cursoragent,Fix useChangedState hook to avoid setState during render
+3100155456,e1a67e845c10930fb1d5a602878091f4ef13ad62,cursoragent,cursoragent,fix: resolve React setState during render warning in useChangedState hook
+3100155456,6afc2e070c5f6c221295ab704724ea2245f018c0,cursoragent,cursoragent,Add changeset for patch release of Figma plugin
+3100155456,737c5cc948d0f93fd727efc97d73e144ed22acab,cursoragent,cursoragent,Changes from background composer bc-0dfe2510-7c34-47b1-8571-06301dbbb6b3
+3165722637,024ffd684714fd881431e3d2f284adaf94014015,cursoragent,cursoragent,Fix YesTask handling in event loop task processing
+3165722637,65f4586217914c3a66e699069a5093d317b05e27,claude[bot],web-flow,"test: add event loop task processing tests for Yes command
+
+Add comprehensive tests using TestBuilder pattern to verify YesTask
+handling in the event loop. These tests would have caught the crash
+that was fixed in the event loop's tickQueueWithCount function.
+
+Tests cover:
+- Basic YesTask event loop processing with head
+- Custom string output in event loop
+- YesTask cancellation/timeout scenarios
+- High volume output for event loop stability
+
+Co-authored-by: Jarred Sumner <Jarred-Sumner@users.noreply.github.com>"
+3165722637,12cf1fd0747830973a8f8d59a9ca89d5c3604dc8,claude[bot],github-actions[bot],`bun run prettier`
+3128413591,607a8340b520bff4f2ca058f970a360bce5300f9,Jarred-Sumner,Jarred-Sumner,Introduce server-side support for HTML imports
+3128413591,75323adb472b5f0850b45c4e1bcca726391a46f9,Jarred-Sumner,github-actions[bot],`bun run prettier`
+3128413591,fb7c4931d87379c4bfa02e64eb07173361ea6ad4,dylan-conway,dylan-conway,defer deinit
+3128413591,cf9918d6f6bd3ffc1f7a96277da87b5c49ae65e7,dylan-conway,web-flow,Merge branch 'main' into cursor/enhance-bun-build-for-full-stack-support-e69d
+3128413591,8bfca0b7044db45e2f2dc9cee4ce22a372b65894,dylan-conway,github-actions[bot],`bun run prettier`
+3128413591,7f0984cd11b65ad0dd10f6b56df2ffd0f145a84d,dylan-conway,dylan-conway,fix test
+3128413591,80fce17ec8bc6d1e38819e201efe0d2cb874e56c,dylan-conway,dylan-conway,delete
+3128413591,a401af3ec9a411d98f95b6a7604f68341895ca61,dylan-conway,dylan-conway,ooops
+3161226190,a2d01ca733e75a89cf6417ff3fd2f21258d5a2ab,cursoragent,cursoragent,Checkpoint before follow-up message
+3161226190,1fde61848fed28c9e51f372c1b933ace8e6ea288,cursoragent,cursoragent,Checkpoint before follow-up message
+3161226190,88542cefb943024dc7c9ed6f8e001c40ef63344b,cursoragent,cursoragent,Add Stripe subscription integration documentation and architecture overview
+3147302152,8b8494e5131a25c75f34646226054f635423c6ab,cursoragent,cursoragent,Update payload schema documentation links to new path
+3165822621,1c110f3cddc67ac490d6efcfc6f4b4531493a445,cursoragent,cursoragent,Improve OpenShift provider connection validation using REST API
+3165822621,471d1df158a481b1ab22270c28c4b6b0b126f8b7,cursoragent,cursoragent,Enhance OpenShift provider with advanced querying and remediation capabilities
+3165822621,abe631b17da270048893754726d0e9f156f951ef,cursoragent,cursoragent,Add OpenShift provider documentation and workflow examples
+3165822621,5b6ae1d5c8c6232c4f938acb43271cc56ded6c67,talboren,web-flow,Merge branch 'main' into cursor/fix-openshift-provider-connection-issue-4799
+3132189217,adfbdf3eb935cef01249e25bba49838f065b117d,cursoragent,cursoragent,Fix Windows package name parsing and remove unnecessary blank lines
+3132189217,b571c91d26e89f98f8b352333775f7d2c8680d89,cursoragent,cursoragent,Checkpoint before follow-up message
+3132189217,27ec16b47e6e4b36fbd5b1532c5defcd633d2837,cursoragent,cursoragent,Add Windows-specific test for escaped @scoped package names
+3132189217,06927923d77eb795a02d7b216a16e0accfdbe685,cursoragent,cursoragent,Fix handling of escaped @scoped package names on Windows
+3132189217,a0be66099ff34bd9ab8e3e439f210ebbb6c0baaf,cursoragent,cursoragent,Changes from background composer bc-4a83a85f-ff0b-409f-b3a3-d6b6435a437a
+3132189217,fd7d29b1b5e1741090e7b3088d63ff8aa40d5947,Jarred-Sumner,github-actions[bot],`bun run prettier`
+3138324128,29b3e7a410b62c2662b6271600174de26be58754,cursoragent,cursoragent,Modify bulk rule run to only process unread emails
+3135305868,870c51c10b5755142fad8d767c3c59e3b23adfbb,cursoragent,cursoragent,Checkpoint before follow-up message
+3135305868,62f66b3096f5852ba3c877ee1a840d9aaf836d9f,cursoragent,cursoragent,Add chrono dependency and enhance MCP client example documentation
+3135305868,6e0001c2ea650ca67b9d5f49d6d16a6e62149bf9,cursoragent,cursoragent,Checkpoint before follow-up message
+3135305868,f88be0d4c56cb2aad7bdf2b523170eaeb8575d7c,cursoragent,cursoragent,Checkpoint before follow-up message
+3131686689,48103892d6367818ed30c5b8c107a6d4966231df,cursoragent,cursoragent,Add promo code generation with cryptic word and l33t speak algorithm
+3131686689,1ef59fd880045b287d96e7443a7ec1f84dcd01ee,cursoragent,cursoragent,Improve promo code generation with more variety and length control
+3131686689,57016e39e4eaee9b039322757c33b33c236c57c2,cursoragent,cursoragent,Refactor promo code generation with improved randomization logic
+3131686689,7fc758d396f4dfedb5d204b8a7f2ff63ba2a32b6,cursoragent,cursoragent,Checkpoint before follow-up message
+3131686689,c17d5abec3f54020035ab3c27a11e051ce11b0b6,cursoragent,cursoragent,Fix TypeScript type error and remove unused form ref in promo code modal
+3131686689,ba64dd511f246f5ae90f2fdd256b6bba7dc0698c,cursoragent,cursoragent,Add React type import to promoCodeModal component
+3131686689,5b53b3357e1e4fd66dbc4b1228654c8566666803,cursoragent,cursoragent,Remove unused React type import
+3131686689,fd8302bcdfb4b6e01fbf60ec7c03f6a8a0f294f0,cursoragent,cursoragent,Refactor promo code modal to use React.createElement for form fields
+3131686689,04694a4a5d943c22fd42fc42f84accab5cb3c220,cursoragent,cursoragent,Add @types/moment-timezone as dev dependency
+3131686689,7be80d906b17e6f9f310253079f99b5b2b79b131,cursoragent,cursoragent,Add gsAdmin to TypeScript configuration include paths
+3131686689,081830e0ae5df5d5190d42eed834908302663188,cursoragent,cursoragent,Refactor promo code modal with improved type safety and code generation
+3134882955,d81bb7fe82fc3f9b47f53431b630cc161a04600c,cursoragent,cursoragent,Add Vercel AI integration with telemetry for Next.js 15 test app
+3134882955,7a813ed698656294a777249c4036148eaa5a9e80,cursoragent,cursoragent,Changes from background composer bc-a31bbb18-5a7c-4b0e-b632-2ac4c565ac30
+3132222532,103109f3859a4cce862fa6aa92d95a0f8700d5df,cursoragent,cursoragent,Fix potential crash in asymmetric matcher by adding cell type check
+3132222532,e32fef812fdc6575d0ac98a257d2c713b569e2e2,cursoragent,cursoragent,test: Add test for deepEquals fix with MobX-like reactive objects that return non-cell values
+3132222532,7dfbfd87f570ac7b2ceecfa53b6abf540d93f4a4,Jarred-Sumner,web-flow,Update deepequals_fix.patch
+3132222532,4959d1ad4b11d63346bad24134309d33b41236a7,Jarred-Sumner,github-actions[bot],`bun run prettier`
+3132222532,812e91c0bd5630bb325b4eec798a136d67101dd2,Jarred-Sumner,github-actions[bot],`bun run clang-format`
+3132222532,f2932ea6dbe5867bc50e841abed9098df7631740,claude[bot],web-flow,"chore: remove patch files
+
+Co-authored-by: Jarred-Sumner <Jarred-Sumner@users.noreply.github.com>"
+3130631260,1aae8045b3c85b367db79ec1b700b08f50e9ac71,cursoragent,cursoragent,Add group expansion feature with collapsible grouped rows
+3130631260,2e3c00b6f60f3f43ff82bdfb8807726df74f063a,cursoragent,cursoragent,Add toggle all groups functionality with dynamic button state
+3130631260,fb464d46b371a27229644f4389500eaa39e09c44,cursoragent,cursoragent,Improve alert table UI with group toggle button and layout adjustments
+3130631260,3ce989809557c45ddcbb21eef8b85fc06bd16137,cursoragent,cursoragent,Refactor alert table UI to centralize group expansion controls in AlertPresetManager
+3130631260,d24d09bbc0b90a3c0f58bab6cc3128ee13b370a3,shahargl,shahargl,feat: minor fix
+3130631260,f926b59a5fc80badbf2ae02819c149353ab3d41c,cursoragent,cursoragent,Add unit tests for AlertPresetManager and GroupedRow components
+3130631260,62e4e6357999fbb069f5ab9c3e7f54eaecc73cd3,cursoragent,cursoragent,Refactor alert table and grouped row tests with improved mocking
+3138324206,6fd51bf9c54bb26c926d10ab90e02bd0a4d4f8a2,cursoragent,cursoragent,Optimize message processing with parallel batch processing
+3138324206,398cf0624bc1d3256d3e57d66b8fbc75b56e7108,cursoragent,cursoragent,Improve batch processing with error handling and parallel execution
+3138324206,da939a6b30618e5fb84ebca23f2574cac6530c74,elie222,elie222,Merge branch 'main' into cursor/process-rules-in-parallel-99d4
+3138324206,130d29108d037713fd3a065dc23d94b335cd39c5,elie222,elie222,use queue to process in parallel
+3138324206,a45178164b20408bb03f451baebfd5960603377a,elie222,elie222,version
+3134576040,1436964a9089d4e1060c461bb8bc131acc711884,cursoragent,cursoragent,Add Cursor Night Shift Agent for automated AI code review
+3134575697,7e2b192612ab60fb7b358a0f65cca91b3a09dc82,cursoragent,cursoragent,Add Terminator web testing GitHub Action with example workflows
+3163213567,9bef95b143d8d551067a6859fcb3b22a8b17430f,cursoragent,cursoragent,Improve MCP server error handling and add server running state tracking
+3163213567,ce10bcfe6474185111e0bc861f594554bb084adc,cursoragent,cursoragent,Checkpoint before follow-up message
+3163213567,427beb49d17b43eef3341dd1da8ef67e5688af46,cursoragent,cursoragent,Refactor server startup tracking with more descriptive error state flag
+3149341709,48f483f00b2a76b3c4e08267403cd7efcc18ae05,cursoragent,szokeasaurusrex,"feat(sessions): Add top-level start- and end session methods
+
+Closes #4474
+
+Co-authored-by: Daniel Szoke <daniel.szoke@sentry.io>"
+3165225343,35322cdbba38d7d87ba4cd59b21f8f27998f8c2b,cursoragent,cursoragent,Filter out additional bot and automated accounts from contributors list
+3165225343,4ed55d47f3807dfec76e1de23fac616728a534a4,ellipsis-dev[bot],web-flow,"[Ellipsis] fix: exclude `cursor` and `roomote` logins in contributors section (#4984)
+
+Co-authored-by: ellipsis-dev[bot] <65095814+ellipsis-dev[bot]@users.noreply.github.com>"
+3165874296,019f700ba625298cbb4b72ed1af6b9016ed3d50a,cursoragent,cursoragent,Implement useFetchOrganization hook for dynamic branding data loading
+3165874296,3495907c5b699e77fb1ac55b256e049ddb24d4e0,scopsy,scopsy,Merge branch 'next' into cursor/fetch-branding-details-on-page-load-11f1
+3099818675,ce9344986307b30feb69eab862c811ef3dac614b,cursoragent,cursoragent,Implement delta diff sync for optimized GitHub token storage performance
+3099818675,31bd8ec1b031a236eafc5b4cee1a94e4bf8a8525,cursoragent,cursoragent,Implement delta diff optimization with lastSyncedState for faster GitHub sync
+3099818675,4a344782e0b2ff5b2fa8441970eadcc4187c88a4,cursoragent,cursoragent,Enable delta diff sync by default with enhanced logging
+3099818675,ab0fc497c78d828ea6351870907945b0a93aa9dc,cursoragent,cursoragent,Add detailed logging for token sync comparison and differences
+3099818675,43094adeb2a7ff5d3e9f95d32a86af341021cc4a,cursoragent,cursoragent,Fix token set comparison by converting local data to array format
+3099818675,8e2c6eb891786ffae82d17406c05efbeba24d7ed,cursoragent,cursoragent,Simplify delta diff logic for faster token sync comparisons
+3099818675,6552307b2dbcd1dfacb8f7f76f413bba6aa27fa7,cursoragent,cursoragent,Refactor GithubTokenStorage delta diff logic and clean up yarn.lock
+3099818675,a4e9814e46964d91052b1a1278d8720a50a36417,cursoragent,cursoragent,Implement universal delta diff optimization in GitTokenStorage base class
+3099818675,b615cb95d5d5d648108ce43c77c4186d644e7608,cursoragent,cursoragent,"Simplify delta diff optimization in GitTokenStorage with clean, minimal approach"
+3099818675,6bbc86f81e259664a4885e82073cb3a214a6fdff,cursoragent,cursoragent,Optimize delta diff sync with raw data comparison in RemoteTokenStorage
+3099818675,1c439d65400fa3987d279692b2a5d2459d046efa,cursoragent,cursoragent,Implement granular delta diff optimization for token storage
+3111841315,cef62eeeda624928f8936d9eceb2e7b32ca76bc2,cursoragent,cursoragent,Add Git web worker for background isomorphic-git operations
+3137117830,20d85e78ec311139130127d11d31fb1d49a0c177,cursoragent,cursoragent,Add Koa integration options to ignore specific layer types
+3137117830,0e904d6108a7d94fead915d07cd0ed8b8cfa4e0c,cursoragent,cursoragent,Refactor Koa instrumentation with improved type safety and exports
+3137117830,9ba5f84adc166fbf3a7ba94648994534e636dcd5,AbhiPrasad,AbhiPrasad,cursor cleanup
+3163448583,0a812834fcaf59bc3c1bfc708105131903491d41,cursoragent,cursoragent,Fix scroll carousel right mask gradient with dynamic theme color
+3163448583,ee30615014cb3673b33d821e8156e847620a6ae8,cursoragent,cursoragent,Fix scroll carousel mask gradient with transparent start color

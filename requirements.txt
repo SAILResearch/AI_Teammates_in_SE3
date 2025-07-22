@@ -1,0 +1,10 @@
+requests
+pandas
+pyarrow
+fastparquet
+matplotlib
+backoff
+seaborn
+cliffs-delta
+jupyter
+scipy

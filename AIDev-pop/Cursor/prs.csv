@@ -1,0 +1,2350 @@
+id,number,title,user,user_id,state,created_at,closed_at,merged_at,repo_url,html_url,body
+3135203702,93300,Retry previous action,rahulchhabria,1755708,closed,2025-06-11T01:25:36Z,2025-06-11T01:25:40Z,,https://api.github.com/repos/getsentry/sentry,https://github.com/getsentry/sentry/pull/93300,"A ""Logs Beta"" checkbox was added to the platform options for Java, Android, Flutter, PHP, Python, Ruby, Go, and all JavaScript SDKs within the `sentry-docs` repository.
+
+The changes include:
+*   A `logsBeta` option, using a new `YesNo` enum, was introduced to `platformOptions` in each SDK's `static/app/gettingStartedDocs/<sdk>/<sdk>.tsx` file.
+*   Configuration snippets (e.g., `getConfigureSnippet`, `getSdkSetupSnippet`, `getDynamicParts`) were updated to conditionally include platform-specific log setup code when the `logsBeta` option is enabled.
+    *   Examples: `options.setEnableLogs(true)` for Java, `_experiments={""enable_logs"": True}` for Python, `<meta-data android:name=""io.sentry.enable-logs"" android:value=""true"" />` for Android.
+*   Verify snippets (e.g., `getVerifySnippet`, `getLogsVerifySnippet`) were modified to demonstrate log usage (e.g., `Sentry.getLogger().info()`) when the feature is active.
+*   Additional informational text was added to the verify step for context.
+*   A `LOGS_BETA_IMPLEMENTATION.md` file was created to document all changes.
+
+This ensures that selecting the ""Logs Beta"" checkbox dynamically injects the necessary code to enable and demonstrate Sentry's logs feature for the chosen SDK."
+3135305868,107,Create Rust example for model context client,louis030195,25003283,open,2025-06-11T02:44:04Z,,,https://api.github.com/repos/mediar-ai/terminator,https://github.com/mediar-ai/terminator/pull/107,"A Rust Model Context Protocol (MCP) client example was created in `examples/mcp-client-example/`.
+
+*   The workspace `Cargo.toml` was updated to include the new `examples/mcp-client-example` member.
+*   A dedicated `Cargo.toml` was created for the example, defining its dependencies, including `rmcp` version 0.1.5.
+*   The `examples/mcp_client_example.rs` file was initially a basic client.
+*   It was subsequently rewritten to correctly utilize the `rmcp` API. The previous implementation did not actively call `terminator-mcp-agent`'s tools.
+*   The updated `mcp_client_example.rs` now properly uses `rmcp::transport::TokioChildProcess` and `ServiceExt` to establish an MCP connection.
+*   The client demonstrates actual calls to `terminator-mcp-agent`'s exposed tools, including `list_tools`, `get_applications`, `capture_screen`, `open_application`, `click_element`, `type_into_element`, `set_clipboard`, and `get_clipboard`.
+*   A `examples/mcp-client-example/README.md` was added, documenting the example's capabilities, prerequisites, and expected output, including behavior in headless environments."
+3135420284,2021,Add baml-cli test documentation,aaronvg,5353992,closed,2025-06-11T04:16:40Z,2025-06-11T04:25:38Z,2025-06-11T04:25:38Z,https://api.github.com/repos/BoundaryML/baml,https://github.com/BoundaryML/baml/pull/2021,"A new reference document for the `baml test` command was created at `fern/03-reference/baml-cli/test.mdx`. This document provides comprehensive details on the command's usage, options (e.g., `--include`, `--exclude`, `--parallel`), test filtering patterns, parallel execution, environment variable handling, and exit codes for CI/CD integration. It includes various examples for different workflows and explains test definition and output.
+
+Additionally, a ""Command Line Testing"" section was added to `fern/01-guide/04-baml-basics/testing-functions.mdx`. This section introduces `baml test` as an alternative to the VSCode playground, providing quick usage examples and highlighting its utility for CI/CD pipelines and batch testing. It also includes a cross-reference to the newly created detailed CLI test reference. These changes ensure `baml test` is fully documented and discoverable within the existing documentation structure.
+<!-- ELLIPSIS_HIDDEN -->
+
+
+----
+
+> [!IMPORTANT]
+> Adds comprehensive documentation for the `baml-cli test` command, including usage, options, and examples, and integrates it into the existing documentation structure.
+> 
+>   - **Documentation**:
+>     - Adds `baml-cli test` command reference in `test.mdx`, covering usage, options, filtering, parallel execution, environment variables, and exit codes.
+>     - Includes examples for different workflows, test definition, and output.
+>   - **Guide Update**:
+>     - Adds ""Command Line Testing"" section in `testing-functions.mdx`, introducing `baml test` as an alternative to VSCode playground.
+>     - Provides quick usage examples and highlights utility for CI/CD pipelines.
+>     - Cross-references the detailed CLI test reference.
+>   - **Navigation**:
+>     - Updates `docs.yml` to include the new `test.mdx` in the documentation navigation.
+> 
+> <sup>This description was created by </sup>[<img alt=""Ellipsis"" src=""https://img.shields.io/badge/Ellipsis-blue?color=175173"">](https://www.ellipsis.dev?ref=BoundaryML%2Fbaml&utm_source=github&utm_medium=referral)<sup> for a2dc1f99748f8ed0187b27452bd4e22ce8ab83ef. You can [customize](https://app.ellipsis.dev/BoundaryML/settings/summaries) this summary. It will automatically update as commits are pushed.</sup>
+
+
+<!-- ELLIPSIS_HIDDEN -->"
+3135538721,93304,feat(open-pr-comments): Add C# support,iamrajjoshi,33237075,closed,2025-06-11T05:31:09Z,2025-06-11T21:32:03Z,2025-06-11T21:32:03Z,https://api.github.com/repos/getsentry/sentry,https://github.com/getsentry/sentry/pull/93304,"Adds Open PR Comment Support for C#
+
+Built using Cursor Background Agent with some cleanup by me, pretty cool!"
+3136628527,2554,feat(login): Warn when overwriting existing auth token,szokeasaurusrex,7881302,closed,2025-06-11T12:21:09Z,2025-06-11T15:06:28Z,2025-06-11T15:06:28Z,https://api.github.com/repos/getsentry/sentry-cli,https://github.com/getsentry/sentry-cli/pull/2554,Closes #2537
+3136925045,93319,fix(autofix): Prevent duplicate recommended starred views,roaga,47861399,closed,2025-06-11T13:52:37Z,2025-06-11T14:51:40Z,2025-06-11T14:51:40Z,https://api.github.com/repos/getsentry/sentry,https://github.com/getsentry/sentry/pull/93319,"Disables button to create starred view if the step is already complete.
+Also stars an existing view in the org instead of creating a new one if there is a decent match."
+3137099861,93325,fix(autofix): Update autofix integration setup check,roaga,47861399,closed,2025-06-11T14:41:45Z,2025-06-11T15:01:05Z,2025-06-11T15:01:05Z,https://api.github.com/repos/getsentry/sentry,https://github.com/getsentry/sentry/pull/93325,"The autofix setup endpoint was returning ""integration missing"" due to an issue in `src/sentry/api/endpoints/group_autofix_setup_check.py`.
+
+Previously, the `get_autofix_integration_setup_problems` function:
+*   Fetched only the first GitHub `OrganizationIntegration` using `limit=1`.
+*   Checked if this single integration had an active `Integration` and a valid installation.
+*   Returned ""integration_missing"" if the first integration was not active or lacked an installation, even if other valid integrations existed for the organization.
+
+The function was updated to correctly identify an active autofix setup:
+*   The `limit=1` parameter was removed from the `integration_service.get_organization_integrations` call, allowing all GitHub organization integrations to be retrieved.
+*   A loop was introduced to iterate through all `organization_integrations`.
+*   Inside the loop, each `organization_integration` is checked for an `ACTIVE` `Integration` and a valid `installation`.
+*   If a valid setup is found, `None` is returned immediately, indicating no problems.
+*   ""integration_missing"" is now only returned if no valid active integration with an installation is found after checking all available organization integrations.
+
+This change ensures the endpoint accurately reflects the autofix setup status by considering all available integrations, preventing false negatives."
+3137117830,16553,feat(node): Introduce `ignoreLayersType` option to koa integration,AbhiPrasad,18689448,closed,2025-06-11T14:46:47Z,2025-06-11T17:30:38Z,2025-06-11T17:30:38Z,https://api.github.com/repos/getsentry/sentry-javascript,https://github.com/getsentry/sentry-javascript/pull/16553,"ref https://linear.app/getsentry/issue/FE-503/investigate-nested-middleware-spans-in-webfx-koa-application
+
+The Koa integration in `@sentry/node` was updated to expose the `ignoreLayersType` option from `@opentelemetry/instrumentation-koa`, aligning its configuration with the GraphQL integration.
+
+https://www.npmjs.com/package/@opentelemetry/instrumentation-koa
+
+<span><div class=""markdown-heading""><h3 class=""heading-element"">Koa Instrumentation Options</h3><a id=""user-content-koa-instrumentation-options"" class=""anchor"" aria-label=""Permalink: Koa Instrumentation Options"" href=""https://www.npmjs.com/package/@opentelemetry/instrumentation-koa#koa-instrumentation-options""></a></div></span><span>
+Options | Type | Example | Description
+-- | -- | -- | --
+ignoreLayersType | KoaLayerType[] | ['middleware'] | Ignore layers of specified type.
+requestHook | KoaRequestCustomAttributeFunction | (span, info) => {} | Function for adding custom attributes to Koa middleware layers. Receives params: Span, KoaRequestInfo.
+
+<p><code>ignoreLayersType</code> accepts an array of <code>KoaLayerType</code> which can take the following string values:</p>
+<ul>
+<li>
+<code>router</code>,</li>
+<li>
+<code>middleware</code>.</li>
+</ul></span>"
+3137677174,16556,feat(node): Add `ignoreLayers` and `ignoreLayersType` options to express instrumentation,AbhiPrasad,18689448,open,2025-06-11T17:58:38Z,,,https://api.github.com/repos/getsentry/sentry-javascript,https://github.com/getsentry/sentry-javascript/pull/16556,"This PR adds two new options to the Express integration: `ignoreLayers` and `ignoreLayersType`, bringing it to feature parity with the underlying OpenTelemetry instrumentation.
+
+resolves https://github.com/getsentry/sentry-javascript/issues/16555
+
+## Changes
+
+- Added `ignoreLayers` option to ignore specific Express layers based on their path
+- Added `ignoreLayersType` option to ignore specific Express layers based on their type
+- Added comprehensive tests for both options
+- Updated JSDoc documentation with usage examples
+
+## Usage
+
+### Ignore layers by path
+
+The `ignoreLayers` option accepts an array of elements that can be:
+- `string` for full match of the path
+- `RegExp` for partial match of the path
+- `function` in the form of `(path) => boolean` for custom logic
+
+```javascript
+const Sentry = require('@sentry/node');
+
+Sentry.init({
+  integrations: [
+    Sentry.expressIntegration({
+      ignoreLayers: [
+        '/health',              // Ignore exact path
+        /^\/internal/,          // Ignore paths starting with /internal
+        (path) => path.includes('admin') // Custom logic
+      ]
+    })
+  ],
+});
+```
+
+### Ignore layers by type
+
+The `ignoreLayersType` option accepts an array of the following strings:
+- `router` - for `express.Router()`
+- `middleware` - for middleware functions
+- `request_handler` - for request handlers (anything that's not a router or middleware)
+
+```javascript
+const Sentry = require('@sentry/node');
+
+Sentry.init({
+  integrations: [
+    Sentry.expressIntegration({
+      ignoreLayersType: ['middleware'] // Ignore all middleware spans
+    })
+  ],
+});
+```
+
+### Combining both options
+
+Both options can be used together:
+
+```javascript
+const Sentry = require('@sentry/node');
+
+Sentry.init({
+  integrations: [
+    Sentry.expressIntegration({
+      ignoreLayers: ['/health', '/metrics', /^\/internal/],
+      ignoreLayersType: ['middleware']
+    })
+  ],
+});
+```"
+3137765636,93358,Launch background agent for task,elijames-codecov,88844267,closed,2025-06-11T18:32:25Z,2025-06-11T18:32:40Z,,https://api.github.com/repos/getsentry/sentry,https://github.com/getsentry/sentry/pull/93358,"A new file, `packages/www/src/pages/welcome.mdx`, was created. This action was taken after repeated attempts to locate the specified file confirmed its absence in the workspace, despite the task's instruction to add content to it. The intention was to integrate a snackbar into a welcome page within the `getsentry/static-sites` repository structure.
+
+The created file includes frontmatter defining a `snackbar` with the following properties:
+*   `name: snackbar`
+*   `cta: 'Want to connect with the folks building Sentry? Join us on Discord.'`
+*   `link: https://discord.com/invite/sentry`
+*   `style: secondary-dark`
+
+Basic MDX content, including a title and introductory text, was also added below the frontmatter. This ensures the snackbar is properly embedded within the welcome page's structure."
+3137830799,16557,feat(browser): Add detail to measure spans and add regression tests,AbhiPrasad,18689448,closed,2025-06-11T19:00:28Z,2025-06-13T15:14:10Z,2025-06-13T15:14:10Z,https://api.github.com/repos/getsentry/sentry-javascript,https://github.com/getsentry/sentry-javascript/pull/16557,"resolves https://github.com/getsentry/sentry-javascript/issues/16237
+
+In #16348 we had to revert the PR that added `detail` to `measure` spans as attributes.
+
+measure API: https://developer.mozilla.org/en-US/docs/Web/API/Performance/measure 
+detail: https://developer.mozilla.org/en-US/docs/Web/API/PerformanceMeasure/detail 
+
+This was [reverted](https://github.com/getsentry/sentry-javascript/issues/16347) because it was causing issues in firefox, specifically this error was being thrown
+
+```
+Error: Permission denied to access object
+  at _addMeasureSpans(../../node_modules/@sentry-internal/browser-utils/build/esm/metrics/browserMetrics.js:255:41)
+  at X2e/<(../../node_modules/@sentry-internal/browser-utils/build/esm/metrics/browserMetrics.js:194:9)
+  at addPerformanceEntries(../../node_modules/@sentry-internal/browser-utils/build/esm/metrics/browserMetrics.js:174:48)
+  at idleSpan.beforeSpanEnd(../../node_modules/@sentry/browser/build/npm/esm/tracing/browserTracingIntegration.js:90:9)
+  at span.endapply(../../node_modules/@sentry/browser/node_modules/@sentry/core/build/esm/tracing/idleSpan.js:52:9)
+  at Coe/<(../../node_modules/@sentry/browser/node_modules/@sentry/core/build/esm/tracing/idleSpan.js:196:12)
+  at sentryWrapped(../../node_modules/@sentry/browser/build/npm/esm/helpers.js:38:17)
+```
+
+From debugging, this seems to be coming from a `DOMException` being thrown @https://developer.mozilla.org/en-US/docs/Web/API/DOMException 
+
+This was re-implemented, and then we added tests to validate that this wouldn't break on firefox."
+3137841799,16558,chore: Document `process.env.DEBUG` in node integration tests README,AbhiPrasad,18689448,closed,2025-06-11T19:05:31Z,2025-06-11T19:24:42Z,2025-06-11T19:24:42Z,https://api.github.com/repos/getsentry/sentry-javascript,https://github.com/getsentry/sentry-javascript/pull/16558,"A new ""Debugging Tests"" section was added to `dev-packages/node-integration-tests/README.md`.
+
+This section documents the `DEBUG` environment variable, which enables verbose logging for the integration test suite.
+
+When `DEBUG=1` is set (e.g., `DEBUG=1 yarn test`), the test runner provides detailed output, including:
+*   Test scenario startup information (path, flags, DSN).
+*   Docker Compose output when tests use `withDockerCompose`.
+*   Child process stdout and stderr.
+*   HTTP requests made during tests.
+*   Process errors and exceptions.
+*   Line-by-line output from test scenarios.
+
+This addition improves discoverability and understanding of the debugging capabilities, aiding in troubleshooting failing tests and analyzing test execution flow."
+3138021777,2025,Migrate jinja to minijinja2,aaronvg,5353992,closed,2025-06-11T20:27:03Z,2025-06-11T22:32:29Z,2025-06-11T22:32:28Z,https://api.github.com/repos/BoundaryML/baml,https://github.com/BoundaryML/baml/pull/2025,"The `jinja` and `jinja-runtime` crates were migrated to use MiniJinja 2.x, addressing API changes and rendering differences.
+
+Key changes include:
+
+*   **Dependency Update**: MiniJinja was upgraded from 1.0.16 to 2.10.2 in `engine/Cargo.toml` and `engine/baml-lib/jinja/Cargo.toml`, with the ""serde"" feature added to resolve deprecation warnings.
+*   **Object Trait Migration**:
+    *   `StructObject` was replaced with the new `Object` trait across `baml_value_to_jinja_value.rs`, `render_context.rs`, and `minijinja.rs`.
+    *   The `call` method signature was updated to `self: 
+<!-- ELLIPSIS_HIDDEN -->
+
+----
+
+> [!IMPORTANT]
+> Migrate from MiniJinja 1.x to 2.x, updating dependencies and adapting to API changes, including replacing `StructObject` with `Object` trait and updating method signatures.
+> 
+>   - **Dependency Update**:
+>     - Upgrade `minijinja` from 1.0.16 to 2.10.2 in `Cargo.toml` files.
+>     - Add `serde` feature to `minijinja` to resolve deprecation warnings.
+>   - **Object Trait Migration**:
+>     - Replace `StructObject` with `Object` trait in `minijinja.rs`, `baml_value_to_jinja_value.rs`, and `render_context.rs`.
+>     - Update `call` method signatures to use `self: &Arc<Self>`.
+>     - Implement `render` method for `Object` trait in `minijinja.rs`, `baml_value_to_jinja_value.rs`, and `output_format/mod.rs`.
+>   - **Code Adjustments**:
+>     - Handle `CallArg` variants in `expr.rs` and `pretty_print.rs`.
+>     - Update `parse_as_function_call` and `tracker_visit_expr` to handle new `minijinja` AST structures.
+>     - Modify `evaluate_type` tests to align with new syntax in `test_stmt.rs`.
+> 
+> <sup>This description was created by </sup>[<img alt=""Ellipsis"" src=""https://img.shields.io/badge/Ellipsis-blue?color=175173"">](https://www.ellipsis.dev?ref=BoundaryML%2Fbaml&utm_source=github&utm_medium=referral)<sup> for 0c832f2a454618fbcaacf94bb46efa5c6cfcaba6. You can [customize](https://app.ellipsis.dev/BoundaryML/settings/summaries) this summary. It will automatically update as commits are pushed.</sup>
+
+<!-- ELLIPSIS_HIDDEN -->"
+3138133342,8047,fix: return entity not found instead of missing project id,abuaboud,1812998,closed,2025-06-11T21:13:49Z,2025-06-11T21:25:43Z,2025-06-11T21:25:43Z,https://api.github.com/repos/activepieces/activepieces,https://github.com/activepieces/activepieces/pull/8047,"The `extractProjectIdOrThrow` method in `packages/server/api/src/app/core/security/authn/platform-api-key-authn-handler.ts` was updated to refine project ID extraction and error handling based on route parameters.
+
+*   **For routes containing an `:id` parameter**:
+    *   The method now attempts to extract the project ID from the resource.
+    *   If the resource is not found, `ErrorCode.ENTITY_NOT_FOUND` is thrown.
+    *   The `ENTITY_NOT_FOUND` error `params` now include `entityType` (the resource name) and `entityId` (the ID from the route), along with a descriptive message.
+*   **For routes without an `:id` parameter**:
+    *   The method attempts to extract the project ID directly from the request (body/query).
+    *   If the project ID is missing, `ErrorCode.VALIDATION` is thrown with a ""missing project id in request"" message.
+
+This change differentiates between resource not found errors and missing request parameter errors, providing more precise API responses."
+3138180288,7250,feat(cloud): 2-step sign in to make enterprise sso easier,marcklingen,2834609,closed,2025-06-11T21:38:41Z,2025-06-12T10:07:32Z,2025-06-12T10:07:32Z,https://api.github.com/repos/langfuse/langfuse,https://github.com/langfuse/langfuse/pull/7250,"A two-step sign-in flow was implemented in `web/src/pages/auth/sign-in.tsx`.
+
+*   The page now initially displays only an email input and a ""Continue"" button.
+*   Upon clicking ""Continue"", the `handleContinue` function validates the email and calls `/api/auth/check-sso` with the domain.
+    *   If an SSO provider is found, the user is immediately redirected to it.
+    *   Otherwise, the password input is revealed, and the button text changes to ""Sign in"", allowing for credential-based authentication.
+*   The explicit SSO button was removed, streamlining the UI.
+
+Further refinements were made:
+
+*   The logic was simplified
+<!-- ELLIPSIS_HIDDEN -->
+
+----
+
+> [!IMPORTANT]
+> Implements a two-step sign-in flow in `sign-in.tsx` to streamline SSO and credential-based authentication.
+> 
+>   - **Behavior**:
+>     - Implements two-step sign-in in `sign-in.tsx`: initially shows email input and ""Continue"" button.
+>     - `handleContinue` validates email, calls `/api/auth/check-sso`, redirects if SSO found, or shows password input.
+>     - Removes explicit SSO button, simplifying UI.
+>   - **Logic**:
+>     - Adds `handleContinue` function to manage email validation and SSO check.
+>     - Uses `setShowPasswordStep` to toggle password input visibility.
+>     - Handles network errors and edge cases gracefully.
+>   - **UI**:
+>     - Updates button text from ""Sign in"" to ""Continue"" initially, changes back if password input is shown.
+>     - Auto-focuses password input when revealed.
+> 
+> <sup>This description was created by </sup>[<img alt=""Ellipsis"" src=""https://img.shields.io/badge/Ellipsis-blue?color=175173"">](https://www.ellipsis.dev?ref=langfuse%2Flangfuse&utm_source=github&utm_medium=referral)<sup> for 6230b732f6a2aeff32b7535544b157099de711e3. You can [customize](https://app.ellipsis.dev/langfuse/settings/summaries) this summary. It will automatically update as commits are pushed.</sup>
+
+<!-- ELLIPSIS_HIDDEN -->"
+3138324128,504,Cursor Agent: Skip reading messages functionality,elie222,3090527,closed,2025-06-11T23:07:45Z,2025-06-12T07:33:34Z,2025-06-12T07:33:34Z,https://api.github.com/repos/elie222/inbox-zero,https://github.com/elie222/inbox-zero/pull/504,"The `BulkRunRules.tsx` file was updated to enable skipping of read messages during bulk rule processing.
+
+*   The `onRun` function's Gmail search query was modified to include the `is:unread` filter. This ensures that only unread emails are considered, effectively skipping messages that have already been read.
+*   Concurrently, the `SectionDescription` within `BulkRunRules.tsx` was updated to reflect this change, clarifying that the process now specifically targets ""unread emails.""
+
+This modification streamlines the bulk rule execution by focusing solely on new or unaddressed messages.
+
+<!-- This is an auto-generated comment: release notes by coderabbit.ai -->
+
+## Summary by CodeRabbit
+
+- **Bug Fixes**
+  - Updated the description in the bulk processing UI to clarify that rules apply only to unread emails currently in the inbox.
+  - Adjusted email selection to ensure only unread emails are processed during bulk actions.
+
+<!-- end of auto-generated comment: release notes by coderabbit.ai -->"
+3138324206,505,Cursor Agent: Process rules in parallel,elie222,3090527,closed,2025-06-11T23:07:48Z,2025-06-12T08:51:57Z,2025-06-12T08:51:57Z,https://api.github.com/repos/elie222/inbox-zero,https://github.com/elie222/inbox-zero/pull/505,"The `ProcessRules.tsx` file was modified to enable parallel processing of messages within the `handleRunAll` function.
+
+Key changes include:
+*   **Parallel Batch Processing**: Messages are now processed in parallel batches of 3 using `Promise.all()`. This significantly reduces the total processing time compared to sequential processing.
+*   **Configurable Batch Size**: A `BATCH_SIZE` constant (set to 3) was introduced, allowing easy adjustment of the parallel processing count to align with rate limits.
+*   **Pre-filtering**: Messages are filtered upfront into `messagesToProcess` to exclude already processed or handled thread messages, streamlining the processing loop.
+
+This approach improves performance by processing multiple messages concurrently while maintaining respect for API rate limits and preserving existing logic for stopping, deduplication, and error handling.
+
+<!-- This is an auto-generated comment: release notes by coderabbit.ai -->
+## Summary by CodeRabbit
+
+- **Refactor**
+  - Enhanced message processing to handle multiple messages simultaneously in batches of three, improving speed and efficiency while providing clear error notifications for any processing issues.
+- **Chores**
+  - Updated application version to v1.4.15.
+<!-- end of auto-generated comment: release notes by coderabbit.ai -->"
+3138534395,93402,feat(open-pr-comments): Golang Language Support,iamrajjoshi,33237075,closed,2025-06-12T02:01:39Z,2025-06-17T13:31:13Z,2025-06-17T13:31:13Z,https://api.github.com/repos/getsentry/sentry,https://github.com/getsentry/sentry/pull/93402,"Support for a Golang for Open PR Comments
+
+Co-authored by Cursor"
+3075375258,1594,wrong pr,yumc-afk,20719615,closed,2025-05-20T01:40:31Z,2025-05-20T01:42:08Z,,https://api.github.com/repos/volcengine/verl,https://github.com/volcengine/verl/pull/1594,"### Checklist Before Starting
+
+- [ ] Search for similar PR(s).
+
+### What does this PR do?
+
+> Add one-line overview of what this PR aims to achieve or accomplish. 
+
+### High-Level Design
+
+> Demonstrate the high-level design if this PR is complex.
+
+### Specific Changes
+
+> List the specific changes.
+
+### API
+
+> Demonstrate how the API changes if any.
+
+### Usage Example
+
+> Provide usage example(s) for easier usage.
+
+```python
+# Add code snippet or script demonstrating how to use this 
+```
+
+### Test
+
+> For changes that can not be tested by CI (e.g., algorithm implementation, new model support), validate by experiment(s) and show results like training curve plots, evaluatuion results, etc.
+
+### Additional Info.
+
+- **Issue Number**: Fixes issue # or discussion # if any.
+- **Training**: [Note which backend this PR will affect: FSDP, Megatron, both, or none]
+- **Inference**: [Note which backend this PR will affect: vLLM, SGLang, both, or none]
+
+### Checklist Before Submitting
+
+- [ ] Read the [Contribute Guide](https://github.com/volcengine/verl?tab=readme-ov-file#contribution-guide).
+- [ ] Apply [pre-commit checks](https://github.com/volcengine/verl?tab=readme-ov-file#code-linting-and-formatting).
+- [ ] Add `[BREAKING]` to the PR title if it breaks any API.
+- [ ] Update the documentation about your changes in the [docs](https://github.com/volcengine/verl/tree/main/docs).
+- [ ] Add CI test(s) if necessary.
+"
+3076171257,21925,Add upstream and downstream job details to streaming job view,xxchan,37948597,open,2025-05-20T08:32:30Z,,,https://api.github.com/repos/risingwavelabs/risingwave,https://github.com/risingwavelabs/risingwave/pull/21925,"I hereby agree to the terms of the [RisingWave Labs, Inc. Contributor License Agreement](https://raw.githubusercontent.com/risingwavelabs/risingwave/17af8a747593ebdbfa826691daf75bdab7d14fa0/.github/contributor-license-agreement.txt).
+
+
+
+## What's changed and what's your intention?
+fix #21913
+<!--
+
+**Please do not leave this empty!**
+
+Please explain **IN DETAIL** what the changes are in this PR and why they are needed:
+
+- Summarize your change (**mandatory**)
+- How does this PR work? Need a brief introduction for the changed logic (optional)
+- Describe clearly one logical change and avoid lazy messages (optional)
+- Describe any limitations of the current code (optional)
+- Refer to a related PR or issue link (optional)
+
+-->
+
+## Checklist
+
+- [ ] I have written necessary rustdoc comments.
+- [ ] <!-- OPTIONAL --> I have added necessary unit tests and integration tests.
+- [ ] <!-- OPTIONAL --> I have added test labels as necessary. <!-- See https://github.com/risingwavelabs/risingwave/blob/main/docs/developer-guide.md#ci-labels-guide) -->
+- [ ] <!-- OPTIONAL --> I have added fuzzing tests or opened an issue to track them. <!-- Recommended for new SQL features, see #7934 -->
+- [ ] <!-- OPTIONAL --> My PR contains breaking changes. <!-- If it deprecates some features, please create a tracking issue to remove them in the future -->
+- [ ] <!-- OPTIONAL --> My PR changes performance-critical code, so I will run (micro) benchmarks and present the results. <!-- To manually trigger a benchmark, please check out [Notion](https://www.notion.so/risingwave-labs/Manually-trigger-nexmark-performance-dashboard-test-b784f1eae1cf48889b2645d020b6b7d3). -->
+- [ ] <!-- OPTIONAL --> I have checked the [Release Timeline](https://github.com/risingwavelabs/rw-commits-history/blob/main/release_timeline.md) and [Currently Supported Versions](https://docs.risingwave.com/changelog/release-support-policy#support-end-dates-for-recent-releases) to determine which release branches I need to cherry-pick this PR into. <!-- Please check out the [details](https://github.com/risingwavelabs/risingwave/blob/main/CONTRIBUTING.md) -->
+
+
+## Documentation
+
+- [ ] <!-- OPTIONAL --> My PR needs documentation updates. <!-- Please use the **Release note** section below to summarize the impact on users -->
+
+<details>
+<summary><b>Release note</b></summary>
+
+<!--
+If this PR includes changes that directly affect users or other significant modifications relevant to the community, kindly draft a release note to provide a concise summary of these changes.
+
+Please prioritize highlighting the impact these changes will have on users.
+Discuss technical details in the ""What's changed"" section, and focus on the impact on users in the release note.
+
+You should also mention the environment or conditions where the impact may occur.
+-->
+
+</details>
+"
+3127601737,11523,[Docs] - Add section on using all models with /v1/messages,ishaan-jaff,29436595,closed,2025-06-07T22:19:10Z,2025-06-07T22:24:14Z,2025-06-07T22:24:14Z,https://api.github.com/repos/BerriAI/litellm,https://github.com/BerriAI/litellm/pull/11523,
+3128356528,1067,fix: memory leak in createPattern,Brooooooklyn,3468483,closed,2025-06-08T13:31:29Z,2025-06-08T14:41:54Z,2025-06-08T14:41:54Z,https://api.github.com/repos/Brooooooklyn/canvas,https://github.com/Brooooooklyn/canvas/pull/1067,"- Partial fix #1055
+
+The loadImage seems like still leak, let's fix it in another pr
+"
+3128413591,20265,Introduce ahead of time bundling for HTML imports with `bun build`,Jarred-Sumner,709451,closed,2025-06-08T14:48:30Z,2025-06-11T04:26:01Z,2025-06-11T04:26:01Z,https://api.github.com/repos/oven-sh/bun,https://github.com/oven-sh/bun/pull/20265,"### What does this PR do?
+
+This + #20198 will fix #17653
+
+The HTML becomes a manifest object like this:
+```json
+{
+  ""index"": ""./index.html"",
+  ""files"": [
+    {
+      ""input"": ""index.html"",
+      ""path"": ""./index-f2me3qnf.js"",
+      ""loader"": ""js"",
+      ""isEntry"": true,
+      ""headers"": {
+        ""etag"": ""eet6gn75"",
+        ""content-type"": ""text/javascript;charset=utf-8""
+      }
+    },
+    {
+      ""input"": ""index.html"",
+      ""path"": ""./index.html"",
+      ""loader"": ""html"",
+      ""isEntry"": true,
+      ""headers"": {
+        ""etag"": ""r9njjakd"",
+        ""content-type"": ""text/html;charset=utf-8""
+      }
+    },
+    {
+      ""input"": ""index.html"",
+      ""path"": ""./index-gysa5fmk.css"",
+      ""loader"": ""css"",
+      ""isEntry"": true,
+      ""headers"": {
+        ""etag"": ""50zb7x61"",
+        ""content-type"": ""text/css;charset=utf-8""
+      }
+    }
+  ]
+}
+```
+
+### How did you verify your code works?
+
+There are tests."
+3128477850,4989,fix: A bug was addressed where CEL queries in the URL were not preserved on page reload.,talboren,68807791,closed,2025-06-08T15:53:17Z,2025-06-09T08:13:07Z,,https://api.github.com/repos/keephq/keep,https://github.com/keephq/keep/pull/4989,"Close #4982 
+
+A bug was addressed where CEL queries in the URL were not preserved on page reload.
+
+The `useCelState` hook in `keep-ui/features/cel-input/use-cel-state.ts` was modified:
+*   `useEffect` cleanup now prevents the `cel` query parameter from being removed on initial page load.
+*   Cleanup logic was refined to only trigger when the pathname genuinely changes during navigation, not on component re-renders or initial mount.
+*   The `router` object was added to the dependency array of the `useEffect` responsible for updating the URL.
+
+The `AlertsRulesBuilder` component in `keep-ui/features/presets/presets-manager/ui/alerts-rules-builder.tsx` was updated:
+*   The `useCelState` hook now prioritizes the `cel` query parameter from the URL over the preset's default CEL rules when initializing the state.
+
+A failing test in `keep-ui/features/cel-input/__tests__/use-cel-state.test.ts` was updated to reflect the new, correct behavior of the `useCelState` hook, where cleanup does not occur immediately on a pathname change.
+
+These changes ensure CEL query parameters persist in the URL across page reloads, allowing filtered views to be shared and bookmarked."
+3152882125,2563,chore(repo): keep vscode & intellij telemetry in sync via target,MaxKless,34165455,closed,2025-06-17T10:00:47Z,2025-06-17T12:27:03Z,2025-06-17T12:27:03Z,https://api.github.com/repos/nrwl/nx-console,https://github.com/nrwl/nx-console/pull/2563,"A new telemetry event synchronization checker was implemented to ensure consistency between TypeScript and Kotlin implementations.
+
+*   A new script, `tools/scripts/check-telemetry-sync.js`, was created.
+    *   It reads `libs/shared/telemetry/src/lib/telemetry-types.ts` and `apps/intellij/src/main/kotlin/dev/nx/console/telemetry/TelemetryTypes.kt`.
+    *   It extracts and compares telemetry event strings using regex, reporting any discrepancies.
+    *   The script exits with code 0 on synchronization and 1 otherwise, suitable for CI.
+*   An Nx target, `telemetry-check`, was added to the root to run the script via `node tools/scripts/check-telemetry-sync.js`.
+*   Thirteen missing telemetry events (e.g., `ai.chat-message`, `cloud.view-run`) were added to `apps/intellij/src/main/kotlin/dev/nx/console/telemetry/TelemetryTypes.kt` to achieve synchronization.
+*   The CI workflow `.github/workflows/ci_checks.yml` was updated to include the new `telemetry-check` target to enforce synchronization in the pipeline.
+
+These changes ensure that telemetry events are consistently defined across both platforms and that any future desynchronization will be caught by CI."
+3153069820,1009,Replace session key in cache integration with placeholder,cleptric,6617432,open,2025-06-17T11:02:41Z,,,https://api.github.com/repos/getsentry/sentry-laravel,https://github.com/getsentry/sentry-laravel/pull/1009,"A fix was implemented to prevent session keys from appearing as cache keys in Sentry's session overview.
+
+*   Three new private methods were added to `src/Sentry/Laravel/Features/CacheIntegration.php`:
+    *   `isSessionKey(string $key): bool` determines if a given cache key matches the current session ID, handling prefixed keys and ensuring sessions are not prematurely started.
+    *   `replaceSessionKey(string $key): string` replaces a detected session key with the placeholder `{sessionKey}`.
+    *   `replaceSessionKeys(array $keys): array` applies the replacement logic to arrays of keys.
+*   Existing event handlers in `src/Sentry/Laravel/Features/CacheIntegration.php` were updated to utilize these new methods:
+    *   `handleCacheEventsForBreadcrumbs` now replaces session keys in breadcrumb messages.
+    *   `handleCacheEventsForTracing` replaces session keys in span descriptions and `cache.key` data for `cache.get`, `cache.put`, and `cache.remove` operations.
+    *   `handleRedisCommands` also applies the replacement to Redis command descriptions and parameters.
+*   Comprehensive tests were added to `test/Sentry/Features/CacheIntegrationTest.php` to verify session key replacement in breadcrumbs and spans, and to confirm that the integration does not prematurely start sessions.
+
+This ensures session IDs are consistently anonymized as `{sessionKey}` in Sentry data, improving readability and privacy."
+3153308695,12675,Improve seeds,FelixMalfait,6399865,closed,2025-06-17T12:23:04Z,2025-06-17T13:25:05Z,2025-06-17T13:25:05Z,https://api.github.com/repos/twentyhq/twenty,https://github.com/twentyhq/twenty/pull/12675,"- Add seeds for notes/tasks
+- Adds account manager to companies
+- A companies and phone numbers to people
+- Add many more opportunities
+
+TODO: add timeline activities"
+3153713806,8537,Update cursor environment for submodules,ChmaraX,32128755,closed,2025-06-17T14:26:27Z,2025-06-17T14:26:41Z,2025-06-17T14:26:41Z,https://api.github.com/repos/novuhq/novu,https://github.com/novuhq/novu/pull/8537,"The `.cursor/environment.json` file was modified to address missing submodules.
+
+The `install` script was updated:
+*   **Before**: `""install"": ""pnpm install "
+3153748109,5050,fix(api): resolve ticket and implement unit tests,shahargl,12069200,closed,2025-06-17T14:36:56Z,2025-06-19T06:47:31Z,,https://api.github.com/repos/keephq/keep,https://github.com/keephq/keep/pull/5050,"close https://github.com/keephq/keep/issues/5047
+
+The core issue https://github.com/keephq/keep/issues/5047 involved CEL filters failing to return alerts with `dismissed: false` after their `dismissedUntil` period expired. This occurred because SQL-based CEL filtering directly queried raw database values, bypassing the `AlertDto` validation that correctly handles dismissal expiration.
+
+The fix introduced a `cleanup_expired_dismissals()` function in `keep/api/core/db.py`. This function updates the database, setting `dismissed=false` for alerts where `dismissedUntil` has passed. This ensures SQL queries reflect the correct dismissal status. The cleanup is now exclusively called within `query_last_alerts()` in `keep/api/core/alerts.py`. A previous duplicate call in `keep/searchengine/searchengine.py` was removed to ensure cleanup occurs only once at the lowest query level, preventing redundant operations.
+
+Comprehensive testing was added in `tests/test_expired_dismissal_cel_fix_enhanced.py` using `freezegun` to simulate time progression, verifying the fix across various expiration scenarios, API integration, and edge cases. The `test_fix_demo.py` script was also updated for standalone verification.
+
+Redundant code from an initial misunderstanding was removed:
+*   RSS-related functions (`_generate_rss_feed`, `get_preset_rss_feed`) and an unused `escape` import were removed from `keep/api/routes/preset.py`.
+*   The `tests/test_rss_feed.py` file was deleted.
+*   Documentation files (`EXPIRED_DISMISSAL_FIX_SUMMARY.md`, `FINAL_COMPLETION_SUMMARY.md`) and `test_fix_demo.py` were moved to the `tests/` directory for better organization."
+3153749441,4487,[vibe in progress] Migrate to inline type annotations,sl0thentr0py,6536764,open,2025-06-17T14:37:23Z,,,https://api.github.com/repos/getsentry/sentry-python,https://github.com/getsentry/sentry-python/pull/4487,"The codebase was migrated from comment-based to inline type annotations following PEP 484. This involved:
+
+*   **Core SDK files:** `sentry_sdk/session.py`, `sentry_sdk/feature_flags.py`, `sentry_sdk/_lru_cache.py`, `sentry_sdk/_werkzeug.py`, `sentry_sdk/logger.py`, `sentry_sdk/worker.py`, `sentry_sdk/scrubber.py`, `sentry_sdk/monitor.py`, `sentry_sdk/_log_batcher.py`, `sentry_sdk/client.py`, and `sentry_sdk/tracing.py` were fully migrated. `sentry_sdk/serializer.py` was intentionally skipped due to its complexity.
+*   **Integration files:** 16 major integration files were migrated, including `sentry_sdk/integrations/trytond.py`, `sentry_sdk/integrations/typer.py`, `sentry_sdk/integrations/statsig.py`, `sentry_sdk/integrations/unleash.py`, `sentry_sdk/integrations/serverless.py`, `sentry_sdk/integrations/socket.py`, `sentry_sdk/integrations/atexit.py`, `sentry_sdk/integrations/pure_eval.py`, `sentry_sdk/integrations/graphene.py`, `sentry_sdk/integrations/fastapi.py`, `sentry_sdk/integrations/chalice.py`, `sentry_sdk/integrations/quart.py`, `sentry_sdk/integrations/beam.py`, `sentry_sdk/integrations/langchain.py`, `sentry_sdk/integrations/asgi.py`, `sentry_sdk/integrations/flask.py`, and `sentry_sdk/integrations/aws_lambda.py`.
+*   **Migration tooling:** `scripts/migrate_type_annotations.py` was created for automated conversions and analysis. `MIGRATION_GUIDE.md` and `MIGRATION_STATUS.md` were added for documentation and progress tracking.
+*   **Correction:** An initial unintended functional change in `sentry_sdk/feature_flags.py` was reverted to ensure strict adherence to type annotation migration.
+
+The changes standardize type hinting, improving IDE support, type safety, and developer experience across the core SDK and key integrations."
+3153752896,8538,fix(api-service): Make all fields nullable in subscriber response fixes NV-6136,scopsy,8872447,closed,2025-06-17T14:38:30Z,2025-06-17T15:26:00Z,2025-06-17T15:25:59Z,https://api.github.com/repos/novuhq/novu,https://github.com/novuhq/novu/pull/8538,"The `SubscriberResponseDtoOptional` class in `apps/api/src/app/subscribers/dtos/subscriber-response.dto.ts` was updated to make all fields nullable.
+
+This change was implemented to:
+*   Align the `SubscriberResponseDto` with the `CreateSubscriberDto` structure, particularly `CreateSubscriberDtoV2`, which allows fields to be explicitly `null`.
+*   Address an issue where the SDK threw errors when retrieving subscriber data if optional fields were stored as `null` in the database, as the response DTO did not previously account for `null` values.
+
+The following modifications were made:
+*   `nullable: true` was added to all `@ApiProperty` and `@ApiPropertyOptional` decorators for relevant fields.
+*   TypeScript types for these fields were updated from `type?` to `type | null`.
+
+Fields affected include `_id`, `firstName`, `lastName`, `email`, `phone`, `avatar`, `locale`, `channels`, `topics`, `isOnline`, `lastOnlineAt`, `__v`, `data`, and `timezone`. Required fields in the base `SubscriberResponseDto` remain unchanged."
+3154088521,93709,feat(release): Remove `release-bubbles-ui `feature flag ,billyvg,79684,closed,2025-06-17T16:26:41Z,2025-06-17T18:49:24Z,2025-06-17T18:49:24Z,https://api.github.com/repos/getsentry/sentry,https://github.com/getsentry/sentry/pull/93709,"The `release-bubbles-ui` feature flag has been removed from the frontend codebase, enabling its functionality by default across various components.
+
+Changes include:
+*   In `static/app/components/replays/releaseDropdownFilter.tsx` and `static/app/components/version.tsx`, navigation to release details consistently uses `makeReleaseDrawerPathname`, removing the conditional check for the feature flag.
+*   `static/app/views/dashboards/widgets/timeSeriesWidget/timeSeriesWidgetVisualization.tsx` and `static/app/views/issueDetails/streamline/eventGraph.tsx` no longer check the feature flag to determine if release bubbles should be shown.
+*   `static/app/views/insights/common/components/insightsTimeSeriesWidget.tsx`, `static/app/views/insights/pages/platform/shared/getReleaseBubbleProps.tsx`, and `static/app/views/performance/transactionSummary/transactionOverview/useWidgetChartVisualization.tsx` now always pass props to enable release bubbles.
+*   `static/app/views/releases/releaseBubbles/useReleaseBubbles.tsx` no longer relies on the feature flag for creating release buckets.
+*   Unused imports, such as `useOrganization` and `makeReleasesPathname`, were removed, and conditional logic was simplified.
+
+The frontend now consistently displays the modern release bubbles UI and uses the new release drawer. The backend feature flag definition was explicitly left unchanged."
+3154285356,93728,feat(release): Remove `release-bubbles-ui` feature flag,billyvg,79684,closed,2025-06-17T17:46:07Z,2025-06-17T20:37:56Z,2025-06-17T20:37:56Z,https://api.github.com/repos/getsentry/sentry,https://github.com/getsentry/sentry/pull/93728,The `organizations:release-bubbles-ui` feature flag registration was removed from `sentry/src/sentry/features/temporary.py`. This change was made as the feature is fully released and the flag is no longer needed.
+3154800493,9692,Fix health check logging issue,siggisim,1704556,open,2025-06-17T21:21:55Z,,,https://api.github.com/repos/buildbuddy-io/buildbuddy,https://github.com/buildbuddy-io/buildbuddy/pull/9692,"The `HealthChecker` in test environments was causing excessive logging due to background goroutines.
+
+*   In `server/testutil/testenv/testenv.go`, the `healthcheck.NewHealthChecker` instance was replaced with `testhealthcheck.NewTestingHealthChecker()`. This prevents the real `HealthChecker`'s background goroutines from running during tests, eliminating unwanted log messages.
+*   The `server/testutil/testhealthcheck/testhealthcheck.go` file was updated. The `TestingHealthChecker.WaitForGracefulShutdown()` method, which previously blocked indefinitely, now uses a `shutdownCh` for proper, non-blocking graceful shutdown. A `Shutdown()` method was added to close this channel safely.
+*   The `server/testutil/testenv/BUILD` file was updated to include the `//server/testutil/testhealthcheck` dependency.
+*   All modified Go files were formatted using `gofmt`.
+*   A test confirmed the fix by demonstrating that the `TestingHealthChecker` creates zero background goroutines, unlike the real `HealthChecker`.
+
+This ensures tests run without extraneous health check logs and shut down cleanly."
+3155923412,1058,Cursor/fix send button reset issue 8f98,macjavs,202744196,closed,2025-06-18T08:14:04Z,2025-06-18T08:51:54Z,,https://api.github.com/repos/vercel/ai-chatbot,https://github.com/vercel/ai-chatbot/pull/1058,Cursor/fix send button reset issue
+3156267045,8546,Fix node command flag errors,ChmaraX,32128755,closed,2025-06-18T10:06:35Z,2025-06-18T10:06:42Z,2025-06-18T10:06:42Z,https://api.github.com/repos/novuhq/novu,https://github.com/novuhq/novu/pull/8546,"The `NODE_OPTIONS` environment variable was removed from `.cursor/Dockerfile`.
+
+Initially, the intention was to fix a flag duplication error (`--max-old-space-size=4096--max-old-space-size=4096`) by removing quotes from the `NODE_OPTIONS` value, as they were suspected to cause concatenation issues.
+
+Following user feedback, the entire `NODE_OPTIONS` environment variable, which included `--max-old-space-size=4096`, was removed from the Dockerfile. This completely eliminates the source of the flag duplication and allows Node.js to operate with its default memory management settings, resolving the `illegal value for flag` error."
+3156345426,8548,feat(dashboard): Add button for API key regeneration fixes NV-6142,scopsy,8872447,closed,2025-06-18T10:32:59Z,2025-06-19T10:57:00Z,2025-06-19T10:57:00Z,https://api.github.com/repos/novuhq/novu,https://github.com/novuhq/novu/pull/8548,"https://www.loom.com/share/3ab664116ccb45c291b4a02f7d119798
+
+API key regeneration functionality was added to the environments page.
+
+*   A `regenerateApiKeys()` function was added to `apps/dashboard/src/api/environments.ts` to call the existing API endpoint.
+*   A `useRegenerateApiKeys()` React Query hook was created in `apps/dashboard/src/hooks/use-fetch-api-keys.ts` to handle the mutation and invalidate API key queries on success.
+*   A new `RegenerateApiKeysDialog` component was introduced in `apps/dashboard/src/components/regenerate-api-keys-dialog.tsx`. This dialog requires users to type the environment name for confirmation, ensuring consistency with existing platform dialogs.
+*   The `SettingField` component, used within `apps/dashboard/src/pages/api-keys.tsx`, was enhanced to display a ""Regenerate API Key"" button next to the Secret Key field.
+*   The button uses the `RiLoopRightFill` icon and includes a tooltip.
+*   Permission checks using `PermissionsEnum.API_KEY_WRITE` ensure the button is only visible to authorized users.
+*   Success/error toasts and loading states were integrated for improved user experience."
+3105305807,2538,test(nx-mcp): add tests for cloud tools being available,MaxKless,34165455,closed,2025-05-31T10:45:16Z,2025-06-17T11:28:18Z,,https://api.github.com/repos/nrwl/nx-console,https://github.com/nrwl/nx-console/pull/2538,
+3111841315,492,Add Git web worker for background isomorphic-git operations,colebemis,4608155,closed,2025-06-02T22:42:30Z,2025-06-02T22:57:29Z,,https://api.github.com/repos/lumen-notes/lumen,https://github.com/lumen-notes/lumen/pull/492,
+3113874849,22088,fix: ALTER SOURCE ... REFRESH SCHEMA for source with generated columns,xxchan,37948597,closed,2025-06-03T12:59:59Z,2025-06-04T06:51:04Z,2025-06-04T06:51:04Z,https://api.github.com/repos/risingwavelabs/risingwave,https://github.com/risingwavelabs/risingwave/pull/22088,"fix  #21485
+
+I hereby agree to the terms of the [RisingWave Labs, Inc. Contributor License Agreement](https://raw.githubusercontent.com/risingwavelabs/risingwave/17af8a747593ebdbfa826691daf75bdab7d14fa0/.github/contributor-license-agreement.txt).
+
+
+
+## What's changed and what's your intention?
+
+<!--
+
+**Please do not leave this empty!**
+
+Please explain **IN DETAIL** what the changes are in this PR and why they are needed:
+
+- Summarize your change (**mandatory**)
+- How does this PR work? Need a brief introduction for the changed logic (optional)
+- Describe clearly one logical change and avoid lazy messages (optional)
+- Describe any limitations of the current code (optional)
+- Refer to a related PR or issue link (optional)
+
+-->
+
+## Checklist
+
+- [ ] I have written necessary rustdoc comments.
+- [ ] <!-- OPTIONAL --> I have added necessary unit tests and integration tests.
+- [ ] <!-- OPTIONAL --> I have added test labels as necessary. <!-- See https://github.com/risingwavelabs/risingwave/blob/main/docs/developer-guide.md#ci-labels-guide) -->
+- [ ] <!-- OPTIONAL --> I have added fuzzing tests or opened an issue to track them. <!-- Recommended for new SQL features, see #7934 -->
+- [ ] <!-- OPTIONAL --> My PR contains breaking changes. <!-- If it deprecates some features, please create a tracking issue to remove them in the future -->
+- [ ] <!-- OPTIONAL --> My PR changes performance-critical code, so I will run (micro) benchmarks and present the results. <!-- To manually trigger a benchmark, please check out [Notion](https://www.notion.so/risingwave-labs/Manually-trigger-nexmark-performance-dashboard-test-b784f1eae1cf48889b2645d020b6b7d3). -->
+- [ ] <!-- OPTIONAL --> I have checked the [Release Timeline](https://github.com/risingwavelabs/rw-commits-history/blob/main/release_timeline.md) and [Currently Supported Versions](https://docs.risingwave.com/changelog/release-support-policy#support-end-dates-for-recent-releases) to determine which release branches I need to cherry-pick this PR into. <!-- Please check out the [details](https://github.com/risingwavelabs/risingwave/blob/main/CONTRIBUTING.md) -->
+
+
+## Documentation
+
+- [ ] <!-- OPTIONAL --> My PR needs documentation updates. <!-- Please use the **Release note** section below to summarize the impact on users -->
+
+<details>
+<summary><b>Release note</b></summary>
+
+<!--
+If this PR includes changes that directly affect users or other significant modifications relevant to the community, kindly draft a release note to provide a concise summary of these changes.
+
+Please prioritize highlighting the impact these changes will have on users.
+Discuss technical details in the ""What's changed"" section, and focus on the impact on users in the release note.
+
+You should also mention the environment or conditions where the impact may occur.
+-->
+
+</details>
+"
+3117811205,8443,fix(root): update dset package to resolve prototype pollution vulnerability,cursor[bot],206951365,closed,2025-06-04T13:17:55Z,2025-06-04T16:33:10Z,2025-06-04T16:33:10Z,https://api.github.com/repos/novuhq/novu,https://github.com/novuhq/novu/pull/8443,"## Security Fix: dset Prototype Pollution Vulnerability
+
+### Overview
+Resolves prototype pollution vulnerability in dset package (versions < 3.1.4).
+
+### Changes Made
+- Updated `@segment/analytics-next` to `^1.81.0` in:
+  - `apps/web/package.json`
+  - `apps/dashboard/package.json` 
+  - `libs/design-system/package.json`
+- Updated `react-scanner` to `^1.2.0` in `libs/novui/package.json`
+
+### Security Details
+- **Vulnerability:** Prototype Pollution in dset < 3.1.4
+- **Fix:** All dset dependencies now use secure version 3.1.4
+- **Approach:** Minimal targeted updates, no unrelated package changes
+
+### Verification
+- ✅ No vulnerable `dset@3.1.2` instances remain
+- ✅ All `dset` dependencies use patched version `3.1.4`
+- ✅ Only necessary packages updated
+
+See `SECURITY_FIX_SUMMARY.md` for detailed analysis."
+3148054400,5132,🛠️ Fix: Resolve All Compiler Errors in Quickswap Plugin Test Suite,monilpat,15067321,closed,2025-06-15T20:48:04Z,2025-06-18T17:52:08Z,,https://api.github.com/repos/elizaOS/eliza,https://github.com/elizaOS/eliza/pull/5132,"## 📋 Summary
+
+This PR comprehensively fixes **all** TypeScript compilation errors in the Quickswap plugin, addressing both core function signature incompatibilities and type safety issues across the entire test suite.
+
+## 🚨 Issues Resolved
+
+### 1. **Core Function Signature Compatibility** 
+- **File:** `packages/plugin-quickswap/src/utils/llmHelpers.ts`
+- **Issue:** `composePromptFromState` function using outdated API signature
+- **Impact:** Prevented template rendering and LLM parameter extraction
+
+### 2. **UUID Type Safety Violations**
+- **Files:** All 11 test files in `src/actions/__tests__/`
+- **Issue:** Unsafe `as any` type casting for UUID fields
+- **Impact:** Loss of type safety and potential runtime errors
+
+## 🔧 Technical Changes
+
+### **Core Function Fix**
+```typescript
+// ❌ BEFORE: Incorrect signature
+const prompt = composePromptFromState(template, { ... });
+
+// ✅ AFTER: Correct object parameter format  
+const prompt = composePromptFromState({
+  state: { ... },
+  template,
+});
+```
+
+### **UUID Type Compliance**
+```typescript
+// ❌ BEFORE: Type unsafe
+entityId: 'user-id' as any,
+roomId: 'room-id' as any,
+
+// ✅ AFTER: Proper UUID template literal type
+entityId: 'user-id-1234-5678-9abc-def012345678' as `${string}-${string}-${string}-${string}-${string}`,
+roomId: 'room-id-1234-5678-9abc-def012345678' as `${string}-${string}-${string}-${string}-${string}`,
+```
+
+## 📁 Files Modified (12 Total)
+
+### **Core Infrastructure**
+- `src/utils/llmHelpers.ts` - Fixed function signature compatibility
+
+### **Test Suite (11 files)**
+- `src/actions/__tests__/addLiquidity.test.ts`
+- `src/actions/__tests__/calculateLiquidityValue.test.ts`
+- `src/actions/__tests__/calculateMidPrice.test.ts`
+- `src/actions/__tests__/calculatePriceImpact.test.ts`
+- `src/actions/__tests__/calculateTokenPrice.test.ts`
+- `src/actions/__tests__/claimFarmingRewards.test.ts`
+- `src/actions/__tests__/executeLimitOrderStopLossTakeProfit.test.ts`
+- `src/actions/__tests__/getFarmingPoolDetails.test.ts`
+- `src/actions/__tests__/getTransactionStatus.test.ts`
+- `src/actions/__tests__/removeLiquidity.test.ts`
+- `src/actions/__tests__/swapTokens.test.ts`
+
+## 🎯 Impact & Benefits
+
+### ✅ **Immediate Fixes**
+- **Zero TypeScript compilation errors**
+- **Full type safety across test suite**
+- **ElizaOS core v1.0+ API compatibility**
+- **Proper template placeholder support**
+
+### 🚀 **Quality Improvements**
+- **Type Safety:** Eliminated all `as any` casts
+- **Maintainability:** Consistent UUID handling
+- **Compatibility:** Updated to latest core API
+- **Reliability:** Proper interface compliance
+
+### 🔧 **Test Coverage**
+Comprehensive test suite covering all Quickswap DeFi operations:
+- **💧 Liquidity Management:** Add/Remove liquidity operations
+- **📊 Price Calculations:** Mid price, token price, price impact estimation  
+- **🔄 Trading Operations:** Token swaps, limit orders, stop-loss/take-profit
+- **🌾 DeFi Features:** Farming rewards, pool details, gas estimation
+- **📈 Transaction Monitoring:** Status checking and validation
+
+## 🧪 Testing Status
+
+- ✅ **Compilation:** All files compile without errors
+- ✅ **Type Checking:** Zero TypeScript violations  
+- ✅ **Test Structure:** All test cases preserved and functional
+- ✅ **Mock Objects:** Properly typed and structured
+- ✅ **CI/CD Ready:** Ready for automated testing pipeline
+
+## 🔄 Commits Included
+
+1. **feat: Fix composePromptFromState function signature in llmHelpers**
+   - Updated function call to use correct object parameter format
+   - Fixed state structure for template placeholders
+
+2. **feat: Fix UUID type issues across all test files**
+   - Replaced unsafe `as any` casts with proper UUID types
+   - Updated entityId and roomId to use correct template literal types
+
+## 🏗️ Architecture Impact
+
+This PR ensures the Quickswap plugin is:
+- **🔗 Compatible** with ElizaOS core framework
+- **🛡️ Type-safe** throughout the codebase  
+- **🧪 Testable** with comprehensive test coverage
+- **⚡ Ready** for integration with the wider Polygon ecosystem
+
+## 📦 Deployment Notes
+
+- **Breaking Changes:** None - purely fixes existing code
+- **Dependencies:** No new dependencies added
+- **Configuration:** No configuration changes required
+- **Migration:** No migration steps needed
+
+---
+
+**🎉 Result:** The Quickswap plugin now has a **100% compile-ready** test suite with comprehensive DeFi operation coverage, full type safety, and complete compatibility with the ElizaOS core framework!"
+3148285881,15,Cursor/update web app template and rules 0c0c,symphonia-ai,138552571,open,2025-06-16T01:43:21Z,,,https://api.github.com/repos/mckaywrigley/mckays-app-template,https://github.com/mckaywrigley/mckays-app-template/pull/15,
+3148367585,20419,`bun pm view` -> `bun info`,Jarred-Sumner,709451,closed,2025-06-16T02:48:33Z,2025-06-17T20:31:17Z,2025-06-17T20:31:17Z,https://api.github.com/repos/oven-sh/bun,https://github.com/oven-sh/bun/pull/20419,"### What does this PR do?
+
+`bun pm view` -> `bun info`
+
+Keeps `bun pm view` as an alias so it doesn't break any code.
+
+### How did you verify your code works?
+
+Ran `bun info`. "
+3149341709,4474,feat(sessions): Add top-level start- and end session methods,szokeasaurusrex,7881302,closed,2025-06-16T09:59:32Z,2025-06-24T15:30:31Z,2025-06-24T15:30:31Z,https://api.github.com/repos/getsentry/sentry-python,https://github.com/getsentry/sentry-python/pull/4474,"Closes #4473.
+"
+3150026775,4476,fix(langchain): Make `span_map` an instance variable,szokeasaurusrex,7881302,open,2025-06-16T13:29:06Z,,,https://api.github.com/repos/getsentry/sentry-python,https://github.com/getsentry/sentry-python/pull/4476,"`span_map` should be an instance variable; otherwise, separate instances of the `SentryLangchainCallback` share the same `span_map` object, which is clearly not intended here.
+
+Also, remove the `max_span_map_size` class variable, it is always set on the instance, and so not needed.
+
+Ref #4443"
+3150351692,4288,Open PR to fix Sentry issue 4262,bruno-garcia,1633368,open,2025-06-16T15:02:01Z,,,https://api.github.com/repos/getsentry/sentry-dotnet,https://github.com/getsentry/sentry-dotnet/pull/4288,"To address false positives in blocking detection, `Task.Run` calls within the Sentry .NET SDK were wrapped with `using (new SuppressBlockingDetection())`. This prevents the SDK's internal background operations from being incorrectly reported as blocking issues, while maintaining detection for user code.
+
+Changes were applied to:
+*   `src/Sentry/Internal/BackgroundWorker.cs`: Wrapped the `Task.Run(DoWorkAsync)` call.
+*   `src/Sentry/Internal/Http/CachingTransport.cs`: Wrapped `Task.Run(CachedTransportBackgroundTaskAsync)`.
+*   `src/Sentry/Internal/GarbageCollectionMonitor.cs`: Wrapped the `Task.Run(() => MonitorGarbageCollection...)` call.
+*   `src/Sentry/Internal/ProcessInfo.cs`: Wrapped the `Task.Run(...)` for precise startup time.
+*   `src/Sentry.Profiling/SamplingTransactionProfilerFactory.cs`: Wrapped the `Task.Run(async () => ...)` for profiler session.
+
+A new test, `Ctor_SuppressesBlockingDetection_WhenCreatingTask`, was added to `test/Sentry.Tests/Internals/BackgroundWorkerTests.cs` to verify that `SuppressBlockingDetection` is correctly applied and restored during task creation."
+3129474936,1514,Bind tab selection to URL path,RockChinQ,45992437,closed,2025-06-09T07:43:39Z,2025-06-09T07:49:59Z,,https://api.github.com/repos/RockChinQ/LangBot,https://github.com/RockChinQ/LangBot/pull/1514,"The `web/src/app/home/plugins/page.tsx` file was modified to persist the selected tab across page refreshes by binding the tab state to URL query parameters.
+
+Key changes include:
+*   Imported `useSearchParams` and `useRouter` from `next/navigation`.
+*   The `currentTab` state is now derived from the `tab` query parameter in the URL using `searchParams.get('tab')`, defaulting to 'installed' if not present.
+*   A `handleTabChange` function was introduced to update the URL's `tab` query parameter whenever a tab is switched, utilizing `router.push()`.
+*   The `<Tabs>` component's `defaultValue` prop was replaced with `value={currentTab}` to control the active tab based on the URL.
+*   An `onValueChange={handleTabChange}` prop was added to the `<Tabs>` component to trigger URL updates upon tab selection.
+
+This ensures that the selected tab is reflected in the URL and persists when the page is refreshed, also enabling direct navigation to specific tabs via URL."
+3130352220,20279,"For debug builds on macOS, add heap allocation counter for Zig",Jarred-Sumner,709451,open,2025-06-09T13:41:34Z,,,https://api.github.com/repos/oven-sh/bun,https://github.com/oven-sh/bun/pull/20279,"This adds a ""zig"" object to `heapStats` in `bun:jsc` that reports a counter for how many of what types are allocated for tracking in debug builds. 
+
+It does this without allocating memory itself (allowing it to be threadsafe, without needing locks and without making debug builds meaningfully slower) by exporting a u64 for each type to a section to the output binary named `__DATA,BUNHEAPCNT` and then at runtime, we loop through all the symbol from the current macho executable in that section and derefence the pointers to get the active count.
+
+The current malloc heap breakdown implementation reports a single ""asan"" zone which makes it not useful for seeing the counts. Also, malloc zones keep some extra bytes around which makes it hard to know if those bytes are for malloc_zone's own state or for our types.
+
+Unlike the JSC mechanism for this it will report non-GC memory."
+3130631260,4993,feat(ui): Cursor implement feature from GitHub ticket 6dd6,shahargl,12069200,closed,2025-06-09T15:20:53Z,2025-06-09T16:25:10Z,,https://api.github.com/repos/keephq/keep,https://github.com/keephq/keep/pull/4993,close https://github.com/keephq/keep/issues/4784
+3130792767,4994,"feat(ui): add ""Collapse all"" and ""Expand all"" to group by on alerts table",shahargl,12069200,closed,2025-06-09T16:25:40Z,2025-06-10T07:38:47Z,2025-06-10T07:38:47Z,https://api.github.com/repos/keephq/keep,https://github.com/keephq/keep/pull/4994,"close https://github.com/keephq/keep/issues/4784
+
+https://github.com/user-attachments/assets/629d9536-8347-43b8-997c-9638f648b2e3
+
+
+A ""Collapse All"" feature for grouped alerts was implemented.
+
+*   A new hook, `useGroupExpansion.ts`, was created to centrally manage group expansion states, providing `toggleAll`, `areAllGroupsExpanded`, and `initializeGroup` functions.
+*   `alert-grouped-row.tsx` was modified to accept `isExpanded`, `onToggleExpanded`, and `onGroupInitialized` props, enabling external control of group state.
+*   `alerts-table-body.tsx` was updated to utilize this hook and pass the expansion state to `GroupedRow` components.
+*   The UI was refined from two separate buttons to a single toggle button in `alert-preset-manager.tsx`. This button dynamically displays ""Collapse All"" or ""Expand All"" based on the group's current state and is only visible when grouping is active.
+*   Styling and alignment were adjusted by setting `size=""sm""`, `color=""orange""`, and `className=""ml-2""` for consistency with other toolbar buttons.
+*   The button was then moved into `alert-preset-manager.tsx` for better component organization, requiring `alert-table.tsx` and `alert-table-server-side.tsx` to pass the necessary props.
+*   Accidental layout changes in `alert-table.tsx` were reverted to preserve the original structure.
+*   Tests for `alert-preset-manager.test.tsx` and `alert-grouped-row.test.tsx` were added/fixed to verify the new functionality and integration."
+3130903286,2018,Fix home page frequency text,wesbos,176013,closed,2025-06-09T17:11:53Z,2025-06-09T17:12:09Z,2025-06-09T17:12:09Z,https://api.github.com/repos/syntaxfm/website,https://github.com/syntaxfm/website/pull/2018,"The `src/lib/schedule.svelte` file was modified to correct the podcast frequency displayed on the homepage.
+
+*   The text ""Served Fresh Thrice Weekly"" was updated to ""Served Fresh Twice Weekly"" within the `<p>` tag on line 2.
+*   This change ensures visitors see the accurate publication schedule, addressing the reported issue where the homepage incorrectly stated ""Thrice weekly.""
+*   The `schedule.svelte` component is integrated into the `PodcastHero` component, which is displayed on the homepage, ensuring the correct information is presented to users."
+3131003811,93127,Open PR and add tests if confident,armenzg,44410,closed,2025-06-09T17:47:39Z,2025-06-10T12:49:54Z,,https://api.github.com/repos/getsentry/sentry,https://github.com/getsentry/sentry/pull/93127,"The screenshot widget in Issue Details was updated to improve file detection.
+
+*   In `static/app/components/events/eventTagsAndScreenshot/screenshot/screenshotDataSection.tsx`, the hardcoded `SCREENSHOT_NAMES` array was removed.
+*   The logic was updated to flexibly identify screenshots by checking if an attachment's `name` includes ""screenshot"" and ends with `.jpg` or `.png`. This change addresses issue #92154, allowing files like `crash_screenshot.png` to be displayed.
+*   A new test case was added to `static/app/components/events/eventTagsAndScreenshot/index.spec.tsx` to validate the updated detection logic, ensuring files with flexible naming patterns are correctly identified and navigable.
+*   API mocks were added to the test to ensure proper functionality.
+*   A new documentation file, `screenshot_detection_improvement.md`, was created to detail these changes."
+3131238821,16526,Fix GitHub actions module import error,AbhiPrasad,18689448,closed,2025-06-09T19:26:31Z,2025-06-09T19:26:34Z,,https://api.github.com/repos/getsentry/sentry-javascript,https://github.com/getsentry/sentry-javascript/pull/16526,"The GitHub Actions failure, specifically a `SyntaxError: The requested module '@prisma/instrumentation' does not provide an export named 'default'`, was addressed by modifying the Vite configuration in the SvelteKit test application.
+
+The error occurred because SvelteKit's build process, powered by Vite, was incorrectly transforming the import statement for `@prisma/instrumentation`. This package uses named exports, but the bundler attempted to import a non-existent default export.
+
+The fix involved updating `dev-packages/e2e-tests/test-applications/sveltekit-2-svelte-5/vite.config.ts` to externalize specific modules during the server-side rendering (SSR) build:
+
+*   The `ssr.external` option was added to `vite.config.ts`.
+*   `@prisma/instrumentation` was explicitly added to the `external` array.
+*   A regular expression `^@opentelemetry\/instrumentation/` was added to externalize all OpenTelemetry instrumentation packages, anticipating similar issues.
+
+This change instructs Vite/SvelteKit to not bundle these modules, preserving their original import statements and allowing Node.js to handle their resolution at runtime, thereby preventing the incorrect CommonJS-to-ESM transformation that caused the build error."
+3131328255,93150,feat(replay): Add temporary feature flag for AI summaries,billyvg,79684,closed,2025-06-09T19:56:21Z,2025-06-09T20:24:25Z,2025-06-09T20:24:25Z,https://api.github.com/repos/getsentry/sentry,https://github.com/getsentry/sentry/pull/93150,"A temporary flagpole feature flag, `organizations:replay-ai-summaries`, was added to `src/sentry/features/temporary.py`. This enables control over replay AI summaries functionality."
+3131686689,93189,feat: Implement auto-generated promo code feature,dcramer,23610,closed,2025-06-09T22:58:50Z,2025-06-17T23:14:29Z,,https://api.github.com/repos/getsentry/sentry,https://github.com/getsentry/sentry/pull/93189,"The file `static/gsAdmin/components/promoCodes/promoCodeModal.tsx` was modified to add promo code auto-generation capabilities.
+
+A new `generatePromoCode()` function was introduced. It constructs codes by:
+*   Selecting random words from a curated `CRYPTIC_WORDS` array.
+*   Applying l33t speak character substitutions (e.g., 'a' to '@' or '4') with a 30% probability using a `CHAR_SUBSTITUTIONS` object.
+*   Adjusting the code length to be approximately 10 characters (10-15 range) by adding random numbers or truncating.
+
+UI enhancements include:
+*   A ""Generate"" button (`IconRefresh`) added next to the ""Code (ID)"" field. This button is visible only when creating new promo codes, allowing manual regeneration.
+*   A default promo code is automatically generated and pre-filled when the ""Add New Promo Code"" modal opens.
+*   The `ApiForm` component's `initialData` is dynamically set to include the auto-generated code.
+*   `useEffect` and `useRef` manage the form state and ensure the input field updates correctly upon regeneration.
+
+This implementation provides flexible auto-generation while maintaining existing functionality for editing promo codes."
+3131698049,11564,[tests] add mock tests for pplx reasoning,ishaan-jaff,29436595,closed,2025-06-09T23:05:02Z,2025-06-09T23:05:08Z,2025-06-09T23:05:08Z,https://api.github.com/repos/BerriAI/litellm,https://github.com/BerriAI/litellm/pull/11564,"## Title
+
+<!-- e.g. ""Implement user authentication feature"" -->
+
+## Relevant issues
+
+<!-- e.g. ""Fixes #000"" -->
+
+## Pre-Submission checklist
+
+**Please complete all items before asking a LiteLLM maintainer to review your PR**
+
+- [ ] I have Added testing in the [`tests/litellm/`](https://github.com/BerriAI/litellm/tree/main/tests/litellm) directory, **Adding at least 1 test is a hard requirement** - [see details](https://docs.litellm.ai/docs/extras/contributing_code)
+- [ ] I have added a screenshot of my new test passing locally 
+- [ ] My PR passes all unit tests on [`make test-unit`](https://docs.litellm.ai/docs/extras/contributing_code)
+- [ ] My PR's scope is as isolated as possible, it only solves 1 specific problem
+
+
+## Type
+
+<!-- Select the type of Pull Request -->
+<!-- Keep only the necessary ones -->
+
+
+✅ Test
+
+## Changes
+
+
+"
+3131760803,20291,Fix TOML parser to handle inline tables and table arrays correctly,Jarred-Sumner,709451,closed,2025-06-09T23:53:25Z,2025-06-10T01:52:30Z,2025-06-10T01:52:30Z,https://api.github.com/repos/oven-sh/bun,https://github.com/oven-sh/bun/pull/20291,"
+AI PR don't trust until CI passes
+
+---
+
+
+The TOML parser was failing to correctly interpret table array headers (`[[...]]`) when they immediately followed an inline table or array. The `allow_double_bracket` flag in the lexer was not being reset to `true` after parsing these structures, causing `[[` to be lexed as a single `[` and resulting in an ""Expected key but found ["" error.
+
+To address this:
+*   In `src/toml/toml_parser.zig`, `p.lexer.allow_double_bracket = true"
+3131810994,20293,Fix duplicate exports in code splitting with cross-chunk dependencies,Jarred-Sumner,709451,open,2025-06-10T00:29:50Z,,,https://api.github.com/repos/oven-sh/bun,https://github.com/oven-sh/bun/pull/20293,"### What does this PR do?
+
+Fix duplicate exports in code splitting with cross-chunk dependencies
+
+### How did you verify your code works?
+
+There is a test"
+3132147174,20295,Fix proxy handling in bun audit,Jarred-Sumner,709451,closed,2025-06-10T05:00:19Z,2025-06-13T17:43:55Z,2025-06-13T17:43:55Z,https://api.github.com/repos/oven-sh/bun,https://github.com/oven-sh/bun/pull/20295,"The `audit` command was not respecting proxy environment variables.
+
+The `sendAuditRequest` function in `src/cli/audit_command.zig` was updated to correctly utilize proxy settings.
+
+*   Previously, `AsyncHTTP.initSync` was called with `null` for the `http_proxy` parameter.
+*   A new line was added: `const http_proxy = pm.env.getHttpProxyFor(url)
+
+Fixes #20229"
+3132189217,20296,Fix Windows path normalization in bun add \\pkg by trimming `\\`,Jarred-Sumner,709451,open,2025-06-10T05:25:34Z,,,https://api.github.com/repos/oven-sh/bun,https://github.com/oven-sh/bun/pull/20296,"A bug was addressed where `bun install @scoped/package` failed on Windows due to path normalization issues.
+
+*   **Root Cause**: On Windows, shells may escape the `@` symbol in scoped package names (e.g., `\@heroicons/react`). The `UpdateRequest.parseWithError` function in `src/install/install.zig` was not correctly handling this escape sequence, leading to a panic when passing POSIX-like paths to Windows APIs.
+
+*   **The Fix**:
+    *   In `src/install/install.zig`, within `PackageManager.UpdateRequest.parseWithError`, a Windows-specific check was added (lines 8313-8321).
+    *   If `Environment.isWindows` is true and the input starts with `\` followed by `@`, the leading backslash is removed. This corrects the package name before further processing.
+
+*   **Test Added**:
+    *   A new test, `should handle escaped @scoped names on Windows`, was added to `test/cli/install/bun-add.test.ts` (line 441).
+    *   This test simulates a Windows shell passing `\@bar/baz` and verifies that Bun correctly parses it as `@bar/baz` and attempts the correct registry request.
+    *   An additional integration test was added to ensure the full installation flow works without panics.
+
+*   **Verification**: The debug build of Bun was compiled, and the new tests were run to confirm the fix prevents the panic and correctly handles scoped package installations on Windows."
+3132195957,20297,Prevent over-counting Blob memory usage,Jarred-Sumner,709451,open,2025-06-10T05:29:06Z,,,https://api.github.com/repos/oven-sh/bun,https://github.com/oven-sh/bun/pull/20297,"### What does this PR do?
+
+<!-- **Please explain what your changes do**, example: -->
+
+<!--
+
+This adds a new flag --bail to bun test. When set, it will stop running tests after the first failure. This is useful for CI environments where you want to fail fast.
+
+-->
+
+- [ ] Documentation or TypeScript types (it's okay to leave the rest blank in this case)
+- [ ] Code changes
+
+### How did you verify your code works?
+
+<!-- **For code changes, please include automated tests**. Feel free to uncomment the line below -->
+
+<!-- I wrote automated tests -->
+
+<!-- If JavaScript/TypeScript modules or builtins changed:
+
+- [ ] I included a test for the new code, or existing tests cover it
+- [ ] I ran my tests locally and they pass (`bun-debug test test-file-name.test`)
+
+-->
+
+<!-- If Zig files changed:
+
+- [ ] I checked the lifetime of memory allocated to verify it's (1) freed and (2) only freed when it should be
+- [ ] I included a test for the new code, or an existing test covers it
+- [ ] JSValue used outside of the stack is either wrapped in a JSC.Strong or is JSValueProtect'ed
+- [ ] I wrote TypeScript/JavaScript tests and they pass locally (`bun-debug test test-file-name.test`)
+-->
+
+<!-- If new methods, getters, or setters were added to a publicly exposed class:
+
+- [ ] I added TypeScript types for the new methods, getters, or setters
+-->
+
+<!-- If dependencies in tests changed:
+
+- [ ] I made sure that specific versions of dependencies are used instead of ranged or tagged versions
+-->
+
+<!-- If a new builtin ESM/CJS module was added:
+
+- [ ] I updated Aliases in `module_loader.zig` to include the new module
+- [ ] I added a test that imports the module
+- [ ] I added a test that require() the module
+-->
+"
+3132222532,20298,Fix crash in Bun.deepEquals with MobX-like reactive objects that return non-cell values,Jarred-Sumner,709451,open,2025-06-10T05:45:41Z,,,https://api.github.com/repos/oven-sh/bun,https://github.com/oven-sh/bun/pull/20298,"### What does this PR do?
+
+Check if isCell()
+
+<!-- **Please explain what your changes do**, example: -->
+
+<!--
+
+This adds a new flag --bail to bun test. When set, it will stop running tests after the first failure. This is useful for CI environments where you want to fail fast.
+
+-->
+
+- [ ] Documentation or TypeScript types (it's okay to leave the rest blank in this case)
+- [ ] Code changes
+
+### How did you verify your code works?
+
+Test. Let's see what CI says. AI wrote this
+
+<!-- **For code changes, please include automated tests**. Feel free to uncomment the line below -->
+
+<!-- I wrote automated tests -->
+
+<!-- If JavaScript/TypeScript modules or builtins changed:
+
+- [ ] I included a test for the new code, or existing tests cover it
+- [ ] I ran my tests locally and they pass (`bun-debug test test-file-name.test`)
+
+-->
+
+<!-- If Zig files changed:
+
+- [ ] I checked the lifetime of memory allocated to verify it's (1) freed and (2) only freed when it should be
+- [ ] I included a test for the new code, or an existing test covers it
+- [ ] JSValue used outside of the stack is either wrapped in a JSC.Strong or is JSValueProtect'ed
+- [ ] I wrote TypeScript/JavaScript tests and they pass locally (`bun-debug test test-file-name.test`)
+-->
+
+<!-- If new methods, getters, or setters were added to a publicly exposed class:
+
+- [ ] I added TypeScript types for the new methods, getters, or setters
+-->
+
+<!-- If dependencies in tests changed:
+
+- [ ] I made sure that specific versions of dependencies are used instead of ranged or tagged versions
+-->
+
+<!-- If a new builtin ESM/CJS module was added:
+
+- [ ] I updated Aliases in `module_loader.zig` to include the new module
+- [ ] I added a test that imports the module
+- [ ] I added a test that require() the module
+-->"
+3132235746,20299,Implement X25519 deriveBits for WebCrypto API,Jarred-Sumner,709451,open,2025-06-10T05:53:37Z,,,https://api.github.com/repos/oven-sh/bun,https://github.com/oven-sh/bun/pull/20299,"### What does this PR do?
+
+Implement X25519 deriveBits for WebCrypto API
+
+
+"
+3132238407,20300,Fix windows path length bug ,Jarred-Sumner,709451,open,2025-06-10T05:55:14Z,,,https://api.github.com/repos/oven-sh/bun,https://github.com/oven-sh/bun/pull/20300,"### What does this PR do?
+
+fix a bug with long paths in windows
+
+
+<!-- **Please explain what your changes do**, example: -->
+
+<!--
+
+This adds a new flag --bail to bun test. When set, it will stop running tests after the first failure. This is useful for CI environments where you want to fail fast.
+
+-->
+
+- [ ] Documentation or TypeScript types (it's okay to leave the rest blank in this case)
+- [ ] Code changes
+
+### How did you verify your code works?
+
+<!-- **For code changes, please include automated tests**. Feel free to uncomment the line below -->
+
+<!-- I wrote automated tests -->
+
+<!-- If JavaScript/TypeScript modules or builtins changed:
+
+- [ ] I included a test for the new code, or existing tests cover it
+- [ ] I ran my tests locally and they pass (`bun-debug test test-file-name.test`)
+
+-->
+
+<!-- If Zig files changed:
+
+- [ ] I checked the lifetime of memory allocated to verify it's (1) freed and (2) only freed when it should be
+- [ ] I included a test for the new code, or an existing test covers it
+- [ ] JSValue used outside of the stack is either wrapped in a JSC.Strong or is JSValueProtect'ed
+- [ ] I wrote TypeScript/JavaScript tests and they pass locally (`bun-debug test test-file-name.test`)
+-->
+
+<!-- If new methods, getters, or setters were added to a publicly exposed class:
+
+- [ ] I added TypeScript types for the new methods, getters, or setters
+-->
+
+<!-- If dependencies in tests changed:
+
+- [ ] I made sure that specific versions of dependencies are used instead of ranged or tagged versions
+-->
+
+<!-- If a new builtin ESM/CJS module was added:
+
+- [ ] I updated Aliases in `module_loader.zig` to include the new module
+- [ ] I added a test that imports the module
+- [ ] I added a test that require() the module
+-->
+"
+3132266803,20301,Implement bun audit --fix command,Jarred-Sumner,709451,open,2025-06-10T06:10:51Z,,,https://api.github.com/repos/oven-sh/bun,https://github.com/oven-sh/bun/pull/20301,"### What does this PR do?
+
+WIP. Needs to choose latest matching instead of latest. Need to get rid of .md slop
+
+<!-- **Please explain what your changes do**, example: -->
+
+<!--
+
+This adds a new flag --bail to bun test. When set, it will stop running tests after the first failure. This is useful for CI environments where you want to fail fast.
+
+-->
+
+- [ ] Documentation or TypeScript types (it's okay to leave the rest blank in this case)
+- [ ] Code changes
+
+### How did you verify your code works?
+
+<!-- **For code changes, please include automated tests**. Feel free to uncomment the line below -->
+
+<!-- I wrote automated tests -->
+
+<!-- If JavaScript/TypeScript modules or builtins changed:
+
+- [ ] I included a test for the new code, or existing tests cover it
+- [ ] I ran my tests locally and they pass (`bun-debug test test-file-name.test`)
+
+-->
+
+<!-- If Zig files changed:
+
+- [ ] I checked the lifetime of memory allocated to verify it's (1) freed and (2) only freed when it should be
+- [ ] I included a test for the new code, or an existing test covers it
+- [ ] JSValue used outside of the stack is either wrapped in a JSC.Strong or is JSValueProtect'ed
+- [ ] I wrote TypeScript/JavaScript tests and they pass locally (`bun-debug test test-file-name.test`)
+-->
+
+<!-- If new methods, getters, or setters were added to a publicly exposed class:
+
+- [ ] I added TypeScript types for the new methods, getters, or setters
+-->
+
+<!-- If dependencies in tests changed:
+
+- [ ] I made sure that specific versions of dependencies are used instead of ranged or tagged versions
+-->
+
+<!-- If a new builtin ESM/CJS module was added:
+
+- [ ] I updated Aliases in `module_loader.zig` to include the new module
+- [ ] I added a test that imports the module
+- [ ] I added a test that require() the module
+-->
+"
+3132733770,5001,feat(ui): add alert sidebar to incident table,shahargl,12069200,closed,2025-06-10T08:56:07Z,2025-06-10T09:19:41Z,2025-06-10T09:19:41Z,https://api.github.com/repos/keephq/keep,https://github.com/keephq/keep/pull/5001,"close https://github.com/keephq/keep/issues/4789
+
+
+https://github.com/user-attachments/assets/e5a726bb-c130-4a0f-aff1-7ae8ce73b22b
+
+
+
+Initially, `ViewAlertModal` was replaced with `AlertSidebar` in `incident-alerts.tsx` to provide a consistent alert viewing experience when clicking on alert rows. New state variables, `selectedAlert` and `isSidebarOpen`, were introduced to manage the sidebar's visibility and content. A new test file, `incident-alerts-sidebar.test.tsx`, was created to cover this functionality.
+
+Following feedback, the implementation was refined to support both `ViewAlertModal` and `AlertSidebar`. The `ViewAlertModal` was re-enabled to open via the ""View"" button in the action tray, while `AlertSidebar` remains tied to alert row clicks, offering dual viewing options.
+
+A bug causing a `TypeError: Cannot read properties of null (reading 'fingerprint')` upon closing the `AlertSidebar` was identified. This occurred because `AlertMenu` inside `AlertSidebar` attempted to access properties of a `null` alert. The fix involved adding a null check (`{alert "
+3132740864,5002,feat: Improve selected columns storage mechanism,talboren,68807791,closed,2025-06-10T08:58:17Z,2025-06-23T07:52:17Z,2025-06-23T07:52:17Z,https://api.github.com/repos/keephq/keep,https://github.com/keephq/keep/pull/5002,"close #4788 
+
+
+# PLEASE NOTE: This will introduce a breaking change to anyone who already set custom columns before, as this configuration is being moved to the backend.
+
+
+https://github.com/user-attachments/assets/8ee63d2e-6a74-4013-a7e1-459f3fff23c0
+
+
+
+Column configuration was moved from local storage to the backend to enable shared, persistent custom views across users and devices.
+
+Backend changes:
+*   `keep/api/models/db/preset.py`: `PresetDto` was extended with properties to access column visibility, order, rename mapping, and time/list formats from preset options.
+*   `keep/api/routes/preset.py`: A new `ColumnConfigurationDto` was introduced. `PUT /preset/{preset_id}/column-config` and `GET /preset/{preset_id}/column-config` endpoints were added to manage column configurations.
+
+Frontend changes:
+*   `keep-ui/entities/presets/model/types.ts`: A `ColumnConfiguration` interface was defined.
+*   `keep-ui/entities/presets/model/usePresetColumnConfig.ts`: A new hook for direct backend interaction was added.
+*   `keep-ui/entities/presets/model/usePresetColumnState.ts`: A unified hook was introduced, prioritizing backend configuration when a `presetId` is available, otherwise falling back to local storage.
+*   `keep-ui/widgets/alerts-table/ui/ColumnSelection.tsx`, `SettingsSelection.tsx`, `alert-table-server-side.tsx`: Components were updated to utilize the new `usePresetColumnState` hook and pass `presetId`. A ""Synced across devices"" indicator was added to `ColumnSelection.tsx`.
+
+This enables cross-device synchronization and team collaboration for column preferences, with backward compatibility maintained. Comprehensive documentation was added in `docs/column-configuration-migration.md`."
+3133810693,93223,Hide releases in fullscreen for specific chart widgets,billyvg,79684,closed,2025-06-10T14:24:40Z,2025-06-10T17:23:49Z,2025-06-10T17:23:49Z,https://api.github.com/repos/getsentry/sentry,https://github.com/getsentry/sentry/pull/93223,"The ""New Issues by Release"" chart's full-screen view was modified to hide release lines.
+
+*   The `ChartWithIssues` component (`static/app/views/insights/sessions/charts/chartWithIssues.tsx`) was updated:
+    *   A new optional prop, `hideReleaseLines?: boolean`, was added to its interface.
+    *   The `releases` prop passed to `TimeSeriesWidgetVisualization` within the full-screen modal was made conditional: `releases={hideReleaseLines ? [] : releases ?? []}`. This ensures an empty array is passed when `hideReleaseLines` is true.
+*   The `ReleaseNewIssuesChartWidget` component (`static/app/views/insights/common/components/widgets/releaseNewIssuesChartWidget.tsx`) was updated to pass `hideReleaseLines={true}` to `ChartWithIssues`.
+
+This approach ensures that only the ""New Issues by Release"" chart hides its release lines in full-screen. It avoids affecting other charts that also use `ChartWithIssues` (such as the ""Issues"" chart), which should continue to display release lines in full-screen."
+3133836979,93224,feat(replay): Add AI Summary tab for replay details [INTERNAL],billyvg,79684,closed,2025-06-10T14:32:01Z,2025-06-18T23:03:03Z,2025-06-18T23:03:03Z,https://api.github.com/repos/getsentry/sentry,https://github.com/getsentry/sentry/pull/93224,"A new ""AI Summary"" tab was added to the Replay Details page for internal testing only. It is only visible to the Replay team. This will not be the final design.
+
+![image](https://github.com/user-attachments/assets/7719aa52-1100-4548-ae97-9ebff845bcfa)
+
+
+*   The `TabKey` enum in `static/app/utils/replays/hooks/useActiveReplayTab.tsx` was updated to include `AI_SUMMARY`, and it was added to `supportedVideoTabs` for mobile compatibility.
+*   In `static/app/views/replays/detail/layout/focusTabs.tsx`, the `getReplayTabs` function was modified to conditionally render the ""AI Summary"" tab based on the `organizations:replay-ai-summaries` feature flag, positioning it before the `Breadcrumbs` tab.
+*   A new `AISummary` component was created in `static/app/views/replays/detail/aiSummary/index.tsx`. This component:
+    *   Makes a POST request to `/organizations/{organization_slug}/replays/summary/` on initial load.
+    *   Displays a `LoadingIndicator` while the request is in flight.
+    *   Shows an error message if the request fails.
+    *   Renders the `summary` content upon successful completion.
+*   The `static/app/views/replays/detail/layout/focusArea.tsx` file was updated to import and render the new `AISummary` component when the `AI_SUMMARY` tab is active.
+
+Closes REPLAY-388"
+3133978465,498,Cursor Agent: Add rule history page to debug,elie222,3090527,closed,2025-06-10T15:10:02Z,2025-06-10T17:56:39Z,2025-06-10T17:56:39Z,https://api.github.com/repos/elie222/inbox-zero,https://github.com/elie222/inbox-zero/pull/498,"A rule history feature was implemented for the debug page.
+
+*   A ""Rule History"" button was added to `apps/web/app/(app)/[emailAccountId]/debug/page.tsx` to serve as the entry point for the new functionality.
+*   A new client component, `apps/web/app/(app)/[emailAccountId]/debug/rule-history/page.tsx`, was created. This page uses the `useRules` hook to fetch and display a list of available rules, enabling selection to view specific rule histories.
+*   A server component, `apps/web/app/(app)/[emailAccountId]/debug/rule-history/[ruleId]/page.tsx`, was implemented to display the history for a selected rule. This page directly queries the database using `prisma` to retrieve rule history data as defined in `schema.prisma`, including authentication checks to ensure user access. The history is presented chronologically, detailing changes to rule properties, conditions, and actions.
+
+<!-- This is an auto-generated comment: release notes by coderabbit.ai -->
+## Summary by CodeRabbit
+
+- **New Features**
+  - Added a ""Rule History"" button to the debug page navigation for easy access to rule history.
+  - Introduced a rule history overview page, allowing users to view and select rules for detailed history.
+  - Added a detailed rule history page displaying versioned changes and properties for individual rules, including user-friendly labels and comprehensive rule details.
+  - Implemented automatic redirect to the debug page scoped to the current email account.
+<!-- end of auto-generated comment: release notes by coderabbit.ai -->"
+3133979452,499,Cursor Agent: Update cold email handling logic,elie222,3090527,closed,2025-06-10T15:10:22Z,2025-06-10T15:53:05Z,,https://api.github.com/repos/elie222/inbox-zero,https://github.com/elie222/inbox-zero/pull/499,"The cold email blocking logic was updated to respect user feedback.
+
+*   In `apps/web/utils/cold-email/is-cold-email.ts`, the `isKnownColdEmailSender` function was modified.
+    *   It now fetches the `status` field from the `ColdEmail` record.
+    *   If a sender's status is `USER_REJECTED_COLD`, the function explicitly returns `false`, ensuring emails from that sender are not blocked, overriding any AI classification.
+    *   The function now only returns `true` if the status is `AI_LABELED_COLD`.
+*   `apps/web/utils/cold-email/is-cold-email.test.ts` was updated with new test cases for the `isColdEmail` function.
+    *   Tests now cover scenarios where a sender is marked as `USER_REJECTED_COLD` (expected: not cold), `AI_LABELED_COLD` (expected: cold), and when the sender is not found in the database (expected: AI check).
+
+This ensures that once a user marks an email as ""not cold,"" subsequent emails from that sender will not be blocked by the cold email blocker.
+
+<!-- This is an auto-generated comment: release notes by coderabbit.ai -->
+
+## Summary by CodeRabbit
+
+- **Bug Fixes**
+  - Improved detection of known cold email senders to better distinguish between user-rejected and AI-labeled cold emails.
+
+- **Tests**
+  - Added comprehensive tests for cold email identification, covering scenarios for user rejection, AI labeling, and new senders.
+
+<!-- end of auto-generated comment: release notes by coderabbit.ai -->"
+3134575697,104,Create GitHub action for website testing,louis030195,25003283,open,2025-06-10T18:58:59Z,,,https://api.github.com/repos/mediar-ai/terminator,https://github.com/mediar-ai/terminator/pull/104,"A generic GitHub Action for website testing using the Terminator SDK was created.
+
+*   The action, defined in `.github/actions/terminator-web-test/action.yml`, provides cross-platform UI testing on Ubuntu (with Xvfb virtual display) and Windows.
+    *   It supports Python and TypeScript test scripts and automates browser installation (Chrome, Firefox, Edge) and Terminator SDK setup.
+    *   Inputs for `website-url`, `test-script`, `language`, `browser`, and `timeout` were added for configurability.
+    *   Outputs for `test-result` and `screenshot-path` were included, with automatic screenshot capture on test failures.
+*   Example test scripts were added to `examples/website-tests/`:
+    *   `test_google_search.py` (Python) automates a Google search.
+    *   `test_wikipedia_search.ts` (TypeScript) automates a Wikipedia search.
+    *   These scripts leverage environment variables for dynamic configuration.
+*   An example workflow, `.github/workflows/terminator-web-test-example.yml`, was created to demonstrate the action's usage.
+    *   It includes jobs for individual tests, a cross-platform matrix test, and a custom website test, triggered by `workflow_dispatch`, `pull_request`, and `schedule`.
+*   Comprehensive documentation was added in `.github/actions/terminator-web-test/README.md` and `examples/website-tests/README.md` to guide usage, explain parameters, and provide troubleshooting."
+3134576040,105,Create automated night shift agent,louis030195,25003283,open,2025-06-10T18:59:08Z,,,https://api.github.com/repos/mediar-ai/terminator,https://github.com/mediar-ai/terminator/pull/105,"A night shift agent example was implemented to automate sending prompts to Cursor IDE at intervals.
+
+Key changes include:
+*   Creation of `examples/cursor_night_shift_agent.py` and `examples/cursor_night_shift_agent.ts`. These agents:
+    *   Locate and focus the Cursor window using multiple selectors.
+    *   Identify the chat input, falling back to keyboard shortcuts like `{Ctrl}l` or `{Ctrl}k` if direct UI element detection fails.
+    *   Type and send prompts from a configurable list, attempting various send methods (`{Enter}`, `{Ctrl}{Enter}`).
+    *   Operate at customizable intervals, with robust error handling and visual highlighting for debugging.
+*   A test script, `examples/cursor_night_shift_test.py`, was added to allow users to verify their setup and Cursor accessibility before running the full agent.
+*   Comprehensive documentation was provided in `examples/CURSOR_NIGHT_SHIFT_README.md`, detailing installation, configuration, usage, and troubleshooting.
+*   Python scripts were made executable via `chmod  x` to align with Unix conventions.
+*   TypeScript linter errors were addressed by ensuring proper type declarations and Node.js setup."
+3134586800,106,Autonomous agent that install Cursor and play around with your repo through terminator SDK,louis030195,25003283,open,2025-06-10T19:03:55Z,,,https://api.github.com/repos/mediar-ai/terminator,https://github.com/mediar-ai/terminator/pull/106,"A GitHub Action workflow (`.github/workflows/cursor-automation-test.yml`) was created to automate Cursor using Terminator on a Windows machine.
+
+Initially, the automation script (`scripts/cursor_automation_enhanced.py`) utilized `pyautogui` for screenshot capabilities.
+
+The primary change involved refactoring the script to exclusively use Terminator for all automation tasks, including screenshots. This was done to demonstrate Terminator's self-sufficiency as a complete desktop automation solution without external dependencies.
+
+Specifically:
+*   In `scripts/cursor_automation_enhanced.py`, `pyautogui` imports and calls were removed. Screenshot capture was re-implemented using Terminator's native `desktop.capture_screen()` and `element.capture()` methods, with `PIL` for image saving. All window detection and element interactions now solely rely on Terminator's API.
+*   The `.github/workflows/cursor-automation-test.yml` was updated to remove `pyautogui` from the Python dependencies and include a pre-test verification step for Terminator's screenshot capabilities.
+*   The documentation (`docs/cursor-automation-test.md`) was updated to reflect the ""Pure Terminator Implementation,"" emphasizing the exclusive use of Terminator for all automation aspects, including native screenshot capture and accessibility-based interactions.
+
+This ensures the entire automation system validates Terminator's capabilities as a standalone framework."
+3134670650,1858,Set allowed types for `http_ssl_native_ca`,cleptric,6617432,closed,2025-06-10T19:43:14Z,2025-06-10T19:46:25Z,2025-06-10T19:46:25Z,https://api.github.com/repos/getsentry/sentry-php,https://github.com/getsentry/sentry-php/pull/1858,"The `http_ssl_native_ca` option in `src/Options.php` was updated to include type validation.
+
+Previously, `http_ssl_native_ca` had a default value and associated getter/setter methods, but lacked explicit type validation within the `configureOptions` method."
+3134882955,16539,Integrate Vercel AI into nextjs-15,AbhiPrasad,18689448,closed,2025-06-10T21:26:11Z,2025-06-11T15:18:24Z,,https://api.github.com/repos/getsentry/sentry-javascript,https://github.com/getsentry/sentry-javascript/pull/16539,"ref https://github.com/getsentry/sentry-javascript/issues/16538
+
+Vercel AI integration was added to the `nextjs-15` test application.
+*   `sentry.server.config.ts` was updated to include `Sentry.vercelAIIntegration()`.
+*   `ai` and `zod` dependencies were added to `package.json`.
+
+A new test page, `app/ai-test/page.tsx`, was created to demonstrate various AI SDK features, including automatic telemetry, explicit telemetry configuration, tool calls, and disabled telemetry. AI operations are wrapped in a Sentry span for tracing.
+
+A corresponding Playwright test, `tests/ai-test.test.ts`, was implemented to verify:
+*   AI spans are created with expected operations (`ai.pipeline.generate_text`, `gen_ai.generate_text`, `gen_ai.execute_tool`).
+*   Span attributes, including model info, tokens, prompts, and responses, are correct.
+*   Input/output recording respects `sendDefaultPii: true`.
+*   Tool calls are properly traced.
+*   Disabled telemetry prevents span creation.
+
+Finally, a fix was applied to `packages/node/src/integrations/tracing/vercelai/instrumentation.ts`. The `generatePatch` function was adjusted to correctly preserve the `this` context by changing it from an arrow function to a regular function, ensuring proper method binding for patched AI SDK methods."
+3151748196,1045,Fix private chat functionality(cursor tes),SengokuCola,25811392,closed,2025-06-17T01:26:15Z,2025-06-19T03:05:27Z,,https://api.github.com/repos/MaiM-with-u/MaiBot,https://github.com/MaiM-with-u/MaiBot/pull/1045,"Private chat functionality was re-enabled and optimized.
+
+*   **State Management:**
+    *   `SubHeartflowManager` was updated to transition private chats from `FOCUSED` directly to `ABSENT` when `sbhf_focus_into_normal` is called, differing from group chats which transition to `NORMAL`.
+*   **Processing Flow:**
+    *   `HeartFChatting` was modified to identify private chats and skip `MindProcessor` and `ToolProcessor`.
+    *   A new `plan_simple` method was added to `src/chat/focus_chat/planners/planner.py` for direct private chat response generation, bypassing complex planning.
+    *   Error recovery with timeouts was integrated into `HeartFChatting`'s `_observe_process_plan_action_loop` for robustness during parallel/serial processing and action execution.
+*   **Reply Generation:**
+    *   `src/chat/focus_chat/expressors/default_expressor.py` received a new, context-aware prompt template (`default_expressor_private_prompt`) for private chats, emphasizing concise, direct, and polite replies based on sender identity, relationship, and emotion.
+    *   The `plan_simple` method in `planner.py` now includes message validity checks, stop keyword detection, and basic reply text generation.
+*   **Memory Optimization:**
+    *   `src/chat/focus_chat/working_memory/working_memory.py` was refactored to dynamically set memory capacity and cleanup thresholds based on chat type (private chats have smaller capacity and more aggressive cleanup). It also includes content similarity checks to avoid redundant memories and prioritizes recent memories for private chat relevance.
+*   **Testing:**
+    *   A new test file, `tests/test_private_chat.py`, was created to validate private chat state transitions (ABSENT to FOCUSED, FOCUSED to ABSENT), stop keyword handling, and basic error recovery.
+
+## Sourcery 总结
+
+重新启用并优化私聊处理，引入专门的状态转换、处理捷径、简单规划、上下文感知回复提示、动态内存管理和专用测试。
+
+新功能：
+- 添加 `plan_simple` 方法，用于简化私聊响应规划
+- 引入 `default_expressor_private_prompt` 模板，用于简洁、礼貌的私聊回复
+
+Bug 修复：
+- 恢复私聊功能，并更正私聊从 FOCUSED 到 ABSENT 的状态转换
+
+增强功能：
+- 在 HeartFChatting 中跳过私聊的复杂处理器（MindProcessor 和 ToolProcessor）
+- 在处理、规划和操作执行循环中实现基于超时的错误恢复
+- 根据聊天类型调整 WorkingMemory 容量、清理阈值和重复检查
+- 在整个处理流程中记录和处理私聊与群聊上下文
+
+测试：
+- 添加 `tests/test_private_chat.py` 以验证私聊状态转换、停止关键字处理和错误恢复
+
+<details>
+<summary>Original summary in English</summary>
+
+好的，这是翻译成中文的 pull request 总结：
+
+## Sourcery 总结
+
+重新启用并优化私聊处理，通过自定义状态转换、处理流程、规划逻辑、回复模板和内存管理，以及专门的测试。
+
+新功能：
+- 添加 `plan_simple` 方法，用于简化私聊回复规划
+- 引入 `default_expressor_private_prompt` 模板，用于上下文感知的私聊回复
+
+Bug 修复：
+- 恢复私聊功能，并修正私聊的 `FOCUSED→ABSENT` 状态转换
+
+增强功能：
+- 跳过私聊的 `MindProcessor` 和 `ToolProcessor`
+- 在处理、规划和动作执行循环中集成基于超时的错误恢复
+- 重构工作内存，以根据聊天类型动态调整容量、清理阈值和去重
+
+测试：
+- 添加私聊状态转换、停止关键词处理和错误恢复的测试
+
+<details>
+<summary>Original summary in English</summary>
+
+## Summary by Sourcery
+
+Re-enable and optimize private chat handling by customizing state transitions, processing flow, planning logic, reply templating, and memory management, alongside dedicated tests.
+
+New Features:
+- Add plan_simple method for simplified private chat response planning
+- Introduce default_expressor_private_prompt template for context-aware private chat replies
+
+Bug Fixes:
+- Restore private chat functionality and correct FOCUSED→ABSENT state transition for private chats
+
+Enhancements:
+- Skip MindProcessor and ToolProcessor for private chats
+- Integrate timeout-based error recovery in processing, planning, and action execution loops
+- Refactor working memory to dynamically adjust capacity, cleanup thresholds, and deduplication based on chat type
+
+Tests:
+- Add tests for private chat state transitions, stop-keyword handling, and error recovery
+
+</details>
+
+</details>"
+3152472726,7352,fix(ui): add margins to evaluator headline,jannikmaierhoefer,48529566,open,2025-06-17T07:59:25Z,,,https://api.github.com/repos/langfuse/langfuse,https://github.com/langfuse/langfuse/pull/7352,"
+![CleanShot 2025-06-17 at 09 58 27@2x](https://github.com/user-attachments/assets/7f97e2fb-b8f7-43e9-a05f-5716953f1c67)
+![CleanShot 2025-06-17 at 09 58 02@2x](https://github.com/user-attachments/assets/de5d8d14-63af-4d6f-87b8-e90b660a77b7)
+
+Missing top margin for modal headlines was addressed. The `DialogHeader` component, when used with `sticky top-0` positioning and `DialogContent` with `overflow-y-auto`, caused headlines to appear too close to the top edge.
+
+To resolve this, a `mt-2` (margin-top: 8px) class was added to the `DialogHeader` component in the following files:
+*   `web/src/features/evals/components/eval-templates-table.tsx` for ""Edit Evaluator"" and ""Clone Evaluator"" modals.
+*   `web/src/features/evals/components/evaluator-table.tsx` for the ""Edit configuration"" modal.
+
+Additionally, for ""Configure/Edit Evaluator"" modals where `DialogTitle` was directly used without `DialogHeader`, the `DialogTitle` was wrapped within a `DialogHeader` component, also with the `mt-2` class, in:
+*   `web/src/features/experiments/components/CreateExperimentsForm.tsx`
+*   `web/src/pages/project/[projectId]/datasets/[datasetId]/index.tsx`
+
+These changes provide consistent visual spacing and improve readability for modal headlines across evaluator-related dialogs.
+<!-- ELLIPSIS_HIDDEN -->
+
+----
+
+> [!IMPORTANT]
+> Fixes missing top margin in evaluator-related modal headlines by adding `mt-2` class to `DialogHeader` components for consistent spacing.
+> 
+>   - **UI Fix**:
+>     - Add `mt-2` class to `DialogHeader` in `eval-templates-table.tsx` for ""Edit Evaluator"" and ""Clone Evaluator"" modals.
+>     - Add `mt-2` class to `DialogHeader` in `evaluator-table.tsx` for ""Edit configuration"" modal.
+>     - Wrap `DialogTitle` with `DialogHeader` and add `mt-2` class in `CreateExperimentsForm.tsx` and `index.tsx` for ""Configure/Edit Evaluator"" modals.
+>   - **Consistency**:
+>     - Ensures consistent spacing and readability for modal headlines across evaluator-related dialogs.
+> 
+> <sup>This description was created by </sup>[<img alt=""Ellipsis"" src=""https://img.shields.io/badge/Ellipsis-blue?color=175173"">](https://www.ellipsis.dev?ref=langfuse%2Flangfuse&utm_source=github&utm_medium=referral)<sup> for 6dc67c81850bf1cf923d85b94ab2e1a9b28c5711. You can [customize](https://app.ellipsis.dev/langfuse/settings/summaries) this summary. It will automatically update as commits are pushed.</sup>
+
+<!-- ELLIPSIS_HIDDEN -->"
+3164245658,39,Cursor/update rustup sh url in readme ,regenrek,5182020,closed,2025-06-20T19:52:04Z,2025-06-20T20:05:13Z,,https://api.github.com/repos/amantus-ai/vibetunnel,https://github.com/amantus-ai/vibetunnel/pull/39,Fix wrong readme
+3164279377,1627,Resolve dependency version conflicts,jxnl,4852235,closed,2025-06-20T20:10:13Z,2025-06-20T20:10:26Z,2025-06-20T20:10:26Z,https://api.github.com/repos/567-labs/instructor,https://github.com/567-labs/instructor/pull/1627,"A dependency conflict between `instructor[google-genai]` and `google-genai` over the `tenacity` package was resolved.
+
+*   The conflict arose because `instructor` required `tenacity >=9.0.0,<10.0.0`, while `google-genai` (version 1.21.1) required `tenacity >=8.2.3,<9.0.0`.
+*   The `tenacity` dependency in `pyproject.toml` was updated to `>=8.2.3,<10.0.0`. This broadened the acceptable `tenacity` version range to accommodate both packages.
+*   The `uv.lock` file was updated to reflect these dependency changes.
+*   The fix was verified by successfully installing both `instructor[google-genai]` and `google-genai` in a test environment, confirming no conflicts and successful imports.
+*   A new branch, `fix/tenacity-dependency-conflict`, was created.
+*   Changes were committed with the message `fix(deps): resolve tenacity version conflict with google-genai`.
+<!-- ELLIPSIS_HIDDEN -->
+
+----
+
+> [!IMPORTANT]
+> Resolve `tenacity` version conflict between `instructor[google-genai]` and `google-genai` by updating `pyproject.toml`.
+> 
+>   - **Dependency Resolution**:
+>     - Updated `tenacity` version in `pyproject.toml` to `>=8.2.3,<10.0.0` to resolve conflict between `instructor[google-genai]` and `google-genai`.
+>     - Updated `uv.lock` to reflect the new `tenacity` version range.
+>   - **Verification**:
+>     - Successfully installed `instructor[google-genai]` and `google-genai` in a test environment to confirm no conflicts.
+>   - **Branch and Commit**:
+>     - Created branch `fix/tenacity-dependency-conflict`.
+>     - Committed changes with message `fix(deps): resolve tenacity version conflict with google-genai`.
+> 
+> <sup>This description was created by </sup>[<img alt=""Ellipsis"" src=""https://img.shields.io/badge/Ellipsis-blue?color=175173"">](https://www.ellipsis.dev?ref=567-labs%2Finstructor&utm_source=github&utm_medium=referral)<sup> for 5ac6f3990605c3728fc8dcebe6c867bba37a7d6e. You can [customize](https://app.ellipsis.dev/567-labs/settings/summaries) this summary. It will automatically update as commits are pushed.</sup>
+
+<!-- ELLIPSIS_HIDDEN -->"
+3164641128,1209,fix: SAML_ACCEPTED_TIME_DIFF not in env.example,daryllimyt,5508348,closed,2025-06-21T01:34:50Z,2025-06-21T01:46:58Z,2025-06-21T01:46:58Z,https://api.github.com/repos/TracecatHQ/tracecat,https://github.com/TracecatHQ/tracecat/pull/1209,"Fixes #1208.
+
+A `ValueError` occurred during Tracecat startup due to `SAML_ACCEPTED_TIME_DIFF` being an empty string.
+
+This happened because:
+*   The `docker-compose.yml` file referenced `${SAML_ACCEPTED_TIME_DIFF}`.
+*   The variable was missing from the `.env.example` template.
+*   Docker Compose defaults undefined variables to an empty string (`""""`), rather than leaving them unset.
+*   The Python code in `tracecat/config.py` attempted `int(os.environ.get(""SAML_ACCEPTED_TIME_DIFF"", ""3""))`, receiving `""""` instead of `None`, thus bypassing the default and causing `int("""")` to fail.
+
+The fix involved adding `SAML_ACCEPTED_TIME_DIFF=3` to the `.env.example` file. This ensures that when `.env` is generated, `SAML_ACCEPTED_TIME_DIFF` is properly defined, preventing the `ValueError` and allowing Tracecat to start successfully.
+    
+<!-- This is an auto-generated description by cubic. -->
+---
+
+## Summary by cubic
+Added SAML_ACCEPTED_TIME_DIFF to .env.example to prevent startup errors when running Tracecat with Docker Compose.
+
+<!-- End of auto-generated description by cubic. -->
+
+"
+3164861006,20535,experiment that probably won't merge: native yoga bindings,Jarred-Sumner,709451,open,2025-06-21T07:27:15Z,,,https://api.github.com/repos/oven-sh/bun,https://github.com/oven-sh/bun/pull/20535,"Native Yoga bindings for Bun were implemented across several phases.
+
+*   Core C   binding files for `Config`, `Node`, Prototypes, and Constructors were created in `src/bun.js/bindings/`, and `cmake/sources/CxxSources.txt` was updated.
+*   JavaScriptCore's GC was integrated by defining IsoSubspaces and implementing `subspaceFor` in `JSYogaConfig.cpp` and `JSYogaNode.cpp` for native object memory management.
+*   The `JSYogaConfig` class, its prototype, and constructor were fully implemented, providing methods like `setUseWebDefaults`.
+*   The extensive `JSYogaNode` class was implemented, featuring flexible value parsing for setters (e.g., `setWidth`), hierarchy management (`insertChild`, `getChild`, `getParent`) by linking C   nodes to JS wrappers via `YGNodeSetContext`, and callback support (`setMeasureFunc`, `setDirtiedFunc`) with `JSC::Strong` references and `visitChildrenImpl` for GC tracing.
+*   Yoga enums were exposed as JavaScript constants via `JSYogaConstants.h/.cpp`.
+*   A central `JSYogaModule.h/.cpp` was created, combining `Config`, `Node`, and constants. `GlobalYoga.cpp` was added to expose `Yoga` on `globalThis`. `ZigGlobalObject.h/.cpp` was updated with lazy class structures for constructors, enabling `require('yoga-layout')` and `import Yoga from 'yoga-layout')`.
+*   Unit tests were created in `test/js/bun/` for `yoga-config.test.js`, `yoga-node.test.js`, and `yoga-constants.test.js`.
+
+This provides a native, API-compatible, and high-performance Yoga binding."
+3165199669,3049,feat: configure Odigos gateway pods to run as non-root user,edeNFed,5587419,closed,2025-06-21T16:13:09Z,2025-06-23T15:27:41Z,2025-06-23T15:27:41Z,https://api.github.com/repos/odigos-io/odigos,https://github.com/odigos-io/odigos/pull/3049,"## Summary
+This PR modifies the Odigos gateway pods to run as non-root users by adding pod-level security context configuration.
+
+## Changes
+- Added `SecurityContext` to the cluster collector deployment pod specification
+- Configured pods to run as user ID 65534 (nobody user)
+- Set `RunAsNonRoot: true` to enforce non-root execution
+- Added `FSGroup` for proper volume permissions
+
+## Security Benefits
+- ✅ Follows principle of least privilege
+- ✅ Reduces attack surface by preventing root container execution
+- ✅ Complies with security policies that prohibit root containers
+- ✅ Aligns with Kubernetes security best practices
+
+## Testing
+- [ ] Verify gateway pods start successfully with non-root user
+- [ ] Confirm telemetry collection continues to work properly
+- [ ] Test volume mount permissions are handled correctly
+
+## Files Modified
+- `autoscaler/controllers/clustercollector/deployment.go` - Added pod security context
+
+## Breaking Changes
+None - this is a security hardening change that maintains existing functionality."
+3165205251,4982,Remove changeset requirement from PR template,cursor[bot],206951365,closed,2025-06-21T16:22:33Z,2025-06-21T16:37:53Z,2025-06-21T16:37:53Z,https://api.github.com/repos/RooCodeInc/Roo-Code,https://github.com/RooCodeInc/Roo-Code/pull/4982,"## Summary
+
+This PR removes the changeset requirement from the PR template as requested by Matt Rubens in Slack.
+
+## Changes Made
+
+- Removed the changeset checklist item from `.github/pull_request_template.md`
+- Contributors are no longer required to create changesets when submitting PRs
+
+## Context
+
+From Slack discussion:
+> Should we remove the changeset nag on PRs / in the PR template? I don't think we actually want people doing them
+
+## Technical Notes
+
+- The automated changeset workflows remain in place for version management
+- This only removes the manual requirement for contributors to create changesets
+- Version management will continue to be handled automatically by the existing workflows
+
+## Type of Change
+
+- [x] 🧹 **Chore**: Other changes that don't modify src or test files."
+3165225343,4983,Filter out additional bot and automated accounts from contributors list,mrubens,2600,closed,2025-06-21T16:52:25Z,2025-06-21T17:08:36Z,2025-06-21T17:08:36Z,https://api.github.com/repos/RooCodeInc/Roo-Code,https://github.com/RooCodeInc/Roo-Code/pull/4983,"
+<!-- ELLIPSIS_HIDDEN -->
+
+
+
+> [!IMPORTANT]
+> Filter out `cursor` and `roomote` bot accounts from contributors list in `scripts/update-contributors.js`.
+> 
+>   - **Behavior**:
+>     - In `formatContributorsSection` in `scripts/update-contributors.js`, filter out additional bot accounts `cursor` and `roomote` from contributors list.
+>     - Previously filtered `GitHub Actions bot` and `R00-B0T` remain filtered.
+> 
+> <sup>This description was created by </sup>[<img alt=""Ellipsis"" src=""https://img.shields.io/badge/Ellipsis-blue?color=175173"">](https://www.ellipsis.dev?ref=RooCodeInc%2FRoo-Code&utm_source=github&utm_medium=referral)<sup> for 35322cdbba38d7d87ba4cd59b21f8f27998f8c2b. You can [customize](https://app.ellipsis.dev/RooCodeInc/settings/summaries) this summary. It will automatically update as commits are pushed.</sup>
+
+<!-- ELLIPSIS_HIDDEN -->"
+3165232120,4985,Simplify PR template checklist for code quality and testing,mrubens,2600,closed,2025-06-21T17:03:15Z,2025-06-21T17:09:01Z,2025-06-21T17:09:01Z,https://api.github.com/repos/RooCodeInc/Roo-Code,https://github.com/RooCodeInc/Roo-Code/pull/4985,"Removing these checkboxes since we can enforce them with CI
+<!-- ELLIPSIS_HIDDEN -->
+
+----
+
+> [!IMPORTANT]
+> Simplifies PR template by removing checklist items for code quality and testing now enforced by CI.
+> 
+>   - **Template Changes**:
+>     - Removed checklist items related to code quality and testing that are now enforced by CI in `.github/pull_request_template.md`.
+>     - Specifically removed checks for code style adherence, linting errors, debug code removal, local test passing, successful build, and branch hygiene.
+> 
+> <sup>This description was created by </sup>[<img alt=""Ellipsis"" src=""https://img.shields.io/badge/Ellipsis-blue?color=175173"">](https://www.ellipsis.dev?ref=RooCodeInc%2FRoo-Code&utm_source=github&utm_medium=referral)<sup> for 4afb9d221a6a6327108a7841ff573146983a2ca1. You can [customize](https://app.ellipsis.dev/RooCodeInc/settings/summaries) this summary. It will automatically update as commits are pushed.</sup>
+
+<!-- ELLIPSIS_HIDDEN -->"
+3165243502,4987,Remove type of change from PR template,mrubens,2600,closed,2025-06-21T17:19:55Z,2025-06-21T17:22:50Z,2025-06-21T17:22:50Z,https://api.github.com/repos/RooCodeInc/Roo-Code,https://github.com/RooCodeInc/Roo-Code/pull/4987,"The ""Type of Change"" section was removed from the pull request template located at `.github/pull_request_template.md`.
+
+This modification was implemented to enable automatic labeling of pull request types, as the previous section required manual selection via checkboxes for categories such as bug fixes, new features, or breaking changes.
+
+The template now transitions directly from the ""Test Procedure"" section to the ""Pre-Submission Checklist"", streamlining the PR creation process.
+<!-- ELLIPSIS_HIDDEN -->
+
+----
+
+> [!IMPORTANT]
+> Remove ""Type of Change"" section from PR template to streamline process and enable automatic labeling.
+> 
+>   - **Template Update**:
+>     - Removes ""Type of Change"" section from `.github/pull_request_template.md`.
+>     - Streamlines PR process by transitioning directly from ""Test Procedure"" to ""Pre-Submission Checklist"".
+>     - Enables automatic labeling of PR types, eliminating manual checkbox selection.
+> 
+> <sup>This description was created by </sup>[<img alt=""Ellipsis"" src=""https://img.shields.io/badge/Ellipsis-blue?color=175173"">](https://www.ellipsis.dev?ref=RooCodeInc%2FRoo-Code&utm_source=github&utm_medium=referral)<sup> for 50be80b6b233636b13d1bf4fc5b81c7e1b3e1c16. You can [customize](https://app.ellipsis.dev/RooCodeInc/settings/summaries) this summary. It will automatically update as commits are pushed.</sup>
+
+<!-- ELLIPSIS_HIDDEN -->"
+3165441797,1216,fix: custom lint rule for effect imports,juliusmarminge,51714798,closed,2025-06-21T21:25:12Z,2025-06-21T22:22:06Z,2025-06-21T22:22:06Z,https://api.github.com/repos/pingdotgg/uploadthing,https://github.com/pingdotgg/uploadthing/pull/1216,"The `no-restricted-imports` ESLint rule was not correctly catching top-level `effect` library imports.
+
+The issue stemmed from ESLint's configuration merging behavior. The `noSelfImport()` function in `tooling/eslint-config/base.js` was intended to add a self-import restriction but was inadvertently *overriding* the existing `no-restricted-imports` rule, which included a `paths` restriction for ""effect"". Because `noSelfImport()` only defined `patterns` and not `paths`, the `effect` restriction was lost when the configurations merged.
+
+The fix involved modifying the `noSelfImport()` function in `tooling/eslint-config/base.js`. The function was updated to explicitly include both:
+*   The `paths` restriction for the `effect` library, with the message `'Use alias imports instead (import * as X from ""effect/X"")'`.
+*   Its original `patterns` restriction for self-imports.
+
+This ensures that when `noSelfImport()` is applied, both the `effect` import restriction and the package self-import restriction are active, correctly preventing top-level `effect` imports while allowing the recommended aliased imports.
+
+<!-- This is an auto-generated comment: release notes by coderabbit.ai -->
+## Summary by CodeRabbit
+
+- **Chores**
+	- Updated import restrictions to enforce alias imports for ""@effect/platform"" and ""effect"" packages, ensuring consistent import practices across the project.
+<!-- end of auto-generated comment: release notes by coderabbit.ai -->"
+3165684483,5071,Implement feature and add tests,shahargl,12069200,closed,2025-06-22T05:47:38Z,2025-06-22T06:35:28Z,,https://api.github.com/repos/keephq/keep,https://github.com/keephq/keep/pull/5071,"close https://github.com/keephq/keep/issues/5070
+
+GitHub issue %235070, concerning conditional namespace display in Teams Adaptive Cards, was addressed.
+
+The root cause was identified in `keep/iohandler/iohandler.py`'s `render_context()` method, where `safe=True` caused a `RenderException` for missing mustache template keys (e.g., `{{ alert.labels.namespace }}`).
+
+To resolve this, three new tests were added to `tests/test_teams_provider.py`:
+*   `test_github_issue_5070_mustache_template_rendering()` to reproduce the issue.
+*   `test_teams_adaptive_card_safe_rendering_patterns()` to test the Teams provider with safe rendering.
+*   `test_render_context_safe_parameter_handling()` to validate `IOHandler.render_context()` behavior.
+
+Two safe rendering patterns were documented and tested:
+*   `keep.dictget({{ alert.labels }}, 'namespace', 'N/A')` for robust default value handling.
+*   Mustache conditionals for more complex logic.
+
+An example workflow, `examples/workflows/teams-adaptive-cards-safe-rendering.yaml`, was created to demonstrate these patterns. A documentation file `GITHUB_ISSUE_5070_IMPLEMENTATION.md` was also added. `pyproject.toml` and `poetry.lock` were not modified, adhering to specific constraints, ensuring compatibility with Python 3.11 . All tests pass."
+3162618850,818,Return 404 for asset-service requests,karakanb,16530606,closed,2025-06-20T09:45:10Z,2025-06-20T09:45:58Z,,https://api.github.com/repos/bruin-data/bruin,https://github.com/bruin-data/bruin/pull/818,"The session determined that the `bruin` repository, a Go-based CLI tool, was not the correct codebase for addressing the reported 404-to-500 error conversion from asset-service. The issue was identified as originating from a separate Cloud web application, likely PHP-based.
+
+No direct code changes were applied to the `bruin` repository. Instead, a new document, `asset-service-404-error-analysis.md`, was created. This document:
+
+*   Details the repository misidentification.
+*   Explains the problem's root cause in the Cloud web application (404s from asset-service being converted to 500s).
+*   Provides recommended steps and an example PHP code pattern for fixing the issue in the correct repository. The fix involves modifying the Cloud application's HTTP client error handling to correctly return 404s from asset-service instead of converting them to 500s."
+3163213567,2579,fix(vscode): don't throw error if MCP port is already in use,MaxKless,34165455,open,2025-06-20T12:46:01Z,,,https://api.github.com/repos/nrwl/nx-console,https://github.com/nrwl/nx-console/pull/2579,"The `McpWebServer.startSkeletonMcpServer` method in `libs/vscode/mcp/src/lib/mcp-web-server.ts` was updated to handle `EADDRINUSE` errors.
+
+*   When the specified port is already in use, instead of throwing an error, a message is logged to the VS Code output channel via `getOutputChannel().appendLine()`, indicating that this is expected behavior in multi-instance scenarios.
+*   A `serverStartupFailed` boolean variable was introduced in `McpWebServer` to track if the server failed to start. This flag is initialized to `false`, set to `true` on startup failure (including `EADDRINUSE`), and set to `false` on successful startup.
+*   The `completeMcpServerSetup` method's execution is now conditional on `serverStartupFailed` to prevent SSE transport setup if the server isn't running.
+*   The `stopMcpServer` method also resets the `serverStartupFailed` flag to `false`.
+
+These changes ensure graceful handling of port conflicts, logging a message without disrupting the application flow."
+3163448583,93933,Update RightMask component background gradient,JonasBa,9317857,closed,2025-06-20T14:00:09Z,2025-06-20T17:32:53Z,2025-06-20T17:32:53Z,https://api.github.com/repos/getsentry/sentry,https://github.com/getsentry/sentry/pull/93933,Fixes DE-129 and DE-156
+3163875884,93946,fix(replay): Fix summaries not loading due to using wrong `project_id`,billyvg,79684,closed,2025-06-20T16:47:23Z,2025-06-20T17:42:08Z,2025-06-20T17:42:08Z,https://api.github.com/repos/getsentry/sentry,https://github.com/getsentry/sentry/pull/93946,Use `project_id` on the replay record instead of the URL (where it does not always exist).
+3139065611,366,feat: update logging format in cli.ts to match vite,sam-goodwin,38672686,closed,2025-06-12T06:54:41Z,2025-06-12T07:14:56Z,2025-06-12T07:14:56Z,https://api.github.com/repos/sam-goodwin/alchemy,https://github.com/sam-goodwin/alchemy/pull/366,"Logging prefixes in `alchemy/src/apply.ts` and `alchemy/src/destroy.ts` were converted to lowercase for improved consistency and readability.
+
+*   `SETUP` was changed to `setup`.
+*   `SKIPPED` was changed to `skipped`.
+*   `CREATING` and `UPDATING` were changed to `creating` and `updating` respectively.
+*   `CREATED` and `UPDATED` were changed to `created` and `updated`.
+*   `DELETING` was changed to `deleting` and its color updated to `redBright`.
+*   `DELETED` was changed to `deleted`.
+
+In `alchemy/src/util/cli.ts`, a `getTimestamp()` function was introduced to format the current time as `HH:MM:SS`. The `task` logger was updated to prepend this timestamp, colored gray, to all log messages. This aligns the logging output with common development tools like Vite, providing immediate temporal context and enhancing visual clarity. The prefix padding logic was also adjusted to accommodate the new timestamp."
+3139071787,2027,cursor/make b pickleable for multiprocessing 649e,aaronvg,5353992,closed,2025-06-12T06:57:13Z,2025-06-16T23:27:02Z,,https://api.github.com/repos/BoundaryML/baml,https://github.com/BoundaryML/baml/pull/2027,"- **Add multiprocessing support and pickling for BamlRuntime in Python**
+- **Add pickle support for BAML runtime and multiprocessing test**
+"
+3139420152,7266,feat(ui) Implement CSV download for datasets,jannikmaierhoefer,48529566,closed,2025-06-12T08:55:22Z,2025-06-16T14:22:40Z,,https://api.github.com/repos/langfuse/langfuse,https://github.com/langfuse/langfuse/pull/7266,"CSV download functionality for datasets has been implemented, mirroring the existing trace table export.
+
+Key changes include:
+
+*   **Backend Integration:**
+    *   `DatasetItems` was added to the `BatchTableNames` enum in `/packages/shared/src/interfaces/tableNames.ts` to enable dataset items for batch export.
+    *   A new case for `dataset_items` was added to `getDatabaseReadStream` in `/worker/src/features/database-read-stream/getDatabaseReadStream.ts`. This logic fetches all relevant dataset item fields, including the associated `dataset.name`, ensuring comprehensive data for export.
+*   **Frontend Integration:**
+    *   The `DatasetItemsTable` component in `/web/src/features/datasets/components/DatasetItemsTable.tsx` was updated.
+    *   The `BatchExportTableButton` component was integrated into the table's action buttons.
+    *   The `useOrderByState` hook was added to manage sorting state, which is required by the batch export functionality.
+
+The CSV export now includes columns such as ID, Dataset ID, Dataset Name, Input, Expected Output, Metadata, Status, and timestamps. Exports are processed asynchronously and delivered via email, maintaining consistency with other table export features."
+3139478652,1704,Fix compiler warnings in source files,ggarber,512252,closed,2025-06-12T09:15:08Z,2025-06-17T13:25:26Z,2025-06-17T13:25:26Z,https://api.github.com/repos/coturn/coturn,https://github.com/coturn/coturn/pull/1704,"Two compiler warnings were addressed:
+
+*   In `src/apps/relay/http_server.c`, line 77, a `-Wpointer-sign` warning occurred when initializing a `char *` with the `uint8_t *` return type of `ioa_network_buffer_data()`.
+    *   An explicit cast `(char *)` was added to `ioa_network_buffer_data(nbh_http)` to resolve the type mismatch.
+
+*   In `src/apps/relay/acme.c`, line 59, a `-Wchar-subscripts` warning was present because a `char` variable `c` was used as an array index. `char` can be signed, potentially leading to negative indices.
+    *   Initially, `c` was cast to `(unsigned char)` at the point of use: `A[(unsigned char)c]`.
+    *   This was later improved by changing the declaration of `c` from `const char` to `const unsigned char c = req[k]"
+3139974947,4459,fix: Ensure tags values are strings,szokeasaurusrex,7881302,open,2025-06-12T11:47:53Z,,,https://api.github.com/repos/getsentry/sentry-python,https://github.com/getsentry/sentry-python/pull/4459,"Ensure tag values are strings before serializing an event or a transaction to an `Event` dictionary.
+
+Fixes #4391 "
+3140117936,5015,feat(provider): Implement ticket 5014 with unit tests,shahargl,12069200,closed,2025-06-12T12:33:22Z,2025-06-12T14:27:24Z,2025-06-12T14:27:24Z,https://api.github.com/repos/keephq/keep,https://github.com/keephq/keep/pull/5015,"close https://github.com/keephq/keep/issues/5014
+
+HTML email support was implemented for the SMTP provider.
+
+*   The `send_email` and `_notify` functions in `keep/providers/smtp_provider/smtp_provider.py` were updated to accept an `html` parameter. HTML content is now prioritized over plain `body` text, and a `ValueError` is raised if neither is provided.
+*   A new unit test file, `tests/test_smtp_provider.py`, was added. It includes tests for sending plain text and HTML emails, verifying HTML precedence, handling multiple recipients, and testing different encryption methods (TLS, SSL, None).
+*   An example workflow, `examples/workflows/send_smtp_html_email.yml`, was created to demonstrate the new HTML email functionality.
+*   The documentation in `docs/providers/documentation/smtp-provider.mdx` was updated to detail HTML email usage and multiple recipient support.
+*   The `test_smtp_connection` function in `keep/api/routes/settings.py` was modified to send a rich HTML-formatted test email, improving the connection test's visual feedback.
+
+This ensures the SMTP provider can send both plain text and HTML emails, with backward compatibility for existing workflows."
+3140211798,782,Enhance Quill mention and color support,JhumanJ,11312432,closed,2025-06-12T13:03:49Z,2025-06-12T13:04:22Z,,https://api.github.com/repos/JhumanJ/OpnForm,https://github.com/JhumanJ/OpnForm/pull/782,"Quill editor functionality was enhanced with updates to mention handling and color support.
+
+*   In `client/lib/quill/quillMentionExtension.js`:
+    *   The `MentionBlot.value` static method was updated to strictly check `domNode.getAttribute('mention') === 'true'`, preventing misidentification of styled spans as mentions.
+    *   The old global clipboard matcher was removed.
+    *   A new `addClipboardMatcher()` method was added to the `MentionModule` and invoked in its constructor. This new matcher differentiates real mentions from misidentified styled spans during paste operations, ensuring correct formatting.
+
+*   In `client/lib/quill/quillPatches.js`:
+    *   `notionColors` were imported from `../colors.js`.
+    *   Quill's `ColorAttributor` whitelist was set to `notionColors` and then registered, enabling custom Notion-style colors in the editor.
+
+*   In `client/lib/colors.js`:
+    *   The `notionColors` array was added and exported to provide the specific color palette.
+
+These changes improve mention accuracy and expand color customization options.
+
+<!-- This is an auto-generated comment: release notes by coderabbit.ai -->
+
+## Summary by CodeRabbit
+
+- **New Features**
+  - Added support for Notion's default color palette in the editor, allowing users to select from a range of Notion-specific colors.
+
+- **Bug Fixes**
+  - Improved mention detection and clipboard handling in the editor to prevent styled text from being misinterpreted as mentions during paste operations.
+
+<!-- end of auto-generated comment: release notes by coderabbit.ai -->"
+3140750375,7278,chore(ui) Update LLM connection API key message,jannikmaierhoefer,48529566,closed,2025-06-12T15:30:46Z,2025-06-13T16:37:38Z,2025-06-13T16:37:38Z,https://api.github.com/repos/langfuse/langfuse,https://github.com/langfuse/langfuse/pull/7278,"-> Message when adding LLM connection confuses self-hosters: ""Your API keys are stored encrypted on our servers.""
+
+The text displayed when adding a new LLM Connection was updated in `/web/src/features/public-api/components/CreateLLMApiKeyForm.tsx`. The intention was to differentiate the message for self-hosted Langfuse instances versus Langfuse Cloud.
+
+The `env` object was imported to utilize `env.NEXT_PUBLIC_LANGFUSE_CLOUD_REGION` for environment detection.
+
+Two specific text instances were modified:
+*   The API Key storage message now states:
+    *   Cloud: ""Your API keys are stored encrypted on our servers.""
+    *   Self-hosted: ""Your API keys are stored encrypted in your database.""
+*   The Extra Headers storage message now states:
+    *   Cloud: ""All header values stored encrypted on our servers.""
+    *   Self-hosted: ""All header values stored encrypted in your database.""
+
+This ensures self-hosted users are correctly informed that their credentials reside within their own database, aligning the message with the deployment environment. The changes were verified to compile and pass linting.
+<!-- ELLIPSIS_HIDDEN -->
+
+----
+
+> [!IMPORTANT]
+> Update `CreateLLMApiKeyForm.tsx` to differentiate API key and header storage messages for cloud and self-hosted environments using `env`.
+> 
+>   - **Behavior**:
+>     - Update API Key storage message in `CreateLLMApiKeyForm.tsx` to differentiate between cloud and self-hosted environments using `env.NEXT_PUBLIC_LANGFUSE_CLOUD_REGION`.
+>     - Cloud: ""Your API keys are stored encrypted on our servers.""
+>     - Self-hosted: ""Your API keys are stored encrypted in your database.""
+>     - Update Extra Headers storage message similarly.
+>   - **Environment**:
+>     - Import `env` from `env.mjs` to detect environment type.
+> 
+> <sup>This description was created by </sup>[<img alt=""Ellipsis"" src=""https://img.shields.io/badge/Ellipsis-blue?color=175173"">](https://www.ellipsis.dev?ref=langfuse%2Flangfuse&utm_source=github&utm_medium=referral)<sup> for 1c06f94849fc3d1dadb825375398d517401dd920. You can [customize](https://app.ellipsis.dev/langfuse/settings/summaries) this summary. It will automatically update as commits are pushed.</sup>
+
+<!-- ELLIPSIS_HIDDEN -->"
+3140758164,1385,Upgrade eslint to version 9,geclos,1948929,open,2025-06-12T15:33:28Z,,,https://api.github.com/repos/latitude-dev/latitude-llm,https://github.com/latitude-dev/latitude-llm/pull/1385,"ESLint was upgraded to version 9 across the monorepo.
+
+*   The root `package.json` was updated to ESLint 9.17.0, and `pnpm-lock.yaml` was refreshed.
+*   The ESLint configuration was migrated from the legacy `.eslintrc.json` format to the new flat config `eslint.config.cjs`.
+*   All package-specific `.eslintrc.json` files were replaced with `eslint.config.cjs` files, importing a new shared configuration from `tools/eslint/library.cjs`.
+*   Configuration files were renamed to `.cjs` to ensure CommonJS compatibility in ES module environments.
+*   The shared configuration in `tools/eslint/library.cjs` was rewritten to use ESLint 9's flat config API, including `@eslint/js` and `typescript-eslint` v8.
+*   The `apps/web/eslint.config.cjs` was updated to integrate `@next/eslint-plugin-next` for Next.js-specific flat configuration.
+*   The `eslint-config-turbo` import was removed from the shared config, as it does not yet support the flat config format.
+*   Obsolete dependencies were removed from `tools/eslint/package.json`.
+*   All original `.eslintrc.json` files were deleted.
+*   The upgrade successfully enabled ESLint 9, identifying new linting issues."
+3140903716,1862,Fix handling of backtrace frames,cleptric,6617432,closed,2025-06-12T16:23:01Z,2025-06-13T15:24:17Z,2025-06-13T15:24:17Z,https://api.github.com/repos/getsentry/sentry-php,https://github.com/getsentry/sentry-php/pull/1862,Fixes #1861 
+3141668471,373,chore: Set up claude auto-review configuration,sam-goodwin,38672686,closed,2025-06-12T22:03:58Z,2025-06-12T22:04:27Z,2025-06-12T22:04:27Z,https://api.github.com/repos/sam-goodwin/alchemy,https://github.com/sam-goodwin/alchemy/pull/373,"A new GitHub Actions workflow, `.github/workflows/claude-auto-review.yml`, was created to automate pull request reviews using Claude.
+
+Key features of the new workflow:
+*   **Automatic Triggering**: Runs on `pull_request` `opened` and `synchronize` events, eliminating the need for manual `@claude` mentions.
+*   **Bot Protection**: Includes a conditional check (`if: github.actor != 'dependabot[bot]' "
+3141717000,374,chore: set up .cursor/environment.json and .cursor/Dockerfile,sam-goodwin,38672686,open,2025-06-12T22:34:31Z,,,https://api.github.com/repos/sam-goodwin/alchemy,https://github.com/sam-goodwin/alchemy/pull/374,
+3143270588,4917,feat(featureFlags): Re-export Feature Flags integration,krystofwoldrich,31292499,open,2025-06-13T11:27:05Z,,,https://api.github.com/repos/getsentry/sentry-react-native,https://github.com/getsentry/sentry-react-native/pull/4917,"The `packages/core/src/js/index.ts` file was modified to export `featureFlagsIntegration` and `type FeatureFlagsIntegration` from `@sentry/core`.
+
+*   The `FeatureFlagsIntegration` type was added to the existing type exports block.
+*   The `featureFlagsIntegration` function was added to the existing function exports block.
+
+This change enables the `featureFlagsIntegration` and its associated type to be re-exported from `@sentry/core`, making them accessible for use in other Sentry SDKs, such as `@sentry/react-native`. The modification aligns with the established pattern for exporting integrations within the Sentry codebase. A pull request was prepared to integrate these changes."
+3143406408,5019,fix: nested `foreach`,shahargl,12069200,closed,2025-06-13T12:23:21Z,2025-06-19T06:46:56Z,,https://api.github.com/repos/keephq/keep,https://github.com/keephq/keep/pull/5019,"close https://github.com/keephq/keep/issues/5016
+
+Further investigation of `examples/workflows/` revealed that actions extensively use `foreach` and require result accumulation. The previous fix was reverted, restoring `foreach=self.foreach` for both steps and actions.
+
+The true root cause of the reported bug was identified as incorrect Python provider syntax. The `python` provider's `code` parameter expects a single expression for `eval()`, not multi-line statements. This caused the Python step to fail, leading to `NoneType` errors in subsequent `foreach` actions.
+
+Comprehensive tests were added to `tests/test_workflows.py`, including `test_workflow_nested_foreach_console`, `test_workflow_nested_foreach_keep_provider`, `test_workflow_step_with_foreach`, `test_workflow_multiple_foreach_actions`, and `test_workflow_gke_style_foreach`. All tests were updated to use the correct Python provider syntax (e.g., `'{""key"": ""value""}'`).
+
+The changes ensure that the `foreach` mechanism works correctly for both steps and actions, and the original `NoneType` error is resolved by enforcing proper Python provider usage."
+3143424792,1390,Run linter and fix warnings,geclos,1948929,closed,2025-06-13T12:30:30Z,2025-06-16T13:41:31Z,2025-06-16T13:41:31Z,https://api.github.com/repos/latitude-dev/latitude-llm,https://github.com/latitude-dev/latitude-llm/pull/1390,Cleaned up all linter warnings
+3143968533,93512,Add user email and name to feedback,bruno-garcia,1633368,closed,2025-06-13T15:37:05Z,2025-06-16T07:43:38Z,2025-06-16T07:43:38Z,https://api.github.com/repos/getsentry/sentry,https://github.com/getsentry/sentry/pull/93512,"The `captureFeedback` call in `static/app/views/settings/project/tempest/PlayStationSdkAccessModal.tsx` was significantly refactored to align with Sentry's recommended API for user context and to customize the feedback message.
+
+Changes include:
+*   **User Context**: User details (`id`, `email`, `username`, `name`) are now passed via `hint.captureContext.user` in the `captureFeedback` options. This replaces the previous approach of setting the user email via the `'user.email'` tag.
+*   **Message Body**: The `message` property now constructs a multi-line string containing:
+    *   `User: [Name]`
+    *   `Email: [Email]`
+    *   `Engines: [Engine1, Engine2]` (formatted with human-readable labels)
+    *   `Org Slug: [Org Slug]`
+*   **Game Engines**: Game engines are now included directly in the message body, formatted for readability, instead of being stored as a separate tag.
+*   **Tag Cleanup**: Redundant tags such as `'user.email'`, `'org.slug'`, and `gameEngines` were removed, retaining only `feature` and `githubProfile`.
+
+These modifications ensure user information is captured correctly according to Sentry's API and provide a structured, human-readable feedback message."
+3166296433,5024,Add option for allowed MCPs,mrubens,2600,open,2025-06-22T21:41:45Z,,,https://api.github.com/repos/RooCodeInc/Roo-Code,https://github.com/RooCodeInc/Roo-Code/pull/5024,"A new `allowedMcpServers` option was added to the mode configuration, enabling restrictions on MCP server access.
+
+*   The `groupOptionsSchema` in `packages/types/src/mode.ts` was updated to include an optional `allowedMcpServers` array of strings.
+*   A new `McpServerRestrictionError` class was introduced in `src/shared/modes.ts` to provide specific error messages when restrictions are violated.
+*   The `isToolAllowedForMode` function in `src/shared/modes.ts` was modified to enforce these restrictions for `use_mcp_tool` and `access_mcp_resource` calls.
+    *   If a `server_name` is provided and not in the allowed list, an `McpServerRestrictionError` is thrown.
+    *   Requests without a `server_name` (e.g., partial streaming requests) are permitted.
+*   Comprehensive tests were added to `src/shared/__tests__/modes.spec.ts` to validate the restriction logic, covering permitted/rejected servers, unrestricted modes, and error messages.
+*   Schema validation tests were added to `src/core/config/__tests__/ModeConfig.spec.ts` to ensure the `allowedMcpServers` field is correctly parsed and validated.
+
+This change provides granular control over which MCP servers a mode can interact with.
+<!-- ELLIPSIS_HIDDEN -->
+
+----
+
+> [!IMPORTANT]
+> Adds `allowedMcpServers` option to restrict MCP server access in modes, with error handling and comprehensive tests.
+> 
+>   - **Behavior**:
+>     - Adds `allowedMcpServers` option to `groupOptionsSchema` in `mode.ts` for restricting MCP server access.
+>     - Updates `isToolAllowedForMode` in `modes.ts` to enforce MCP server restrictions, throwing `McpServerRestrictionError` for disallowed servers.
+>     - Allows requests without `server_name` (e.g., partial streaming requests).
+>   - **Error Handling**:
+>     - Introduces `McpServerRestrictionError` in `modes.ts` for specific error messaging when MCP server restrictions are violated.
+>   - **Testing**:
+>     - Adds tests in `modes.spec.ts` to validate MCP server restriction logic, including allowed/rejected servers and error messages.
+>     - Adds schema validation tests in `ModeConfig.spec.ts` for `allowedMcpServers` field parsing and validation.
+> 
+> <sup>This description was created by </sup>[<img alt=""Ellipsis"" src=""https://img.shields.io/badge/Ellipsis-blue?color=175173"">](https://www.ellipsis.dev?ref=RooCodeInc%2FRoo-Code&utm_source=github&utm_medium=referral)<sup> for cecacba17481987d421fdbf75041516e11d0bce5. You can [customize](https://app.ellipsis.dev/RooCodeInc/settings/summaries) this summary. It will automatically update as commits are pushed.</sup>
+
+<!-- ELLIPSIS_HIDDEN -->"
+3166296623,5025,Add UI for file regex editing,mrubens,2600,open,2025-06-22T21:42:05Z,,,https://api.github.com/repos/RooCodeInc/Roo-Code,https://github.com/RooCodeInc/Roo-Code/pull/5025,"A UI was added to the modes tab for displaying and editing the `fileRegex` property of the ""edit"" tool group.
+
+Changes include:
+
+*   **`webview-ui/src/components/modes/ModesView.tsx`**:
+    *   New state variables (`editingFileRegex`, `fileRegexValue`, `fileRegexDescription`) were introduced to manage the editing state and input values.
+    *   Functions `startEditingFileRegex`, `saveFileRegex`, and `cancelEditingFileRegex` were added to handle the lifecycle of the editing process.
+    *   The UI for the ""edit"" tool group was updated to conditionally render either the display-only view or an editable form with input fields for `fileRegex` and `description`, along with ""Save"" and ""Cancel"" buttons.
+    *   An edit icon button was added, visible only for custom modes, to initiate the editing process.
+    *   The `saveFileRegex` function now correctly handles `GroupEntry` types, converting simple `""edit""` strings to `[""edit"", { fileRegex, description }]` tuples when options are added, and updating existing tuples.
+*   **`webview-ui/src/i18n/locales/en/prompts.json`**:
+    *   New translation keys (`fileRegex`, `description`, `save`, `cancel`, `editFileRegex`) were added to support the new UI elements.
+
+This allows users to visually configure file regex patterns and descriptions for custom modes directly within the UI.
+<!-- ELLIPSIS_HIDDEN -->
+
+----
+
+> [!IMPORTANT]
+> Adds UI for editing `fileRegex` in custom modes, with new state management and localization in `ModesView.tsx` and `prompts.json`.
+> 
+>   - **Behavior**:
+>     - Adds UI for editing `fileRegex` in custom modes in `ModesView.tsx`.
+>     - Introduces `editingFileRegex`, `fileRegexValue`, and `fileRegexDescription` state variables.
+>     - Adds `startEditingFileRegex`, `saveFileRegex`, and `cancelEditingFileRegex` functions.
+>     - Updates UI to conditionally render input fields and buttons for `fileRegex` and `description`.
+>     - Edit button visible only for custom modes.
+>     - `saveFileRegex` updates `GroupEntry` types, converting ""edit"" strings to tuples with options.
+>   - **Localization**:
+>     - Adds translation keys in `prompts.json` for `fileRegex`, `description`, `save`, `cancel`, and `editFileRegex`.
+> 
+> <sup>This description was created by </sup>[<img alt=""Ellipsis"" src=""https://img.shields.io/badge/Ellipsis-blue?color=175173"">](https://www.ellipsis.dev?ref=RooCodeInc%2FRoo-Code&utm_source=github&utm_medium=referral)<sup> for c093e96882f8de1975cecb4f6e03e52d4a1bcea9. You can [customize](https://app.ellipsis.dev/RooCodeInc/settings/summaries) this summary. It will automatically update as commits are pushed.</sup>
+
+<!-- ELLIPSIS_HIDDEN -->"
+2836332099,84718,chore(cursor): Add .cursor/rules for frontend,dashed,139499,closed,2025-02-06T18:53:03Z,2025-02-06T20:48:26Z,2025-02-06T20:48:25Z,https://api.github.com/repos/getsentry/sentry,https://github.com/getsentry/sentry/pull/84718,"Add a cursor rules file that applies to `*.spec.tsx` files as per https://docs.cursor.com/context/rules-for-ai
+
+Example of usage without explicitly mentioning how to run and test the `*.spec.tsx` file. 
+
+<img width=""872"" alt=""Screenshot 2025-02-06 at 1 42 00 PM"" src=""https://github.com/user-attachments/assets/e87bea22-80a3-48db-ba34-0105a5639563"" />
+"
+3165722637,20558,Fix Yes command panic in EventLoop,Jarred-Sumner,709451,open,2025-06-22T07:04:50Z,,,https://api.github.com/repos/oven-sh/bun,https://github.com/oven-sh/bun/pull/20558,"A crash in the `Yes` command was resolved by correcting its handling within the event loop's task processing.
+
+Previously:
+*   `shell.builtin.yes.YesTask` was incorrectly grouped with `bun.js.api.Timer.ImmediateObject` and `bun.js.api.Timer.TimeoutObject` in a `panic` case within the `switch` statement in `src/bun.js/event_loop/Task.zig`.
+*   This caused a crash whenever a `YesTask` was processed, as it triggered the `panic` function.
+
+The fix involved:
+*   Removing `shell.builtin.yes.YesTask` from the `panic` case.
+*   Adding a dedicated `case` for `@field(Task.Tag, @typeName(shell.Interpreter.Builtin.Yes.YesTask))` in the `tickQueueWithCount` function.
+*   This new case now correctly retrieves the `YesTask` and calls its `runFromMainThread()` method, ensuring proper asynchronous I/O operation without crashing."
+3165803170,8562,feat(dashboard): Add copy curl button to workflow drawer,scopsy,8872447,open,2025-06-22T09:25:05Z,,,https://api.github.com/repos/novuhq/novu,https://github.com/novuhq/novu/pull/8562,"A dropdown button was added to the `TestWorkflowDrawer` in `apps/dashboard/src/components/workflow-editor/test-workflow/test-workflow-drawer.tsx` to enhance developer experience.
+
+The dropdown provides two key functionalities:
+
+*   **Copy cURL**:
+    *   A `generateCurlCommand` function was implemented to construct a cURL command.
+    *   The command includes the workflow ID, recipient (`to`), and payload from the current drawer state.
+    *   It incorporates `Authorization` (Bearer token) and `Novu-Environment-Id` headers.
+    *   The generated command is copied to the clipboard with success feedback.
+
+*   **Copy Postman Collection**:
+    *   A `handleOpenInPostman` callback was added to generate a Postman collection JSON.
+    *   This JSON includes a pre-configured POST request to the trigger endpoint with all necessary headers and the current payload.
+    *   The collection JSON is copied to the clipboard, along with instructions for importing it into Postman.
+
+The `DropdownMenu` primitive was used for the UI, positioned next to the ""Test workflow"" button in the drawer's footer. Payload parsing was refined to handle string or object formats."
+3165818046,8563,"fix(dashboard): Trigger click, is not closing sidebar fixes NV-6148",scopsy,8872447,closed,2025-06-22T09:49:51Z,2025-06-22T10:28:19Z,2025-06-22T10:28:19Z,https://api.github.com/repos/novuhq/novu,https://github.com/novuhq/novu/pull/8563,"### What changed? Why was the change needed?
+
+<!-- Also include any relevant links, such as Linear tickets, Slack discussions, or design documents. -->
+
+### Screenshots
+
+<!-- If the changes are visual, include screenshots or screencasts. -->
+
+<details>
+<summary><strong>Expand for optional sections</strong></summary>
+
+### Related enterprise PR
+
+<!-- A link to a dependent pull request  -->
+
+### Special notes for your reviewer
+
+<!-- Specific instructions or considerations you want to highlight for the reviewer. -->
+
+</details>
+"
+3165822621,5074,feat: Improve OpenShift provider connection validation using REST API,talboren,68807791,open,2025-06-22T09:57:21Z,,,https://api.github.com/repos/keephq/keep,https://github.com/keephq/keep/pull/5074,close #5072 
+3165874296,8565,fix(web): Fetch branding details on page load of branding,scopsy,8872447,open,2025-06-22T11:22:22Z,,,https://api.github.com/repos/novuhq/novu,https://github.com/novuhq/novu/pull/8565,"The `/manage-account/branding` page was not displaying the organization logo after a page reload because it relied on stale data from the authentication context.
+
+To resolve this:
+*   A new React Query hook, `useFetchOrganization`, was introduced in `apps/web/src/api/hooks/useFetchOrganization.ts`. This hook fetches the latest organization data, including branding details, from the `/v1/organizations/me` API endpoint.
+*   The `BrandingPage` component in `apps/web/src/pages/brand/BrandingPage.tsx` was updated to use `useFetchOrganization`.
+*   An `useEffect` hook was added to `BrandingPage.tsx` to populate the form fields (`fontFamily`, `color`, `fontColor`, `logo`) with the fetched `organizationData.branding` upon successful data retrieval.
+*   The `LoadingOverlay` visibility condition was updated to reflect the loading state of the new hook.
+*   The new hook was exported from `apps/web/src/api/hooks/index.ts`.
+
+As a result, the organization logo and branding settings now correctly persist and display after a page reload, as the form is pre-filled with the most up-to-date server data."
+3161287864,1943,Enable symmetry and fix functions,zackees,6856673,closed,2025-06-19T20:33:40Z,2025-06-19T20:37:29Z,2025-06-19T20:37:29Z,https://api.github.com/repos/FastLED/FastLED,https://github.com/FastLED/FastLED/pull/1943,
+3161327793,3744,Update kaniko project status in docs,strickvl,3348134,closed,2025-06-19T21:02:35Z,2025-06-20T08:19:00Z,2025-06-20T08:19:00Z,https://api.github.com/repos/zenml-io/zenml,https://github.com/zenml-io/zenml/pull/3744,"Documentation was updated to reflect that the Kaniko project has been archived.
+
+*   In `docs/book/component-guide/image-builders/kaniko.md`:
+    *   A prominent warning box (`{% hint style=""warning"" %}`) was added directly after the title.
+    *   The warning states that the Kaniko project was archived in early June 2025, is no longer actively maintained, and suggests alternative image builders like Local, GCP, or AWS.
+*   In `docs/book/component-guide/image-builders/README.md`:
+    *   A note was appended to the Kaniko entry in the image builder table, indicating the project's archiving in June 2025.
+*   In `docs/book/getting-started/zenml-pro/self-hosted.md`:
+    *   A parenthetical note was added where Kaniko is mentioned as an optional installation, advising consideration of alternative image builders due to its archived status.
+
+These changes ensure users are informed about the Kaniko project's status and are encouraged to explore maintained alternatives, while maintaining consistency with the existing documentation style."
+3161425418,16661,fix(google-cloud-serverless): Make `CloudEvent` type compatible,AbhiPrasad,18689448,closed,2025-06-19T22:08:16Z,2025-06-20T12:05:56Z,2025-06-20T12:05:56Z,https://api.github.com/repos/getsentry/sentry-javascript,https://github.com/getsentry/sentry-javascript/pull/16661,"resolves https://github.com/getsentry/sentry-javascript/issues/16653
+
+As per the google cloud SDK (https://github.com/cloudevents/sdk-javascript/blob/c07afa9b774deefa137a960d2d11adee0bf3674a/src/event/interfaces.ts#L10-L31), `id` and  `specversion` should be mandatory."
+3161958337,8235,Increase touch target for back button,madsnedergaard,3296643,closed,2025-06-20T05:21:58Z,2025-06-20T08:55:31Z,2025-06-20T08:55:31Z,https://api.github.com/repos/electricitymaps/electricitymaps-contrib,https://github.com/electricitymaps/electricitymaps-contrib/pull/8235,"The back button's touch target area in the zone details panel was increased to improve mobile usability and accessibility.
+
+*   In `web/src/features/panels/zone/ZoneHeaderBackButton.tsx`:
+    *   The `div` wrapping the back button was updated with `min-h-[44px] min-w-[44px]` and padding adjusted from `py-2 pr-4` to `p-3 pr-6`.
+    *   Flexbox properties (`flex items-center justify-center`) were added to properly center the arrow icon within the larger touch area.
+    *   `cursor-pointer` was added for better visual feedback.
+    *   This change directly addresses the feedback about the back arrow being difficult to tap due to its small size and proximity to the app name, ensuring it meets WCAG guidelines for minimum touch target size.
+
+*   In `web/src/features/panels/zone/ZoneHeader.tsx`:
+    *   The container's left padding was slightly reduced from `pl-2` to `pl-1` to accommodate the now larger back button and maintain optimal spacing within the header layout."
+3161984792,1589,Summarize recent commits for homepage,johnlindquist,36073,open,2025-06-20T05:39:11Z,,,https://api.github.com/repos/johnlindquist/kit,https://github.com/johnlindquist/kit/pull/1589,"An article summarizing two weeks of Script Kit development was created in `development-update-article.md`. The article highlights 78 commits, focusing on major feature additions and improvements suitable for a homepage.
+
+Key changes documented in the article include:
+*   **Major New Features:** Comprehensive Model Context Protocol (MCP) server integration and initial React/JSX form support via the `formReact` API. The `params()` function received significant enhancements for type inference and schema handling.
+*   **Developer Experience Improvements:** Enhanced testing and build infrastructure, new 1Password CLI integration for secure secret management, and the introduction of AI-powered script generation.
+*   **User Interface Enhancements:** Improvements to the theme system and expanded metadata support, including emojis and timeout options for scripts.
+*   **Stability & Performance:** Overhauls to argument handling and resolution of TypeScript verification errors for improved type safety.
+
+The article is structured to be engaging and accessible, detailing the practical benefits for users while showcasing the technical depth of the improvements.
+
+<!-- This is an auto-generated comment: release notes by coderabbit.ai -->
+
+## Summary by CodeRabbit
+
+- **Documentation**
+  - Added a new development update article summarizing recent major features, UI enhancements, developer experience improvements, and stability upgrades for Script Kit, covering June 7-19, 2025. The article includes highlights such as MCP server integration, React/JSX form support, enhanced parameter handling, AI-powered script generation, and improved security and performance. Links to downloads, documentation, and community discussions are provided.
+
+<!-- end of auto-generated comment: release notes by coderabbit.ai -->"
+3162242238,3745,Investigate reported bug and root cause,strickvl,3348134,closed,2025-06-20T07:36:25Z,2025-06-20T07:38:41Z,,https://api.github.com/repos/zenml-io/zenml,https://github.com/zenml-io/zenml/pull/3745,"Investigation into a reported `RuntimeError` during `zenml login --local` focused on the `login()` function in `zenml/src/zenml/cli/login.py` and its call to `start_local_server()`, which utilizes `LocalServerDeployer`. The `RuntimeError: An unexpected error occurred` message was found to be a generic wrapper, suggesting an unhandled exception during server deployment.
+
+The bug is considered legitimate due to:
+*   The generic error message indicating an unhandled exception.
+*   Potential unhandled platform-specific edge cases (e.g., Windows non-blocking server, Mac `OBJC_DISABLE_INITIALIZE_FORK_SAFETY` variable, Docker requirements).
+
+No code changes were made. Recommendations include:
+*   Implementing more specific error handling.
+*   Improving platform detection.
+*   Adding debug logging.
+*   Validating prerequisites to provide clearer user feedback."
+3121322997,6395,test: Upgrade Storybook and add snapshot,diegolmello,804994,closed,2025-06-05T13:46:56Z,2025-06-23T14:16:07Z,,https://api.github.com/repos/RocketChat/Rocket.Chat.ReactNative,https://github.com/RocketChat/Rocket.Chat.ReactNative/pull/6395,"<!-- This is a pull request template, you do not need to uncomment or remove the comments, they won't show up in the PR text. -->
+
+## Proposed changes
+<!-- Describe the big picture of your changes here to communicate to the maintainers why we should accept this pull request. If it fixes a bug or resolves a feature request, be sure to link to that issue below. -->
+
+## Issue(s)	
+<!-- Link the issues being closed by or related to this PR. For example, you can use #594 if this PR closes issue number 594 -->
+
+## How to test or reproduce
+<!-- Mention how you would reproduce the bug if not mentioned on the issue page already. Also mention which screens are going to have the changes if applicable -->
+
+## Screenshots
+
+## Types of changes
+<!-- What types of changes does your code introduce to Rocket.Chat? -->
+<!-- Put an `x` in the boxes that apply -->
+
+- [ ] Bugfix (non-breaking change which fixes an issue)
+- [ ] Improvement (non-breaking change which improves a current function)
+- [ ] New feature (non-breaking change which adds functionality)
+- [ ] Documentation update (if none of the other choices apply)
+
+## Checklist
+<!-- Put an `x` in the boxes that apply. You can also fill these out after creating the PR. If you're unsure about any of them, don't hesitate to ask. We're here to help! This is simply a reminder of what we are going to look for before merging your code. -->
+
+- [ ] I have read the [CONTRIBUTING](https://github.com/RocketChat/Rocket.Chat/blob/develop/.github/CONTRIBUTING.md#contributing-to-rocketchat) doc
+- [ ] I have signed the [CLA](https://cla-assistant.io/RocketChat/Rocket.Chat.ReactNative)
+- [ ] Lint and unit tests pass locally with my changes
+- [ ] I have added tests that prove my fix is effective or that my feature works (if applicable)
+- [ ] I have added necessary documentation (if applicable)
+- [ ] Any dependent changes have been merged and published in downstream modules
+
+## Further comments
+<!-- If this is a relatively large or complex change, kick off the discussion by explaining why you chose the solution you did and what alternatives you considered, etc... -->
+"
+3123127952,20217,Node.js test: test-stdout-close-catch.js,Jarred-Sumner,709451,closed,2025-06-06T00:10:11Z,2025-06-06T01:04:10Z,,https://api.github.com/repos/oven-sh/bun,https://github.com/oven-sh/bun/pull/20217,"### What does this PR do?
+
+This fixes the test-stdout-close-catch.js
+
+### How did you verify your code works?
+
+CI"
+3124493699,494,Cursor Agent PR: Add referral system,elie222,3090527,closed,2025-06-06T11:23:31Z,2025-06-12T20:26:44Z,2025-06-12T20:26:44Z,https://api.github.com/repos/elie222/inbox-zero,https://github.com/elie222/inbox-zero/pull/494,"
+
+<!-- This is an auto-generated comment: release notes by coderabbit.ai -->
+## Summary by CodeRabbit
+
+- **New Features**
+  - Introduced a referral program with unique referral codes and referral tracking.
+  - Added a sidebar ""Refer friend"" dialog to view, copy, and share referral links and see referral stats and rewards.
+  - Users earn rewards automatically when referred friends complete their trial.
+  - Added API endpoints to fetch referral codes and referral statistics.
+
+- **Improvements**
+  - User profiles now include referral codes.
+  - Referral codes from sign-up links are captured and stored via cookies.
+  - Enhanced sign-up flow to handle referral code processing alongside premium invites.
+
+- **Bug Fixes**
+  - Improved error handling and user notifications for referral-related actions.
+
+- **Tests**
+  - Added extensive tests covering referral code generation, validation, referral creation, and sign-up referral handling.
+<!-- end of auto-generated comment: release notes by coderabbit.ai -->"
+3124507979,20228,Cursor/fix next auth test timeouts and memory issues 43d5,Jarred-Sumner,709451,closed,2025-06-06T11:30:33Z,2025-06-06T11:30:43Z,2025-06-06T11:30:43Z,https://api.github.com/repos/oven-sh/bun,https://github.com/oven-sh/bun/pull/20228,"### What does this PR do?
+
+<!-- **Please explain what your changes do**, example: -->
+
+<!--
+
+This adds a new flag --bail to bun test. When set, it will stop running tests after the first failure. This is useful for CI environments where you want to fail fast.
+
+-->
+
+- [ ] Documentation or TypeScript types (it's okay to leave the rest blank in this case)
+- [ ] Code changes
+
+### How did you verify your code works?
+
+<!-- **For code changes, please include automated tests**. Feel free to uncomment the line below -->
+
+<!-- I wrote automated tests -->
+
+<!-- If JavaScript/TypeScript modules or builtins changed:
+
+- [ ] I included a test for the new code, or existing tests cover it
+- [ ] I ran my tests locally and they pass (`bun-debug test test-file-name.test`)
+
+-->
+
+<!-- If Zig files changed:
+
+- [ ] I checked the lifetime of memory allocated to verify it's (1) freed and (2) only freed when it should be
+- [ ] I included a test for the new code, or an existing test covers it
+- [ ] JSValue used outside of the stack is either wrapped in a JSC.Strong or is JSValueProtect'ed
+- [ ] I wrote TypeScript/JavaScript tests and they pass locally (`bun-debug test test-file-name.test`)
+-->
+
+<!-- If new methods, getters, or setters were added to a publicly exposed class:
+
+- [ ] I added TypeScript types for the new methods, getters, or setters
+-->
+
+<!-- If dependencies in tests changed:
+
+- [ ] I made sure that specific versions of dependencies are used instead of ranged or tagged versions
+-->
+
+<!-- If a new builtin ESM/CJS module was added:
+
+- [ ] I updated Aliases in `module_loader.zig` to include the new module
+- [ ] I added a test that imports the module
+- [ ] I added a test that require() the module
+-->
+"
+3144417356,93538,ref(js): Remove acceptance test env and related code,evanpurkhiser,1421724,open,2025-06-13T18:32:11Z,,,https://api.github.com/repos/getsentry/sentry,https://github.com/getsentry/sentry/pull/93538,"`IS_ACCEPTANCE_TEST` and its associated dynamic text/static text behavior were removed from the codebase.
+
+Changes include:
+*   The `IS_ACCEPTANCE_TEST` constant was removed from `static/app/constants/index.tsx`.
+*   Build configurations in `rspack.config.ts` and `config/build-chartcuterie.ts` were updated to remove references to `IS_ACCEPTANCE_TEST`.
+*   The `getDynamicText` utility in `static/app/utils/getDynamicText.tsx` was simplified to always return the `value` parameter, eliminating the conditional `fixed` text behavior. Its corresponding test file, `static/app/utils/getDynamicText.spec.tsx`, was deleted.
+*   The `testableTransition` utility in `static/app/utils/testableTransition.tsx` was simplified to always return the provided transition, removing logic that conditionally disabled animations for acceptance tests.
+*   The `useResizable` hook and related constants (`SECONDARY_SIDEBAR_MIN_WIDTH`, `SECONDARY_SIDEBAR_MAX_WIDTH`) were removed, simplifying `static/app/views/nav/secondary/secondarySidebar.tsx` and `static/app/views/nav/sidebar.tsx`.
+*   Conditional logic relying on `deprecateTransactionAlerts` was removed from `static/app/views/discover/savedQuery/index.tsx`, `static/app/views/performance/transactionSummary/header.tsx`, and `static/app/views/performance/vitalDetail/vitalDetailContent.tsx`.
+*   Test files `static/app/views/explore/multiQueryMode/queryConstructors/menu.tsx` and `static/app/views/explore/multiQueryMode/locationUtils.tsx` were updated, and `static/app/views/explore/multiQueryMode/queryRow.tsx` was adjusted to remove duplicate/delete query functionality.
+*   The `build-acceptance` script in `package.json` was modified to remove only the `IS_ACCEPTANCE_TEST=1` environment variable, preserving the script itself.
+
+This streamlines the codebase by removing legacy testing-specific conditional rendering and animation logic."
+3144503030,2029,Remove symlinks and implement pnpm workspaces,seawatts,2148546,closed,2025-06-13T19:04:31Z,2025-06-16T18:39:22Z,,https://api.github.com/repos/BoundaryML/baml,https://github.com/BoundaryML/baml/pull/2029,"Symlinks were removed and pnpm workspaces were adopted for `playground-common`.
+
+*   The symlink at `vscode-ext/packages/web-panel/src/shared` pointing to `playground-common/src/shared` was removed.
+*   `playground-common/package.json` was updated to export `""./shared/*""` paths, including nested directories, via `exports` and `typesVersions`.
+*   `@baml/playground-common` was added as a `workspace:*` dependency in `vscode-ext/packages/web-panel/package.json`.
+*   All `@/shared/*` path aliases in `fiddle-frontend` and `web-panel` were replaced with `@baml/playground-common/shared/*` workspace imports.
+*   The `@/shared/*` path mapping was removed from `fiddle-frontend/tsconfig.json`.
+*   `vscode-ext/packages/web-panel/tsconfig.json` was updated to reflect the new import structure.
+*   Internal imports within `playground-common` (e.g., in `TabularView.tsx`) were reverted to relative paths, as workspace imports are intended for cross-package dependencies.
+*   `pnpm install` was run to update workspace links.
+
+These changes establish a proper pnpm workspace structure, eliminating symlinks and ensuring consistent module resolution for shared components across packages.
+<!-- ELLIPSIS_HIDDEN -->
+
+----
+
+> [!IMPORTANT]
+> Remove symlinks and implement pnpm workspaces for `playground-common`, updating import paths and configurations for consistent module resolution.
+> 
+>   - **Behavior**:
+>     - Removed symlink at `vscode-ext/packages/web-panel/src/shared` pointing to `playground-common/src/shared`.
+>     - Updated `playground-common/package.json` to export `""./shared/*""` paths using `exports` and `typesVersions`.
+>     - Added `@baml/playground-common` as a `workspace:*` dependency in `vscode-ext/packages/web-panel/package.json`.
+>     - Replaced all `@/shared/*` path aliases in `fiddle-frontend` and `web-panel` with `@baml/playground-common/shared/*` workspace imports.
+>     - Removed `@/shared/*` path mapping from `fiddle-frontend/tsconfig.json`.
+>     - Updated `vscode-ext/packages/web-panel/tsconfig.json` to reflect new import structure.
+>     - Reverted internal imports within `playground-common` to relative paths.
+>     - Ran `pnpm install` to update workspace links.
+>   - **Misc**:
+>     - Establishes a proper pnpm workspace structure, eliminating symlinks and ensuring consistent module resolution for shared components across packages.
+> 
+> <sup>This description was created by </sup>[<img alt=""Ellipsis"" src=""https://img.shields.io/badge/Ellipsis-blue?color=175173"">](https://www.ellipsis.dev?ref=BoundaryML%2Fbaml&utm_source=github&utm_medium=referral)<sup> for ee697ca1531514c73cd9f83c2a4e9e133363deb4. You can [customize](https://app.ellipsis.dev/BoundaryML/settings/summaries) this summary. It will automatically update as commits are pushed.</sup>
+
+<!-- ELLIPSIS_HIDDEN -->"
+3147227366,8519,style(dashboard): unify edit step content button text and icon fixes NV-6116,scopsy,8872447,closed,2025-06-15T08:03:34Z,2025-06-15T08:55:31Z,2025-06-15T08:55:31Z,https://api.github.com/repos/novuhq/novu,https://github.com/novuhq/novu/pull/8519,"The ""Configure {{channel}} Step template"" text in the configure step drawer was updated to ""Edit {{channel}} Step content"" within `apps/dashboard/src/components/workflow-editor/steps/configure-step-form.tsx`. This change aligns the wording with a more concise ""Edit content"" approach for improved consistency across the dashboard.
+
+Concurrently, the associated icon was updated from `RiPencilRuler2Fill` to `RiEdit2Line` in the same file. This modification ensures the icon matches the one used in `workflow-node-action-bar.tsx`, creating a unified visual experience for edit actions throughout the interface."
+3147302152,8520,docs(dashboard): Update documentation links in payload schema,scopsy,8872447,closed,2025-06-15T09:44:29Z,2025-06-15T10:27:06Z,2025-06-15T10:27:06Z,https://api.github.com/repos/novuhq/novu,https://github.com/novuhq/novu/pull/8520,"Documentation links within the payload schema drawer in `apps/dashboard/src/components/workflow-editor/payload-schema-drawer.tsx` were updated.
+
+Specifically:
+*   The ""Learn more"" link's `href` attribute was changed from `https://docs.novu.co/platform/concepts/workflows` to `https://docs.novu.co/platform/workflow/build-a-workflow#manage-payload-schema`.
+*   The ""View Docs"" link's `to` attribute was changed from `https://docs.novu.co/platform/concepts/payloads` to `https://docs.novu.co/platform/workflow/build-a-workflow#manage-payload-schema`.
+
+Both links now direct to the specified documentation section for managing payload schemas, ensuring consistency and accuracy in the provided resources."
+3147883994,153,Optimize code for performance and bugs,haydenbleasel,4142719,closed,2025-06-15T17:52:11Z,2025-06-15T23:59:20Z,2025-06-15T23:59:20Z,https://api.github.com/repos/haydenbleasel/kibo,https://github.com/haydenbleasel/kibo/pull/153,"Performance optimizations were applied across several components and new documentation was created.
+
+*   In `packages/gantt/index.tsx`:
+    *   A memory leak in the scroll event listener was fixed by ensuring proper cleanup.
+    *   Expensive date calculations were memoized using `useMemo` to prevent re-computation on every render.
+    *   CSS variables object recreation was optimized to reduce unnecessary re-renders.
+*   In `packages/table/index.tsx`, inline event handlers were extracted to `useCallback` hooks to prevent unnecessary re-renders.
+*   In `packages/color-picker/index.tsx`, a `useState` object initialization anti-pattern was corrected to prevent new object creation on each render, improving state management.
+*   Two new documentation files were created:
+    *   `OPTIMIZATION_RECOMMENDATIONS.md` outlines additional performance opportunities, including inline event handler optimizations in components like `ThemeSwitcher`, `Calendar`, `Rating`, and `Editor`, as well as bundle optimization via dynamic imports and `React.memo` candidates.
+    *   `SUMMARY_OF_IMPROVEMENTS.md` provides an overview of the completed optimizations and their impact.
+
+These changes aim to reduce memory usage, improve render performance, and provide a clear roadmap for future enhancements.
+
+<!-- This is an auto-generated comment: release notes by coderabbit.ai -->
+## Summary by CodeRabbit
+
+- **Refactor**
+  - Improved performance and maintainability across multiple components by introducing memoization (`useMemo`, `useCallback`, `React.memo`) for event handlers, computed values, and components.
+  - Enhanced debugging experience by assigning display names to memoized components.
+  - Standardized code style for better readability and consistency.
+- **Performance**
+  - Reduced unnecessary re-renders and redundant computations in calendar, color picker, table, and Gantt chart components.
+- **Style**
+  - Reformatted code for clarity and consistency without changing functionality.
+<!-- end of auto-generated comment: release notes by coderabbit.ai -->"
+3099462584,3391,Upgrade Turbo to v2.5.3 and migrate configuration,six7,4548309,open,2025-05-29T07:30:58Z,,,https://api.github.com/repos/tokens-studio/figma-plugin,https://github.com/tokens-studio/figma-plugin/pull/3391,Upgrades turbo to latest and adds proper version to package.json
+3099818675,3393,wip: Implement delta diff sync for optimized GitHub token storage performance,six7,4548309,open,2025-05-29T10:01:09Z,,,https://api.github.com/repos/tokens-studio/figma-plugin,https://github.com/tokens-studio/figma-plugin/pull/3393,"<!--
+  Notes for authors:
+  - Provide context with minimal words, keep it concise
+  - Mark as a draft for work in progress PRs
+  - Once ready for review, notify others in #code-reviews
+  - Remember, the review process is a learning opportunity for both reviewers and authors, it's a way for us to share knowledge and avoid silos.
+-->
+
+### Why does this PR exist?
+
+Closes #0000 <!-- link the related issue -->
+
+<!--
+  Describe the problem you're addressing and the rationale behind this PR.
+-->
+
+### What does this pull request do?
+
+<!--
+  Detailed summary of the changes, including any visual or interactive updates.
+  For UI changes, add before/after screenshots. For interactive elements, consider including a video or an animated gif.
+  Explain some of the choices you've made in the PR, if they're not obvious.
+-->
+
+### Testing this change
+
+<!--
+  Describe how this change can be tested. Are there steps required to get there? Explain what's required so a reviewer can test these changes locally.
+
+  If you have a review link available, add it here.
+-->
+
+### Additional Notes (if any)
+
+<!--
+  Add any other context or screenshots about the pull request
+-->
+"
+3100097668,3394,Resolve duplicate enter key shortcut warning,six7,4548309,open,2025-05-29T11:45:29Z,,,https://api.github.com/repos/tokens-studio/figma-plugin,https://github.com/tokens-studio/figma-plugin/pull/3394,"### Why does this PR exist?
+
+Fixes https://github.com/tokens-studio/figma-plugin/issues/1959
+
+### What does this pull request do?
+
+Fixes the duplicate shortcut warning by registering it conditionally
+
+### Testing this change
+
+Use Push dialog and EditTokenForm and submit with pressing Cmd + Enter, both should still work.
+"
+3100155456,3395,fix state update warning in components,six7,4548309,closed,2025-05-29T12:11:41Z,2025-05-31T17:51:42Z,2025-05-31T17:51:42Z,https://api.github.com/repos/tokens-studio/figma-plugin,https://github.com/tokens-studio/figma-plugin/pull/3395,"Fixes an issue where we had setState in a useMemo - which caused a console error
+
+fixes https://github.com/tokens-studio/figma-plugin/issues/2943"
+3158034133,93854,Refactor dynamic sampling rule ID assignment using ORM query,oioki,1127549,closed,2025-06-18T20:07:14Z,2025-06-23T14:16:04Z,,https://api.github.com/repos/getsentry/sentry,https://github.com/getsentry/sentry/pull/93854,Fixes https://linear.app/getsentry/issue/TET-676/
+3158063573,93856,Upgrade Sentry JS SDKs to `9.30.0`,AbhiPrasad,18689448,closed,2025-06-18T20:20:37Z,2025-06-18T20:41:42Z,2025-06-18T20:41:42Z,https://api.github.com/repos/getsentry/sentry,https://github.com/getsentry/sentry/pull/93856,"Sentry SDKs were upgraded from `9.24.0` to `9.30.0`. This included `@sentry/core`, `@sentry/node`, `@sentry/react`, and `@sentry/profiling-node` in `package.json` and `pnpm-lock.yaml`. Updated dependencies were then installed.
+
+### Packages Upgraded
+- `@sentry/core`: `9.24.0` → `9.30.0`
+- `@sentry/node`: `9.24.0` → `9.30.0`  
+- `@sentry/react`: `9.24.0` → `9.30.0`
+- `@sentry/profiling-node`: `9.24.0` → `9.30.0`
+
+### Key Relevant Changes for React/Browser SDKs (9.24.0 → 9.30.0)
+
+**Browser SDK Improvements:**
+- **9.29.0**: Updated `web-vitals` to 5.0.2 (may slightly change collected web vital values)
+- **9.25.0**: Added `ignorePerformanceApiSpans` option to ignore `mark` and `measure` spans
+- **9.23.0**: Added `ignoreResourceSpans` option to ignore certain resource types
+
+**React SDK Enhancements:**
+- **9.25.0**: Exported `getTraceData` from browser SDKs
+
+**General Improvements:**
+- **9.30.0**: Logs now include user data without requiring `sendDefaultPii` flag
+- **9.25.0**: Added consistent trace sampling across applications
+
+The full changelog is available at: https://github.com/getsentry/sentry-javascript/blob/develop/CHANGELOG.md#changelog"
+3158347305,658,feat: Add Heap and Google Analytics,dtbuchholz,13358940,open,2025-06-18T22:33:03Z,,,https://api.github.com/repos/recallnet/js-recall,https://github.com/recallnet/js-recall/pull/658,"Analytics functionality was added to the Next.js application in `./apps/comps`.
+
+*   Heap Analytics was integrated into `apps/comps/app/layout.tsx` using a `next/script` component.
+    *   The provided JavaScript snippet was embedded using `dangerouslySetInnerHTML`.
+    *   The script was configured with `strategy=""afterInteractive""` for optimal loading performance.
+*   Google Analytics was added to `apps/comps/app/layout.tsx`.
+    *   The `@next/third-parties` package was installed as a dependency in `apps/comps/package.json`.
+    *   The `GoogleTagManager` component was conditionally rendered based on `process.env.NODE_ENV !== ""development""` and the presence of `process.env.NEXT_PUBLIC_GA_ID`.
+*   The `turbo.json` file was updated to include `NODE_ENV` and `NEXT_PUBLIC_GA_ID` in the `globalEnv` array. This resolves linting warnings related to undeclared environment variables within the Turborepo setup.
+
+These changes address the requirement to add both Heap and Google Analytics, following Next.js best practices for script loading and environment variable handling."
+3159511012,788,feat: Introduce Public API with Sanctum Token Authentication,JhumanJ,11312432,closed,2025-06-19T08:51:14Z,2025-06-24T10:07:00Z,2025-06-24T10:07:00Z,https://api.github.com/repos/JhumanJ/OpnForm,https://github.com/JhumanJ/OpnForm/pull/788,"This pull request introduces a comprehensive, public-facing REST API to enable third-party integrations and programmatic access to OpnForm resources.
+
+The implementation establishes a dual authentication system that seamlessly supports both existing JWT sessions for the front-end application and new Sanctum-based Personal Access Tokens for external API clients.
+
+**Key Changes:**
+
+*   **Public API & Sanctum Auth:** A new `auth.multi` middleware has been implemented to handle authentication, trying Sanctum first and falling back to JWT. This allows new API endpoints to be protected by stateless, secure personal access tokens.
+*   **Granular Permissions:** Introduced fine-grained permission scopes for API tokens (e.g., `forms:read`, `workspaces:write`, `submissions:delete`). Authorization policies have been updated to enforce these scopes, ensuring API clients have precisely the access they need.
+*   **New API Endpoints:** Added a full suite of API endpoints for managing core resources, including:
+    *   Workspaces (CRUD)
+    *   Workspace Users (CRUD)
+    *   Forms (CRUD)
+    *   Submissions (List, Update, Delete)
+*   **Comprehensive Documentation:** A complete OpenAPI specification and detailed API reference documentation have been created. This provides clear guidance for developers on authentication, endpoints, request parameters, and responses.
+*   **Robust Testing:** Added extensive feature tests to validate the new authentication middleware and authorization policies, ensuring the API is both secure and reliable.
+
+<!-- This is an auto-generated comment: release notes by coderabbit.ai -->
+## Summary by CodeRabbit
+
+- **New Features**
+  - Introduced dual authentication (JWT and Personal Access Tokens) for the public API with granular, scope-based permissions.
+  - Added new API endpoints for managing workspaces, forms, submissions, and workspace users, each with detailed permission requirements.
+  - Enabled deletion of individual form submissions via API and UI.
+  - Added comprehensive API documentation including OpenAPI specification and detailed usage guides.
+  - Added extensive documentation guidelines and full site configuration for technical docs.
+  - Added middleware to enforce Pro plan requirement for token management and protected routes.
+  - Added an ""API Docs"" link and Pro plan gating to the access token management UI.
+
+- **Improvements**
+  - Updated authorization logic to enforce new read/write scopes and ownership-based policies across the app.
+  - Reorganized API routes for clarity and consistent middleware usage.
+  - Enhanced access token management UI to support conditional disabling of abilities and restricted token creation to Pro users.
+  - Refined logging and authentication middleware for consistent guard usage and dual-guard support.
+  - Added user Pro status attribute for conditional UI and API behavior.
+  - Changed authorization checks to ownership-based policies in form and workspace controllers.
+
+- **Bug Fixes**
+  - Fixed route and permission inconsistencies related to form submission deletion.
+
+- **Chores**
+  - Added extensive automated tests covering dual authentication and permission enforcement.
+  - Removed deprecated migration commands and related tests.
+  - Deleted outdated API specification files and documentation entries.
+<!-- end of auto-generated comment: release notes by coderabbit.ai -->"
+3159821039,6284,Create a drag and drop tray,steveruizok,23072548,closed,2025-06-19T10:32:34Z,2025-06-19T13:51:20Z,2025-06-19T13:51:20Z,https://api.github.com/repos/tldraw/tldraw,https://github.com/tldraw/tldraw/pull/6284,"A new drag-and-drop tray example was created in `apps/examples/src/examples/drag-and-drop-tray/`.
+
+*   `DragAndDropTrayExample.tsx` implements a fixed UI tray using the `InFrontOfTheCanvas` component override. It defines draggable emoji items (snowman, ice cream, smiley, star, heart) configured to create text shapes on the canvas when dropped.
+*   Drag mechanics are handled using document-level pointer events (`pointerdown`, `pointermove`, `pointerup`), converting screen coordinates to canvas coordinates via `editor.screenToPage()` before creating shapes with `editor.createShape()`.
+*   A visual drag preview follows the cursor, and the interaction can be cancelled by pressing the Escape key, managed by a `keydown` listener.
+*   `drag-and-drop-tray.css` provides styling for the tray, its interactive elements, and drag states.
+*   `README.md` includes necessary frontmatter for the example to be discovered and documented within the application."
+3161086701,1080,[WIP] Add quickstart guide to documentation for easy onboarding,bw4sz,1208492,closed,2025-06-19T18:34:28Z,2025-06-19T18:35:33Z,,https://api.github.com/repos/weecology/DeepForest,https://github.com/weecology/DeepForest/pull/1080,
+3161226190,2244,Update stripe management for subscriptions,Kitenite,31864905,closed,2025-06-19T19:55:00Z,2025-06-20T18:51:40Z,,https://api.github.com/repos/onlook-dev/onlook,https://github.com/onlook-dev/onlook/pull/2244,"A comprehensive Stripe subscription management system was implemented.
+
+*   The `packages/stripe` module was enhanced with functions for:
+    *   Creating checkout sessions (`createCheckoutSession`).
+    *   Managing customer portal sessions (`createCustomerPortalSession`).
+    *   Performing subscription lifecycle operations (cancel, resume, update).
+    *   Listing prices (`listPrices`).
+*   A new `packages/db/src/services/subscription.ts` service was introduced to centralize database queries for:
+    *   Creating, updating, and retrieving subscriptions.
+    *   Managing user-to-Stripe customer mappings.
+    *   Handling plan and price data.
+*   The `apps/web/client/src/server/api/routers/subscription.ts` router was updated to expose TRPC endpoints for:
+    *   Initiating checkout and customer portal sessions.
+    *   Retrieving available plans and prices.
+    *   Canceling, resuming, and updating user subscriptions.
+*   The Stripe webhook handler in `apps/web/client/src/app/api/stripe/` was extended to process:
+    *   `customer.subscription.updated` events to synchronize subscription status and plan changes.
+    *   `invoice.payment_failed` and `invoice.payment_succeeded` events to accurately track payment status in the database.
+*   The `users` schema in `packages/db/src/schema/user/user.ts` was updated to include `stripeCustomerId` for linking users to Stripe customers.
+*   New Drizzle relations were added for `plans` and `prices` in `packages/db/src/schema/subscription/subscription.ts` to support data relationships.
+*   A utility script `packages/stripe/src/scripts/sync-plans.ts` was added to synchronize Stripe products and prices with the local database.
+<!-- ELLIPSIS_HIDDEN -->
+
+----
+
+> [!IMPORTANT]
+> Enhances Stripe subscription management with new functions, webhook handling, database updates, and API endpoints.
+> 
+>   - **Behavior**:
+>     - Adds functions in `packages/stripe/src/functions.ts` for creating checkout sessions, customer portal sessions, and managing subscription lifecycle (cancel, resume, update).
+>     - Extends webhook handler in `apps/web/client/src/app/api/stripe/route.ts` to process `customer.subscription.updated`, `invoice.payment_failed`, and `invoice.payment_succeeded` events.
+>   - **Database**:
+>     - Introduces `packages/db/src/services/subscription.ts` for centralized subscription management.
+>     - Updates `users` schema in `packages/db/src/schema/user/user.ts` to include `stripeCustomerId`.
+>     - Adds relations for `plans` and `prices` in `packages/db/src/schema/subscription/subscription.ts`.
+>   - **API**:
+>     - Updates `apps/web/client/src/server/api/routers/subscription.ts` to expose TRPC endpoints for subscription operations (create, cancel, resume, update).
+>   - **Misc**:
+>     - Adds `packages/stripe/src/scripts/sync-plans.ts` to sync Stripe products and prices with the local database.
+>     - Updates `packages/stripe/README.md` with setup and usage instructions.
+> 
+> <sup>This description was created by </sup>[<img alt=""Ellipsis"" src=""https://img.shields.io/badge/Ellipsis-blue?color=175173"">](https://www.ellipsis.dev?ref=onlook-dev%2Fonlook&utm_source=github&utm_medium=referral)<sup> for 88542cefb943024dc7c9ed6f8e001c40ef63344b. You can [customize](https://app.ellipsis.dev/onlook-dev/settings/summaries) this summary. It will automatically update as commits are pushed.</sup>
+
+<!-- ELLIPSIS_HIDDEN -->"

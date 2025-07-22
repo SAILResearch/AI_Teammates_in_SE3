@@ -1,0 +1,2234 @@
+pr_id,event,created_at,actor,commit_id,assignee,label,message
+3143270588,committed,,,2366e7b5458e39d99bd8e97c3e629de0ebec636c,,,feat: Export featureFlagsIntegration and FeatureFlagsIntegration type from @sentry/core
+3143270588,commented,2025-06-13T11:27:26Z,github-actions[bot],,,,
+3162618850,committed,,,4309e0bbb2b61266539a1a8d0269607902e3fa9b,,,Add asset service 404/500 error analysis documentation
+3162618850,closed,2025-06-20T09:45:58Z,karakanb,,,,
+3162618850,head_ref_deleted,2025-06-20T09:47:01Z,karakanb,,,,
+3166296623,committed,,,c093e96882f8de1975cecb4f6e03e52d4a1bcea9,,,Add file regex editing UI for custom modes in Modes tab
+3166296623,review_requested,2025-06-22T21:42:06Z,mrubens,,,,
+3166296623,review_requested,2025-06-22T21:42:06Z,mrubens,,,,
+3166296623,labeled,2025-06-22T21:42:09Z,dosubot[bot],,,size:L,
+3166296623,labeled,2025-06-22T21:42:19Z,dosubot[bot],,,UI/UX,
+3166296623,commented,2025-06-22T21:43:44Z,hannesrudolph,,,,
+3166296623,reviewed,,,c093e96882f8de1975cecb4f6e03e52d4a1bcea9,,,
+3166296623,labeled,2025-06-22T21:46:05Z,hannesrudolph,,,Issue/PR - Triage,
+3166296623,labeled,2025-06-22T23:15:43Z,hannesrudolph,,,PR - Needs Preliminary Review,
+3166296623,unlabeled,2025-06-22T23:15:43Z,hannesrudolph,,,Issue/PR - Triage,
+3166296623,commented,2025-06-23T13:01:43Z,daniel-lxs,,,,
+3166296623,labeled,2025-06-23T14:01:07Z,hannesrudolph,,,PR - Draft / In Progress,
+3166296623,unlabeled,2025-06-23T14:01:07Z,hannesrudolph,,,PR - Needs Preliminary Review,
+3133979452,committed,,,fa97d71a3560e068365473ccd84e9bf8f484ed52,,,Enhance cold email detection with AI and status tracking
+3133979452,commented,2025-06-10T15:10:27Z,CLAassistant,,,,
+3133979452,commented,2025-06-10T15:10:28Z,coderabbitai[bot],,,,
+3133979452,commented,2025-06-10T15:10:34Z,vercel[bot],,,,
+3133979452,reviewed,,,fa97d71a3560e068365473ccd84e9bf8f484ed52,,,
+3133979452,commented,2025-06-10T15:53:05Z,elie222,,,,
+3133979452,closed,2025-06-10T15:53:05Z,elie222,,,,
+3159821039,committed,,,92ab621f68384f8fd07d9e74fd9cdad4e4b64464,,,Add drag and drop tray example with emoji shapes
+3159821039,commented,2025-06-19T10:32:38Z,vercel[bot],,,,
+3159821039,labeled,2025-06-19T10:32:49Z,steveruizok,,,other,
+3159821039,commented,2025-06-19T10:32:55Z,huppy-bot[bot],,,,
+3159821039,reviewed,,,92ab621f68384f8fd07d9e74fd9cdad4e4b64464,,,
+3159821039,committed,,,e1445e33543edf76ea809a5e81720d30e7b8ed23,,,drag and drop
+3159821039,committed,,,a8ecdaa711a5e76b840fb438b16cbb95b005c356,,,ok
+3159821039,reviewed,,,a8ecdaa711a5e76b840fb438b16cbb95b005c356,,,
+3159821039,committed,,,d4094cb047c1379d63e3ee3133cf94f9e603f156,,,drag and drop
+3159821039,reviewed,,,d4094cb047c1379d63e3ee3133cf94f9e603f156,,,
+3159821039,committed,,,1d4fefce42b2cfcae960031de12f1ebf58f7b6a6,,,Update DragAndDropTrayExample.tsx
+3159821039,committed,,,9a83e195e79c28047a25da7b870aab15d18b6556,,,fix
+3159821039,deployed,2025-06-19T13:08:24Z,steveruizok,,,,
+3159821039,deployed,2025-06-19T13:08:24Z,steveruizok,,,,
+3159821039,deployed,2025-06-19T13:08:24Z,steveruizok,,,,
+3159821039,deployed,2025-06-19T13:08:54Z,vercel[bot],,,,
+3159821039,deployed,2025-06-19T13:10:24Z,github-actions[bot],,,,
+3159821039,reviewed,,,9a83e195e79c28047a25da7b870aab15d18b6556,,,
+3159821039,deployed,2025-06-19T13:11:05Z,vercel[bot],,,,
+3159821039,deployed,2025-06-19T13:13:48Z,github-actions[bot],,,,
+3159821039,commented,2025-06-19T13:41:25Z,steveruizok,,,,
+3159821039,added_to_merge_queue,2025-06-19T13:42:27Z,steveruizok,,,,
+3159821039,removed_from_merge_queue,2025-06-19T13:51:19Z,github-merge-queue[bot],,,,
+3159821039,merged,2025-06-19T13:51:20Z,steveruizok,c5f41a1b700126a018b89a4539199cfe46de8c43,,,
+3159821039,closed,2025-06-19T13:51:20Z,steveruizok,,,,
+3159821039,head_ref_deleted,2025-06-19T13:51:20Z,steveruizok,,,,
+3153308695,committed,,,7931723590b199e320aa8ecb0b4258d1862ca156,,,Add companyId to person data seeds
+3153308695,committed,,,81086ef7c061d15ccfeac883366f2f7484568109,,,Enhance database setup and environment configuration for Cursor agents
+3153308695,committed,,,66408cc33e2f5ca4fa7894960085a72ff9b97aba,,,Add note seeds and data generation for comprehensive dev seeding
+3153308695,committed,,,ad1eca34beb921e4644227e39b5283e9d998f8e7,,,Update person data seed LinkedIn URLs and avatar image numbers
+3153308695,committed,,,f87f59281fa15a838ebd580feb000c1b70304f4a,,,Improve seeds
+3153308695,committed,,,493c16514737751cc22f180ad892d60586a6ce67,,,Improve seeds
+3153308695,reviewed,,,493c16514737751cc22f180ad892d60586a6ce67,,,
+3153308695,commented,2025-06-17T12:37:10Z,github-actions[bot],,,,
+3153308695,committed,,,238e53607d4551b5b03961dc34e418e649591d21,,,Fix?
+3153308695,reviewed,,,238e53607d4551b5b03961dc34e418e649591d21,,,
+3153308695,commented,2025-06-17T13:07:03Z,charlesBochet,,,,
+3153308695,labeled,2025-06-17T13:07:29Z,charlesBochet,,,-PR: awaiting author,
+3153308695,assigned,2025-06-17T13:07:31Z,charlesBochet,,FelixMalfait,,
+3153308695,committed,,,6d0b846dca5bc0efb138435f11ad350faf2b4aec,,,Missed one?
+3153308695,merged,2025-06-17T13:25:05Z,FelixMalfait,a47a6be4a8a133c67c2979e2620d0d13ec05a269,,,
+3153308695,closed,2025-06-17T13:25:05Z,FelixMalfait,,,,
+3153308695,head_ref_deleted,2025-06-17T13:25:08Z,FelixMalfait,,,,
+3153308695,referenced,2025-06-18T16:03:52Z,abdulrahmancodes,85b50053e638b9582a2893bbc158ffcae8828e1f,,,
+3137099861,committed,,,24a1df4a959145c81bc176487f4d3e2c40af6168,,,Improve GitHub integration setup check to handle multiple integrations
+3137099861,review_requested,2025-06-11T14:41:46Z,roaga,,,,
+3137099861,review_requested,2025-06-11T14:41:51Z,roaga,,,,
+3137099861,labeled,2025-06-11T14:42:05Z,github-actions[bot],,,Scope: Backend,
+3137099861,reviewed,,,24a1df4a959145c81bc176487f4d3e2c40af6168,,,
+3137099861,auto_squash_enabled,2025-06-11T14:51:55Z,roaga,,,,
+3137099861,commented,2025-06-11T15:00:22Z,codecov[bot],,,,
+3137099861,merged,2025-06-11T15:01:05Z,roaga,78b8c02901ec0641bbfcb69a5758591b19fda9e4,,,
+3137099861,closed,2025-06-11T15:01:05Z,roaga,,,,
+3137099861,head_ref_deleted,2025-06-11T15:01:06Z,roaga,,,,
+3137099861,referenced,2025-06-12T17:22:18Z,vishnupsatish,5f9e64196c47a62578878e89b69a524010950ea5,,,
+3137099861,referenced,2025-06-19T00:58:21Z,andrewshie-sentry,fb411a70574b5aa15afc4f123a267062cf5c380d,,,
+3137099861,locked,2025-06-27T00:37:48Z,github-actions[bot],,,,
+3152472726,committed,,,4f0f07b70f0ad806472961fbcc7675c8c9dfaadc,,,Add top margin to DialogHeader in eval-related modals
+3152472726,committed,,,6dc67c81850bf1cf923d85b94ab2e1a9b28c5711,,,Add DialogHeader to improve dialog title styling in evaluator forms
+3152472726,labeled,2025-06-17T07:59:29Z,dosubot[bot],,,size:S,
+3152472726,review_requested,2025-06-17T07:59:40Z,jannikmaierhoefer,,,,
+3152472726,committed,,,ab8aa2b3ec2f9020f3d8c01cefa87c02dfd27087,,,Merge branch 'main' into cursor/add-margins-to-evaluator-headline-4b05
+3152472726,labeled,2025-06-17T08:00:51Z,dosubot[bot],,,ui,
+3139974947,assigned,2025-06-12T11:47:53Z,szokeasaurusrex,,szokeasaurusrex,,
+3139974947,commented,2025-06-12T11:49:07Z,codecov[bot],,,,
+3139974947,ready_for_review,2025-06-12T12:06:44Z,szokeasaurusrex,,,,
+3139974947,review_requested,2025-06-12T12:06:45Z,szokeasaurusrex,,,,
+3139974947,commented,2025-06-13T12:46:35Z,szokeasaurusrex,,,,
+3139974947,convert_to_draft,2025-06-13T12:47:05Z,szokeasaurusrex,,,,
+3139974947,ready_for_review,2025-06-16T13:45:35Z,szokeasaurusrex,,,,
+3139974947,reviewed,,,16045df6aa7e2afd2fed6eb8373f90c5e26fa343,,,
+3139974947,commented,2025-06-17T13:29:52Z,szokeasaurusrex,,,,
+3139974947,commented,2025-06-18T08:43:08Z,sentrivana,,,,
+3139974947,commented,2025-06-25T12:59:10Z,szokeasaurusrex,,,,
+3139974947,mentioned,2025-06-25T12:59:12Z,sentrivana,,,,
+3139974947,subscribed,2025-06-25T12:59:12Z,sentrivana,,,,
+3139974947,commented,2025-06-25T14:27:21Z,sentrivana,,,,
+3139974947,convert_to_draft,2025-06-27T08:29:03Z,szokeasaurusrex,,,,
+3139974947,head_ref_force_pushed,2025-06-27T11:50:01Z,szokeasaurusrex,47214381b3d77fd60b71cb7a361f096da1e8c670,,,
+3139974947,base_ref_changed,2025-06-27T11:50:37Z,szokeasaurusrex,,,,
+3139974947,head_ref_force_pushed,2025-06-27T12:19:12Z,szokeasaurusrex,a78a060aefd33644298ef7a73d94de50197a3bfd,,,
+3139974947,head_ref_force_pushed,2025-06-27T12:28:41Z,szokeasaurusrex,28eaca8ce79b1d0e1732466da81d18fef6b917ea,,,
+3139974947,committed,,,bce0694121e1c694139b1c8f5f18ce96f396184c,,,"fix: Ensure tags values are strings
+
+Ensure tag values are strings before serializing an event or a transaction to an Event dictionary.
+
+Fixes #4391"
+3139974947,head_ref_force_pushed,2025-06-27T12:29:43Z,szokeasaurusrex,bce0694121e1c694139b1c8f5f18ce96f396184c,,,
+3139974947,ready_for_review,2025-06-27T12:29:51Z,szokeasaurusrex,,,,
+3139974947,commented,2025-06-27T12:30:01Z,szokeasaurusrex,,,,
+3139974947,mentioned,2025-06-27T12:30:03Z,sentrivana,,,,
+3139974947,subscribed,2025-06-27T12:30:03Z,sentrivana,,,,
+3139974947,review_requested,2025-06-27T12:30:07Z,szokeasaurusrex,,,,
+3131238821,committed,,,815e85f78f79abe031b0c15fe21e738f3b6b96e0,,,Configure Vite to externalize Prisma and OpenTelemetry instrumentation for SSR
+3131238821,closed,2025-06-09T19:26:34Z,AbhiPrasad,,,,
+3131238821,commented,2025-06-09T19:26:50Z,github-actions[bot],,,,
+3131238821,cross-referenced,2025-06-09T19:27:02Z,AbhiPrasad,,,,
+3131238821,commented,2025-06-09T19:31:19Z,github-actions[bot],,,,
+3154088521,committed,,,56e2d4de428b2cb982b8ed0ff42814608779e7b1,,,Remove release-bubbles-ui feature flag and standardize release interactions
+3154088521,committed,,,b06037762442aa6b08c6e0f1982c5094dc369296,,,Remove release-bubbles-ui feature flag and enable new UI for all users
+3154088521,deployed,2025-06-17T16:26:59Z,vercel[bot],,,,
+3154088521,labeled,2025-06-17T16:27:01Z,github-actions[bot],,,Scope: Frontend,
+3154088521,committed,,,4aa1dfe1e966d3d3728109c3b4a37f39c746826d,,,inline objs
+3154088521,commented,2025-06-17T16:31:11Z,codecov[bot],,,,
+3154088521,committed,,,789a8733bcd4f08aa89a5b244549fecf63f2c7fc,,,fix test
+3154088521,deployed,2025-06-17T16:35:34Z,vercel[bot],,,,
+3154088521,committed,,,ca6cd6a2f28d8b078e9370fb43958982c6fa9112,,,fix tests
+3154088521,deployed,2025-06-17T16:58:14Z,vercel[bot],,,,
+3154088521,ready_for_review,2025-06-17T17:19:18Z,billyvg,,,,
+3154088521,review_requested,2025-06-17T17:19:19Z,billyvg,,,,
+3154088521,review_requested,2025-06-17T17:19:19Z,billyvg,,,,
+3154088521,review_requested,2025-06-17T17:19:20Z,billyvg,,,,
+3154088521,review_requested,2025-06-17T17:19:20Z,billyvg,,,,
+3154088521,review_requested,2025-06-17T17:19:20Z,billyvg,,,,
+3154088521,review_requested,2025-06-17T17:19:20Z,billyvg,,,,
+3154088521,review_requested,2025-06-17T17:19:20Z,billyvg,,,,
+3154088521,reviewed,,,ca6cd6a2f28d8b078e9370fb43958982c6fa9112,,,
+3154088521,merged,2025-06-17T18:49:24Z,billyvg,2ec64ea8b9bc78b66bae028c49340c71f914d32f,,,
+3154088521,closed,2025-06-17T18:49:24Z,billyvg,,,,
+3154088521,head_ref_deleted,2025-06-17T18:49:26Z,billyvg,,,,
+3154088521,referenced,2025-06-19T00:59:19Z,andrewshie-sentry,45f6798e8052827f159f93553e7a6935059e482f,,,
+3131760803,committed,,,4c451cbd45ccfcd912c66854b582d5a65a3719cc,,,Fix TOML parser to handle inline tables and table arrays correctly
+3131760803,commented,2025-06-09T23:53:34Z,robobun,,,,
+3131760803,mentioned,2025-06-09T23:53:35Z,cursoragent,,,,
+3131760803,subscribed,2025-06-09T23:53:35Z,cursoragent,,,,
+3131760803,merged,2025-06-10T01:52:30Z,Jarred-Sumner,2801cb1f4a18001068d9f98ddde62d2fa77a7280,,,
+3131760803,closed,2025-06-10T01:52:30Z,Jarred-Sumner,,,,
+3131760803,head_ref_deleted,2025-06-10T01:52:31Z,Jarred-Sumner,,,,
+3131760803,cross-referenced,2025-06-10T02:07:51Z,RiskyMH,,,,
+3123127952,committed,,,9a1e0754ef8e4e930ddc9b6d5e765010402c96de,,,Fix file stream error handling and EPIPE propagation across multiple components
+3123127952,commented,2025-06-06T00:10:19Z,robobun,,,,
+3123127952,mentioned,2025-06-06T00:10:20Z,cursoragent,,,,
+3123127952,subscribed,2025-06-06T00:10:20Z,cursoragent,,,,
+3123127952,closed,2025-06-06T01:04:10Z,Jarred-Sumner,,,,
+3140758164,committed,,,9faf926e90e8eb88f792d148c25d63b63231622a,,,Upgrade ESLint to v9 and migrate to flat config system
+3140758164,commented,2025-06-12T15:33:38Z,github-actions[bot],,,,
+3140758164,reviewed,,,9faf926e90e8eb88f792d148c25d63b63231622a,,,
+3140758164,committed,,,f5ea7d9814e24748ce9ffe38414b68871e6bcfa3,,,Migrate ESLint configs to ESM and update dependencies
+3140758164,committed,,,408d5aa1a27710140041d22b277eb242b54d8e59,,,run prettier
+3161327793,committed,,,b236f1c804e085b44ce10878cb71ce336166f52f,,,Update Kaniko documentation to reflect project archival in 2025
+3161327793,review_requested,2025-06-19T21:02:35Z,strickvl,,,,
+3161327793,labeled,2025-06-19T21:02:37Z,strickvl,,,documentation,
+3161327793,labeled,2025-06-19T21:02:37Z,strickvl,,,internal,
+3161327793,commented,2025-06-19T21:02:41Z,coderabbitai[bot],,,,
+3161327793,commented,2025-06-19T21:02:42Z,CLAassistant,,,,
+3161327793,commented,2025-06-19T21:04:29Z,github-actions[bot],,,,
+3161327793,committed,,,1a786b48955ee80be59ecde181c48ab41f2fdffc,,,"Merge develop branch into cursor/update-kaniko-project-status-in-docs-d17e
+
+Resolved merge conflict in self-hosted.md by combining both changes:
+- Updated Kaniko link to GitHub repository (from develop)
+- Kept archival note about Kaniko project (from current branch)
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+3161327793,reviewed,,,1a786b48955ee80be59ecde181c48ab41f2fdffc,,,
+3161327793,committed,,,8c491332a6ae1944381ddb46e98bb56b7e43d835,,,"Revert premature Kaniko archival note
+
+The previous commit added a note about Kaniko being archived as of June 2025,
+but this is premature since the project is still active. Reverted to the
+original documentation state until the archival actually occurs.
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+3161327793,review_requested,2025-06-20T07:51:39Z,strickvl,,,,
+3161327793,reviewed,,,8c491332a6ae1944381ddb46e98bb56b7e43d835,,,
+3161327793,merged,2025-06-20T08:19:00Z,strickvl,a80f04424957c9c8409b4de60308840307ac3479,,,
+3161327793,closed,2025-06-20T08:19:00Z,strickvl,,,,
+3161327793,head_ref_deleted,2025-06-20T08:19:01Z,strickvl,,,,
+3161287864,committed,,,d26a2edeac9b5b154289c1267fe0b045039e1d11,,,Improve 16-bit easing functions with better range handling and symmetry
+3161287864,committed,,,1fc6d8a4e41564ae15c4cea4daa78b9881efd007,,,Merge branch 'master' into cursor/enable-symmetry-and-fix-functions-bd23
+3161287864,merged,2025-06-19T20:37:29Z,zackees,8d2fca1e7960c0af28ac0f8eb1838976c4144935,,,
+3161287864,closed,2025-06-19T20:37:29Z,zackees,,,,
+3161287864,head_ref_deleted,2025-06-24T22:12:17Z,zackees,,,,
+3139420152,committed,,,6dd4c20b1bef405b317f958305dee914f90216c8,,,Add batch export support for dataset items
+3139420152,closed,2025-06-16T14:22:40Z,jannikmaierhoefer,,,,
+3165205251,committed,,,a8720931814924ed1ef53cf1f6ddbe6b946bbda6,,,"Remove changeset requirement from PR template
+
+- Remove the changeset checklist item from PR template as requested
+- Contributors no longer need to create changesets for PRs
+- Automated changeset workflows remain in place for version management"
+3165205251,review_requested,2025-06-21T16:22:34Z,cursor[bot],,,,
+3165205251,review_requested,2025-06-21T16:22:34Z,cursor[bot],,,,
+3165205251,review_requested,2025-06-21T16:22:34Z,cursor[bot],,,,
+3165205251,labeled,2025-06-21T16:22:38Z,dosubot[bot],,,size:XS,
+3165205251,reviewed,,,a8720931814924ed1ef53cf1f6ddbe6b946bbda6,,,
+3165205251,labeled,2025-06-21T16:37:43Z,dosubot[bot],,,lgtm,
+3165205251,merged,2025-06-21T16:37:53Z,mrubens,d838109aa3b3a26fa476142548046fc8af189d87,,,
+3165205251,closed,2025-06-21T16:37:53Z,mrubens,,,,
+3165205251,head_ref_deleted,2025-06-21T16:37:54Z,mrubens,,,,
+3165205251,referenced,2025-06-22T22:06:05Z,Alorse,84c0764928a0fa13f2ce703fcdc7b585e7e2d067,,,
+3165205251,referenced,2025-06-24T19:54:39Z,cte,ebe84b821fa2899a2ada6079a01acccc83402740,,,
+3137841799,committed,,,fc631a425d8a1188dea76dd1af3914974f762f3a,,,Add debugging instructions to Node integration tests README
+3137841799,review_requested,2025-06-11T19:05:31Z,AbhiPrasad,,,,
+3137841799,assigned,2025-06-11T19:05:31Z,AbhiPrasad,,AbhiPrasad,,
+3137841799,commented,2025-06-11T19:05:56Z,github-actions[bot],,,,
+3137841799,commented,2025-06-11T19:08:31Z,github-actions[bot],,,,
+3137841799,base_ref_changed,2025-06-11T19:08:59Z,AbhiPrasad,,,,
+3137841799,committed,,,0d52d87abc532878b363de20d3fc84574358b613,,,cursor cleanup
+3137841799,reviewed,,,0d52d87abc532878b363de20d3fc84574358b613,,,
+3137841799,merged,2025-06-11T19:24:42Z,AbhiPrasad,65310d51f151ef826b9acc9cf0d1deace8bae02b,,,
+3137841799,closed,2025-06-11T19:24:42Z,AbhiPrasad,,,,
+3137841799,head_ref_deleted,2025-06-11T19:24:43Z,AbhiPrasad,,,,
+3130903286,committed,,,6880738c418b0e2b1e66d7844a59af5fd1fb4bc0,,,Update schedule text to reflect twice weekly service frequency
+3130903286,commented,2025-06-09T17:11:58Z,vercel[bot],,,,
+3130903286,merged,2025-06-09T17:12:09Z,wesbos,d07a1460c160092c23ecb4acc9e28909db3c1572,,,
+3130903286,closed,2025-06-09T17:12:09Z,wesbos,,,,
+3130903286,referenced,2025-06-09T17:12:27Z,github-actions[bot],887d49c561df416fc6684aa7bb95c8ef4b8a0134,,,
+3130903286,deployed,2025-06-09T17:14:58Z,vercel[bot],,,,
+3156267045,committed,,,b0e4e75486a93c6a64bac0b5e203263ac7209851,,,Fix NODE_OPTIONS environment variable syntax in Dockerfile
+3156267045,committed,,,912e9bf2fdf278f73dd4954398ff6a22677a3602,,,Remove NODE_OPTIONS flag from Dockerfile
+3156267045,deployed,2025-06-18T10:06:39Z,ChmaraX,,,,
+3156267045,deployed,2025-06-18T10:06:39Z,ChmaraX,,,,
+3156267045,deployed,2025-06-18T10:06:39Z,ChmaraX,,,,
+3156267045,merged,2025-06-18T10:06:42Z,ChmaraX,44576788dd5ce4cfb79ae57eba0d9b5f4b127ff0,,,
+3156267045,closed,2025-06-18T10:06:42Z,ChmaraX,,,,
+3156267045,head_ref_deleted,2025-06-18T10:06:44Z,ChmaraX,,,,
+3156267045,commented,2025-06-18T10:06:49Z,github-actions[bot],,,,
+3158063573,committed,,,aded4ed0c3ec58221891459e07809daa24d8d2ed,,,Upgrade Sentry dependencies to version 9.30.0
+3158063573,assigned,2025-06-18T20:20:38Z,AbhiPrasad,,AbhiPrasad,,
+3158063573,review_requested,2025-06-18T20:20:38Z,AbhiPrasad,,,,
+3158063573,renamed,2025-06-18T20:20:53Z,AbhiPrasad,,,,
+3158063573,labeled,2025-06-18T20:20:53Z,github-actions[bot],,,Scope: Frontend,
+3158063573,reviewed,,,aded4ed0c3ec58221891459e07809daa24d8d2ed,,,
+3158063573,merged,2025-06-18T20:41:42Z,AbhiPrasad,e245040de98c270fe3767add130962d7222297c8,,,
+3158063573,closed,2025-06-18T20:41:42Z,AbhiPrasad,,,,
+3158063573,head_ref_deleted,2025-06-18T20:41:43Z,AbhiPrasad,,,,
+3158063573,referenced,2025-06-19T00:59:35Z,andrewshie-sentry,8b212edf50415fb0d69e11c5335712793a9b9a5d,,,
+3140750375,committed,,,1c06f94849fc3d1dadb825375398d517401dd920,,,Update API key description based on cloud or self-hosted deployment
+3140750375,labeled,2025-06-12T15:30:51Z,dosubot[bot],,,size:S,
+3140750375,labeled,2025-06-12T15:31:57Z,dosubot[bot],,,ui,
+3140750375,review_requested,2025-06-12T15:32:06Z,jannikmaierhoefer,,,,
+3140750375,reviewed,,,1c06f94849fc3d1dadb825375398d517401dd920,,,
+3140750375,labeled,2025-06-12T20:01:08Z,dosubot[bot],,,lgtm,
+3140750375,added_to_merge_queue,2025-06-13T16:22:56Z,marcklingen,,,,
+3140750375,labeled,2025-06-13T16:22:59Z,dosubot[bot],,,auto-merge,
+3140750375,merged,2025-06-13T16:37:38Z,marcklingen,d5a79b1830bb7ac37435ecad42c0ed6eace9d924,,,
+3140750375,closed,2025-06-13T16:37:38Z,marcklingen,,,,
+3140750375,removed_from_merge_queue,2025-06-13T16:37:38Z,github-merge-queue[bot],,,,
+3140750375,head_ref_deleted,2025-06-13T16:37:39Z,marcklingen,,,,
+3140750375,unlabeled,2025-06-13T16:37:43Z,dosubot[bot],,,auto-merge,
+3140750375,referenced,2025-06-16T17:14:13Z,pjchender,5f82088eaf8d84755ed44b7bd58a7aaf97363120,,,
+3130792767,committed,,,1aae8045b3c85b367db79ec1b700b08f50e9ac71,,,Add group expansion feature with collapsible grouped rows
+3130792767,committed,,,2e3c00b6f60f3f43ff82bdfb8807726df74f063a,,,Add toggle all groups functionality with dynamic button state
+3130792767,committed,,,fb464d46b371a27229644f4389500eaa39e09c44,,,Improve alert table UI with group toggle button and layout adjustments
+3130792767,committed,,,3ce989809557c45ddcbb21eef8b85fc06bd16137,,,Refactor alert table UI to centralize group expansion controls in AlertPresetManager
+3130792767,committed,,,d24d09bbc0b90a3c0f58bab6cc3128ee13b370a3,,,feat: minor fix
+3130792767,committed,,,f926b59a5fc80badbf2ae02819c149353ab3d41c,,,Add unit tests for AlertPresetManager and GroupedRow components
+3130792767,committed,,,62e4e6357999fbb069f5ab9c3e7f54eaecc73cd3,,,Refactor alert table and grouped row tests with improved mocking
+3130792767,commented,2025-06-09T16:25:44Z,vercel[bot],,,,
+3130792767,labeled,2025-06-09T16:25:45Z,dosubot[bot],,,size:XL,
+3130792767,commented,2025-06-09T16:25:47Z,CLAassistant,,,,
+3130792767,labeled,2025-06-09T16:26:01Z,dosubot[bot],,,Feature,
+3130792767,labeled,2025-06-09T16:26:01Z,dosubot[bot],,,UI,
+3130792767,deployed,2025-06-09T16:30:29Z,vercel[bot],,,,
+3130792767,reviewed,,,62e4e6357999fbb069f5ab9c3e7f54eaecc73cd3,,,
+3130792767,committed,,,29f76b1497aa89253c835869cbd21a788a709bda,,,Improve test setup and mocking for various components and libraries
+3130792767,reviewed,,,29f76b1497aa89253c835869cbd21a788a709bda,,,
+3130792767,deployed,2025-06-09T17:56:39Z,vercel[bot],,,,
+3130792767,renamed,2025-06-09T18:06:32Z,shahargl,,,,
+3130792767,reviewed,,,29f76b1497aa89253c835869cbd21a788a709bda,,,
+3130792767,labeled,2025-06-10T07:38:34Z,dosubot[bot],,,lgtm,
+3130792767,merged,2025-06-10T07:38:47Z,shahargl,646e8ddf72241a677f86771766c3a7d6440aa1a8,,,
+3130792767,closed,2025-06-10T07:38:47Z,shahargl,,,,
+3130792767,head_ref_deleted,2025-06-10T07:38:49Z,shahargl,,,,
+3132238407,committed,,,43f12de2702e8e744fd9fcfc313532b5d34dc9a4,,,Fix Windows long path handling in path conversion functions
+3132238407,committed,,,7063669a95b09c8aa98f7bbd4aa8c591a649e650,,,Fix Windows path length buffer overflow in UTF-8 to UTF-16 conversion
+3132238407,commented,2025-06-10T05:55:23Z,robobun,,,,
+3132238407,mentioned,2025-06-10T05:55:24Z,cursoragent,,,,
+3132238407,subscribed,2025-06-10T05:55:24Z,cursoragent,,,,
+3132238407,committed,,,4beb4b60f9f04824b734132ac970b5f4f77ffebc,,,`bun run prettier`
+3132238407,mentioned,2025-06-10T05:58:22Z,Jarred-Sumner,,,,
+3132238407,subscribed,2025-06-10T05:58:22Z,Jarred-Sumner,,,,
+3132238407,mentioned,2025-06-10T05:58:38Z,cursoragent,,,,
+3132238407,subscribed,2025-06-10T05:58:38Z,cursoragent,,,,
+3132238407,mentioned,2025-06-10T07:04:14Z,Jarred-Sumner,,,,
+3132238407,subscribed,2025-06-10T07:04:14Z,Jarred-Sumner,,,,
+3132238407,labeled,2025-06-11T17:33:27Z,190n,,,cursor,
+3117811205,committed,,,411cb49710d42f6e404cd2b132c3bcbd8c384741,,,Upgrade dependencies and fix package versions across multiple projects
+3117811205,committed,,,c37049122d9c2114fc3353b3c1452f0dde9e115b,,,fix(root): update dset package to resolve prototype pollution vulnerability
+3117811205,commented,2025-06-04T13:18:00Z,netlify[bot],,,,
+3117811205,deployed,2025-06-04T13:18:02Z,cursor[bot],,,,
+3117811205,deployed,2025-06-04T13:18:03Z,cursor[bot],,,,
+3117811205,deployed,2025-06-04T13:18:04Z,cursor[bot],,,,
+3117811205,labeled,2025-06-04T13:18:11Z,github-actions[bot],,,@novu/web,
+3117811205,labeled,2025-06-04T13:18:11Z,github-actions[bot],,,@novu/dashboard,
+3117811205,committed,,,ce3843425b6d6f8574d29f21e5ae053ddeea9741,,,Delete SECURITY_FIX_SUMMARY.md
+3117811205,deployed,2025-06-04T13:19:01Z,scopsy,,,,
+3117811205,deployed,2025-06-04T13:19:02Z,scopsy,,,,
+3117811205,deployed,2025-06-04T13:19:02Z,scopsy,,,,
+3117811205,reviewed,,,ce3843425b6d6f8574d29f21e5ae053ddeea9741,,,
+3117811205,merged,2025-06-04T16:33:10Z,scopsy,c5bd69684c55ce28c4389e1894903785499af777,,,
+3117811205,closed,2025-06-04T16:33:10Z,scopsy,,,,
+3117811205,head_ref_deleted,2025-06-04T16:33:11Z,scopsy,,,,
+3133978465,committed,,,4e83a4012f34d0a73b8d3fa7102aab1b2f95ed3a,,,Add rule history pages for viewing rule changes and versions
+3133978465,commented,2025-06-10T15:10:08Z,coderabbitai[bot],,,,
+3133978465,commented,2025-06-10T15:10:13Z,CLAassistant,,,,
+3133978465,commented,2025-06-10T15:10:16Z,vercel[bot],,,,
+3133978465,reviewed,,,4e83a4012f34d0a73b8d3fa7102aab1b2f95ed3a,,,
+3133978465,committed,,,b0653fe5ffc4ad1b44094ea31d23d330ded5b52a,,,Refactor rule history page to use EmailAccountProvider and improve loading
+3133978465,reviewed,,,b0653fe5ffc4ad1b44094ea31d23d330ded5b52a,,,
+3133978465,deployed,2025-06-10T15:21:13Z,vercel[bot],,,,
+3133978465,committed,,,56520a77d8461f073aec1d56997d658a090d280c,,,debug redirect
+3133978465,deployed,2025-06-10T17:54:21Z,vercel[bot],,,,
+3133978465,committed,,,6d6aa4fe766767a001e0f141e7b602a540d557d7,,,rule history debug page
+3133978465,merged,2025-06-10T17:56:39Z,elie222,87da00f43150629f93e1cd21811a476bb391dd25,,,
+3133978465,closed,2025-06-10T17:56:39Z,elie222,,,,
+3133978465,deployed,2025-06-10T18:00:09Z,vercel[bot],,,,
+3165199669,committed,,,5b61965337d623f807c8d12020e159db56110de2,,,Add security context to cluster collector deployment pod spec
+3165199669,ready_for_review,2025-06-21T16:46:34Z,edeNFed,,,,
+3165199669,reviewed,,,d3ed10981b00a8e5e914cecdb53ea666b844a851,,,
+3165199669,auto_squash_enabled,2025-06-23T12:27:30Z,edeNFed,,,,
+3165199669,committed,,,d3ed10981b00a8e5e914cecdb53ea666b844a851,,,Merge branch 'main' into cursor/change-odigos-gateway-pods-to-non-root-23c7
+3165199669,reviewed,,,d3ed10981b00a8e5e914cecdb53ea666b844a851,,,
+3165199669,merged,2025-06-23T15:27:41Z,edeNFed,a8109a4b9b021d057a0d735a25dfa01efd1b9abf,,,
+3165199669,closed,2025-06-23T15:27:41Z,edeNFed,,,,
+3165199669,head_ref_deleted,2025-06-23T15:27:43Z,edeNFed,,,,
+3138534395,committed,,,d2ff6456ba02b37d74491a6d6fec842cecd57b67,,,Add Go language parser for source code management integration
+3138534395,committed,,,ea713d77fe14968859d38ac15cfd0adc99ade4ed,,,Add Go language support for function extraction and PR comment workflows
+3138534395,assigned,2025-06-12T02:01:39Z,iamrajjoshi,,iamrajjoshi,,
+3138534395,labeled,2025-06-12T02:01:59Z,github-actions[bot],,,Scope: Backend,
+3138534395,renamed,2025-06-12T02:16:43Z,iamrajjoshi,,,,
+3138534395,commented,2025-06-12T02:17:49Z,codecov[bot],,,,
+3138534395,committed,,,63cbd81a718c989d4b2b5019eb7acec676a88424,,,:wrench: chore: fix ff
+3138534395,deployed,2025-06-12T02:43:30Z,vercel[bot],,,,
+3138534395,committed,,,c26b80bfa15a21baca05074d95a498e6ee22db11,,,:bug: fix: update interface pattern
+3138534395,deployed,2025-06-12T03:16:29Z,vercel[bot],,,,
+3138534395,ready_for_review,2025-06-12T15:58:56Z,iamrajjoshi,,,,
+3138534395,review_requested,2025-06-12T15:58:57Z,iamrajjoshi,,,,
+3138534395,review_requested,2025-06-12T15:58:57Z,iamrajjoshi,,,,
+3138534395,reviewed,,,c26b80bfa15a21baca05074d95a498e6ee22db11,,,
+3138534395,review_requested,2025-06-12T17:30:07Z,giortzisg,,,,
+3138534395,reviewed,,,c26b80bfa15a21baca05074d95a498e6ee22db11,,,
+3138534395,committed,,,2c6b4638644b63d921f3d76b7071be8bcb6fe7c4,,,:bug: fix: updates from pr feedback
+3138534395,deployed,2025-06-15T03:54:15Z,vercel[bot],,,,
+3138534395,review_requested,2025-06-15T03:57:25Z,iamrajjoshi,,,,
+3138534395,committed,,,e2b5366e186a780e37326731c93fb2ecd5104316,,,:wrench: chore: remove anon regex
+3138534395,deployed,2025-06-15T04:16:43Z,vercel[bot],,,,
+3138534395,reviewed,,,e2b5366e186a780e37326731c93fb2ecd5104316,,,
+3138534395,merged,2025-06-17T13:31:13Z,iamrajjoshi,27e722bf18bd711e92f3e09f541201893639f6fb,,,
+3138534395,closed,2025-06-17T13:31:13Z,iamrajjoshi,,,,
+3138534395,head_ref_deleted,2025-06-17T13:31:15Z,iamrajjoshi,,,,
+3138534395,referenced,2025-06-18T21:15:53Z,billyvg,561cd7ef0bca191bf02efb9d3e66d88b5cec9669,,,
+3138534395,referenced,2025-06-19T00:59:11Z,andrewshie-sentry,b9ae3299733328d3e6fec94b888fdec1aae0d1ca,,,
+3148367585,committed,,,25630640ff22e44fbd0029f52feb60b1b99a87b2,,,Add `bun info` command as alias for `bun pm view`
+3148367585,committed,,,4c6efcfbfc2acf1c1b21c1fd25e4c8abeac6b0d3,,,Small cleanup
+3148367585,committed,,,4926a025cfcda23a31e04f1e4b70ab66d52bee7c,,,Fixups
+3148367585,committed,,,44f43d8b9a6be0a128c3e51e9693fb1d52491a0a,,,finish
+3148367585,review_requested,2025-06-16T02:48:33Z,Jarred-Sumner,,,,
+3148367585,commented,2025-06-16T02:48:41Z,robobun,,,,
+3148367585,mentioned,2025-06-16T02:48:42Z,Jarred-Sumner,,,,
+3148367585,subscribed,2025-06-16T02:48:42Z,Jarred-Sumner,,,,
+3148367585,committed,,,b8b90a8fcffb66036dd1a2fdc79773a899219b0a,,,`bun scripts/glob-sources.mjs`
+3148367585,committed,,,4f2cc7bc155ec34872daa7f11bbfd2f4e9d8e60c,,,`bun run zig-format`
+3148367585,commented,2025-06-16T04:26:02Z,kravetsone,,,,
+3148367585,commented,2025-06-16T18:00:11Z,Jarred-Sumner,,,,
+3148367585,committed,,,009f89d664dbb878f1d8532b3c61e1446602efac,,,Update ban-words.test.ts
+3148367585,reviewed,,,009f89d664dbb878f1d8532b3c61e1446602efac,,,
+3148367585,committed,,,d0dffa012145bc39da853ec08712c64d1988b072,,,Merge branch 'main' into cursor/rename-command-and-set-alias-4e8a
+3148367585,committed,,,048bb308284e0a746a1ab7eef2af5fd2a4211551,,,Update Arguments.zig
+3148367585,review_dismissed,2025-06-17T20:12:16Z,Jarred-Sumner,,,,
+3148367585,reviewed,,,048bb308284e0a746a1ab7eef2af5fd2a4211551,,,
+3148367585,merged,2025-06-17T20:31:17Z,Jarred-Sumner,162a9b66d896229de6b159da0f34baf6183a4158,,,
+3148367585,closed,2025-06-17T20:31:17Z,Jarred-Sumner,,,,
+3148367585,head_ref_deleted,2025-06-17T20:31:18Z,Jarred-Sumner,,,,
+3132195957,committed,,,a55dc1220d63f86120a020454267c59b98643265,,,Fix GC heap size reporting and add Blob stream conversion tests
+3132195957,committed,,,b59639436516aa0376956c2a3238434d4ddb892c,,,Fix Blob memory reporting in ReadableStream conversion
+3132195957,commented,2025-06-10T05:29:15Z,robobun,,,,
+3132195957,mentioned,2025-06-10T05:29:16Z,cursoragent,,,,
+3132195957,subscribed,2025-06-10T05:29:17Z,cursoragent,,,,
+3132195957,committed,,,4b055d0ce710b7fc31b2f64691aefc90a7aac444,,,`bun run prettier`
+3132195957,mentioned,2025-06-10T05:32:40Z,Jarred-Sumner,,,,
+3132195957,subscribed,2025-06-10T05:32:40Z,Jarred-Sumner,,,,
+3132195957,mentioned,2025-06-10T05:32:57Z,cursoragent,,,,
+3132195957,subscribed,2025-06-10T05:32:57Z,cursoragent,,,,
+3132195957,mentioned,2025-06-10T06:27:28Z,Jarred-Sumner,,,,
+3132195957,subscribed,2025-06-10T06:27:28Z,Jarred-Sumner,,,,
+3154285356,committed,,,ee84276db183948e73728c4317c7b5b183c2ef54,,,Remove release bubbles UI feature flag and related checks
+3154285356,committed,,,15eccca6c8ee90d98965a1640851066171f102ba,,,Add release bubbles UI feature flag checks across components
+3154285356,committed,,,b2a6c9164e0c97b093faad608e8de02e71131f15,,,Changes from background composer bc-0d94d88f-ef50-4abe-aaf4-5e9955c39ea4
+3154285356,labeled,2025-06-17T17:46:20Z,github-actions[bot],,,Scope: Backend,
+3154285356,deployed,2025-06-17T17:47:35Z,vercel[bot],,,,
+3154285356,ready_for_review,2025-06-17T17:58:27Z,billyvg,,,,
+3154285356,review_requested,2025-06-17T17:58:43Z,billyvg,,,,
+3154285356,reviewed,,,b2a6c9164e0c97b093faad608e8de02e71131f15,,,
+3154285356,merged,2025-06-17T20:37:56Z,billyvg,fdd78facb166e55f73854d39ff9b89d3df9ff62a,,,
+3154285356,closed,2025-06-17T20:37:56Z,billyvg,,,,
+3154285356,head_ref_deleted,2025-06-17T20:37:57Z,billyvg,,,,
+3154285356,referenced,2025-06-19T00:59:20Z,andrewshie-sentry,59a469dcd1cf301ca2198e113775a755c2b4edc2,,,
+3144417356,committed,,,e874f02e4b4b431e6123591d18af4d490f96521f,,,Remove acceptance test environment flags and related code
+3144417356,committed,,,38d950d85d8f43c7b41394e84024afe8b8262cd5,,,Add build-acceptance script for production build configuration
+3144417356,review_requested,2025-06-13T18:32:12Z,evanpurkhiser,,,,
+3144417356,renamed,2025-06-13T18:32:21Z,evanpurkhiser,,,,
+3144417356,labeled,2025-06-13T18:32:25Z,github-actions[bot],,,Scope: Frontend,
+3144417356,labeled,2025-06-13T18:32:26Z,github-actions[bot],,,Scope: Backend,
+3144417356,commented,2025-06-13T18:32:28Z,github-actions[bot],,,,
+3144417356,commented,2025-06-13T18:37:00Z,codecov[bot],,,,
+3144417356,committed,,,100a8db942e10701156b65e7cb1b9cf91898c668,,,Merge branch 'master' into cursor/remove-is-acceptance-test-and-related-components-f1ec
+3144417356,deployed,2025-06-17T16:35:35Z,vercel[bot],,,,
+3144417356,committed,,,37b7674a3285d65a06ee754efe87fb8907aecfa6,,,Update getDynamicText.tsx
+3144417356,deployed,2025-06-17T16:37:46Z,vercel[bot],,,,
+3144417356,reviewed,,,37b7674a3285d65a06ee754efe87fb8907aecfa6,,,
+3144417356,closed,2025-06-25T18:46:41Z,evanpurkhiser,,,,
+3153752896,committed,,,7b52f9462b9f1bfe36e7448a9c9bb43079c14cf1,,,Add nullable option to subscriber response DTO properties
+3153752896,commented,2025-06-17T14:38:35Z,netlify[bot],,,,
+3153752896,deployed,2025-06-17T14:38:35Z,scopsy,,,,
+3153752896,deployed,2025-06-17T14:38:35Z,scopsy,,,,
+3153752896,deployed,2025-06-17T14:38:35Z,scopsy,,,,
+3153752896,labeled,2025-06-17T14:38:54Z,github-actions[bot],,,@novu/api-service,
+3153752896,committed,,,2f232e195e8b4a5798f3667347ca06aeb5c1675a,,,fix: fuilds
+3153752896,deployed,2025-06-17T14:42:14Z,scopsy,,,,
+3153752896,deployed,2025-06-17T14:42:14Z,scopsy,,,,
+3153752896,deployed,2025-06-17T14:42:14Z,scopsy,,,,
+3153752896,committed,,,78e752465dd9e90a0159b7cffd2165091e58c99d,,,fix: types
+3153752896,deployed,2025-06-17T14:49:51Z,scopsy,,,,
+3153752896,deployed,2025-06-17T14:49:51Z,scopsy,,,,
+3153752896,deployed,2025-06-17T14:49:51Z,scopsy,,,,
+3153752896,renamed,2025-06-17T14:49:53Z,scopsy,,,,
+3153752896,commented,2025-06-17T14:49:57Z,linear[bot],,,,
+3153752896,committed,,,823a2b68abf294e201f3b5266d8158af83cd9a40,,,fix: tr
+3153752896,deployed,2025-06-17T14:54:35Z,scopsy,,,,
+3153752896,deployed,2025-06-17T14:54:35Z,scopsy,,,,
+3153752896,deployed,2025-06-17T14:54:35Z,scopsy,,,,
+3153752896,committed,,,913137881104d8d281ad10a6de0128c58ab9a33f,,,fix: add test
+3153752896,deployed,2025-06-17T14:58:49Z,scopsy,,,,
+3153752896,deployed,2025-06-17T14:58:49Z,scopsy,,,,
+3153752896,deployed,2025-06-17T14:58:49Z,scopsy,,,,
+3153752896,cross-referenced,2025-06-17T14:59:08Z,scopsy,,,,
+3153752896,committed,,,87471d1f496ba17fca66555fcde5b8f64ee1e962,,,fix: a
+3153752896,deployed,2025-06-17T15:01:40Z,scopsy,,,,
+3153752896,deployed,2025-06-17T15:01:40Z,scopsy,,,,
+3153752896,deployed,2025-06-17T15:01:40Z,scopsy,,,,
+3153752896,merged,2025-06-17T15:25:59Z,scopsy,43aa573ac458fd49cdec5fbf651ba60500517dcd,,,
+3165441797,committed,,,1ee9bae7f562884156cd0dc36da7d841d8feb573,,,Restrict direct effect imports in ESLint config
+3165441797,commented,2025-06-21T21:25:16Z,changeset-bot[bot],,,,
+3165441797,commented,2025-06-21T21:25:17Z,vercel[bot],,,,
+3165441797,commented,2025-06-21T21:25:19Z,coderabbitai[bot],,,,
+3165441797,mentioned,2025-06-21T21:25:20Z,coderabbitai,,,,
+3165441797,commented,2025-06-21T21:26:46Z,pkg-pr-new[bot],,,,
+3165441797,reviewed,,,1ee9bae7f562884156cd0dc36da7d841d8feb573,,,
+3165441797,commented,2025-06-21T21:27:16Z,github-actions[bot],,,,
+3165441797,reviewed,,,1ee9bae7f562884156cd0dc36da7d841d8feb573,,,
+3165441797,deployed,2025-06-21T21:27:43Z,vercel[bot],,,,
+3165441797,renamed,2025-06-21T21:29:10Z,juliusmarminge,,,,
+3165441797,committed,,,d02a3d83dbf747ad183b4a94a44b9f6f021dac19,,,Update ESLint config to enforce alias imports for Effect and Platform
+3165441797,committed,,,1f50e4c7154f1e3192fb8377624d7b8dace7d411,,,Merge branch 'main' into cursor/fix-custom-lint-rule-for-effect-imports-4b7d
+3165441797,deployed,2025-06-21T21:37:10Z,vercel[bot],,,,
+3165441797,committed,,,cd3714d7c6a11d12c08102ba0bf0af8da6edd7e8,,,last one
+3165441797,deployed,2025-06-21T21:43:57Z,vercel[bot],,,,
+3165441797,merged,2025-06-21T22:22:06Z,juliusmarminge,b3e3ec257e5c90c7840d4713c908021d052638b3,,,
+3165441797,closed,2025-06-21T22:22:06Z,juliusmarminge,,,,
+3137677174,committed,,,21b3dc2177d8cc63e6f211a7d118928b2826fa78,,,Add `ignoreLayers` and `ignoreLayersType` to Express integration
+3137677174,commented,2025-06-11T18:02:42Z,github-actions[bot],,,,
+3137677174,committed,,,679ff95ad8d9996d5c4f26367d069eb1a2f08dbd,,,cursor cleanup
+3137677174,review_requested,2025-06-11T18:06:56Z,AbhiPrasad,,,,
+3137677174,review_request_removed,2025-06-11T18:06:56Z,AbhiPrasad,,,,
+3137677174,review_requested,2025-06-11T18:06:56Z,AbhiPrasad,,,,
+3137677174,review_requested,2025-06-11T18:06:56Z,AbhiPrasad,,,,
+3137677174,assigned,2025-06-11T18:06:57Z,AbhiPrasad,,AbhiPrasad,,
+3137677174,ready_for_review,2025-06-11T18:07:00Z,AbhiPrasad,,,,
+3137677174,committed,,,52b9dc55f623588020a10b94822a8b7444e61238,,,Merge branch 'develop' into cursor/update-express-integration-with-new-options-8195
+3137677174,committed,,,79bb6b48be0bfa3b2be8ac510a2bc7ad15794a86,,,Merge branch 'develop' into cursor/update-express-integration-with-new-options-8195
+3137677174,committed,,,8c04741a181646702c327e7a79a1c8fa2b101758,,,Merge branch 'develop' into cursor/update-express-integration-with-new-options-8195
+3137677174,committed,,,2b178b5e75e9a75417bf863d62ccdf9bbfca0a22,,,Merge branch 'develop' into cursor/update-express-integration-with-new-options-8195
+3137677174,committed,,,d7bd90eab3c12865539a466fc19eea838be5b2df,,,adjust how options are set
+3137677174,reviewed,,,d7bd90eab3c12865539a466fc19eea838be5b2df,,,
+3165243502,committed,,,50be80b6b233636b13d1bf4fc5b81c7e1b3e1c16,,,Remove type of change section from PR template
+3165243502,review_requested,2025-06-21T17:19:56Z,mrubens,,,,
+3165243502,review_requested,2025-06-21T17:19:56Z,mrubens,,,,
+3165243502,labeled,2025-06-21T17:19:59Z,dosubot[bot],,,size:S,
+3165243502,commented,2025-06-21T17:22:40Z,mrubens,,,,
+3165243502,merged,2025-06-21T17:22:50Z,mrubens,df2871be1875db811ee0af10c98b4f9a5535e189,,,
+3165243502,closed,2025-06-21T17:22:51Z,mrubens,,,,
+3165243502,head_ref_deleted,2025-06-21T17:22:52Z,mrubens,,,,
+3165243502,referenced,2025-06-22T22:06:05Z,Alorse,6c02096593119ba66344f5548138b8b05687f20d,,,
+3165243502,referenced,2025-06-24T19:54:40Z,cte,726687af0e807a30e4bf1d2135e9479d89b42904,,,
+3152882125,committed,,,0cae7f5f92c54fe178c4e9731c86cf4765c38da1,,,Add telemetry event synchronization check script
+3152882125,committed,,,f9fbb7954893f8503f783e59d033d56e5378585c,,,Checkpoint before follow-up message
+3152882125,committed,,,1582315ce7f9ed1229b5451f37f218fc37b08cca,,,Add telemetry events for AI and Cloud interactions in IntelliJ plugin
+3152882125,committed,,,0048a41ba485d329d293a8571152964464b5a350,,,"tweak ci
+
+Signed-off-by: Cursor Agent <cursoragent@cursor.com>"
+3152882125,committed,,,00be82fc05f8f492f1aa1d21b568d19afe22b2b0,,,"add comments
+
+Signed-off-by: Cursor Agent <cursoragent@cursor.com>"
+3152882125,commented,2025-06-17T10:01:26Z,nx-cloud[bot],,,,
+3152882125,committed,,,095300bc910618b9ab1ffb75532868ae06db77a7,,,"move target to package.json
+
+Signed-off-by: Cursor Agent <cursoragent@cursor.com>"
+3152882125,reviewed,,,095300bc910618b9ab1ffb75532868ae06db77a7,,,
+3152882125,merged,2025-06-17T12:27:03Z,MaxKless,42f89bc9090968251fd44017ffe47302a7c4d246,,,
+3152882125,closed,2025-06-17T12:27:03Z,MaxKless,,,,
+3152882125,head_ref_deleted,2025-06-17T12:27:05Z,MaxKless,,,,
+3148054400,committed,,,a141ba44efb46865e9d6cd0ca03ec4d08a19588f,,,fix(plugin-quickswap): Fix composePromptFromState function call in llmHelpers - Updated the composePromptFromState function call to use the correct object parameter format - Fixed state object structure to properly pass message content for template placeholders - This resolves compiler errors related to incorrect function signature usage
+3148054400,committed,,,ef2f0973ae60f8e103e292a20d23b75b3aef8a79,,,fix(plugin-quickswap): Fix UUID type issues in all test files - Replace improper  casts with proper UUID type format - Update entityId and roomId to use correct UUID template literal type - This resolves all TypeScript compilation errors in test suite
+3148054400,commented,2025-06-15T20:48:09Z,coderabbitai[bot],,,,
+3148054400,convert_to_draft,2025-06-15T20:53:49Z,cursor[bot],,,,
+3148054400,renamed,2025-06-15T20:54:09Z,cursor[bot],,,,
+3148054400,commented,2025-06-18T17:52:08Z,ChristopherTrimboli,,,,
+3148054400,closed,2025-06-18T17:52:08Z,ChristopherTrimboli,,,,
+3128477850,committed,,,5e2980695646988228ad293e5a0ed69d6bcb0e0a,,,Fix CEL state handling with improved pathname and query param logic
+3128477850,commented,2025-06-08T15:53:22Z,vercel[bot],,,,
+3128477850,labeled,2025-06-08T15:53:22Z,dosubot[bot],,,size:M,
+3128477850,commented,2025-06-08T15:53:24Z,CLAassistant,,,,
+3128477850,renamed,2025-06-08T15:53:28Z,talboren,,,,
+3128477850,labeled,2025-06-08T15:53:35Z,dosubot[bot],,,Bug,
+3128477850,labeled,2025-06-08T15:53:35Z,dosubot[bot],,,UI,
+3128477850,commented,2025-06-08T15:53:51Z,talboren,,,,
+3128477850,mentioned,2025-06-08T15:53:52Z,greptile,,,,
+3128477850,subscribed,2025-06-08T15:53:52Z,greptile,,,,
+3128477850,reviewed,,,5e2980695646988228ad293e5a0ed69d6bcb0e0a,,,
+3128477850,committed,,,5abef8a8e6a602724f5a952c89207684f014023f,,,Update alert status and add deleted/dismissed fields for noisy preset tests
+3128477850,closed,2025-06-09T08:13:07Z,talboren,,,,
+3128477850,cross-referenced,2025-06-11T14:50:22Z,ns-rboyd,,,,
+3129474936,committed,,,80a25eab41a2bce5e98a7d422521fecd10951d27,,,Add URL-based tab navigation for plugin configuration page
+3129474936,closed,2025-06-09T07:49:59Z,RockChinQ,,,,
+3148285881,committed,,,e75a31322e5bf0f3b29d4b3de314e102f00b8f83,,,"Update template recommendations for React 19, Next.js 15, and tech stack"
+3148285881,committed,,,bf1c0d5c95a082ba390ef16f0116ab911901ddbe,,,"Remove outdated project rules and configuration files, including cursor rules, analytics, auth, backend, frontend, general, payments, storage, and package-lock.json. Introduce a new product requirements document (prd.md) outlining the architecture and features for the Symphonia music education platform."
+3148285881,commented,2025-06-16T01:43:25Z,vercel[bot],,,,
+3148285881,mentioned,2025-06-16T01:43:26Z,maxeyvsla,,,,
+3148285881,subscribed,2025-06-16T01:43:26Z,maxeyvsla,,,,
+3148285881,closed,2025-06-16T01:45:39Z,symphonia-ai,,,,
+3148285881,reopened,2025-06-16T01:45:56Z,symphonia-ai,,,,
+3132740864,committed,,,971c2464fb0e63e22f1b566ec57be742c09db91c,,,Add backend column configuration with cross-device sync
+3132740864,commented,2025-06-10T08:58:22Z,vercel[bot],,,,
+3132740864,labeled,2025-06-10T08:58:22Z,dosubot[bot],,,size:XL,
+3132740864,labeled,2025-06-10T08:58:51Z,dosubot[bot],,,API,
+3132740864,labeled,2025-06-10T08:58:51Z,dosubot[bot],,,Documentation,
+3132740864,labeled,2025-06-10T08:58:51Z,dosubot[bot],,,Feature,
+3132740864,labeled,2025-06-10T08:58:51Z,dosubot[bot],,,UI,
+3132740864,committed,,,bf9c97eea90d1c212d6e0ae6acc2e3e161539fc7,,,Export Tag interface for external use
+3132740864,reviewed,,,bf9c97eea90d1c212d6e0ae6acc2e3e161539fc7,,,
+3132740864,deployed,2025-06-10T09:06:04Z,vercel[bot],,,,
+3132740864,committed,,,a1cb117ceb230e47093bf2da735fff1da02301c7,,,Refactor column config to support local and backend storage dynamically
+3132740864,reviewed,,,a1cb117ceb230e47093bf2da735fff1da02301c7,,,
+3132740864,commented,2025-06-10T09:27:53Z,codecov[bot],,,,
+3132740864,deployed,2025-06-10T09:35:37Z,vercel[bot],,,,
+3132740864,committed,,,9b5385e850389d5d2a331b5b2ded39ec7f11a320,,,Remove column configuration migration and test documentation
+3132740864,reviewed,,,9b5385e850389d5d2a331b5b2ded39ec7f11a320,,,
+3132740864,committed,,,cccbab0012aa0945415f983b39aa1d704b7337ea,,,fix: fix
+3132740864,reviewed,,,cccbab0012aa0945415f983b39aa1d704b7337ea,,,
+3132740864,deployed,2025-06-10T11:19:46Z,vercel[bot],,,,
+3132740864,committed,,,e7321f04b4d2080623c1271d4630b532ab397870,,,Implement batched column config updates with backend persistence
+3132740864,reviewed,,,e7321f04b4d2080623c1271d4630b532ab397870,,,
+3132740864,deployed,2025-06-10T11:34:20Z,vercel[bot],,,,
+3132740864,committed,,,b11c0b9c28ee5504c4a7212b214c9e1c54f6b077,,,Checkpoint before follow-up message
+3132740864,committed,,,de362b2461bf15a82f99828fcf46ae2e658fb33e,,,Implement backend column configuration persistence with batched updates
+3132740864,reviewed,,,de362b2461bf15a82f99828fcf46ae2e658fb33e,,,
+3132740864,committed,,,eb4cf5041e5741e5d8a4a3322aca2f3a73e9d5ae,,,Refactor column state management with unified hook and prop passing
+3132740864,unlabeled,2025-06-10T12:27:40Z,dosubot[bot],,,size:XL,
+3132740864,labeled,2025-06-10T12:27:41Z,dosubot[bot],,,size:XXL,
+3132740864,reviewed,,,eb4cf5041e5741e5d8a4a3322aca2f3a73e9d5ae,,,
+3132740864,deployed,2025-06-10T12:33:24Z,vercel[bot],,,,
+3136628527,head_ref_force_pushed,2025-06-11T12:31:41Z,szokeasaurusrex,7d1e336192ef0c4cab61b2fab58fe18e1c47b6bf,,,
+3136628527,renamed,2025-06-11T12:32:20Z,szokeasaurusrex,,,,
+3136628527,ready_for_review,2025-06-11T12:32:22Z,szokeasaurusrex,,,,
+3136628527,review_requested,2025-06-11T12:32:27Z,szokeasaurusrex,,,,
+3136628527,head_ref_force_pushed,2025-06-11T12:34:11Z,szokeasaurusrex,650dd56fa9c0c3e544dea0fefb1af47ae5b7bbb4,,,
+3136628527,reviewed,,,650dd56fa9c0c3e544dea0fefb1af47ae5b7bbb4,,,
+3136628527,head_ref_force_pushed,2025-06-11T12:58:52Z,szokeasaurusrex,43e93ab8c60ca6f4316b90bb449fdf1f49224eaa,,,
+3136628527,review_requested,2025-06-11T12:59:23Z,szokeasaurusrex,,,,
+3136628527,committed,,,a12fa53c57586ae39c82338c7ae7cdfbba897d3e,,,"feat(login): Warn when overwriting existing auth token
+
+Closes #2537
+
+Co-authored-by: ""Daniel Szoke"" <daniel.szoke@sentry.io>
+Co-authored-by: ""loewenheim"" <loewenheim@users.noreply.github.com>"
+3136628527,head_ref_force_pushed,2025-06-11T14:43:10Z,szokeasaurusrex,a12fa53c57586ae39c82338c7ae7cdfbba897d3e,,,
+3136628527,reviewed,,,a12fa53c57586ae39c82338c7ae7cdfbba897d3e,,,
+3136628527,merged,2025-06-11T15:06:28Z,szokeasaurusrex,700959e14ee6476d7407d722e8e5d0542a13473e,,,
+3136628527,closed,2025-06-11T15:06:28Z,szokeasaurusrex,,,,
+3136628527,head_ref_deleted,2025-06-11T15:06:29Z,szokeasaurusrex,,,,
+3136628527,cross-referenced,2025-06-24T12:46:54Z,szokeasaurusrex,,,,
+3131698049,committed,,,69867eff1653cedf28a756e6805b4ecbaaf790d1,,,Add tests for Perplexity reasoning models and effort parameter
+3131698049,committed,,,15819886097d51c8cd20d6b200d74bf4c7ba8d4f,,,tests perplexity reasoning effort
+3131698049,commented,2025-06-09T23:05:06Z,vercel[bot],,,,
+3131698049,merged,2025-06-09T23:05:08Z,ishaan-jaff,7b8922e0ae8d8161f8a09698641ab4bcad9f9111,,,
+3131698049,closed,2025-06-09T23:05:08Z,ishaan-jaff,,,,
+3131698049,commented,2025-06-09T23:05:10Z,CLAassistant,,,,
+3131698049,deployed,2025-06-09T23:05:23Z,vercel[bot],,,,
+3131698049,referenced,2025-06-10T00:07:32Z,ishaan-jaff,cd8ec4556f9f9f16e8ddf39e68f9d412b911ff00,,,
+3131698049,referenced,2025-06-12T15:28:39Z,stefan--,fab8261f0dc47637f19fefa3a3e35ac995cf3331,,,
+3135420284,committed,,,6bd02ad1ebcb6c82e36b48114d6820170487f639,,,Add CLI test documentation for BAML testing workflow and reference
+3135420284,committed,,,279c1b62daead11fbf0bfa7234bc9b357322d739,,,Changes from background composer bc-f0b2fdab-e457-407f-ad2f-59fd3e00880d
+3135420284,commented,2025-06-11T04:16:44Z,vercel[bot],,,,
+3135420284,commented,2025-06-11T04:17:03Z,aaronvg,,,,
+3135420284,mentioned,2025-06-11T04:17:04Z,cursoragent,,,,
+3135420284,subscribed,2025-06-11T04:17:04Z,cursoragent,,,,
+3135420284,reviewed,,,279c1b62daead11fbf0bfa7234bc9b357322d739,,,
+3135420284,deployed,2025-06-11T04:18:23Z,vercel[bot],,,,
+3135420284,committed,,,a2dc1f99748f8ed0187b27452bd4e22ce8ab83ef,,,fix broken link
+3135420284,auto_merge_enabled,2025-06-11T04:21:43Z,aaronvg,,,,
+3135420284,reviewed,,,a2dc1f99748f8ed0187b27452bd4e22ce8ab83ef,,,
+3135420284,added_to_merge_queue,2025-06-11T04:23:13Z,aaronvg,,,,
+3135420284,deployed,2025-06-11T04:23:52Z,vercel[bot],,,,
+3135420284,removed_from_merge_queue,2025-06-11T04:25:37Z,github-merge-queue[bot],,,,
+3135420284,merged,2025-06-11T04:25:38Z,aaronvg,854cdbdd259398e24311fa958e647b30dc2c8b73,,,
+3135420284,closed,2025-06-11T04:25:38Z,aaronvg,,,,
+3135420284,head_ref_deleted,2025-06-11T04:25:38Z,aaronvg,,,,
+3124507979,committed,,,e96970830808cff0532910bca830a789638a5c81,,,Checkpoint before follow-up message
+3124507979,committed,,,b403ddb366d94ac2f6b8161893660eb4925bb19e,,,Fix filesystem watcher thread safety and event loop management
+3124507979,commented,2025-06-06T11:30:42Z,robobun,,,,
+3124507979,merged,2025-06-06T11:30:43Z,Jarred-Sumner,e8a0136501c086f1d0564fade1846cef8a32e00f,,,
+3124507979,closed,2025-06-06T11:30:43Z,Jarred-Sumner,,,,
+3124507979,mentioned,2025-06-06T11:30:44Z,cursoragent,,,,
+3124507979,subscribed,2025-06-06T11:30:44Z,cursoragent,,,,
+3124507979,head_ref_deleted,2025-06-06T11:30:44Z,Jarred-Sumner,,,,
+3166296433,committed,,,cecacba17481987d421fdbf75041516e11d0bce5,,,Add MCP server restrictions to mode configuration and validation
+3166296433,review_requested,2025-06-22T21:41:46Z,mrubens,,,,
+3166296433,review_requested,2025-06-22T21:41:46Z,mrubens,,,,
+3166296433,labeled,2025-06-22T21:41:49Z,dosubot[bot],,,size:L,
+3166296433,labeled,2025-06-22T21:42:04Z,dosubot[bot],,,enhancement,
+3166296433,labeled,2025-06-22T21:46:04Z,hannesrudolph,,,Issue/PR - Triage,
+3166296433,commented,2025-06-22T22:02:39Z,daniel-lxs,,,,
+3166296433,reviewed,,,cecacba17481987d421fdbf75041516e11d0bce5,,,
+3166296433,labeled,2025-06-22T22:10:16Z,dosubot[bot],,,lgtm,
+3166296433,unlabeled,2025-06-22T22:15:44Z,hannesrudolph,,,Issue/PR - Triage,
+3166296433,labeled,2025-06-22T22:15:44Z,hannesrudolph,,,PR - Needs Review,
+3166296433,commented,2025-06-23T03:38:32Z,mrubens,,,,
+3166296433,commented,2025-06-25T14:45:04Z,mrubens,,,,
+3166296433,mentioned,2025-06-25T14:45:06Z,cursoragent,,,,
+3166296433,subscribed,2025-06-25T14:45:06Z,cursoragent,,,,
+3140903716,committed,,,adf75fd9a64ab52ff4b16ac262bebfa88e595a51,,,Fix handling of backtrace frames
+3140903716,commented,2025-06-12T16:26:22Z,cleptric,,,,
+3140903716,mentioned,2025-06-12T16:26:23Z,poldixd,,,,
+3140903716,subscribed,2025-06-12T16:26:23Z,poldixd,,,,
+3140903716,review_requested,2025-06-12T16:26:26Z,cleptric,,,,
+3140903716,assigned,2025-06-12T16:26:29Z,cleptric,,cleptric,,
+3140903716,reviewed,,,adf75fd9a64ab52ff4b16ac262bebfa88e595a51,,,
+3140903716,labeled,2025-06-12T17:01:43Z,cleptric,,,Bug,
+3140903716,committed,,,052cf2215dee8486cb7e72b1f6be929fab358b69,,,CS
+3140903716,reviewed,,,052cf2215dee8486cb7e72b1f6be929fab358b69,,,
+3140903716,commented,2025-06-13T08:51:06Z,poldixd,,,,
+3140903716,merged,2025-06-13T15:24:17Z,cleptric,d86faef2eec935bf4959fee83d039ce89d0ff934,,,
+3140903716,closed,2025-06-13T15:24:17Z,cleptric,,,,
+3140903716,head_ref_deleted,2025-06-13T15:24:18Z,cleptric,,,,
+3140903716,cross-referenced,2025-06-24T02:00:06Z,tom-id-au,,,,
+3158034133,committed,,,4c990ab2f1965032a29d8e16ee285f0ea66a17cf,,,Refactor dynamic sampling rule ID assignment using ORM query
+3158034133,labeled,2025-06-18T20:07:36Z,github-actions[bot],,,Scope: Backend,
+3158034133,review_requested,2025-06-18T20:07:58Z,oioki,,,,
+3158034133,committed,,,35b243c00cc18d9ae4bd21b35962b10ea0fb59fe,,,:hammer_and_wrench: apply pre-commit fixes
+3158034133,deployed,2025-06-18T20:09:38Z,vercel[bot],,,,
+3158034133,commented,2025-06-23T07:12:57Z,constantinius,,,,
+3158034133,reviewed,,,35b243c00cc18d9ae4bd21b35962b10ea0fb59fe,,,
+3158034133,cross-referenced,2025-06-23T11:40:01Z,constantinius,,,,
+3158034133,closed,2025-06-23T14:16:04Z,oioki,,,,
+3137765636,committed,,,6b75dd9186e747a8ef933a6b7f8bd596f17c7461,,,Add welcome page with Discord community invitation
+3137765636,commented,2025-06-11T18:32:40Z,elijames-codecov,,,,
+3137765636,closed,2025-06-11T18:32:40Z,elijames-codecov,,,,
+3137765636,locked,2025-06-27T00:03:50Z,github-actions[bot],,,,
+3155923412,committed,,,f8b8086050f39e29b4d1ca6e9511f48650914145,,,fix: update env configuration and migrate to Supabase database setup
+3155923412,committed,,,fc89fd595acc224ada19d110721507abbdce75ad,,,Checkpoint before attempting further API/tool fixes
+3155923412,committed,,,8f2a32453426d0fea3fa941d3186ea2fad837600,,,fix: Resolve auth issues and update UI components
+3155923412,committed,,,f01d945366ee1ee9d7233d0b9228a105bc63d57b,,,fix: Apply correct auth pattern to remaining API routes
+3155923412,committed,,,e438a32251268e8e70ccfbc347d54a54c7f730ca,,,feat: Add Files tab to sidebar with document linking
+3155923412,committed,,,3c797ca1892ec60773156f7b1958cc1da0044cb3,,,feat: Add 'All' tab combining chats and documents
+3155923412,committed,,,e5b5bf662fdfd84143a1ca6ee16725558d39fa5d,,,feat: Auto-maximize artifact on sidebar navigation
+3155923412,committed,,,c63f6bbf33056987c7d10a6c756260cb36075e01,,,feat: rename app in sidebar
+3155923412,committed,,,d9f86c1245442bba5d5a33c8f123a0d70773d7bd,,,Fix: Correct import paths in suggestions API route
+3155923412,committed,,,7a339da98c0bb46042553e3fadbb85bd03988dfb,,,fix signout and sidebar reference errors breaking vercel build
+3155923412,committed,,,04a4b0f6a7b6480d9b0e06d143c8111d075efee9,,,Fix: Add chatId to saveDocument call in document API
+3155923412,committed,,,bc855a5c1fef85c41f809226711caf098f04d954,,,Fix: Handle missing properties in streaming document preview type
+3155923412,committed,,,40ee38219fbdc4173b06202ab003249c3a33fec4,,,Fix: Suppress hydration warning on body
+3155923412,committed,,,e114993759eb442c8747dedd07e25ec1c90c50b4,,,"Fix: Remove invalid Drizzle imports (array, pgArray)"
+3155923412,committed,,,595e5d9599a8528e636103c0400fbc89e2adf7a4,,,Add n8n assistant integration
+3155923412,committed,,,379703b651b8140e7d33f440d64ef409ce4bd460,,,Fix n8n response streaming format
+3155923412,committed,,,873c821c9d4d7a04dda0d9f37a1768e96ed5489b,,,feat: Add N8nLanguageModel adapter for n8n integration
+3155923412,committed,,,7a16c77cbdc615ff0bed3246bc7652f41c9997b0,,,fix: Correct N8nLanguageModel implementation and usage
+3155923412,committed,,,a74e4712409fbc3788a1c06923f4713fd2628091,,,chore: Set default chat model to n8n assistant
+3155923412,committed,,,c04e0b4e5f6e8d3ecb4a2525e16b30bb543fd0ce,,,fix: Ensure consistent sidebar group naming
+3155923412,committed,,,ce919f05044ec4d47028363bace8fe929d04ef0c,,,add: docs for bugs and roadmap
+3155923412,committed,,,ec0eaa336571a4c2c5bdb265794cca3e68ea9480,,,Update providers.ts
+3155923412,committed,,,a9dd079d28d99ec74de769496622631c21736af4,,,Update providers.ts
+3155923412,committed,,,4f44345ab78dfeac94c96b26cef2b25cb06df20a,,,feat: Handle token saving and webhook in callback route
+3155923412,committed,,,66986453936f014e13027721b6d5f0e07663c1f6,,,fix: Add detailed logging to auth callback for token presence
+3155923412,committed,,,40880bd808c2b66e3d2b37cd7850551c40e4e2f3,,,feat: Add database logging to auth callback
+3155923412,committed,,,5e029655485e3050c340e4224e276a49570ecf0b,,,fix
+3155923412,committed,,,2b1d78cd182ebbf778fe4c9da9b14efdebdc31bc,,,chore: Move initial debug log before code exchange
+3155923412,committed,,,be2cf4b7d29d65ecefac84d94437e7fd026d20e9,,,fix: Delete incorrect auth callback and add logic to correct one
+3155923412,committed,,,6671f7e047696127551a72dae2990b31c11ad3e2,,,Fix chat and reasoning modes
+3139478652,committed,,,11251714a101cad660cf394071bd45f0cde4e081,,,Fix unsigned char casting in ACME and HTTP server validation checks
+3139478652,committed,,,79dc1b444fc19e62bf38e2faba174b9a9c1ed4f8,,,Fix ACME request validation by using unsigned char for array indexing
+3139478652,merged,2025-06-17T13:25:26Z,ggarber,62d91b0bc5180e4bf832086b6b397f9753948b65,,,
+3139478652,closed,2025-06-17T13:25:26Z,ggarber,,,,
+3139478652,head_ref_deleted,2025-06-17T13:25:28Z,ggarber,,,,
+3151748196,committed,,,6fce7f8dcd43cb1b348fa8bd8d6b1ea6f5e83471,,,Implement chat type-aware processing for private and group chats
+3151748196,committed,,,570a9418ab13303f9f22dac5cfd2cdebbf103355,,,Add timeout handling and error recovery in focus chat processing
+3151748196,committed,,,45172e9dca2126f627b7dc2a8edf466bd8ba8fee,,,Enhance private chat handling with improved memory and state management
+3151748196,commented,2025-06-17T01:26:25Z,sourcery-ai[bot],,,,
+3151748196,commented,2025-06-17T01:26:33Z,SengokuCola,,,,
+3151748196,reviewed,,,45172e9dca2126f627b7dc2a8edf466bd8ba8fee,,,
+3151748196,reviewed,,,45172e9dca2126f627b7dc2a8edf466bd8ba8fee,,,
+3151748196,reviewed,,,45172e9dca2126f627b7dc2a8edf466bd8ba8fee,,,
+3151748196,reviewed,,,45172e9dca2126f627b7dc2a8edf466bd8ba8fee,,,
+3151748196,closed,2025-06-19T03:05:27Z,SengokuCola,,,,
+3151748196,head_ref_deleted,2025-06-23T19:24:35Z,SengokuCola,,,,
+3156345426,committed,,,c3fad6b9a296d1cdd15b1d4ea0539b5f857109da,,,Add API key regeneration feature with confirmation dialog
+3156345426,commented,2025-06-18T10:33:03Z,netlify[bot],,,,
+3156345426,deployed,2025-06-18T10:33:04Z,scopsy,,,,
+3156345426,deployed,2025-06-18T10:33:04Z,scopsy,,,,
+3156345426,deployed,2025-06-18T10:33:04Z,scopsy,,,,
+3156345426,labeled,2025-06-18T10:33:11Z,github-actions[bot],,,@novu/dashboard,
+3156345426,committed,,,1d727f7b86794b0922a212917b955312b0d9eb3d,,,fix(dashboard): Fix regenerate API keys dialog form error and button size - Replace FormInput with Input in RegenerateApiKeysDialog to fix form context error - Increase CompactButton size and add custom height to better match input field - Button now has proper 38px height to align with copy button
+3156345426,deployed,2025-06-18T10:58:44Z,cursor[bot],,,,
+3156345426,deployed,2025-06-18T10:58:44Z,cursor[bot],,,,
+3156345426,deployed,2025-06-18T10:58:45Z,cursor[bot],,,,
+3156345426,committed,,,5be90ba2af6a93b84ec4ed0a29704a73fb1bba6f,,,fix(dashboard): Pass environment parameter to regenerateApiKeys API call - Update regenerateApiKeys function to accept environment parameter like other API functions - Update useRegenerateApiKeys hook to pass current environment to API call - Ensures proper environment context for the regenerate request
+3156345426,deployed,2025-06-18T11:10:22Z,cursor[bot],,,,
+3156345426,deployed,2025-06-18T11:10:22Z,cursor[bot],,,,
+3156345426,deployed,2025-06-18T11:10:22Z,cursor[bot],,,,
+3156345426,reviewed,,,5be90ba2af6a93b84ec4ed0a29704a73fb1bba6f,,,
+3156345426,committed,,,e19bec4360d22c38a86d761be30b5c5c36487286,,,fix: design
+3156345426,deployed,2025-06-18T11:48:00Z,scopsy,,,,
+3156345426,deployed,2025-06-18T11:48:00Z,scopsy,,,,
+3156345426,deployed,2025-06-18T11:48:00Z,scopsy,,,,
+3156345426,ready_for_review,2025-06-18T11:48:01Z,scopsy,,,,
+3156345426,review_requested,2025-06-18T11:49:35Z,scopsy,,,,
+3156345426,renamed,2025-06-18T11:49:39Z,scopsy,,,,
+3156345426,commented,2025-06-18T11:49:43Z,linear[bot],,,,
+3156345426,reviewed,,,e19bec4360d22c38a86d761be30b5c5c36487286,,,
+3156345426,merged,2025-06-19T10:57:00Z,scopsy,a3da6fdb27142cb4f782a358230988c696cf6d75,,,
+3156345426,closed,2025-06-19T10:57:00Z,scopsy,,,,
+3156345426,head_ref_deleted,2025-06-19T10:57:02Z,scopsy,,,,
+3165684483,committed,,,a30b2cf341abab8b11a4ba2ae63fde9cce8ab5a2,,,Checkpoint before follow-up message
+3165684483,committed,,,313c4a0af946c1dc9cdd102250bf28b263d70074,,,Checkpoint before follow-up message
+3165684483,committed,,,426a22d0a27e511613907b570432e736f065c5c3,,,Fix Teams provider template rendering for missing alert labels
+3165684483,committed,,,85f3574dc0ac47dcf1100172f9d4e699975ea298,,,Fix Teams Adaptive Card template rendering for missing alert fields
+3165684483,committed,,,6a7c55927ea66589578bc48cc9fbae5fe5687351,,,Restrict Python version range to 3.11 to 3.12
+3165684483,commented,2025-06-22T05:47:42Z,vercel[bot],,,,
+3165684483,labeled,2025-06-22T05:47:42Z,dosubot[bot],,,size:XL,
+3165684483,commented,2025-06-22T05:47:50Z,github-actions[bot],,,,
+3165684483,labeled,2025-06-22T05:47:56Z,dosubot[bot],,,Documentation,
+3165684483,labeled,2025-06-22T05:47:56Z,dosubot[bot],,,Feature,
+3165684483,reviewed,,,6a7c55927ea66589578bc48cc9fbae5fe5687351,,,
+3165684483,committed,,,76766a6ac38e309f6e5ba2f5d72a8a1b807a46c3,,,Update Poetry lock file dependencies and Python version constraints
+3165684483,commented,2025-06-22T06:25:37Z,cursor[bot],,,,
+3165684483,committed,,,407fa84453796307a1d6dc879b3a00ee22925043,,,fix: poetry
+3165684483,closed,2025-06-22T06:35:28Z,shahargl,,,,
+3165684483,commented,2025-06-23T06:46:05Z,anhtaw,,,,
+3165684483,mentioned,2025-06-23T06:46:07Z,shahargl,,,,
+3165684483,subscribed,2025-06-23T06:46:07Z,shahargl,,,,
+2836332099,committed,,,2683848c5c9a4453c9bf2bb51717f3e3a9872d45,,,chore(cursor): Add .cursor/rules for frontend
+2836332099,review_requested,2025-02-06T18:53:03Z,dashed,,,,
+2836332099,assigned,2025-02-06T18:53:03Z,dashed,,dashed,,
+2836332099,deployed,2025-02-06T18:53:59Z,vercel[bot],,,,
+2836332099,committed,,,574cd9770a8d758b73be99b7f5d4cb06431407a2,,,typo
+2836332099,deployed,2025-02-06T18:59:25Z,vercel[bot],,,,
+2836332099,reviewed,,,574cd9770a8d758b73be99b7f5d4cb06431407a2,,,
+2836332099,merged,2025-02-06T20:48:26Z,dashed,cfdd2e8d495a86e3c15317d17d532f18265a7679,,,
+2836332099,closed,2025-02-06T20:48:26Z,dashed,,,,
+2836332099,head_ref_deleted,2025-02-06T20:48:27Z,dashed,,,,
+2836332099,locked,2025-02-22T00:02:47Z,github-actions[bot],,,,
+3121322997,committed,,,1951b8134f816a2bf5fb666b7bf1528d13f9efe2,,,Configure Storybook and update project dependencies for React Native
+3121322997,committed,,,6bfe16e003756ce394a592dd9a65b11ebedb5b97,,,Upgrade Storybook to v9 with snapshot testing and configuration updates
+3121322997,commented,2025-06-05T13:47:02Z,CLAassistant,,,,
+3121322997,commented,2025-06-05T13:50:32Z,Rohit3523,,,,
+3121322997,commented,2025-06-05T13:52:07Z,diegolmello,,,,
+3121322997,mentioned,2025-06-05T13:52:08Z,Rohit3523,,,,
+3121322997,subscribed,2025-06-05T13:52:08Z,Rohit3523,,,,
+3121322997,reviewed,,,6bfe16e003756ce394a592dd9a65b11ebedb5b97,,,
+3121322997,closed,2025-06-23T14:16:07Z,diegolmello,,,,
+3121322997,head_ref_deleted,2025-06-23T14:16:12Z,diegolmello,,,,
+3143968533,committed,,,60830696587aacb608383e347c95247d194f3905,,,Improve PlayStation SDK access request feedback with detailed user context
+3143968533,review_requested,2025-06-13T15:37:08Z,bruno-garcia,,,,
+3143968533,labeled,2025-06-13T15:37:21Z,github-actions[bot],,,Scope: Frontend,
+3143968533,committed,,,d42380f297f86ac5316f3bf20adb50e06ad9f044,,,:hammer_and_wrench: apply pre-commit fixes
+3143968533,deployed,2025-06-13T15:39:46Z,vercel[bot],,,,
+3143968533,reviewed,,,d42380f297f86ac5316f3bf20adb50e06ad9f044,,,
+3143968533,merged,2025-06-16T07:43:38Z,vgrozdanic,72800c1c7b3f5084a4c7539180da7f28ccb5efc9,,,
+3143968533,closed,2025-06-16T07:43:38Z,vgrozdanic,,,,
+3143968533,head_ref_deleted,2025-06-16T07:43:41Z,vgrozdanic,,,,
+3143968533,referenced,2025-06-18T21:15:41Z,billyvg,04228249e4ac80d82b47b52479b471726abc507b,,,
+3143968533,referenced,2025-06-19T00:58:54Z,andrewshie-sentry,5c74db120e5ce45076ac307159372893704a75d3,,,
+3127601737,committed,,,41321d6d0ce58eea6328d047eea26833b62aba9b,,,Update Anthropic unified docs with multi-provider examples and proxy usage
+3127601737,commented,2025-06-07T22:19:15Z,vercel[bot],,,,
+3127601737,commented,2025-06-07T22:19:17Z,CLAassistant,,,,
+3127601737,merged,2025-06-07T22:24:14Z,ishaan-jaff,3351f0513e0b46ad473baf2526a267528629ab2b,,,
+3127601737,closed,2025-06-07T22:24:14Z,ishaan-jaff,,,,
+3127601737,referenced,2025-06-12T15:28:37Z,stefan--,4c39f572271938e707bd38e443af63b57ada7bf6,,,
+3165803170,committed,,,f14749034460690bf9e0b3b64f333260517cf767,,,Add cURL and Postman export options to workflow test drawer
+3165803170,deployed,2025-06-22T09:25:09Z,scopsy,,,,
+3165803170,deployed,2025-06-22T09:25:09Z,scopsy,,,,
+3165803170,deployed,2025-06-22T09:25:09Z,scopsy,,,,
+3165803170,commented,2025-06-22T09:25:10Z,netlify[bot],,,,
+3165803170,labeled,2025-06-22T09:25:16Z,github-actions[bot],,,@novu/dashboard,
+3165803170,committed,,,1ca15225aa56b531ab86854ca18aace09c6a7b67,,,Refactor test workflow drawer to use API key instead of environment ID
+3165803170,deployed,2025-06-22T09:42:04Z,cursor[bot],,,,
+3165803170,deployed,2025-06-22T09:42:04Z,cursor[bot],,,,
+3165803170,deployed,2025-06-22T09:42:04Z,cursor[bot],,,,
+3165803170,committed,,,2e74ea2675f39ba896e0d018623999d3b840045f,,,Refactor test workflow drawer with button group and dropdown menu
+3165803170,deployed,2025-06-22T10:46:07Z,cursor[bot],,,,
+3165803170,deployed,2025-06-22T10:46:07Z,cursor[bot],,,,
+3165803170,deployed,2025-06-22T10:46:07Z,cursor[bot],,,,
+3165803170,committed,,,5c4e0a6080129321f7a989dc856ba51bb9a5f2f4,,,Merge branch 'next' into cursor/add-copy-curl-button-to-workflow-drawer-d518
+3165803170,deployed,2025-06-25T11:09:34Z,scopsy,,,,
+3165803170,deployed,2025-06-25T11:09:34Z,scopsy,,,,
+3165803170,deployed,2025-06-25T11:09:34Z,scopsy,,,,
+3165803170,committed,,,5b211f389e5894d3669f3fba3e2a77a943fad83e,,,fix:
+3165803170,deployed,2025-06-25T11:16:14Z,scopsy,,,,
+3165803170,deployed,2025-06-25T11:16:14Z,scopsy,,,,
+3165803170,deployed,2025-06-25T11:16:14Z,scopsy,,,,
+3165803170,ready_for_review,2025-06-25T11:16:24Z,scopsy,,,,
+3165803170,merged,2025-06-25T11:26:47Z,scopsy,1c09dc6e21511bde92ce9987fb3a24a741a95c33,,,
+3165803170,closed,2025-06-25T11:26:47Z,scopsy,,,,
+3165803170,head_ref_deleted,2025-06-25T11:26:49Z,scopsy,,,,
+3130352220,committed,,,a5085c167cf97298788e6d34513a5e970873b517,,,Add Zig allocation counters for memory usage tracking
+3130352220,committed,,,d9757e06c5f73c884b49a552c89091845e5c5faf,,,Refactor allocation tracking to use dynamic symbol table lookup
+3130352220,committed,,,6d2c9ef3b20744cbd791f099c0c01812f931117c,,,Refactor heap breakdown allocator and zone destruction logic
+3130352220,committed,,,6291485f7c32dff3ee29e95e84bcc03013e25181,,,Refactor Zone allocator to support type-specific allocation tracking
+3130352220,commented,2025-06-09T13:41:43Z,robobun,,,,
+3130352220,mentioned,2025-06-09T13:41:44Z,cursoragent,,,,
+3130352220,subscribed,2025-06-09T13:41:45Z,cursoragent,,,,
+3130352220,reviewed,,,6291485f7c32dff3ee29e95e84bcc03013e25181,,,
+3130352220,committed,,,628fcb13a3001d316104b13d11511a31a3947650,,,`bun run clang-format`
+3130352220,mentioned,2025-06-09T13:45:01Z,Jarred-Sumner,,,,
+3130352220,subscribed,2025-06-09T13:45:01Z,Jarred-Sumner,,,,
+3130352220,mentioned,2025-06-09T13:45:17Z,cursoragent,,,,
+3130352220,subscribed,2025-06-09T13:45:17Z,cursoragent,,,,
+3130352220,mentioned,2025-06-09T14:30:16Z,Jarred-Sumner,,,,
+3130352220,subscribed,2025-06-09T14:30:16Z,Jarred-Sumner,,,,
+3130352220,commented,2025-06-10T00:56:31Z,Jarred-Sumner,,,,
+3130352220,mentioned,2025-06-10T00:56:32Z,claude,,,,
+3130352220,subscribed,2025-06-10T00:56:32Z,claude,,,,
+3130352220,commented,2025-06-10T00:56:47Z,claude[bot],,,,
+3130352220,committed,,,d89da289ac0e23c5129deca79745cba838876718,,,"Add ELF support for Linux heap allocation counters
+
+- Enable allocation counters on Linux builds with ASSERTIONS_ENABLED
+- Use platform-specific section names: .bunheapcnt for ELF, __DATA,BUNHEAPCNT for Mach-O
+- Implement ELF parsing using dl_iterate_phdr() to walk sections and symbols
+- Fix include structure per review comment by moving mach-o headers inside proper conditional
+- Mirror macOS functionality for parsing Bun__allocationCounter__Bun__<Type> symbols
+
+Co-authored-by: Jarred-Sumner <Jarred-Sumner@users.noreply.github.com>"
+3130352220,mentioned,2025-06-10T00:59:35Z,claude,,,,
+3130352220,subscribed,2025-06-10T00:59:35Z,claude,,,,
+3130352220,mentioned,2025-06-10T00:59:52Z,Jarred-Sumner,,,,
+3130352220,subscribed,2025-06-10T00:59:52Z,Jarred-Sumner,,,,
+3159511012,committed,,,3a84d9e83d09a3a0207399729123c22935a53732,,,Create progress tracking document for public API dual auth implementation
+3159511012,committed,,,12f858032d2def3d07dc3bbbac12eb2cf8e07e26,,,Add sanctum routes whitelist configuration file
+3159511012,committed,,,f4f9703261d5cc2ee7bae4fe9703e1f829f76c1d,,,Add granular read/write abilities to AccessTokenAbility enum
+3159511012,committed,,,11ff06fee3d7af9ea36dc1c7cec1d7c19e041e6c,,,Implement AuthenticateWithJwtOrSanctum middleware for dual auth
+3159511012,committed,,,86c5d593e1baea245bb02cbe3f890941e860fb49,,,Add auth.multi middleware and update routes for dual authentication
+3159511012,committed,,,1cd252c842ced08d32ce2d6b9e1773da5287541a,,,Add Sanctum ability checks to FormPolicy for granular token permissions
+3159511012,committed,,,a7bb09e1c2fc556f6708ece22722ad02ccde7ca2,,,Add SubmissionPolicy with Sanctum read/write authorization checks
+3159511012,committed,,,4bb7567080d8c94c813b4d21b64eda5632384774,,,Add Sanctum ability checks to WorkspacePolicy for token-based permissions
+3159511012,committed,,,ff246803990c8b17c08dca7f0dbd0daa78aceaf2,,,Enforce Sanctum write ability for workspace admin actions
+3159511012,committed,,,d1b16ed0fad8b785ccd146bd317b7960a240025d,,,Checkpoint before follow-up message
+3159511012,committed,,,ac3e305292807518c25bec45c8c6ebdb89fbadc8,,,Add public API endpoints for forms with OpenAPI and docs
+3159511012,committed,,,a0ea38c112d8acf5ff3d2a243f8fcdf15ad43e2e,,,"Add public API endpoints for submissions, workspaces, and users"
+3159511012,committed,,,ad7c122289cdd28d5196820f8108ed2133435aa5,,,"Refactor access token abilities and update policies for granular permissions
+
+- Updated AccessTokenAbility enum to use hyphenated naming for granular scopes (e.g., 'forms-read' instead of 'forms:read').
+- Modified FormPolicy, SubmissionPolicy, and WorkspacePolicy to align with new ability names.
+- Enhanced WorkspaceController to authorize workspace creation.
+- Adjusted ImpersonationMiddleware to use Auth facade for consistency.
+- Updated API documentation to reflect changes in ability names and routes.
+
+These changes improve consistency in naming conventions and enhance the authorization checks across the application."
+3159511012,committed,,,df15a504493eea98dfa9f0fa0207ff11cf46a835,,,"Refactor API documentation structure and remove deprecated OpenAPI JSON file
+
+- Updated the API Reference section in `docs/docs.json` to use a new structure for the OpenAPI source, switching from a JSON file to a YAML file located in the `api-reference` directory.
+- Deleted the obsolete `openapi.json` file as part of the transition to the new documentation format.
+
+These changes streamline the API documentation and improve maintainability by adopting a more flexible YAML format."
+3159511012,committed,,,c00ac5bb960f38648b5266cdc1e236c64edafb1f,,,"Implement submission deletion and refactor routes for submissions
+
+- Added a `destroy` method in `FormSubmissionController` to handle the deletion of submissions, allowing for better management of form data.
+- Refactored routes in `api/routes/api.php` to group submission-related endpoints under a prefix, improving organization and readability.
+- Removed the obsolete `RecordController` and its associated routes, consolidating functionality within the `FormSubmissionController`.
+- Updated the `AuthenticateWithJwtOrSanctum` middleware to correct the configuration key for allowed routes, ensuring proper route validation.
+
+These changes enhance the API's functionality by streamlining submission management and improving code organization."
+3159511012,committed,,,e81e670651679668830d9cb7a1a8780aacacf71a,,,"Remove obsolete migration commands and tests
+
+- Deleted the `EmailNotificationMigration` and `FormTitleMigration` command files as they are no longer needed, streamlining the command structure.
+- Removed associated test files for the deleted migrations to maintain code cleanliness and avoid confusion.
+- Updated the `Kernel.php` to reflect the removal of the middleware and ensure proper middleware management.
+- Adjusted the `api/routes/api.php` to maintain route organization after the migration command deletions.
+
+These changes enhance the maintainability of the codebase by removing unused components and ensuring that only relevant code remains."
+3159511012,committed,,,28ec436c24a80459cbfe03b30eeac3dfe76eacb4,,,"Refactor access token abilities and update authorization policies
+
+- Removed obsolete `SubmissionPolicy` as its functionality has been integrated into the `FormPolicy`, streamlining the authorization process.
+- Updated the `AccessTokenAbility` enum to remove submission-related abilities, focusing on form-related permissions.
+- Modified the `FormController` and `ListFormsController` to use the new `ownsWorkspace` authorization method, enhancing clarity and consistency in permission checks.
+- Adjusted the `FormPolicy` to include logic for checking write abilities based on the current access token, ensuring proper authorization for form creation.
+- Updated API documentation to reflect changes in ability names and routes, improving clarity for developers.
+
+These changes enhance the maintainability and clarity of the authorization system by consolidating policies and refining access control mechanisms."
+3159511012,committed,,,5e252788513b74de35694dd534e16d2da3ef34f6,,,"Add successful response description to OpenAPI documentation
+
+- Added a ""200"" response description for the Zapier GET endpoint in the OpenAPI YAML file, clarifying the expected successful response for developers.
+
+This change improves the API documentation by providing clear expectations for the response structure, enhancing developer understanding and integration."
+3159511012,committed,,,6d33ef47f3b52032f91dfdc2d255b8e2baded7e7,,,Add API documentation checklist for forms and workspaces endpoints
+3159511012,committed,,,2af92477802ab16b4ddf62e6e7be561913cb7375,,,Document list forms endpoint and mark open.forms.index-all as complete
+3159511012,committed,,,76c4f9eaa288c0015466ea31f97a685ab924e74e,,,Add documentation for form creation endpoint and update checklist
+3159511012,committed,,,62286c5b4b89661e9c6bcd043f98c525308e31ef,,,Document get form endpoint with details and update checklist
+3159511012,committed,,,8263b7045204c00ed596f2c945269d2fb7682173,,,Document update form endpoint with details and authentication requirements
+3159511012,committed,,,24598ffc5d302491914bddf6f4ea69e550a427b7,,,Document open.forms.destroy endpoint and update documentation checklist
+3159511012,committed,,,3c5e10005cd04b99e7e103dcc60407156a36040b,,,Document list submissions endpoint with pagination details
+3159511012,committed,,,e6a29d2b2c45ce4e2d00c8302d51aee66c8ab933,,,Document update submission endpoint with full details and checklist
+3159511012,committed,,,f6c3cfbe74c619984afa8b76d837d3e0b315e49c,,,Update submissions export endpoint documentation and OpenAPI spec
+3159511012,committed,,,86793ea1f4c4422ebb85e110cf416b069e1430ce,,,Add documentation for delete submission endpoint
+3159511012,committed,,,b06f6e5e2e01cfa8d41d7248df38f800f3caa808,,,Update workspaces documentation and OpenAPI spec with new fields
+3159511012,committed,,,04a5c282acb376b3f7b25d09d4ab9c4a890980cd,,,Update workspace creation API documentation and OpenAPI spec
+3138021777,committed,,,4ba50650fe933d33669a44bc3a89047fadaf889c,,,Checkpoint before follow-up message
+3138021777,committed,,,9c7d36ea8c4c776e7c6b2e64ab74d3b82423e6bf,,,Checkpoint before follow-up message
+3138021777,committed,,,0c832f2a454618fbcaacf94bb46efa5c6cfcaba6,,,Add render method to MiniJinja custom objects for better display
+3138021777,commented,2025-06-11T20:27:11Z,vercel[bot],,,,
+3138021777,reviewed,,,0c832f2a454618fbcaacf94bb46efa5c6cfcaba6,,,
+3138021777,deployed,2025-06-11T20:39:52Z,vercel[bot],,,,
+3138021777,committed,,,c1886fbb0960689e7faf38aa649450463aecdc21,,,Fix issue where enums were rendered twice / incorrectly
+3138021777,commented,2025-06-11T22:15:18Z,ellipsis-dev[bot],,,,
+3138021777,deployed,2025-06-11T22:21:35Z,vercel[bot],,,,
+3138021777,added_to_merge_queue,2025-06-11T22:29:46Z,aaronvg,,,,
+3138021777,merged,2025-06-11T22:32:28Z,aaronvg,230c51cbc879c073cbe225d03f8bbc86e80bd55c,,,
+3138021777,removed_from_merge_queue,2025-06-11T22:32:28Z,github-merge-queue[bot],,,,
+3138021777,closed,2025-06-11T22:32:29Z,aaronvg,,,,
+3138021777,head_ref_deleted,2025-06-11T22:32:29Z,aaronvg,,,,
+3131328255,committed,,,8b20f19b913320fc4fed083415f6a6e4e3ce6108,,,Add feature flag for replay AI summaries
+3131328255,review_requested,2025-06-09T19:56:34Z,billyvg,,,,
+3131328255,labeled,2025-06-09T19:56:43Z,github-actions[bot],,,Scope: Backend,
+3131328255,reviewed,,,8b20f19b913320fc4fed083415f6a6e4e3ce6108,,,
+3131328255,commented,2025-06-09T20:03:29Z,codecov[bot],,,,
+3131328255,deployed,2025-06-09T20:13:40Z,vercel[bot],,,,
+3131328255,reviewed,,,8b20f19b913320fc4fed083415f6a6e4e3ce6108,,,
+3131328255,merged,2025-06-09T20:24:25Z,billyvg,b338c2323710bb48d475dfc1f63f4691ba704cc4,,,
+3131328255,closed,2025-06-09T20:24:25Z,billyvg,,,,
+3131328255,head_ref_deleted,2025-06-09T20:24:26Z,billyvg,,,,
+3131328255,referenced,2025-06-19T00:57:56Z,andrewshie-sentry,62d40349234301fd91d5c822a47f56ee947f1c7f,,,
+3131328255,locked,2025-06-25T00:04:23Z,github-actions[bot],,,,
+3143406408,committed,,,766bd4e1b4873167e1b8adb235d9fb612355782f,,,Fix nested foreach context handling for actions and steps
+3143406408,committed,,,ad8d7a0dafa0f1b988565259db441d696db46e0e,,,Remove test file for nested foreach fix after implementation
+3143406408,committed,,,3a0a7313977ce674e00652650cf681b86a46021e,,,"Fix foreach logic in steps and actions, add comprehensive tests"
+3143406408,committed,,,6ff2a4ea710874906a355b5ce94e2ff6cd5c0dd1,,,Fix Python provider syntax for foreach workflows
+3143406408,committed,,,d9765f81adff7f3f97665ab138ac63902e4c751f,,,Remove foreach investigation summary markdown file
+3143406408,commented,2025-06-13T12:23:25Z,vercel[bot],,,,
+3143406408,labeled,2025-06-13T12:23:25Z,dosubot[bot],,,size:L,
+3143406408,labeled,2025-06-13T12:23:40Z,dosubot[bot],,,Bug,
+3143406408,reviewed,,,d9765f81adff7f3f97665ab138ac63902e4c751f,,,
+3143406408,committed,,,f95c788b4583695cdf9c269f35836c6192557e80,,,Merge branch 'main' into cursor/implement-ticket-5016-and-create-tests-ff15
+3143406408,reviewed,,,f95c788b4583695cdf9c269f35836c6192557e80,,,
+3143406408,deployed,2025-06-15T07:41:20Z,vercel[bot],,,,
+3143406408,commented,2025-06-15T07:42:26Z,codecov[bot],,,,
+3143406408,closed,2025-06-19T06:46:56Z,shahargl,,,,
+3153748109,committed,,,c85decd8170b5f1c109ff2386d6c35d348674bdf,,,Add RSS feed endpoint for preset alerts with XML generation
+3153748109,committed,,,8daf143a1718e202837de1dbf3bfaf1afad6bdb3,,,Fix CEL filtering for expired alert dismissals
+3153748109,committed,,,b3198d6cf9bc12458fc00883be0af6c74204baae,,,Fix expired dismissal CEL filtering with enhanced time-travel testing
+3153748109,committed,,,a66c30ca6643d280ebce6f18b8274481e32c66c5,,,Fix CEL filtering for expired alert dismissals with comprehensive testing
+3153748109,committed,,,2bdc12640d91356065c4184b1403b24e1e5aed96,,,Remove expired dismissals cleanup from search engine query method
+3153748109,committed,,,88b219399019ed368939b893001786044b528b10,,,Remove unused import from preset route
+3153748109,committed,,,53e1dcde177dbcfaac82b64cace1e267f33da065,,,Remove standalone test script for expired dismissal CEL filtering fix
+3153748109,labeled,2025-06-17T14:37:01Z,dosubot[bot],,,size:XXL,
+3153748109,commented,2025-06-17T14:37:09Z,vercel[bot],,,,
+3153748109,labeled,2025-06-17T14:37:18Z,dosubot[bot],,,API,
+3153748109,labeled,2025-06-17T14:37:18Z,dosubot[bot],,,Bug,
+3153748109,committed,,,964627a94f7abe998f02ad0944c749285adbfaa7,,,Remove f-strings from log messages and unused import
+3153748109,reviewed,,,964627a94f7abe998f02ad0944c749285adbfaa7,,,
+3153748109,committed,,,8c20db630c86f7fdd2df6b0ac922f6bb4b85b463,,,Remove f-strings from log messages in cleanup_expired_dismissals
+3153748109,commented,2025-06-17T14:45:40Z,cursor[bot],,,,
+3153748109,committed,,,7434f42726214b93495f301b4b2475ed49741c88,,,Checkpoint before follow-up message
+3153748109,committed,,,0f6075f789e17492c1da8b3b23a83343e7963a1b,,,Checkpoint before follow-up message
+3153748109,committed,,,e5fee7332380a4532466986f50d623be31f84d9b,,,Refactor tests to use fingerprints directly instead of alert objects
+3153748109,committed,,,44e20a98396460be8309e108aa96a88e20fdb10a,,,Clean up expired dismissals before fetching alerts in RulesEngine test
+3153748109,committed,,,b7b7d124d3cbe445c8c07eefce2dd3eae563ba65,,,Fix expired dismissal tests and improve test coverage for RulesEngine
+3153748109,committed,,,38a5e7187058e9828be43e2416a4aa76fde421d0,,,Fix caplog level to capture INFO logs in time travel tests
+3153748109,committed,,,76942a8441d0eef5632b42c7c5373f71be2bde69,,,Fix caplog level to DEBUG for log message verification in tests
+3153748109,committed,,,768384ff32c4962ebcfc6495e00443a94c690310,,,"Fix cleanup test to handle ""forever"" dismissals correctly"
+3153748109,committed,,,15baedf6868ae8e4f816ba4fad9794bdbf50c10e,,,Merge branch 'main' into cursor/resolve-ticket-and-implement-unit-tests-b9e9
+3153748109,commented,2025-06-17T15:48:17Z,codecov[bot],,,,
+3153748109,closed,2025-06-19T06:47:18Z,shahargl,,,,
+3153748109,reopened,2025-06-19T06:47:26Z,shahargl,,,,
+3153748109,closed,2025-06-19T06:47:31Z,shahargl,,,,
+3153748109,commented,2025-06-19T06:48:54Z,cursor[bot],,,,
+3133836979,commented,2025-06-10T14:32:14Z,billyvg,,,,
+3133836979,labeled,2025-06-10T14:32:18Z,github-actions[bot],,,Scope: Frontend,
+3133836979,deployed,2025-06-10T14:36:37Z,vercel[bot],,,,
+3133836979,deployed,2025-06-10T16:11:03Z,vercel[bot],,,,
+3133836979,deployed,2025-06-10T16:16:39Z,vercel[bot],,,,
+3133836979,head_ref_force_pushed,2025-06-12T20:44:12Z,billyvg,a624275816b7242914cde97f4c8e4b6f418bd053,,,
+3133836979,deployed,2025-06-12T20:45:45Z,vercel[bot],,,,
+3133836979,reviewed,,,a624275816b7242914cde97f4c8e4b6f418bd053,,,
+3133836979,reviewed,,,a624275816b7242914cde97f4c8e4b6f418bd053,,,
+3133836979,deployed,2025-06-17T15:04:46Z,vercel[bot],,,,
+3133836979,deployed,2025-06-17T15:07:05Z,vercel[bot],,,,
+3133836979,labeled,2025-06-18T21:15:41Z,github-actions[bot],,,Scope: Backend,
+3133836979,deployed,2025-06-18T21:17:23Z,vercel[bot],,,,
+3133836979,committed,,,15115a26539c1658613bf83858efe840f6078127,,,Add AI Summary tab for replay details with feature flag support
+3133836979,committed,,,de75beb8064553b75983c7e7e50a5bcf20039dd5,,,Refactor AI Summary to use useApiQuery with caching and conditional fetching
+3133836979,committed,,,fe180725e5de7f2c7c83274e628926a0fa121ea3,,,:hammer_and_wrench: apply pre-commit fixes
+3133836979,committed,,,c3bed9adb5eb9e428e240eb036bb3eb58d46a337,,,rename AI Summary -> AI
+3133836979,committed,,,a0b160aeb4780c50289132f0342639414cb6a16a,,,fix name
+3133836979,committed,,,f6a0805a9923d7beb3ffff3457ddf6feccab154c,,,need project slug for endpoint
+3133836979,committed,,,aa27277275d2a004ccf4fa48076ab0b71c138982,,,"Apply suggestions from code review
+
+Co-authored-by: Michelle Zhang <56095982+michellewzhang@users.noreply.github.com>"
+3133836979,committed,,,7c856884ea5f68732648020bd9f3f8b509f17b79,,,:hammer_and_wrench: apply pre-commit fixes
+3133836979,committed,,,c3d8f2e03a44a98c89fd101f4a1147db44b4a4d1,,,retry: false
+3133836979,committed,,,5dd96f42194cb3aaf3cfe14ca5fd08b6e831312c,,,wip summary
+3133836979,committed,,,cbbebb87b30f46f7e67cecde0c3c8a1d2b69bac8,,,more tolerable UI
+3133836979,committed,,,4fc16dcb452223dde09ee614e95590a5960ae9a3,,,refactor and add regenerate button
+3133836979,head_ref_force_pushed,2025-06-18T21:17:54Z,billyvg,4fc16dcb452223dde09ee614e95590a5960ae9a3,,,
+3133836979,comment_deleted,2025-06-18T21:18:12Z,getsentry,,,,
+3133836979,unlabeled,2025-06-18T21:18:13Z,billyvg,,,Scope: Backend,
+3133836979,deployed,2025-06-18T21:23:12Z,vercel[bot],,,,
+3133836979,committed,,,9380066bdac7a586907af5962b1f0153cfa8d1dd,,,remove ai-summary-implementation
+3161958337,committed,,,d647cb88c57c26edd63365e63026177929ca2433,,,Adjust zone header layout and back button styling for improved usability
+3161958337,labeled,2025-06-20T05:22:20Z,github-actions[bot],,,frontend 🎨,
+3161958337,deployed,2025-06-20T05:25:11Z,github-actions[bot],,,,
+3161958337,committed,,,86b8945d34c81e84ee8705818aac853335587ba0,,,Adds pointer-event-none to make clicks go through to arrow in zone-header below
+3161958337,review_requested,2025-06-20T05:36:00Z,madsnedergaard,,,,
+3161958337,review_requested,2025-06-20T05:36:35Z,madsnedergaard,,,,
+3161958337,deployed,2025-06-20T05:37:14Z,github-actions[bot],,,,
+3161958337,commented,2025-06-20T08:46:25Z,VIKTORVAV99,,,,
+3161958337,reviewed,,,86b8945d34c81e84ee8705818aac853335587ba0,,,
+3161958337,merged,2025-06-20T08:55:31Z,madsnedergaard,a9356f02c926f6942493ef7b76653fb250beb26d,,,
+3161958337,closed,2025-06-20T08:55:31Z,madsnedergaard,,,,
+3161958337,head_ref_deleted,2025-06-20T08:55:32Z,madsnedergaard,,,,
+3138180288,committed,,,d5a96b9545fb269d9a3792609c864f816cc222d5,,,chore: update `pnpm dx-f` to require no confirmation
+3138180288,committed,,,a2f52622e5fcb5e0069b4edd0d356164e09401e5,,,chore: setup cursor background agent
+3138180288,committed,,,b3fba71318882cdd70e56f020545a37541662cbc,,,Implement two-step login flow with SSO domain detection
+3138180288,committed,,,24c8966478f60a09c9748106c9c544c0712473a7,,,Simplify SSO fallback logic in sign-in page
+3138180288,committed,,,1fa1c86164324f232c6f8c1a2c2e1962ace74c4b,,,Conditionally render credentials form based on auth provider config
+3138180288,committed,,,16412f0b3960d17832edc093612de1e9393c701d,,,Reorder SSO buttons and error display in sign-in page layout
+3138180288,committed,,,456c3080c2876f4ec013e6650108206b05ea1f18,,,Checkpoint before follow-up message
+3138180288,renamed,2025-06-11T21:52:02Z,marcklingen,,,,
+3138180288,automatic_base_change_succeeded,2025-06-11T22:07:05Z,marcklingen,,,,
+3138180288,committed,,,b1a1d0c3590c11fafd752f09aa1256686a1c4478,,,add focus password
+3138180288,committed,,,67bbfadf1347c93c50e18b426ef67aac6f8c575d,,,skip two step if no sso configured
+3138180288,committed,,,6230b732f6a2aeff32b7535544b157099de711e3,,,Merge branch 'main' into cursor/improve-sign-in-page-for-enterprise-sso-0da1
+3138180288,renamed,2025-06-11T22:48:12Z,marcklingen,,,,
+3138180288,ready_for_review,2025-06-11T22:48:29Z,marcklingen,,,,
+3138180288,labeled,2025-06-11T22:48:34Z,dosubot[bot],,,size:L,
+3138180288,labeled,2025-06-11T22:49:41Z,dosubot[bot],,,feat-auth,
+3138180288,labeled,2025-06-11T22:57:31Z,marcklingen,,,lgtm,
+3138180288,added_to_merge_queue,2025-06-12T09:52:29Z,marcklingen,,,,
+3138180288,labeled,2025-06-12T09:52:33Z,dosubot[bot],,,auto-merge,
+3138180288,removed_from_merge_queue,2025-06-12T10:07:31Z,github-merge-queue[bot],,,,
+3138180288,merged,2025-06-12T10:07:32Z,marcklingen,85130cecb379f61d0528fa10af49f909d6e1561e,,,
+3138180288,closed,2025-06-12T10:07:32Z,marcklingen,,,,
+3138180288,head_ref_deleted,2025-06-12T10:07:32Z,marcklingen,,,,
+3138180288,unlabeled,2025-06-12T10:07:38Z,dosubot[bot],,,auto-merge,
+3138180288,referenced,2025-06-12T13:27:22Z,selwynsam,f8dff535e145526c17d1c579c7a9e5d69b5aebf1,,,
+3132733770,committed,,,ac8a884374ce634120d3c66b0754dc57bdd911f4,,,Refactor: Replace ViewAlertModal with AlertSidebar in Incident Alerts
+3132733770,committed,,,d18796a0061ffdd5cdbe2445b93bfb1c14530ac0,,,Enhance incident alerts with ViewAlertModal and improved sidebar integration
+3132733770,committed,,,37877cf0328a49600613ce78fcb82bf34a3ed9e9,,,Fix alert sidebar closing and null handling in AlertSidebar component
+3132733770,commented,2025-06-10T08:56:12Z,vercel[bot],,,,
+3132733770,labeled,2025-06-10T08:56:13Z,dosubot[bot],,,size:XXL,
+3132733770,labeled,2025-06-10T08:56:24Z,dosubot[bot],,,Feature,
+3132733770,labeled,2025-06-10T08:56:24Z,dosubot[bot],,,UI,
+3132733770,reviewed,,,37877cf0328a49600613ce78fcb82bf34a3ed9e9,,,
+3132733770,labeled,2025-06-10T08:57:11Z,dosubot[bot],,,lgtm,
+3132733770,reviewed,,,37877cf0328a49600613ce78fcb82bf34a3ed9e9,,,
+3132733770,committed,,,6ad1b32893f032df1e52dfe079f1c76933e59e5e,,,Fix incident alerts tests and add documentation for CI/CD changes
+3132733770,review_dismissed,2025-06-10T09:02:26Z,cursor[bot],,,,
+3132733770,reviewed,,,6ad1b32893f032df1e52dfe079f1c76933e59e5e,,,
+3132733770,review_requested,2025-06-10T09:07:58Z,shahargl,,,,
+3132733770,deployed,2025-06-10T09:12:01Z,vercel[bot],,,,
+3132733770,reviewed,,,6ad1b32893f032df1e52dfe079f1c76933e59e5e,,,
+3132733770,merged,2025-06-10T09:19:41Z,shahargl,cb47d1666d1f9e5a9564a51a8816add68b21620b,,,
+3132733770,closed,2025-06-10T09:19:41Z,shahargl,,,,
+3132733770,head_ref_deleted,2025-06-10T09:19:42Z,shahargl,,,,
+3133810693,committed,,,1cd8c15e989e0914dee8f391d20d70bd9ef1cdcf,,,Hide releases in fullscreen for specific chart widgets
+3133810693,committed,,,46384eb2509c5ff8cdb1fad3e4420bafefeeb829,,,"Remove hideReleasesInFullscreen prop, conditionally hide releases for specific widget"
+3133810693,committed,,,11632c0ed64f7462ac0f0a834532695ddeabfbaf,,,Hide release lines in release new issues chart widget
+3133810693,deployed,2025-06-10T14:25:00Z,vercel[bot],,,,
+3133810693,labeled,2025-06-10T14:25:03Z,github-actions[bot],,,Scope: Frontend,
+3133810693,committed,,,6f8ec022ab2f92e5eb930b14dbc1c7eb2de2fd55,,,:hammer_and_wrench: apply pre-commit fixes
+3133810693,deployed,2025-06-10T14:27:13Z,vercel[bot],,,,
+3133810693,ready_for_review,2025-06-10T15:04:44Z,billyvg,,,,
+3133810693,review_requested,2025-06-10T15:04:45Z,billyvg,,,,
+3133810693,review_requested,2025-06-10T15:04:52Z,billyvg,,,,
+3133810693,reviewed,,,6f8ec022ab2f92e5eb930b14dbc1c7eb2de2fd55,,,
+3133810693,committed,,,6226bf78f9cdb657bdc63146cf9302d9ecb8154c,,,"feat(insights): open http response rate summary chart in comparison view (#93132)
+
+1. Exact same as https://github.com/getsentry/sentry/pull/93050
+except for http response rate summary chart (instead of landing page)
+2. All updated the landing summary chart the pass in the
+`stringifiedSearch` into the queries, missed this in the previous PR"
+3133810693,committed,,,a3b7257b57e85bffdbaa550db7286344df23137b,,,skip fetching releases
+3133810693,committed,,,550217e6d476159217b1fac56afa2e75218c9cf2,,,Merge branch 'master' into cursor/remove-release-lines-from-full-screen-chart-1b7d
+3133810693,deployed,2025-06-10T15:48:01Z,vercel[bot],,,,
+3133810693,committed,,,1e90cd38ea653c0d083cedab5d19d95bb9ca2286,,,use showReleaseAs
+3133810693,deployed,2025-06-10T17:03:30Z,vercel[bot],,,,
+3133810693,merged,2025-06-10T17:23:49Z,billyvg,04835f2aabc759b7804b5a9646aeabf31c04c7c0,,,
+3133810693,closed,2025-06-10T17:23:49Z,billyvg,,,,
+3133810693,head_ref_deleted,2025-06-10T17:23:52Z,billyvg,,,,
+3133810693,referenced,2025-06-19T00:58:07Z,andrewshie-sentry,62c30b13c3c960620e8d877fa64dcf489823518a,,,
+3133810693,locked,2025-06-26T00:04:09Z,github-actions[bot],,,,
+3139065611,committed,,,837ec931ea98dce70f0068907171b11ecd64280c,,,"feat: update logging to lowercase and add timestamps - Change all logging prefixes from uppercase to lowercase (CREATE->create, CREATED->created, etc.) - Add timestamps in HH:MM:SS format like Vite does - Timestamps are shown in gray color before the prefix - Maintains existing padding and alignment for readability"
+3139065611,commented,2025-06-12T06:55:30Z,pkg-pr-new[bot],,,,
+3139065611,commented,2025-06-12T07:00:56Z,sam-goodwin,,,,
+3139065611,mentioned,2025-06-12T07:00:58Z,claude,,,,
+3139065611,subscribed,2025-06-12T07:00:58Z,claude,,,,
+3139065611,commented,2025-06-12T07:01:36Z,claude[bot],,,,
+3139065611,committed,,,924212feb7f5842f661099df2a9758b8980328f0,,,"Remove timestamp prefix and SETUP phase from logging
+
+- Remove getTimestamp() function and timestamp usage from cli.ts
+- Remove ""[SETUP]"" phase logging from apply.ts as there is no such phase
+
+Co-authored-by: sam-goodwin <sam-goodwin@users.noreply.github.com>"
+3139065611,mentioned,2025-06-12T07:04:25Z,sam-goodwin,,,,
+3139065611,subscribed,2025-06-12T07:04:25Z,sam-goodwin,,,,
+3139065611,commented,2025-06-12T07:06:20Z,github-actions[bot],,,,
+3139065611,committed,,,00651122c2627911e543077abe4645cff1b322a9,,,fix lint
+3139065611,merged,2025-06-12T07:14:56Z,sam-goodwin,b57cbc1392c5d595c33eed4882a8159722dd3890,,,
+3139065611,closed,2025-06-12T07:14:56Z,sam-goodwin,,,,
+3139065611,head_ref_deleted,2025-06-12T07:14:58Z,sam-goodwin,,,,
+3165232120,committed,,,4afb9d221a6a6327108a7841ff573146983a2ca1,,,Simplify PR template checklist for code quality and testing
+3165232120,review_requested,2025-06-21T17:03:16Z,mrubens,,,,
+3165232120,review_requested,2025-06-21T17:03:16Z,mrubens,,,,
+3165232120,labeled,2025-06-21T17:03:20Z,dosubot[bot],,,size:S,
+3165232120,labeled,2025-06-21T17:03:31Z,dosubot[bot],,,documentation,
+3165232120,reviewed,,,4afb9d221a6a6327108a7841ff573146983a2ca1,,,
+3165232120,labeled,2025-06-21T17:04:53Z,dosubot[bot],,,lgtm,
+3165232120,merged,2025-06-21T17:09:01Z,mrubens,5b501d0e84acfa0456c72dbda7d10ad1c068c12a,,,
+3165232120,closed,2025-06-21T17:09:01Z,mrubens,,,,
+3165232120,head_ref_deleted,2025-06-21T17:09:02Z,mrubens,,,,
+3165232120,referenced,2025-06-22T22:06:05Z,Alorse,cc9a0b4d61c281cf104563bb5e3271dd24c43143,,,
+3165232120,referenced,2025-06-24T19:54:40Z,cte,cd6c7618c691b813fe665e1e01a1a753027de621,,,
+3150026775,commented,2025-06-16T13:30:31Z,codecov[bot],,,,
+3150026775,head_ref_force_pushed,2025-06-16T13:39:26Z,szokeasaurusrex,329ed330abf8e4d7f979519c7b3562372b7fb908,,,
+3150026775,head_ref_force_pushed,2025-06-16T13:44:44Z,szokeasaurusrex,906f75f79f7d92c67dcd83e9302418efd9dd49c3,,,
+3150026775,unsubscribed,2025-06-16T16:31:52Z,yk-lab,,,,
+3150026775,unsubscribed,2025-06-16T16:31:54Z,yk-lab,,,,
+3150026775,ready_for_review,2025-06-24T12:43:08Z,szokeasaurusrex,,,,
+3150026775,review_requested,2025-06-24T12:43:09Z,szokeasaurusrex,,,,
+3150026775,head_ref_force_pushed,2025-06-24T12:43:16Z,szokeasaurusrex,876e6fb14181d8a6bcabf142d390383056b141e0,,,
+3150026775,reviewed,,,876e6fb14181d8a6bcabf142d390383056b141e0,,,
+3150026775,reviewed,,,876e6fb14181d8a6bcabf142d390383056b141e0,,,
+3150026775,commented,2025-06-25T07:23:29Z,szokeasaurusrex,,,,
+3150026775,mentioned,2025-06-25T07:23:30Z,sentrivana,,,,
+3150026775,subscribed,2025-06-25T07:23:30Z,sentrivana,,,,
+3150026775,commented,2025-06-25T07:56:09Z,sentrivana,,,,
+3150026775,commented,2025-06-25T09:10:30Z,szokeasaurusrex,,,,
+3150026775,head_ref_force_pushed,2025-06-25T09:36:48Z,szokeasaurusrex,becd3eacdb21fa839ff9a3faa68f4b734a7d34ae,,,
+3150026775,auto_squash_enabled,2025-06-25T09:36:55Z,szokeasaurusrex,,,,
+3150026775,committed,,,d71743ffe21ca0e70563c5236e52c86bf1635ef9,,,fix(langchain): Make `span_map` an instance variable
+3150026775,head_ref_force_pushed,2025-06-25T09:40:23Z,szokeasaurusrex,d71743ffe21ca0e70563c5236e52c86bf1635ef9,,,
+3150026775,review_requested,2025-06-25T09:44:33Z,szokeasaurusrex,,,,
+3150026775,merged,2025-06-25T09:47:41Z,szokeasaurusrex,7804260fbf3ed8f797af95d2c0bdfcfeb85b0605,,,
+3150026775,closed,2025-06-25T09:47:41Z,szokeasaurusrex,,,,
+3150026775,head_ref_deleted,2025-06-25T09:47:42Z,szokeasaurusrex,,,,
+3164641128,committed,,,694298bb6e461b30f100c0be57244e95592a6579,,,Add SAML time difference configuration parameter
+3164641128,review_requested,2025-06-21T01:35:01Z,daryllimyt,,,,
+3164641128,reviewed,,,694298bb6e461b30f100c0be57244e95592a6579,,,
+3164641128,labeled,2025-06-21T01:40:29Z,daryllimyt,,,fix,
+3164641128,merged,2025-06-21T01:46:58Z,daryllimyt,54e2bbf367d8f947d215727ebcbab9762dd82f7c,,,
+3164641128,closed,2025-06-21T01:46:58Z,daryllimyt,,,,
+3164641128,head_ref_deleted,2025-06-21T01:46:59Z,daryllimyt,,,,
+3140211798,committed,,,338f08eb82b1d7b71ffac2541ef2658251ab9115,,,"Enhance mention handling, color support, and clipboard parsing in Quill"
+3140211798,commented,2025-06-12T13:03:55Z,coderabbitai[bot],,,,
+3140211798,closed,2025-06-12T13:04:22Z,JhumanJ,,,,
+3140211798,head_ref_deleted,2025-06-25T09:22:04Z,JhumanJ,,,,
+3162242238,committed,,,b99916c3c04965b58fc4786429dfe93a7dc040a5,,,Changes from background composer bc-aefe9889-4af9-4f53-ab9a-5806bd974451
+3162242238,commented,2025-06-20T07:36:31Z,coderabbitai[bot],,,,
+3162242238,commented,2025-06-20T07:36:33Z,CLAassistant,,,,
+3162242238,closed,2025-06-20T07:38:41Z,strickvl,,,,
+3162242238,head_ref_deleted,2025-06-20T07:38:46Z,strickvl,,,,
+3162242238,labeled,2025-06-20T07:42:01Z,github-actions[bot],,,internal,
+3162242238,commented,2025-06-20T07:57:41Z,github-actions[bot],,,,
+3164861006,committed,,,b42bb48611c8e33b4570fc3189216c7a520139e8,,,Add Yoga bindings for Bun's JavaScript runtime
+3164861006,committed,,,d50c41d0639eac89b4f1a74c87373b96a4545bf7,,,Implement Yoga.Config methods and add comprehensive test suite
+3164861006,committed,,,7d2b0716310d97db4ea9e6f44b009ddabd2b85f9,,,Implement comprehensive Yoga Node bindings with full API support
+3164861006,committed,,,4896b9ba9309346b9e9d30a9fa898225a8e3efd8,,,"Implement Yoga layout constants, module, and global exposure"
+3164861006,committed,,,5b0dd953c03ad410faa42e0c2f905c7ff4e8d065,,,Changes from background composer bc-10f5dd76-2ef4-41da-a295-47c3ceb3b16e
+3164861006,labeled,2025-06-21T07:27:16Z,Jarred-Sumner,,,cursor,
+3164861006,commented,2025-06-21T07:27:23Z,robobun,,,,
+3164861006,mentioned,2025-06-21T07:27:25Z,cursoragent,,,,
+3164861006,subscribed,2025-06-21T07:27:25Z,cursoragent,,,,
+3164861006,committed,,,2082fdf3a61a0df031c1334e88403faf05e35a61,,,`bun scripts/glob-sources.mjs`
+3164861006,mentioned,2025-06-21T07:28:51Z,Jarred-Sumner,,,,
+3164861006,subscribed,2025-06-21T07:28:51Z,Jarred-Sumner,,,,
+3164861006,mentioned,2025-06-21T07:29:00Z,cursoragent,,,,
+3164861006,subscribed,2025-06-21T07:29:00Z,cursoragent,,,,
+3164861006,committed,,,0f4115f82321d1880b9d09f304a9dbf58c99fd64,,,`bun run prettier`
+3164861006,mentioned,2025-06-21T07:29:48Z,Jarred-Sumner,,,,
+3164861006,subscribed,2025-06-21T07:29:48Z,Jarred-Sumner,,,,
+3164861006,committed,,,87410eba91a206e180a342234548d25556828275,,,`bun run clang-format`
+3135538721,committed,,,3cf87664be53280b520d8613bc266ae9baf804d2,,,Add CSharp language parser for source code management
+3135538721,committed,,,1d2993b040e5e28aeb7ed73615cdac2fb604407b,,,Add C# support for Open PR Comments with feature flag
+3135538721,labeled,2025-06-11T05:31:25Z,github-actions[bot],,,Scope: Backend,
+3135538721,commented,2025-06-11T05:47:46Z,codecov[bot],,,,
+3135538721,committed,,,e07e90b14d9b4b1049cf772acf5920bd5650bba0,,,:bug: fix: cleanup after cursor
+3135538721,deployed,2025-06-11T05:50:44Z,vercel[bot],,,,
+3135538721,committed,,,57252df950a05606929935a242c75b256015ba40,,,:test_tube: test: add more tests
+3135538721,deployed,2025-06-11T05:56:45Z,vercel[bot],,,,
+3135538721,committed,,,a8206a341e5ea6a31eb7f4f724afef921e432112,,,:wrench: chore: fix typing
+3135538721,deployed,2025-06-11T14:37:12Z,vercel[bot],,,,
+3135538721,committed,,,318ce556cec821d7642ff800375302134242e27b,,,:bug: fix: typing
+3135538721,deployed,2025-06-11T14:48:56Z,vercel[bot],,,,
+3135538721,reviewed,,,318ce556cec821d7642ff800375302134242e27b,,,
+3135538721,assigned,2025-06-11T14:52:40Z,iamrajjoshi,,iamrajjoshi,,
+3135538721,ready_for_review,2025-06-11T16:17:27Z,iamrajjoshi,,,,
+3135538721,review_requested,2025-06-11T16:17:27Z,iamrajjoshi,,,,
+3135538721,review_requested,2025-06-11T16:17:27Z,iamrajjoshi,,,,
+3135538721,review_requested,2025-06-11T16:17:27Z,iamrajjoshi,,,,
+3135538721,reviewed,,,318ce556cec821d7642ff800375302134242e27b,,,
+3135538721,review_requested,2025-06-11T21:21:18Z,bruno-garcia,,,,
+3135538721,review_requested,2025-06-11T21:21:19Z,bruno-garcia,,,,
+3135538721,merged,2025-06-11T21:32:03Z,iamrajjoshi,6f1e48be963c8fb905abba08001f01e0e886ee48,,,
+3135538721,closed,2025-06-11T21:32:03Z,iamrajjoshi,,,,
+3135538721,head_ref_deleted,2025-06-11T21:32:05Z,iamrajjoshi,,,,
+3135538721,referenced,2025-06-12T17:22:25Z,vishnupsatish,51f243a459a99e9944427965c4860e1f6484a0ea,,,
+3135538721,commented,2025-06-17T09:58:53Z,sentry-io[bot],,,,
+3135538721,referenced,2025-06-19T00:58:29Z,andrewshie-sentry,b61d04a456c01d35fff5840d0ff69774f72e4f70,,,
+3135538721,cross-referenced,2025-06-23T18:08:30Z,bruno-garcia,,,,
+3128356528,committed,,,643611f4b7af18fe3ce0d273df332d0ef2a3890d,,,Fix pattern memory leak by using Arc for bitmap ownership
+3128356528,committed,,,373519132280f3d326bbd8aa8b933ef7efb9387c,,,patch by Claude code
+3128356528,merged,2025-06-08T14:41:54Z,Brooooooklyn,2e9f718b3037bcf2c711cf3697b379ca9bdfe0fc,,,
+3128356528,closed,2025-06-08T14:41:54Z,Brooooooklyn,,,,
+3128356528,head_ref_deleted,2025-06-08T14:41:55Z,Brooooooklyn,,,,
+3153069820,committed,,,95ddd2d3ca9506c955a018999abf228aa5628da2,,,Mask session keys in cache events to protect sensitive information
+3153069820,committed,,,d30f9d7500f9530f64d51e24e1351c5e71e7b914,,,Fix cache integration span data merging and improve session handling in tests
+3153069820,committed,,,8b547e8a97fcdb6a18caa0186cc8c6df526bfb95,,,Fix session key matching and improve session handling in cache integration
+3153069820,renamed,2025-06-21T10:15:09Z,stayallive,,,,
+3153069820,committed,,,c081654fbd441a9a043ee8f990ea93eb90497526,,,CR
+3153069820,committed,,,d48ae6ba1164f763c86f2f5af13ce293cefa6c25,,,Fix not replacing session key before session is started
+3153069820,committed,,,73ecb9a6afaa593f293e9bf5e45bed7f9ac0bb47,,,Merge branch 'master' into cursor/fix-github-issue-for-sentry-laravel-ebfe
+3153069820,committed,,,5b148aaf1437685e1f04a533a958e9ea3a0a900b,,,"Revert `setData` changes, already merges data"
+3153069820,ready_for_review,2025-06-21T11:20:51Z,stayallive,,,,
+3153069820,review_requested,2025-06-21T11:20:57Z,stayallive,,,,
+3153069820,review_requested,2025-06-21T11:20:59Z,stayallive,,,,
+3153069820,reviewed,,,5b148aaf1437685e1f04a533a958e9ea3a0a900b,,,
+3153069820,reviewed,,,5b148aaf1437685e1f04a533a958e9ea3a0a900b,,,
+3153069820,commented,2025-06-25T01:33:35Z,cleptric,,,,
+3153069820,mentioned,2025-06-25T01:33:36Z,sentry,,,,
+3153069820,subscribed,2025-06-25T01:33:36Z,sentry,,,,
+3153069820,commented,2025-06-25T01:35:36Z,seer-by-sentry[bot],,,,
+3153069820,commented,2025-06-25T01:38:24Z,seer-by-sentry[bot],,,,
+3153069820,reviewed,,,5b148aaf1437685e1f04a533a958e9ea3a0a900b,,,
+3153069820,reviewed,,,5b148aaf1437685e1f04a533a958e9ea3a0a900b,,,
+3153069820,reviewed,,,5b148aaf1437685e1f04a533a958e9ea3a0a900b,,,
+3153069820,reviewed,,,5b148aaf1437685e1f04a533a958e9ea3a0a900b,,,
+3153069820,reviewed,,,5b148aaf1437685e1f04a533a958e9ea3a0a900b,,,
+3153069820,review_requested,2025-06-25T01:41:31Z,cleptric,,,,
+3153069820,reviewed,,,5b148aaf1437685e1f04a533a958e9ea3a0a900b,,,
+3153069820,mentioned,2025-06-26T22:50:08Z,BugBot,,,,
+3153069820,subscribed,2025-06-26T22:50:09Z,BugBot,,,,
+3153069820,commented,2025-06-26T22:50:30Z,cleptric,,,,
+3153069820,reviewed,,,5b148aaf1437685e1f04a533a958e9ea3a0a900b,,,
+3153069820,reviewed,,,5b148aaf1437685e1f04a533a958e9ea3a0a900b,,,
+3100097668,committed,,,c3ab4352cff7d2fc2ec1d5995eb38f7b7d0291e7,,,Fix duplicate shortcut warning in token form and push dialog
+3100097668,committed,,,a12eabf3ff181ea76523c879f0227f36d990372a,,,Fix duplicate shortcut warnings in EditTokenForm and PushDialog
+3100097668,committed,,,cdc6777b328da7a1921123f4d2577fd3836fa13e,,,Remove unused handleSaveShortcut callback in EditTokenForm
+3100097668,commented,2025-05-29T11:45:32Z,changeset-bot[bot],,,,
+3100097668,commented,2025-05-29T11:48:05Z,github-actions[bot],,,,
+3100097668,commented,2025-05-29T11:50:42Z,github-actions[bot],,,,
+3100097668,renamed,2025-05-29T14:14:29Z,six7,,,,
+3100097668,committed,,,edb5d58045aa382c8ae291cc5404995b38e04160,,,fix lint
+3100097668,ready_for_review,2025-05-31T17:55:06Z,six7,,,,
+3100097668,committed,,,fbcdaea94fcdaf3e03eca515bd069645e4645890,,,Merge branch 'main' into cursor/resolve-duplicate-enter-key-shortcut-warning-d281
+3100097668,review_requested,2025-05-31T17:55:12Z,six7,,,,
+3100097668,commented,2025-05-31T17:56:56Z,sonarqubecloud[bot],,,,
+3100097668,reviewed,,,be18d227ac6071dc090a0ba883e999b5f8066b31,,,
+3100097668,committed,,,be18d227ac6071dc090a0ba883e999b5f8066b31,,,Merge branch 'main' into cursor/resolve-duplicate-enter-key-shortcut-warning-d281
+3100097668,merged,2025-06-25T12:57:15Z,akshay-gupta7,72bee0e36c2fce7178ca6263329aa1d81f90b176,,,
+3100097668,closed,2025-06-25T12:57:15Z,akshay-gupta7,,,,
+3100097668,head_ref_deleted,2025-06-25T12:57:17Z,akshay-gupta7,,,,
+3161086701,committed,,,81a36303e5d3262326770e9ef0b088d7f010f232,,,Add quickstart guide to documentation for easy onboarding
+3161086701,renamed,2025-06-19T18:35:19Z,ethanwhite,,,,
+3161086701,closed,2025-06-19T18:35:33Z,bw4sz,,,,
+3132266803,committed,,,8520aaa647536286f564376aaebbc67821c8f972,,,Add implementation plan for `bun audit fix` command
+3132266803,committed,,,fa427e5ba6f192c8e2d327929d7a7450612586c8,,,Implement `bun audit --fix` to automatically resolve security vulnerabilities
+3132266803,commented,2025-06-10T06:10:59Z,robobun,,,,
+3132266803,mentioned,2025-06-10T06:11:00Z,cursoragent,,,,
+3132266803,subscribed,2025-06-10T06:11:00Z,cursoragent,,,,
+3132266803,committed,,,a0433bf150a3319f18d838c8d986e3cb9277c71c,,,`bun run prettier`
+3132266803,mentioned,2025-06-10T06:15:22Z,Jarred-Sumner,,,,
+3132266803,subscribed,2025-06-10T06:15:22Z,Jarred-Sumner,,,,
+3132266803,mentioned,2025-06-10T06:15:44Z,cursoragent,,,,
+3132266803,subscribed,2025-06-10T06:15:44Z,cursoragent,,,,
+3132266803,mentioned,2025-06-10T06:24:46Z,Jarred-Sumner,,,,
+3132266803,subscribed,2025-06-10T06:24:46Z,Jarred-Sumner,,,,
+3132266803,cross-referenced,2025-06-10T09:37:34Z,Frulfump,,,,
+3132266803,cross-referenced,2025-06-10T09:38:20Z,Frulfump,,,,
+3132266803,labeled,2025-06-12T01:21:22Z,190n,,,cursor,
+3075375258,committed,,,7aebcd342006ca0abb1b060cf5f51a4354b0dfe3,,,新增项目架构与文档分析报告，详细描述了yumc-afk/verl项目的整体架构、核心模块职责及现有文档情况，并提出了针对AI协作的文档完善建议，以提升代码可理解性和开发效率。
+3075375258,committed,,,73ab91e69e58124de8e6df96e3b431a9d5c51616,,,Add sglang_for_verl (v0.4.4) as submodule
+3075375258,committed,,,17526723169dbab4c179cb66bca7da71d73666be,,,Add sglang_latest (main branch) as submodule
+3075375258,committed,,,810c1add63136b015e2d0880a60327bff63bf721,,,Add Megatron-LM_for_verl (core_v0.12.0rc3) as submodule
+3075375258,committed,,,b3e71e183e4f92f5ff13f6a3cf7ba697ce5c6c6f,,,Add pai-megatron-patch (main branch) as submodule
+3075375258,committed,,,ec50703b85ea5fcdefe2c8331e366b0e4e666c66,,,新增 AGENT.md 文件，详细分析了 yumc-afk/verl 项目的整体架构、核心模块职责及现有文档情况，并提出了针对 AI 协作的文档完善建议，以提升代码可理解性和开发效率。
+3075375258,committed,,,455ccd4de44157e01488fb36841e53f47d1ae5f5,,,Update pai-megatron-patch submodule to new commit with streamlined internal submodules
+3075375258,committed,,,28d9c925e2e8c7d1451ccc60593ccc09b048b185,,,Update requirements to point to local submodules
+3075375258,committed,,,b93e6563ac30c5da616ca6855bc89ed5c3ff4397,,,sth
+3075375258,committed,,,12c276607721cbe2aa791a7b757b288f499611df,,,Update pai-megatron-patch submodule URL to user's fork and point to new commit
+3075375258,committed,,,0e41fba159189deb7bfcb0b52e85017672057b91,,,rename
+3075375258,committed,,,b0e368f119b148257875ada75fa01762f0860420,,,docs: expand single controller documentation
+3075375258,committed,,,768a69990a39851ba287cc4777221daaa59b9a40,,,docs: add trainer docstrings and typing
+3075375258,committed,,,76f000fc433e394d936808fef81d5e0d9d1e4c39,,,docs: expand tool module documentation
+3075375258,committed,,,d5f7c6a31d7b2a8abb10785f6d3f4c77024bf17d,,,Add type hints and docstrings across utility modules
+3075375258,committed,,,dbbc851dbca12629b94f846a9cf72d4e5db35fc1,,,Add docstrings and registry comments
+3075375258,committed,,,1bccf96bb97d57982f57eda11835847a6ccfaa53,,,Add typing and docs to protocol utilities
+3075375258,committed,,,bce21af86703444a3a89c536af72cbed49421058,,,Improve worker documentation
+3075375258,committed,,,b01f681dcec840eb87991dd10bb5389710c9d4e0,,,Add type hints and docs in trainer modules
+3075375258,committed,,,11da9abdb99bd223f222d46c64a847abad7f48e9,,,docs: update AGENTS instruction
+3075375258,committed,,,95340fd76daf40dc3a89290071fedaeaf61299fe,,,"Merge pull request #16 from yumc-afk/codex/agents-md
+
+Update AGENTS instruction"
+3075375258,committed,,,b88c279786291cbe68fc33c8cdf0e456be19b845,,,docs: add DeepSeek V3 Chinese plan and risk analyses
+3075375258,committed,,,8253cc7fa76bdbf6e55a90458bda1df375c9f551,,,"Merge pull request #17 from yumc-afk/codex/deepseek-v3
+
+Add DeepSeek V3 Chinese plan and risk documents"
+3075375258,committed,,,d5981872336fdf550b6f36de02d55bb992ae856d,,,feat: add environment configuration file for cursor
+3075375258,committed,,,d00252bc4f04dc26ee536690ea278193401cef7b,,,Initial commit
+3075375258,committed,,,bf29c0339da6a10ee5f77770f5e535f4214258de,,,Update submodule commits for Megatron-LM and sglang
+3075375258,committed,,,fc7e875af44392e3a7f49fb4763be1eba2e8448f,,,新增知识库文档，涵盖 AI Agent 的原则、能力、局限性、协作模式及项目上下文，旨在为人机协作提供结构化指导和最佳实践。
+3075375258,committed,,,9539818af91435d817ea8a668616d6536215fe3c,,,Add documentation for DeepSeek-V3 integration in VERL framework
+3075375258,committed,,,1bf549b6e9860efa2c848a4d4fb77a2c03477d4d,,,Update DeepSeek-V3 integration docs with detailed MoE and MLA insights
+3075375258,committed,,,1799a0a9042238eb107961839dee6a11eb907f8c,,,Update DeepSeek-V3 distributed training challenges and HPC scaling notes
+3076171257,committed,,,e72dbfa699b09c89562e7d9ad31d13e834545002,,,Add upstream and downstream job details to streaming job view
+3076171257,labeled,2025-05-20T08:32:40Z,github-actions[bot],,,Invalid PR Title,
+3099462584,committed,,,38464ea8cb3c1160cc67f16ace858a106a02f5cd,,,Upgrade Turbo to v2.5.3 and migrate configuration
+3099462584,commented,2025-05-29T07:31:02Z,changeset-bot[bot],,,,
+3099462584,commented,2025-05-29T07:33:57Z,github-actions[bot],,,,
+3099462584,commented,2025-05-29T07:36:44Z,github-actions[bot],,,,
+3099462584,committed,,,70f3c1a1c620e89e5ddcae0fe80546f96ff0b910,,,Delete TURBO_UPGRADE_SUMMARY.md
+3099462584,review_requested,2025-05-29T07:52:18Z,six7,,,,
+3099462584,committed,,,76dd64a6a27a820d3fbc2c10f5bb687b4f1aa171,,,Merge branch 'main' into cursor/upgrade-turborepo-to-latest-version-f465
+3099462584,commented,2025-05-29T08:44:22Z,sonarqubecloud[bot],,,,
+3099462584,reviewed,,,76dd64a6a27a820d3fbc2c10f5bb687b4f1aa171,,,
+3099462584,convert_to_draft,2025-05-30T11:27:14Z,six7,,,,
+3099462584,commented,2025-05-30T11:27:26Z,six7,,,,
+3161984792,committed,,,4f90a1a2d43301ec6f6d69b968e458efa42500ac,,,Add development update article with comprehensive Script Kit progress report
+3161984792,commented,2025-06-20T05:39:16Z,coderabbitai[bot],,,,
+3161984792,reviewed,,,4f90a1a2d43301ec6f6d69b968e458efa42500ac,,,
+3105305807,commented,2025-05-31T10:45:47Z,nx-cloud[bot],,,,
+3105305807,committed,,,832fc9729a69aa12b630c86a35c491ddb562f1b7,,,Add e2e tests for cloud tools availability in MCP inspector
+3105305807,committed,,,58b44abba2250ccd67c945c9c2c5e4e14cfdd022,,,Remove cloud tools test with both nxCloudAccessToken and nxCloudId
+3105305807,committed,,,f21f87644107c276f0eb5ca6f352dc0a2a2237a0,,,Changes from background composer bc-35c36561-68ca-4cd9-9162-2db22a11afd4
+3105305807,head_ref_force_pushed,2025-06-16T13:50:20Z,MaxKless,f21f87644107c276f0eb5ca6f352dc0a2a2237a0,,,
+3105305807,commented,2025-06-16T16:39:21Z,MaxKless,,,,
+3105305807,mentioned,2025-06-16T16:39:22Z,claude,,,,
+3105305807,subscribed,2025-06-16T16:39:22Z,claude,,,,
+3105305807,commented,2025-06-16T16:39:47Z,claude[bot],,,,
+3105305807,committed,,,9b513b341356398f3a3bd58a1071474252793876,,,"fix(nx-mcp-e2e): fix cloud-tools test API usage
+
+- Fix createInvokeMCPInspectorCLI call to include workspaceName parameter
+- Remove incorrect testWorkspacePath parameter from function invocations  
+- Update type definition to match pattern in other test files
+
+Co-authored-by: MaxKless <MaxKless@users.noreply.github.com>"
+3105305807,mentioned,2025-06-16T16:46:07Z,MaxKless,,,,
+3105305807,subscribed,2025-06-16T16:46:07Z,MaxKless,,,,
+3105305807,committed,,,c654b64d23101a4d6b816b93767a1b52f146def1,,,fix tests
+3105305807,closed,2025-06-17T11:28:18Z,MaxKless,,,,
+3141668471,committed,,,6dae6104755992bf31595dc3bd08fda0fccc1941,,,Add Claude auto review GitHub workflow for PR code analysis
+3141668471,merged,2025-06-12T22:04:27Z,sam-goodwin,3ec1dde7b5edf424263a3480d1836ba471e58a70,,,
+3141668471,closed,2025-06-12T22:04:27Z,sam-goodwin,,,,
+3141668471,head_ref_deleted,2025-06-12T22:04:30Z,sam-goodwin,,,,
+3141668471,commented,2025-06-12T22:04:50Z,pkg-pr-new[bot],,,,
+3141668471,commented,2025-06-12T22:04:50Z,claude[bot],,,,
+3141668471,mentioned,2025-06-12T22:06:09Z,sam-goodwin,,,,
+3141668471,subscribed,2025-06-12T22:06:09Z,sam-goodwin,,,,
+3141668471,commented,2025-06-12T22:11:27Z,github-actions[bot],,,,
+3150351692,committed,,,4adfd64adb123a288c889da0db16b0b10b1f3803,,,Add blocking detection suppression for long-running tasks
+3150351692,reviewed,,,4adfd64adb123a288c889da0db16b0b10b1f3803,,,
+3150351692,commented,2025-06-16T15:02:36Z,github-actions[bot],,,,
+3150351692,committed,,,a6969d367b5506db2acfa514c6977326ff4054ad,,,Format code
+3150351692,renamed,2025-06-25T12:25:59Z,bruno-garcia,,,,
+3132235746,committed,,,5648e8ee673304b16c41ba1a3f6d021d9e13e077,,,Implement X25519 deriveBits using OpenSSL for WebCrypto API
+3132235746,commented,2025-06-10T05:53:46Z,robobun,,,,
+3132235746,mentioned,2025-06-10T05:53:48Z,cursoragent,,,,
+3132235746,subscribed,2025-06-10T05:53:48Z,cursoragent,,,,
+3132235746,committed,,,077654b29c62888560a08dbe383d4565ac8e7a32,,,`bun run prettier`
+3132235746,mentioned,2025-06-10T05:56:47Z,Jarred-Sumner,,,,
+3132235746,subscribed,2025-06-10T05:56:47Z,Jarred-Sumner,,,,
+3132235746,committed,,,d6423f3cd3c6a1e75fc2e0c979a404263463c303,,,`bun run clang-format`
+3132235746,mentioned,2025-06-10T05:57:09Z,cursoragent,,,,
+3132235746,subscribed,2025-06-10T05:57:09Z,cursoragent,,,,
+3132235746,mentioned,2025-06-10T05:57:35Z,Jarred-Sumner,,,,
+3132235746,subscribed,2025-06-10T05:57:35Z,Jarred-Sumner,,,,
+3132235746,commented,2025-06-10T19:41:09Z,Jarred-Sumner,,,,
+3132235746,mentioned,2025-06-10T19:41:10Z,claude,,,,
+3132235746,subscribed,2025-06-10T19:41:10Z,claude,,,,
+3132235746,commented,2025-06-10T19:41:25Z,claude[bot],,,,
+3132235746,committed,,,324c610c5781d477dae31e732abd5ef7258a0903,,,"Fix X25519 deriveBits to return 32 bytes when length is null
+
+When deriveBits is called with null length, it should return the full
+X25519 shared secret (32 bytes), not an empty result. The early return
+for !length was preventing the unifiedCallback from properly handling
+this case.
+
+Co-authored-by: Jarred-Sumner <Jarred-Sumner@users.noreply.github.com>"
+3132235746,mentioned,2025-06-10T19:43:42Z,claude,,,,
+3132235746,subscribed,2025-06-10T19:43:42Z,claude,,,,
+3132235746,mentioned,2025-06-10T19:43:50Z,Jarred-Sumner,,,,
+3132235746,subscribed,2025-06-10T19:43:50Z,Jarred-Sumner,,,,
+3132235746,committed,,,b2ed4a164a6b130247f4d83a36fde773b38bd21d,,,`bun run clang-format`
+3132235746,labeled,2025-06-12T01:21:37Z,190n,,,cursor,
+3132235746,committed,,,1e9aff5f06270e6f3985e9c25d05cd5b33b30e98,,,Merge branch 'main' into cursor/implement-x25519-derivebits-in-webcrypto-5a3c
+3132235746,mentioned,2025-06-18T19:03:48Z,Jarred-Sumner,,,,
+3132235746,subscribed,2025-06-18T19:03:48Z,Jarred-Sumner,,,,
+3163875884,committed,,,d073c3ef7f273090e4cda742ef426ec4840654bb,,,Simplify project retrieval in AI replay detail view
+3163875884,committed,,,a98db61db6057df4693a30574b16bf9b94d87667,,,Handle missing project in AI replay detail view
+3163875884,review_requested,2025-06-20T16:47:24Z,billyvg,,,,
+3163875884,labeled,2025-06-20T16:47:34Z,github-actions[bot],,,Scope: Frontend,
+3163875884,committed,,,54d50baa1ba6711f54ee43d5b9f3edb958cfa3df,,,:hammer_and_wrench: apply pre-commit fixes
+3163875884,commented,2025-06-20T16:48:45Z,codecov[bot],,,,
+3163875884,reviewed,,,54d50baa1ba6711f54ee43d5b9f3edb958cfa3df,,,
+3163875884,deployed,2025-06-20T16:49:51Z,vercel[bot],,,,
+3163875884,merged,2025-06-20T17:42:08Z,billyvg,4f92a941125ab8b85ce7de97390d924abd6be9cb,,,
+3163875884,closed,2025-06-20T17:42:08Z,billyvg,,,,
+3163875884,head_ref_deleted,2025-06-20T17:42:09Z,billyvg,,,,
+3141717000,committed,,,8480bd2a2af2e25fe5e3379691cb17f3abb6b143,,,Checkpoint before follow-up message
+3141717000,committed,,,180d407a6e81264674e043de831b0b054a81b6d3,,,Refactor development environment setup with Bun and setup script
+3141717000,committed,,,0408eda27224abba19dd38a307626291278433f6,,,Update Cursor environment config and add .cursor/ to gitignore
+3141717000,committed,,,4185b1ee349feadf381aa4c25ab6610ac89aaaea,,,Add Docker dev environment with Bun and Dockerfile configuration
+3141717000,committed,,,73d6240c8c29a06d64e9c61fa49f84b037f28fea,,,Remove Docker dev files and update environment configuration
+3141717000,committed,,,37c8fedd29ea28b0bea72cabf17c153b249bcd95,,,add Dockerfile
+3141717000,commented,2025-06-12T22:35:20Z,claude[bot],,,,
+3141717000,commented,2025-06-12T22:35:22Z,pkg-pr-new[bot],,,,
+3141717000,mentioned,2025-06-12T22:36:18Z,sam-goodwin,,,,
+3141717000,subscribed,2025-06-12T22:36:18Z,sam-goodwin,,,,
+3141717000,commented,2025-06-12T22:47:01Z,github-actions[bot],,,,
+3153749441,review_requested,2025-06-17T14:37:24Z,sl0thentr0py,,,,
+3153749441,convert_to_draft,2025-06-17T14:37:42Z,sl0thentr0py,,,,
+3153749441,committed,,,e91280f1b41dfaeac32e9b2b68a07150cf9ab04c,,,Add type annotation migration guide and migration script
+3153749441,committed,,,878999da700a06ac11f4f400681c0243056d36b3,,,Remove unused imports and simplify feature flag implementation
+3153749441,committed,,,9c0bf321463167f14bb36a836809a3885358a6dc,,,Migrate multiple SDK files to type annotations and update migration status
+3153749441,committed,,,871c052429286368287222dfeb41c5c405864536,,,"Migrate client.py to type annotations, resolve complex type flows"
+3153749441,committed,,,f90dc2bfbfcc2c74817e044422d6536fab5558f4,,,Migrate tracing and integration files to type annotations
+3153749441,committed,,,b34d265d5f2e7bfd95b7d06a45e4751d1d34b115,,,"Migrate type annotations for ASGI, AWS Lambda, and other integrations"
+3153749441,committed,,,931cdd540a60243bc9b8cba8c0440dd003e40570,,,Changes from background composer bc-4ef8bab4-ef8a-43f8-807e-a78d651cf0a1
+3153749441,head_ref_force_pushed,2025-06-17T15:05:19Z,sl0thentr0py,931cdd540a60243bc9b8cba8c0440dd003e40570,,,
+3153749441,commented,2025-06-17T15:13:33Z,codecov[bot],,,,
+3153749441,committed,,,747a0da997d2d35a4aa8995881b9a4ab051f6f83,,,Migrate type annotations in multiple integrations to modern Python syntax
+3153749441,committed,,,a9a4ee3f66e8e9920ec50f23ea383f23cc6b08cd,,,Add comprehensive migration tracking for type annotations in Sentry SDK
+3153749441,committed,,,d991a8834cd5e078f7566fe41ee4d836cf79ca4b,,,Migrate type annotations in multiple Sentry SDK integration files
+3153749441,committed,,,18d2955878366dfd40a3ab413787456a1024ff90,,,Migrate type annotations in multiple Sentry SDK integrations
+3153749441,committed,,,c4dc5d410c38ca989b0777d699d3d6e68471c697,,,Add type hints to Sentry SDK integration modules
+3153749441,committed,,,283d87501a7aace7d44129dee9cec87b54c9cc4c,,,Add type hints to profiler and monitoring modules
+3153749441,committed,,,18b763dd62a1f644deca0becd3611340eef7ba27,,,Migrate type annotations in multiple SDK files to modern Python syntax
+3153749441,committed,,,2e3d78b56d2861ad550cef711f3a97b9e2d46c72,,,format
+3153749441,committed,,,35898b84e00cbf0d21531cb005704addda408eb2,,,"Revert scripts since they are not checked, we can do that later"
+3153749441,closed,2025-06-26T13:45:57Z,sl0thentr0py,,,,
+3138133342,committed,,,0ba737173bb0275fd8db95f59eb908ceb29782ed,,,Improve project ID extraction and error handling in authentication
+3138133342,committed,,,10a94bfd7fa4376ed999d2ea711cb160ba10eca0,,,Checkpoint before follow-up message
+3138133342,committed,,,de5381b50063f00ed980ed369de14841c80d653f,,,Improve error handling for resource not found with more detailed context
+3138133342,committed,,,6a90dd7b5d6236f5fdc663fee24d79c5a7c80e2e,,,Changes from background composer bc-b858b23e-0889-4766-8302-5282ecfae38a
+3138133342,commented,2025-06-11T21:13:56Z,CLAassistant,,,,
+3138133342,commented,2025-06-11T21:13:56Z,coderabbitai[bot],,,,
+3138133342,commented,2025-06-11T21:14:20Z,nx-cloud[bot],,,,
+3138133342,committed,,,38ce5f9db49d8199308f7575189c67fd6350ddfa,,,fix: security test
+3138133342,labeled,2025-06-11T21:25:38Z,abuaboud,,,🐛 bug,
+3138133342,merged,2025-06-11T21:25:43Z,abuaboud,59c686e866de0b838299550315506f680c33551d,,,
+3138133342,closed,2025-06-11T21:25:44Z,abuaboud,,,,
+3140117936,committed,,,d18c0d1003257a85cd158b033ed4b37d43402971,,,Add HTML email support to SMTP provider with multiple recipients
+3140117936,commented,2025-06-12T12:33:26Z,vercel[bot],,,,
+3140117936,labeled,2025-06-12T12:33:27Z,dosubot[bot],,,size:L,
+3140117936,labeled,2025-06-12T12:33:41Z,dosubot[bot],,,Documentation,
+3140117936,labeled,2025-06-12T12:33:41Z,dosubot[bot],,,Feature,
+3140117936,labeled,2025-06-12T12:33:41Z,dosubot[bot],,,Provider,
+3140117936,reviewed,,,d18c0d1003257a85cd158b033ed4b37d43402971,,,
+3140117936,renamed,2025-06-12T12:40:57Z,shahargl,,,,
+3140117936,committed,,,71d200b062d6fb076ec3934c604f5afddd73b5b2,,,Merge branch 'main' into cursor/implement-ticket-5014-with-unit-tests-9202
+3140117936,reviewed,,,71d200b062d6fb076ec3934c604f5afddd73b5b2,,,
+3140117936,committed,,,ac90b244fd0fff41c87b8ffd83472503c6b360b0,,,feat: .
+3140117936,unlabeled,2025-06-12T12:46:39Z,dosubot[bot],,,size:L,
+3140117936,labeled,2025-06-12T12:46:40Z,dosubot[bot],,,size:XL,
+3140117936,reviewed,,,ac90b244fd0fff41c87b8ffd83472503c6b360b0,,,
+3140117936,reviewed,,,ac90b244fd0fff41c87b8ffd83472503c6b360b0,,,
+3140117936,labeled,2025-06-12T13:03:27Z,dosubot[bot],,,lgtm,
+3140117936,merged,2025-06-12T14:27:24Z,shahargl,5c56c4d242eb04ae5e908ff7cd55f7c68b7a754c,,,
+3140117936,closed,2025-06-12T14:27:24Z,shahargl,,,,
+3140117936,head_ref_deleted,2025-06-12T14:27:26Z,shahargl,,,,
+3134586800,committed,,,106d2c3dd068283ad15c377521cc033d857b6326,,,Add Cursor automation test workflow for Terminator project
+3134586800,committed,,,8cb80595cc627140ba40caf1f21100b71ca521a7,,,Refactor Cursor automation test to use pure Terminator capabilities
+3134586800,renamed,2025-06-10T19:05:31Z,louis030195,,,,
+3134586800,commented,2025-06-10T19:05:55Z,louis030195,,,,
+3134670650,committed,,,fcac1811586a7e2093a6fbe7f9e84ce25d8b0613,,,Add http_ssl_native_ca option type validation to OptionsResolver
+3134670650,assigned,2025-06-10T19:43:15Z,cleptric,,cleptric,,
+3134670650,labeled,2025-06-10T19:43:21Z,cleptric,,,Documentation,
+3134670650,review_requested,2025-06-10T19:45:09Z,cleptric,,,,
+3134670650,reviewed,,,fcac1811586a7e2093a6fbe7f9e84ce25d8b0613,,,
+3134670650,merged,2025-06-10T19:46:25Z,cleptric,5fc99eb58efd708c7de20a2d1c943f63c18436a3,,,
+3134670650,closed,2025-06-10T19:46:25Z,cleptric,,,,
+3134670650,head_ref_deleted,2025-06-10T19:46:28Z,cleptric,,,,
+3143424792,commented,2025-06-13T12:30:39Z,github-actions[bot],,,,
+3143424792,head_ref_force_pushed,2025-06-13T13:33:46Z,geclos,4ce8c5621d1b3bf629a0ea508a8cad17320f927b,,,
+3143424792,head_ref_force_pushed,2025-06-13T13:56:37Z,geclos,74c1b022f94d2f2310028c0138dc6b20949ac82c,,,
+3143424792,head_ref_force_pushed,2025-06-13T14:04:24Z,geclos,1329941fefdb1fe88633846d3ac43d6c0b0b3506,,,
+3143424792,head_ref_force_pushed,2025-06-13T14:04:54Z,geclos,436bd8c6b63eef1415fc556590344a7bb1ad5083,,,
+3143424792,head_ref_force_pushed,2025-06-16T08:51:14Z,geclos,609cf79e11d95ad90ff9ad25ebceb0100bdbe82a,,,
+3143424792,head_ref_force_pushed,2025-06-16T08:52:14Z,geclos,b3ff457b0641ba80b201455e66beb8bfceee2bc6,,,
+3143424792,head_ref_force_pushed,2025-06-16T08:54:59Z,geclos,c75c8ce2126128785a8a0a6393fee9fd7be08184,,,
+3143424792,head_ref_force_pushed,2025-06-16T09:04:38Z,geclos,5ab6893034f90aa5e0ccf9e5126741ed0c314762,,,
+3143424792,reviewed,,,5ab6893034f90aa5e0ccf9e5126741ed0c314762,,,
+3143424792,reviewed,,,5ab6893034f90aa5e0ccf9e5126741ed0c314762,,,
+3143424792,reviewed,,,5ab6893034f90aa5e0ccf9e5126741ed0c314762,,,
+3143424792,reviewed,,,5ab6893034f90aa5e0ccf9e5126741ed0c314762,,,
+3143424792,reviewed,,,5ab6893034f90aa5e0ccf9e5126741ed0c314762,,,
+3143424792,reviewed,,,5ab6893034f90aa5e0ccf9e5126741ed0c314762,,,
+3143424792,reviewed,,,5ab6893034f90aa5e0ccf9e5126741ed0c314762,,,
+3143424792,reviewed,,,5ab6893034f90aa5e0ccf9e5126741ed0c314762,,,
+3143424792,reviewed,,,5ab6893034f90aa5e0ccf9e5126741ed0c314762,,,
+3143424792,reviewed,,,5ab6893034f90aa5e0ccf9e5126741ed0c314762,,,
+3143424792,review_dismissed,2025-06-16T11:22:12Z,geclos,,,,
+3143424792,review_dismissed,2025-06-16T11:22:12Z,geclos,,,,
+3143424792,head_ref_force_pushed,2025-06-16T11:22:12Z,geclos,ee4c8cf226335791ec56b6a0527303766812c111,,,
+3143424792,head_ref_force_pushed,2025-06-16T11:22:43Z,geclos,79f36f11b4fe9f8e28e249fed92098b64fd41a42,,,
+3143424792,head_ref_force_pushed,2025-06-16T12:34:39Z,geclos,c12a1749ae035b33482e7a9ebc17c7a8f3741b25,,,
+3143424792,head_ref_force_pushed,2025-06-16T13:00:22Z,geclos,073a279dd4b7124a17565fe7be4687d461f66bc9,,,
+3143424792,head_ref_force_pushed,2025-06-16T13:02:40Z,geclos,ef9a331a7ad1569dec60d661d6195e3a69d1c1b5,,,
+3143424792,head_ref_force_pushed,2025-06-16T13:21:16Z,geclos,ff0b367be8c173de2f5b3dde6f1ed8412001a9a0,,,
+3143424792,committed,,,ef3967acd56c7f7e5975cfe3e9e6bb20c4ea2393,,,"fix: linter warnings
+
+Cleaned up all linter warnings."
+3143424792,head_ref_force_pushed,2025-06-16T13:23:04Z,geclos,ef3967acd56c7f7e5975cfe3e9e6bb20c4ea2393,,,
+3143424792,merged,2025-06-16T13:41:31Z,geclos,2b6cb6fdb9e2deac671eaaee3847b9472daab23d,,,
+3137830799,commented,2025-06-11T19:00:52Z,github-actions[bot],,,,
+3137830799,base_ref_changed,2025-06-11T19:01:44Z,AbhiPrasad,,,,
+3137830799,commented,2025-06-11T19:06:28Z,github-actions[bot],,,,
+3137830799,assigned,2025-06-11T19:08:36Z,AbhiPrasad,,AbhiPrasad,,
+3137830799,ready_for_review,2025-06-11T19:08:41Z,AbhiPrasad,,,,
+3137830799,review_requested,2025-06-11T19:08:50Z,AbhiPrasad,,,,
+3137830799,review_request_removed,2025-06-11T19:08:50Z,AbhiPrasad,,,,
+3137830799,review_requested,2025-06-11T19:08:50Z,AbhiPrasad,,,,
+3137830799,review_requested,2025-06-11T19:08:50Z,AbhiPrasad,,,,
+3137830799,renamed,2025-06-11T19:10:00Z,AbhiPrasad,,,,
+3137830799,committed,,,b2a253951aa53af2c7b219fd0ac62cd2a1f065ef,,,Add support for capturing performance measure details as span attributes
+3137830799,committed,,,b437a1334b10384ca47edb6044c59ac5fb26e4f8,,,cursor cleanup
+3137830799,head_ref_force_pushed,2025-06-11T19:10:16Z,AbhiPrasad,b437a1334b10384ca47edb6044c59ac5fb26e4f8,,,
+3137830799,committed,,,bda13796ff18283b08d727cb71e1a88183da342a,,,revert previous changes
+3137830799,reviewed,,,bda13796ff18283b08d727cb71e1a88183da342a,,,
+3137830799,commented,2025-06-12T07:04:37Z,Lms24,,,,
+3137830799,committed,,,228935396d39ab84fa3d0c53959e2df511528ff7,,,Merge branch 'develop' into cursor/re-implement-measure-detail-feature-with-tests-3841
+3137830799,committed,,,5aa7e87953f8b9ddc50807ee4cce45e0d6666afd,,,fix tests
+3137830799,committed,,,f7f0763d642c2ffb61b918145ee02a064ad35aaa,,,add another test case
+3137830799,committed,,,ea1831b121887eacd7e0a540e7babd17bf06d79a,,,revert this test change
+3137830799,committed,,,dabedbb937ba8e3977e9ec3cbf25f1b05dfda6a0,,,don't attach null detail
+3137830799,committed,,,65efc548e23aa7ba44b80ae27dc46beedcc9662b,,,special case webkit
+3137830799,merged,2025-06-13T15:14:10Z,AbhiPrasad,4e7c7eff98b5cd95165ebb4177dd758da0ee58b6,,,
+3137830799,closed,2025-06-13T15:14:10Z,AbhiPrasad,,,,
+3137830799,head_ref_deleted,2025-06-13T15:14:12Z,AbhiPrasad,,,,
+3147883994,review_requested,2025-06-15T17:52:14Z,haydenbleasel,,,,
+3147883994,commented,2025-06-15T17:52:15Z,vercel[bot],,,,
+3147883994,commented,2025-06-15T17:52:16Z,coderabbitai[bot],,,,
+3147883994,assigned,2025-06-15T17:52:16Z,haydenbleasel,,haydenbleasel,,
+3147883994,reviewed,,,f9e013ebe89bc84c8ff1e062ba7a02ff6c04efa7,,,
+3147883994,head_ref_force_pushed,2025-06-15T23:24:20Z,haydenbleasel,cd0cd9967376b30ee9256a11d81a21f5645cd55c,,,
+3147883994,deployed,2025-06-15T23:28:57Z,vercel[bot],,,,
+3147883994,committed,,,d30291f91bc25ca1bf7916e46ca18de52394b216,,,docs: add comprehensive optimization recommendations for remaining performance issues
+3147883994,committed,,,8aa44fa0b4829bb71de50e40f57b8a280f0e6ebd,,,docs: add comprehensive summary of all performance improvements completed
+3147883994,head_ref_force_pushed,2025-06-15T23:37:28Z,haydenbleasel,8aa44fa0b4829bb71de50e40f57b8a280f0e6ebd,,,
+3147883994,deployed,2025-06-15T23:41:48Z,vercel[bot],,,,
+3147883994,committed,,,6520defd6e2530d1d0d196ad5d341768d55c59f4,,,Apply optimization recommendations
+3147883994,committed,,,c17227f332dafb61e36ec7e1eee54e5e22fa5975,,,Complete remaining optimizations
+3147883994,committed,,,16b08b69f941bef06bb8224d7878ba970edd6f94,,,Remove md files
+3147883994,review_requested,2025-06-15T23:51:07Z,haydenbleasel,,,,
+3147883994,reviewed,,,16b08b69f941bef06bb8224d7878ba970edd6f94,,,
+3147883994,reviewed,,,16b08b69f941bef06bb8224d7878ba970edd6f94,,,
+3147883994,deployed,2025-06-15T23:53:57Z,vercel[bot],,,,
+3147883994,committed,,,7e038fdf12e90010af5c6986d66dcfa10cf9fd0c,,,Update index.tsx
+3147883994,committed,,,4e6675e5ea9ce3c0feef5a924f13a4e7d6c7740c,,,Update index.tsx
+3147883994,mentioned,2025-06-15T23:56:36Z,haydenbleasel,,,,
+3147883994,subscribed,2025-06-15T23:56:36Z,haydenbleasel,,,,
+3147883994,merged,2025-06-15T23:59:20Z,haydenbleasel,20438c4841bac76b57643d13081cc68e57495ced,,,
+3147883994,closed,2025-06-15T23:59:21Z,haydenbleasel,,,,
+3147883994,head_ref_deleted,2025-06-15T23:59:21Z,haydenbleasel,,,,
+3147883994,cross-referenced,2025-06-15T23:59:24Z,haydenbleasel,,,,
+3147883994,deployed,2025-06-15T23:59:36Z,vercel[bot],,,,
+3147883994,cross-referenced,2025-06-15T23:59:57Z,haydenbleasel,,,,
+3135203702,committed,,,bdf8528cf062697a6626d683d6960b3d5bec8308,,,Add logs beta feature to getting started docs for multiple SDKs
+3135203702,closed,2025-06-11T01:25:40Z,rahulchhabria,,,,
+3135203702,labeled,2025-06-11T01:25:54Z,github-actions[bot],,,Scope: Frontend,
+3135203702,locked,2025-06-26T12:01:36Z,github-actions[bot],,,,
+3161425418,committed,,,a4873719372ce14379dc062aae548c46325598a8,,,Update CloudEvents context interface and test cases
+3161425418,committed,,,d94602c93822bb9a781f3e2d9196bf4c620b5b23,,,Export feature flags integration from Sentry Node package
+3161425418,review_requested,2025-06-19T22:08:16Z,AbhiPrasad,,,,
+3161425418,assigned,2025-06-19T22:08:16Z,AbhiPrasad,,AbhiPrasad,,
+3161425418,review_request_removed,2025-06-19T22:08:17Z,AbhiPrasad,,,,
+3161425418,review_requested,2025-06-19T22:08:17Z,AbhiPrasad,,,,
+3161425418,review_requested,2025-06-19T22:08:17Z,AbhiPrasad,,,,
+3161425418,renamed,2025-06-19T22:08:40Z,AbhiPrasad,,,,
+3161425418,renamed,2025-06-19T22:09:00Z,AbhiPrasad,,,,
+3161425418,cross-referenced,2025-06-19T22:09:13Z,AbhiPrasad,,,,
+3161425418,reviewed,,,d94602c93822bb9a781f3e2d9196bf4c620b5b23,,,
+3161425418,reviewed,,,d94602c93822bb9a781f3e2d9196bf4c620b5b23,,,
+3161425418,merged,2025-06-20T12:05:56Z,AbhiPrasad,819d00e17e384e5adaa1a2e60dfb4cecd3eaa1d8,,,
+3161425418,closed,2025-06-20T12:05:56Z,AbhiPrasad,,,,
+3161425418,head_ref_deleted,2025-06-20T12:05:58Z,AbhiPrasad,,,,
+3161425418,cross-referenced,2025-06-23T20:19:06Z,flaeppe,,,,
+3161425418,referenced,2025-06-23T20:28:54Z,AbhiPrasad,9cd315306b003bf494d0a033b021c932d4b989b0,,,
+3158347305,committed,,,1f9ba0f2357715526354be68e6160f77e913281b,,,Add Heap analytics and Google Analytics to comps app - Added Heap analytics with ID 4237430080 using Next.js Script component - Added Google Analytics using GoogleTagManager from @next/third-parties - Google Analytics only loads in non-development environments when NEXT_PUBLIC_GA_ID is set - Updated turbo.json to include required environment variables
+3158347305,committed,,,7f3907a1eddc39230d27b14de705ba1e6689293e,,,Add Next.js third-parties and update global environment variables
+3158347305,commented,2025-06-18T22:33:07Z,vercel[bot],,,,
+3158347305,deployed,2025-06-18T22:34:10Z,vercel[bot],,,,
+3158347305,deployed,2025-06-18T22:35:35Z,vercel[bot],,,,
+3158347305,deployed,2025-06-18T22:37:23Z,vercel[bot],,,,
+3158347305,deployed,2025-06-18T22:39:03Z,vercel[bot],,,,
+3158347305,reviewed,,,7f3907a1eddc39230d27b14de705ba1e6689293e,,,
+3154800493,committed,,,5cd54410084b59af51b04d5f366f4a5baae58750,,,Improve TestingHealthChecker with proper shutdown mechanism
+3154800493,committed,,,67eb0d6546f64c15819f4e500e470adf8d73d595,,,Add testhealthcheck dependency to testenv BUILD file
+3154800493,committed,,,e29e83523750dde973a41372870defbdde8d60cf,,,Remove unused healthcheck import from testenv package
+3144503030,committed,,,d14e670d52c7a4838668f9b7dbaca59b061a7c0e,,,Refactor import paths to use @baml/playground-common package
+3144503030,committed,,,ee697ca1531514c73cd9f83c2a4e9e133363deb4,,,Expand TypeScript path mappings for shared modules and imports
+3144503030,commented,2025-06-13T19:04:35Z,vercel[bot],,,,
+3144503030,reviewed,,,ee697ca1531514c73cd9f83c2a4e9e133363deb4,,,
+3144503030,closed,2025-06-16T18:39:22Z,seawatts,,,,
+3153713806,committed,,,a6084b3e82b99f391195c6421ecd0045008669db,,,Update environment config to initialize git submodules before installation
+3153713806,deployed,2025-06-17T14:26:31Z,ChmaraX,,,,
+3153713806,deployed,2025-06-17T14:26:31Z,ChmaraX,,,,
+3153713806,deployed,2025-06-17T14:26:31Z,ChmaraX,,,,
+3153713806,merged,2025-06-17T14:26:41Z,ChmaraX,02ef1522fbea882dfded2e7409387d35eb525308,,,
+3153713806,closed,2025-06-17T14:26:41Z,ChmaraX,,,,
+3153713806,commented,2025-06-17T14:26:42Z,github-actions[bot],,,,
+3153713806,head_ref_deleted,2025-06-17T14:26:43Z,ChmaraX,,,,
+3164279377,committed,,,5ac6f3990605c3728fc8dcebe6c867bba37a7d6e,,,"fix(deps): resolve tenacity version conflict with google-genai
+
+Changes tenacity requirement from >=9.0.0,<10.0.0 to >=8.2.3,<10.0.0 to be compatible with google-genai package which requires tenacity >=8.2.3,<9.0.0. This resolves the dependency conflict reported in issue #1623 where users could not install instructor[google-genai] and google-genai together.
+
+Fixes: #1623"
+3164279377,commented,2025-06-20T20:10:22Z,cloudflare-workers-and-pages[bot],,,,
+3164279377,merged,2025-06-20T20:10:26Z,jxnl,caf0f7a4d0d822119bbb790f97e053858c449121,,,
+3164279377,closed,2025-06-20T20:10:26Z,jxnl,,,,
+3164279377,head_ref_deleted,2025-06-20T20:10:28Z,jxnl,,,,
+3164279377,labeled,2025-06-20T20:11:03Z,github-actions[bot],,,bug,
+3164279377,labeled,2025-06-20T20:11:03Z,github-actions[bot],,,dependencies,
+3164279377,labeled,2025-06-20T20:11:03Z,github-actions[bot],,,python,
+3164279377,reviewed,,,5ac6f3990605c3728fc8dcebe6c867bba37a7d6e,,,
+3131003811,committed,,,0669f3e3e8ae4348109068e6f856a668cd6a74b2,,,feat(issue-details): Improve screenshot file detection to support flexible naming - Replace hardcoded screenshot names with flexible pattern matching that detects any file containing 'screenshot' and ending with .jpg/.png - Maintains backwards compatibility and adds test coverage - Fixes GitHub issue #92154
+3131003811,committed,,,fc1c5ee14fbfb94bce142f6f94abf6b148b2877e,,,test: Fix missing API mocks in screenshot detection test
+3131003811,review_requested,2025-06-09T17:47:43Z,armenzg,,,,
+3131003811,labeled,2025-06-09T17:47:53Z,github-actions[bot],,,Scope: Frontend,
+3131003811,reviewed,,,fc1c5ee14fbfb94bce142f6f94abf6b148b2877e,,,
+3131003811,committed,,,79f0a26589759c3dde6920483ce504da6c10fb33,,,:hammer_and_wrench: apply pre-commit fixes
+3131003811,deployed,2025-06-09T17:50:02Z,vercel[bot],,,,
+3131003811,commented,2025-06-09T17:54:11Z,codecov[bot],,,,
+3131003811,closed,2025-06-10T12:49:54Z,armenzg,,,,
+3131003811,locked,2025-06-25T13:04:44Z,github-actions[bot],,,,
+3164245658,committed,,,0cd548207ddd892605097e914ba6638681525813,,,Update Rust installation link in README
+3164245658,committed,,,9a63cb63f29f7530e06116e4fa634c06015171a5,,,Merge branch 'amantus-ai:main' into cursor/update-rustup-sh-url-in-readme-md-7e3e
+3164245658,commented,2025-06-20T19:53:31Z,coderabbitai[bot],,,,
+3164245658,commented,2025-06-20T20:04:56Z,steipete,,,,
+3164245658,closed,2025-06-20T20:05:13Z,steipete,,,,
+3139071787,committed,,,94b0f68035da011baa8730e91af1eb910aa57095,,,Add multiprocessing support and pickling for BamlRuntime in Python
+3139071787,committed,,,61dac9a6c1f3ee935b3bfe8c0d252921df32bed1,,,Add pickle support for BAML runtime and multiprocessing test
+3139071787,committed,,,e2725ead2b47178c81bb188e9a96a83de245b39f,,,Checkpoint before follow-up message
+3139071787,committed,,,8885f70d059a086deb575b25f339d93825848859,,,Checkpoint before follow-up message
+3139071787,committed,,,75fc16526f94d5ef7e040c8fb466f686b9302cdb,,,Checkpoint before follow-up message
+3139071787,committed,,,11cabb2f1f0e9f8a10d1ef9e764e88283af5120f,,,Implement pickle support for BamlRuntime in multiprocessing scenarios
+3139071787,commented,2025-06-12T06:57:17Z,vercel[bot],,,,
+3139071787,deployed,2025-06-12T07:02:27Z,vercel[bot],,,,
+3139071787,closed,2025-06-16T23:27:02Z,aaronvg,,,,
+3124493699,committed,,,f3fd9a680ca6339c407a6c9adea0dd821cbef923,,,"Add referral system with code generation, tracking, and rewards"
+3124493699,commented,2025-06-06T11:23:37Z,vercel[bot],,,,
+3124493699,commented,2025-06-06T11:23:38Z,CLAassistant,,,,
+3124493699,commented,2025-06-06T11:23:39Z,coderabbitai[bot],,,,
+3124493699,reviewed,,,f3fd9a680ca6339c407a6c9adea0dd821cbef923,,,
+3124493699,reviewed,,,f3fd9a680ca6339c407a6c9adea0dd821cbef923,,,
+3124493699,committed,,,4cdc31464aeb203991fa2a49ecab7310eaeae1c0,,,"Refactor referral system with SWR, server actions, and improved types"
+3124493699,reviewed,,,4cdc31464aeb203991fa2a49ecab7310eaeae1c0,,,
+3124493699,deployed,2025-06-06T11:39:21Z,vercel[bot],,,,
+3124493699,renamed,2025-06-06T15:59:41Z,elie222,,,,
+3124493699,committed,,,8220e5624b10f1efa5b54cb89ff35985a8881991,,,Merge branch 'main' into cursor/build-refer-a-friend-system-3b81
+3124493699,deployed,2025-06-06T16:50:56Z,vercel[bot],,,,
+3124493699,reviewed,,,8220e5624b10f1efa5b54cb89ff35985a8881991,,,
+3124493699,committed,,,0c1d828cd42187aafeae8ade35dd89374bb9bb57,,,simplify referral model
+3124493699,reviewed,,,0c1d828cd42187aafeae8ade35dd89374bb9bb57,,,
+3124493699,reviewed,,,0c1d828cd42187aafeae8ade35dd89374bb9bb57,,,
+3124493699,deployed,2025-06-07T19:11:06Z,vercel[bot],,,,
+3124493699,committed,,,0415808e7c14421925d0ed51abb1b6d263b1a883,,,Merge branch 'main' into cursor/build-refer-a-friend-system-3b81
+3124493699,committed,,,49a67d8b5ee3ca8f310255be337368d2a87e75ce,,,fix up schema
+3124493699,deployed,2025-06-12T12:29:51Z,vercel[bot],,,,
+3124493699,reviewed,,,49a67d8b5ee3ca8f310255be337368d2a87e75ce,,,
+3124493699,committed,,,503685588631410ead4b31a22995d0123c06314a,,,clean up referral dashboard
+3124493699,deployed,2025-06-12T12:47:02Z,vercel[bot],,,,
+3124493699,reviewed,,,503685588631410ead4b31a22995d0123c06314a,,,
+3124493699,committed,,,ea9e7add80edc6b01a61233e7288db5790dcd056,,,refer a friend dialog
+3124493699,deployed,2025-06-12T13:45:28Z,vercel[bot],,,,
+3124493699,reviewed,,,ea9e7add80edc6b01a61233e7288db5790dcd056,,,
+3124493699,committed,,,6571e0df14656f83c04d47e3bee6038005e02d80,,,clean up code
+3124493699,committed,,,76723b04782801ae345ba867d2a92e53aa22a9c0,,,delete func
+3124493699,deployed,2025-06-12T13:49:51Z,vercel[bot],,,,
+3136925045,committed,,,0a3368a3aff9d94bdca3c824d48c630dbb520b72,,,Add view deduplication and star existing view in Seer notices
+3136925045,committed,,,0dbbd2fe2346b9e1b7dd5ef88f2dc8955ba9f1c2,,,Remove unused imports and simplify view creation logic in SeerNotices
+3136925045,labeled,2025-06-11T13:52:57Z,github-actions[bot],,,Scope: Frontend,
+3136925045,committed,,,c1edaf04c5b8690ab6724f96dc493e134ee0d07a,,,:hammer_and_wrench: apply pre-commit fixes
+3136925045,deployed,2025-06-11T13:54:59Z,vercel[bot],,,,
+3136925045,renamed,2025-06-11T13:55:11Z,roaga,,,,
+3136925045,committed,,,68f3090a8efaec983fcf8cce5d2e2490e99d5745,,,New logic
+3136925045,deployed,2025-06-11T14:13:51Z,vercel[bot],,,,
+3136925045,commented,2025-06-11T14:18:20Z,codecov[bot],,,,
+3136925045,committed,,,040e5c5830f57d6aafe159179e772db7e4ae1a42,,,Star existing views
+3136925045,deployed,2025-06-11T14:32:38Z,vercel[bot],,,,
+3136925045,ready_for_review,2025-06-11T14:37:23Z,roaga,,,,
+3136925045,review_requested,2025-06-11T14:37:24Z,roaga,,,,
+3136925045,review_requested,2025-06-11T14:37:24Z,roaga,,,,
+3136925045,review_requested,2025-06-11T14:37:28Z,roaga,,,,
+3136925045,reviewed,,,040e5c5830f57d6aafe159179e772db7e4ae1a42,,,
+3136925045,merged,2025-06-11T14:51:40Z,roaga,629fe9f3d2b4a286d80a168ab1a769dba01729e3,,,
+3136925045,closed,2025-06-11T14:51:40Z,roaga,,,,
+3136925045,head_ref_deleted,2025-06-11T14:51:43Z,roaga,,,,
+3136925045,reviewed,,,040e5c5830f57d6aafe159179e772db7e4ae1a42,,,
+3136925045,referenced,2025-06-12T17:22:18Z,vishnupsatish,75e6be80d0494e5f9f1d152ff7fa9a7fa9b66f87,,,
+3136925045,referenced,2025-06-19T00:58:21Z,andrewshie-sentry,bccfb789957c9972c3a469bc4b4643238e0e9527,,,
+3136925045,locked,2025-06-27T00:04:09Z,github-actions[bot],,,,
+3165818046,committed,,,1fc3a71e937e467d740616ae23cfe43e1c92bd3f,,,Improve navigation when closing test workflow drawer with environment context
+3165818046,committed,,,94340df28ad5ab4013ac9d1bf76e04e8c883fb83,,,Fix navigation logic in workflow canvas and test workflow drawer
+3165818046,committed,,,0400fb8e875fe3288f3f21cc61e98e4f891475c2,,,fix: url
+3165818046,deployed,2025-06-22T09:49:54Z,scopsy,,,,
+3165818046,deployed,2025-06-22T09:49:54Z,scopsy,,,,
+3165818046,commented,2025-06-22T09:49:55Z,netlify[bot],,,,
+3165818046,deployed,2025-06-22T09:49:55Z,scopsy,,,,
+3165818046,labeled,2025-06-22T09:50:02Z,github-actions[bot],,,@novu/dashboard,
+3165818046,committed,,,640cf0f9da09b01690a76ebeeb707b0d4c2ae259,,,fix:
+3165818046,deployed,2025-06-22T09:50:43Z,scopsy,,,,
+3165818046,deployed,2025-06-22T09:50:43Z,scopsy,,,,
+3165818046,deployed,2025-06-22T09:50:43Z,scopsy,,,,
+3165818046,renamed,2025-06-22T09:53:27Z,scopsy,,,,
+3165818046,commented,2025-06-22T09:53:30Z,linear[bot],,,,
+3165818046,merged,2025-06-22T10:28:19Z,scopsy,cd854b5a19e7576dc34f54b4a610289de7dbdd79,,,
+3165818046,closed,2025-06-22T10:28:19Z,scopsy,,,,
+3165818046,head_ref_deleted,2025-06-22T10:28:20Z,scopsy,,,,
+3131810994,committed,,,27f77d7944a5f98b1cbda120c748a23173ba2ac6,,,Fix duplicate exports in code splitting with cross-chunk dependencies
+3131810994,commented,2025-06-10T00:29:59Z,robobun,,,,
+3131810994,mentioned,2025-06-10T00:30:01Z,cursoragent,,,,
+3131810994,subscribed,2025-06-10T00:30:01Z,cursoragent,,,,
+3131810994,commented,2025-06-10T00:54:01Z,Jarred-Sumner,,,,
+3131810994,mentioned,2025-06-10T00:54:02Z,claude,,,,
+3131810994,subscribed,2025-06-10T00:54:03Z,claude,,,,
+3131810994,commented,2025-06-10T00:54:22Z,claude[bot],,,,
+3131810994,committed,,,2033d2f0317b87c3d055b46178b62c02fe343d24,,,"Fix duplicate exports by deduplicating in entry point tail generation
+
+Move deduplication logic from computeCrossChunkDependencies to generateEntryPointTailJS where entry points actually generate their export statements. The previous fix only affected non-entry-point chunks but entry points use a different code path through generateEntryPointTailJS.
+
+- Revert changes to computeCrossChunkDependencies.zig that skipped cross-chunk exports for entry points
+- Add deduplication logic in generateEntryPointTailJS to remove duplicate export aliases before creating export clause
+- Preserves original order and only processes when multiple export items exist
+
+Fixes test failure where duplicate exports were still present in entry point chunks.
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-authored-by: Jarred-Sumner <Jarred-Sumner@users.noreply.github.com>"
+3131810994,mentioned,2025-06-10T01:00:48Z,claude,,,,
+3131810994,subscribed,2025-06-10T01:00:48Z,claude,,,,
+3131810994,mentioned,2025-06-10T01:01:07Z,cursoragent,,,,
+3131810994,subscribed,2025-06-10T01:01:07Z,cursoragent,,,,
+3131810994,mentioned,2025-06-10T01:01:08Z,Jarred-Sumner,,,,
+3131810994,subscribed,2025-06-10T01:01:08Z,Jarred-Sumner,,,,
+3131810994,committed,,,ef634a60c6aeeb12cbeaf0607f5d2eaa4464dd49,,,`bun run zig-format`
+3131810994,mentioned,2025-06-10T01:02:44Z,claude,,,,
+3131810994,subscribed,2025-06-10T01:02:44Z,claude,,,,
+3131810994,commented,2025-06-10T04:06:58Z,Jarred-Sumner,,,,
+3131810994,mentioned,2025-06-10T04:06:59Z,claude,,,,
+3131810994,subscribed,2025-06-10T04:06:59Z,claude,,,,
+3131810994,commented,2025-06-10T04:07:18Z,claude[bot],,,,
+3131810994,committed,,,a42d3257b690ba9407e880ec4c495c628a86c4f8,,,"Fix duplicate exports in cross-chunk generation for mixed imports
+
+Add deduplication logic to cross-chunk export generation to prevent
+duplicate exports when both static and dynamic imports of CommonJS 
+modules are used with code splitting.
+
+The issue was that exports could be generated in two separate paths:
+1. Cross-chunk export generation (no deduplication) 
+2. Entry point tail generation (had deduplication)
+
+This caused duplicate exports like `export { $bar, $bar }` in scenarios
+with mixed static/dynamic imports, leading to syntax errors.
+
+Co-authored-by: Jarred-Sumner <Jarred-Sumner@users.noreply.github.com>"
+3131810994,mentioned,2025-06-10T04:25:25Z,Jarred-Sumner,,,,
+3131810994,subscribed,2025-06-10T04:25:25Z,Jarred-Sumner,,,,
+3131810994,committed,,,ca0eff7048fada908e31631290119fa3289c487a,,,`bun run zig-format`
+3131810994,committed,,,9d31a4e7ce36a1858cf0a8079ca2a98e2fb83ba9,,,"A
+    Fix duplicate exports in code splitting by coordinating cross-chunk and entry point export generation
+
+    This commit resolves issue #5344 where duplicate export statements were generated
+    when using code splitting with entry points that are imported by other entry points.
+
+    The root cause was that two separate systems were both generating export statements
+    for the same symbols:
+
+    1. Cross-chunk export generation (computeCrossChunkDependencies.zig)
+    2. Entry point tail generation (postProcessJSChunk.zig)
+
+    When a file serves as both an entry point AND is imported by another entry point,
+    both systems would create exports, resulting in syntax errors like:
+    `export { a }; export { a };`
+
+    The fix adds coordination between these systems by:
+    - Adding deduplication logic in cross-chunk export generation to prevent internal duplicates
+    - Filtering out exports in entry point tail generation that are already handled by cross-chunk exports
+    - Only generating export statements when there are actual items to export
+
+    This ensures that each symbol is exported exactly once, preventing duplicate export
+    syntax errors while maintaining correct code splitting functionality.
+
+    Test cases updated to verify the fix works correctly and doesn't regress.
+
+    🤖 Generated with [Claude Code](https://claude.ai/code)
+
+    Co-authored-by: Claude <noreply@anthropic.com>
+A
+A
+A"
+3131810994,mentioned,2025-06-11T03:39:15Z,Jarred-Sumner,,,,
+3131810994,subscribed,2025-06-11T03:39:15Z,Jarred-Sumner,,,,
+3131810994,committed,,,4b292cca06fe095ffd3c6761e8b6a1e983907f97,,,`bun run zig-format`
+3132147174,committed,,,da66bed2960021fd9f845c011931fbb35b5b2149,,,Add HTTP proxy support for audit requests
+3132147174,review_requested,2025-06-10T05:00:19Z,Jarred-Sumner,,,,
+3132147174,commented,2025-06-10T05:00:29Z,robobun,,,,
+3132147174,mentioned,2025-06-10T05:00:29Z,cursoragent,,,,
+3132147174,subscribed,2025-06-10T05:00:30Z,cursoragent,,,,
+3132147174,commented,2025-06-10T05:02:29Z,alii,,,,
+3132147174,committed,,,ec9e13749ef8601cee73527a77aed60031f282fc,,,`bun run prettier`
+3132147174,mentioned,2025-06-10T05:03:05Z,Jarred-Sumner,,,,
+3132147174,subscribed,2025-06-10T05:03:05Z,Jarred-Sumner,,,,
+3132147174,mentioned,2025-06-10T05:03:23Z,cursoragent,,,,
+3132147174,subscribed,2025-06-10T05:03:23Z,cursoragent,,,,
+3132147174,mentioned,2025-06-10T05:43:48Z,Jarred-Sumner,,,,
+3132147174,subscribed,2025-06-10T05:43:48Z,Jarred-Sumner,,,,
+3132147174,merged,2025-06-13T17:43:55Z,Jarred-Sumner,f3bca62a7757b477e49d095266ceb30fe7d93287,,,
+3132147174,closed,2025-06-13T17:43:55Z,Jarred-Sumner,,,,
+3132147174,head_ref_deleted,2025-06-13T17:43:57Z,Jarred-Sumner,,,,
+3113874849,committed,,,f540abfacb43eb1d836949b0b2ad91df6da3783b,,,Fix: Preserve generated columns during ALTER SOURCE REFRESH SCHEMA
+3113874849,committed,,,8a7b8482f3701384fe326375156363ee115133e2,,,".
+
+Signed-off-by: Cursor Agent <cursoragent@cursor.com>"
+3113874849,committed,,,aac28ec2d3c73e9bab088a5d32f1806c1ff2b032,,,Fix ALTER SOURCE REFRESH SCHEMA for sources with generated columns
+3113874849,committed,,,71f6e20097fe12a7406a921655ad4a3e65c01244,,,Optimize Kafka Protobuf source test by reusing topic and simplifying setup
+3113874849,committed,,,44082f221637158580d937d136c69f6206c642bc,,,Test ALTER SOURCE REFRESH SCHEMA with generated columns in Kafka source
+3113874849,labeled,2025-06-03T13:00:15Z,github-actions[bot],,,type/fix,
+3113874849,reviewed,,,44082f221637158580d937d136c69f6206c642bc,,,
+3113874849,committed,,,683ed22caa668f2e5b699ea7dee91c124bacc8f4,,,Delete bug_fix_summary.md
+3113874849,review_requested,2025-06-04T02:37:44Z,xxchan,,,,
+3113874849,review_requested,2025-06-04T02:37:44Z,xxchan,,,,
+3113874849,reviewed,,,683ed22caa668f2e5b699ea7dee91c124bacc8f4,,,
+3113874849,reviewed,,,683ed22caa668f2e5b699ea7dee91c124bacc8f4,,,
+3113874849,reviewed,,,683ed22caa668f2e5b699ea7dee91c124bacc8f4,,,
+3113874849,added_to_merge_queue,2025-06-04T06:17:04Z,xxchan,,,,
+3113874849,merged,2025-06-04T06:51:04Z,xxchan,6cd712d2de5af8c4b3b68d14d1b7dab63c1b97a0,,,
+3113874849,closed,2025-06-04T06:51:04Z,xxchan,,,,
+3113874849,removed_from_merge_queue,2025-06-04T06:51:04Z,github-merge-queue[bot],,,,
+3113874849,head_ref_deleted,2025-06-04T06:51:05Z,xxchan,,,,
+3147227366,committed,,,b8d6eb529ff6daaa2f2148cfe4cca4d8432809a1,,,Update step configuration button label for clarity
+3147227366,committed,,,5f7bcef824c9d94bf0c21d49ced5817545ce731c,,,Replace RiPencilRuler2Fill icon with RiEdit2Line in step configuration form
+3147227366,deployed,2025-06-15T08:03:38Z,scopsy,,,,
+3147227366,deployed,2025-06-15T08:03:38Z,scopsy,,,,
+3147227366,deployed,2025-06-15T08:03:38Z,scopsy,,,,
+3147227366,commented,2025-06-15T08:03:41Z,netlify[bot],,,,
+3147227366,labeled,2025-06-15T08:03:45Z,github-actions[bot],,,@novu/dashboard,
+3147227366,renamed,2025-06-15T08:05:52Z,scopsy,,,,
+3147227366,commented,2025-06-15T08:05:55Z,linear[bot],,,,
+3147227366,committed,,,c302dd93ee14060ccf4de7c5b70081e3471678c4,,,Checkpoint before follow-up message
+3147227366,deployed,2025-06-15T08:35:27Z,cursor[bot],,,,
+3147227366,deployed,2025-06-15T08:35:27Z,cursor[bot],,,,
+3147227366,deployed,2025-06-15T08:35:27Z,cursor[bot],,,,
+3147227366,merged,2025-06-15T08:55:31Z,scopsy,99d88ccc3f0de3f6e3e02e772a076fef38d4c13b,,,
+3147227366,closed,2025-06-15T08:55:31Z,scopsy,,,,
+3147227366,head_ref_deleted,2025-06-15T08:55:32Z,scopsy,,,,
+3100155456,committed,,,abd0809c084b5aeffdd6d9eb185d8354d7d1a1bb,,,Fix useChangedState hook to avoid setState during render
+3100155456,committed,,,e1a67e845c10930fb1d5a602878091f4ef13ad62,,,fix: resolve React setState during render warning in useChangedState hook
+3100155456,committed,,,6afc2e070c5f6c221295ab704724ea2245f018c0,,,Add changeset for patch release of Figma plugin
+3100155456,committed,,,737c5cc948d0f93fd727efc97d73e144ed22acab,,,Changes from background composer bc-0dfe2510-7c34-47b1-8571-06301dbbb6b3
+3100155456,commented,2025-05-29T12:11:45Z,changeset-bot[bot],,,,
+3100155456,commented,2025-05-29T12:13:25Z,sonarqubecloud[bot],,,,
+3100155456,commented,2025-05-29T12:14:19Z,github-actions[bot],,,,
+3100155456,commented,2025-05-29T12:17:09Z,github-actions[bot],,,,
+3100155456,renamed,2025-05-29T14:14:02Z,six7,,,,
+3100155456,ready_for_review,2025-05-29T14:14:59Z,six7,,,,
+3100155456,review_requested,2025-05-30T06:48:20Z,six7,,,,
+3100155456,reviewed,,,737c5cc948d0f93fd727efc97d73e144ed22acab,,,
+3100155456,merged,2025-05-31T17:51:42Z,six7,a818733982c2477323e74c64e53ab39f969c750a,,,
+3100155456,closed,2025-05-31T17:51:42Z,six7,,,,
+3100155456,head_ref_deleted,2025-05-31T17:51:44Z,six7,,,,
+3165722637,committed,,,024ffd684714fd881431e3d2f284adaf94014015,,,Fix YesTask handling in event loop task processing
+3165722637,review_requested,2025-06-22T07:04:50Z,Jarred-Sumner,,,,
+3165722637,commented,2025-06-22T07:04:58Z,robobun,,,,
+3165722637,mentioned,2025-06-22T07:05:00Z,cursoragent,,,,
+3165722637,subscribed,2025-06-22T07:05:00Z,cursoragent,,,,
+3165722637,commented,2025-06-22T07:35:58Z,Jarred-Sumner,,,,
+3165722637,mentioned,2025-06-22T07:35:59Z,claude,,,,
+3165722637,subscribed,2025-06-22T07:35:59Z,claude,,,,
+3165722637,commented,2025-06-22T07:36:15Z,claude[bot],,,,
+3165722637,committed,,,65f4586217914c3a66e699069a5093d317b05e27,,,"test: add event loop task processing tests for Yes command
+
+Add comprehensive tests using TestBuilder pattern to verify YesTask
+handling in the event loop. These tests would have caught the crash
+that was fixed in the event loop's tickQueueWithCount function.
+
+Tests cover:
+- Basic YesTask event loop processing with head
+- Custom string output in event loop
+- YesTask cancellation/timeout scenarios
+- High volume output for event loop stability
+
+Co-authored-by: Jarred Sumner <Jarred-Sumner@users.noreply.github.com>"
+3165722637,mentioned,2025-06-22T07:40:20Z,claude,,,,
+3165722637,subscribed,2025-06-22T07:40:20Z,claude,,,,
+3165722637,mentioned,2025-06-22T07:40:41Z,cursoragent,,,,
+3165722637,subscribed,2025-06-22T07:40:41Z,cursoragent,,,,
+3165722637,mentioned,2025-06-22T07:40:42Z,Jarred-Sumner,,,,
+3165722637,subscribed,2025-06-22T07:40:42Z,Jarred-Sumner,,,,
+3165722637,committed,,,12cf1fd0747830973a8f8d59a9ca89d5c3604dc8,,,`bun run prettier`
+3165722637,mentioned,2025-06-22T07:43:55Z,claude,,,,
+3165722637,subscribed,2025-06-22T07:43:55Z,claude,,,,
+3128413591,commented,2025-06-08T14:48:39Z,robobun,,,,
+3128413591,mentioned,2025-06-08T14:48:40Z,Jarred-Sumner,,,,
+3128413591,subscribed,2025-06-08T14:48:40Z,Jarred-Sumner,,,,
+3128413591,reviewed,,,bdf793a042adf28a93b58b59ae6e9a04a73d2ded,,,
+3128413591,reviewed,,,bdf793a042adf28a93b58b59ae6e9a04a73d2ded,,,
+3128413591,reviewed,,,bdf793a042adf28a93b58b59ae6e9a04a73d2ded,,,
+3128413591,reviewed,,,bdf793a042adf28a93b58b59ae6e9a04a73d2ded,,,
+3128413591,head_ref_force_pushed,2025-06-09T14:06:30Z,Jarred-Sumner,7f74dd4b0ef180f63d75d6b17f02ac73c171c618,,,
+3128413591,committed,,,607a8340b520bff4f2ca058f970a360bce5300f9,,,Introduce server-side support for HTML imports
+3128413591,head_ref_force_pushed,2025-06-09T14:07:49Z,Jarred-Sumner,607a8340b520bff4f2ca058f970a360bce5300f9,,,
+3128413591,committed,,,75323adb472b5f0850b45c4e1bcca726391a46f9,,,`bun run prettier`
+3128413591,renamed,2025-06-09T14:14:28Z,Jarred-Sumner,,,,
+3128413591,ready_for_review,2025-06-09T14:14:35Z,Jarred-Sumner,,,,
+3128413591,review_requested,2025-06-09T14:14:42Z,Jarred-Sumner,,,,
+3128413591,review_requested,2025-06-09T14:14:49Z,Jarred-Sumner,,,,
+3128413591,reviewed,,,75323adb472b5f0850b45c4e1bcca726391a46f9,,,
+3128413591,reviewed,,,75323adb472b5f0850b45c4e1bcca726391a46f9,,,
+3128413591,committed,,,fb7c4931d87379c4bfa02e64eb07173361ea6ad4,,,defer deinit
+3128413591,mentioned,2025-06-09T22:38:21Z,dylan-conway,,,,
+3128413591,subscribed,2025-06-09T22:38:21Z,dylan-conway,,,,
+3128413591,commented,2025-06-10T00:40:21Z,dylan-conway,,,,
+3128413591,committed,,,cf9918d6f6bd3ffc1f7a96277da87b5c49ae65e7,,,Merge branch 'main' into cursor/enhance-bun-build-for-full-stack-support-e69d
+3128413591,committed,,,8bfca0b7044db45e2f2dc9cee4ce22a372b65894,,,`bun run prettier`
+3128413591,committed,,,7f0984cd11b65ad0dd10f6b56df2ffd0f145a84d,,,fix test
+3128413591,committed,,,80fce17ec8bc6d1e38819e201efe0d2cb874e56c,,,delete
+3128413591,committed,,,a401af3ec9a411d98f95b6a7604f68341895ca61,,,ooops
+3128413591,merged,2025-06-11T04:26:01Z,dylan-conway,6ebad50543bf2c4107d4b4c2ecc062a15a94b71e,,,
+3128413591,closed,2025-06-11T04:26:01Z,dylan-conway,,,,
+3128413591,head_ref_deleted,2025-06-11T04:26:03Z,dylan-conway,,,,
+3161226190,committed,,,a2d01ca733e75a89cf6417ff3fd2f21258d5a2ab,,,Checkpoint before follow-up message
+3161226190,committed,,,1fde61848fed28c9e51f372c1b933ace8e6ea288,,,Checkpoint before follow-up message
+3161226190,committed,,,88542cefb943024dc7c9ed6f8e001c40ef63344b,,,Add Stripe subscription integration documentation and architecture overview
+3161226190,commented,2025-06-19T19:55:06Z,vercel[bot],,,,
+3161226190,commented,2025-06-19T19:55:07Z,supabase[bot],,,,
+3161226190,reviewed,,,88542cefb943024dc7c9ed6f8e001c40ef63344b,,,
+3161226190,reviewed,,,88542cefb943024dc7c9ed6f8e001c40ef63344b,,,
+3161226190,closed,2025-06-20T18:51:40Z,Kitenite,,,,
+3161226190,head_ref_deleted,2025-06-25T22:03:24Z,Kitenite,,,,
+3147302152,committed,,,8b8494e5131a25c75f34646226054f635423c6ab,,,Update payload schema documentation links to new path
+3147302152,deployed,2025-06-15T09:44:33Z,scopsy,,,,
+3147302152,deployed,2025-06-15T09:44:33Z,scopsy,,,,
+3147302152,deployed,2025-06-15T09:44:33Z,scopsy,,,,
+3147302152,commented,2025-06-15T09:44:35Z,netlify[bot],,,,
+3147302152,labeled,2025-06-15T09:44:41Z,github-actions[bot],,,@novu/dashboard,
+3147302152,merged,2025-06-15T10:27:06Z,scopsy,377cf9a659ab3a17b2cad91f772665e8add20659,,,
+3147302152,closed,2025-06-15T10:27:06Z,scopsy,,,,
+3147302152,head_ref_deleted,2025-06-15T10:27:07Z,scopsy,,,,
+3165822621,committed,,,1c110f3cddc67ac490d6efcfc6f4b4531493a445,,,Improve OpenShift provider connection validation using REST API
+3165822621,labeled,2025-06-22T09:57:25Z,dosubot[bot],,,size:M,
+3165822621,commented,2025-06-22T09:57:27Z,vercel[bot],,,,
+3165822621,labeled,2025-06-22T09:57:36Z,dosubot[bot],,,API,
+3165822621,labeled,2025-06-22T09:57:36Z,dosubot[bot],,,Provider,
+3165822621,reviewed,,,1c110f3cddc67ac490d6efcfc6f4b4531493a445,,,
+3165822621,committed,,,471d1df158a481b1ab22270c28c4b6b0b126f8b7,,,Enhance OpenShift provider with advanced querying and remediation capabilities
+3165822621,unlabeled,2025-06-23T06:43:15Z,dosubot[bot],,,size:M,
+3165822621,labeled,2025-06-23T06:43:16Z,dosubot[bot],,,size:XXL,
+3165822621,reviewed,,,471d1df158a481b1ab22270c28c4b6b0b126f8b7,,,
+3165822621,committed,,,abe631b17da270048893754726d0e9f156f951ef,,,Add OpenShift provider documentation and workflow examples
+3165822621,reviewed,,,abe631b17da270048893754726d0e9f156f951ef,,,
+3165822621,renamed,2025-06-23T07:15:51Z,talboren,,,,
+3165822621,committed,,,5b6ae1d5c8c6232c4f938acb43271cc56ded6c67,,,Merge branch 'main' into cursor/fix-openshift-provider-connection-issue-4799
+3165822621,auto_squash_enabled,2025-06-26T07:53:18Z,talboren,,,,
+3165822621,reviewed,,,5b6ae1d5c8c6232c4f938acb43271cc56ded6c67,,,
+3165822621,deployed,2025-06-26T07:58:40Z,vercel[bot],,,,
+3165822621,reviewed,,,5b6ae1d5c8c6232c4f938acb43271cc56ded6c67,,,
+3165822621,merged,2025-06-26T08:06:52Z,talboren,0026346d0835213a886e7d37a732e8affd6490d3,,,
+3165822621,closed,2025-06-26T08:06:52Z,talboren,,,,
+3165822621,head_ref_deleted,2025-06-26T08:06:52Z,talboren,,,,
+3165822621,labeled,2025-06-26T08:06:54Z,dosubot[bot],,,lgtm,
+3132189217,committed,,,adfbdf3eb935cef01249e25bba49838f065b117d,,,Fix Windows package name parsing and remove unnecessary blank lines
+3132189217,committed,,,b571c91d26e89f98f8b352333775f7d2c8680d89,,,Checkpoint before follow-up message
+3132189217,committed,,,27ec16b47e6e4b36fbd5b1532c5defcd633d2837,,,Add Windows-specific test for escaped @scoped package names
+3132189217,committed,,,06927923d77eb795a02d7b216a16e0accfdbe685,,,Fix handling of escaped @scoped package names on Windows
+3132189217,committed,,,a0be66099ff34bd9ab8e3e439f210ebbb6c0baaf,,,Changes from background composer bc-4a83a85f-ff0b-409f-b3a3-d6b6435a437a
+3132189217,commented,2025-06-10T05:25:44Z,robobun,,,,
+3132189217,mentioned,2025-06-10T05:25:46Z,cursoragent,,,,
+3132189217,subscribed,2025-06-10T05:25:46Z,cursoragent,,,,
+3132189217,renamed,2025-06-10T05:26:03Z,Jarred-Sumner,,,,
+3132189217,committed,,,fd7d29b1b5e1741090e7b3088d63ff8aa40d5947,,,`bun run prettier`
+3132189217,mentioned,2025-06-10T05:29:41Z,Jarred-Sumner,,,,
+3132189217,subscribed,2025-06-10T05:29:41Z,Jarred-Sumner,,,,
+3132189217,mentioned,2025-06-10T05:29:52Z,cursoragent,,,,
+3132189217,subscribed,2025-06-10T05:29:52Z,cursoragent,,,,
+3132189217,mentioned,2025-06-10T06:19:25Z,Jarred-Sumner,,,,
+3132189217,subscribed,2025-06-10T06:19:26Z,Jarred-Sumner,,,,
+3138324128,committed,,,29b3e7a410b62c2662b6271600174de26be58754,,,Modify bulk rule run to only process unread emails
+3138324128,commented,2025-06-11T23:07:49Z,vercel[bot],,,,
+3138324128,commented,2025-06-11T23:07:50Z,CLAassistant,,,,
+3138324128,commented,2025-06-11T23:07:51Z,coderabbitai[bot],,,,
+3138324128,reviewed,,,29b3e7a410b62c2662b6271600174de26be58754,,,
+3138324128,merged,2025-06-12T07:33:34Z,elie222,2e45b4f9912f2ccb4ff2e904b98ec9926c8c3fe2,,,
+3138324128,closed,2025-06-12T07:33:34Z,elie222,,,,
+3135305868,committed,,,870c51c10b5755142fad8d767c3c59e3b23adfbb,,,Checkpoint before follow-up message
+3135305868,committed,,,62f66b3096f5852ba3c877ee1a840d9aaf836d9f,,,Add chrono dependency and enhance MCP client example documentation
+3135305868,committed,,,6e0001c2ea650ca67b9d5f49d6d16a6e62149bf9,,,Checkpoint before follow-up message
+3135305868,committed,,,f88be0d4c56cb2aad7bdf2b523170eaeb8575d7c,,,Checkpoint before follow-up message
+3131686689,committed,,,48103892d6367818ed30c5b8c107a6d4966231df,,,Add promo code generation with cryptic word and l33t speak algorithm
+3131686689,committed,,,1ef59fd880045b287d96e7443a7ec1f84dcd01ee,,,Improve promo code generation with more variety and length control
+3131686689,committed,,,57016e39e4eaee9b039322757c33b33c236c57c2,,,Refactor promo code generation with improved randomization logic
+3131686689,renamed,2025-06-09T22:58:57Z,dcramer,,,,
+3131686689,labeled,2025-06-09T22:59:06Z,github-actions[bot],,,Scope: Frontend,
+3131686689,committed,,,7fc758d396f4dfedb5d204b8a7f2ff63ba2a32b6,,,Checkpoint before follow-up message
+3131686689,review_requested,2025-06-09T23:03:46Z,dcramer,,,,
+3131686689,commented,2025-06-09T23:04:38Z,codecov[bot],,,,
+3131686689,reviewed,,,57016e39e4eaee9b039322757c33b33c236c57c2,,,
+3131686689,committed,,,c17d5abec3f54020035ab3c27a11e051ce11b0b6,,,Fix TypeScript type error and remove unused form ref in promo code modal
+3131686689,deployed,2025-06-09T23:15:29Z,vercel[bot],,,,
+3131686689,committed,,,ba64dd511f246f5ae90f2fdd256b6bba7dc0698c,,,Add React type import to promoCodeModal component
+3131686689,deployed,2025-06-09T23:28:27Z,vercel[bot],,,,
+3131686689,committed,,,5b53b3357e1e4fd66dbc4b1228654c8566666803,,,Remove unused React type import
+3131686689,deployed,2025-06-09T23:41:55Z,vercel[bot],,,,
+3131686689,committed,,,fd8302bcdfb4b6e01fbf60ec7c03f6a8a0f294f0,,,Refactor promo code modal to use React.createElement for form fields
+3131686689,deployed,2025-06-09T23:43:46Z,vercel[bot],,,,
+3131686689,committed,,,04694a4a5d943c22fd42fc42f84accab5cb3c220,,,Add @types/moment-timezone as dev dependency
+3131686689,deployed,2025-06-10T00:05:20Z,vercel[bot],,,,
+3131686689,committed,,,7be80d906b17e6f9f310253079f99b5b2b79b131,,,Add gsAdmin to TypeScript configuration include paths
+3131686689,deployed,2025-06-10T00:11:34Z,vercel[bot],,,,
+3131686689,committed,,,081830e0ae5df5d5190d42eed834908302663188,,,Refactor promo code modal with improved type safety and code generation
+3131686689,deployed,2025-06-10T01:54:44Z,vercel[bot],,,,
+3131686689,review_requested,2025-06-10T02:04:20Z,dcramer,,,,
+3131686689,reviewed,,,081830e0ae5df5d5190d42eed834908302663188,,,
+3131686689,commented,2025-06-10T02:05:05Z,dcramer,,,,
+3131686689,commented,2025-06-17T23:14:29Z,dcramer,,,,
+3131686689,closed,2025-06-17T23:14:29Z,dcramer,,,,
+3134882955,committed,,,d81bb7fe82fc3f9b47f53431b630cc161a04600c,,,Add Vercel AI integration with telemetry for Next.js 15 test app
+3134882955,committed,,,7a813ed698656294a777249c4036148eaa5a9e80,,,Changes from background composer bc-a31bbb18-5a7c-4b0e-b632-2ac4c565ac30
+3134882955,base_ref_changed,2025-06-10T21:27:08Z,AbhiPrasad,,,,
+3134882955,commented,2025-06-10T21:29:07Z,github-actions[bot],,,,
+3134882955,comment_deleted,2025-06-11T09:02:24Z,getsentry,,,,
+3134882955,closed,2025-06-11T15:18:24Z,AbhiPrasad,,,,
+3132222532,committed,,,103109f3859a4cce862fa6aa92d95a0f8700d5df,,,Fix potential crash in asymmetric matcher by adding cell type check
+3132222532,committed,,,e32fef812fdc6575d0ac98a257d2c713b569e2e2,,,test: Add test for deepEquals fix with MobX-like reactive objects that return non-cell values
+3132222532,commented,2025-06-10T05:45:53Z,robobun,,,,
+3132222532,mentioned,2025-06-10T05:45:54Z,cursoragent,,,,
+3132222532,subscribed,2025-06-10T05:45:54Z,cursoragent,,,,
+3132222532,committed,,,7dfbfd87f570ac7b2ceecfa53b6abf540d93f4a4,,,Update deepequals_fix.patch
+3132222532,mentioned,2025-06-10T05:46:29Z,Jarred-Sumner,,,,
+3132222532,subscribed,2025-06-10T05:46:30Z,Jarred-Sumner,,,,
+3132222532,mentioned,2025-06-10T05:46:38Z,cursoragent,,,,
+3132222532,subscribed,2025-06-10T05:46:38Z,cursoragent,,,,
+3132222532,committed,,,4959d1ad4b11d63346bad24134309d33b41236a7,,,`bun run prettier`
+3132222532,mentioned,2025-06-10T05:48:18Z,Jarred-Sumner,,,,
+3132222532,subscribed,2025-06-10T05:48:18Z,Jarred-Sumner,,,,
+3132222532,committed,,,812e91c0bd5630bb325b4eec798a136d67101dd2,,,`bun run clang-format`
+3132222532,commented,2025-06-10T19:38:47Z,Jarred-Sumner,,,,
+3132222532,mentioned,2025-06-10T19:38:49Z,claude,,,,
+3132222532,subscribed,2025-06-10T19:38:49Z,claude,,,,
+3132222532,commented,2025-06-10T19:39:03Z,claude[bot],,,,
+3132222532,reviewed,,,812e91c0bd5630bb325b4eec798a136d67101dd2,,,
+3132222532,committed,,,f2932ea6dbe5867bc50e841abed9098df7631740,,,"chore: remove patch files
+
+Co-authored-by: Jarred-Sumner <Jarred-Sumner@users.noreply.github.com>"
+3132222532,mentioned,2025-06-10T19:40:33Z,claude,,,,
+3132222532,subscribed,2025-06-10T19:40:33Z,claude,,,,
+3132222532,mentioned,2025-06-10T19:40:38Z,Jarred-Sumner,,,,
+3132222532,subscribed,2025-06-10T19:40:38Z,Jarred-Sumner,,,,
+3132222532,labeled,2025-06-10T19:41:20Z,190n,,,cursor,
+3132222532,labeled,2025-06-10T19:44:18Z,190n,,,claude,
+3130631260,committed,,,1aae8045b3c85b367db79ec1b700b08f50e9ac71,,,Add group expansion feature with collapsible grouped rows
+3130631260,committed,,,2e3c00b6f60f3f43ff82bdfb8807726df74f063a,,,Add toggle all groups functionality with dynamic button state
+3130631260,committed,,,fb464d46b371a27229644f4389500eaa39e09c44,,,Improve alert table UI with group toggle button and layout adjustments
+3130631260,committed,,,3ce989809557c45ddcbb21eef8b85fc06bd16137,,,Refactor alert table UI to centralize group expansion controls in AlertPresetManager
+3130631260,committed,,,d24d09bbc0b90a3c0f58bab6cc3128ee13b370a3,,,feat: minor fix
+3130631260,commented,2025-06-09T15:20:58Z,vercel[bot],,,,
+3130631260,labeled,2025-06-09T15:21:00Z,dosubot[bot],,,size:L,
+3130631260,commented,2025-06-09T15:21:02Z,CLAassistant,,,,
+3130631260,labeled,2025-06-09T15:21:15Z,dosubot[bot],,,Feature,
+3130631260,labeled,2025-06-09T15:21:15Z,dosubot[bot],,,UI,
+3130631260,reviewed,,,d24d09bbc0b90a3c0f58bab6cc3128ee13b370a3,,,
+3130631260,deployed,2025-06-09T15:30:04Z,vercel[bot],,,,
+3130631260,committed,,,f926b59a5fc80badbf2ae02819c149353ab3d41c,,,Add unit tests for AlertPresetManager and GroupedRow components
+3130631260,committed,,,62e4e6357999fbb069f5ab9c3e7f54eaecc73cd3,,,Refactor alert table and grouped row tests with improved mocking
+3130631260,unlabeled,2025-06-09T16:24:28Z,dosubot[bot],,,size:L,
+3130631260,labeled,2025-06-09T16:24:29Z,dosubot[bot],,,size:XL,
+3130631260,closed,2025-06-09T16:25:10Z,shahargl,,,,
+3130631260,deployed,2025-06-09T16:30:29Z,vercel[bot],,,,
+3130631260,reviewed,,,62e4e6357999fbb069f5ab9c3e7f54eaecc73cd3,,,
+3138324206,committed,,,6fd51bf9c54bb26c926d10ab90e02bd0a4d4f8a2,,,Optimize message processing with parallel batch processing
+3138324206,commented,2025-06-11T23:07:52Z,vercel[bot],,,,
+3138324206,commented,2025-06-11T23:07:54Z,CLAassistant,,,,
+3138324206,commented,2025-06-11T23:07:55Z,coderabbitai[bot],,,,
+3138324206,reviewed,,,6fd51bf9c54bb26c926d10ab90e02bd0a4d4f8a2,,,
+3138324206,committed,,,398cf0624bc1d3256d3e57d66b8fbc75b56e7108,,,Improve batch processing with error handling and parallel execution
+3138324206,deployed,2025-06-12T07:40:54Z,vercel[bot],,,,
+3138324206,committed,,,da939a6b30618e5fb84ebca23f2574cac6530c74,,,Merge branch 'main' into cursor/process-rules-in-parallel-99d4
+3138324206,deployed,2025-06-12T08:17:38Z,vercel[bot],,,,
+3138324206,committed,,,130d29108d037713fd3a065dc23d94b335cd39c5,,,use queue to process in parallel
+3138324206,deployed,2025-06-12T08:27:09Z,vercel[bot],,,,
+3138324206,committed,,,a45178164b20408bb03f451baebfd5960603377a,,,version
+3138324206,merged,2025-06-12T08:51:57Z,elie222,e087e197fe9b720fe915c313c6cb87260c5ad5d2,,,
+3138324206,closed,2025-06-12T08:51:57Z,elie222,,,,
+3138324206,deployed,2025-06-12T08:52:43Z,vercel[bot],,,,
+3134576040,committed,,,1436964a9089d4e1060c461bb8bc131acc711884,,,Add Cursor Night Shift Agent for automated AI code review
+3134576040,commented,2025-06-10T19:01:28Z,louis030195,,,,
+3134575697,committed,,,7e2b192612ab60fb7b358a0f65cca91b3a09dc82,,,Add Terminator web testing GitHub Action with example workflows
+3134575697,commented,2025-06-10T19:03:17Z,louis030195,,,,
+3163213567,committed,,,9bef95b143d8d551067a6859fcb3b22a8b17430f,,,Improve MCP server error handling and add server running state tracking
+3163213567,committed,,,ce10bcfe6474185111e0bc861f594554bb084adc,,,Checkpoint before follow-up message
+3163213567,committed,,,427beb49d17b43eef3341dd1da8ef67e5688af46,,,Refactor server startup tracking with more descriptive error state flag
+3163213567,commented,2025-06-20T12:46:29Z,nx-cloud[bot],,,,
+3149341709,review_requested,2025-06-16T10:05:20Z,szokeasaurusrex,,,,
+3149341709,ready_for_review,2025-06-16T10:05:24Z,szokeasaurusrex,,,,
+3149341709,review_requested,2025-06-16T10:05:25Z,szokeasaurusrex,,,,
+3149341709,commented,2025-06-16T10:11:27Z,codecov[bot],,,,
+3149341709,reviewed,,,7bc76ed890e7267e8008d0643078b62c7019cee6,,,
+3149341709,referenced,2025-06-24T15:19:21Z,szokeasaurusrex,7bc76ed890e7267e8008d0643078b62c7019cee6,,,
+3149341709,head_ref_force_pushed,2025-06-24T15:19:22Z,szokeasaurusrex,7bc76ed890e7267e8008d0643078b62c7019cee6,,,
+3149341709,referenced,2025-06-24T15:21:49Z,szokeasaurusrex,0626243ae30a77dca1b87023f225f219cf90deac,,,
+3149341709,head_ref_force_pushed,2025-06-24T15:21:49Z,szokeasaurusrex,0626243ae30a77dca1b87023f225f219cf90deac,,,
+3149341709,committed,,,48f483f00b2a76b3c4e08267403cd7efcc18ae05,,,"feat(sessions): Add top-level start- and end session methods
+
+Closes #4474
+
+Co-authored-by: Daniel Szoke <daniel.szoke@sentry.io>"
+3149341709,head_ref_force_pushed,2025-06-24T15:22:56Z,szokeasaurusrex,48f483f00b2a76b3c4e08267403cd7efcc18ae05,,,
+3149341709,auto_squash_enabled,2025-06-24T15:23:14Z,szokeasaurusrex,,,,
+3149341709,merged,2025-06-24T15:30:31Z,szokeasaurusrex,8b6e5adfc6a55c40b7e64b099ae51c2cdb244031,,,
+3149341709,closed,2025-06-24T15:30:31Z,szokeasaurusrex,,,,
+3149341709,head_ref_deleted,2025-06-24T15:30:32Z,szokeasaurusrex,,,,
+3165225343,committed,,,35322cdbba38d7d87ba4cd59b21f8f27998f8c2b,,,Filter out additional bot and automated accounts from contributors list
+3165225343,review_requested,2025-06-21T16:52:26Z,mrubens,,,,
+3165225343,review_requested,2025-06-21T16:52:26Z,mrubens,,,,
+3165225343,labeled,2025-06-21T16:52:29Z,dosubot[bot],,,size:XS,
+3165225343,reviewed,,,35322cdbba38d7d87ba4cd59b21f8f27998f8c2b,,,
+3165225343,reviewed,,,35322cdbba38d7d87ba4cd59b21f8f27998f8c2b,,,
+3165225343,labeled,2025-06-21T16:57:23Z,dosubot[bot],,,lgtm,
+3165225343,referenced,2025-06-21T16:58:11Z,ellipsis-dev[bot],098176c05f065a3aeddf2b95940306ccd77f839f,,,
+3165225343,cross-referenced,2025-06-21T16:58:12Z,ellipsis-dev[bot],,,,
+3165225343,committed,,,4ed55d47f3807dfec76e1de23fac616728a534a4,,,"[Ellipsis] fix: exclude `cursor` and `roomote` logins in contributors section (#4984)
+
+Co-authored-by: ellipsis-dev[bot] <65095814+ellipsis-dev[bot]@users.noreply.github.com>"
+3165225343,unlabeled,2025-06-21T16:59:11Z,dosubot[bot],,,size:XS,
+3165225343,labeled,2025-06-21T16:59:12Z,dosubot[bot],,,size:S,
+3165225343,labeled,2025-06-21T17:02:28Z,hannesrudolph,,,Issue/PR - Triage,
+3165225343,commented,2025-06-21T17:04:04Z,mrubens,,,,
+3165225343,reviewed,,,4ed55d47f3807dfec76e1de23fac616728a534a4,,,
+3165225343,merged,2025-06-21T17:08:36Z,mrubens,95497a72c7eeca3d7d0fa6532611e46c0524385e,,,
+3165225343,closed,2025-06-21T17:08:36Z,mrubens,,,,
+3165225343,head_ref_deleted,2025-06-21T17:08:37Z,mrubens,,,,
+3165225343,referenced,2025-06-22T22:06:05Z,Alorse,10e7d921f7ee0873854846230d2cde239861d5c0,,,
+3165225343,referenced,2025-06-24T19:54:39Z,cte,e1be123a68b018fa6f2eb519e9dbceb15df11864,,,
+3165874296,committed,,,019f700ba625298cbb4b72ed1af6b9016ed3d50a,,,Implement useFetchOrganization hook for dynamic branding data loading
+3165874296,deployed,2025-06-22T11:22:26Z,scopsy,,,,
+3165874296,deployed,2025-06-22T11:22:26Z,scopsy,,,,
+3165874296,deployed,2025-06-22T11:22:26Z,scopsy,,,,
+3165874296,labeled,2025-06-22T11:22:34Z,github-actions[bot],,,@novu/web,
+3165874296,commented,2025-06-22T11:22:39Z,netlify[bot],,,,
+3165874296,committed,,,3495907c5b699e77fb1ac55b256e049ddb24d4e0,,,Merge branch 'next' into cursor/fetch-branding-details-on-page-load-11f1
+3165874296,deployed,2025-06-25T11:17:42Z,scopsy,,,,
+3165874296,deployed,2025-06-25T11:17:42Z,scopsy,,,,
+3165874296,deployed,2025-06-25T11:17:42Z,scopsy,,,,
+3165874296,ready_for_review,2025-06-25T11:30:33Z,scopsy,,,,
+3165874296,merged,2025-06-25T11:31:16Z,scopsy,53e65f27d1538e1efb7b5fc82e48f61bf99592fc,,,
+3165874296,closed,2025-06-25T11:31:16Z,scopsy,,,,
+3165874296,head_ref_deleted,2025-06-25T11:31:17Z,scopsy,,,,
+3099818675,committed,,,ce9344986307b30feb69eab862c811ef3dac614b,,,Implement delta diff sync for optimized GitHub token storage performance
+3099818675,commented,2025-05-29T10:01:13Z,changeset-bot[bot],,,,
+3099818675,commented,2025-05-29T10:03:41Z,github-actions[bot],,,,
+3099818675,commented,2025-05-29T10:06:25Z,github-actions[bot],,,,
+3099818675,commented,2025-05-29T10:06:25Z,github-actions[bot],,,,
+3099818675,committed,,,31bd8ec1b031a236eafc5b4cee1a94e4bf8a8525,,,Implement delta diff optimization with lastSyncedState for faster GitHub sync
+3099818675,committed,,,4a344782e0b2ff5b2fa8441970eadcc4187c88a4,,,Enable delta diff sync by default with enhanced logging
+3099818675,committed,,,ab0fc497c78d828ea6351870907945b0a93aa9dc,,,Add detailed logging for token sync comparison and differences
+3099818675,committed,,,43094adeb2a7ff5d3e9f95d32a86af341021cc4a,,,Fix token set comparison by converting local data to array format
+3099818675,committed,,,8e2c6eb891786ffae82d17406c05efbeba24d7ed,,,Simplify delta diff logic for faster token sync comparisons
+3099818675,committed,,,6552307b2dbcd1dfacb8f7f76f413bba6aa27fa7,,,Refactor GithubTokenStorage delta diff logic and clean up yarn.lock
+3099818675,committed,,,a4e9814e46964d91052b1a1278d8720a50a36417,,,Implement universal delta diff optimization in GitTokenStorage base class
+3099818675,committed,,,b615cb95d5d5d648108ce43c77c4186d644e7608,,,"Simplify delta diff optimization in GitTokenStorage with clean, minimal approach"
+3099818675,committed,,,6bbc86f81e259664a4885e82073cb3a214a6fdff,,,Optimize delta diff sync with raw data comparison in RemoteTokenStorage
+3099818675,committed,,,1c439d65400fa3987d279692b2a5d2459d046efa,,,Implement granular delta diff optimization for token storage
+3099818675,commented,2025-05-29T14:43:53Z,sonarqubecloud[bot],,,,
+3099818675,cross-referenced,2025-06-03T15:36:54Z,akshay-gupta7,,,,
+3111841315,committed,,,cef62eeeda624928f8936d9eceb2e7b32ca76bc2,,,Add Git web worker for background isomorphic-git operations
+3111841315,commented,2025-06-02T22:42:35Z,netlify[bot],,,,
+3111841315,commented,2025-06-02T22:43:58Z,netlify[bot],,,,
+3111841315,closed,2025-06-02T22:57:29Z,colebemis,,,,
+3137117830,committed,,,20d85e78ec311139130127d11d31fb1d49a0c177,,,Add Koa integration options to ignore specific layer types
+3137117830,committed,,,0e904d6108a7d94fead915d07cd0ed8b8cfa4e0c,,,Refactor Koa instrumentation with improved type safety and exports
+3137117830,commented,2025-06-11T14:51:54Z,github-actions[bot],,,,
+3137117830,committed,,,9ba5f84adc166fbf3a7ba94648994534e636dcd5,,,cursor cleanup
+3137117830,ready_for_review,2025-06-11T14:55:30Z,AbhiPrasad,,,,
+3137117830,review_requested,2025-06-11T14:55:38Z,AbhiPrasad,,,,
+3137117830,review_request_removed,2025-06-11T14:55:38Z,AbhiPrasad,,,,
+3137117830,review_requested,2025-06-11T14:55:38Z,AbhiPrasad,,,,
+3137117830,review_requested,2025-06-11T14:55:38Z,AbhiPrasad,,,,
+3137117830,assigned,2025-06-11T16:44:57Z,AbhiPrasad,,AbhiPrasad,,
+3137117830,reviewed,,,9ba5f84adc166fbf3a7ba94648994534e636dcd5,,,
+3137117830,merged,2025-06-11T17:30:38Z,AbhiPrasad,ba3728d782e2c7bfbb0c9ffc205de3a9b9237201,,,
+3137117830,closed,2025-06-11T17:30:38Z,AbhiPrasad,,,,
+3137117830,head_ref_deleted,2025-06-11T17:30:40Z,AbhiPrasad,,,,
+3137117830,cross-referenced,2025-06-11T17:38:56Z,AbhiPrasad,,,,
+3137117830,cross-referenced,2025-06-17T18:05:56Z,AbhiPrasad,,,,
+3137117830,referenced,2025-06-18T15:51:56Z,AbhiPrasad,b3e750e6e6c79701724279c6db9737454033ba8b,,,
+3137117830,referenced,2025-06-24T12:23:58Z,antonpirker,6740ea778a677da6d0241c476b78c84656629504,,,
+3163448583,committed,,,0a812834fcaf59bc3c1bfc708105131903491d41,,,Fix scroll carousel right mask gradient with dynamic theme color
+3163448583,labeled,2025-06-20T14:00:28Z,github-actions[bot],,,Scope: Frontend,
+3163448583,deployed,2025-06-20T14:00:39Z,vercel[bot],,,,
+3163448583,committed,,,ee30615014cb3673b33d821e8156e847620a6ae8,,,Fix scroll carousel mask gradient with transparent start color
+3163448583,commented,2025-06-20T14:03:05Z,JonasBa,,,,
+3163448583,deployed,2025-06-20T14:03:10Z,vercel[bot],,,,
+3163448583,review_requested,2025-06-20T14:04:34Z,JonasBa,,,,
+3163448583,reviewed,,,ee30615014cb3673b33d821e8156e847620a6ae8,,,
+3163448583,reviewed,,,ee30615014cb3673b33d821e8156e847620a6ae8,,,
+3163448583,merged,2025-06-20T17:32:53Z,JonasBa,976bb0b4c06258e334229b3121b867dba6ca1c4c,,,
+3163448583,closed,2025-06-20T17:32:53Z,JonasBa,,,,
+3163448583,head_ref_deleted,2025-06-20T17:32:54Z,JonasBa,,,,
