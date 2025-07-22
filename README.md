@@ -10,6 +10,24 @@ Submit the [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfXTmX9Az3t1WU
 
 This study analyzes the impact of AI coding agents on software engineering practices by examining pull requests (PRs) from various AI teammates including GitHub Copilot, Cursor, Devin, Claude Code, and OpenAI Codex.
 
+## Repository Structure
+
+```
+├── AIDev-pop/              # AIDev-pop subset of AIDev
+├── analysis/              # Analysis scripts and Jupyter notebooks
+├── figs/                  # Generated figures and results
+├── requirements.txt       # Python dependencies
+└── README.md             # This file
+```
+
+## Installation
+
+Install required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
 ## Key Findings
 
 ### Productivity in Coding Agents Era
@@ -29,30 +47,6 @@ This study analyzes the impact of AI coding agents on software engineering pract
 ### Language Usage
 
 ![](figs%2Ftotal_language_percentages_top.png)
-
-## Repository Structure
-
-```
-├── AIDev-pop/              # AIDev-pop subset of AIDev
-├── analysis/              # Analysis scripts and Jupyter notebooks
-├── figs/                  # Generated figures and results
-├── requirements.txt       # Python dependencies
-└── README.md             # This file
-```
-
-
-## Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/SAILResearch/AI_Teammates_in_SE3.git
-cd AI_Teammates_in_SE3
-```
-
-2. Install required dependencies:
-```bash
-pip install -r requirements.txt
-```
 
 ## Citation
 
