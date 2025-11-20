@@ -7,3 +7,4 @@ AIDev
 AIDev.zip
 *.json
 clean_data
+.env
