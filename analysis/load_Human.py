@@ -76,7 +76,8 @@ def get_pr_stats(url):
             "commit_count": None,
             "review_count": None,
             "comment_count": None,
-            "assigned_reviewers": None
+            "assigned_reviewers": None,
+            "reviewer_count_ui": None
         }
 
     variables = {"owner": owner, "repo": repo, "number": number}
@@ -85,11 +86,20 @@ def get_pr_stats(url):
         data = run_query(PR_QUERY, variables)
         pr = data["repository"]["pullRequest"]
 
-        reviewers = [
+        pending_reviewers = {
             r["requestedReviewer"]["login"]
             for r in pr["reviewRequests"]["nodes"]
             if r["requestedReviewer"] is not None
-        ]
+               and "login" in r["requestedReviewer"]
+        }
+
+        submitted_reviewers = {
+            r["author"]["login"]
+            for r in pr["reviews"]["nodes"]
+            if r["author"] is not None
+        }
+
+        ui_reviewers = pending_reviewers | submitted_reviewers
 
         return {
             "additions": pr["additions"],
@@ -98,7 +108,7 @@ def get_pr_stats(url):
             "commit_count": pr["commits"]["totalCount"],
             "review_count": pr["reviews"]["totalCount"],
             "comment_count": pr["comments"]["totalCount"],
-            "assigned_reviewers": reviewers,
+            "reviewer_count_ui": len(ui_reviewers)
         }
 
     except Exception as e:
@@ -111,7 +121,8 @@ def get_pr_stats(url):
             "commit_count": None,
             "review_count": None,
             "comment_count": None,
-            "assigned_reviewers": None
+            "assigned_reviewers": None,
+            "reviewer_count_ui": None
         }
 
 def enrich_df_with_pr_stats(df, url_column="html_url"):
