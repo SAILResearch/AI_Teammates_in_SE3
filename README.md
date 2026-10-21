@@ -4,18 +4,47 @@
 
 # AIDev: Studying AI Coding Agents on GitHub (The Rise of AI Teammates in Software Engineering 3.0)
 
-📢 We’re hosting the **MSR 2026 Mining Challenge** (co-located with **ICSE 2026** in **Rio de Janeiro, Brazil**). Details and submissions:  
-⚠️⚠️⚠️ [https://2026.msrconf.org/track/msr-2026-mining-challenge](https://2026.msrconf.org/track/msr-2026-mining-challenge) ⚠️⚠️⚠️
-
 [![Paper](https://img.shields.io/badge/arXiv-2507.15003-b31b1b.svg)](https://arxiv.org/abs/2507.15003)
+[![Paper](https://img.shields.io/badge/arXiv-2602.09185-b31b1b.svg)](https://arxiv.org/abs/2602.09185)
 [![Hugging Face](https://img.shields.io/badge/HuggingFace-dataset-blue?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/hao-li/AIDev)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16919272.svg)](https://doi.org/10.5281/zenodo.16919272)
 
-- **Paper:** https://arxiv.org/abs/2507.15003
-- **HuggingFace Dataset:** https://huggingface.co/datasets/hao-li/AIDev
-- **Example Notebooks** (updated for AIDev v5, October 2026 — each runs on Colab against
-  `hf://datasets/hao-li/AIDev@v5` and mirrors the memory-safe
-  [`scripts/`](https://huggingface.co/datasets/hao-li/AIDev/tree/v5/scripts) folder of the dataset):
+> 📢 **The dataset, its documentation, and all announcements live on Hugging Face:**
+> **https://huggingface.co/datasets/hao-li/AIDev**
+>
+> The dataset card there is the single source of truth for the latest release (currently
+> **AIDev v5 / AIDev-7.6M**, cutoff March 31, 2026), per-agent statistics, the table
+> schema, memory-safe loading instructions, how agent PRs are identified, the version
+> history, and the open **calls for papers** (e.g., the AAAI-27 Workshop on Agentic
+> Software Engineering, deadline November 20, 2026). This GitHub repository only hosts
+> the example notebooks and the replication material for the papers.
+
+- **Papers:**
+  - [The Rise of AI Teammates in Software Engineering (SE) 3.0: How Autonomous Coding Agents Are Reshaping Software Engineering](https://arxiv.org/abs/2507.15003)
+  - [AIDev: Studying AI Coding Agents on GitHub](https://arxiv.org/abs/2602.09185)
+- **Dataset (Hugging Face):** https://huggingface.co/datasets/hao-li/AIDev
+
+## Quick Start
+
+Each release is a git tag on the Hub (`v3`, `v4`, `v5`, ...), so pin the revision you use:
+
+```py
+import pandas as pd
+
+all_repo_df = pd.read_parquet("hf://datasets/hao-li/AIDev@v5/all_repository.parquet")
+all_user_df = pd.read_parquet("hf://datasets/hao-li/AIDev@v5/all_user.parquet")
+```
+
+> ⚠️ `all_pull_request.parquet` (~6.7 GB) and `pr_commit_details.parquet` (~12.4 GB) do not
+> fit in a typical machine's RAM. Use the column/row-group patterns from the
+> [dataset card](https://huggingface.co/datasets/hao-li/AIDev#loading-the-dataset-without-blowing-up-your-ram)
+> or the [`scripts/`](https://huggingface.co/datasets/hao-li/AIDev/tree/v5/scripts) folder of the dataset.
+
+## Example Notebooks
+
+Updated for AIDev v5 (October 2026). Each notebook runs on Colab against
+`hf://datasets/hao-li/AIDev@v5` and mirrors the memory-safe
+[`scripts/`](https://huggingface.co/datasets/hao-li/AIDev/tree/v5/scripts) folder of the dataset.
 
 | Description                          | Notebook Link                                                                                       | Open in Colab                                                                                                                |
 |--------------------------------------|------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
@@ -24,121 +53,37 @@
 | Analysis of programming usage        | [language_usage.ipynb](analysis/language_usage.ipynb)                                               | <a href="https://colab.research.google.com/github/SAILResearch/AI_Teammates_in_SE3/blob/main/analysis/language_usage.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
 | PR merge rate and turnaround time    | [productivity.ipynb](analysis/productivity.ipynb)                                                   | <a href="https://colab.research.google.com/github/SAILResearch/AI_Teammates_in_SE3/blob/main/analysis/productivity.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
 
-> ⚠️ **Update (Aug 10, 2025):** The dataset has been refreshed to include data up to **August 1, 2025**, ensuring 
-> our dataset reflects the most recent trends in coding agents.
-
-This repository contains the replication package for the paper "The Rise of AI Teammates in Software Engineering (SE)
-3.0: How Autonomous Coding Agents Are Reshaping SE". Due to the size limit of GitHub repositories, the full dataset is
-not included here. You can find our full dataset on HuggingFace: https://huggingface.co/datasets/hao-li/AIDev
-
-> If you're interested in the raw data of AIDev-pop, you can find them here: https://drive.google.com/file/d/1l0_RjS7ZT0Y27V3mv0oJK-jfeRkhq5l5/view?usp=drive_link
-
-## Overview
-
-The overview of the AIDev dataset is as follows:
-
-|                  | #PR         | #Developer | #Repo       |
-| ---------------- | ----------- |------------|-------------|
-| `OpenAI Codex`   | 814,522     | 61,653     | 84,704      |
-| `Devin`          | 29,744      | NA         | 4,747       |
-| `GitHub Copilot` | 50,447      | NA         | 14,492      |
-| `Cursor`         | 32,941      | 9,658      | 12,699      |
-| `Claude Code`    | 5,137       | 1,643      | 1,915       |
-| **Total**        | **932,791** | **72,189** | **116,211** |
-
-![](./figs/pr_cumulative_all.png)
-
-## Repository Structure
-
-```
-├── AIDev-pop/              # AIDev-pop subset of AIDev
-├── analysis/              # Analysis scripts and Jupyter notebooks
-├── figs/                  # Generated figures and results
-├── requirements.txt       # Python dependencies
-└── README.md             # This file
-```
-
-## Installation
-
-Install required dependencies:
+To run them locally:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Key Findings
+## Replication Material for the SE 3.0 Paper
 
-The key findings from the analysis of are based on AIDev-pop, a subset of the AIDev dataset.
+The analyses in *The Rise of AI Teammates in Software Engineering 3.0* were run on the
+August 2025 snapshot of AIDev (the `v3` tag on the Hub) and its **AIDev-pop** subset
+(repositories with more than 100 stars). Numbers and figures in the paper therefore
+refer to that snapshot, not to the current release.
 
-### AIDev-pop: Filtered (>100 stars)
+- **Snapshot used in the paper:** https://huggingface.co/datasets/hao-li/AIDev/tree/v3
+- **Raw AIDev-pop data:** https://drive.google.com/file/d/1l0_RjS7ZT0Y27V3mv0oJK-jfeRkhq5l5/view?usp=drive_link
+- **PR task-type classification:** [`analysis/classify_pr.py`](analysis/classify_pr.py) produces the
+  `pr_task_type` table (Conventional-Commit style labels). This table ships only with the `v3`
+  release: `pd.read_parquet("hf://datasets/hao-li/AIDev@v3/pr_task_type.parquet")`.
+- **Reviewer analysis:** [`analysis/reviewers.ipynb`](analysis/reviewers.ipynb) (written for the paper's snapshot).
+- **Figures from the paper:** [`figs/`](figs/).
 
-|                  | #PR        | #Developer | #Repo     |
-| ---------------- | ---------- |------------| --------- |
-| `OpenAI Codex`   | 21,799     | 1,284      | 1,248     |
-| `Devin`          | 4,827      | NA         | 288       |
-| `GitHub Copilot` | 4,970      | NA         | 1,012     |
-| `Cursor`         | 1,541      | 363        | 327       |
-| `Claude Code`    | 459        | 236        | 213       |
-| **Total**        | **33,596** | **1,796**  | **2,807** |
+## Repository Structure
 
-![](./figs/pr_cumulative_popular.png)
-
-### Productivity in the Coding Agents Era
-
-![pr_merge_compare_radar2.png](figs%2Fpr_merge_compare_radar2.png)
-
-### Turnaround Time
-
-![](figs%2Fturnaround_distribution.png)
-
-[//]: # ()
-[//]: # (![]&#40;figs/copilot_job_completion_time.png&#41;)
-
-[//]: # ()
-[//]: # (**GitHub Copilot delivers half of its PRs within 12.8 minutes**. While 75% of jobs are completed within 18.5 minutes, the distribution)
-
-[//]: # (exhibits a long tail extending up to 60 minutes, with the 95th percentile exceeding one hour. )
-[//]: # ()
-[//]: # (### Who Review the PRs?)
-
-[//]: # ()
-[//]: # (![]&#40;./figs/reviewer_classification_stacked.png&#41;)
-
-[//]: # ()
-[//]: # (**Human reviewers remain dominant across Agentic-PRs yet GitHub Copilot drives a shift)
-
-[//]: # (toward automated hybrid collaboration in review**. Both Human-PRs and Agentic-PRs receive)
-
-[//]: # (no explicit review in the majority of cases &#40;75.3% and 58.2%, respectively&#41;, while the second most common category)
-
-[//]: # (involves reviews conducted solely by humans, at 14.7% and 21.8%. Notably, bot reviewers are more prevalent in Agentic-)
-
-[//]: # (PRs &#40;20.1%&#41; than in Human-PRs &#40;10.0%&#41;. )
-
-[//]: # ()
-[//]: # (![]&#40;./figs/bot_heatmap.png&#41;)
-
-[//]: # ()
-[//]: # (**Autonomous Coding Agents and their paired review bots often originate from the same)
-
-[//]: # (provider, forming closed PR-review loops that streamline workflows; but risk reinforcing provider-specific)
-
-[//]: # (biases.** We analyze the top 10 most active review bots to understand on which Autonomous Coding Agents they operate.)
-
-[//]: # (The heatmap illustrates a strong association between review bots and Autonomous Coding Agents from the same provider.)
-
-### Language Usage
-
-![](figs%2Ftotal_language_percentages_top.png)
-
-**Autonomous Coding Agents exhibit distinct language preferences reflecting domain specialization in their capabilities.** 
-TypeScript is the most common language across all agents, underscoring its popularity in AI-assisted development.
-However, notable divergences emerge: OpenAI Codex shows a pronounced skew toward Python, while GitHub
-Copilot heavily favours C#, likely reflecting their respective integrations and user bases.
-
-## Dataset Schema
-
-![](figs%2Fdataset_schema.png)
+```
+├── analysis/               # Example notebooks (v5) and paper replication scripts
+├── figs/                   # Logo and figures from the paper
+├── AIDev_preprint.pdf      # Preprint of the SE 3.0 paper
+├── AIDev_Challenge.pdf     # MSR 2026 Mining Challenge paper (AIDev: Studying AI Coding Agents on GitHub)
+├── requirements.txt        # Python dependencies for the notebooks
+└── README.md               # This file
+```
 
 ## Citation
 
